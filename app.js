@@ -60,6 +60,7 @@
 
   // Speech Synthesis setup
   let germanVoice = null;
+  let activeUtterance = null; // Prevent WebKit GC from prematurely garbage collecting active audio
 
   function initVoices() {
     if (!('speechSynthesis' in window)) return;
@@ -80,23 +81,25 @@
     if (!('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel(); // Stop any pending speech
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'de-DE';
-    utterance.rate = 0.90; // Natural, clear pedagogical pace
-    if (germanVoice) utterance.voice = germanVoice;
+    activeUtterance = new SpeechSynthesisUtterance(text);
+    activeUtterance.lang = 'de-DE';
+    activeUtterance.rate = 0.90; // Natural, clear pedagogical pace
+    if (germanVoice) activeUtterance.voice = germanVoice;
 
     setSpeakingState(true, targetButton);
 
-    utterance.onend = () => {
+    activeUtterance.onend = () => {
       setSpeakingState(false, targetButton);
+      activeUtterance = null;
       if (onComplete) onComplete();
     };
 
-    utterance.onerror = () => {
+    activeUtterance.onerror = () => {
       setSpeakingState(false, targetButton);
+      activeUtterance = null;
     };
 
-    window.speechSynthesis.speak(utterance);
+    window.speechSynthesis.speak(activeUtterance);
   }
 
   function setSpeakingState(speaking, targetButton = null) {
@@ -182,9 +185,10 @@
     backLevel.textContent = item.level || 'B1';
     backType.textContent = item.type || 'Stammformen';
 
-    // Highlight separable prefixes cleanly
-    conjPraesens.innerHTML = formatSeparableVerb(item.praesens);
-    conjPraeteritum.innerHTML = formatSeparableVerb(item.praeteritum);
+    // Highlight separable prefixes cleanly (only for trennbare Verben)
+    const isTrennbar = item.type && item.type.toLowerCase().includes('trennbar');
+    conjPraesens.innerHTML = formatSeparableVerb(item.praesens, isTrennbar);
+    conjPraeteritum.innerHTML = formatSeparableVerb(item.praeteritum, isTrennbar);
 
     // Perfekt with auxiliary badge
     const aux = item.hilfsverb || (item.perfekt && item.perfekt.startsWith('ist') ? 'ist' : 'hat');
@@ -217,8 +221,9 @@
     updateProgress();
   }
 
-  function formatSeparableVerb(phrase) {
+  function formatSeparableVerb(phrase, isTrennbar = false) {
     if (!phrase) return '';
+    if (!isTrennbar) return phrase;
     const parts = phrase.trim().split(/\s+/);
     if (parts.length > 1) {
       const prefix = parts.pop();
