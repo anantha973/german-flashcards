@@ -76,7 +76,7 @@
     }
   }
 
-  function speakText(text, onComplete) {
+  function speakText(text, onComplete, targetButton = null) {
     if (!('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel(); // Stop any pending speech
 
@@ -85,22 +85,28 @@
     utterance.rate = 0.90; // Natural, clear pedagogical pace
     if (germanVoice) utterance.voice = germanVoice;
 
-    setSpeakingState(true);
+    setSpeakingState(true, targetButton);
 
     utterance.onend = () => {
-      setSpeakingState(false);
+      setSpeakingState(false, targetButton);
       if (onComplete) onComplete();
     };
 
     utterance.onerror = () => {
-      setSpeakingState(false);
+      setSpeakingState(false, targetButton);
     };
 
     window.speechSynthesis.speak(utterance);
   }
 
-  function setSpeakingState(speaking) {
+  function setSpeakingState(speaking, targetButton = null) {
     isSpeaking = speaking;
+    if (targetButton) {
+      if (speaking) targetButton.classList.add('is-speaking');
+      else targetButton.classList.remove('is-speaking');
+      return;
+    }
+
     if (speaking) {
       btnAudioFront.classList.add('is-speaking');
       btnAudioBack.classList.add('is-speaking');
@@ -293,8 +299,14 @@
 
   // ================= Event Listeners =================
 
-  // Card Flip on Click (excluding buttons inside)
+  let wasSwiped = false;
+
+  // Card Flip on Click (excluding buttons inside or if just swiped)
   flashcard.addEventListener('click', (e) => {
+    if (wasSwiped) {
+      wasSwiped = false;
+      return;
+    }
     if (e.target.closest('button')) return;
     toggleFlip();
   });
@@ -303,19 +315,19 @@
   btnAudioFront.addEventListener('click', (e) => {
     e.stopPropagation();
     const item = currentDeck[currentIndex];
-    if (item) speakText(item.word);
+    if (item) speakText(item.word, null, btnAudioFront);
   });
 
   btnAudioBack.addEventListener('click', (e) => {
     e.stopPropagation();
     const item = currentDeck[currentIndex];
-    if (item) speakText(item.word);
+    if (item) speakText(item.word, null, btnAudioBack);
   });
 
   btnAudioSentence.addEventListener('click', (e) => {
     e.stopPropagation();
     const item = currentDeck[currentIndex];
-    if (item && item.exampleDe) speakText(item.exampleDe);
+    if (item && item.exampleDe) speakText(item.exampleDe, null, btnAudioSentence);
   });
 
   // Filter Chips
@@ -375,11 +387,13 @@
     const diffY = e.changedTouches[0].screenY - touchStartY;
     // Horizontal swipe threshold: 60px with minimal vertical drift
     if (Math.abs(diffX) > 60 && Math.abs(diffY) < 50) {
+      wasSwiped = true;
       if (diffX < 0) {
         nextCard();
       } else {
         prevCard();
       }
+      setTimeout(() => { wasSwiped = false; }, 350);
     }
   }, { passive: true });
 
