@@ -88,11 +88,13 @@
   const navItemDecks = document.getElementById('nav-item-decks');
   const navItemCalendar = document.getElementById('nav-item-calendar');
   const sidebarDeckShortcuts = document.getElementById('sidebar-deck-shortcuts');
+  const themeOptionBtns = document.querySelectorAll('.theme-option-btn');
 
   // Header
   const headerBrandGroup = document.getElementById('header-brand-group');
   const btnBackHome = document.getElementById('btn-back-home');
   const streakCounter = document.getElementById('streak-counter');
+  const btnQuickTheme = document.getElementById('btn-quick-theme');
 
   // Homepage Elements
   const horizontalWeekStrip = document.getElementById('horizontal-week-strip');
@@ -106,11 +108,20 @@
   const statCurrentStreak = document.getElementById('stat-current-streak');
   const statRecallRate = document.getElementById('stat-recall-rate');
 
-  // Month Calendar
+  // Month Calendar & Bento Elements
   const calendarMonthTitle = document.getElementById('calendar-month-title');
   const calendarDaysGrid = document.getElementById('calendar-days-grid');
   const btnCalPrev = document.getElementById('btn-cal-prev');
   const btnCalNext = document.getElementById('btn-cal-next');
+
+  // Bento Grammar Mastery Elements
+  const countTrennbar = document.getElementById('count-trennbar');
+  const barTrennbar = document.getElementById('bar-trennbar');
+  const countSein = document.getElementById('count-sein');
+  const barSein = document.getElementById('bar-sein');
+  const countUnregelmaessig = document.getElementById('count-unregelmaessig');
+  const barStrong = document.getElementById('bar-strong');
+  const btnQuickDrill = document.getElementById('btn-quick-drill');
 
   // Study Mode Elements
   const progressBar = document.getElementById('progress-bar');
@@ -317,11 +328,55 @@
     updateDashboardStats();
   }
 
-  // ================= View Routing =================
+  // ================= Appearance & Theme Management =================
+  const THEME_KEY = 'wortschatz_theme_v2';
+  const THEMES = ['porcelain', 'nordic', 'chalk'];
+
+  function initTheme() {
+    const saved = localStorage.getItem(THEME_KEY) || 'porcelain';
+    setTheme(saved);
+  }
+
+  function setTheme(theme) {
+    if (!THEMES.includes(theme)) theme = 'porcelain';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(THEME_KEY, theme);
+
+    // Update meta theme-color for browser chrome / iOS Safari
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+      if (theme === 'porcelain') metaTheme.setAttribute('content', '#F1F4F8');
+      else if (theme === 'nordic') metaTheme.setAttribute('content', '#FAF8F5');
+      else metaTheme.setAttribute('content', '#FFFFFF');
+    }
+
+    // Update active state in sidebar drawer theme buttons
+    if (themeOptionBtns && themeOptionBtns.length > 0) {
+      themeOptionBtns.forEach(btn => {
+        const btnTheme = btn.getAttribute('data-theme-set');
+        const isMatch = btnTheme === theme;
+        btn.classList.toggle('active', isMatch);
+        const checkSpan = btn.querySelector('.theme-check');
+        if (checkSpan) {
+          checkSpan.textContent = isMatch ? '✓' : '';
+        }
+      });
+    }
+  }
+
+  function toggleNextTheme() {
+    const current = document.documentElement.getAttribute('data-theme') || 'porcelain';
+    const nextIdx = (THEMES.indexOf(current) + 1) % THEMES.length;
+    setTheme(THEMES[nextIdx]);
+  }
+
+  // ================= View Routing with Fluid Sliding Transitions =================
   function switchView(viewName, deckId = null) {
     if (viewName === 'study') {
       viewHome.classList.add('hidden');
       viewStudy.classList.remove('hidden');
+      viewStudy.classList.remove('view-slide-in-left');
+      viewStudy.classList.add('view-slide-in-right');
       btnBackHome.classList.remove('hidden');
       headerBrandGroup.classList.add('hidden');
 
@@ -330,6 +385,8 @@
       }
     } else {
       viewHome.classList.remove('hidden');
+      viewHome.classList.remove('view-slide-in-right');
+      viewHome.classList.add('view-slide-in-left');
       viewStudy.classList.add('hidden');
       btnBackHome.classList.add('hidden');
       headerBrandGroup.classList.remove('hidden');
@@ -356,7 +413,7 @@
   // ================= Dashboard Renderers =================
   function updateDashboardStats() {
     const streak = calculateStreak();
-    streakCounter.textContent = `${streak}-Tage-Serie`;
+    streakCounter.textContent = `${streak} ${streak === 1 ? 'Tag' : 'Tage'}`;
     statCurrentStreak.textContent = `${streak} ${streak === 1 ? 'Tag' : 'Tage'}`;
 
     // Daily Goal
@@ -387,6 +444,31 @@
     renderHorizontalCalendar();
     renderMonthCalendar(displayedCalDate);
     renderDecksGrid();
+    updateGrammarMastery();
+  }
+
+  // Grammar & Morphology Bento Breakdown Renderer
+  function updateGrammarMastery() {
+    if (!allWords || allWords.length === 0) return;
+
+    const totalTrennbar = allWords.filter(w => w.type && w.type.toLowerCase().includes('trennbar')).length || 11;
+    const totalSein = allWords.filter(w => w.hilfsverb === 'sein').length || 14;
+    const totalStrong = allWords.filter(w => w.praeteritum && !w.praeteritum.endsWith('te')).length || 36;
+
+    // Track progression via deckProgress
+    const reviewedTrennbar = (deckProgress['trennbar'] && deckProgress['trennbar'].reviewed) || 0;
+    const reviewedSein = (deckProgress['sein-verbs'] && deckProgress['sein-verbs'].reviewed) || 0;
+    const reviewedAll = (deckProgress['b1-all'] && deckProgress['b1-all'].reviewed) || 0;
+    const reviewedStrong = Math.min(totalStrong, Math.round(reviewedAll * (totalStrong / (allWords.length || 50))));
+
+    if (countTrennbar) countTrennbar.textContent = `${reviewedTrennbar} / ${totalTrennbar}`;
+    if (barTrennbar) barTrennbar.style.width = `${Math.round((reviewedTrennbar / totalTrennbar) * 100)}%`;
+
+    if (countSein) countSein.textContent = `${reviewedSein} / ${totalSein}`;
+    if (barSein) barSein.style.width = `${Math.round((reviewedSein / totalSein) * 100)}%`;
+
+    if (countUnregelmaessig) countUnregelmaessig.textContent = `${reviewedStrong} / ${totalStrong}`;
+    if (barStrong) barStrong.style.width = `${Math.round((reviewedStrong / totalStrong) * 100)}%`;
   }
 
   // Top Horizontal 7-Day Activity Strip
@@ -610,20 +692,62 @@
     flashcard.classList.toggle('is-flipped', isFlipped);
   }
 
+  let isCardAnimating = false;
+
   function nextCard() {
+    if (isCardAnimating) return;
     if (currentIndex < currentDeck.length - 1) {
-      currentIndex++;
-      renderCurrentCard();
+      isCardAnimating = true;
+      flashcard.classList.remove('card-slide-in-right', 'card-slide-in-left', 'card-slide-out-right');
+      flashcard.classList.add('card-slide-out-left');
+
+      setTimeout(() => {
+        currentIndex++;
+        renderCurrentCard();
+        flashcard.classList.remove('card-slide-out-left');
+        flashcard.classList.add('card-slide-in-right');
+
+        setTimeout(() => {
+          flashcard.classList.remove('card-slide-in-right');
+          isCardAnimating = false;
+        }, 260);
+      }, 190);
     } else {
       showSessionCompleteSummary();
     }
   }
 
   function prevCard() {
+    if (isCardAnimating) return;
     if (currentIndex > 0) {
-      currentIndex--;
-      renderCurrentCard();
+      isCardAnimating = true;
+      flashcard.classList.remove('card-slide-in-right', 'card-slide-in-left', 'card-slide-out-left');
+      flashcard.classList.add('card-slide-out-right');
+
+      setTimeout(() => {
+        currentIndex--;
+        renderCurrentCard();
+        flashcard.classList.remove('card-slide-out-right');
+        flashcard.classList.add('card-slide-in-left');
+
+        setTimeout(() => {
+          flashcard.classList.remove('card-slide-in-left');
+          isCardAnimating = false;
+        }, 260);
+      }, 190);
     }
+  }
+
+  function startQuickDrill() {
+    if (!allWords || allWords.length === 0) return;
+    const shuffled = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
+    currentDeckId = 'quick-drill';
+    currentDeck = shuffled;
+    deckIndicator.textContent = '⚡ Schnelltraining (10 Wörter)';
+    currentIndex = 0;
+    sessionReviewedCount = 0;
+    sessionCorrectCount = 0;
+    switchView('study');
   }
 
   function recordGrade(grade) {
@@ -736,6 +860,32 @@
   btnGrade3.addEventListener('click', () => recordGrade('good'));
   btnGrade4.addEventListener('click', () => recordGrade('easy'));
 
+  // Quick Drill Trigger Button in Bento Grid
+  if (btnQuickDrill) {
+    btnQuickDrill.addEventListener('click', () => {
+      startQuickDrill();
+    });
+  }
+
+  // Header Quick Theme Toggle
+  if (btnQuickTheme) {
+    btnQuickTheme.addEventListener('click', () => {
+      toggleNextTheme();
+    });
+  }
+
+  // Sidebar Theme Option Buttons
+  if (themeOptionBtns && themeOptionBtns.length > 0) {
+    themeOptionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedTheme = btn.getAttribute('data-theme-set');
+        if (selectedTheme) {
+          setTheme(selectedTheme);
+        }
+      });
+    });
+  }
+
   // Keyboard Shortcuts (Space, 1-4, A, Arrow Keys, Escape)
   document.addEventListener('keydown', (e) => {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
@@ -799,6 +949,7 @@
 
   // Initial Data Fetch & Load
   async function initApp() {
+    initTheme();
     try {
       const res = await fetch('data/vocabulary.json');
       if (!res.ok) throw new Error('Network error');
