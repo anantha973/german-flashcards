@@ -48,6 +48,12 @@
   --shadow-drawer: 20px 0 50px rgba(20, 30, 50, 0.14);
   --shadow-button: 0 1px 3px rgba(0, 0, 0, 0.05);
 
+  /* Emil Kowalski Animation Easing Curves */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+
   --glass-blur: 24px;
   --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.95);
 
@@ -248,7 +254,7 @@ html[data-theme="chalk"] .ambient-orb-2 {
   background-color: rgba(15, 23, 42, 0.16);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.22s ease;
+  transition: opacity 0.20s var(--ease-out);
 }
 
 .sidebar-backdrop.is-open {
@@ -272,7 +278,7 @@ html[data-theme="chalk"] .ambient-orb-2 {
   display: flex;
   flex-direction: column;
   transform: translateX(-100%);
-  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.28s var(--ease-drawer);
   padding: 20px 18px;
   padding-top: max(20px, env(safe-area-inset-top, 20px));
 }
@@ -788,54 +794,54 @@ html[data-theme="chalk"] .ambient-orb-2 {
 
 /* Card Horizon Slide Transitions */
 .card-slide-out-left {
-  animation: cardSlideOutLeft 0.20s cubic-bezier(0.4, 0, 1, 1) forwards;
+  animation: cardSlideOutLeft 0.16s var(--ease-out) forwards;
 }
 
 .card-slide-in-right {
-  animation: cardSlideInRight 0.26s cubic-bezier(0, 0, 0.2, 1) forwards;
+  animation: cardSlideInRight 0.20s var(--ease-out) forwards;
 }
 
 .card-slide-out-right {
-  animation: cardSlideOutRight 0.20s cubic-bezier(0.4, 0, 1, 1) forwards;
+  animation: cardSlideOutRight 0.16s var(--ease-out) forwards;
 }
 
 .card-slide-in-left {
-  animation: cardSlideInLeft 0.26s cubic-bezier(0, 0, 0.2, 1) forwards;
+  animation: cardSlideInLeft 0.20s var(--ease-out) forwards;
 }
 
 @keyframes cardSlideOutLeft {
   to {
     opacity: 0;
-    transform: translateX(-70px) scale(0.95) rotate(-2.5deg);
+    transform: translateX(-40px) scale(0.97);
   }
 }
 
 @keyframes cardSlideInRight {
   from {
     opacity: 0;
-    transform: translateX(70px) scale(0.95) rotate(2.5deg);
+    transform: translateX(40px) scale(0.97);
   }
   to {
     opacity: 1;
-    transform: translateX(0) scale(1) rotate(0deg);
+    transform: translateX(0) scale(1);
   }
 }
 
 @keyframes cardSlideOutRight {
   to {
     opacity: 0;
-    transform: translateX(70px) scale(0.95) rotate(2.5deg);
+    transform: translateX(40px) scale(0.97);
   }
 }
 
 @keyframes cardSlideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-70px) scale(0.95) rotate(-2.5deg);
+    transform: translateX(-40px) scale(0.97);
   }
   to {
     opacity: 1;
-    transform: translateX(0) scale(1) rotate(0deg);
+    transform: translateX(0) scale(1);
   }
 }
 
@@ -1799,8 +1805,17 @@ html[data-theme="chalk"] .ambient-orb-2 {
   height: 100%;
   cursor: pointer;
   transform-style: preserve-3d;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.32s var(--ease-out);
   outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.flashcard:active {
+  transform: scale(0.995);
+}
+
+.flashcard.is-flipped:active {
+  transform: rotateY(180deg) scale(0.995);
 }
 
 .flashcard:focus-visible {
@@ -1828,7 +1843,7 @@ html[data-theme="chalk"] .ambient-orb-2 {
   overflow: hidden; /* Guaranteed clip so no scrollbars or child contents leak past rounded corners */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.15s var(--ease-out), box-shadow 0.15s var(--ease-out);
 }
 
 .card-front {
@@ -1938,17 +1953,20 @@ html[data-theme="chalk"] .ambient-orb-2 {
   justify-content: center;
   cursor: pointer;
   box-shadow: var(--shadow-button);
-  transition: background-color 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.14s var(--ease-out), transform 0.12s var(--ease-out), border-color 0.14s var(--ease-out), color 0.14s var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.audio-button:hover {
-  background-color: var(--bg-surface-hover);
-  color: var(--accent-terracotta);
-  border-color: var(--accent-terracotta);
+@media (hover: hover) and (pointer: fine) {
+  .audio-button:hover {
+    background-color: var(--bg-surface-hover);
+    color: var(--accent-terracotta);
+    border-color: var(--accent-terracotta);
+  }
 }
 
 .audio-button:active {
-  transform: scale(0.92);
+  transform: scale(0.90);
 }
 
 .audio-button.is-speaking {
@@ -2206,13 +2224,20 @@ html[data-theme="chalk"] .ambient-orb-2 {
   font-weight: 600;
   color: var(--text-muted);
   cursor: pointer;
-  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: color 0.14s var(--ease-out), background-color 0.14s var(--ease-out), transform 0.12s var(--ease-out), box-shadow 0.14s var(--ease-out);
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.tense-tab:hover {
-  color: var(--text-primary);
-  background-color: var(--bg-surface-hover);
+@media (hover: hover) and (pointer: fine) {
+  .tense-tab:hover {
+    color: var(--text-primary);
+    background-color: var(--bg-surface-hover);
+  }
+}
+
+.tense-tab:active {
+  transform: scale(0.95);
 }
 
 .tense-tab.is-active {
@@ -2239,6 +2264,13 @@ html[data-theme="chalk"] .ambient-orb-2 {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  transition: opacity 0.12s var(--ease-out), transform 0.12s var(--ease-out);
+  will-change: opacity, transform;
+}
+
+.example-body.is-switching {
+  opacity: 0.15;
+  transform: translateY(2px);
 }
 
 .example-de {
@@ -2309,17 +2341,32 @@ html[data-theme="chalk"] .ambient-orb-2 {
   gap: 6px;
   min-height: 50px;
   cursor: pointer;
-  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.12s var(--ease-out), background-color 0.12s var(--ease-out), border-color 0.12s var(--ease-out), box-shadow 0.12s var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.grade-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+@media (hover: hover) and (pointer: fine) {
+  .grade-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .grade-again:hover { border-color: rgba(244, 63, 94, 0.4); background-color: rgba(244, 63, 94, 0.06); }
+  .grade-hard:hover  { border-color: rgba(245, 158, 11, 0.4); background-color: rgba(245, 158, 11, 0.06); }
+  .grade-good:hover  { border-color: rgba(2, 132, 199, 0.4); background-color: rgba(2, 132, 199, 0.06); }
+  .grade-easy:hover  { border-color: rgba(16, 185, 129, 0.4); background-color: rgba(16, 185, 129, 0.06); }
 }
 
-.grade-btn:active {
-  transform: scale(0.97);
+.grade-btn:active,
+.grade-btn.is-pressed {
+  transform: scale(0.96) translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
+
+.grade-again.is-pressed { border-color: #F43F5E; background-color: rgba(244, 63, 94, 0.12); }
+.grade-hard.is-pressed  { border-color: #F59E0B; background-color: rgba(245, 158, 11, 0.12); }
+.grade-good.is-pressed  { border-color: #0284C7; background-color: rgba(2, 132, 199, 0.12); }
+.grade-easy.is-pressed  { border-color: #10B981; background-color: rgba(16, 185, 129, 0.12); }
 
 .grade-header {
   display: flex;
@@ -2370,11 +2417,6 @@ html[data-theme="chalk"] .ambient-orb-2 {
   line-height: 1.2;
 }
 
-.grade-again:hover { border-color: rgba(244, 63, 94, 0.4); background-color: rgba(244, 63, 94, 0.06); }
-.grade-hard:hover  { border-color: rgba(245, 158, 11, 0.4); background-color: rgba(245, 158, 11, 0.06); }
-.grade-good:hover  { border-color: rgba(2, 132, 199, 0.4); background-color: rgba(2, 132, 199, 0.06); }
-.grade-easy:hover  { border-color: rgba(16, 185, 129, 0.4); background-color: rgba(16, 185, 129, 0.06); }
-
 /* ================= Appearance Customization Pop-up Modal ================= */
 .appearance-modal-card {
   width: 94%;
@@ -2391,7 +2433,7 @@ html[data-theme="chalk"] .ambient-orb-2 {
   gap: 18px;
   max-height: 90vh;
   overflow-y: auto;
-  animation: modalPopIn 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: modalPopIn 0.20s var(--ease-out);
 }
 
 @keyframes modalPopIn {
@@ -2918,5 +2960,77 @@ html[data-theme="chalk"] .ambient-orb-2 {
   .study-stage {
     max-width: 680px;
     padding: 10px 16px 14px;
+  }
+}
+
+/* ==========================================================================
+   Emil Kowalski Motion & Micro-Interactions Philosophy
+   - No layout jitter: Tabular numbers for all dynamic counters & timers
+   - Physical tactile response on all active touch points
+   - Clean hover gating for touch screen devices
+   - Graceful degradation for prefers-reduced-motion
+   ========================================================================== */
+
+.card-counter,
+.grade-time,
+.keycap,
+.deck-count-pill,
+.stat-number,
+.praesens-val,
+.due-badge,
+.streak-badge {
+  font-variant-numeric: tabular-nums;
+}
+
+.nav-btn,
+.sidebar-btn,
+.theme-toggle-btn,
+.modal-close-icon-btn,
+.segmented-btn {
+  transition: transform 0.12s var(--ease-out), background-color 0.14s var(--ease-out), color 0.14s var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-btn:active,
+.sidebar-btn:active,
+.theme-toggle-btn:active,
+.modal-close-icon-btn:active,
+.segmented-btn:active {
+  transform: scale(0.92);
+}
+
+.deck-card {
+  transition: transform 0.15s var(--ease-out), box-shadow 0.15s var(--ease-out), border-color 0.15s var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .deck-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.deck-card:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .card-slide-out-left,
+  .card-slide-in-right,
+  .card-slide-out-right,
+  .card-slide-in-left {
+    animation: none !important;
+  }
+  .flashcard {
+    transition: none !important;
+  }
+  .flashcard.is-flipped {
+    transform: rotateY(180deg) !important;
   }
 }

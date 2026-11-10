@@ -1078,8 +1078,18 @@
   }
 
   function setExampleTense(tense) {
+    if (currentExampleTense === tense) return;
     currentExampleTense = tense;
-    renderExampleSentence();
+    const body = document.querySelector('.example-body');
+    if (body) {
+      body.classList.add('is-switching');
+      setTimeout(() => {
+        renderExampleSentence();
+        body.classList.remove('is-switching');
+      }, 70);
+    } else {
+      renderExampleSentence();
+    }
   }
 
   function formatSeparableVerb(phrase, isTrennbar = false) {
@@ -1116,8 +1126,8 @@
         setTimeout(() => {
           flashcard.classList.remove('card-slide-in-right');
           isCardAnimating = false;
-        }, 260);
-      }, 190);
+        }, 200);
+      }, 150);
     } else {
       showSessionCompleteSummary();
     }
@@ -1139,8 +1149,8 @@
         setTimeout(() => {
           flashcard.classList.remove('card-slide-in-left');
           isCardAnimating = false;
-        }, 260);
-      }, 190);
+        }, 200);
+      }, 150);
     }
   }
 
@@ -1156,6 +1166,14 @@
     switchView('study');
   }
 
+  function flashGradeButton(gradeClass) {
+    const btn = document.querySelector(`.grade-${gradeClass}`);
+    if (btn) {
+      btn.classList.add('is-pressed');
+      setTimeout(() => btn.classList.remove('is-pressed'), 140);
+    }
+  }
+
   function recordGrade(grade) {
     const isCorrect = grade === 'good' || grade === 'easy';
     recordStudyParticipation(isCorrect);
@@ -1163,7 +1181,7 @@
     // Smooth advance to next card
     setTimeout(() => {
       nextCard();
-    }, 180);
+    }, 140);
   }
 
   // ================= Session Complete Summary =================
@@ -1386,12 +1404,16 @@
       e.preventDefault();
       toggleFlip();
     } else if (e.key === '1') {
+      flashGradeButton('again');
       recordGrade('again');
     } else if (e.key === '2') {
+      flashGradeButton('hard');
       recordGrade('hard');
     } else if (e.key === '3') {
+      flashGradeButton('good');
       recordGrade('good');
     } else if (e.key === '4') {
+      flashGradeButton('easy');
       recordGrade('easy');
     } else if (e.key === 'a' || e.key === 'A') {
       e.preventDefault();
