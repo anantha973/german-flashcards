@@ -1784,16 +1784,17 @@ html[data-theme="chalk"] .ambient-orb-2 {
 /* 3D Flashcard Scene */
 .flashcard-scene {
   width: 100%;
-  min-height: 440px;
+  height: 520px;
+  min-height: 520px;
   perspective: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .flashcard {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 440px;
   cursor: pointer;
   transform-style: preserve-3d;
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1813,11 +1814,9 @@ html[data-theme="chalk"] .ambient-orb-2 {
 /* Card Faces */
 .card-face {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 460px;
   background-color: var(--bg-surface);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -1839,15 +1838,18 @@ html[data-theme="chalk"] .ambient-orb-2 {
 
 .card-back {
   transform: rotateY(180deg);
-  background-color: rgba(255, 255, 255, 0.94);
+  background-color: var(--bg-surface-raised);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 14px;
+  gap: 16px;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;
   scrollbar-width: thin;
+  scrollbar-color: var(--border-subtle) transparent;
+  padding-bottom: 24px;
+}
   scrollbar-color: var(--border-subtle) transparent;
 }
 
@@ -1955,53 +1957,12 @@ html[data-theme="chalk"] .ambient-orb-2 {
 
 .lemma-word {
   font-family: var(--font-display);
-  font-size: 46px;
+  font-size: 52px;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   line-height: 1.15;
   word-break: break-word;
-}
-
-.ipa-line {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
-}
-
-.front-flip-prompt {
-  margin-top: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 18px;
-  background-color: var(--bg-surface-subtle);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-full);
-  color: var(--text-secondary);
-  font-size: 13px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  user-select: none;
-  cursor: pointer;
-}
-
-.flashcard:hover .front-flip-prompt {
-  background-color: var(--bg-surface-hover);
-  color: var(--accent-terracotta);
-  border-color: var(--accent-terracotta);
-  transform: translateY(-1px);
-}
-
-.flip-icon {
-  color: var(--accent-terracotta);
-  transition: transform 0.35s ease;
-}
-
-.flashcard:hover .flip-icon {
-  transform: rotate(180deg);
 }
 
 .card-bottom-prompt {
@@ -2026,60 +1987,30 @@ html[data-theme="chalk"] .ambient-orb-2 {
 }
 
 /* ================= Back Side Styling ================= */
-.back-lemma-strip {
+.back-word-block {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.back-lemma-heading {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
 .back-lemma {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   margin: 0;
   line-height: 1.2;
 }
 
-.back-ipa {
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
-.back-meaning-card {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--bg-surface-subtle);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-full);
-  padding: 6px 14px;
-}
-
-.back-meaning-label {
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--accent-terracotta);
-}
-
-.back-meaning {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-primary);
+.back-translation {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
 }
 
 /* Full Present Tense (Präsens) Conjugation Grid */
@@ -2222,19 +2153,18 @@ html[data-theme="chalk"] .ambient-orb-2 {
 .example-container {
   background-color: var(--bg-surface-subtle);
   border: 1px solid var(--border-subtle);
-  padding: 14px 16px;
-  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .example-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .example-tense-tabs {
@@ -2242,59 +2172,46 @@ html[data-theme="chalk"] .ambient-orb-2 {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
-  padding: 2px;
-  gap: 2px;
+  padding: 3px;
+  gap: 3px;
 }
 
 .tense-tab {
   border: none;
   background: transparent;
-  padding: 4px 12px;
+  padding: 6px 18px;
   border-radius: var(--radius-full);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
 }
 
 .tense-tab:hover {
   color: var(--text-primary);
+  background-color: var(--bg-surface-hover);
 }
 
 .tense-tab.is-active {
   background-color: var(--accent-terracotta);
   color: #FFFFFF;
-  box-shadow: 0 1px 4px rgba(224, 86, 56, 0.3);
+  box-shadow: 0 2px 8px rgba(224, 86, 56, 0.28);
 }
 
-.example-listen-btn {
-  border: 1px solid var(--border-subtle);
-  background-color: var(--bg-surface-raised);
-  color: var(--text-secondary);
-  font-size: 12px;
-  font-family: var(--font-sans);
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  padding: 5px 12px;
-  min-height: 32px;
-  border-radius: var(--radius-full);
-  transition: all 0.15s ease;
+.audio-button-sm {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0;
+  flex-shrink: 0;
 }
 
-.example-listen-btn:hover {
-  background-color: var(--bg-surface-hover);
-  color: var(--accent-terracotta);
-  border-color: var(--accent-terracotta);
-}
-
-.example-listen-btn.is-speaking {
-  color: #FFFFFF;
-  background-color: var(--accent-terracotta);
-  border-color: var(--accent-terracotta);
+.audio-button-sm .icon-speaker {
+  width: 16px;
+  height: 16px;
 }
 
 .example-body {
@@ -2305,15 +2222,15 @@ html[data-theme="chalk"] .ambient-orb-2 {
 
 .example-de {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--text-primary);
-  line-height: 1.45;
+  line-height: 1.5;
   margin: 0;
 }
 
 .example-en {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.4;
   margin: 0;
@@ -2342,35 +2259,34 @@ html[data-theme="chalk"] .ambient-orb-2 {
   flex-grow: 1;
 }
 
-/* ================= Rating Action Dock (Redesigned) ================= */
+/* ================= Rating Action Dock ================= */
 .action-dock {
   width: 100%;
-  max-width: 640px;
-  margin: 12px auto 0;
+  max-width: 620px;
+  margin: 16px auto 0;
 }
 
 .dock-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
-  padding: 6px;
-  background-color: var(--bg-surface);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--border-card);
+  gap: 8px;
+  padding: 8px;
+  background-color: var(--bg-surface-raised);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-dock);
 }
 
 .grade-btn {
   border: 1px solid var(--border-subtle);
-  background-color: var(--bg-surface-raised);
+  background-color: var(--bg-surface);
   border-radius: var(--radius-md);
-  padding: 8px 10px;
+  padding: 10px 12px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 6px;
+  gap: 8px;
+  min-height: 58px;
   cursor: pointer;
   transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -2384,6 +2300,12 @@ html[data-theme="chalk"] .ambient-orb-2 {
   transform: scale(0.97);
 }
 
+.grade-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
 .grade-dot {
   width: 8px;
   height: 8px;
@@ -2391,28 +2313,27 @@ html[data-theme="chalk"] .ambient-orb-2 {
   border-radius: var(--radius-full);
 }
 
-.dot-again { background-color: #F43F5E; box-shadow: 0 0 8px rgba(244, 63, 94, 0.4); }
-.dot-hard  { background-color: #F59E0B; box-shadow: 0 0 8px rgba(245, 158, 11, 0.4); }
-.dot-good  { background-color: #0284C7; box-shadow: 0 0 8px rgba(2, 132, 199, 0.4); }
-.dot-easy  { background-color: #10B981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.4); }
-
-.grade-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1px;
-  flex-grow: 1;
-}
+.dot-again { background-color: #F43F5E; box-shadow: 0 0 6px rgba(244, 63, 94, 0.45); }
+.dot-hard  { background-color: #F59E0B; box-shadow: 0 0 6px rgba(245, 158, 11, 0.45); }
+.dot-good  { background-color: #0284C7; box-shadow: 0 0 6px rgba(2, 132, 199, 0.45); }
+.dot-easy  { background-color: #10B981; box-shadow: 0 0 6px rgba(16, 185, 129, 0.45); }
 
 .grade-title {
   font-size: 13px;
   font-weight: 600;
   color: var(--text-primary);
-  line-height: 1.2;
+  line-height: 1;
+}
+
+.grade-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .grade-time {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   color: var(--text-muted);
 }
@@ -2424,7 +2345,8 @@ html[data-theme="chalk"] .ambient-orb-2 {
   background-color: var(--bg-surface-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: 4px;
-  padding: 2px 6px;
+  padding: 1px 5px;
+  line-height: 1.2;
 }
 
 .grade-again:hover { border-color: rgba(244, 63, 94, 0.4); background-color: rgba(244, 63, 94, 0.06); }
@@ -2929,8 +2851,14 @@ html[data-theme="chalk"] .ambient-orb-2 {
   }
 
   .grade-btn {
-    padding: 6px 4px;
+    padding: 6px 8px;
+    min-height: 48px;
+    gap: 4px;
     border-radius: var(--radius-sm);
+  }
+
+  .grade-header {
+    gap: 4px;
   }
 
   .grade-title {
@@ -2938,7 +2866,7 @@ html[data-theme="chalk"] .ambient-orb-2 {
   }
 
   .grade-time {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .desktop-only {

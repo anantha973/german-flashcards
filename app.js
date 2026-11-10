@@ -229,7 +229,6 @@
 
   // Front Elements
   const frontWord = document.getElementById('front-word');
-  const frontIpa = document.getElementById('front-ipa');
   const frontLevel = document.getElementById('front-level');
   const frontType = document.getElementById('front-type');
   const btnAudioFront = document.getElementById('btn-audio-front');
@@ -237,7 +236,6 @@
   // Back Elements
   const cardBackScroll = document.getElementById('card-back-scroll');
   const backWord = document.getElementById('back-word');
-  const backIpa = document.getElementById('back-ipa');
   const backMeaning = document.getElementById('back-meaning');
   const backLevel = document.getElementById('back-level');
   const backType = document.getElementById('back-type');
@@ -993,15 +991,13 @@
       cardBackScroll.scrollTop = 0;
     }
 
-    // Front Side (German word & IPA only — Meaning/Answer is strictly hidden!)
+    // Front Side (German word & tags only)
     frontWord.textContent = item.word;
-    frontIpa.textContent = item.ipa || '';
     frontLevel.textContent = item.level || 'B1';
     frontType.textContent = item.type || 'Verb';
 
-    // Back Side (Revealed lemma, IPA and meaning)
+    // Back Side (Revealed lemma and meaning)
     backWord.textContent = item.word;
-    if (backIpa) backIpa.textContent = item.ipa || '';
     backMeaning.textContent = item.meaning;
     backLevel.textContent = item.level || 'B1';
     backType.textContent = item.type || 'Verb';

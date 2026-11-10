@@ -398,13 +398,6 @@
 
             <div class="card-center">
               <h1 class="lemma-word" id="front-word">aufstehen</h1>
-              <div class="ipa-line" id="front-ipa">[ˈaʊ̯fˌʃteːən]</div>
-              <div class="front-flip-prompt">
-                <svg class="flip-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
-                </svg>
-                <span>Bedeutung &amp; Konjugationen aufdecken</span>
-              </div>
             </div>
 
             <div class="card-bottom-prompt">
@@ -429,15 +422,9 @@
             </div>
 
             <!-- Lemma & Revealed Translation -->
-            <div class="back-lemma-strip">
-              <div class="back-lemma-heading">
-                <h2 class="back-lemma" id="back-word">aufstehen</h2>
-                <span class="back-ipa" id="back-ipa">[ˈaʊ̯fˌʃteːən]</span>
-              </div>
-              <div class="back-meaning-card">
-                <span class="back-meaning-label">Bedeutung</span>
-                <span class="back-meaning" id="back-meaning">to get up, arise (from bed or chair)</span>
-              </div>
+            <div class="back-word-block">
+              <h2 class="back-lemma" id="back-word">aufstehen</h2>
+              <p class="back-translation" id="back-meaning">to get up, arise (from bed or chair)</p>
             </div>
 
             <!-- Full Present Tense Conjugation (All unique forms) -->
@@ -501,11 +488,12 @@
                   <button type="button" class="tense-tab" data-tense="praeteritum" id="tab-tense-praeteritum">Präteritum</button>
                   <button type="button" class="tense-tab" data-tense="perfekt" id="tab-tense-perfekt">Perfekt</button>
                 </div>
-                <button class="example-listen-btn" id="btn-audio-sentence" title="Beispielsatz anhören">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                <button class="audio-button audio-button-sm" id="btn-audio-sentence" title="Beispielsatz anhören" aria-label="Beispielsatz anhören">
+                  <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
                   </svg>
-                  <span>Hören</span>
                 </button>
               </div>
               <div class="example-body">
@@ -528,43 +516,51 @@
       <footer class="action-dock">
         <div class="dock-container">
           <!-- Grade 1: Nochmal -->
-          <button class="grade-btn grade-again" id="btn-grade-1" data-grade="again" title="Nochmal wiederholen (Taste 1)">
-            <span class="grade-dot dot-again"></span>
-            <div class="grade-info">
+          <button class="grade-btn grade-again" id="btn-grade-1" data-grade="again" title="Nochmal (Taste 1)">
+            <div class="grade-header">
+              <span class="grade-dot dot-again"></span>
               <span class="grade-title">Nochmal</span>
-              <span class="grade-time">&lt; 1 Min</span>
             </div>
-            <span class="keycap desktop-only">1</span>
+            <div class="grade-footer">
+              <span class="grade-time">&lt; 1 Min</span>
+              <span class="keycap desktop-only">1</span>
+            </div>
           </button>
 
           <!-- Grade 2: Schwer -->
           <button class="grade-btn grade-hard" id="btn-grade-2" data-grade="hard" title="Schwer (Taste 2)">
-            <span class="grade-dot dot-hard"></span>
-            <div class="grade-info">
+            <div class="grade-header">
+              <span class="grade-dot dot-hard"></span>
               <span class="grade-title">Schwer</span>
-              <span class="grade-time">10 Min</span>
             </div>
-            <span class="keycap desktop-only">2</span>
+            <div class="grade-footer">
+              <span class="grade-time">10 Min</span>
+              <span class="keycap desktop-only">2</span>
+            </div>
           </button>
 
           <!-- Grade 3: Gut -->
           <button class="grade-btn grade-good" id="btn-grade-3" data-grade="good" title="Gut (Taste 3)">
-            <span class="grade-dot dot-good"></span>
-            <div class="grade-info">
+            <div class="grade-header">
+              <span class="grade-dot dot-good"></span>
               <span class="grade-title">Gut</span>
-              <span class="grade-time">1 Tag</span>
             </div>
-            <span class="keycap desktop-only">3</span>
+            <div class="grade-footer">
+              <span class="grade-time">1 Tag</span>
+              <span class="keycap desktop-only">3</span>
+            </div>
           </button>
 
           <!-- Grade 4: Leicht -->
           <button class="grade-btn grade-easy" id="btn-grade-4" data-grade="easy" title="Leicht (Taste 4)">
-            <span class="grade-dot dot-easy"></span>
-            <div class="grade-info">
+            <div class="grade-header">
+              <span class="grade-dot dot-easy"></span>
               <span class="grade-title">Leicht</span>
-              <span class="grade-time">4 Tage</span>
             </div>
-            <span class="keycap desktop-only">4</span>
+            <div class="grade-footer">
+              <span class="grade-time">4 Tage</span>
+              <span class="keycap desktop-only">4</span>
+            </div>
           </button>
         </div>
       </footer>
