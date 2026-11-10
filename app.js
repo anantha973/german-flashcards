@@ -38,46 +38,135 @@
   let sessionReviewedCount = 0;
   let sessionCorrectCount = 0;
 
-  // Pre-configured Decks Definition
-  const DECKS_CONFIG = [
+  // Hierarchical Folder & Deck Architecture
+  const FOLDERS_CONFIG = [
     {
-      id: 'b1-all',
-      title: 'Alle Decks (50 Verben)',
-      desc: 'Vollständiger Wortschatz aller unregelmäßigen und trennbaren B1-Stammformen mit Präsens, Präteritum und Perfekt.',
-      tag: 'Alle Decks',
-      level: 'B1 / B2',
-      filter: (w) => true
+      id: 'folder-nicos-weg',
+      title: 'Nicos Weg (Deutsche Welle)',
+      badge: 'DW Lehrwerk',
+      icon: 'dw',
+      desc: 'Begleitender Wortschatz zur DW-Telenovela – Lektionen, Dialoge und Alltagssituationen von A1 bis B1.',
+      decks: [
+        {
+          id: 'nw-lek-1-10',
+          title: 'Lektionen 1–10: Ankommen & Alltag',
+          desc: 'Basisverben für Begrüßung, Zimmer suchen, Herkunft und Tagesablauf: aufstehen, ankommen, anfangen, heißen, kommen, sein, trinken, schlafen.',
+          tag: 'DW A1',
+          level: 'A1',
+          filter: (w) => ['aufstehen', 'ankommen', 'anfangen', 'heißen', 'kommen', 'sein', 'trinken', 'schlafen', 'gehen', 'sehen', 'finden', 'bleiben'].includes(w.word) || (w.level && w.level.includes('A1') && !w.type?.includes('untrennbar'))
+        },
+        {
+          id: 'nw-lek-11-20',
+          title: 'Lektionen 11–20: Stadt, Freizeit & Einkaufen',
+          desc: 'Verben für Verabredungen, Einkaufen, Verkehr und Orientierung: einladen, treffen, finden, fahren, nehmen, sprechen, lesen, schwimmen.',
+          tag: 'DW A1/A2',
+          level: 'A1 / A2',
+          filter: (w) => ['einladen', 'treffen', 'finden', 'fahren', 'kaufen', 'nehmen', 'sprechen', 'lesen', 'schwimmen', 'fallen', 'tragen'].includes(w.word) || (w.level && (w.level === 'A2' || w.level === 'A1/A2') && w.hilfsverb !== 'sein')
+        },
+        {
+          id: 'nw-lek-21-30',
+          title: 'Lektionen 21–30: Arbeit, Beruf & Termine',
+          desc: 'Wortschatz für Vorstellungsgespräche, Büroarbeit, Krankmeldung, Verträge und Behördengänge.',
+          tag: 'DW A2/B1',
+          level: 'A2 / B1',
+          filter: (w) => ['anrufen', 'anziehen', 'denken', 'bringen', 'entscheiden', 'erkennen', 'helfen', 'wissen', 'senden', 'verstehen'].includes(w.word) || (w.level && (w.level.includes('B1') || w.level === 'A2/B1'))
+        }
+      ]
     },
     {
-      id: 'sein-verbs',
-      title: "Perfekt mit 'sein'",
-      desc: "Verben der Orts- und Zustandsveränderung, die zwingend das Hilfsverb 'sein' verlangen.",
-      tag: 'Grammatik-Fokus',
-      level: 'A2 / B1',
-      filter: (w) => w.hilfsverb === 'sein'
+      id: 'folder-goethe-b1',
+      title: 'B1 Goethe-Zertifikat Vorbereitung',
+      badge: 'Prüfungswortschatz',
+      icon: 'goethe',
+      desc: 'Zertifikatsrelevante Kernstammformen, unregelmäßige Verben und morphologische Schwerpunkte.',
+      decks: [
+        {
+          id: 'b1-all',
+          title: 'B1 Stammformen (Alle 50 Verben)',
+          desc: 'Vollständiger Wortschatz aller unregelmäßigen und trennbaren B1-Stammformen mit Präsens, Präteritum und Perfekt.',
+          tag: 'Gesamtsammlung',
+          level: 'B1 / B2',
+          filter: (w) => true
+        },
+        {
+          id: 'sein-verbs',
+          title: "Perfekt mit 'sein'",
+          desc: "Verben der Orts- und Zustandsveränderung, die zwingend das Hilfsverb 'sein' verlangen.",
+          tag: 'Grammatik-Fokus',
+          level: 'A2 / B1',
+          filter: (w) => w.hilfsverb === 'sein' || (w.perfekt && w.perfekt.startsWith('ist'))
+        },
+        {
+          id: 'trennbar',
+          title: 'Trennbare Verben',
+          desc: 'Präfixe wandern im Hauptsatz ans Satzende: aufstehen, anrufen, anfangen, einladen, einschlafen.',
+          tag: 'Morphologie',
+          level: 'A1 – B1',
+          filter: (w) => w.type && w.type.toLowerCase().includes('trennbar')
+        },
+        {
+          id: 'vokalwechsel',
+          title: 'Starke Verben mit Vokalwechsel',
+          desc: 'Ablautreihen und Vokalwechsel im Stamm (e → i/ie, a → ä: sprechen, brechen, helfen, geben, laufen).',
+          tag: 'Ablautreihen',
+          level: 'A2 / B1',
+          filter: (w) => (w.praesens && (w.praesens.includes('ä') || w.praesens.includes('i'))) || (w.type && w.type.includes('unregelmäßig') && w.hilfsverb !== 'sein')
+        }
+      ]
     },
     {
-      id: 'trennbar',
-      title: 'Trennbare Verben',
-      desc: 'Präfixe wandern im Hauptsatz ans Satzende: aufstehen, anrufen, einladen, einschlafen.',
-      tag: 'Morphologie',
-      level: 'A1 – B1',
-      filter: (w) => w.type && w.type.toLowerCase().includes('trennbar')
-    },
-    {
-      id: 'a1-a2',
-      title: 'A1/A2 Grundwortschatz',
-      desc: 'Elementare Basisverben des Alltags für den sicheren Einstieg in die Konjugation.',
-      tag: 'Fundament',
-      level: 'A1 / A2',
-      filter: (w) => w.level && (w.level.includes('A1') || w.level === 'A2')
+      id: 'folder-grammatik-spezial',
+      title: 'Grammatik & Spezialgruppen',
+      badge: 'Spezialthemen',
+      icon: 'grammar',
+      desc: 'Gemischte Verben, feste Konstruktionen und untrennbare Vorsilben (be-, ent-, er-, ver-, ge-).',
+      decks: [
+        {
+          id: 'gemischt',
+          title: 'Gemischte & unregelmäßige Verben',
+          desc: 'Verben mit Vokalwechsel wie starke Verben, aber dentalem Suffix (-te) im Präteritum: denken, bringen, wissen, kennen, nennen, tun.',
+          tag: 'Mischverben',
+          level: 'A2 / B1',
+          filter: (w) => (w.type && w.type.includes('gemischt')) || ['wissen', 'kennen', 'nennen', 'denken', 'bringen', 'tun'].includes(w.word)
+        },
+        {
+          id: 'untrennbar',
+          title: 'Untrennbare Verben (be-, ent-, er-, ver-)',
+          desc: "Feste Präfixe ohne 'ge-' im Partizip II: entscheiden, erkennen, geschehen, gewinnen, vergessen, verstehen.",
+          tag: 'Präfixe',
+          level: 'B1',
+          filter: (w) => (w.type && w.type.includes('untrennbar')) || ['entscheiden', 'erkennen', 'geschehen', 'gewinnen', 'vergessen', 'verstehen'].includes(w.word)
+        }
+      ]
     }
   ];
+
+  // Flat lookup map for O(1) deck retrieval
+  const ALL_DECKS_MAP = {};
+  FOLDERS_CONFIG.forEach(folder => {
+    folder.decks.forEach(deck => {
+      ALL_DECKS_MAP[deck.id] = { ...deck, folderTitle: folder.title, folderBadge: folder.badge };
+    });
+  });
+
+  // Backward compatibility alias for homepage default selection
+  const DECKS_CONFIG = [
+    ALL_DECKS_MAP['b1-all'],
+    ALL_DECKS_MAP['nw-lek-1-10'],
+    ALL_DECKS_MAP['sein-verbs'],
+    ALL_DECKS_MAP['trennbar']
+  ].filter(Boolean);
 
   // ================= DOM Elements =================
   // Views
   const viewHome = document.getElementById('view-home');
+  const viewDecks = document.getElementById('view-decks');
   const viewStudy = document.getElementById('view-study');
+
+  // Decks & Folders Library View Elements
+  const libraryFoldersContainer = document.getElementById('library-folders-container');
+  const btnLibraryBackHome = document.getElementById('btn-library-back-home');
+  const libraryTotalPill = document.getElementById('library-total-pill');
 
   // Sidebar
   const sidebarDrawer = document.getElementById('sidebar-drawer');
@@ -93,6 +182,7 @@
   // Header
   const headerBrandGroup = document.getElementById('header-brand-group');
   const btnBackHome = document.getElementById('btn-back-home');
+  const btnBackHomeText = document.getElementById('btn-back-home-text');
   const streakCounter = document.getElementById('streak-counter');
   const btnQuickTheme = document.getElementById('btn-quick-theme');
 
@@ -420,26 +510,67 @@
   }
 
   // ================= View Routing with Fluid Sliding Transitions =================
+  let currentActiveView = 'home';
+  let previousView = 'home';
+
   function switchView(viewName, deckId = null) {
+    if (viewName !== currentActiveView) {
+      previousView = currentActiveView;
+      currentActiveView = viewName;
+    }
+
+    if (modalSessionComplete) modalSessionComplete.classList.add('hidden');
+
     if (viewName === 'study') {
       viewHome.classList.add('hidden');
+      if (viewDecks) viewDecks.classList.add('hidden');
       viewStudy.classList.remove('hidden');
       viewStudy.classList.remove('view-slide-in-left');
       viewStudy.classList.add('view-slide-in-right');
+
       btnBackHome.classList.remove('hidden');
+      if (btnBackHomeText) {
+        btnBackHomeText.textContent = (previousView === 'decks') ? 'Alle Decks' : 'Übersicht';
+      }
       headerBrandGroup.classList.add('hidden');
 
       if (deckId) {
         startDeckStudy(deckId);
       }
+    } else if (viewName === 'decks') {
+      viewHome.classList.add('hidden');
+      viewStudy.classList.add('hidden');
+      if (viewDecks) {
+        viewDecks.classList.remove('hidden');
+        viewDecks.classList.remove('view-slide-in-left');
+        viewDecks.classList.add('view-slide-in-right');
+      }
+
+      btnBackHome.classList.remove('hidden');
+      if (btnBackHomeText) {
+        btnBackHomeText.textContent = 'Übersicht';
+      }
+      headerBrandGroup.classList.remove('hidden');
+
+      // Update sidebar nav active classes
+      if (navItemHome) navItemHome.classList.remove('active');
+      if (navItemDecks) navItemDecks.classList.add('active');
+
+      renderDecksLibraryView();
     } else {
+      // Default: 'home'
+      viewStudy.classList.add('hidden');
+      if (viewDecks) viewDecks.classList.add('hidden');
       viewHome.classList.remove('hidden');
       viewHome.classList.remove('view-slide-in-right');
       viewHome.classList.add('view-slide-in-left');
-      viewStudy.classList.add('hidden');
+
       btnBackHome.classList.add('hidden');
       headerBrandGroup.classList.remove('hidden');
-      modalSessionComplete.classList.add('hidden');
+
+      // Update sidebar nav active classes
+      if (navItemHome) navItemHome.classList.add('active');
+      if (navItemDecks) navItemDecks.classList.remove('active');
 
       updateDashboardStats();
     }
@@ -546,12 +677,20 @@
     }
   }
 
-  // Decks Grid Renderer
+  // Decks Grid Renderer (Homepage)
   function renderDecksGrid() {
     decksGrid.innerHTML = '';
     sidebarDeckShortcuts.innerHTML = '';
 
-    DECKS_CONFIG.forEach(cfg => {
+    // Homepage featured decks (4 primary decks)
+    const featuredDecks = [
+      ALL_DECKS_MAP['b1-all'] || DECKS_CONFIG[0],
+      ALL_DECKS_MAP['nw-lek-1-10'] || DECKS_CONFIG[1],
+      ALL_DECKS_MAP['sein-verbs'] || DECKS_CONFIG[2],
+      ALL_DECKS_MAP['trennbar'] || DECKS_CONFIG[3]
+    ].filter(Boolean);
+
+    featuredDecks.forEach(cfg => {
       const filtered = allWords.filter(cfg.filter);
       const deckCount = filtered.length;
       const reviewed = (deckProgress[cfg.id] && deckProgress[cfg.id].reviewed) || 0;
@@ -578,7 +717,6 @@
         </div>
       `;
 
-      // Entire card tile is clickable
       card.addEventListener('click', () => {
         switchView('study', cfg.id);
       });
@@ -590,20 +728,169 @@
       });
 
       decksGrid.appendChild(card);
-
-      // Sidebar Shortcut Item
-      const shortcutBtn = document.createElement('button');
-      shortcutBtn.className = 'sidebar-deck-item';
-      shortcutBtn.innerHTML = `
-        <span>${cfg.title}</span>
-        <span class="deck-pill-count">${deckCount}</span>
-      `;
-      shortcutBtn.addEventListener('click', () => {
-        closeSidebar();
-        switchView('study', cfg.id);
-      });
-      sidebarDeckShortcuts.appendChild(shortcutBtn);
     });
+
+    // Special 5th Tile: Browse All Decks & Folders
+    const browseAllCard = document.createElement('div');
+    browseAllCard.className = 'deck-card-browse-more';
+    browseAllCard.setAttribute('role', 'button');
+    browseAllCard.setAttribute('tabindex', '0');
+    browseAllCard.setAttribute('aria-label', 'Alle Decks und Ordner anzeigen');
+    browseAllCard.innerHTML = `
+      <div class="browse-more-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          <line x1="12" y1="11" x2="12" y2="17"></line>
+          <line x1="9" y1="14" x2="15" y2="14"></line>
+        </svg>
+      </div>
+      <h3 class="browse-more-title">Alle Ordner &amp; Decks</h3>
+      <p class="browse-more-desc">Nicos Weg, Goethe B1 &amp; Grammatik (3 Ordner, 9 Decks)</p>
+    `;
+    browseAllCard.addEventListener('click', () => {
+      switchView('decks');
+    });
+    browseAllCard.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        switchView('decks');
+      }
+    });
+    decksGrid.appendChild(browseAllCard);
+
+    // Sidebar Shortcuts: Organized by Folders
+    FOLDERS_CONFIG.forEach(folder => {
+      const folderHeader = document.createElement('div');
+      folderHeader.style.cssText = 'padding: 8px 12px 4px; font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;';
+      folderHeader.textContent = folder.title;
+      sidebarDeckShortcuts.appendChild(folderHeader);
+
+      folder.decks.forEach(deck => {
+        const filtered = allWords.filter(deck.filter);
+        const deckCount = filtered.length;
+
+        const shortcutBtn = document.createElement('button');
+        shortcutBtn.className = 'sidebar-deck-item';
+        shortcutBtn.innerHTML = `
+          <span>${deck.title}</span>
+          <span class="deck-pill-count">${deckCount}</span>
+        `;
+        shortcutBtn.addEventListener('click', () => {
+          closeSidebar();
+          switchView('study', deck.id);
+        });
+        sidebarDeckShortcuts.appendChild(shortcutBtn);
+      });
+    });
+  }
+
+  // ================= Dedicated Decks & Folders Library View Renderer =================
+  function renderDecksLibraryView() {
+    if (!libraryFoldersContainer) return;
+    libraryFoldersContainer.innerHTML = '';
+
+    let totalFolders = FOLDERS_CONFIG.length;
+    let totalDecks = 0;
+    let totalCards = allWords.length;
+
+    FOLDERS_CONFIG.forEach(folder => {
+      totalDecks += folder.decks.length;
+
+      const folderCard = document.createElement('section');
+      folderCard.className = 'folder-card';
+      folderCard.setAttribute('aria-label', `Ordner: ${folder.title}`);
+
+      // Folder icon selection
+      let iconSvg = '';
+      if (folder.icon === 'dw') {
+        iconSvg = `
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        `;
+      } else if (folder.icon === 'goethe') {
+        iconSvg = `
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+        `;
+      } else {
+        iconSvg = `
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+        `;
+      }
+
+      // Folder Header
+      const headerEl = document.createElement('div');
+      headerEl.className = 'folder-header';
+      headerEl.innerHTML = `
+        <div class="folder-header-left">
+          <div class="folder-icon-box" aria-hidden="true">${iconSvg}</div>
+          <div class="folder-info">
+            <div class="folder-title-row">
+              <h2 class="folder-title">${folder.title}</h2>
+              <span class="folder-badge">${folder.badge}</span>
+            </div>
+            <p class="folder-desc">${folder.desc}</p>
+          </div>
+        </div>
+        <div class="folder-meta-pill">${folder.decks.length} Decks</div>
+      `;
+      folderCard.appendChild(headerEl);
+
+      // Child Decks Grid
+      const decksGridEl = document.createElement('div');
+      decksGridEl.className = 'folder-decks-grid';
+
+      folder.decks.forEach(deck => {
+        const filtered = allWords.filter(deck.filter);
+        const deckCount = filtered.length;
+        const reviewed = (deckProgress[deck.id] && deckProgress[deck.id].reviewed) || 0;
+        const masteryPct = deckCount > 0 ? Math.round((reviewed / deckCount) * 100) : 0;
+
+        const deckCard = document.createElement('div');
+        deckCard.className = 'deck-card';
+        deckCard.setAttribute('role', 'button');
+        deckCard.setAttribute('tabindex', '0');
+        deckCard.setAttribute('aria-label', `${deck.title} starten (${deckCount} Wörter)`);
+        deckCard.innerHTML = `
+          <div class="deck-card-top">
+            <div class="deck-tags-row">
+              <span class="chip chip-secondary">${deck.level}</span>
+              <span class="deck-count-pill">${deckCount} Wörter</span>
+            </div>
+            <h3 class="deck-title">${deck.title}</h3>
+            <p class="deck-desc">${deck.desc}</p>
+          </div>
+          <div class="deck-card-bottom">
+            <span class="deck-mastery-text">${masteryPct}% gelernt</span>
+            <span class="deck-learn-btn">Lernen →</span>
+          </div>
+        `;
+
+        deckCard.addEventListener('click', () => {
+          switchView('study', deck.id);
+        });
+        deckCard.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            switchView('study', deck.id);
+          }
+        });
+
+        decksGridEl.appendChild(deckCard);
+      });
+
+      folderCard.appendChild(decksGridEl);
+      libraryFoldersContainer.appendChild(folderCard);
+    });
+
+    if (libraryTotalPill) {
+      libraryTotalPill.textContent = `${totalFolders} Ordner · ${totalDecks} Decks · ${totalCards} Wörter`;
+    }
   }
 
   // Monthly Calendar Grid Renderer (Scroll-down)
@@ -663,8 +950,11 @@
   // ================= Study Mode Engine =================
   function startDeckStudy(deckId) {
     currentDeckId = deckId;
-    const config = DECKS_CONFIG.find(c => c.id === deckId) || DECKS_CONFIG[0];
+    const config = ALL_DECKS_MAP[deckId] || DECKS_CONFIG.find(c => c.id === deckId) || DECKS_CONFIG[0];
     currentDeck = allWords.filter(config.filter);
+    if (!currentDeck || currentDeck.length === 0) {
+      currentDeck = allWords;
+    }
 
     deckIndicator.textContent = config.title;
     currentIndex = 0;
@@ -821,7 +1111,7 @@
 
   // ================= Session Complete Summary =================
   function showSessionCompleteSummary() {
-    const config = DECKS_CONFIG.find(c => c.id === currentDeckId) || DECKS_CONFIG[0];
+    const config = ALL_DECKS_MAP[currentDeckId] || DECKS_CONFIG.find(c => c.id === currentDeckId) || DECKS_CONFIG[0];
     summaryDeckTitle.textContent = config.title;
     summaryCount.textContent = sessionReviewedCount;
 
@@ -847,8 +1137,7 @@
 
   navItemDecks.addEventListener('click', () => {
     closeSidebar();
-    switchView('home');
-    document.getElementById('section-decks').scrollIntoView({ behavior: 'smooth' });
+    switchView('decks');
   });
 
   navItemCalendar.addEventListener('click', () => {
@@ -859,8 +1148,25 @@
 
   // Back to Home Button in Header
   btnBackHome.addEventListener('click', () => {
-    switchView('home');
+    if (currentActiveView === 'study') {
+      if (previousView === 'decks') {
+        switchView('decks');
+      } else {
+        switchView('home');
+      }
+    } else if (currentActiveView === 'decks') {
+      switchView('home');
+    } else {
+      switchView('home');
+    }
   });
+
+  // Library View Back Button
+  if (btnLibraryBackHome) {
+    btnLibraryBackHome.addEventListener('click', () => {
+      switchView('home');
+    });
+  }
 
   // Calendar Month Nav
   btnCalPrev.addEventListener('click', () => {
@@ -881,7 +1187,7 @@
 
   btnSummaryHome.addEventListener('click', () => {
     modalSessionComplete.classList.add('hidden');
-    switchView('home');
+    switchView('decks');
   });
 
   // Card Flip on Click (excluding buttons or if swiped)
@@ -926,10 +1232,10 @@
     });
   }
 
-  // All Decks Header Quick Start Button
+  // All Decks Header Action: Open Library View
   if (btnLearnAllDecks) {
     btnLearnAllDecks.addEventListener('click', () => {
-      switchView('study', 'b1-all');
+      switchView('decks');
     });
   }
 

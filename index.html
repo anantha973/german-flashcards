@@ -118,7 +118,7 @@
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
-          <span>Alle Decks</span>
+          <span id="btn-back-home-text">Zurück</span>
         </button>
       </div>
 
@@ -184,13 +184,13 @@
         <div class="section-header-split">
           <div class="section-header-col">
             <h2 class="section-title">Verfügbare Decks</h2>
-            <span class="section-subtext">Wähle ein Deck oder starte das Gesamttraining aller 50 Verben</span>
+            <span class="section-subtext">Wähle ein Deck zum Schnellstart oder öffne alle Ordner</span>
           </div>
-          <button class="all-decks-action-btn" id="btn-learn-all-decks" title="Alle 50 Verben der B1-Sammlung lernen">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          <button class="all-decks-action-btn" id="btn-learn-all-decks" title="Zur vollständigen Deck- &amp; Ordnerbibliothek">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
             </svg>
-            <span>Alle Decks lernen (50)</span>
+            <span>Alle Decks &amp; Ordner</span>
           </button>
         </div>
 
@@ -326,7 +326,39 @@
   </div>
 
   <!-- ======================================================== -->
-  <!-- VIEW 2: STUDY MODE (NORDIC FROST FLASHCARD RUNNER)       -->
+  <!-- VIEW 2: DEDICATED DECKS & FOLDERS LIBRARY                -->
+  <!-- ======================================================== -->
+  <div class="view-container view-animated hidden" id="view-decks">
+    <div class="decks-library-stage">
+      
+      <!-- Top Navigation & Statistics Bar -->
+      <div class="library-nav-bar">
+        <button class="library-back-btn" id="btn-library-back-home" title="Zurück zur Startseite">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span>Zurück zur Übersicht</span>
+        </button>
+        <div class="library-stats-pill" id="library-total-pill">
+          3 Ordner · 9 Decks · 50 Wörter
+        </div>
+      </div>
+
+      <!-- Library Header Banner -->
+      <div class="library-header">
+        <h1 class="library-title">Alle Decks &amp; Ordner</h1>
+        <p class="library-subtitle">Strukturierte Lernpfade nach Lehrwerk und Grammatik-Schwerpunkt. Klicke auf ein beliebiges Deck, um das Training zu starten.</p>
+      </div>
+
+      <!-- Library Folders Container -->
+      <div class="library-folders-container" id="library-folders-container">
+        <!-- Rendered dynamically by JS with folder cards and child decks -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- VIEW 3: STUDY MODE (NORDIC FROST FLASHCARD RUNNER)       -->
   <!-- ======================================================== -->
   <div class="view-container view-animated hidden" id="view-study">
     

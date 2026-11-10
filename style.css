@@ -1060,7 +1060,7 @@ html[data-theme="chalk"] .ambient-orb-2 {
 }
 
 .all-decks-action-btn svg {
-  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .decks-grid {
@@ -1176,6 +1176,242 @@ html[data-theme="chalk"] .ambient-orb-2 {
   color: #FFFFFF;
   border-color: var(--accent-terracotta);
   box-shadow: 0 4px 12px rgba(224, 86, 56, 0.24);
+}
+
+/* ======================================================== */
+/* DECKS & FOLDERS LIBRARY VIEW                             */
+/* ======================================================== */
+.decks-library-stage {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.library-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.library-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 8px 16px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.library-back-btn:hover {
+  color: var(--accent-terracotta);
+  border-color: var(--accent-terracotta);
+  background-color: var(--bg-surface-raised);
+  transform: translateX(-2px);
+}
+
+.library-stats-pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: var(--bg-surface-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+}
+
+.library-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.library-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.library-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.library-folders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.folder-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-card);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.folder-card:hover {
+  border-color: rgba(224, 86, 56, 0.3);
+}
+
+.folder-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.folder-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.folder-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: var(--bg-surface-subtle);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-terracotta);
+  flex-shrink: 0;
+}
+
+.folder-icon-box svg {
+  stroke: currentColor;
+}
+
+.folder-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.folder-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.folder-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.folder-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-sage-bg);
+  color: var(--accent-sage);
+}
+
+.folder-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.folder-meta-pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: var(--bg-surface-subtle);
+  border-radius: var(--radius-full);
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+.folder-decks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* Homepage Browse All Decks Special Tile */
+.deck-card-browse-more {
+  border: 1px dashed var(--accent-terracotta);
+  background: var(--bg-surface-raised);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 28px 20px;
+  gap: 12px;
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.deck-card-browse-more:hover {
+  background: var(--bg-surface-subtle);
+  border-color: var(--accent-terracotta);
+  border-style: solid;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -8px rgba(224, 86, 56, 0.16);
+}
+
+.browse-more-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(224, 86, 56, 0.1);
+  color: var(--accent-terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.browse-more-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.browse-more-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 /* History / Monthly Calendar Section (Scroll down) */
@@ -2402,6 +2638,21 @@ html[data-theme="chalk"] .ambient-orb-2 {
   .decks-grid {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  .folder-decks-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .decks-library-stage {
+    padding: 16px 14px 40px;
+    gap: 20px;
+  }
+
+  .folder-card {
+    padding: 18px 14px;
+    border-radius: 16px;
   }
 
   .stats-tiles-grid {
