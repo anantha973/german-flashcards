@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="porcelain">
+<html lang="de" data-theme="porcelain" data-font="inter">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Wortschatz Studio · Nordic Frost</title>
+  <title>Wortschatz Studio · B1 Philologie</title>
   
   <!-- Apple & PWA Meta -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,10 +14,10 @@
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="manifest" href="manifest.json">
 
-  <!-- Typography: Playfair Display (Serif) & Plus Jakarta Sans (Modern Neutral) -->
+  <!-- Typography: High-Legibility Screen & Reading Fonts (Inter & Lexend) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -94,6 +94,26 @@
           <span class="theme-swatch theme-swatch-chalk"></span>
           <span class="theme-label">Reines Kreideweiß</span>
           <span class="theme-check"></span>
+        </button>
+      </div>
+
+      <!-- High-Legibility Font Selector Section in Sidebar -->
+      <div class="sidebar-section-title">Schriftart (Lesbarkeit)</div>
+      <div class="font-selector-group">
+        <button class="font-option-btn active" data-font-set="inter" title="Inter: Screen-Sans mit höchster Lesbarkeit & klaren Konturen">
+          <span class="font-preview-badge">Inter</span>
+          <span class="theme-label">Inter (Standard)</span>
+          <span class="font-check">✓</span>
+        </button>
+        <button class="font-option-btn" data-font-set="lexend" title="Lexend: Speziell entwickelt zur Reduzierung von Leseanstrengung">
+          <span class="font-preview-badge" style="font-family: 'Lexend', sans-serif;">Lexend</span>
+          <span class="theme-label">Lexend (Lernfluss)</span>
+          <span class="font-check"></span>
+        </button>
+        <button class="font-option-btn" data-font-set="system" title="System Native: SF Pro / Segoe UI">
+          <span class="font-preview-badge" style="font-family: -apple-system, sans-serif;">System</span>
+          <span class="theme-label">System Native</span>
+          <span class="font-check"></span>
         </button>
       </div>
 

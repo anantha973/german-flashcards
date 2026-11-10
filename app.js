@@ -89,6 +89,7 @@
   const navItemCalendar = document.getElementById('nav-item-calendar');
   const sidebarDeckShortcuts = document.getElementById('sidebar-deck-shortcuts');
   const themeOptionBtns = document.querySelectorAll('.theme-option-btn');
+  const fontOptionBtns = document.querySelectorAll('.font-option-btn');
 
   // Header
   const headerBrandGroup = document.getElementById('header-brand-group');
@@ -368,6 +369,33 @@
     const current = document.documentElement.getAttribute('data-theme') || 'porcelain';
     const nextIdx = (THEMES.indexOf(current) + 1) % THEMES.length;
     setTheme(THEMES[nextIdx]);
+  }
+
+  // ================= Typography & Font Management =================
+  const FONT_KEY = 'wortschatz_font_v2';
+  const FONTS = ['inter', 'lexend', 'system'];
+
+  function initFont() {
+    const saved = localStorage.getItem(FONT_KEY) || 'inter';
+    setFont(saved);
+  }
+
+  function setFont(fontName) {
+    if (!FONTS.includes(fontName)) fontName = 'inter';
+    document.documentElement.setAttribute('data-font', fontName);
+    localStorage.setItem(FONT_KEY, fontName);
+
+    if (fontOptionBtns && fontOptionBtns.length > 0) {
+      fontOptionBtns.forEach(btn => {
+        const btnFont = btn.getAttribute('data-font-set');
+        const isMatch = btnFont === fontName;
+        btn.classList.toggle('active', isMatch);
+        const checkSpan = btn.querySelector('.font-check');
+        if (checkSpan) {
+          checkSpan.textContent = isMatch ? '✓' : '';
+        }
+      });
+    }
   }
 
   // ================= View Routing with Fluid Sliding Transitions =================
@@ -886,6 +914,18 @@
     });
   }
 
+  // Sidebar Font Option Buttons
+  if (fontOptionBtns && fontOptionBtns.length > 0) {
+    fontOptionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedFont = btn.getAttribute('data-font-set');
+        if (selectedFont) {
+          setFont(selectedFont);
+        }
+      });
+    });
+  }
+
   // Keyboard Shortcuts (Space, 1-4, A, Arrow Keys, Escape)
   document.addEventListener('keydown', (e) => {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
@@ -950,6 +990,7 @@
   // Initial Data Fetch & Load
   async function initApp() {
     initTheme();
+    initFont();
     try {
       const res = await fetch('data/vocabulary.json');
       if (!res.ok) throw new Error('Network error');
