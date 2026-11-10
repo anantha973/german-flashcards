@@ -13,7 +13,7 @@
     "perfekt": "ist aufgestanden",
     "exampleDe": "Er steht jeden Morgen pünktlich um 7 Uhr auf.",
     "exampleEn": "He gets up punctually at 7 o'clock every morning.",
-    "note": "Orts- und Zustandswechsel → Perfekt immer mit »sein«."
+    "note": "Orts- und Zustandswechsel → Perfekt immer mit 'sein'."
   },
   {
     "id": "v02",
@@ -45,7 +45,7 @@
     "perfekt": "ist angekommen",
     "exampleDe": "Der Zug ist mit zehn Minuten Verspätung angekommen.",
     "exampleEn": "The train arrived with a ten-minute delay.",
-    "note": "Bewegungsverb mit Ziel → Perfekt mit »sein«."
+    "note": "Bewegungsverb mit Ziel → Perfekt mit 'sein'."
   },
   {
     "id": "v04",
@@ -93,7 +93,7 @@
     "perfekt": "ist geblieben",
     "exampleDe": "Am Wochenende bin ich wegen des Regens zu Hause geblieben.",
     "exampleEn": "At the weekend I stayed at home because of the rain.",
-    "note": "Zustandsverharren → eine der seltenen Ausnahmen: Perfekt mit »sein«."
+    "note": "Zustandsverharren → eine der seltenen Ausnahmen: Perfekt mit 'sein'."
   },
   {
     "id": "v07",
@@ -157,7 +157,7 @@
     "perfekt": "ist eingeschlafen",
     "exampleDe": "Das Kind ist gestern sehr schnell eingeschlafen.",
     "exampleEn": "The child fell asleep very quickly yesterday.",
-    "note": "Zustandswechsel (vom Wachen zum Schlafen) → Perfekt mit »sein«."
+    "note": "Zustandswechsel (vom Wachen zum Schlafen) → Perfekt mit 'sein'."
   },
   {
     "id": "v11",
@@ -173,7 +173,7 @@
     "perfekt": "hat entschieden",
     "exampleDe": "Sie hat sich für ein Studium in Magdeburg entschieden.",
     "exampleEn": "She decided to study in Magdeburg.",
-    "note": "Untrennbares Präfix »ent-«. Reflexiv: sich entscheiden für + Akk."
+    "note": "Untrennbares Präfix 'ent-'. Reflexiv: sich entscheiden für + Akk."
   },
   {
     "id": "v12",
@@ -189,7 +189,7 @@
     "perfekt": "hat erkannt",
     "exampleDe": "Ich habe ihn auf dem alten Foto sofort erkannt.",
     "exampleEn": "I recognized him immediately in the old photo.",
-    "note": "Untrennbar mit Präfix »er-«. Gemischte Konjugation (e → a)."
+    "note": "Untrennbar mit Präfix 'er-'. Gemischte Konjugation (e → a)."
   },
   {
     "id": "v13",
@@ -205,7 +205,7 @@
     "perfekt": "ist gefahren",
     "exampleDe": "Er ist am Wochenende mit der Bahn nach Berlin gefahren.",
     "exampleEn": "He travelled to Berlin by train at the weekend.",
-    "note": "Ortsveränderung → »sein«. (Ausnahme transitiv: Er hat das Auto gefahren)."
+    "note": "Ortsveränderung → 'sein'. (Ausnahme transitiv: Er hat das Auto gefahren)."
   },
   {
     "id": "v14",
@@ -221,7 +221,7 @@
     "perfekt": "ist gefallen",
     "exampleDe": "Die Tasse ist vom Tisch auf den Boden gefallen.",
     "exampleEn": "The cup fell from the table onto the floor.",
-    "note": "Bewegung nach unten → Perfekt mit »sein«. Nicht verwechseln mit »gefallen« (to please)."
+    "note": "Bewegung nach unten → Perfekt mit 'sein'. Nicht verwechseln mit 'gefallen' (to please)."
   },
   {
     "id": "v15",
@@ -253,7 +253,7 @@
     "perfekt": "ist geflogen",
     "exampleDe": "Wir sind gestern früh nach Frankfurt geflogen.",
     "exampleEn": "We flew to Frankfurt early yesterday morning.",
-    "note": "Ortsveränderung → Perfekt mit »sein«."
+    "note": "Ortsveränderung → Perfekt mit 'sein'."
   },
   {
     "id": "v17",
@@ -269,7 +269,7 @@
     "perfekt": "hat gegeben",
     "exampleDe": "Können Sie mir bitte Ihre Telefonnummer geben?",
     "exampleEn": "Could you please give me your telephone number?",
-    "note": "Vokalwechsel e → i (du gibst, er gibt). Unpersönlich: »es gibt« + Akk."
+    "note": "Vokalwechsel e → i (du gibst, er gibt). Unpersönlich: 'es gibt' + Akk."
   },
   {
     "id": "v18",
@@ -285,7 +285,7 @@
     "perfekt": "ist gegangen",
     "exampleDe": "Sie ist nach der Vorlesung direkt in die Bibliothek gegangen.",
     "exampleEn": "She went directly to the library after the lecture.",
-    "note": "Bewegungsverb → Perfekt mit »sein«. Präteritum: ging."
+    "note": "Bewegungsverb → Perfekt mit 'sein'. Präteritum: ging."
   },
   {
     "id": "v19",
@@ -301,7 +301,7 @@
     "perfekt": "ist geschehen",
     "exampleDe": "Was ist gestern Abend am Hauptbahnhof geschehen?",
     "exampleEn": "What happened at the main station yesterday evening?",
-    "note": "Nur in der 3. Person gebräuchlich. Perfekt zwingend mit »sein«."
+    "note": "Nur in der 3. Person gebräuchlich. Perfekt zwingend mit 'sein'."
   },
   {
     "id": "v20",
@@ -397,7 +397,7 @@
     "perfekt": "ist gekommen",
     "exampleDe": "Wann bist du gestern nach Hause gekommen?",
     "exampleEn": "When did you get home yesterday?",
-    "note": "Bewegungsverb → Perfekt mit »sein«."
+    "note": "Bewegungsverb → Perfekt mit 'sein'."
   },
   {
     "id": "v26",
@@ -429,7 +429,7 @@
     "perfekt": "ist gelaufen",
     "exampleDe": "Er ist jeden Morgen fünf Kilometer im Park gelaufen.",
     "exampleEn": "He ran five kilometres in the park every morning.",
-    "note": "Vokalwechsel au → äu (er läuft). Perfekt mit »sein«."
+    "note": "Vokalwechsel au → äu (er läuft). Perfekt mit 'sein'."
   },
   {
     "id": "v28",
@@ -461,7 +461,7 @@
     "perfekt": "hat gelegen",
     "exampleDe": "Magdeburg liegt an der Elbe in Sachsen-Anhalt.",
     "exampleEn": "Magdeburg is located on the Elbe in Saxony-Anhalt.",
-    "note": "Positionsverb: liegen + Dativ (Wo?). Nicht verwechseln mit transitiv »legen + Akk«."
+    "note": "Positionsverb: liegen + Dativ (Wo?). Nicht verwechseln mit transitiv 'legen + Akk'."
   },
   {
     "id": "v30",
@@ -525,7 +525,7 @@
     "perfekt": "hat geschlafen",
     "exampleDe": "In den Prüfungsphasen schläft er oft nur fünf Stunden.",
     "exampleEn": "During exam periods he often only sleeps five hours.",
-    "note": "Vokalwechsel a → ä (er schläft). Aber: Perfekt mit »haben« (Zustand, kein Wechsel!)."
+    "note": "Vokalwechsel a → ä (er schläft). Aber: Perfekt mit 'haben' (Zustand, kein Wechsel!)."
   },
   {
     "id": "v34",
@@ -573,7 +573,7 @@
     "perfekt": "ist geschwommen",
     "exampleDe": "Wir sind gestern eine Stunde im See geschwommen.",
     "exampleEn": "We swam for an hour in the lake yesterday.",
-    "note": "Ortsveränderung im Wasser → Perfekt mit »sein«."
+    "note": "Ortsveränderung im Wasser → Perfekt mit 'sein'."
   },
   {
     "id": "v37",
@@ -637,7 +637,7 @@
     "perfekt": "hat gesessen",
     "exampleDe": "Er saß den ganzen Vormittag am Schreibtisch.",
     "exampleEn": "He sat at the desk the whole morning.",
-    "note": "Positionsverb: sitzen + Dativ (Wo?). Nicht verwechseln mit transitiv »setzen + Akk«."
+    "note": "Positionsverb: sitzen + Dativ (Wo?). Nicht verwechseln mit transitiv 'setzen + Akk'."
   },
   {
     "id": "v41",
@@ -669,7 +669,7 @@
     "perfekt": "hat gestanden",
     "exampleDe": "Das Mikroskop steht auf dem Labortisch.",
     "exampleEn": "The microscope is standing on the lab bench.",
-    "note": "Positionsverb: stehen + Dativ. In Süddeutschland/Österreich oft mit »sein«."
+    "note": "Positionsverb: stehen + Dativ. In Süddeutschland/Österreich oft mit 'sein'."
   },
   {
     "id": "v43",
@@ -685,7 +685,7 @@
     "perfekt": "ist gestorben",
     "exampleDe": "Der berühmte Physiker ist im hohen Alter gestorben.",
     "exampleEn": "The famous physicist died at an advanced age.",
-    "note": "Zustandswechsel (Leben → Tod) → Perfekt zwingend mit »sein«."
+    "note": "Zustandswechsel (Leben → Tod) → Perfekt zwingend mit 'sein'."
   },
   {
     "id": "v44",
@@ -765,7 +765,7 @@
     "perfekt": "hat vergessen",
     "exampleDe": "Vergiss bitte nicht, deine Hausaufgabe rechtzeitig abzugeben.",
     "exampleEn": "Please do not forget to submit your homework on time.",
-    "note": "Untrennbares Präfix »ver-«. Vokalwechsel: e → i (er vergisst)."
+    "note": "Untrennbares Präfix 'ver-'. Vokalwechsel: e → i (er vergisst)."
   },
   {
     "id": "v49",
@@ -781,7 +781,7 @@
     "perfekt": "hat verstanden",
     "exampleDe": "Ich habe die mathematische Ableitung jetzt vollständig verstanden.",
     "exampleEn": "I have now fully understood the mathematical derivation.",
-    "note": "Untrennbares Präfix »ver-«. Stammformen wie »stehen« (stand, gestanden)."
+    "note": "Untrennbares Präfix 'ver-'. Stammformen wie 'stehen' (stand, gestanden)."
   },
   {
     "id": "v50",

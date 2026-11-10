@@ -42,16 +42,16 @@
   const DECKS_CONFIG = [
     {
       id: 'b1-all',
-      title: 'B1 Stammformen (Alle)',
-      desc: 'Alle 50 unregelmäßigen und trennbaren Verben mit Präsens, Präteritum und Perfekt.',
-      tag: 'Kernwortschatz',
+      title: 'Alle Decks (50 Verben)',
+      desc: 'Vollständiger Wortschatz aller unregelmäßigen und trennbaren B1-Stammformen mit Präsens, Präteritum und Perfekt.',
+      tag: 'Alle Decks',
       level: 'B1 / B2',
       filter: (w) => true
     },
     {
       id: 'sein-verbs',
-      title: 'Perfekt mit »sein«',
-      desc: 'Verben der Orts- und Zustandsveränderung, die zwingend das Hilfsverb »sein« verlangen.',
+      title: "Perfekt mit 'sein'",
+      desc: "Verben der Orts- und Zustandsveränderung, die zwingend das Hilfsverb 'sein' verlangen.",
       tag: 'Grammatik-Fokus',
       level: 'A2 / B1',
       filter: (w) => w.hilfsverb === 'sein'
@@ -87,9 +87,8 @@
   const navItemHome = document.getElementById('nav-item-home');
   const navItemDecks = document.getElementById('nav-item-decks');
   const navItemCalendar = document.getElementById('nav-item-calendar');
+  const navItemAppearance = document.getElementById('nav-item-appearance');
   const sidebarDeckShortcuts = document.getElementById('sidebar-deck-shortcuts');
-  const themeOptionBtns = document.querySelectorAll('.theme-option-btn');
-  const fontOptionBtns = document.querySelectorAll('.font-option-btn');
 
   // Header
   const headerBrandGroup = document.getElementById('header-brand-group');
@@ -103,6 +102,14 @@
   const goalBarFill = document.getElementById('goal-bar-fill');
   const goalPercent = document.getElementById('goal-percent');
   const decksGrid = document.getElementById('decks-grid');
+  const btnLearnAllDecks = document.getElementById('btn-learn-all-decks');
+
+  // Appearance Customization Modal Elements
+  const modalAppearance = document.getElementById('modal-appearance');
+  const btnAppearanceClose = document.getElementById('btn-appearance-close');
+  const btnAppearanceDone = document.getElementById('btn-appearance-done');
+  const themeCardOptions = document.querySelectorAll('.theme-card-option');
+  const fontCardOptions = document.querySelectorAll('.font-card-option');
 
   // Stats Tiles
   const statTotalReviewed = document.getElementById('stat-total-reviewed');
@@ -351,13 +358,13 @@
       else metaTheme.setAttribute('content', '#FFFFFF');
     }
 
-    // Update active state in sidebar drawer theme buttons
-    if (themeOptionBtns && themeOptionBtns.length > 0) {
-      themeOptionBtns.forEach(btn => {
+    // Update active state in appearance modal cards
+    if (themeCardOptions && themeCardOptions.length > 0) {
+      themeCardOptions.forEach(btn => {
         const btnTheme = btn.getAttribute('data-theme-set');
         const isMatch = btnTheme === theme;
         btn.classList.toggle('active', isMatch);
-        const checkSpan = btn.querySelector('.theme-check');
+        const checkSpan = btn.querySelector('.option-check');
         if (checkSpan) {
           checkSpan.textContent = isMatch ? '✓' : '';
         }
@@ -385,16 +392,30 @@
     document.documentElement.setAttribute('data-font', fontName);
     localStorage.setItem(FONT_KEY, fontName);
 
-    if (fontOptionBtns && fontOptionBtns.length > 0) {
-      fontOptionBtns.forEach(btn => {
+    if (fontCardOptions && fontCardOptions.length > 0) {
+      fontCardOptions.forEach(btn => {
         const btnFont = btn.getAttribute('data-font-set');
         const isMatch = btnFont === fontName;
         btn.classList.toggle('active', isMatch);
-        const checkSpan = btn.querySelector('.font-check');
+        const checkSpan = btn.querySelector('.option-check');
         if (checkSpan) {
           checkSpan.textContent = isMatch ? '✓' : '';
         }
       });
+    }
+  }
+
+  // ================= Appearance Customization Modal Controller =================
+  function openAppearanceModal() {
+    closeSidebar();
+    if (modalAppearance) {
+      modalAppearance.classList.remove('hidden');
+    }
+  }
+
+  function closeAppearanceModal() {
+    if (modalAppearance) {
+      modalAppearance.classList.add('hidden');
     }
   }
 
@@ -536,9 +557,12 @@
       const reviewed = (deckProgress[cfg.id] && deckProgress[cfg.id].reviewed) || 0;
       const masteryPct = deckCount > 0 ? Math.round((reviewed / deckCount) * 100) : 0;
 
-      // Homepage Deck Card
+      // Homepage Deck Card (Whole Tile Clickable)
       const card = document.createElement('div');
       card.className = 'deck-card';
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-label', `${cfg.title} lernen (${deckCount} Wörter)`);
       card.innerHTML = `
         <div class="deck-card-top">
           <div class="deck-tags-row">
@@ -550,12 +574,19 @@
         </div>
         <div class="deck-card-bottom">
           <span class="deck-mastery-text">${masteryPct}% gelernt</span>
-          <button class="deck-learn-btn" data-deck="${cfg.id}">Lernen</button>
+          <span class="deck-learn-btn">Lernen</span>
         </div>
       `;
 
-      card.querySelector('.deck-learn-btn').addEventListener('click', () => {
+      // Entire card tile is clickable
+      card.addEventListener('click', () => {
         switchView('study', cfg.id);
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          switchView('study', cfg.id);
+        }
       });
 
       decksGrid.appendChild(card);
@@ -686,7 +717,7 @@
     conjPerfekt.innerHTML = `<span class="${auxClass}">${isSein ? 'ist' : aux}</span> ${verbFormOnly}`;
 
     // Context Sentence
-    exampleDe.textContent = item.exampleDe ? `»${item.exampleDe}«` : '';
+    exampleDe.textContent = item.exampleDe || '';
     exampleEn.textContent = item.exampleEn || '';
 
     // Grammar Note
@@ -895,16 +926,39 @@
     });
   }
 
-  // Header Quick Theme Toggle
-  if (btnQuickTheme) {
-    btnQuickTheme.addEventListener('click', () => {
-      toggleNextTheme();
+  // All Decks Header Quick Start Button
+  if (btnLearnAllDecks) {
+    btnLearnAllDecks.addEventListener('click', () => {
+      switchView('study', 'b1-all');
     });
   }
 
-  // Sidebar Theme Option Buttons
-  if (themeOptionBtns && themeOptionBtns.length > 0) {
-    themeOptionBtns.forEach(btn => {
+  // Appearance Modal Open Triggers (Sidebar Item & Header Icon)
+  if (navItemAppearance) {
+    navItemAppearance.addEventListener('click', openAppearanceModal);
+  }
+  if (btnQuickTheme) {
+    btnQuickTheme.addEventListener('click', openAppearanceModal);
+  }
+
+  // Appearance Modal Close Triggers
+  if (btnAppearanceClose) {
+    btnAppearanceClose.addEventListener('click', closeAppearanceModal);
+  }
+  if (btnAppearanceDone) {
+    btnAppearanceDone.addEventListener('click', closeAppearanceModal);
+  }
+  if (modalAppearance) {
+    modalAppearance.addEventListener('click', (e) => {
+      if (e.target === modalAppearance) {
+        closeAppearanceModal();
+      }
+    });
+  }
+
+  // Appearance Modal Theme Card Options
+  if (themeCardOptions && themeCardOptions.length > 0) {
+    themeCardOptions.forEach(btn => {
       btn.addEventListener('click', () => {
         const selectedTheme = btn.getAttribute('data-theme-set');
         if (selectedTheme) {
@@ -914,9 +968,9 @@
     });
   }
 
-  // Sidebar Font Option Buttons
-  if (fontOptionBtns && fontOptionBtns.length > 0) {
-    fontOptionBtns.forEach(btn => {
+  // Appearance Modal Font Card Options
+  if (fontCardOptions && fontCardOptions.length > 0) {
+    fontCardOptions.forEach(btn => {
       btn.addEventListener('click', () => {
         const selectedFont = btn.getAttribute('data-font-set');
         if (selectedFont) {
@@ -932,6 +986,7 @@
 
     if (e.key === 'Escape') {
       closeSidebar();
+      closeAppearanceModal();
       modalSessionComplete.classList.add('hidden');
       return;
     }
@@ -1021,7 +1076,7 @@
         perfekt: "ist aufgestanden",
         exampleDe: "Er steht jeden Morgen pünktlich um 7 Uhr auf.",
         exampleEn: "He gets up punctually at 7 o'clock every morning.",
-        note: "Orts- und Zustandswechsel → Perfekt immer mit »sein«."
+        note: "Orts- und Zustandswechsel → Perfekt immer mit 'sein'."
       }
     ];
   }
