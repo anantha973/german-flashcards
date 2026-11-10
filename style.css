@@ -1749,13 +1749,15 @@ html[data-theme="chalk"] .ambient-orb-2 {
 /* STUDY MODE (FLASHCARD ENGINE)                            */
 /* ======================================================== */
 .study-stage {
-  max-width: 720px;
+  max-width: 680px;
   width: 100%;
   margin: 0 auto;
-  padding: 24px 20px 40px;
+  padding: 8px 16px 12px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
+  min-height: calc(100dvh - 64px);
+  justify-content: flex-start;
 }
 
 .stage-meta {
@@ -1784,8 +1786,8 @@ html[data-theme="chalk"] .ambient-orb-2 {
 /* 3D Flashcard Scene */
 .flashcard-scene {
   width: 100%;
-  height: 520px;
-  min-height: 520px;
+  height: clamp(380px, calc(100dvh - 215px), 480px);
+  min-height: 380px;
   perspective: 1200px;
   margin: 0 auto;
   position: relative;
@@ -1823,7 +1825,7 @@ html[data-theme="chalk"] .ambient-orb-2 {
   border: 1px solid var(--border-card);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
-  padding: 24px 28px;
+  overflow: hidden; /* Guaranteed clip so no scrollbars or child contents leak past rounded corners */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -1833,36 +1835,49 @@ html[data-theme="chalk"] .ambient-orb-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 24px 28px;
+  height: 100%;
   overflow: hidden;
 }
 
 .card-back {
   transform: rotateY(180deg);
   background-color: var(--bg-surface-raised);
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-back-scroll {
+  height: 100%;
+  width: 100%;
+  padding: 20px 22px 20px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 16px;
+  gap: 12px;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;
   scrollbar-width: thin;
   scrollbar-color: var(--border-subtle) transparent;
-  padding-bottom: 24px;
-}
-  scrollbar-color: var(--border-subtle) transparent;
 }
 
-.card-back::-webkit-scrollbar {
-  width: 6px;
+.card-back-scroll::-webkit-scrollbar {
+  width: 5px;
 }
 
-.card-back::-webkit-scrollbar-track {
+.card-back-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.card-back::-webkit-scrollbar-thumb {
+.card-back-scroll::-webkit-scrollbar-thumb {
   background-color: var(--border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.card-back-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-muted);
+}
   border-radius: var(--radius-full);
 }
 
@@ -1952,17 +1967,23 @@ html[data-theme="chalk"] .ambient-orb-2 {
   margin: auto 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 16px 0;
 }
 
 .lemma-word {
   font-family: var(--font-display);
-  font-size: 52px;
+  font-size: 56px;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   line-height: 1.15;
   word-break: break-word;
+  text-align: center;
+  margin: 0;
 }
 
 .card-bottom-prompt {
@@ -2263,14 +2284,14 @@ html[data-theme="chalk"] .ambient-orb-2 {
 .action-dock {
   width: 100%;
   max-width: 620px;
-  margin: 16px auto 0;
+  margin: 6px auto 0;
 }
 
 .dock-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  padding: 8px;
+  gap: 6px;
+  padding: 6px;
   background-color: var(--bg-surface-raised);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
@@ -2281,12 +2302,12 @@ html[data-theme="chalk"] .ambient-orb-2 {
   border: 1px solid var(--border-subtle);
   background-color: var(--bg-surface);
   border-radius: var(--radius-md);
-  padding: 10px 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 8px;
-  min-height: 58px;
+  gap: 6px;
+  min-height: 50px;
   cursor: pointer;
   transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -2806,18 +2827,32 @@ html[data-theme="chalk"] .ambient-orb-2 {
   }
 
   .study-stage {
-    padding: 14px 10px 20px;
-    gap: 10px;
+    padding: 8px 10px 14px;
+    gap: 8px;
+    min-height: calc(100dvh - 56px);
   }
 
-  .flashcard-scene, .flashcard, .card-face {
-    min-height: 500px;
-    padding: 18px 14px;
+  .flashcard-scene, .flashcard {
+    height: clamp(340px, calc(100dvh - 190px), 440px);
+    min-height: 340px;
+  }
+
+  .card-face {
     border-radius: var(--radius-lg);
   }
 
+  .card-front {
+    padding: 18px 16px;
+  }
+
+  .card-back-scroll {
+    padding: 16px 14px;
+    gap: 10px;
+  }
+
   .lemma-word {
-    font-size: 34px;
+    font-size: 38px;
+    text-align: center;
   }
 
   .praesens-grid {
@@ -2882,6 +2917,6 @@ html[data-theme="chalk"] .ambient-orb-2 {
 
   .study-stage {
     max-width: 680px;
-    padding-top: 32px;
+    padding: 10px 16px 14px;
   }
 }

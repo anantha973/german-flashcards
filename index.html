@@ -406,89 +406,14 @@
           </div>
 
           <!-- BACK SIDE (CONJUGATIONS & MEANING) -->
-          <div class="card-face card-back" id="card-back-scroll">
-            <div class="card-top-row">
-              <div class="tag-group">
-                <span class="chip chip-secondary" id="back-level">B1</span>
-                <span class="chip chip-neutral" id="back-type">Verb · trennbar</span>
-              </div>
-              <button class="audio-button" id="btn-audio-back" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
-                <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-                </svg>
-              </button>
-            </div>
-
-            <!-- Lemma & Revealed Translation -->
-            <div class="back-word-block">
-              <h2 class="back-lemma" id="back-word">aufstehen</h2>
-              <p class="back-translation" id="back-meaning">to get up, arise (from bed or chair)</p>
-            </div>
-
-            <!-- Full Present Tense Conjugation (All unique forms) -->
-            <div class="conjugation-section">
-              <div class="section-title-row">
-                <span class="section-badge">Präsens (Gegenwart)</span>
-                <span class="section-hint">Alle Formen</span>
-              </div>
-              <div class="praesens-grid" id="praesens-grid">
-                <div class="praesens-item">
-                  <span class="praesens-pronoun">ich</span>
-                  <span class="praesens-val" id="conj-praesens-ich">stehe <span class="highlight-prefix">auf</span></span>
+          <div class="card-face card-back">
+            <div class="card-back-scroll" id="card-back-scroll">
+              <div class="card-top-row">
+                <div class="tag-group">
+                  <span class="chip chip-secondary" id="back-level">B1</span>
+                  <span class="chip chip-neutral" id="back-type">Verb · trennbar</span>
                 </div>
-                <div class="praesens-item">
-                  <span class="praesens-pronoun">du</span>
-                  <span class="praesens-val" id="conj-praesens-du">stehst <span class="highlight-prefix">auf</span></span>
-                </div>
-                <div class="praesens-item praesens-item-key">
-                  <span class="praesens-pronoun">er/sie/es</span>
-                  <span class="praesens-val" id="conj-praesens-er">steht <span class="highlight-prefix">auf</span></span>
-                </div>
-                <div class="praesens-item">
-                  <span class="praesens-pronoun">wir / Sie</span>
-                  <span class="praesens-val" id="conj-praesens-wir">stehen <span class="highlight-prefix">auf</span></span>
-                </div>
-                <div class="praesens-item">
-                  <span class="praesens-pronoun">ihr</span>
-                  <span class="praesens-val" id="conj-praesens-ihr">steht <span class="highlight-prefix">auf</span></span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Stammformen: Präteritum & Perfekt -->
-            <div class="stammformen-row">
-              <!-- Präteritum -->
-              <div class="stammform-cell" id="cell-praeteritum">
-                <div class="stammform-header">
-                  <span class="stammform-label">Präteritum</span>
-                  <span class="stammform-sub">Vergangenheit</span>
-                </div>
-                <div class="stammform-val" id="conj-praeteritum">stand <span class="highlight-prefix">auf</span></div>
-              </div>
-
-              <!-- Perfekt with Textbook Auxiliary Badge -->
-              <div class="stammform-cell" id="cell-perfekt">
-                <div class="stammform-header">
-                  <span class="stammform-label">Perfekt</span>
-                  <span class="aux-pill" id="perfekt-aux-pill">Hilfsverb: sein</span>
-                </div>
-                <div class="stammform-val" id="conj-perfekt">
-                  <span class="perfekt-aux-text" id="conj-aux-text">ist</span> <span id="conj-partizip2">aufgestanden</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Context Example Sentences with 3-Tense Switcher -->
-            <div class="example-container">
-              <div class="example-header">
-                <div class="example-tense-tabs" role="tablist" aria-label="Zeitform für Beispielsatz wählen">
-                  <button type="button" class="tense-tab is-active" data-tense="praesens" id="tab-tense-praesens">Präsens</button>
-                  <button type="button" class="tense-tab" data-tense="praeteritum" id="tab-tense-praeteritum">Präteritum</button>
-                  <button type="button" class="tense-tab" data-tense="perfekt" id="tab-tense-perfekt">Perfekt</button>
-                </div>
-                <button class="audio-button audio-button-sm" id="btn-audio-sentence" title="Beispielsatz anhören" aria-label="Beispielsatz anhören">
+                <button class="audio-button" id="btn-audio-back" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
                   <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                     <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
@@ -496,16 +421,93 @@
                   </svg>
                 </button>
               </div>
-              <div class="example-body">
-                <p class="example-de" id="example-de">Er steht jeden Morgen pünktlich um 7 Uhr auf.</p>
-                <p class="example-en" id="example-en">He gets up punctually at 7 o'clock every morning.</p>
-              </div>
-            </div>
 
-            <!-- Grammar Note Insight -->
-            <div class="grammar-note" id="grammar-note">
-              <span class="note-icon">💡</span>
-              <span class="note-text" id="note-text">Orts- und Zustandswechsel → Perfekt immer mit 'sein'.</span>
+              <!-- Lemma & Revealed Translation -->
+              <div class="back-word-block">
+                <h2 class="back-lemma" id="back-word">aufstehen</h2>
+                <p class="back-translation" id="back-meaning">to get up, arise (from bed or chair)</p>
+              </div>
+
+              <!-- Full Present Tense Conjugation (All unique forms) -->
+              <div class="conjugation-section">
+                <div class="section-title-row">
+                  <span class="section-badge">Präsens (Gegenwart)</span>
+                  <span class="section-hint">Alle Formen</span>
+                </div>
+                <div class="praesens-grid" id="praesens-grid">
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">ich</span>
+                    <span class="praesens-val" id="conj-praesens-ich">stehe <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">du</span>
+                    <span class="praesens-val" id="conj-praesens-du">stehst <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item praesens-item-key">
+                    <span class="praesens-pronoun">er/sie/es</span>
+                    <span class="praesens-val" id="conj-praesens-er">steht <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">wir / Sie</span>
+                    <span class="praesens-val" id="conj-praesens-wir">stehen <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">ihr</span>
+                    <span class="praesens-val" id="conj-praesens-ihr">steht <span class="highlight-prefix">auf</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stammformen: Präteritum & Perfekt -->
+              <div class="stammformen-row">
+                <!-- Präteritum -->
+                <div class="stammform-cell" id="cell-praeteritum">
+                  <div class="stammform-header">
+                    <span class="stammform-label">Präteritum</span>
+                    <span class="stammform-sub">Vergangenheit</span>
+                  </div>
+                  <div class="stammform-val" id="conj-praeteritum">stand <span class="highlight-prefix">auf</span></div>
+                </div>
+
+                <!-- Perfekt with Textbook Auxiliary Badge -->
+                <div class="stammform-cell" id="cell-perfekt">
+                  <div class="stammform-header">
+                    <span class="stammform-label">Perfekt</span>
+                    <span class="aux-pill" id="perfekt-aux-pill">Hilfsverb: sein</span>
+                  </div>
+                  <div class="stammform-val" id="conj-perfekt">
+                    <span class="perfekt-aux-text" id="conj-aux-text">ist</span> <span id="conj-partizip2">aufgestanden</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Context Example Sentences with 3-Tense Switcher -->
+              <div class="example-container">
+                <div class="example-header">
+                  <div class="example-tense-tabs" role="tablist" aria-label="Zeitform für Beispielsatz wählen">
+                    <button type="button" class="tense-tab is-active" data-tense="praesens" id="tab-tense-praesens">Präsens</button>
+                    <button type="button" class="tense-tab" data-tense="praeteritum" id="tab-tense-praeteritum">Präteritum</button>
+                    <button type="button" class="tense-tab" data-tense="perfekt" id="tab-tense-perfekt">Perfekt</button>
+                  </div>
+                  <button class="audio-button audio-button-sm" id="btn-audio-sentence" title="Beispielsatz anhören" aria-label="Beispielsatz anhören">
+                    <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="example-body">
+                  <p class="example-de" id="example-de">Er steht jeden Morgen pünktlich um 7 Uhr auf.</p>
+                  <p class="example-en" id="example-en">He gets up punctually at 7 o'clock every morning.</p>
+                </div>
+              </div>
+
+              <!-- Grammar Note Insight -->
+              <div class="grammar-note" id="grammar-note">
+                <span class="note-icon">💡</span>
+                <span class="note-text" id="note-text">Orts- und Zustandswechsel → Perfekt immer mit 'sein'.</span>
+              </div>
             </div>
           </div>
 
