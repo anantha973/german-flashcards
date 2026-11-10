@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light" data-font="inter">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Wortschatz Studio · Deutsch lernen</title>
+  
+  <!-- Apple & PWA Meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Wortschatz">
+  <meta name="theme-color" content="#F1F3F7">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Typography: High-Legibility Screen & Reading Fonts (Inter & Lexend) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&family=Plus+Jakarta+Sans:wght@700;800&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Orbs Layer for Real Frosted Glass Refraction -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+
+  <!-- Left Sidebar Drawer Overlay & Container -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+  <aside class="sidebar-drawer" id="sidebar-drawer" aria-label="Hauptnavigation" aria-hidden="true">
+    <div class="sidebar-header">
+      <div class="sidebar-brand">
+        <div class="brand-monogram">W</div>
+        <div class="brand-text-col">
+          <span class="brand-title">Wortschatz</span>
+          <span class="brand-subtitle">B1 Studio</span>
+        </div>
+      </div>
+      <button class="sidebar-close-btn" id="btn-sidebar-close" aria-label="Menü schließen">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-title">Navigation</div>
+      <button class="sidebar-nav-item active" id="nav-item-home">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Übersicht</span>
+      </button>
+
+      <button class="sidebar-nav-item" id="nav-item-decks">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
+        <span>Alle Decks</span>
+      </button>
+
+      <button class="sidebar-nav-item" id="nav-item-calendar">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span>Kalender &amp; Statistik</span>
+      </button>
+
+      <button class="sidebar-nav-item" id="nav-item-stats">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="20" x2="18" y2="10"></line>
+          <line x1="12" y1="20" x2="12" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="14"></line>
+        </svg>
+        <span>Statistik</span>
+      </button>
+
+      <button class="sidebar-nav-item" id="nav-item-appearance">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+        <span>Erscheinungsbild &amp; Schrift</span>
+      </button>
+
+      <div class="sidebar-section-title">Decks Schnellstart</div>
+      <div class="sidebar-deck-list" id="sidebar-deck-shortcuts">
+        <!-- Rendered dynamically -->
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="sidebar-footer-text">B1 Goethe-Zertifikat Vorbereitung</span>
+    </div>
+  </aside>
+
+  <!-- Exciting Frosted Command Bar Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button class="menu-btn" id="btn-sidebar-open" aria-label="Menü öffnen" title="Menü öffnen">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="header-brand-pill" id="header-brand-group">
+          <span class="brand-title">Wortschatz</span>
+          <span class="brand-dot">·</span>
+          <span class="brand-badge">B1 Studio</span>
+        </div>
+
+        <button class="back-to-home-btn hidden" id="btn-back-home">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span id="btn-back-home-text">Zurück</span>
+        </button>
+      </div>
+
+      <!-- Header Right: Quick Theme Toggle & Active Streak Pill -->
+      <div class="header-right">
+        <!-- Quick Theme Toggle Icon Button -->
+        <button class="header-icon-btn" id="btn-quick-theme" title="Farbschema wechseln" aria-label="Farbschema wechseln">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+        </button>
+
+        <!-- Active Streak Pill with Glowing Flame Icon -->
+        <div class="streak-pill" id="header-streak-pill" title="Aktuelle Lernserie">
+          <svg class="flame-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12 23c-4.97 0-9-3.58-9-8 0-3.19 2.05-6.23 4.25-8.25.75-.69 1.93-.16 1.93.85 0 1.25.5 2.4 1.32 3.19C11.5 8 13.5 5 13.5 1c0-.55.45-1 1-1 3.5 3 6.5 7.5 6.5 13 0 4.42-4.03 8-9 8z"/>
+          </svg>
+          <span class="streak-text" id="streak-counter">0 Tage</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- VIEW 1: HOMEPAGE (DASHBOARD & BENTO HISTORY)             -->
+  <!-- ======================================================== -->
+  <div class="view-container view-animated" id="view-home">
+    <div class="home-stage">
+      
+      <!-- Dashboard Hero -->
+      <div class="dashboard-hero">
+        <div class="hero-left">
+          <h1 class="hero-greeting">Hallo, Anantha! 👋</h1>
+          <p class="hero-subtitle">Weiter so! Du lernst jeden Tag ein bisschen mehr.</p>
+        </div>
+        <div class="hero-right">
+          <div class="streak-pill" id="header-streak-pill-hero" title="Aktuelle Lernserie">
+            <svg class="flame-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 23c-4.97 0-9-3.58-9-8 0-3.19 2.05-6.23 4.25-8.25.75-.69 1.93-.16 1.93.85 0 1.25.5 2.4 1.32 3.19C11.5 8 13.5 5 13.5 1c0-.55.45-1 1-1 3.5 3 6.5 7.5 6.5 13 0 4.42-4.03 8-9 8z"/>
+            </svg>
+            <span class="streak-text" id="streak-counter-hero">0 Tage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Ribbon (4 tiles) -->
+      <div class="stats-ribbon">
+        <div class="stats-ribbon-tile">
+          <span class="ribbon-tile-label">Fortschritt</span>
+          <span class="ribbon-tile-value" id="ribbon-progress-pct">83%</span>
+          <span class="ribbon-tile-sub" id="ribbon-progress-sub">1.240 von 1.500</span>
+        </div>
+        <div class="stats-ribbon-tile">
+          <span class="ribbon-tile-label">Heute gelernt</span>
+          <span class="ribbon-tile-value" id="ribbon-today-count">0</span>
+          <span class="ribbon-tile-sub" id="ribbon-today-sub">Ziel: 20 Wörter</span>
+        </div>
+        <div class="stats-ribbon-tile">
+          <span class="ribbon-tile-label">Retention</span>
+          <span class="ribbon-tile-value" id="ribbon-retention">100%</span>
+          <span class="ribbon-tile-sub">letzte 7 Tage</span>
+        </div>
+        <div class="stats-ribbon-tile">
+          <span class="ribbon-tile-label">Streak</span>
+          <span class="ribbon-tile-value" id="ribbon-streak">0</span>
+          <span class="ribbon-tile-sub">Tage in Folge</span>
+        </div>
+      </div>
+
+      <!-- Continue / Weiterlernen Card -->
+      <div class="continue-section">
+        <div class="continue-card" id="continue-card" style="cursor:pointer;" role="button" tabindex="0">
+          <div class="continue-card-info">
+            <span class="continue-card-label">Weiter lernen</span>
+            <span class="continue-card-title" id="continue-deck-title">B1 Stammformen</span>
+            <span class="continue-card-sub" id="continue-deck-sub">35% abgeschlossen · Tippe zum Starten</span>
+          </div>
+          <button class="hero-cta-btn" id="btn-continue-deck">
+            Weiterlernen
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Top Horizontal 7-Day Activity Strip -->
+      <section class="horizontal-calendar-section" aria-label="Wochenübersicht">        <div class="section-meta-row">
+          <span class="section-eyebrow">Aktivität der letzten 7 Tage</span>
+          <span class="goal-indicator" id="goal-status-text">Ziel: 0 / 20 Wörter heute</span>
+        </div>
+        <div class="horizontal-week-strip" id="horizontal-week-strip">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Daily Study Goal Bar -->
+      <section class="daily-goal-section">
+        <div class="goal-card">
+          <div class="goal-info">
+            <div class="goal-title-row">
+              <span class="goal-title">Tagesziel</span>
+              <span class="goal-badge" id="goal-badge-status">In Arbeit</span>
+            </div>
+            <span class="goal-desc" id="goal-desc">Lerne täglich 20 Wörter, um die B1 Stammformen im Langzeitgedächtnis zu verankern.</span>
+          </div>
+          <div class="goal-progress-wrap">
+            <div class="goal-bar-track">
+              <div class="goal-bar-fill" id="goal-bar-fill" style="width: 0%;"></div>
+            </div>
+            <span class="goal-percent" id="goal-percent">0%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Decks Grid Section -->
+      <section class="decks-section" id="section-decks">
+        <div class="section-header-split">
+          <div class="section-header-col">
+            <h2 class="section-title">Verfügbare Decks</h2>
+            <span class="section-subtext">Wähle ein Deck zum Schnellstart oder öffne alle Ordner</span>
+          </div>
+          <button class="all-decks-action-btn" id="btn-learn-all-decks" title="Zur vollständigen Deck- &amp; Ordnerbibliothek">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Alle Decks &amp; Ordner</span>
+          </button>
+        </div>
+
+        <div class="decks-grid" id="decks-grid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Scroll-Down Section: Bento Grid (Compact Calendar + Grammar Mastery) -->
+      <section class="history-section" id="section-calendar">
+        <div class="section-header">
+          <h2 class="section-title">Monatsübersicht &amp; Statistik</h2>
+          <span class="section-subtext">Kompakter Verlauf und morphologischer Lernfortschritt</span>
+        </div>
+
+        <!-- 3 Basic Stat Tiles -->
+        <div class="stats-tiles-grid">
+          <div class="stat-tile">
+            <span class="stat-tile-label">Gelernt gesamt</span>
+            <span class="stat-tile-value" id="stat-total-reviewed">0</span>
+            <span class="stat-tile-hint">Wiederholungen</span>
+          </div>
+          <div class="stat-tile">
+            <span class="stat-tile-label">Aktuelle Serie</span>
+            <span class="stat-tile-value highlight" id="stat-current-streak">0 Tage</span>
+            <span class="stat-tile-hint">in Folge aktiv</span>
+          </div>
+          <div class="stat-tile">
+            <span class="stat-tile-label">Recall-Quote</span>
+            <span class="stat-tile-value" id="stat-recall-rate">100%</span>
+            <span class="stat-tile-hint">Erfolgreich erinnert</span>
+          </div>
+        </div>
+
+        <!-- Compact Bento Blocks: Calendar Left + Grammar Breakdown Right -->
+        <div class="bento-history-grid">
+          
+          <!-- Block 1: Compact Calendar Card (Shrunk & Refined) -->
+          <div class="compact-calendar-card">
+            <div class="calendar-header-nav">
+              <span class="calendar-month-title" id="calendar-month-title">November 2026</span>
+              <div class="calendar-nav-buttons">
+                <button class="cal-nav-btn" id="btn-cal-prev" aria-label="Vorheriger Monat">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button class="cal-nav-btn" id="btn-cal-next" aria-label="Nächster Monat">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="calendar-weekdays-row">
+              <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
+            </div>
+
+            <div class="calendar-days-grid" id="calendar-days-grid">
+              <!-- Populated by JS -->
+            </div>
+
+            <div class="calendar-legend">
+              <div class="legend-item">
+                <span class="legend-dot participated"></span>
+                <span>Gelernt</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot today"></span>
+                <span>Heute</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block 2: Grammar & Category Mastery Breakdown (Free Space Reclaimed) -->
+          <div class="bento-mastery-card">
+            <div class="mastery-header">
+              <span class="mastery-title">Grammatik-Verteilung</span>
+              <span class="mastery-badge">B1 Standard</span>
+            </div>
+
+            <div class="mastery-bars-list">
+              <!-- Bar 1: Trennbare Verben -->
+              <div class="mastery-bar-item">
+                <div class="bar-label-row">
+                  <span class="bar-name">Trennbare Verben</span>
+                  <span class="bar-count" id="count-trennbar">0 / 11</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-fill-trennbar" id="bar-trennbar" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <!-- Bar 2: Perfekt mit sein -->
+              <div class="mastery-bar-item">
+                <div class="bar-label-row">
+                  <span class="bar-name">Perfekt mit 'sein'</span>
+                  <span class="bar-count" id="count-sein">0 / 14</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-fill-sein" id="bar-sein" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <!-- Bar 3: Unregelmäßige Stammformen -->
+              <div class="mastery-bar-item">
+                <div class="bar-label-row">
+                  <span class="bar-name">Starke / Unregelmäßige Formen</span>
+                  <span class="bar-count" id="count-unregelmaessig">0 / 36</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-fill-strong" id="bar-strong" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Trigger inside Bento -->
+            <div class="bento-quick-action">
+              <button class="bento-action-btn" id="btn-quick-drill">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Zufälliges Schnelltraining starten</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- VIEW 2: DEDICATED DECKS & FOLDERS LIBRARY                -->
+  <!-- ======================================================== -->
+  <div class="view-container view-animated hidden" id="view-decks">
+    <div class="decks-library-stage">
+      
+      <!-- Top Navigation & Statistics Bar -->
+      <div class="library-nav-bar">
+        <button class="library-back-btn" id="btn-library-back-home" title="Zurück zur Startseite">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span>Zurück zur Übersicht</span>
+        </button>
+        <div class="library-stats-pill" id="library-total-pill">
+          3 Ordner · 9 Decks · 50 Wörter
+        </div>
+      </div>
+
+      <!-- Library Header Banner -->
+      <div class="library-header">
+        <h1 class="library-title">Alle Decks &amp; Ordner</h1>
+        <p class="library-subtitle">Strukturierte Lernpfade nach Lehrwerk und Grammatik-Schwerpunkt. Klicke auf ein beliebiges Deck, um das Training zu starten.</p>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="deck-search-bar">
+        <svg class="deck-search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" class="deck-search-input" id="deck-search-input" placeholder="Decks durchsuchen..." autocomplete="off">
+      </div>
+
+      <!-- Level Filter Chips -->
+      <div class="level-filter-row" id="level-filter-row">
+        <button class="level-filter-chip is-active" data-level="all">Alle</button>
+        <button class="level-filter-chip" data-level="A1">A1</button>
+        <button class="level-filter-chip" data-level="A2">A2</button>
+        <button class="level-filter-chip" data-level="B1">B1</button>
+        <button class="level-filter-chip" data-level="B2">B2</button>
+        <button class="level-filter-chip" data-level="Grammatik">Grammatik</button>
+      </div>
+
+      <!-- Library Folders Container -->
+      <div class="library-folders-container" id="library-folders-container">
+        <!-- Rendered dynamically by JS with folder cards and child decks -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- VIEW 3: STUDY MODE (NORDIC FROST FLASHCARD RUNNER)       -->
+  <!-- ======================================================== -->
+  <div class="view-container view-animated hidden" id="view-study">
+    
+    <!-- Progress Bar for active deck -->
+    <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-fill" id="progress-bar"></div>
+    </div>
+
+    <main class="study-stage">
+      
+      <!-- Stage Meta -->
+      <div class="stage-meta">
+        <span class="card-counter" id="card-counter">Karte 1 von 50</span>
+        <span class="deck-indicator" id="deck-indicator">B1 Stammformen</span>
+        <span class="shortcut-tip desktop-only">Leertaste = Wenden · A = Audio</span>
+      </div>
+
+      <!-- 3D Flashcard Scene -->
+      <div class="flashcard-scene" id="flashcard-scene">
+        <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Flashcard - Klicken zum Wenden">
+          
+          <!-- FRONT SIDE -->
+          <div class="card-face card-front">
+            <div class="card-top-row">
+              <div class="tag-group" id="front-tags">
+                <span class="chip chip-secondary" id="front-level">B1</span>
+                <span class="chip chip-neutral" id="front-type">Verb · trennbar</span>
+              </div>
+              <button class="audio-button" id="btn-audio-front" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
+                <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-center">
+              <h1 class="lemma-word" id="front-word">aufstehen</h1>
+            </div>
+
+            <div class="card-bottom-prompt">
+              <span class="prompt-text">Tippe oder drücke <kbd>Leertaste</kbd> zum Wenden</span>
+            </div>
+          </div>
+
+          <!-- BACK SIDE (CONJUGATIONS & MEANING) -->
+          <div class="card-face card-back">
+            <div class="card-back-scroll" id="card-back-scroll">
+              <div class="card-top-row">
+                <div class="tag-group">
+                  <span class="chip chip-secondary" id="back-level">B1</span>
+                  <span class="chip chip-neutral" id="back-type">Verb · trennbar</span>
+                </div>
+                <button class="audio-button" id="btn-audio-back" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
+                  <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Lemma & Revealed Translation -->
+              <div class="back-word-block">
+                <h2 class="back-lemma" id="back-word">aufstehen</h2>
+                <p class="back-translation" id="back-meaning">to get up, arise (from bed or chair)</p>
+              </div>
+
+              <!-- Full Present Tense Conjugation (All unique forms) -->
+              <div class="conjugation-section">
+                <div class="section-title-row">
+                  <span class="section-badge">Präsens (Gegenwart)</span>
+                  <span class="section-hint">Alle Formen</span>
+                </div>
+                <div class="praesens-grid" id="praesens-grid">
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">ich</span>
+                    <span class="praesens-val" id="conj-praesens-ich">stehe <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">du</span>
+                    <span class="praesens-val" id="conj-praesens-du">stehst <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item praesens-item-key">
+                    <span class="praesens-pronoun">er/sie/es</span>
+                    <span class="praesens-val" id="conj-praesens-er">steht <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">wir / Sie</span>
+                    <span class="praesens-val" id="conj-praesens-wir">stehen <span class="highlight-prefix">auf</span></span>
+                  </div>
+                  <div class="praesens-item">
+                    <span class="praesens-pronoun">ihr</span>
+                    <span class="praesens-val" id="conj-praesens-ihr">steht <span class="highlight-prefix">auf</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stammformen: Präteritum & Perfekt -->
+              <div class="stammformen-row">
+                <!-- Präteritum -->
+                <div class="stammform-cell" id="cell-praeteritum">
+                  <div class="stammform-header">
+                    <span class="stammform-label">Präteritum</span>
+                    <span class="stammform-sub">Vergangenheit</span>
+                  </div>
+                  <div class="stammform-val" id="conj-praeteritum">stand <span class="highlight-prefix">auf</span></div>
+                </div>
+
+                <!-- Perfekt with Textbook Auxiliary Badge -->
+                <div class="stammform-cell" id="cell-perfekt">
+                  <div class="stammform-header">
+                    <span class="stammform-label">Perfekt</span>
+                    <span class="aux-pill" id="perfekt-aux-pill">Hilfsverb: sein</span>
+                  </div>
+                  <div class="stammform-val" id="conj-perfekt">
+                    <span class="perfekt-aux-text" id="conj-aux-text">ist</span> <span id="conj-partizip2">aufgestanden</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Context Example Sentences with 3-Tense Switcher -->
+              <div class="example-container">
+                <div class="example-header">
+                  <div class="example-tense-tabs" role="tablist" aria-label="Zeitform für Beispielsatz wählen">
+                    <button type="button" class="tense-tab is-active" data-tense="praesens" id="tab-tense-praesens">Präsens</button>
+                    <button type="button" class="tense-tab" data-tense="praeteritum" id="tab-tense-praeteritum">Präteritum</button>
+                    <button type="button" class="tense-tab" data-tense="perfekt" id="tab-tense-perfekt">Perfekt</button>
+                  </div>
+                  <button class="audio-button audio-button-sm" id="btn-audio-sentence" title="Beispielsatz anhören" aria-label="Beispielsatz anhören">
+                    <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="example-body">
+                  <p class="example-de" id="example-de">Er steht jeden Morgen pünktlich um 7 Uhr auf.</p>
+                  <p class="example-en" id="example-en">He gets up punctually at 7 o'clock every morning.</p>
+                </div>
+              </div>
+
+              <!-- Grammar Note Insight -->
+              <div class="grammar-note" id="grammar-note">
+                <span class="note-icon">💡</span>
+                <span class="note-text" id="note-text">Orts- und Zustandswechsel → Perfekt immer mit 'sein'.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Rating Dock -->
+      <footer class="action-dock">
+        <div class="dock-container">
+          <!-- Grade 1: Nochmal -->
+          <button class="grade-btn grade-again" id="btn-grade-1" data-grade="again" title="Nochmal (Taste 1)">
+            <div class="grade-header">
+              <span class="grade-dot dot-again"></span>
+              <span class="grade-title">Nochmal</span>
+            </div>
+            <div class="grade-footer">
+              <span class="grade-time">&lt; 1 Min</span>
+              <span class="keycap desktop-only">1</span>
+            </div>
+          </button>
+
+          <!-- Grade 2: Schwer -->
+          <button class="grade-btn grade-hard" id="btn-grade-2" data-grade="hard" title="Schwer (Taste 2)">
+            <div class="grade-header">
+              <span class="grade-dot dot-hard"></span>
+              <span class="grade-title">Schwer</span>
+            </div>
+            <div class="grade-footer">
+              <span class="grade-time">10 Min</span>
+              <span class="keycap desktop-only">2</span>
+            </div>
+          </button>
+
+          <!-- Grade 3: Gut -->
+          <button class="grade-btn grade-good" id="btn-grade-3" data-grade="good" title="Gut (Taste 3)">
+            <div class="grade-header">
+              <span class="grade-dot dot-good"></span>
+              <span class="grade-title">Gut</span>
+            </div>
+            <div class="grade-footer">
+              <span class="grade-time">1 Tag</span>
+              <span class="keycap desktop-only">3</span>
+            </div>
+          </button>
+
+          <!-- Grade 4: Leicht -->
+          <button class="grade-btn grade-easy" id="btn-grade-4" data-grade="easy" title="Leicht (Taste 4)">
+            <div class="grade-header">
+              <span class="grade-dot dot-easy"></span>
+              <span class="grade-title">Leicht</span>
+            </div>
+            <div class="grade-footer">
+              <span class="grade-time">4 Tage</span>
+              <span class="keycap desktop-only">4</span>
+            </div>
+          </button>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- VIEW 4: VOCABULARY DETAIL PAGE                          -->
+  <!-- ======================================================== -->
+  <div class="view-container view-animated hidden" id="view-vocab-detail">
+    <div class="vocab-detail-stage">
+
+      <!-- Back button -->
+      <div class="library-nav-bar" style="padding: 12px 0 0;">
+        <button class="library-back-btn" id="btn-vocab-detail-back">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span>Zurück zur Karte</span>
+        </button>
+      </div>
+
+      <!-- Word + IPA + meaning -->
+      <div class="vocab-detail-word-block">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px;">
+          <div>
+            <span class="vocab-detail-word" id="detail-word">aufstehen</span>
+            <span class="vocab-detail-ipa" id="detail-ipa">[ˈaʊ̯fˌʃteːən]</span>
+            <span class="vocab-detail-meaning" id="detail-meaning">to get up, arise (from bed or chair)</span>
+          </div>
+          <button class="audio-button" id="btn-detail-audio" title="Aussprache anhören" style="flex-shrink:0; margin-top:4px;">
+            <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="vocab-detail-tags" id="detail-tags">
+          <!-- chips rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Conjugation tab switcher -->
+      <div class="conj-tabs" role="tablist">
+        <button class="conj-tab is-active" data-conj-tense="praesens" role="tab">Präsens</button>
+        <button class="conj-tab" data-conj-tense="praeteritum" role="tab">Präteritum</button>
+        <button class="conj-tab" data-conj-tense="perfekt" role="tab">Perfekt</button>
+      </div>
+
+      <!-- Conjugation table (rendered by JS) -->
+      <div class="vocab-detail-section" id="detail-conj-section">
+        <table class="conj-table" id="detail-conj-table">
+          <!-- Populated by JS -->
+        </table>
+      </div>
+
+      <!-- Example sentence -->
+      <div class="vocab-detail-section" id="detail-example-section">
+        <div class="vocab-detail-section-title">Beispielsatz</div>
+        <div class="audio-button audio-button-sm" id="btn-detail-example-audio" style="float:right; cursor:pointer;">
+          <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </div>
+        <p class="example-de" id="detail-example-de" style="clear:both; padding-top: 4px;"></p>
+        <p class="example-en" id="detail-example-en" style="margin-top:4px;"></p>
+      </div>
+
+      <!-- Grammar note -->
+      <div class="grammar-note" id="detail-grammar-note" style="display:none;">
+        <span class="note-icon">💡</span>
+        <span class="note-text" id="detail-note-text"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- VIEW 5: STATISTICS PAGE                                 -->
+  <!-- ======================================================== -->
+  <div class="view-container view-animated hidden" id="view-stats">
+    <div class="stats-stage">
+
+      <!-- Stats tabs -->
+      <div class="stats-tabs" role="tablist">
+        <button class="stats-tab is-active" data-stats-tab="overview" role="tab">Übersicht</button>
+        <button class="stats-tab" data-stats-tab="decks" role="tab">Decks</button>
+        <button class="stats-tab" data-stats-tab="grammar" role="tab">Grammatik</button>
+      </div>
+
+      <!-- Overview tab content -->
+      <div id="stats-panel-overview">
+        <!-- Hero numbers -->
+        <div class="stats-hero-row">
+          <div class="stats-hero-tile">
+            <span class="stats-hero-value" id="stats-total-learned">0</span>
+            <span class="stats-hero-label">Gesamt gelernt</span>
+          </div>
+          <div class="stats-hero-tile">
+            <span class="stats-hero-value" id="stats-lernzeit">0h</span>
+            <span class="stats-hero-label">Lernzeit (geschätzt)</span>
+          </div>
+          <div class="stats-hero-tile">
+            <span class="stats-hero-value" id="stats-streak-big">0</span>
+            <span class="stats-hero-label">Streak (Tage)</span>
+          </div>
+        </div>
+
+        <!-- Activity chart -->
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Lernverlauf</span>
+            <span style="font-size:12px; color:var(--text-muted); font-weight:400;">7 Tage</span>
+          </div>
+          <canvas class="chart-canvas" id="activity-chart" width="700" height="140"></canvas>
+        </div>
+
+        <!-- Grammar distribution -->
+        <div class="chart-card">
+          <div class="chart-title"><span>Grammatik-Verteilung</span></div>
+          <div id="grammar-dist-bars">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Decks tab content -->
+      <div id="stats-panel-decks" style="display:none;">
+        <div id="stats-decks-list">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Grammar tab content -->
+      <div id="stats-panel-grammar" style="display:none;">
+        <div class="chart-card">
+          <div class="chart-title"><span>Morphologie-Fortschritt</span></div>
+          <div class="mastery-bars-list" id="stats-grammar-mastery">
+            <!-- Reuse existing mastery bar rendering -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: APPEARANCE &amp; TYPOGRAPHY CUSTOMIZATION POPUP       -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop hidden" id="modal-appearance" role="dialog" aria-modal="true" aria-labelledby="appearance-modal-title">
+    <div class="appearance-modal-card">
+      <div class="modal-header-row">
+        <div>
+          <h3 class="modal-title-sm" id="appearance-modal-title">Erscheinungsbild &amp; Schrift</h3>
+          <p class="modal-desc-sm">Passe Farbschema und Schriftart für maximale, ermüdungsfreie Lesbarkeit an</p>
+        </div>
+        <button class="modal-close-icon-btn" id="btn-appearance-close" aria-label="Schließen">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Section 1: Themes -->
+      <div class="appearance-group">
+        <span class="appearance-group-label">Farbschema (Themes)</span>
+        <div class="theme-options-grid">
+          <button class="theme-card-option active" data-theme-set="porcelain">
+            <div class="theme-swatch-large swatch-porcelain"></div>
+            <div class="theme-card-info">
+              <span class="theme-card-name">Porzellan-Weiß</span>
+              <span class="theme-card-desc">Klares, kühles Weiß mit hellem Frostglas</span>
+            </div>
+            <span class="option-check">✓</span>
+          </button>
+          <button class="theme-card-option" data-theme-set="nordic">
+            <div class="theme-swatch-large swatch-nordic"></div>
+            <div class="theme-card-info">
+              <span class="theme-card-name">Nordic Leinen</span>
+              <span class="theme-card-desc">Warmes skandinavisches Papier</span>
+            </div>
+            <span class="option-check"></span>
+          </button>
+          <button class="theme-card-option" data-theme-set="chalk">
+            <div class="theme-swatch-large swatch-chalk"></div>
+            <div class="theme-card-info">
+              <span class="theme-card-name">Reines Kreideweiß</span>
+              <span class="theme-card-desc">Minimalistisches Reinweiß mit hohem Kontrast</span>
+            </div>
+            <span class="option-check"></span>
+          </button>
+          <button class="theme-card-option" data-theme-set="dark">
+            <div class="theme-swatch-large" style="background:#1C1C1E; border-color:#38383A;"></div>
+            <div class="theme-card-info">
+              <span class="theme-card-name">Nachtmodus</span>
+              <span class="theme-card-desc">Dunkel für abendliches Lernen</span>
+            </div>
+            <span class="option-check"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Section 2: Fonts -->
+      <div class="appearance-group">
+        <span class="appearance-group-label">Schriftart für ermüdungsfreies Lesen</span>
+        <div class="font-options-grid">
+          <button class="font-card-option active" data-font-set="inter">
+            <div class="font-preview-circle">Aa</div>
+            <div class="theme-card-info">
+              <span class="theme-card-name">Inter (Standard)</span>
+              <span class="theme-card-desc">Optimale Bildschirm-Lesbarkeit &amp; klare Umlautpunkte</span>
+            </div>
+            <span class="option-check">✓</span>
+          </button>
+          <button class="font-card-option" data-font-set="lexend">
+            <div class="font-preview-circle" style="font-family: 'Lexend', sans-serif;">Aa</div>
+            <div class="theme-card-info">
+              <span class="theme-card-name">Lexend (Lernfluss)</span>
+              <span class="theme-card-desc">Wissenschaftlich entwickelt zur Reduzierung von Leseanstrengung</span>
+            </div>
+            <span class="option-check"></span>
+          </button>
+          <button class="font-card-option" data-font-set="system">
+            <div class="font-preview-circle" style="font-family: -apple-system, sans-serif;">Aa</div>
+            <div class="theme-card-info">
+              <span class="theme-card-name">System Native</span>
+              <span class="theme-card-desc">Apple SF Pro / Segoe UI nativer Systemfont</span>
+            </div>
+            <span class="option-check"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Preview Strip -->
+      <div class="appearance-preview-box">
+        <span class="preview-box-label">Live-Vorschau:</span>
+        <div class="preview-sample">
+          <span class="preview-word">aufstehen</span>
+          <span class="preview-ipa">[ˈaʊ̯fˌʃteːən]</span>
+          <span class="preview-conj">er steht auf, stand auf, ist aufgestanden</span>
+        </div>
+      </div>
+
+      <div class="modal-footer-row">
+        <button class="btn-modal-done" id="btn-appearance-done">Fertig</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Session Complete Summary Modal / Overlay -->
+  <div class="modal-backdrop hidden" id="modal-session-complete">
+    <div class="modal-card">
+      <div class="modal-icon-badge">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      <h3 class="modal-title">Sitzung abgeschlossen!</h3>
+      <p class="modal-subtitle" id="summary-deck-title">B1 Stammformen</p>
+
+      <div class="modal-stats-row">
+        <div class="modal-stat">
+          <span class="modal-stat-value" id="summary-count">50</span>
+          <span class="modal-stat-label">Karten wiederholt</span>
+        </div>
+        <div class="modal-stat-divider"></div>
+        <div class="modal-stat">
+          <span class="modal-stat-value highlight" id="summary-rate">94%</span>
+          <span class="modal-stat-label">Erinnerungsrate</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-primary" id="btn-summary-restart">Deck wiederholen</button>
+        <button class="btn-secondary" id="btn-summary-home">Zurück zur Übersicht</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

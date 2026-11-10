@@ -982,6 +982,9 @@
     if (!currentDeck || currentDeck.length === 0) return;
     const item = currentDeck[currentIndex];
 
+    // Expose for vocab detail view
+    window.currentWordData = item;
+
     // Reset card flip & scroll position
     if (isFlipped) {
       flashcard.classList.remove('is-flipped');
@@ -1177,6 +1180,13 @@
   function recordGrade(grade) {
     const isCorrect = grade === 'good' || grade === 'easy';
     recordStudyParticipation(isCorrect);
+
+    // Expose current word for vocab detail view
+    if (currentDeck && currentDeck[currentIndex]) {
+      window.currentWordData = currentDeck[currentIndex];
+    }
+    // Notify extension modules
+    document.dispatchEvent(new CustomEvent('wortschatz:dashboardUpdated'));
 
     // Smooth advance to next card
     setTimeout(() => {
@@ -1452,6 +1462,13 @@
     }
   }, { passive: true });
 
+  // Listen for continue card event from extension module
+  document.addEventListener('wortschatz:startDeck', (e) => {
+    if (e.detail && e.detail.deckId) {
+      switchView('study', e.detail.deckId);
+    }
+  });
+
   // Initial Data Fetch & Load
   async function initApp() {
     initTheme();
@@ -1490,4 +1507,529 @@
       }
     ];
   }
+})();
+
+
+// ============================================================
+// WORTSCHATZ REVAMP — Extension Module v2
+// Dashboard ribbon, Continue card, Vocab Detail, Stats page,
+// Deck search/filter, Dark mode, Level chips
+// ============================================================
+
+(function () {
+  'use strict';
+
+  // ── 1. Dashboard Stats Ribbon ─────────────────────────────
+  const ribbonProgressPct = document.getElementById('ribbon-progress-pct');
+  const ribbonProgressSub = document.getElementById('ribbon-progress-sub');
+  const ribbonTodayCount  = document.getElementById('ribbon-today-count');
+  const ribbonRetention   = document.getElementById('ribbon-retention');
+  const ribbonStreak      = document.getElementById('ribbon-streak');
+  const streakCounterHero = document.getElementById('streak-counter-hero');
+
+  function getStoredData() {
+    let studyLog = {}, deckProgress = {};
+    try {
+      const sl = localStorage.getItem('wortschatz_study_log_v2');
+      if (sl) studyLog = JSON.parse(sl);
+      const dp = localStorage.getItem('wortschatz_deck_progress_v2');
+      if (dp) deckProgress = JSON.parse(dp);
+    } catch(e) {}
+    return { studyLog, deckProgress };
+  }
+
+  function getTodayKeyLocal() {
+    const d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+
+  function calcStreakLocal(studyLog) {
+    let streak = 0;
+    const checkDate = new Date();
+    const todayKey = getTodayKeyLocal();
+    if (studyLog[todayKey] && studyLog[todayKey].count > 0) {
+      streak++;
+      checkDate.setDate(checkDate.getDate() - 1);
+    } else {
+      checkDate.setDate(checkDate.getDate() - 1);
+    }
+    while (true) {
+      const k = checkDate.getFullYear() + '-' + String(checkDate.getMonth()+1).padStart(2,'0') + '-' + String(checkDate.getDate()).padStart(2,'0');
+      if (studyLog[k] && studyLog[k].count > 0) { streak++; checkDate.setDate(checkDate.getDate()-1); } else break;
+    }
+    return streak;
+  }
+
+  function updateRibbonStats() {
+    const { studyLog, deckProgress } = getStoredData();
+    const todayKey = getTodayKeyLocal();
+    const todayEntry = studyLog[todayKey] || { count: 0, correct: 0 };
+    let totalRev = 0, totalCor = 0;
+    Object.values(studyLog).forEach(e => { totalRev += e.count||0; totalCor += e.correct||0; });
+    const streak = calcStreakLocal(studyLog);
+    const totalWords = 50;
+    const reviewed = (deckProgress['b1-all'] && deckProgress['b1-all'].reviewed) || 0;
+    const pct = Math.round((reviewed / totalWords) * 100);
+    const retention = totalRev > 0 ? Math.round((totalCor / totalRev) * 100) : 100;
+
+    if (ribbonProgressPct) ribbonProgressPct.textContent = pct + '%';
+    if (ribbonProgressSub) ribbonProgressSub.textContent = reviewed + ' von ' + totalWords;
+    if (ribbonTodayCount)  ribbonTodayCount.textContent  = todayEntry.count;
+    if (ribbonRetention)   ribbonRetention.textContent   = retention + '%';
+    if (ribbonStreak)      ribbonStreak.textContent      = streak;
+    if (streakCounterHero) streakCounterHero.textContent = streak + (streak === 1 ? ' Tag' : ' Tage');
+  }
+
+  // ── 2. Continue Card ──────────────────────────────────────
+  const continueCard      = document.getElementById('continue-card');
+  const continueDeckTitle = document.getElementById('continue-deck-title');
+  const continueDeckSub   = document.getElementById('continue-deck-sub');
+
+  function updateContinueCard() {
+    const { deckProgress } = getStoredData();
+    const deckDefs = [
+      { id: 'b1-all', title: 'B1 Stammformen', count: 50 },
+      { id: 'sein-verbs', title: "Perfekt mit 'sein'", count: 14 },
+      { id: 'trennbar', title: 'Trennbare Verben', count: 11 },
+    ];
+    let bestDeck = deckDefs[0], bestReviewed = 0;
+    deckDefs.forEach(d => {
+      const rev = (deckProgress[d.id] && deckProgress[d.id].reviewed) || 0;
+      const pct = Math.round((rev / d.count) * 100);
+      if (rev > 0 && pct < 100 && rev >= bestReviewed) { bestDeck = d; bestReviewed = rev; }
+    });
+    const rev = (deckProgress[bestDeck.id] && deckProgress[bestDeck.id].reviewed) || 0;
+    const pct = Math.round((rev / bestDeck.count) * 100);
+    if (continueDeckTitle) continueDeckTitle.textContent = bestDeck.title;
+    if (continueDeckSub)   continueDeckSub.textContent   = pct + '% abgeschlossen · Tippe zum Starten';
+    if (continueCard) continueCard.dataset.deckId = bestDeck.id;
+  }
+
+  if (continueCard) {
+    continueCard.addEventListener('click', () => {
+      const deckId = continueCard.dataset.deckId || 'b1-all';
+      document.dispatchEvent(new CustomEvent('wortschatz:startDeck', { detail: { deckId } }));
+    });
+    continueCard.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); continueCard.click(); }
+    });
+  }
+
+  // ── 3. Vocabulary Detail View ─────────────────────────────
+  const viewVocabDetail   = document.getElementById('view-vocab-detail');
+  const btnVocabBack      = document.getElementById('btn-vocab-detail-back');
+  const detailWord        = document.getElementById('detail-word');
+  const detailIpa         = document.getElementById('detail-ipa');
+  const detailMeaning     = document.getElementById('detail-meaning');
+  const detailTags        = document.getElementById('detail-tags');
+  const detailConjTable   = document.getElementById('detail-conj-table');
+  const detailExampleDe   = document.getElementById('detail-example-de');
+  const detailExampleEn   = document.getElementById('detail-example-en');
+  const detailGrammarNote = document.getElementById('detail-grammar-note');
+  const detailNoteText    = document.getElementById('detail-note-text');
+  const btnDetailAudio    = document.getElementById('btn-detail-audio');
+  const conjTabBtns       = document.querySelectorAll('.conj-tab');
+
+  let detailCurrentWord  = null;
+  let detailCurrentTense = 'praesens';
+  let previousViewId     = 'study';
+
+  function openVocabDetail(wordData, fromViewId) {
+    if (!viewVocabDetail || !wordData) return;
+    detailCurrentWord  = wordData;
+    detailCurrentTense = 'praesens';
+    previousViewId     = fromViewId || 'study';
+
+    if (detailWord)    detailWord.textContent    = wordData.word    || '';
+    if (detailIpa)     detailIpa.textContent     = wordData.ipa     || '';
+    if (detailMeaning) detailMeaning.textContent = wordData.meaning || '';
+
+    if (detailTags) {
+      detailTags.innerHTML = '';
+      if (wordData.level) {
+        const lc = document.createElement('span'); lc.className = 'chip chip-secondary'; lc.textContent = wordData.level;
+        detailTags.appendChild(lc);
+      }
+      if (wordData.type) {
+        const tc = document.createElement('span'); tc.className = 'chip chip-neutral'; tc.textContent = wordData.type;
+        detailTags.appendChild(tc);
+      }
+    }
+
+    conjTabBtns.forEach(t => t.classList.toggle('is-active', t.dataset.conjTense === 'praesens'));
+    renderConjTable('praesens');
+
+    document.querySelectorAll('.view-container').forEach(v => v.classList.add('hidden'));
+    viewVocabDetail.classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function formatSep(phrase, isTrennbar) {
+    if (!phrase || !isTrennbar) return phrase || '';
+    const parts = phrase.trim().split(/\s+/);
+    if (parts.length > 1) {
+      const prefix = parts.pop();
+      return parts.join(' ') + ' <strong style="color:var(--accent-terracotta)">' + prefix + '</strong>';
+    }
+    return phrase;
+  }
+
+  function renderConjTable(tense) {
+    if (!detailConjTable || !detailCurrentWord) return;
+    const w = detailCurrentWord;
+    const isTrennbar = w.type && w.type.toLowerCase().includes('trennbar');
+    let rows = [];
+
+    if (tense === 'praesens' && w.praesensAll) {
+      rows = [
+        ['ich', formatSep(w.praesensAll.ich, isTrennbar)],
+        ['du', formatSep(w.praesensAll.du, isTrennbar)],
+        ['er/sie/es', formatSep(w.praesensAll.er_sie_es, isTrennbar)],
+        ['wir / Sie', formatSep(w.praesensAll.wir_Sie, isTrennbar)],
+        ['ihr', formatSep(w.praesensAll.ihr, isTrennbar)],
+      ];
+    } else if (tense === 'praeteritum') {
+      rows = [['er/sie/es (Stamm)', formatSep(w.praeteritum, isTrennbar)]];
+    } else if (tense === 'perfekt') {
+      const aux = w.hilfsverb || 'haben';
+      const isSein = aux === 'sein';
+      const color = isSein ? 'var(--accent-terracotta)' : 'var(--accent-sage)';
+      rows = [
+        ['Hilfsverb', '<span style="font-weight:800; color:' + color + '">' + aux + '</span>'],
+        ['Partizip II', '<strong>' + (w.partizip2 || '') + '</strong>'],
+        ['Vollform', (isSein ? 'ist' : 'hat') + ' ' + formatSep(w.partizip2, isTrennbar)],
+      ];
+    }
+
+    detailConjTable.innerHTML = rows.map(([label, val]) =>
+      `<tr><td>${label}</td><td>${val}</td></tr>`
+    ).join('');
+
+    // Update example
+    const ex = (w.examples && w.examples[tense]) || null;
+    if (detailExampleDe) detailExampleDe.textContent = ex ? ex.de : (w.exampleDe || '');
+    if (detailExampleEn) detailExampleEn.textContent = ex ? ex.en : (w.exampleEn || '');
+
+    // Grammar note
+    if (detailNoteText) detailNoteText.textContent = w.note || '';
+    if (detailGrammarNote) detailGrammarNote.style.display = w.note ? 'flex' : 'none';
+  }
+
+  conjTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tense = btn.dataset.conjTense;
+      if (!tense) return;
+      conjTabBtns.forEach(t => t.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      detailCurrentTense = tense;
+      renderConjTable(tense);
+    });
+  });
+
+  if (btnVocabBack) {
+    btnVocabBack.addEventListener('click', () => {
+      if (viewVocabDetail) viewVocabDetail.classList.add('hidden');
+      const prevView = document.getElementById('view-' + previousViewId);
+      if (prevView) prevView.classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  function speakWordLocal(text) {
+    if (!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = 'de-DE'; utt.rate = 0.88;
+    window.speechSynthesis.speak(utt);
+  }
+
+  if (btnDetailAudio) {
+    btnDetailAudio.addEventListener('click', () => {
+      if (detailCurrentWord) speakWordLocal(detailCurrentWord.word);
+    });
+  }
+
+  // Expose globally so back-lemma click works
+  window.openVocabDetail = openVocabDetail;
+
+  // Click on back-lemma opens detail
+  const backLemmaEl = document.getElementById('back-word');
+  if (backLemmaEl) {
+    backLemmaEl.style.cursor = 'pointer';
+    backLemmaEl.setAttribute('title', 'Detail-Ansicht öffnen');
+    backLemmaEl.addEventListener('click', () => {
+      if (window.currentWordData) openVocabDetail(window.currentWordData, 'study');
+    });
+  }
+
+  // ── 4. Statistics View ────────────────────────────────────
+  const viewStats         = document.getElementById('view-stats');
+  const navItemStats      = document.getElementById('nav-item-stats');
+  const statsTabBtns      = document.querySelectorAll('.stats-tab');
+  const statsTotalLearned = document.getElementById('stats-total-learned');
+  const statsLernzeit     = document.getElementById('stats-lernzeit');
+  const statsStreakBig    = document.getElementById('stats-streak-big');
+  const activityChart     = document.getElementById('activity-chart');
+  const grammarDistBars   = document.getElementById('grammar-dist-bars');
+  const statsDecksList    = document.getElementById('stats-decks-list');
+
+  function openStatsView() {
+    document.querySelectorAll('.view-container').forEach(v => v.classList.add('hidden'));
+    if (viewStats) viewStats.classList.remove('hidden');
+    renderStatsOverview();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Update header
+    const btnBackHome = document.getElementById('btn-back-home');
+    const btnBackText = document.getElementById('btn-back-home-text');
+    const headerBrand = document.getElementById('header-brand-group');
+    if (btnBackHome) btnBackHome.classList.remove('hidden');
+    if (btnBackText) btnBackText.textContent = 'Übersicht';
+    if (headerBrand) headerBrand.classList.remove('hidden');
+  }
+
+  function renderStatsOverview() {
+    const { studyLog, deckProgress } = getStoredData();
+    let totalRev = 0, totalCor = 0;
+    Object.values(studyLog).forEach(e => { totalRev += e.count||0; totalCor += e.correct||0; });
+    const streak = calcStreakLocal(studyLog);
+
+    if (statsTotalLearned) statsTotalLearned.textContent = totalRev;
+    if (statsStreakBig)    statsStreakBig.textContent    = streak;
+    if (statsLernzeit) {
+      const mins = Math.round(totalRev * 0.75);
+      const h = Math.floor(mins / 60), m = mins % 60;
+      statsLernzeit.textContent = h > 0 ? h + 'h ' + m + 'm' : m + 'm';
+    }
+
+    drawActivityChart(studyLog);
+
+    if (grammarDistBars) {
+      const dists = [
+        { label: 'Präsens',         color: '#FF5A5F', pct: 42 },
+        { label: 'Präteritum',      color: '#6366F1', pct: 28 },
+        { label: 'Perfekt',         color: '#F59E0B', pct: 16 },
+        { label: 'Trennb. Verben',  color: '#10B981', pct: 7  },
+        { label: 'Sonstiges',       color: '#94A3B8', pct: 5  },
+      ];
+      grammarDistBars.innerHTML = dists.map(d => `
+        <div class="grammar-dist-row">
+          <span class="grammar-dist-label">${d.label}</span>
+          <div class="grammar-dist-bar-track">
+            <div class="grammar-dist-bar-fill" style="width:${d.pct}%;background:${d.color};"></div>
+          </div>
+          <span class="grammar-dist-pct">${d.pct}%</span>
+        </div>`).join('');
+    }
+
+    if (statsDecksList) {
+      const deckDefs = [
+        { id: 'b1-all',      title: 'B1 Stammformen',     count: 50 },
+        { id: 'sein-verbs',  title: "Perfekt mit 'sein'",  count: 14 },
+        { id: 'trennbar',    title: 'Trennbare Verben',    count: 11 },
+        { id: 'vokalwechsel',title: 'Starke Verben',       count: 20 },
+      ];
+      statsDecksList.innerHTML = deckDefs.map(d => {
+        const rev = (deckProgress[d.id] && deckProgress[d.id].reviewed) || 0;
+        const pct = Math.round((rev / d.count) * 100);
+        return `<div class="vocab-detail-section" style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <span style="font-weight:700;font-size:14px;">${d.title}</span>
+            <span style="font-size:12px;color:var(--text-muted);">${rev} / ${d.count}</span>
+          </div>
+          <div style="height:6px;background:var(--bg-surface-subtle);border-radius:999px;overflow:hidden;">
+            <div style="height:100%;width:${pct}%;background:var(--accent-terracotta);border-radius:999px;transition:width 0.6s cubic-bezier(0.23,1,0.32,1);"></div>
+          </div>
+          <span style="font-size:12px;color:var(--text-secondary);display:block;margin-top:4px;">${pct}% abgeschlossen</span>
+        </div>`;
+      }).join('');
+    }
+  }
+
+  function drawActivityChart(studyLog) {
+    if (!activityChart) return;
+    const ctx = activityChart.getContext('2d');
+    if (!ctx) return;
+    const W = activityChart.parentElement.offsetWidth - 40 || 660;
+    const H = 140;
+    activityChart.width  = W;
+    activityChart.height = H;
+
+    const dayNames = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+    const days = [], counts = [];
+    for (let i = 6; i >= 0; i--) {
+      const d = new Date(); d.setDate(d.getDate() - i);
+      const k = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+      days.push(dayNames[d.getDay()]);
+      counts.push((studyLog[k] && studyLog[k].count) || 0);
+    }
+
+    const maxCount = Math.max(...counts, 1);
+    const pad = { top: 20, right: 20, bottom: 30, left: 36 };
+    const cW = W - pad.left - pad.right;
+    const cH = H - pad.top  - pad.bottom;
+
+    ctx.clearRect(0, 0, W, H);
+
+    // Grid lines
+    ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--border-subtle').trim() || '#E5E3DC';
+    ctx.lineWidth = 1;
+    for (let g = 0; g <= 4; g++) {
+      const y = pad.top + cH - (g / 4) * cH;
+      ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(W - pad.right, y); ctx.stroke();
+    }
+
+    const pts = counts.map((c, i) => ({
+      x: pad.left + (i / (counts.length - 1)) * cW,
+      y: pad.top  + cH - (c / maxCount) * cH,
+    }));
+
+    // Gradient fill
+    const grad = ctx.createLinearGradient(0, pad.top, 0, H - pad.bottom);
+    grad.addColorStop(0, 'rgba(255,90,95,0.18)');
+    grad.addColorStop(1, 'rgba(255,90,95,0)');
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length; i++) {
+      const cpx = (pts[i-1].x + pts[i].x) / 2;
+      ctx.bezierCurveTo(cpx, pts[i-1].y, cpx, pts[i].y, pts[i].x, pts[i].y);
+    }
+    ctx.lineTo(pts[pts.length-1].x, H - pad.bottom);
+    ctx.lineTo(pts[0].x, H - pad.bottom);
+    ctx.closePath();
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    // Line
+    ctx.beginPath(); ctx.strokeStyle = '#FF5A5F'; ctx.lineWidth = 2.5;
+    ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length; i++) {
+      const cpx = (pts[i-1].x + pts[i].x) / 2;
+      ctx.bezierCurveTo(cpx, pts[i-1].y, cpx, pts[i].y, pts[i].x, pts[i].y);
+    }
+    ctx.stroke();
+
+    // Dots + labels
+    pts.forEach((pt, i) => {
+      ctx.beginPath(); ctx.arc(pt.x, pt.y, 4, 0, Math.PI * 2);
+      ctx.fillStyle = '#FFFFFF'; ctx.fill();
+      ctx.strokeStyle = '#FF5A5F'; ctx.lineWidth = 2; ctx.stroke();
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text-muted').trim() || '#9CA3AF';
+      ctx.font = '11px Inter, sans-serif'; ctx.textAlign = 'center';
+      ctx.fillText(days[i], pt.x, H - 6);
+    });
+  }
+
+  // Stats tab switching
+  statsTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.statsTab;
+      statsTabBtns.forEach(t => t.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      const panels = { overview: 'stats-panel-overview', decks: 'stats-panel-decks', grammar: 'stats-panel-grammar' };
+      Object.values(panels).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+      });
+      const active = document.getElementById(panels[tab]);
+      if (active) active.style.display = '';
+      if (tab === 'overview') drawActivityChart(getStoredData().studyLog);
+    });
+  });
+
+  if (navItemStats) {
+    navItemStats.addEventListener('click', () => {
+      const sD = document.getElementById('sidebar-drawer');
+      const sB = document.getElementById('sidebar-backdrop');
+      if (sD) sD.classList.remove('is-open');
+      if (sB) { sB.classList.remove('is-open'); sB.setAttribute('aria-hidden','true'); }
+      openStatsView();
+    });
+  }
+
+  // ── 5. Deck search + level filter ─────────────────────────
+  const levelFilterRow  = document.getElementById('level-filter-row');
+  const deckSearchInput = document.getElementById('deck-search-input');
+  let activeLevel = 'all';
+  let searchQuery = '';
+
+  function applyDeckFilters() {
+    const container = document.getElementById('library-folders-container');
+    if (!container) return;
+    container.querySelectorAll('.deck-card').forEach(card => {
+      const title = (card.querySelector('.deck-title') || {}).textContent || '';
+      const desc  = (card.querySelector('.deck-desc')  || {}).textContent || '';
+      const level = (card.querySelector('.chip-secondary') || {}).textContent || '';
+      const matchSearch = !searchQuery || title.toLowerCase().includes(searchQuery) || desc.toLowerCase().includes(searchQuery);
+      const matchLevel  = activeLevel === 'all' || level.toLowerCase().includes(activeLevel.toLowerCase());
+      card.style.display = (matchSearch && matchLevel) ? '' : 'none';
+    });
+  }
+
+  if (levelFilterRow) {
+    levelFilterRow.addEventListener('click', e => {
+      const chip = e.target.closest('.level-filter-chip');
+      if (!chip) return;
+      activeLevel = chip.dataset.level || 'all';
+      levelFilterRow.querySelectorAll('.level-filter-chip').forEach(c => c.classList.toggle('is-active', c.dataset.level === activeLevel));
+      applyDeckFilters();
+    });
+  }
+
+  if (deckSearchInput) {
+    deckSearchInput.addEventListener('input', e => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      applyDeckFilters();
+    });
+  }
+
+  // ── 6. Dark/extended theme support ───────────────────────
+  // Extend setTheme to also handle 'dark' and 'light'
+  const EXTENDED_THEMES = ['light', 'dark', 'porcelain', 'nordic', 'chalk'];
+  document.querySelectorAll('[data-theme-set]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const theme = btn.dataset.themeSet;
+      if (!EXTENDED_THEMES.includes(theme)) return;
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('wortschatz_theme_v2', theme); } catch(e) {}
+      document.querySelectorAll('[data-theme-set]').forEach(b => {
+        const isActive = b.dataset.themeSet === theme;
+        b.classList.toggle('active', isActive);
+        const ck = b.querySelector('.option-check');
+        if (ck) ck.textContent = isActive ? '✓' : '';
+      });
+    });
+  });
+
+  // Restore extended theme on load
+  try {
+    const saved = localStorage.getItem('wortschatz_theme_v2');
+    if (saved && EXTENDED_THEMES.includes(saved)) {
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+  } catch(e) {}
+
+  // ── 7. Reactive updates ───────────────────────────────────
+  document.addEventListener('wortschatz:dashboardUpdated', () => {
+    updateRibbonStats();
+    updateContinueCard();
+  });
+
+  // Watch home view becoming visible
+  const homeView = document.getElementById('view-home');
+  if (homeView) {
+    new MutationObserver(() => {
+      if (!homeView.classList.contains('hidden')) {
+        updateRibbonStats();
+        updateContinueCard();
+      }
+    }).observe(homeView, { attributes: true, attributeFilter: ['class'] });
+  }
+
+  // ── 8. Init ───────────────────────────────────────────────
+  setTimeout(() => {
+    updateRibbonStats();
+    updateContinueCard();
+  }, 300);
+
 })();
