@@ -399,22 +399,25 @@
             <div class="card-center">
               <h1 class="lemma-word" id="front-word">aufstehen</h1>
               <div class="ipa-line" id="front-ipa">[ˈaʊ̯fˌʃteːən]</div>
-              <div class="meaning-box">
-                <span class="meaning-text" id="front-meaning">to get up, arise (from bed or chair)</span>
+              <div class="front-flip-prompt">
+                <svg class="flip-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+                </svg>
+                <span>Bedeutung &amp; Konjugationen aufdecken</span>
               </div>
             </div>
 
             <div class="card-bottom-prompt">
-              <span class="prompt-text">Tippe oder drücke <kbd>Leertaste</kbd> für Konjugationen</span>
+              <span class="prompt-text">Tippe oder drücke <kbd>Leertaste</kbd> zum Wenden</span>
             </div>
           </div>
 
-          <!-- BACK SIDE (CONJUGATIONS) -->
-          <div class="card-face card-back">
+          <!-- BACK SIDE (CONJUGATIONS & MEANING) -->
+          <div class="card-face card-back" id="card-back-scroll">
             <div class="card-top-row">
               <div class="tag-group">
                 <span class="chip chip-secondary" id="back-level">B1</span>
-                <span class="chip chip-neutral" id="back-type">Stammformen</span>
+                <span class="chip chip-neutral" id="back-type">Verb · trennbar</span>
               </div>
               <button class="audio-button" id="btn-audio-back" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
                 <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -425,39 +428,79 @@
               </button>
             </div>
 
-            <!-- Compact Lemma Reference on Back -->
+            <!-- Lemma & Revealed Translation -->
             <div class="back-lemma-strip">
-              <span class="back-lemma" id="back-word">aufstehen</span>
-              <span class="back-meaning" id="back-meaning">to get up, arise</span>
+              <div class="back-lemma-heading">
+                <h2 class="back-lemma" id="back-word">aufstehen</h2>
+                <span class="back-ipa" id="back-ipa">[ˈaʊ̯fˌʃteːən]</span>
+              </div>
+              <div class="back-meaning-card">
+                <span class="back-meaning-label">Bedeutung</span>
+                <span class="back-meaning" id="back-meaning">to get up, arise (from bed or chair)</span>
+              </div>
             </div>
 
-            <!-- Structured 3-Column Conjugation Grid -->
-            <div class="conjugation-grid">
-              <!-- Präsens -->
-              <div class="conjugation-cell">
-                <span class="conj-label">Präsens (3. P.)</span>
-                <span class="conj-form" id="conj-praesens">er steht <span class="highlight-prefix">auf</span></span>
+            <!-- Full Present Tense Conjugation (All unique forms) -->
+            <div class="conjugation-section">
+              <div class="section-title-row">
+                <span class="section-badge">Präsens (Gegenwart)</span>
+                <span class="section-hint">Alle Formen</span>
               </div>
+              <div class="praesens-grid" id="praesens-grid">
+                <div class="praesens-item">
+                  <span class="praesens-pronoun">ich</span>
+                  <span class="praesens-val" id="conj-praesens-ich">stehe <span class="highlight-prefix">auf</span></span>
+                </div>
+                <div class="praesens-item">
+                  <span class="praesens-pronoun">du</span>
+                  <span class="praesens-val" id="conj-praesens-du">stehst <span class="highlight-prefix">auf</span></span>
+                </div>
+                <div class="praesens-item praesens-item-key">
+                  <span class="praesens-pronoun">er/sie/es</span>
+                  <span class="praesens-val" id="conj-praesens-er">steht <span class="highlight-prefix">auf</span></span>
+                </div>
+                <div class="praesens-item">
+                  <span class="praesens-pronoun">wir / Sie</span>
+                  <span class="praesens-val" id="conj-praesens-wir">stehen <span class="highlight-prefix">auf</span></span>
+                </div>
+                <div class="praesens-item">
+                  <span class="praesens-pronoun">ihr</span>
+                  <span class="praesens-val" id="conj-praesens-ihr">steht <span class="highlight-prefix">auf</span></span>
+                </div>
+              </div>
+            </div>
 
+            <!-- Stammformen: Präteritum & Perfekt -->
+            <div class="stammformen-row">
               <!-- Präteritum -->
-              <div class="conjugation-cell">
-                <span class="conj-label">Präteritum</span>
-                <span class="conj-form" id="conj-praeteritum">stand <span class="highlight-prefix">auf</span></span>
+              <div class="stammform-cell" id="cell-praeteritum">
+                <div class="stammform-header">
+                  <span class="stammform-label">Präteritum</span>
+                  <span class="stammform-sub">Vergangenheit</span>
+                </div>
+                <div class="stammform-val" id="conj-praeteritum">stand <span class="highlight-prefix">auf</span></div>
               </div>
 
-              <!-- Perfekt with Hilfsverb highlight -->
-              <div class="conjugation-cell highlight-cell" id="cell-perfekt">
-                <span class="conj-label">Perfekt (Hilfsverb!)</span>
-                <span class="conj-form" id="conj-perfekt">
-                  <span class="auxiliary-badge" id="conj-aux">ist</span> aufgestanden
-                </span>
+              <!-- Perfekt with Textbook Auxiliary Badge -->
+              <div class="stammform-cell" id="cell-perfekt">
+                <div class="stammform-header">
+                  <span class="stammform-label">Perfekt</span>
+                  <span class="aux-pill" id="perfekt-aux-pill">Hilfsverb: sein</span>
+                </div>
+                <div class="stammform-val" id="conj-perfekt">
+                  <span class="perfekt-aux-text" id="conj-aux-text">ist</span> <span id="conj-partizip2">aufgestanden</span>
+                </div>
               </div>
             </div>
 
-            <!-- Context Example Sentence -->
+            <!-- Context Example Sentences with 3-Tense Switcher -->
             <div class="example-container">
               <div class="example-header">
-                <span class="example-tag">Kontext-Beispiel</span>
+                <div class="example-tense-tabs" role="tablist" aria-label="Zeitform für Beispielsatz wählen">
+                  <button type="button" class="tense-tab is-active" data-tense="praesens" id="tab-tense-praesens">Präsens</button>
+                  <button type="button" class="tense-tab" data-tense="praeteritum" id="tab-tense-praeteritum">Präteritum</button>
+                  <button type="button" class="tense-tab" data-tense="perfekt" id="tab-tense-perfekt">Perfekt</button>
+                </div>
                 <button class="example-listen-btn" id="btn-audio-sentence" title="Beispielsatz anhören">
                   <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
                     <polygon points="5 3 19 12 5 21 5 3"></polygon>
@@ -465,13 +508,15 @@
                   <span>Hören</span>
                 </button>
               </div>
-              <p class="example-de" id="example-de">Er steht jeden Morgen pünktlich um 7 Uhr auf.</p>
-              <p class="example-en" id="example-en">He gets up punctually at 7 o'clock every morning.</p>
+              <div class="example-body">
+                <p class="example-de" id="example-de">Er steht jeden Morgen pünktlich um 7 Uhr auf.</p>
+                <p class="example-en" id="example-en">He gets up punctually at 7 o'clock every morning.</p>
+              </div>
             </div>
 
             <!-- Grammar Note Insight -->
             <div class="grammar-note" id="grammar-note">
-              <span class="note-bullet">·</span>
+              <span class="note-icon">💡</span>
               <span class="note-text" id="note-text">Orts- und Zustandswechsel → Perfekt immer mit 'sein'.</span>
             </div>
           </div>
@@ -479,34 +524,46 @@
         </div>
       </div>
 
-      <!-- Rating Dock (Fixed: Neutral, quiet frosted styling on all buttons) -->
+      <!-- Rating Dock -->
       <footer class="action-dock">
         <div class="dock-container">
           <!-- Grade 1: Nochmal -->
-          <button class="grade-btn grade-again" id="btn-grade-1" data-grade="again">
-            <span class="grade-title">Nochmal</span>
-            <span class="grade-time">&lt; 1 Min</span>
+          <button class="grade-btn grade-again" id="btn-grade-1" data-grade="again" title="Nochmal wiederholen (Taste 1)">
+            <span class="grade-dot dot-again"></span>
+            <div class="grade-info">
+              <span class="grade-title">Nochmal</span>
+              <span class="grade-time">&lt; 1 Min</span>
+            </div>
             <span class="keycap desktop-only">1</span>
           </button>
 
           <!-- Grade 2: Schwer -->
-          <button class="grade-btn grade-hard" id="btn-grade-2" data-grade="hard">
-            <span class="grade-title">Schwer</span>
-            <span class="grade-time">10 Min</span>
+          <button class="grade-btn grade-hard" id="btn-grade-2" data-grade="hard" title="Schwer (Taste 2)">
+            <span class="grade-dot dot-hard"></span>
+            <div class="grade-info">
+              <span class="grade-title">Schwer</span>
+              <span class="grade-time">10 Min</span>
+            </div>
             <span class="keycap desktop-only">2</span>
           </button>
 
-          <!-- Grade 3: Gut (Neutral frosted glass, unhighlighted) -->
-          <button class="grade-btn grade-good" id="btn-grade-3" data-grade="good">
-            <span class="grade-title">Gut</span>
-            <span class="grade-time">1 Tag</span>
+          <!-- Grade 3: Gut -->
+          <button class="grade-btn grade-good" id="btn-grade-3" data-grade="good" title="Gut (Taste 3)">
+            <span class="grade-dot dot-good"></span>
+            <div class="grade-info">
+              <span class="grade-title">Gut</span>
+              <span class="grade-time">1 Tag</span>
+            </div>
             <span class="keycap desktop-only">3</span>
           </button>
 
           <!-- Grade 4: Leicht -->
-          <button class="grade-btn grade-easy" id="btn-grade-4" data-grade="easy">
-            <span class="grade-title">Leicht</span>
-            <span class="grade-time">4 Tage</span>
+          <button class="grade-btn grade-easy" id="btn-grade-4" data-grade="easy" title="Leicht (Taste 4)">
+            <span class="grade-dot dot-easy"></span>
+            <div class="grade-info">
+              <span class="grade-title">Leicht</span>
+              <span class="grade-time">4 Tage</span>
+            </div>
             <span class="keycap desktop-only">4</span>
           </button>
         </div>

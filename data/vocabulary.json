@@ -13,7 +13,28 @@
     "perfekt": "ist aufgestanden",
     "exampleDe": "Er steht jeden Morgen pünktlich um 7 Uhr auf.",
     "exampleEn": "He gets up punctually at 7 o'clock every morning.",
-    "note": "Orts- und Zustandswechsel → Perfekt immer mit 'sein'."
+    "note": "Orts- und Zustandswechsel → Perfekt immer mit 'sein'.",
+    "praesensAll": {
+      "ich": "stehe auf",
+      "du": "stehst auf",
+      "er_sie_es": "steht auf",
+      "wir_Sie": "stehen auf",
+      "ihr": "steht auf"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich stehe jeden Morgen um 6 Uhr auf.",
+        "en": "I get up at 6 a.m. every morning."
+      },
+      "praeteritum": {
+        "de": "Er stand früh auf und machte Frühstück.",
+        "en": "He got up early and made breakfast."
+      },
+      "perfekt": {
+        "de": "Heute bin ich erst um 9 Uhr aufgestanden.",
+        "en": "Today I only got up at 9 a.m."
+      }
+    }
   },
   {
     "id": "v02",
@@ -29,7 +50,28 @@
     "perfekt": "hat angefangen",
     "exampleDe": "Der Deutschkurs fängt nächsten Montag an.",
     "exampleEn": "The German course starts next Monday.",
-    "note": "Vokalwechsel im Präsens: a → ä (du fängst an, er fängt an)."
+    "note": "Vokalwechsel im Präsens: a → ä (du fängst an, er fängt an).",
+    "praesensAll": {
+      "ich": "fange an",
+      "du": "fängst an",
+      "er_sie_es": "fängt an",
+      "wir_Sie": "fangen an",
+      "ihr": "fangt an"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Der Unterricht fängt pünktlich um acht Uhr an.",
+        "en": "The class starts promptly at eight o'clock."
+      },
+      "praeteritum": {
+        "de": "Es fing plötzlich an zu regnen.",
+        "en": "It suddenly started to rain."
+      },
+      "perfekt": {
+        "de": "Wir haben schon mit den Hausaufgaben angefangen.",
+        "en": "We have already started with the homework."
+      }
+    }
   },
   {
     "id": "v03",
@@ -45,7 +87,28 @@
     "perfekt": "ist angekommen",
     "exampleDe": "Der Zug ist mit zehn Minuten Verspätung angekommen.",
     "exampleEn": "The train arrived with a ten-minute delay.",
-    "note": "Bewegungsverb mit Ziel → Perfekt mit 'sein'."
+    "note": "Bewegungsverb mit Ziel → Perfekt mit 'sein'.",
+    "praesensAll": {
+      "ich": "komme an",
+      "du": "kommst an",
+      "er_sie_es": "kommt an",
+      "wir_Sie": "kommen an",
+      "ihr": "kommt an"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Wann kommt der nächste Zug in Berlin an?",
+        "en": "When does the next train arrive in Berlin?"
+      },
+      "praeteritum": {
+        "de": "Sie kamen spät in der Nacht im Hotel an.",
+        "en": "They arrived late at night at the hotel."
+      },
+      "perfekt": {
+        "de": "Der Zug ist mit zehn Minuten Verspätung angekommen.",
+        "en": "The train arrived with a ten-minute delay."
+      }
+    }
   },
   {
     "id": "v04",
@@ -61,7 +124,28 @@
     "perfekt": "hat angerufen",
     "exampleDe": "Ich habe meinen Arzt heute Morgen angerufen.",
     "exampleEn": "I called my doctor this morning.",
-    "note": "Verlangt immer Akkusativobjekt (jemanden anrufen)."
+    "note": "Verlangt immer Akkusativobjekt (jemanden anrufen).",
+    "praesensAll": {
+      "ich": "rufe an",
+      "du": "rufst an",
+      "er_sie_es": "ruft an",
+      "wir_Sie": "rufen an",
+      "ihr": "ruft an"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich rufe dich heute Nachmittag an.",
+        "en": "I will call you this afternoon."
+      },
+      "praeteritum": {
+        "de": "Er rief sofort einen Krankenwagen an.",
+        "en": "He called an ambulance immediately."
+      },
+      "perfekt": {
+        "de": "Hast du deine Eltern gestern angerufen?",
+        "en": "Did you call your parents yesterday?"
+      }
+    }
   },
   {
     "id": "v05",
@@ -77,7 +161,28 @@
     "perfekt": "hat angezogen",
     "exampleDe": "Zieh dir eine warme Jacke an, es ist kalt.",
     "exampleEn": "Put on a warm jacket, it is cold.",
-    "note": "Reflexiv: sich anziehen (Akk.) oder sich [etwas] anziehen (Dat.)."
+    "note": "Reflexiv: sich anziehen (Akk.) oder sich [etwas] anziehen (Dat.).",
+    "praesensAll": {
+      "ich": "ziehe an",
+      "du": "ziehst an",
+      "er_sie_es": "zieht an",
+      "wir_Sie": "ziehen an",
+      "ihr": "zieht an"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Er zieht sich eine warme Winterjacke an.",
+        "en": "He puts on a warm winter jacket."
+      },
+      "praeteritum": {
+        "de": "Sie zog für die Feier ein elegantes Kleid an.",
+        "en": "She put on an elegant dress for the celebration."
+      },
+      "perfekt": {
+        "de": "Das Kind hat sich heute ganz allein angezogen.",
+        "en": "The child got dressed all by himself today."
+      }
+    }
   },
   {
     "id": "v06",
@@ -93,7 +198,28 @@
     "perfekt": "ist geblieben",
     "exampleDe": "Am Wochenende bin ich wegen des Regens zu Hause geblieben.",
     "exampleEn": "At the weekend I stayed at home because of the rain.",
-    "note": "Zustandsverharren → eine der seltenen Ausnahmen: Perfekt mit 'sein'."
+    "note": "Zustandsverharren → eine der seltenen Ausnahmen: Perfekt mit 'sein'.",
+    "praesensAll": {
+      "ich": "bleibe",
+      "du": "bleibst",
+      "er_sie_es": "bleibt",
+      "wir_Sie": "bleiben",
+      "ihr": "bleibt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Bei diesem Regen bleibe ich lieber zu Hause.",
+        "en": "In this rain, I prefer to stay at home."
+      },
+      "praeteritum": {
+        "de": "Er blieb trotz der Grippe im Büro.",
+        "en": "He stayed in the office despite the flu."
+      },
+      "perfekt": {
+        "de": "Wie lange seid ihr gestern auf der Party geblieben?",
+        "en": "How long did you stay at the party yesterday?"
+      }
+    }
   },
   {
     "id": "v07",
@@ -109,7 +235,28 @@
     "perfekt": "hat gebracht",
     "exampleDe": "Er brachte mir einen warmen Kaffee ins Büro.",
     "exampleEn": "He brought me a warm coffee into the office.",
-    "note": "Gemischtes Verb: Vokalwechsel (i → a) plus schwache Endung -te."
+    "note": "Gemischtes Verb: Vokalwechsel (i → a) plus schwache Endung -te.",
+    "praesensAll": {
+      "ich": "bringe",
+      "du": "bringst",
+      "er_sie_es": "bringt",
+      "wir_Sie": "bringen",
+      "ihr": "bringt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Der Kellner bringt uns gleich die Getränke.",
+        "en": "The waiter will bring us the drinks right away."
+      },
+      "praeteritum": {
+        "de": "Sie brachte ihren Gästen frische Blumen mit.",
+        "en": "She brought fresh flowers for her guests."
+      },
+      "perfekt": {
+        "de": "Der Postbote hat ein großes Paket gebracht.",
+        "en": "The mail carrier brought a large parcel."
+      }
+    }
   },
   {
     "id": "v08",
@@ -125,7 +272,28 @@
     "perfekt": "hat gedacht",
     "exampleDe": "Woran hast du gerade gedacht?",
     "exampleEn": "What were you just thinking about?",
-    "note": "Präpositionalverb: denken an + Akkusativ."
+    "note": "Präpositionalverb: denken an + Akkusativ.",
+    "praesensAll": {
+      "ich": "denke",
+      "du": "denkst",
+      "er_sie_es": "denkt",
+      "wir_Sie": "denken",
+      "ihr": "denkt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich denke oft über unsere Zukunft nach.",
+        "en": "I often think about our future."
+      },
+      "praeteritum": {
+        "de": "Niemand dachte an eine so schnelle Lösung.",
+        "en": "Nobody thought of such a quick solution."
+      },
+      "perfekt": {
+        "de": "Hast du an den Termin um 14 Uhr gedacht?",
+        "en": "Did you remember the appointment at 2 p.m.?"
+      }
+    }
   },
   {
     "id": "v09",
@@ -141,7 +309,28 @@
     "perfekt": "hat eingeladen",
     "exampleDe": "Wir haben unsere Nachbarn zum Abendessen eingeladen.",
     "exampleEn": "We invited our neighbours for dinner.",
-    "note": "Vokalwechsel im Präsens (a → ä) und Präteritum (u)."
+    "note": "Vokalwechsel im Präsens (a → ä) und Präteritum (u).",
+    "praesensAll": {
+      "ich": "lade ein",
+      "du": "lädst ein",
+      "er_sie_es": "lädt ein",
+      "wir_Sie": "laden ein",
+      "ihr": "ladet ein"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich lade dich heute zum Abendessen ein.",
+        "en": "I invite you to dinner today."
+      },
+      "praeteritum": {
+        "de": "Sie lud alle Kolleginnen zu ihrem Geburtstag ein.",
+        "en": "She invited all colleagues to her birthday."
+      },
+      "perfekt": {
+        "de": "Wir haben über dreißig Gäste eingeladen.",
+        "en": "We have invited over thirty guests."
+      }
+    }
   },
   {
     "id": "v10",
@@ -157,7 +346,28 @@
     "perfekt": "ist eingeschlafen",
     "exampleDe": "Das Kind ist gestern sehr schnell eingeschlafen.",
     "exampleEn": "The child fell asleep very quickly yesterday.",
-    "note": "Zustandswechsel (vom Wachen zum Schlafen) → Perfekt mit 'sein'."
+    "note": "Zustandswechsel (vom Wachen zum Schlafen) → Perfekt mit 'sein'.",
+    "praesensAll": {
+      "ich": "schlafe ein",
+      "du": "schläfst ein",
+      "er_sie_es": "schläft ein",
+      "wir_Sie": "schlafen ein",
+      "ihr": "schlaft ein"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Das Baby schläft meistens sehr schnell ein.",
+        "en": "The baby usually falls asleep very quickly."
+      },
+      "praeteritum": {
+        "de": "Erschöpft von der Arbeit schlief er sofort ein.",
+        "en": "Exhausted from work, he fell asleep immediately."
+      },
+      "perfekt": {
+        "de": "Gestern bin ich erst nach Mitternacht eingeschlafen.",
+        "en": "Yesterday I only fell asleep after midnight."
+      }
+    }
   },
   {
     "id": "v11",
@@ -173,7 +383,28 @@
     "perfekt": "hat entschieden",
     "exampleDe": "Sie hat sich für ein Studium in Magdeburg entschieden.",
     "exampleEn": "She decided to study in Magdeburg.",
-    "note": "Untrennbares Präfix 'ent-'. Reflexiv: sich entscheiden für + Akk."
+    "note": "Untrennbares Präfix 'ent-'. Reflexiv: sich entscheiden für + Akk.",
+    "praesensAll": {
+      "ich": "entscheide",
+      "du": "entscheidest",
+      "er_sie_es": "entscheidet",
+      "wir_Sie": "entscheiden",
+      "ihr": "entscheidet"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Das Team entscheidet gemeinsam über das Projekt.",
+        "en": "The team decides together on the project."
+      },
+      "praeteritum": {
+        "de": "Die Richterin entschied im Sinne des Klägers.",
+        "en": "The judge decided in favor of the plaintiff."
+      },
+      "perfekt": {
+        "de": "Wir haben uns für die kleinere Wohnung entschieden.",
+        "en": "We decided on the smaller apartment."
+      }
+    }
   },
   {
     "id": "v12",
@@ -189,7 +420,28 @@
     "perfekt": "hat erkannt",
     "exampleDe": "Ich habe ihn auf dem alten Foto sofort erkannt.",
     "exampleEn": "I recognized him immediately in the old photo.",
-    "note": "Untrennbar mit Präfix 'er-'. Gemischte Konjugation (e → a)."
+    "note": "Untrennbar mit Präfix 'er-'. Gemischte Konjugation (e → a).",
+    "praesensAll": {
+      "ich": "erkenne",
+      "du": "erkennst",
+      "er_sie_es": "erkennt",
+      "wir_Sie": "erkennen",
+      "ihr": "erkennt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich erkenne ihn schon von Weitem an seinem Gang.",
+        "en": "I recognize him from afar by his walk."
+      },
+      "praeteritum": {
+        "de": "Er erkannte seinen Irrtum leider erst zu spät.",
+        "en": "Unfortunately he recognized his mistake too late."
+      },
+      "perfekt": {
+        "de": "Hast du deine alte Schulfreundin sofort erkannt?",
+        "en": "Did you recognize your old school friend right away?"
+      }
+    }
   },
   {
     "id": "v13",
@@ -205,7 +457,28 @@
     "perfekt": "ist gefahren",
     "exampleDe": "Er ist am Wochenende mit der Bahn nach Berlin gefahren.",
     "exampleEn": "He travelled to Berlin by train at the weekend.",
-    "note": "Ortsveränderung → 'sein'. (Ausnahme transitiv: Er hat das Auto gefahren)."
+    "note": "Ortsveränderung → 'sein'. (Ausnahme transitiv: Er hat das Auto gefahren).",
+    "praesensAll": {
+      "ich": "fahre",
+      "du": "fährst",
+      "er_sie_es": "fährt",
+      "wir_Sie": "fahren",
+      "ihr": "fahrt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Sie fährt jeden Tag mit dem Fahrrad zur Arbeit.",
+        "en": "She rides her bicycle to work every day."
+      },
+      "praeteritum": {
+        "de": "Im Sommer fuhr die Familie nach Italien.",
+        "en": "In summer, the family drove to Italy."
+      },
+      "perfekt": {
+        "de": "Bist du schon einmal mit einem Elektroauto gefahren?",
+        "en": "Have you ever driven an electric car?"
+      }
+    }
   },
   {
     "id": "v14",
@@ -221,7 +494,28 @@
     "perfekt": "ist gefallen",
     "exampleDe": "Die Tasse ist vom Tisch auf den Boden gefallen.",
     "exampleEn": "The cup fell from the table onto the floor.",
-    "note": "Bewegung nach unten → Perfekt mit 'sein'. Nicht verwechseln mit 'gefallen' (to please)."
+    "note": "Bewegung nach unten → Perfekt mit 'sein'. Nicht verwechseln mit 'gefallen' (to please).",
+    "praesensAll": {
+      "ich": "falle",
+      "du": "fällst",
+      "er_sie_es": "fällt",
+      "wir_Sie": "fallen",
+      "ihr": "fallt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Im Herbst fallen die bunten Blätter von den Bäumen.",
+        "en": "In autumn, colorful leaves fall from the trees."
+      },
+      "praeteritum": {
+        "de": "Das Glas fiel vom Tisch und zerbrach.",
+        "en": "The glass fell from the table and broke."
+      },
+      "perfekt": {
+        "de": "Die Temperaturen sind über Nacht stark gefallen.",
+        "en": "Temperatures dropped sharply overnight."
+      }
+    }
   },
   {
     "id": "v15",
@@ -237,7 +531,28 @@
     "perfekt": "hat gefunden",
     "exampleDe": "Wo hast du deinen verlorenen Schlüssel gefunden?",
     "exampleEn": "Where did you find your lost key?",
-    "note": "Stammformen: i → a → u (finden, fand, gefunden)."
+    "note": "Stammformen: i → a → u (finden, fand, gefunden).",
+    "praesensAll": {
+      "ich": "finde",
+      "du": "findest",
+      "er_sie_es": "findet",
+      "wir_Sie": "finden",
+      "ihr": "findet"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich finde meine Schlüssel im Moment nicht.",
+        "en": "I can't find my keys at the moment."
+      },
+      "praeteritum": {
+        "de": "Er fand überraschend eine sehr günstige Wohnung.",
+        "en": "He surprisingly found a very affordable apartment."
+      },
+      "perfekt": {
+        "de": "Hast du eine gute Antwort auf seine Frage gefunden?",
+        "en": "Did you find a good answer to his question?"
+      }
+    }
   },
   {
     "id": "v16",
@@ -253,7 +568,28 @@
     "perfekt": "ist geflogen",
     "exampleDe": "Wir sind gestern früh nach Frankfurt geflogen.",
     "exampleEn": "We flew to Frankfurt early yesterday morning.",
-    "note": "Ortsveränderung → Perfekt mit 'sein'."
+    "note": "Ortsveränderung → Perfekt mit 'sein'.",
+    "praesensAll": {
+      "ich": "fliege",
+      "du": "fliegst",
+      "er_sie_es": "fliegt",
+      "wir_Sie": "fliegen",
+      "ihr": "fliegt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Der Vogel fliegt hoch über die Berge.",
+        "en": "The bird flies high above the mountains."
+      },
+      "praeteritum": {
+        "de": "Sie flog geschäftlich für zwei Tage nach Wien.",
+        "en": "She flew to Vienna on business for two days."
+      },
+      "perfekt": {
+        "de": "Wir sind zum ersten Mal im Leben nach Tokio geflogen.",
+        "en": "We flew to Tokyo for the first time in our lives."
+      }
+    }
   },
   {
     "id": "v17",
@@ -269,7 +605,28 @@
     "perfekt": "hat gegeben",
     "exampleDe": "Können Sie mir bitte Ihre Telefonnummer geben?",
     "exampleEn": "Could you please give me your telephone number?",
-    "note": "Vokalwechsel e → i (du gibst, er gibt). Unpersönlich: 'es gibt' + Akk."
+    "note": "Vokalwechsel e → i (du gibst, er gibt). Unpersönlich: 'es gibt' + Akk.",
+    "praesensAll": {
+      "ich": "gebe",
+      "du": "gibst",
+      "er_sie_es": "gibt",
+      "wir_Sie": "geben",
+      "ihr": "gebt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "In dieser Stadt gibt es viele schöne Parks.",
+        "en": "There are many beautiful parks in this city."
+      },
+      "praeteritum": {
+        "de": "Er gab mir einen wertvollen Ratschlag für die Prüfung.",
+        "en": "He gave me valuable advice for the exam."
+      },
+      "perfekt": {
+        "de": "Wer hat dir dieses wunderbare Buch gegeben?",
+        "en": "Who gave you this wonderful book?"
+      }
+    }
   },
   {
     "id": "v18",
@@ -285,7 +642,28 @@
     "perfekt": "ist gegangen",
     "exampleDe": "Sie ist nach der Vorlesung direkt in die Bibliothek gegangen.",
     "exampleEn": "She went directly to the library after the lecture.",
-    "note": "Bewegungsverb → Perfekt mit 'sein'. Präteritum: ging."
+    "note": "Bewegungsverb → Perfekt mit 'sein'. Präteritum: ging.",
+    "praesensAll": {
+      "ich": "gehe",
+      "du": "gehst",
+      "er_sie_es": "geht",
+      "wir_Sie": "gehen",
+      "ihr": "geht"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich gehe am Abend gerne im Wald spazieren.",
+        "en": "In the evening I like to go for a walk in the forest."
+      },
+      "praeteritum": {
+        "de": "Sie ging pünktlich nach dem Meeting nach Hause.",
+        "en": "She went home punctually after the meeting."
+      },
+      "perfekt": {
+        "de": "Die Kollegen sind schon in die Mittagspause gegangen.",
+        "en": "The colleagues have already gone to lunch break."
+      }
+    }
   },
   {
     "id": "v19",
@@ -301,7 +679,28 @@
     "perfekt": "ist geschehen",
     "exampleDe": "Was ist gestern Abend am Hauptbahnhof geschehen?",
     "exampleEn": "What happened at the main station yesterday evening?",
-    "note": "Nur in der 3. Person gebräuchlich. Perfekt zwingend mit 'sein'."
+    "note": "Nur in der 3. Person gebräuchlich. Perfekt zwingend mit 'sein'.",
+    "praesensAll": {
+      "ich": "—",
+      "du": "—",
+      "er_sie_es": "geschieht",
+      "wir_Sie": "geschehen",
+      "ihr": "—"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Hier geschieht etwas völlig Unerwartetes.",
+        "en": "Something completely unexpected is happening here."
+      },
+      "praeteritum": {
+        "de": "Das Unglück geschah an einem regnerischen Montag.",
+        "en": "The accident happened on a rainy Monday."
+      },
+      "perfekt": {
+        "de": "Was ist in der Zwischenzeit eigentlich geschehen?",
+        "en": "What actually happened in the meantime?"
+      }
+    }
   },
   {
     "id": "v20",
@@ -317,7 +716,28 @@
     "perfekt": "hat gewonnen",
     "exampleDe": "Unsere Universität hat den Forschungspreis gewonnen.",
     "exampleEn": "Our university won the research award.",
-    "note": "Stammformen: i → a → o (gewinnen, gewann, gewonnen)."
+    "note": "Stammformen: i → a → o (gewinnen, gewann, gewonnen).",
+    "praesensAll": {
+      "ich": "gewinne",
+      "du": "gewinnst",
+      "er_sie_es": "gewinnt",
+      "wir_Sie": "gewinnen",
+      "ihr": "gewinnt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Unsere Mannschaft gewinnt fast jedes Spiel.",
+        "en": "Our team wins almost every game."
+      },
+      "praeteritum": {
+        "de": "Sie gewann bei dem Wettbewerb den ersten Preis.",
+        "en": "She won first prize in the competition."
+      },
+      "perfekt": {
+        "de": "Deutschland hat das spannende Finale gewonnen.",
+        "en": "Germany won the exciting final."
+      }
+    }
   },
   {
     "id": "v21",
@@ -333,7 +753,28 @@
     "perfekt": "hat gehalten",
     "exampleDe": "Der Bus hält direkt vor dem Universitätsgebäude.",
     "exampleEn": "The bus stops right in front of the university building.",
-    "note": "Vokalwechsel im Präsens: a → ä (du hältst, er hält)."
+    "note": "Vokalwechsel im Präsens: a → ä (du hältst, er hält).",
+    "praesensAll": {
+      "ich": "halte",
+      "du": "hältst",
+      "er_sie_es": "hält",
+      "wir_Sie": "halten",
+      "ihr": "haltet"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Der Schnellzug hält nicht an jedem Bahnhof.",
+        "en": "The express train does not stop at every station."
+      },
+      "praeteritum": {
+        "de": "Er hielt sein Versprechen bis zum Schluss.",
+        "en": "He kept his promise until the end."
+      },
+      "perfekt": {
+        "de": "Das Seil hat dem schweren Gewicht standgehalten.",
+        "en": "The rope held against the heavy weight."
+      }
+    }
   },
   {
     "id": "v22",
@@ -349,7 +790,28 @@
     "perfekt": "hat geheißen",
     "exampleDe": "Wie heißt dieser medizinische Fachbegriff auf Deutsch?",
     "exampleEn": "What is this medical term called in German?",
-    "note": "Präsens: du heißt (kein zusätzliches s wegen ß). Präteritum: hieß."
+    "note": "Präsens: du heißt (kein zusätzliches s wegen ß). Präteritum: hieß.",
+    "praesensAll": {
+      "ich": "heiße",
+      "du": "heißt",
+      "er_sie_es": "heißt",
+      "wir_Sie": "heißen",
+      "ihr": "heißt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Wie heißt der neue Kollege aus Hamburg?",
+        "en": "What is the new colleague from Hamburg called?"
+      },
+      "praeteritum": {
+        "de": "Früher hieß diese Straße nach einem Dichter.",
+        "en": "Formerly, this street was named after a poet."
+      },
+      "perfekt": {
+        "de": "Das Dorf hat vor Jahrhunderten ganz anders geheißen.",
+        "en": "Centuries ago, the village was called something completely different."
+      }
+    }
   },
   {
     "id": "v23",
@@ -365,7 +827,28 @@
     "perfekt": "hat geholfen",
     "exampleDe": "Der Professor hat den Studierenden bei der Aufgabe geholfen.",
     "exampleEn": "The professor helped the students with the assignment.",
-    "note": "Verlangt immer Dativ! (jemandem helfen bei + Dat)."
+    "note": "Verlangt immer Dativ! (jemandem helfen bei + Dat).",
+    "praesensAll": {
+      "ich": "helfe",
+      "du": "hilfst",
+      "er_sie_es": "hilft",
+      "wir_Sie": "helfen",
+      "ihr": "helft"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Er hilft seiner Großmutter oft beim Einkaufen.",
+        "en": "He often helps his grandmother with grocery shopping."
+      },
+      "praeteritum": {
+        "de": "Sie half den Touristen bei der Wegbeschreibung.",
+        "en": "She helped the tourists with directions."
+      },
+      "perfekt": {
+        "de": "Vielen Dank, dein Tipp hat mir sehr geholfen!",
+        "en": "Thank you very much, your tip helped me a lot!"
+      }
+    }
   },
   {
     "id": "v24",
@@ -381,7 +864,28 @@
     "perfekt": "hat gekannt",
     "exampleDe": "Kennst du schon die neuen Richtlinien für das Labor?",
     "exampleEn": "Do you already know the new guidelines for the laboratory?",
-    "note": "Unterschied: kennen (Personen/Dinge kennen) vs. wissen (Fakten wissen)."
+    "note": "Unterschied: kennen (Personen/Dinge kennen) vs. wissen (Fakten wissen).",
+    "praesensAll": {
+      "ich": "kenne",
+      "du": "kennst",
+      "er_sie_es": "kennt",
+      "wir_Sie": "kennen",
+      "ihr": "kennt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich kenne viele nette Leute in München.",
+        "en": "I know many nice people in Munich."
+      },
+      "praeteritum": {
+        "de": "Sie kannte die Stadt bereits aus ihrer Kindheit.",
+        "en": "She already knew the city from her childhood."
+      },
+      "perfekt": {
+        "de": "Wir haben uns schon seit der Schulzeit gekannt.",
+        "en": "We have known each other since school days."
+      }
+    }
   },
   {
     "id": "v25",
@@ -397,7 +901,28 @@
     "perfekt": "ist gekommen",
     "exampleDe": "Wann bist du gestern nach Hause gekommen?",
     "exampleEn": "When did you get home yesterday?",
-    "note": "Bewegungsverb → Perfekt mit 'sein'."
+    "note": "Bewegungsverb → Perfekt mit 'sein'.",
+    "praesensAll": {
+      "ich": "komme",
+      "du": "kommst",
+      "er_sie_es": "kommt",
+      "wir_Sie": "kommen",
+      "ihr": "kommt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Kommst du heute Abend mit ins Kino?",
+        "en": "Are you coming along to the cinema tonight?"
+      },
+      "praeteritum": {
+        "de": "Sie kam direkt nach der Arbeit zu Besuch.",
+        "en": "She came to visit right after work."
+      },
+      "perfekt": {
+        "de": "Alle Gäste sind sicher und wohlbehalten gekommen.",
+        "en": "All the guests arrived safely and well."
+      }
+    }
   },
   {
     "id": "v26",
@@ -413,7 +938,28 @@
     "perfekt": "hat gelassen",
     "exampleDe": "Ich habe meinen Laptop im Seminarraum gelassen.",
     "exampleEn": "I left my laptop in the seminar room.",
-    "note": "Vokalwechsel im Präsens: a → ä (er lässt). Mit Infinitiv: Ersatzinfinitiv!"
+    "note": "Vokalwechsel im Präsens: a → ä (er lässt). Mit Infinitiv: Ersatzinfinitiv!",
+    "praesensAll": {
+      "ich": "lasse",
+      "du": "lässt",
+      "er_sie_es": "lässt",
+      "wir_Sie": "lassen",
+      "ihr": "lasst"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich lasse mein Auto heute in der Garage stehen.",
+        "en": "I am leaving my car in the garage today."
+      },
+      "praeteritum": {
+        "de": "Er ließ seine Tasche versehentlich im Café liegen.",
+        "en": "He accidentally left his bag in the café."
+      },
+      "perfekt": {
+        "de": "Wo hast du deine Sonnenbrille gelassen?",
+        "en": "Where did you leave your sunglasses?"
+      }
+    }
   },
   {
     "id": "v27",
@@ -429,7 +975,28 @@
     "perfekt": "ist gelaufen",
     "exampleDe": "Er ist jeden Morgen fünf Kilometer im Park gelaufen.",
     "exampleEn": "He ran five kilometres in the park every morning.",
-    "note": "Vokalwechsel au → äu (er läuft). Perfekt mit 'sein'."
+    "note": "Vokalwechsel au → äu (er läuft). Perfekt mit 'sein'.",
+    "praesensAll": {
+      "ich": "laufe",
+      "du": "läufst",
+      "er_sie_es": "läuft",
+      "wir_Sie": "laufen",
+      "ihr": "lauft"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Sie läuft jeden Morgen fünf Kilometer im Park.",
+        "en": "She runs five kilometers in the park every morning."
+      },
+      "praeteritum": {
+        "de": "Der Junge lief so schnell er konnte nach Hause.",
+        "en": "The boy ran home as fast as he could."
+      },
+      "perfekt": {
+        "de": "Alles ist nach unserem ursprünglichen Plan gelaufen.",
+        "en": "Everything went according to our original plan."
+      }
+    }
   },
   {
     "id": "v28",
@@ -445,7 +1012,28 @@
     "perfekt": "hat gelesen",
     "exampleDe": "Hast du den wissenschaftlichen Artikel schon gelesen?",
     "exampleEn": "Have you already read the scientific article?",
-    "note": "Vokalwechsel e → ie (du liest, er liest). Präteritum: las."
+    "note": "Vokalwechsel e → ie (du liest, er liest). Präteritum: las.",
+    "praesensAll": {
+      "ich": "lese",
+      "du": "liest",
+      "er_sie_es": "liest",
+      "wir_Sie": "lesen",
+      "ihr": "lest"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Er liest vor dem Schlafen immer ein Kapitel im Buch.",
+        "en": "He always reads a chapter of a book before sleeping."
+      },
+      "praeteritum": {
+        "de": "Sie las den Brief aufmerksam bis zum Ende.",
+        "en": "She read the letter attentively to the end."
+      },
+      "perfekt": {
+        "de": "Hast du diesen interessanten Artikel schon gelesen?",
+        "en": "Have you already read this interesting article?"
+      }
+    }
   },
   {
     "id": "v29",
@@ -461,7 +1049,28 @@
     "perfekt": "hat gelegen",
     "exampleDe": "Magdeburg liegt an der Elbe in Sachsen-Anhalt.",
     "exampleEn": "Magdeburg is located on the Elbe in Saxony-Anhalt.",
-    "note": "Positionsverb: liegen + Dativ (Wo?). Nicht verwechseln mit transitiv 'legen + Akk'."
+    "note": "Positionsverb: liegen + Dativ (Wo?). Nicht verwechseln mit transitiv 'legen + Akk'.",
+    "praesensAll": {
+      "ich": "liege",
+      "du": "liegst",
+      "er_sie_es": "liegt",
+      "wir_Sie": "liegen",
+      "ihr": "liegt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Das Buch liegt noch auf dem Schreibtisch.",
+        "en": "The book is still lying on the desk."
+      },
+      "praeteritum": {
+        "de": "Er lag das ganze Wochenende mit Fieber im Bett.",
+        "en": "He lay in bed with a fever the entire weekend."
+      },
+      "perfekt": {
+        "de": "Der Brief hat tagelang ungeöffnet auf dem Tisch gelegen.",
+        "en": "The letter lay unopened on the table for days."
+      }
+    }
   },
   {
     "id": "v30",
@@ -477,7 +1086,28 @@
     "perfekt": "hat genommen",
     "exampleDe": "Er nahm seine Unterlagen und verließ den Raum.",
     "exampleEn": "He took his documents and left the room.",
-    "note": "Vokal- und Konsonantenwechsel: e → imm (du nimmst, er nimmt)."
+    "note": "Vokal- und Konsonantenwechsel: e → imm (du nimmst, er nimmt).",
+    "praesensAll": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er_sie_es": "nimmt",
+      "wir_Sie": "nehmen",
+      "ihr": "nehmt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich nehme morgens meistens die U-Bahn ins Büro.",
+        "en": "In the morning I usually take the subway to the office."
+      },
+      "praeteritum": {
+        "de": "Sie nahm einen Schluck Wasser und atmete tief durch.",
+        "en": "She took a sip of water and took a deep breath."
+      },
+      "perfekt": {
+        "de": "Hast du deine Medikamente heute schon genommen?",
+        "en": "Have you already taken your medication today?"
+      }
+    }
   },
   {
     "id": "v31",
@@ -493,7 +1123,28 @@
     "perfekt": "hat genannt",
     "exampleDe": "Der Prüfer nannte drei wichtige Ursachen für das Phänomen.",
     "exampleEn": "The examiner named three important causes for the phenomenon.",
-    "note": "Gemischte Konjugation (e → a): nennen, nannte, genannt."
+    "note": "Gemischte Konjugation (e → a): nennen, nannte, genannt.",
+    "praesensAll": {
+      "ich": "nenne",
+      "du": "nennst",
+      "er_sie_es": "nennt",
+      "wir_Sie": "nennen",
+      "ihr": "nennt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Seine Freunde nennen ihn einfach nur Alex.",
+        "en": "His friends simply call him Alex."
+      },
+      "praeteritum": {
+        "de": "Er nannte ihr die genaue Uhrzeit für die Abfahrt.",
+        "en": "He told her the exact time for departure."
+      },
+      "perfekt": {
+        "de": "Sie hat im Vorstellungsgespräch wichtige Gründe genannt.",
+        "en": "She named important reasons in the interview."
+      }
+    }
   },
   {
     "id": "v32",
@@ -509,7 +1160,28 @@
     "perfekt": "hat geraten",
     "exampleDe": "Der Arzt riet dem Patienten zu mehr Bewegung.",
     "exampleEn": "The doctor advised the patient to get more exercise.",
-    "note": "Vokalwechsel im Präsens: a → ä (er rät). Verlangt Dativ: jemandem raten zu + Dat."
+    "note": "Vokalwechsel im Präsens: a → ä (er rät). Verlangt Dativ: jemandem raten zu + Dat.",
+    "praesensAll": {
+      "ich": "rate",
+      "du": "rätst",
+      "er_sie_es": "rät",
+      "wir_Sie": "raten",
+      "ihr": "ratet"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich rate dir, dich rechtzeitig anzumelden.",
+        "en": "I advise you to register in good time."
+      },
+      "praeteritum": {
+        "de": "Die Ärztin riet ihm zu mehr Ruhe und Sport.",
+        "en": "The doctor advised him to get more rest and exercise."
+      },
+      "perfekt": {
+        "de": "Wer hat dir zu dieser Entscheidung geraten?",
+        "en": "Who advised you to make this decision?"
+      }
+    }
   },
   {
     "id": "v33",
@@ -525,7 +1197,28 @@
     "perfekt": "hat geschlafen",
     "exampleDe": "In den Prüfungsphasen schläft er oft nur fünf Stunden.",
     "exampleEn": "During exam periods he often only sleeps five hours.",
-    "note": "Vokalwechsel a → ä (er schläft). Aber: Perfekt mit 'haben' (Zustand, kein Wechsel!)."
+    "note": "Vokalwechsel a → ä (er schläft). Aber: Perfekt mit 'haben' (Zustand, kein Wechsel!).",
+    "praesensAll": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er_sie_es": "schläft",
+      "wir_Sie": "schlafen",
+      "ihr": "schlaft"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Am Wochenende schlafe ich gerne etwas länger.",
+        "en": "On weekends I like to sleep in a bit."
+      },
+      "praeteritum": {
+        "de": "Das Kind schlief während der Autofahrt tief und fest.",
+        "en": "The child slept soundly during the car ride."
+      },
+      "perfekt": {
+        "de": "Hast du in dem neuen Hotel gut geschlafen?",
+        "en": "Did you sleep well in the new hotel?"
+      }
+    }
   },
   {
     "id": "v34",
@@ -541,7 +1234,28 @@
     "perfekt": "hat geschlossen",
     "exampleDe": "Die Universitätsbibliothek schließt freitags um 20 Uhr.",
     "exampleEn": "The university library closes on Fridays at 8 p.m.",
-    "note": "Ablautreihe: ie → o → o (schließen, schloss, geschlossen)."
+    "note": "Ablautreihe: ie → o → o (schließen, schloss, geschlossen).",
+    "praesensAll": {
+      "ich": "schließe",
+      "du": "schließt",
+      "er_sie_es": "schließt",
+      "wir_Sie": "schließen",
+      "ihr": "schließt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Der Supermarkt schließt heute schon um 18 Uhr.",
+        "en": "The supermarket closes today at 6 p.m."
+      },
+      "praeteritum": {
+        "de": "Sie schloss leise die Tür, um niemanden zu wecken.",
+        "en": "She closed the door quietly so as not to wake anyone."
+      },
+      "perfekt": {
+        "de": "Die Bibliothek hat wegen Umbauarbeiten geschlossen.",
+        "en": "The library has closed due to renovation work."
+      }
+    }
   },
   {
     "id": "v35",
@@ -557,7 +1271,28 @@
     "perfekt": "hat geschrieben",
     "exampleDe": "Er hat gestern seine Masterarbeit fertig geschrieben.",
     "exampleEn": "He finished writing his master's thesis yesterday.",
-    "note": "Stammformen: ei → ie → ie (schreiben, schrieb, geschrieben)."
+    "note": "Stammformen: ei → ie → ie (schreiben, schrieb, geschrieben).",
+    "praesensAll": {
+      "ich": "schreibe",
+      "du": "schreibst",
+      "er_sie_es": "schreibt",
+      "wir_Sie": "schreiben",
+      "ihr": "schreibt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich schreibe gerade eine wichtige E-Mail an den Chef.",
+        "en": "I am writing an important email to the boss right now."
+      },
+      "praeteritum": {
+        "de": "Der Autor schrieb diesen Roman in nur drei Monaten.",
+        "en": "The author wrote this novel in just three months."
+      },
+      "perfekt": {
+        "de": "Hast du ihm schon eine Nachricht geschrieben?",
+        "en": "Have you written him a message yet?"
+      }
+    }
   },
   {
     "id": "v36",
@@ -573,7 +1308,28 @@
     "perfekt": "ist geschwommen",
     "exampleDe": "Wir sind gestern eine Stunde im See geschwommen.",
     "exampleEn": "We swam for an hour in the lake yesterday.",
-    "note": "Ortsveränderung im Wasser → Perfekt mit 'sein'."
+    "note": "Ortsveränderung im Wasser → Perfekt mit 'sein'.",
+    "praesensAll": {
+      "ich": "schwimme",
+      "du": "schwimmst",
+      "er_sie_es": "schwimmt",
+      "wir_Sie": "schwimmen",
+      "ihr": "schwimmt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Er schwimmt jeden Dienstagabend im Hallenbad.",
+        "en": "He swims every Tuesday evening in the indoor pool."
+      },
+      "praeteritum": {
+        "de": "Sie schwamm ohne Pause quer durch den Bergsee.",
+        "en": "She swam across the mountain lake without a break."
+      },
+      "perfekt": {
+        "de": "Wir sind im Urlaub jeden Tag im Meer geschwommen.",
+        "en": "We swam in the sea every day on vacation."
+      }
+    }
   },
   {
     "id": "v37",
@@ -589,7 +1345,28 @@
     "perfekt": "hat gesehen",
     "exampleDe": "Hast du den Vortrag des Gastprofessors gesehen?",
     "exampleEn": "Did you see the guest professor's lecture?",
-    "note": "Vokalwechsel e → ie (du siehst, er sieht). Präteritum: sah."
+    "note": "Vokalwechsel e → ie (du siehst, er sieht). Präteritum: sah.",
+    "praesensAll": {
+      "ich": "sehe",
+      "du": "siehst",
+      "er_sie_es": "sieht",
+      "wir_Sie": "sehen",
+      "ihr": "seht"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich sehe von meinem Fenster aus den Fernsehturm.",
+        "en": "From my window I can see the TV tower."
+      },
+      "praeteritum": {
+        "de": "Er sah den Unfall und rief die Polizei.",
+        "en": "He saw the accident and called the police."
+      },
+      "perfekt": {
+        "de": "Hast du diesen neuen Kinofilm schon gesehen?",
+        "en": "Have you seen this new movie yet?"
+      }
+    }
   },
   {
     "id": "v38",
@@ -605,7 +1382,28 @@
     "perfekt": "ist gewesen",
     "exampleDe": "Letzte Woche waren wir in Magdeburg auf dem Campus.",
     "exampleEn": "Last week we were on the campus in Magdeburg.",
-    "note": "Vollständig unregelmäßiges Hilfsverb. Perfekt: ist gewesen."
+    "note": "Vollständig unregelmäßiges Hilfsverb. Perfekt: ist gewesen.",
+    "praesensAll": {
+      "ich": "bin",
+      "du": "bist",
+      "er_sie_es": "ist",
+      "wir_Sie": "sind",
+      "ihr": "seid"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Heute ist das Wetter besonders schön und sonnig.",
+        "en": "Today the weather is particularly nice and sunny."
+      },
+      "praeteritum": {
+        "de": "Gestern war ich den ganzen Tag beruflich unterwegs.",
+        "en": "Yesterday I was traveling on business all day."
+      },
+      "perfekt": {
+        "de": "Bist du schon einmal in den Schweizer Alpen gewesen?",
+        "en": "Have you ever been to the Swiss Alps?"
+      }
+    }
   },
   {
     "id": "v39",
@@ -621,7 +1419,28 @@
     "perfekt": "hat gesandt / gesendet",
     "exampleDe": "Ich habe die Laborergebnisse per E-Mail gesendet.",
     "exampleEn": "I sent the lab results via email.",
-    "note": "Briefe/Nachrichten meist regelmäßig (gesendet), gehoben: gesandt."
+    "note": "Briefe/Nachrichten meist regelmäßig (gesendet), gehoben: gesandt.",
+    "praesensAll": {
+      "ich": "sende",
+      "du": "sendest",
+      "er_sie_es": "sendet",
+      "wir_Sie": "senden",
+      "ihr": "sendet"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich sende Ihnen die Unterlagen gleich per Mail.",
+        "en": "I will send you the documents right away by email."
+      },
+      "praeteritum": {
+        "de": "Das Unternehmen sandte eine Bestätigung an die Kunden.",
+        "en": "The company sent a confirmation to the customers."
+      },
+      "perfekt": {
+        "de": "Wir haben die Einladungen bereits gestern gesendet.",
+        "en": "We already sent the invitations yesterday."
+      }
+    }
   },
   {
     "id": "v40",
@@ -637,7 +1456,28 @@
     "perfekt": "hat gesessen",
     "exampleDe": "Er saß den ganzen Vormittag am Schreibtisch.",
     "exampleEn": "He sat at the desk the whole morning.",
-    "note": "Positionsverb: sitzen + Dativ (Wo?). Nicht verwechseln mit transitiv 'setzen + Akk'."
+    "note": "Positionsverb: sitzen + Dativ (Wo?). Nicht verwechseln mit transitiv 'setzen + Akk'.",
+    "praesensAll": {
+      "ich": "sitze",
+      "du": "sitzt",
+      "er_sie_es": "sitzt",
+      "wir_Sie": "sitzen",
+      "ihr": "sitzt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Die Katze sitzt gemütlich in der warmen Sonne.",
+        "en": "The cat sits comfortably in the warm sun."
+      },
+      "praeteritum": {
+        "de": "Wir saßen stundenlang zusammen und erzählten Geschichten.",
+        "en": "We sat together for hours telling stories."
+      },
+      "perfekt": {
+        "de": "Er hat den ganzen Flug über am Fenster gesessen.",
+        "en": "He sat by the window for the entire flight."
+      }
+    }
   },
   {
     "id": "v41",
@@ -653,7 +1493,28 @@
     "perfekt": "hat gesprochen",
     "exampleDe": "Er spricht fließend Deutsch und Englisch.",
     "exampleEn": "He speaks German and English fluently.",
-    "note": "Vokalwechsel e → i (du sprichst, er spricht). Präteritum: sprach."
+    "note": "Vokalwechsel e → i (du sprichst, er spricht). Präteritum: sprach.",
+    "praesensAll": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er_sie_es": "spricht",
+      "wir_Sie": "sprechen",
+      "ihr": "sprecht"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Sie spricht fließend Deutsch, Englisch und Spanisch.",
+        "en": "She speaks fluent German, English, and Spanish."
+      },
+      "praeteritum": {
+        "de": "Der Direktor sprach über die Pläne für das neue Jahr.",
+        "en": "The director spoke about the plans for the new year."
+      },
+      "perfekt": {
+        "de": "Ich habe gestern ausführlich mit meiner Chefin gesprochen.",
+        "en": "I spoke extensively with my manager yesterday."
+      }
+    }
   },
   {
     "id": "v42",
@@ -669,7 +1530,28 @@
     "perfekt": "hat gestanden",
     "exampleDe": "Das Mikroskop steht auf dem Labortisch.",
     "exampleEn": "The microscope is standing on the lab bench.",
-    "note": "Positionsverb: stehen + Dativ. In Süddeutschland/Österreich oft mit 'sein'."
+    "note": "Positionsverb: stehen + Dativ. In Süddeutschland/Österreich oft mit 'sein'.",
+    "praesensAll": {
+      "ich": "stehe",
+      "du": "stehst",
+      "er_sie_es": "steht",
+      "wir_Sie": "stehen",
+      "ihr": "steht"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Das alte Rathaus steht direkt am Marktplatz.",
+        "en": "The old town hall stands right on the marketplace."
+      },
+      "praeteritum": {
+        "de": "Die Zuschauer standen begeistert auf und klatschten.",
+        "en": "The audience stood up enthusiastically and clapped."
+      },
+      "perfekt": {
+        "de": "Wir haben über eine Stunde im Stau gestanden.",
+        "en": "We were stuck in a traffic jam for over an hour."
+      }
+    }
   },
   {
     "id": "v43",
@@ -685,7 +1567,28 @@
     "perfekt": "ist gestorben",
     "exampleDe": "Der berühmte Physiker ist im hohen Alter gestorben.",
     "exampleEn": "The famous physicist died at an advanced age.",
-    "note": "Zustandswechsel (Leben → Tod) → Perfekt zwingend mit 'sein'."
+    "note": "Zustandswechsel (Leben → Tod) → Perfekt zwingend mit 'sein'.",
+    "praesensAll": {
+      "ich": "sterbe",
+      "du": "stirbst",
+      "er_sie_es": "stirbt",
+      "wir_Sie": "sterben",
+      "ihr": "sterbt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ohne Wasser sterben viele Pflanzen in der Sommerhitze.",
+        "en": "Without water, many plants die in the summer heat."
+      },
+      "praeteritum": {
+        "de": "Der berühmte Komponist starb im Alter von 82 Jahren.",
+        "en": "The famous composer died at the age of 82."
+      },
+      "perfekt": {
+        "de": "Sein Großvater ist vor vielen Jahren friedlich gestorben.",
+        "en": "His grandfather died peacefully many years ago."
+      }
+    }
   },
   {
     "id": "v44",
@@ -701,7 +1604,28 @@
     "perfekt": "hat getragen",
     "exampleDe": "Im Labor müssen alle Studierende Schutzkleidung tragen.",
     "exampleEn": "In the laboratory all students must wear protective clothing.",
-    "note": "Vokalwechsel a → ä (du trägst, er trägt). Präteritum: trug."
+    "note": "Vokalwechsel a → ä (du trägst, er trägt). Präteritum: trug.",
+    "praesensAll": {
+      "ich": "trage",
+      "du": "trägst",
+      "er_sie_es": "trägt",
+      "wir_Sie": "tragen",
+      "ihr": "tragt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Er trägt bei der Arbeit immer einen eleganten Anzug.",
+        "en": "He always wears an elegant suit at work."
+      },
+      "praeteritum": {
+        "de": "Sie trug den schweren Koffer die Treppe hinauf.",
+        "en": "She carried the heavy suitcase up the stairs."
+      },
+      "perfekt": {
+        "de": "Wer hat heute die Einkäufe nach Hause getragen?",
+        "en": "Who carried the groceries home today?"
+      }
+    }
   },
   {
     "id": "v45",
@@ -717,7 +1641,28 @@
     "perfekt": "hat getroffen",
     "exampleDe": "Wir haben uns gestern in der Universitätsmensa getroffen.",
     "exampleEn": "We met yesterday in the university cafeteria.",
-    "note": "Vokalwechsel e → i (er trifft). Reflexiv: sich treffen mit + Dativ."
+    "note": "Vokalwechsel e → i (er trifft). Reflexiv: sich treffen mit + Dativ.",
+    "praesensAll": {
+      "ich": "treffe",
+      "du": "triffst",
+      "er_sie_es": "trifft",
+      "wir_Sie": "treffen",
+      "ihr": "trefft"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich treffe meine Freunde freitags im Café.",
+        "en": "I meet my friends on Fridays at the café."
+      },
+      "praeteritum": {
+        "de": "Er traf zufällig einen Schulfreund in der Bahn.",
+        "en": "He bumped into a school friend on the train by chance."
+      },
+      "perfekt": {
+        "de": "Wir haben gestern eine wichtige Entscheidung getroffen.",
+        "en": "We made an important decision yesterday."
+      }
+    }
   },
   {
     "id": "v46",
@@ -733,7 +1678,28 @@
     "perfekt": "hat getrunken",
     "exampleDe": "Während langer Lerneinheiten trank er viel Wasser.",
     "exampleEn": "During long study sessions he drank a lot of water.",
-    "note": "Ablautreihe: i → a → u (trinken, trank, getrunken)."
+    "note": "Ablautreihe: i → a → u (trinken, trank, getrunken).",
+    "praesensAll": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er_sie_es": "trinkt",
+      "wir_Sie": "trinken",
+      "ihr": "trinkt"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Sie trinkt morgens immer eine Tasse grünen Tee.",
+        "en": "She always drinks a cup of green tea in the morning."
+      },
+      "praeteritum": {
+        "de": "Nach dem Sport trank er einen großen Schluck Wasser.",
+        "en": "After sports, he took a big drink of water."
+      },
+      "perfekt": {
+        "de": "Habt ihr genug frisches Wasser getrunken?",
+        "en": "Did you drink enough fresh water?"
+      }
+    }
   },
   {
     "id": "v47",
@@ -749,7 +1715,28 @@
     "perfekt": "hat getan",
     "exampleDe": "Was kann ich heute noch für dich tun?",
     "exampleEn": "What else can I do for you today?",
-    "note": "Präsens: ich tue, du tust, er tut, wir tun. Präteritum: tat."
+    "note": "Präsens: ich tue, du tust, er tut, wir tun. Präteritum: tat.",
+    "praesensAll": {
+      "ich": "tue",
+      "du": "tust",
+      "er_sie_es": "tut",
+      "wir_Sie": "tun",
+      "ihr": "tut"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Was tust du in deiner Freizeit am liebsten?",
+        "en": "What do you like doing most in your free time?"
+      },
+      "praeteritum": {
+        "de": "Der warme Tee tat ihr bei Halsschmerzen sehr gut.",
+        "en": "The warm tea did her a lot of good for her sore throat."
+      },
+      "perfekt": {
+        "de": "Er hat alles getan, um pünktlich anzukommen.",
+        "en": "He did everything to arrive on time."
+      }
+    }
   },
   {
     "id": "v48",
@@ -765,7 +1752,28 @@
     "perfekt": "hat vergessen",
     "exampleDe": "Vergiss bitte nicht, deine Hausaufgabe rechtzeitig abzugeben.",
     "exampleEn": "Please do not forget to submit your homework on time.",
-    "note": "Untrennbares Präfix 'ver-'. Vokalwechsel: e → i (er vergisst)."
+    "note": "Untrennbares Präfix 'ver-'. Vokalwechsel: e → i (er vergisst).",
+    "praesensAll": {
+      "ich": "vergesse",
+      "du": "vergisst",
+      "er_sie_es": "vergisst",
+      "wir_Sie": "vergessen",
+      "ihr": "vergesst"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich vergesse leider immer wieder wichtige Passwörter.",
+        "en": "Unfortunately, I repeatedly forget important passwords."
+      },
+      "praeteritum": {
+        "de": "Er vergaß im Stress seinen Regenschirm im Bus.",
+        "en": "In the stress, he forgot his umbrella on the bus."
+      },
+      "perfekt": {
+        "de": "Hast du vergessen, die Haustür abzuschließen?",
+        "en": "Did you forget to lock the front door?"
+      }
+    }
   },
   {
     "id": "v49",
@@ -781,7 +1789,28 @@
     "perfekt": "hat verstanden",
     "exampleDe": "Ich habe die mathematische Ableitung jetzt vollständig verstanden.",
     "exampleEn": "I have now fully understood the mathematical derivation.",
-    "note": "Untrennbares Präfix 'ver-'. Stammformen wie 'stehen' (stand, gestanden)."
+    "note": "Untrennbares Präfix 'ver-'. Stammformen wie 'stehen' (stand, gestanden).",
+    "praesensAll": {
+      "ich": "verstehe",
+      "du": "verstehst",
+      "er_sie_es": "versteht",
+      "wir_Sie": "verstehen",
+      "ihr": "versteht"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich verstehe diese grammatikalische Regel jetzt viel besser.",
+        "en": "I understand this grammatical rule much better now."
+      },
+      "praeteritum": {
+        "de": "Sie verstand den Witz erst nach ein paar Sekunden.",
+        "en": "She only got the joke after a few seconds."
+      },
+      "perfekt": {
+        "de": "Habt ihr die Anweisungen der Lehrerin verstanden?",
+        "en": "Did you understand the teacher's instructions?"
+      }
+    }
   },
   {
     "id": "v50",
@@ -797,6 +1826,27 @@
     "perfekt": "hat gewusst",
     "exampleDe": "Weißt du, wann die Prüfungsergebnisse veröffentlicht werden?",
     "exampleEn": "Do you know when the exam results will be published?",
-    "note": "Präteritopräsens: ich weiß, du weißt, er weiß (1. und 3. Person identisch ohne Endung!)."
+    "note": "Präteritopräsens: ich weiß, du weißt, er weiß (1. und 3. Person identisch ohne Endung!).",
+    "praesensAll": {
+      "ich": "weiß",
+      "du": "weißt",
+      "er_sie_es": "weiß",
+      "wir_Sie": "wissen",
+      "ihr": "wisst"
+    },
+    "examples": {
+      "praesens": {
+        "de": "Ich weiß genau, wo der nächste Bahnhof ist.",
+        "en": "I know exactly where the nearest train station is."
+      },
+      "praeteritum": {
+        "de": "Niemand wusste die Antwort auf diese schwere Frage.",
+        "en": "Nobody knew the answer to this difficult question."
+      },
+      "perfekt": {
+        "de": "Hast du gewusst, dass sie nach Berlin umgezogen ist?",
+        "en": "Did you know that she moved to Berlin?"
+      }
+    }
   }
 ]

@@ -230,25 +230,41 @@
   // Front Elements
   const frontWord = document.getElementById('front-word');
   const frontIpa = document.getElementById('front-ipa');
-  const frontMeaning = document.getElementById('front-meaning');
   const frontLevel = document.getElementById('front-level');
   const frontType = document.getElementById('front-type');
   const btnAudioFront = document.getElementById('btn-audio-front');
 
   // Back Elements
+  const cardBackScroll = document.getElementById('card-back-scroll');
   const backWord = document.getElementById('back-word');
+  const backIpa = document.getElementById('back-ipa');
   const backMeaning = document.getElementById('back-meaning');
   const backLevel = document.getElementById('back-level');
   const backType = document.getElementById('back-type');
   const btnAudioBack = document.getElementById('btn-audio-back');
-  const conjPraesens = document.getElementById('conj-praesens');
+
+  // Full Präsens Conjugation Elements
+  const conjPraesensIch = document.getElementById('conj-praesens-ich');
+  const conjPraesensDu = document.getElementById('conj-praesens-du');
+  const conjPraesensEr = document.getElementById('conj-praesens-er');
+  const conjPraesensWir = document.getElementById('conj-praesens-wir');
+  const conjPraesensIhr = document.getElementById('conj-praesens-ihr');
+
+  // Stammformen Elements
   const conjPraeteritum = document.getElementById('conj-praeteritum');
-  const conjPerfekt = document.getElementById('conj-perfekt');
+  const cellPraeteritum = document.getElementById('cell-praeteritum');
   const cellPerfekt = document.getElementById('cell-perfekt');
+  const perfektAuxPill = document.getElementById('perfekt-aux-pill');
+  const conjAuxText = document.getElementById('conj-aux-text');
+  const conjPartizip2 = document.getElementById('conj-partizip2');
+
+  // Example Sentences with 3-Tense Switcher
+  const tenseTabs = document.querySelectorAll('.tense-tab');
   const exampleDe = document.getElementById('example-de');
   const exampleEn = document.getElementById('example-en');
   const noteText = document.getElementById('note-text');
   const btnAudioSentence = document.getElementById('btn-audio-sentence');
+  let currentExampleTense = 'praesens';
 
   // Rating Buttons
   const btnGrade1 = document.getElementById('btn-grade-1');
@@ -968,47 +984,66 @@
     if (!currentDeck || currentDeck.length === 0) return;
     const item = currentDeck[currentIndex];
 
-    // Reset card flip
+    // Reset card flip & scroll position
     if (isFlipped) {
       flashcard.classList.remove('is-flipped');
       isFlipped = false;
     }
+    if (cardBackScroll) {
+      cardBackScroll.scrollTop = 0;
+    }
 
-    // Front Side
+    // Front Side (German word & IPA only — Meaning/Answer is strictly hidden!)
     frontWord.textContent = item.word;
     frontIpa.textContent = item.ipa || '';
-    frontMeaning.textContent = item.meaning;
     frontLevel.textContent = item.level || 'B1';
     frontType.textContent = item.type || 'Verb';
 
-    // Back Side
+    // Back Side (Revealed lemma, IPA and meaning)
     backWord.textContent = item.word;
+    if (backIpa) backIpa.textContent = item.ipa || '';
     backMeaning.textContent = item.meaning;
     backLevel.textContent = item.level || 'B1';
-    backType.textContent = item.type || 'Stammformen';
+    backType.textContent = item.type || 'Verb';
 
     // Separable prefixes formatted strictly for trennbare Verben
     const isTrennbar = item.type && item.type.toLowerCase().includes('trennbar');
-    conjPraesens.innerHTML = formatSeparableVerb(item.praesens, isTrennbar);
-    conjPraeteritum.innerHTML = formatSeparableVerb(item.praeteritum, isTrennbar);
 
-    // Perfekt with auxiliary badge
-    const aux = item.hilfsverb || (item.perfekt && item.perfekt.startsWith('ist') ? 'ist' : 'hat');
-    const isSein = aux === 'sein' || aux === 'ist';
-    const auxClass = isSein ? 'auxiliary-badge' : 'auxiliary-badge aux-hat';
-    const verbFormOnly = item.partizip2 || item.perfekt.replace(/^(ist|hat)\s+/, '');
-
-    if (isSein) {
-      cellPerfekt.classList.add('highlight-cell');
+    // Full Present Tense (All unique forms: ich, du, er/sie/es, wir/Sie, ihr)
+    if (item.praesensAll) {
+      if (conjPraesensIch) conjPraesensIch.innerHTML = formatSeparableVerb(item.praesensAll.ich, isTrennbar);
+      if (conjPraesensDu) conjPraesensDu.innerHTML = formatSeparableVerb(item.praesensAll.du, isTrennbar);
+      if (conjPraesensEr) conjPraesensEr.innerHTML = formatSeparableVerb(item.praesensAll.er_sie_es, isTrennbar);
+      if (conjPraesensWir) conjPraesensWir.innerHTML = formatSeparableVerb(item.praesensAll.wir_Sie, isTrennbar);
+      if (conjPraesensIhr) conjPraesensIhr.innerHTML = formatSeparableVerb(item.praesensAll.ihr, isTrennbar);
     } else {
-      cellPerfekt.classList.remove('highlight-cell');
+      if (conjPraesensEr) conjPraesensEr.innerHTML = formatSeparableVerb(item.praesens, isTrennbar);
     }
 
-    conjPerfekt.innerHTML = `<span class="${auxClass}">${isSein ? 'ist' : aux}</span> ${verbFormOnly}`;
+    // Präteritum
+    if (conjPraeteritum) {
+      conjPraeteritum.innerHTML = formatSeparableVerb(item.praeteritum, isTrennbar);
+    }
 
-    // Context Sentence
-    exampleDe.textContent = item.exampleDe || '';
-    exampleEn.textContent = item.exampleEn || '';
+    // Perfekt (Textbook Standard: Clean, calm styling with auxiliary pill)
+    const aux = item.hilfsverb || (item.perfekt && item.perfekt.startsWith('ist') ? 'sein' : 'haben');
+    const isSein = aux === 'sein' || aux === 'ist';
+    const auxVerbWord = isSein ? 'ist' : 'hat';
+    const verbFormOnly = item.partizip2 || (item.perfekt ? item.perfekt.replace(/^(ist|hat)\s+/, '') : '');
+
+    if (perfektAuxPill) {
+      perfektAuxPill.textContent = `Hilfsverb: ${isSein ? 'sein' : 'haben'}`;
+      perfektAuxPill.style.color = isSein ? 'var(--accent-terracotta)' : 'var(--accent-sage)';
+    }
+    if (conjAuxText) {
+      conjAuxText.textContent = auxVerbWord;
+    }
+    if (conjPartizip2) {
+      conjPartizip2.textContent = verbFormOnly;
+    }
+
+    // Interactive Context Sentence for the active tense
+    renderExampleSentence();
 
     // Grammar Note
     if (item.note) {
@@ -1023,6 +1058,32 @@
     const pct = Math.round(((currentIndex + 1) / currentDeck.length) * 100);
     progressBar.style.width = `${pct}%`;
     progressBar.parentElement.setAttribute('aria-valuenow', pct);
+  }
+
+  function renderExampleSentence() {
+    if (!currentDeck || currentDeck.length === 0) return;
+    const item = currentDeck[currentIndex];
+
+    // Update active tab buttons
+    if (tenseTabs && tenseTabs.length > 0) {
+      tenseTabs.forEach(tab => {
+        const tense = tab.getAttribute('data-tense');
+        tab.classList.toggle('is-active', tense === currentExampleTense);
+      });
+    }
+
+    if (item.examples && item.examples[currentExampleTense]) {
+      exampleDe.textContent = item.examples[currentExampleTense].de;
+      exampleEn.textContent = item.examples[currentExampleTense].en;
+    } else {
+      exampleDe.textContent = item.exampleDe || '';
+      exampleEn.textContent = item.exampleEn || '';
+    }
+  }
+
+  function setExampleTense(tense) {
+    currentExampleTense = tense;
+    renderExampleSentence();
   }
 
   function formatSeparableVerb(phrase, isTrennbar = false) {
@@ -1215,9 +1276,34 @@
 
   btnAudioSentence.addEventListener('click', (e) => {
     e.stopPropagation();
-    const item = currentDeck[currentIndex];
-    if (item && item.exampleDe) speakText(item.exampleDe, null, btnAudioSentence);
+    const textToSpeak = exampleDe.textContent;
+    if (textToSpeak) speakText(textToSpeak, null, btnAudioSentence);
   });
+
+  // Tense Switcher Tabs & Cell Clicks
+  if (tenseTabs && tenseTabs.length > 0) {
+    tenseTabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const tense = tab.getAttribute('data-tense');
+        if (tense) setExampleTense(tense);
+      });
+    });
+  }
+
+  if (cellPraeteritum) {
+    cellPraeteritum.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setExampleTense('praeteritum');
+    });
+  }
+
+  if (cellPerfekt) {
+    cellPerfekt.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setExampleTense('perfekt');
+    });
+  }
 
   // Grade Buttons
   btnGrade1.addEventListener('click', () => recordGrade('again'));
