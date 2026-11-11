@@ -174,7 +174,7 @@
   const btnSidebarToggle = document.getElementById('btn-sidebar-toggle');
   const navItemHome = document.getElementById('nav-item-home');
   const navItemDecks = document.getElementById('nav-item-decks');
-  const navItemCalendar = document.getElementById('nav-item-calendar');
+  const navItemStats = document.getElementById('nav-item-stats');
   const navItemAppearance = document.getElementById('nav-item-appearance');
   const sidebarDeckShortcuts = document.getElementById('sidebar-deck-shortcuts');
   // Legacy aliases so existing code that uses these variables still works
@@ -615,9 +615,10 @@
 
     if (modalSessionComplete) modalSessionComplete.classList.add('hidden');
 
+    // Cleanly hide all view containers so no overlapping or stuck views occur
+    document.querySelectorAll('.view-container').forEach(v => v.classList.add('hidden'));
+
     if (viewName === 'study') {
-      viewHome.classList.add('hidden');
-      if (viewDecks) viewDecks.classList.add('hidden');
       viewStudy.classList.remove('hidden');
       viewStudy.classList.remove('view-slide-in-left');
       viewStudy.classList.add('view-slide-in-right');
@@ -632,8 +633,6 @@
         startDeckStudy(deckId);
       }
     } else if (viewName === 'decks') {
-      viewHome.classList.add('hidden');
-      viewStudy.classList.add('hidden');
       if (viewDecks) {
         viewDecks.classList.remove('hidden');
         viewDecks.classList.remove('view-slide-in-left');
@@ -649,12 +648,30 @@
       // Update sidebar nav active classes
       if (navItemHome) navItemHome.classList.remove('active');
       if (navItemDecks) navItemDecks.classList.add('active');
+      if (navItemStats) navItemStats.classList.remove('active');
 
       renderDecksLibraryView();
+    } else if (viewName === 'stats') {
+      const vStats = document.getElementById('view-stats');
+      if (vStats) {
+        vStats.classList.remove('hidden');
+      }
+
+      btnBackHome.classList.remove('hidden');
+      if (btnBackHomeText) {
+        btnBackHomeText.textContent = 'Übersicht';
+      }
+      headerBrandGroup.classList.add('hidden');
+
+      if (navItemHome) navItemHome.classList.remove('active');
+      if (navItemDecks) navItemDecks.classList.remove('active');
+      if (navItemStats) navItemStats.classList.add('active');
+
+      if (typeof window.renderStatsOverview === 'function') {
+        window.renderStatsOverview();
+      }
     } else {
       // Default: 'home'
-      viewStudy.classList.add('hidden');
-      if (viewDecks) viewDecks.classList.add('hidden');
       viewHome.classList.remove('hidden');
       viewHome.classList.remove('view-slide-in-right');
       viewHome.classList.add('view-slide-in-left');
@@ -665,11 +682,14 @@
       // Update sidebar nav active classes
       if (navItemHome) navItemHome.classList.add('active');
       if (navItemDecks) navItemDecks.classList.remove('active');
+      if (navItemStats) navItemStats.classList.remove('active');
 
       updateDashboardStats();
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  window.switchView = switchView;
 
   // ================= Sidebar Management =================
   const isMobile = () => window.innerWidth <= 768;
@@ -1433,36 +1453,47 @@
   }
 
   // Sidebar navigation links
-  navItemHome.addEventListener('click', () => {
-    closeSidebar();
-    switchView('home');
-  });
+  if (navItemHome) {
+    navItemHome.addEventListener('click', () => {
+      closeSidebar();
+      switchView('home');
+    });
+  }
 
-  navItemDecks.addEventListener('click', () => {
-    closeSidebar();
-    switchView('decks');
-  });
+  if (navItemDecks) {
+    navItemDecks.addEventListener('click', () => {
+      closeSidebar();
+      switchView('decks');
+    });
+  }
 
-  navItemCalendar.addEventListener('click', () => {
-    closeSidebar();
-    switchView('home');
-    document.getElementById('section-calendar').scrollIntoView({ behavior: 'smooth' });
-  });
+  if (navItemStats) {
+    navItemStats.addEventListener('click', () => {
+      closeSidebar();
+      if (typeof window.openStatsView === 'function') {
+        window.openStatsView();
+      } else {
+        switchView('stats');
+      }
+    });
+  }
 
   // Back to Home Button in Header
-  btnBackHome.addEventListener('click', () => {
-    if (currentActiveView === 'study') {
-      if (previousView === 'decks') {
-        switchView('decks');
+  if (btnBackHome) {
+    btnBackHome.addEventListener('click', () => {
+      if (currentActiveView === 'study') {
+        if (previousView === 'decks') {
+          switchView('decks');
+        } else {
+          switchView('home');
+        }
+      } else if (currentActiveView === 'decks' || currentActiveView === 'stats') {
+        switchView('home');
       } else {
         switchView('home');
       }
-    } else if (currentActiveView === 'decks') {
-      switchView('home');
-    } else {
-      switchView('home');
-    }
-  });
+    });
+  }
 
   // Library View Back Button
   if (btnLibraryBackHome) {
@@ -1472,43 +1503,55 @@
   }
 
   // Calendar Month Nav
-  btnCalPrev.addEventListener('click', () => {
-    displayedCalDate.setMonth(displayedCalDate.getMonth() - 1);
-    renderMonthCalendar(displayedCalDate);
-  });
+  if (btnCalPrev) {
+    btnCalPrev.addEventListener('click', () => {
+      displayedCalDate.setMonth(displayedCalDate.getMonth() - 1);
+      renderMonthCalendar(displayedCalDate);
+    });
+  }
 
-  btnCalNext.addEventListener('click', () => {
-    displayedCalDate.setMonth(displayedCalDate.getMonth() + 1);
-    renderMonthCalendar(displayedCalDate);
-  });
+  if (btnCalNext) {
+    btnCalNext.addEventListener('click', () => {
+      displayedCalDate.setMonth(displayedCalDate.getMonth() + 1);
+      renderMonthCalendar(displayedCalDate);
+    });
+  }
 
   // Summary Modal Buttons
-  btnSummaryRestart.addEventListener('click', () => {
-    modalSessionComplete.classList.add('hidden');
-    startDeckStudy(currentDeckId);
-  });
+  if (btnSummaryRestart) {
+    btnSummaryRestart.addEventListener('click', () => {
+      if (modalSessionComplete) modalSessionComplete.classList.add('hidden');
+      startDeckStudy(currentDeckId);
+    });
+  }
 
-  btnSummaryHome.addEventListener('click', () => {
-    modalSessionComplete.classList.add('hidden');
-    switchView('decks');
-  });
+  if (btnSummaryHome) {
+    btnSummaryHome.addEventListener('click', () => {
+      if (modalSessionComplete) modalSessionComplete.classList.add('hidden');
+      switchView('decks');
+    });
+  }
 
   // Card Flip on Click (excluding buttons or if swiped)
-  flashcard.addEventListener('click', (e) => {
-    if (wasSwiped) {
-      wasSwiped = false;
-      return;
-    }
-    if (e.target.closest('button')) return;
-    toggleFlip();
-  });
+  if (flashcard) {
+    flashcard.addEventListener('click', (e) => {
+      if (wasSwiped) {
+        wasSwiped = false;
+        return;
+      }
+      if (e.target.closest('button')) return;
+      toggleFlip();
+    });
+  }
 
   // Audio Buttons
-  btnAudioFront.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const item = currentDeck[currentIndex];
-    if (item) speakText(item.word, null, btnAudioFront);
-  });
+  if (btnAudioFront) {
+    btnAudioFront.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const item = currentDeck[currentIndex];
+      if (item) speakText(item.word, null, btnAudioFront);
+    });
+  }
 
   const btnAudioCenter = document.getElementById('btn-audio-center');
   if (btnAudioCenter) {
@@ -1519,11 +1562,13 @@
     });
   }
 
-  btnAudioBack.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const item = currentDeck[currentIndex];
-    if (item) speakText(item.word, null, btnAudioBack);
-  });
+  if (btnAudioBack) {
+    btnAudioBack.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const item = currentDeck[currentIndex];
+      if (item) speakText(item.word, null, btnAudioBack);
+    });
+  }
 
   const btnAudioBackInline = document.getElementById('btn-audio-back-inline');
   if (btnAudioBackInline) {
@@ -1534,11 +1579,13 @@
     });
   }
 
-  btnAudioSentence.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const textToSpeak = exampleDe.textContent;
-    if (textToSpeak) speakText(textToSpeak, null, btnAudioSentence);
-  });
+  if (btnAudioSentence) {
+    btnAudioSentence.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const textToSpeak = exampleDe ? exampleDe.textContent : '';
+      if (textToSpeak) speakText(textToSpeak, null, btnAudioSentence);
+    });
+  }
 
   // Tense Switcher Tabs & Cell Clicks
   if (tenseTabs && tenseTabs.length > 0) {
@@ -1569,10 +1616,10 @@
   }
 
   // Grade Buttons
-  btnGrade1.addEventListener('click', () => recordGrade('again'));
-  btnGrade2.addEventListener('click', () => recordGrade('hard'));
-  btnGrade3.addEventListener('click', () => recordGrade('good'));
-  btnGrade4.addEventListener('click', () => recordGrade('easy'));
+  if (btnGrade1) btnGrade1.addEventListener('click', () => recordGrade('again'));
+  if (btnGrade2) btnGrade2.addEventListener('click', () => recordGrade('hard'));
+  if (btnGrade3) btnGrade3.addEventListener('click', () => recordGrade('good'));
+  if (btnGrade4) btnGrade4.addEventListener('click', () => recordGrade('easy'));
 
   // Quick Drill Trigger Button in Bento Grid
   if (btnQuickDrill) {
@@ -1681,25 +1728,27 @@
   let touchStartX = 0;
   let touchStartY = 0;
 
-  flashcard.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-    touchStartY = e.changedTouches[0].screenY;
-    wasSwiped = false;
-  }, { passive: true });
+  if (flashcard) {
+    flashcard.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+      wasSwiped = false;
+    }, { passive: true });
 
-  flashcard.addEventListener('touchend', (e) => {
-    const diffX = e.changedTouches[0].screenX - touchStartX;
-    const diffY = e.changedTouches[0].screenY - touchStartY;
-    if (Math.abs(diffX) > 60 && Math.abs(diffY) < 50) {
-      wasSwiped = true;
-      if (diffX < 0) {
-        nextCard();
-      } else {
-        prevCard();
+    flashcard.addEventListener('touchend', (e) => {
+      const diffX = e.changedTouches[0].screenX - touchStartX;
+      const diffY = e.changedTouches[0].screenY - touchStartY;
+      if (Math.abs(diffX) > 60 && Math.abs(diffY) < 50) {
+        wasSwiped = true;
+        if (diffX < 0) {
+          nextCard();
+        } else {
+          prevCard();
+        }
+        setTimeout(() => { wasSwiped = false; }, 350);
       }
-      setTimeout(() => { wasSwiped = false; }, 350);
-    }
-  }, { passive: true });
+    }, { passive: true });
+  }
 
   // Listen for continue card event from extension module
   document.addEventListener('wortschatz:startDeck', (e) => {
@@ -2051,8 +2100,18 @@
     const headerBrand = document.getElementById('header-brand-group');
     if (btnBackHome) btnBackHome.classList.remove('hidden');
     if (btnBackText) btnBackText.textContent = 'Übersicht';
-    if (headerBrand) headerBrand.classList.remove('hidden');
+    if (headerBrand) headerBrand.classList.add('hidden');
+
+    const navH = document.getElementById('nav-item-home');
+    const navD = document.getElementById('nav-item-decks');
+    const navS = document.getElementById('nav-item-stats');
+    if (navH) navH.classList.remove('active');
+    if (navD) navD.classList.remove('active');
+    if (navS) navS.classList.add('active');
   }
+
+  window.openStatsView = openStatsView;
+  window.renderStatsOverview = renderStatsOverview;
 
   function renderStatsOverview() {
     const { studyLog, deckProgress } = getStoredData();
