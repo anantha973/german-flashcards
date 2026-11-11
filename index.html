@@ -23,87 +23,101 @@
 </head>
 <body>
 
-  <!-- Ambient Light Orbs Layer for Real Frosted Glass Refraction -->
+  <!-- Ambient Light Orbs Layer -->
   <div class="ambient-background" aria-hidden="true">
     <div class="ambient-orb ambient-orb-1"></div>
     <div class="ambient-orb ambient-orb-2"></div>
     <div class="ambient-orb ambient-orb-3"></div>
   </div>
 
-  <!-- Left Sidebar Drawer Overlay & Container -->
-  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
-  <aside class="sidebar-drawer" id="sidebar-drawer" aria-label="Hauptnavigation" aria-hidden="true">
-    <div class="sidebar-header">
-      <div class="sidebar-brand">
+  <!-- App Layout Shell: Icon-Rail Sidebar + Main Content -->
+  <div class="app-layout">
+
+  <!-- Persistent Icon-Rail Sidebar (ChatGPT-style) -->
+  <aside class="sidebar" id="sidebar" data-expanded="false" aria-label="Hauptnavigation">
+
+    <!-- Sidebar top: Toggle + Brand -->
+    <div class="sidebar-top">
+      <button class="sidebar-toggle-btn" id="btn-sidebar-toggle" aria-label="Menü ein-/ausklappen" title="Seitenleiste ein-/ausklappen">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="9" y1="3" x2="9" y2="21"></line>
+        </svg>
+      </button>
+      <div class="sidebar-brand-row">
         <div class="brand-monogram">W</div>
         <div class="brand-text-col">
           <span class="brand-title">Wortschatz</span>
           <span class="brand-subtitle">B1 Studio</span>
         </div>
       </div>
-      <button class="sidebar-close-btn" id="btn-sidebar-close" aria-label="Menü schließen">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
     </div>
 
     <nav class="sidebar-nav">
-      <div class="sidebar-section-title">Navigation</div>
-      <button class="sidebar-nav-item active" id="nav-item-home">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-          <polyline points="9 22 9 12 15 12 15 22"></polyline>
-        </svg>
-        <span>Übersicht</span>
+      <button class="sidebar-nav-item active" id="nav-item-home" title="Übersicht" data-tooltip="Übersicht">
+        <div class="nav-icon-slot">
+          <svg class="nav-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </div>
+        <span class="nav-label">Übersicht</span>
       </button>
 
-      <button class="sidebar-nav-item" id="nav-item-decks">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-        </svg>
-        <span>Alle Decks</span>
+      <button class="sidebar-nav-item" id="nav-item-decks" title="Alle Decks" data-tooltip="Alle Decks">
+        <div class="nav-icon-slot">
+          <svg class="nav-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        </div>
+        <span class="nav-label">Alle Decks</span>
       </button>
 
-      <button class="sidebar-nav-item" id="nav-item-calendar">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        <span>Kalender &amp; Statistik</span>
+      <button class="sidebar-nav-item" id="nav-item-stats" title="Statistik" data-tooltip="Statistik">
+        <div class="nav-icon-slot">
+          <svg class="nav-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+        </div>
+        <span class="nav-label">Statistik</span>
       </button>
 
-      <button class="sidebar-nav-item" id="nav-item-stats">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="20" x2="18" y2="10"></line>
-          <line x1="12" y1="20" x2="12" y2="4"></line>
-          <line x1="6" y1="20" x2="6" y2="14"></line>
-        </svg>
-        <span>Statistik</span>
+      <button class="sidebar-nav-item" id="nav-item-appearance" title="Erscheinungsbild &amp; Schrift" data-tooltip="Erscheinungsbild">
+        <div class="nav-icon-slot">
+          <svg class="nav-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </div>
+        <span class="nav-label">Erscheinungsbild</span>
       </button>
 
-      <button class="sidebar-nav-item" id="nav-item-appearance">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="3"></circle>
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-        </svg>
-        <span>Erscheinungsbild &amp; Schrift</span>
-      </button>
-
-      <div class="sidebar-section-title">Decks Schnellstart</div>
-      <div class="sidebar-deck-list" id="sidebar-deck-shortcuts">
-        <!-- Rendered dynamically -->
+      <!-- Deck Shortcuts — only visible when expanded -->
+      <div class="sidebar-shortcuts-section">
+        <div class="sidebar-section-title nav-label">Schnellstart</div>
+        <div class="sidebar-deck-list" id="sidebar-deck-shortcuts">
+          <!-- Rendered dynamically -->
+        </div>
       </div>
     </nav>
 
+    <!-- Sidebar footer: User avatar (AS teal badge matching reference) -->
     <div class="sidebar-footer">
-      <span class="sidebar-footer-text">B1 Goethe-Zertifikat Vorbereitung</span>
+      <div class="sidebar-avatar-slot">
+        <div class="sidebar-user-avatar" title="Anantha S">AS</div>
+      </div>
+      <span class="nav-label sidebar-user-name">Anantha</span>
     </div>
   </aside>
+
+  <!-- Mobile backdrop (only on small screens) -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- Main content area -->
+  <div class="main-content" id="main-content">
 
   <!-- Exciting Frosted Command Bar Header -->
   <header class="app-header">
@@ -425,14 +439,23 @@
         <input type="search" class="deck-search-input" id="deck-search-input" placeholder="Decks durchsuchen..." autocomplete="off">
       </div>
 
-      <!-- Level Filter Chips -->
-      <div class="level-filter-row" id="level-filter-row">
-        <button class="level-filter-chip is-active" data-level="all">Alle</button>
-        <button class="level-filter-chip" data-level="A1">A1</button>
-        <button class="level-filter-chip" data-level="A2">A2</button>
-        <button class="level-filter-chip" data-level="B1">B1</button>
-        <button class="level-filter-chip" data-level="B2">B2</button>
-        <button class="level-filter-chip" data-level="Grammatik">Grammatik</button>
+      <!-- Level Filter Chips & New Folder Action -->
+      <div class="level-filter-bar">
+        <div class="level-filter-row" id="level-filter-row">
+          <button class="level-filter-chip is-active" data-level="all">Alle</button>
+          <button class="level-filter-chip" data-level="A1">A1</button>
+          <button class="level-filter-chip" data-level="A2">A2</button>
+          <button class="level-filter-chip" data-level="B1">B1</button>
+          <button class="level-filter-chip" data-level="B2">B2</button>
+          <button class="level-filter-chip" data-level="Grammatik">Grammatik</button>
+        </div>
+        <button class="new-folder-action-btn" id="btn-create-folder" title="Neuen Ordner erstellen">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Neuer Ordner</span>
+        </button>
       </div>
 
       <!-- Library Folders Container -->
@@ -473,16 +496,27 @@
                 <span class="chip chip-neutral" id="front-type">Verb · trennbar</span>
               </div>
               <button class="audio-button" id="btn-audio-front" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
-                <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="icon-speaker" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                   <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
                   <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
                 </svg>
+                <span class="audio-btn-text">Audio</span>
               </button>
             </div>
 
             <div class="card-center">
-              <h1 class="lemma-word" id="front-word">aufstehen</h1>
+              <div class="lemma-hero-wrap">
+                <h1 class="lemma-word" id="front-word">aufstehen</h1>
+                <button class="lemma-speaker-pill" id="btn-audio-center" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
+                  <svg class="icon-speaker" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                  </svg>
+                  <span>Anhören</span>
+                </button>
+              </div>
             </div>
 
             <div class="card-bottom-prompt">
@@ -499,17 +533,27 @@
                   <span class="chip chip-neutral" id="back-type">Verb · trennbar</span>
                 </div>
                 <button class="audio-button" id="btn-audio-back" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
-                  <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg class="icon-speaker" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                     <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
                     <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
                   </svg>
+                  <span class="audio-btn-text">Audio</span>
                 </button>
               </div>
 
               <!-- Lemma & Revealed Translation -->
               <div class="back-word-block">
-                <h2 class="back-lemma" id="back-word">aufstehen</h2>
+                <div class="back-word-row">
+                  <h2 class="back-lemma" id="back-word">aufstehen</h2>
+                  <button class="audio-button audio-button-sm" id="btn-audio-back-inline" title="Aussprache anhören" aria-label="Aussprache anhören">
+                    <svg class="icon-speaker" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                    </svg>
+                  </button>
+                </div>
                 <p class="back-translation" id="back-meaning">to get up, arise (from bed or chair)</p>
               </div>
 
@@ -570,6 +614,7 @@
               <div class="example-container">
                 <div class="example-header">
                   <div class="example-tense-tabs" role="tablist" aria-label="Zeitform für Beispielsatz wählen">
+                    <div class="tense-tab-indicator" id="tense-indicator" aria-hidden="true"></div>
                     <button type="button" class="tense-tab is-active" data-tense="praesens" id="tab-tense-praesens">Präsens</button>
                     <button type="button" class="tense-tab" data-tense="praeteritum" id="tab-tense-praeteritum">Präteritum</button>
                     <button type="button" class="tense-tab" data-tense="perfekt" id="tab-tense-perfekt">Perfekt</button>
@@ -694,6 +739,7 @@
 
       <!-- Conjugation tab switcher -->
       <div class="conj-tabs" role="tablist">
+        <div class="conj-tab-indicator" id="conj-indicator" aria-hidden="true"></div>
         <button class="conj-tab is-active" data-conj-tense="praesens" role="tab">Präsens</button>
         <button class="conj-tab" data-conj-tense="praeteritum" role="tab">Präteritum</button>
         <button class="conj-tab" data-conj-tense="perfekt" role="tab">Perfekt</button>
@@ -794,6 +840,55 @@
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: CREATE NEW FOLDER (ORDNER ERSTELLEN)              -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop hidden" id="modal-create-folder" role="dialog" aria-modal="true" aria-labelledby="folder-modal-title">
+    <div class="appearance-modal-card folder-modal-card">
+      <div class="modal-header-row">
+        <div>
+          <h3 class="modal-title-sm" id="folder-modal-title">Neuen Ordner erstellen</h3>
+          <p class="modal-desc-sm">Organisiere deine Decks in thematischen Sammlungen</p>
+        </div>
+        <button class="modal-close-icon-btn" id="btn-folder-modal-close" aria-label="Schließen">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="folder-form-body">
+        <div class="form-group">
+          <label class="form-label" for="input-folder-title">Ordnername *</label>
+          <input type="text" class="form-input" id="input-folder-title" placeholder="z. B. Prüfungswortschatz Telc B1" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="input-folder-desc">Beschreibung</label>
+          <input type="text" class="form-input" id="input-folder-desc" placeholder="z. B. Wichtigste Verben und Wendungen für die mündliche Prüfung">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="input-folder-badge">Kategorie-Tag (optional)</label>
+          <input type="text" class="form-input" id="input-folder-badge" placeholder="MEINE SAMMLUNG" value="MEINE SAMMLUNG">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Decks für diesen Ordner auswählen:</label>
+          <div class="folder-deck-selector" id="folder-deck-selector">
+            <!-- Dynamically populated checkbox list -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-row" style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+        <button class="btn-modal-cancel" id="btn-folder-cancel">Abbrechen</button>
+        <button class="btn-modal-done" id="btn-folder-save">Ordner erstellen</button>
+      </div>
     </div>
   </div>
 
@@ -933,5 +1028,8 @@
   </div>
 
   <script src="app.js"></script>
+
+  </div><!-- /.main-content -->
+  </div><!-- /.app-layout -->
 </body>
 </html>

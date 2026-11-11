@@ -169,15 +169,19 @@
   const libraryTotalPill = document.getElementById('library-total-pill');
 
   // Sidebar
-  const sidebarDrawer = document.getElementById('sidebar-drawer');
+  const sidebar = document.getElementById('sidebar');
   const sidebarBackdrop = document.getElementById('sidebar-backdrop');
-  const btnSidebarOpen = document.getElementById('btn-sidebar-open');
-  const btnSidebarClose = document.getElementById('btn-sidebar-close');
+  const btnSidebarToggle = document.getElementById('btn-sidebar-toggle');
   const navItemHome = document.getElementById('nav-item-home');
   const navItemDecks = document.getElementById('nav-item-decks');
   const navItemCalendar = document.getElementById('nav-item-calendar');
   const navItemAppearance = document.getElementById('nav-item-appearance');
   const sidebarDeckShortcuts = document.getElementById('sidebar-deck-shortcuts');
+  // Legacy aliases so existing code that uses these variables still works
+  const sidebarDrawer = sidebar;
+  const sidebarBackdropEl = sidebarBackdrop;
+  const btnSidebarOpen = btnSidebarToggle;
+  const btnSidebarClose = null; // no longer exists
 
   // Header
   const headerBrandGroup = document.getElementById('header-brand-group');
@@ -517,10 +521,80 @@
     }
   }
 
-  function closeAppearanceModal() {
-    if (modalAppearance) {
-      modalAppearance.classList.add('hidden');
+  // ================= Create Folder Modal Controller =================
+  const modalCreateFolder   = document.getElementById('modal-create-folder');
+  const btnCreateFolder      = document.getElementById('btn-create-folder');
+  const btnFolderModalClose  = document.getElementById('btn-folder-modal-close');
+  const btnFolderCancel      = document.getElementById('btn-folder-cancel');
+  const btnFolderSave        = document.getElementById('btn-folder-save');
+  const inputFolderTitle     = document.getElementById('input-folder-title');
+  const inputFolderDesc      = document.getElementById('input-folder-desc');
+  const inputFolderBadge     = document.getElementById('input-folder-badge');
+  const folderDeckSelector   = document.getElementById('folder-deck-selector');
+
+  function openCreateFolderModal() {
+    if (!modalCreateFolder) return;
+    if (inputFolderTitle) inputFolderTitle.value = '';
+    if (inputFolderDesc) inputFolderDesc.value = '';
+    if (inputFolderBadge) inputFolderBadge.value = 'MEINE SAMMLUNG';
+
+    if (folderDeckSelector) {
+      folderDeckSelector.innerHTML = '';
+      const renderedDecks = new Set();
+      Object.values(ALL_DECKS_MAP).forEach(deck => {
+        if (!deck || renderedDecks.has(deck.id)) return;
+        renderedDecks.add(deck.id);
+        const item = document.createElement('label');
+        item.className = 'deck-checkbox-item';
+        item.innerHTML = `
+          <input type="checkbox" value="${deck.id}">
+          <span><strong>${deck.title}</strong> (${deck.level || 'B1'})</span>
+        `;
+        folderDeckSelector.appendChild(item);
+      });
     }
+
+    modalCreateFolder.classList.remove('hidden');
+    if (inputFolderTitle) setTimeout(() => inputFolderTitle.focus(), 80);
+  }
+
+  function closeCreateFolderModal() {
+    if (modalCreateFolder) modalCreateFolder.classList.add('hidden');
+  }
+
+  function saveNewFolder() {
+    const title = (inputFolderTitle && inputFolderTitle.value || '').trim();
+    if (!title) {
+      alert('Bitte gib einen Ordnernamen ein.');
+      if (inputFolderTitle) inputFolderTitle.focus();
+      return;
+    }
+    const desc = (inputFolderDesc && inputFolderDesc.value || '').trim() || 'Benutzerdefinierte Sammlung';
+    const badge = (inputFolderBadge && inputFolderBadge.value || '').trim() || 'MEINE SAMMLUNG';
+
+    const selectedDeckIds = [];
+    if (folderDeckSelector) {
+      const checked = folderDeckSelector.querySelectorAll('input[type="checkbox"]:checked');
+      checked.forEach(cb => selectedDeckIds.push(cb.value));
+    }
+
+    const newFolder = {
+      id: 'folder-custom-' + Date.now(),
+      title,
+      desc,
+      badge,
+      icon: 'custom',
+      isCustom: true,
+      deckIds: selectedDeckIds
+    };
+
+    const custom = loadCustomFolders();
+    custom.push(newFolder);
+    saveCustomFolders(custom);
+
+    closeCreateFolderModal();
+    renderDecksLibraryView();
+    renderSidebarDeckShortcuts();
   }
 
   // ================= View Routing with Fluid Sliding Transitions =================
@@ -591,17 +665,31 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // ================= Sidebar Drawer Management =================
+  // ================= Sidebar Management =================
+  const isMobile = () => window.innerWidth <= 768;
+
   function openSidebar() {
-    sidebarDrawer.classList.add('is-open');
-    sidebarBackdrop.classList.add('is-open');
-    sidebarDrawer.setAttribute('aria-hidden', 'false');
+    if (!sidebar) return;
+    sidebar.setAttribute('data-expanded', 'true');
+    if (isMobile() && sidebarBackdrop) {
+      sidebarBackdrop.classList.add('is-open');
+    }
   }
 
   function closeSidebar() {
-    sidebarDrawer.classList.remove('is-open');
-    sidebarBackdrop.classList.remove('is-open');
-    sidebarDrawer.setAttribute('aria-hidden', 'true');
+    if (!sidebar) return;
+    sidebar.setAttribute('data-expanded', 'false');
+    if (sidebarBackdrop) sidebarBackdrop.classList.remove('is-open');
+  }
+
+  function toggleSidebar() {
+    if (!sidebar) return;
+    const isExpanded = sidebar.getAttribute('data-expanded') === 'true';
+    if (isExpanded) {
+      closeSidebar();
+    } else {
+      openSidebar();
+    }
   }
 
   // ================= Dashboard Renderers =================
@@ -771,26 +859,59 @@
       }
     });
     decksGrid.appendChild(browseAllCard);
+  }
 
-    // Sidebar Shortcuts: Organized by Folders
-    FOLDERS_CONFIG.forEach(folder => {
+  // ================= Custom Folders Storage & Management =================
+  const CUSTOM_FOLDERS_KEY = 'wortschatz_custom_folders_v2';
+
+  function loadCustomFolders() {
+    try {
+      const data = localStorage.getItem(CUSTOM_FOLDERS_KEY);
+      return data ? JSON.parse(data) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function saveCustomFolders(folders) {
+    try {
+      localStorage.setItem(CUSTOM_FOLDERS_KEY, JSON.stringify(folders));
+    } catch {}
+  }
+
+  function getAllFolders() {
+    const custom = loadCustomFolders();
+    const reconstructedCustom = custom.map(folder => ({
+      ...folder,
+      decks: (folder.deckIds || []).map(id => ALL_DECKS_MAP[id]).filter(Boolean)
+    }));
+    return [...FOLDERS_CONFIG, ...reconstructedCustom];
+  }
+
+  function renderSidebarDeckShortcuts() {
+    if (!sidebarDeckShortcuts) return;
+    sidebarDeckShortcuts.innerHTML = '';
+    const allFoldersList = getAllFolders();
+
+    allFoldersList.forEach(folder => {
       const folderHeader = document.createElement('div');
-      folderHeader.style.cssText = 'padding: 8px 12px 4px; font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;';
+      folderHeader.className = 'sidebar-section-title nav-label';
+      folderHeader.style.padding = '8px 12px 2px';
       folderHeader.textContent = folder.title;
       sidebarDeckShortcuts.appendChild(folderHeader);
 
       folder.decks.forEach(deck => {
-        const filtered = allWords.filter(deck.filter);
+        const filtered = allWords.filter(deck.filter || (() => true));
         const deckCount = filtered.length;
 
         const shortcutBtn = document.createElement('button');
         shortcutBtn.className = 'sidebar-deck-item';
         shortcutBtn.innerHTML = `
-          <span>${deck.title}</span>
-          <span class="deck-pill-count">${deckCount}</span>
+          <span class="nav-label">${deck.title}</span>
+          <span class="deck-pill-count nav-label">${deckCount}</span>
         `;
         shortcutBtn.addEventListener('click', () => {
-          closeSidebar();
+          if (isMobile()) closeSidebar();
           switchView('study', deck.id);
         });
         sidebarDeckShortcuts.appendChild(shortcutBtn);
@@ -798,16 +919,20 @@
     });
   }
 
+  // Sidebar Shortcuts: Organized by Folders (Initial call)
+  renderSidebarDeckShortcuts();
+
   // ================= Dedicated Decks & Folders Library View Renderer =================
   function renderDecksLibraryView() {
     if (!libraryFoldersContainer) return;
     libraryFoldersContainer.innerHTML = '';
 
-    let totalFolders = FOLDERS_CONFIG.length;
+    const allFoldersList = getAllFolders();
+    let totalFolders = allFoldersList.length;
     let totalDecks = 0;
     let totalCards = allWords.length;
 
-    FOLDERS_CONFIG.forEach(folder => {
+    allFoldersList.forEach(folder => {
       totalDecks += folder.decks.length;
 
       const folderCard = document.createElement('section');
@@ -818,21 +943,28 @@
       let iconSvg = '';
       if (folder.icon === 'dw') {
         iconSvg = `
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="6 4 20 12 6 20"></polygon>
           </svg>
         `;
       } else if (folder.icon === 'goethe') {
         iconSvg = `
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="7"></circle>
+            <circle cx="12" cy="8" r="6"></circle>
             <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+        `;
+      } else if (folder.icon === 'custom') {
+        iconSvg = `
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
           </svg>
         `;
       } else {
         iconSvg = `
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
           </svg>
         `;
       }
@@ -847,6 +979,7 @@
             <div class="folder-title-row">
               <h2 class="folder-title">${folder.title}</h2>
               <span class="folder-badge">${folder.badge}</span>
+              ${folder.isCustom ? `<button class="btn-delete-folder" data-folder-id="${folder.id}" title="Diesen Ordner löschen" style="background:none; border:none; cursor:pointer; color:var(--text-muted); font-size:13px; margin-left:6px; padding:2px 6px;">✕</button>` : ''}
             </div>
             <p class="folder-desc">${folder.desc}</p>
           </div>
@@ -860,7 +993,7 @@
       decksGridEl.className = 'folder-decks-grid';
 
       folder.decks.forEach(deck => {
-        const filtered = allWords.filter(deck.filter);
+        const filtered = allWords.filter(deck.filter || (() => true));
         const deckCount = filtered.length;
         const reviewed = (deckProgress[deck.id] && deckProgress[deck.id].reviewed) || 0;
         const masteryPct = deckCount > 0 ? Math.round((reviewed / deckCount) * 100) : 0;
@@ -873,7 +1006,7 @@
         deckCard.innerHTML = `
           <div class="deck-card-top">
             <div class="deck-tags-row">
-              <span class="chip chip-secondary">${deck.level}</span>
+              <span class="chip-secondary">${deck.level || 'B1'}</span>
               <span class="deck-count-pill">${deckCount} Wörter</span>
             </div>
             <h3 class="deck-title">${deck.title}</h3>
@@ -898,8 +1031,46 @@
         decksGridEl.appendChild(deckCard);
       });
 
+      // If odd number of decks, render empty 4th slot matching reference media_1794403818339_0f24ff7f.jpg
+      if (folder.decks.length % 2 !== 0) {
+        const emptySlot = document.createElement('div');
+        emptySlot.className = 'deck-card-empty-slot';
+        emptySlot.innerHTML = `
+          <button class="add-deck-slot-btn" title="Weiteres Deck zu diesem Ordner hinzufügen">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Deck hinzufügen</span>
+          </button>
+        `;
+        const addBtn = emptySlot.querySelector('.add-deck-slot-btn');
+        if (addBtn) {
+          addBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openCreateFolderModal();
+          });
+        }
+        decksGridEl.appendChild(emptySlot);
+      }
+
       folderCard.appendChild(decksGridEl);
       libraryFoldersContainer.appendChild(folderCard);
+    });
+
+    // Delete custom folder handler
+    const deleteBtns = libraryFoldersContainer.querySelectorAll('.btn-delete-folder');
+    deleteBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const fId = btn.getAttribute('data-folder-id');
+        if (confirm('Möchtest du diesen Ordner wirklich löschen?')) {
+          const custom = loadCustomFolders().filter(f => f.id !== fId);
+          saveCustomFolders(custom);
+          renderDecksLibraryView();
+          renderSidebarDeckShortcuts();
+        }
+      });
     });
 
     if (libraryTotalPill) {
@@ -1093,6 +1264,23 @@
     } else {
       renderExampleSentence();
     }
+    // Update sliding indicator
+    updateTenseIndicator();
+  }
+
+  function updateTenseIndicator() {
+    const indicator = document.getElementById('tense-indicator');
+    if (!indicator) return;
+    const activeTab = document.querySelector('.tense-tab.is-active');
+    if (!activeTab) return;
+    const parent = activeTab.parentElement;
+    if (!parent) return;
+    const pRect = parent.getBoundingClientRect();
+    const tRect = activeTab.getBoundingClientRect();
+    if (tRect.width === 0) return;
+    const left = tRect.left - pRect.left;
+    indicator.style.width = `${tRect.width}px`;
+    indicator.style.transform = `translateX(${left}px)`;
   }
 
   function formatSeparableVerb(phrase, isTrennbar = false) {
@@ -1109,6 +1297,9 @@
   function toggleFlip() {
     isFlipped = !isFlipped;
     flashcard.classList.toggle('is-flipped', isFlipped);
+    if (isFlipped) {
+      setTimeout(updateTenseIndicator, 80);
+    }
   }
 
   let isCardAnimating = false;
@@ -1209,10 +1400,22 @@
   }
 
   // ================= Event Listeners =================
-  // Sidebar open/close
-  btnSidebarOpen.addEventListener('click', openSidebar);
-  btnSidebarClose.addEventListener('click', closeSidebar);
-  sidebarBackdrop.addEventListener('click', closeSidebar);
+  // Sidebar toggle (both the icon button in sidebar and the header button)
+  if (btnSidebarToggle) btnSidebarToggle.addEventListener('click', toggleSidebar);
+  const btnSidebarOpenHeader = document.getElementById('btn-sidebar-open');
+  if (btnSidebarOpenHeader) btnSidebarOpenHeader.addEventListener('click', toggleSidebar);
+  if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeSidebar);
+
+  // Folder creation modal events
+  if (btnCreateFolder) btnCreateFolder.addEventListener('click', openCreateFolderModal);
+  if (btnFolderModalClose) btnFolderModalClose.addEventListener('click', closeCreateFolderModal);
+  if (btnFolderCancel) btnFolderCancel.addEventListener('click', closeCreateFolderModal);
+  if (btnFolderSave) btnFolderSave.addEventListener('click', saveNewFolder);
+  if (modalCreateFolder) {
+    modalCreateFolder.addEventListener('click', (e) => {
+      if (e.target === modalCreateFolder) closeCreateFolderModal();
+    });
+  }
 
   // Sidebar navigation links
   navItemHome.addEventListener('click', () => {
@@ -1292,11 +1495,29 @@
     if (item) speakText(item.word, null, btnAudioFront);
   });
 
+  const btnAudioCenter = document.getElementById('btn-audio-center');
+  if (btnAudioCenter) {
+    btnAudioCenter.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const item = currentDeck[currentIndex];
+      if (item) speakText(item.word, null, btnAudioCenter);
+    });
+  }
+
   btnAudioBack.addEventListener('click', (e) => {
     e.stopPropagation();
     const item = currentDeck[currentIndex];
     if (item) speakText(item.word, null, btnAudioBack);
   });
+
+  const btnAudioBackInline = document.getElementById('btn-audio-back-inline');
+  if (btnAudioBackInline) {
+    btnAudioBackInline.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const item = currentDeck[currentIndex];
+      if (item) speakText(item.word, null, btnAudioBackInline);
+    });
+  }
 
   btnAudioSentence.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -1314,6 +1535,9 @@
       });
     });
   }
+  // Initialize tense indicator position after first render
+  requestAnimationFrame(() => updateTenseIndicator());
+  window.addEventListener('resize', updateTenseIndicator);
 
   if (cellPraeteritum) {
     cellPraeteritum.addEventListener('click', (e) => {
@@ -1661,6 +1885,7 @@
 
     document.querySelectorAll('.view-container').forEach(v => v.classList.add('hidden'));
     viewVocabDetail.classList.remove('hidden');
+    setTimeout(updateConjIndicator, 80);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -1715,6 +1940,20 @@
     if (detailGrammarNote) detailGrammarNote.style.display = w.note ? 'flex' : 'none';
   }
 
+  function updateConjIndicator() {
+    const indicator = document.getElementById('conj-indicator');
+    if (!indicator) return;
+    const activeTab = document.querySelector('.conj-tab.is-active');
+    if (!activeTab) return;
+    const parent = activeTab.parentElement;
+    if (!parent) return;
+    const pRect = parent.getBoundingClientRect();
+    const tRect = activeTab.getBoundingClientRect();
+    if (tRect.width === 0) return;
+    indicator.style.width = `${tRect.width}px`;
+    indicator.style.transform = `translateX(${tRect.left - pRect.left}px)`;
+  }
+
   conjTabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const tense = btn.dataset.conjTense;
@@ -1723,6 +1962,7 @@
       btn.classList.add('is-active');
       detailCurrentTense = tense;
       renderConjTable(tense);
+      updateConjIndicator();
     });
   });
 
@@ -1939,10 +2179,11 @@
 
   if (navItemStats) {
     navItemStats.addEventListener('click', () => {
-      const sD = document.getElementById('sidebar-drawer');
+      // Close sidebar on mobile
       const sB = document.getElementById('sidebar-backdrop');
-      if (sD) sD.classList.remove('is-open');
-      if (sB) { sB.classList.remove('is-open'); sB.setAttribute('aria-hidden','true'); }
+      const sS = document.getElementById('sidebar');
+      if (sS) sS.setAttribute('data-expanded', 'false');
+      if (sB) sB.classList.remove('is-open');
       openStatsView();
     });
   }
