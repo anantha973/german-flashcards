@@ -141,6 +141,7 @@ body {
 /* ── Persistent Icon-Rail Sidebar (ChatGPT-style) ── */
 .sidebar {
   width: 56px; /* collapsed: icons only */
+  min-width: 56px;
   flex-shrink: 0;
   background: var(--bg-surface);
   border-right: 1px solid var(--border-subtle);
@@ -150,10 +151,15 @@ body {
   top: 0;
   height: 100vh;
   z-index: 100;
-  overflow: hidden;
-  transition: width 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: width 0.28s cubic-bezier(0.32, 0.72, 0, 1), min-width 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  box-sizing: border-box;
 }
-.sidebar[data-expanded="true"] { width: 240px; }
+.sidebar[data-expanded="true"] {
+  width: 240px;
+  min-width: 240px;
+}
 html[data-theme="dark"] .sidebar { background: var(--bg-surface); }
 
 /* Sidebar top: toggle + brand row */
@@ -165,9 +171,11 @@ html[data-theme="dark"] .sidebar { background: var(--bg-surface); }
   border-bottom: 1px solid var(--border-subtle);
   flex-shrink: 0;
   min-height: 60px;
+  overflow: hidden;
 }
 .sidebar-toggle-btn {
   width: 56px;
+  min-width: 56px;
   height: 36px;
   flex-shrink: 0;
   display: flex;
@@ -188,10 +196,14 @@ html[data-theme="dark"] .sidebar { background: var(--bg-surface); }
   gap: 10px;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.18s ease;
+  max-width: 0;
+  transition: opacity 0.18s ease, max-width 0.25s ease;
   white-space: nowrap;
 }
-.sidebar[data-expanded="true"] .sidebar-brand-row { opacity: 1; }
+.sidebar[data-expanded="true"] .sidebar-brand-row {
+  opacity: 1;
+  max-width: 170px;
+}
 .brand-monogram {
   width: 30px; height: 30px; border-radius: var(--radius-sm);
   background: var(--accent-terracotta);
@@ -272,6 +284,9 @@ html[data-theme="dark"] .sidebar { background: var(--bg-surface); }
 .sidebar-shortcuts-section {
   margin-top: 8px;
   overflow: hidden;
+}
+.sidebar[data-expanded="false"] .sidebar-shortcuts-section {
+  display: none !important;
 }
 .sidebar-section-title {
   font-size: 11px;
@@ -403,6 +418,13 @@ html[data-theme="dark"] .app-header { background: rgba(17, 17, 17, 0.95); }
 }
 .menu-btn:hover { background: var(--bg-surface-hover); transform: scale(1.05); }
 .menu-btn:active { transform: scale(0.95); }
+
+/* Hide redundant header hamburger on desktop since persistent rail toggle is present */
+@media (min-width: 769px) {
+  .menu-btn {
+    display: none !important;
+  }
+}
 
 .header-brand-pill {
   display: inline-flex; align-items: center; gap: 8px;

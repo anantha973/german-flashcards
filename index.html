@@ -19,7 +19,55 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&family=Plus+Jakarta+Sans:wght@700;800&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261111-v5">
+
+  <style>
+    /* Critical Shell Architecture — Prevents any unstyled stacking or layout jumping */
+    .app-layout {
+      display: flex !important;
+      min-height: 100vh !important;
+      position: relative !important;
+      width: 100% !important;
+    }
+    .sidebar {
+      position: sticky !important;
+      top: 0 !important;
+      left: 0 !important;
+      height: 100vh !important;
+      width: 56px !important;
+      min-width: 56px !important;
+      flex-shrink: 0 !important;
+      z-index: 100 !important;
+      overflow: hidden !important;
+      box-sizing: border-box !important;
+      display: flex !important;
+      flex-direction: column !important;
+      background: #FFFFFF;
+      border-right: 1px solid #E5E3DC;
+    }
+    .sidebar[data-expanded="true"] {
+      width: 240px !important;
+      min-width: 240px !important;
+    }
+    .main-content {
+      flex: 1 1 0% !important;
+      min-width: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    @media (max-width: 768px) {
+      .app-layout { display: block !important; }
+      .sidebar {
+        position: fixed !important;
+        top: 0 !important; bottom: 0 !important; left: 0 !important;
+        width: 240px !important; min-width: 240px !important;
+        transform: translateX(-100%) !important;
+      }
+      .sidebar[data-expanded="true"] {
+        transform: translateX(0) !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -1027,7 +1075,7 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20261111-v5"></script>
 
   </div><!-- /.main-content -->
   </div><!-- /.app-layout -->

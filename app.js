@@ -514,6 +514,12 @@
   }
 
   // ================= Appearance Customization Modal Controller =================
+  function closeAppearanceModal() {
+    if (modalAppearance) {
+      modalAppearance.classList.add('hidden');
+    }
+  }
+
   function openAppearanceModal() {
     closeSidebar();
     if (modalAppearance) {
@@ -1254,18 +1260,26 @@
   function setExampleTense(tense) {
     if (currentExampleTense === tense) return;
     currentExampleTense = tense;
+
+    // Immediately toggle active class on tabs so the orange underline indicator slides smoothly
+    if (tenseTabs && tenseTabs.length > 0) {
+      tenseTabs.forEach(tab => {
+        tab.classList.toggle('is-active', tab.getAttribute('data-tense') === tense);
+      });
+    }
+    updateTenseIndicator();
+
     const body = document.querySelector('.example-body');
     if (body) {
       body.classList.add('is-switching');
       setTimeout(() => {
         renderExampleSentence();
         body.classList.remove('is-switching');
+        updateTenseIndicator();
       }, 70);
     } else {
       renderExampleSentence();
     }
-    // Update sliding indicator
-    updateTenseIndicator();
   }
 
   function updateTenseIndicator() {
@@ -1358,6 +1372,7 @@
     sessionReviewedCount = 0;
     sessionCorrectCount = 0;
     switchView('study');
+    renderCurrentCard();
   }
 
   function flashGradeButton(gradeClass) {
@@ -1826,12 +1841,24 @@
     const pct = Math.round((rev / bestDeck.count) * 100);
     if (continueDeckTitle) continueDeckTitle.textContent = bestDeck.title;
     if (continueDeckSub)   continueDeckSub.textContent   = pct + '% abgeschlossen · Tippe zum Starten';
-    if (continueCard) continueCard.dataset.deckId = bestDeck.id;
+    if (continueCard) {
+      continueCard.setAttribute('data-deck-id', bestDeck.id);
+      if (continueCard.dataset) continueCard.dataset.deckId = bestDeck.id;
+    }
+  }
+
+  const btnContinueDeck = document.getElementById('btn-continue-deck');
+  if (btnContinueDeck) {
+    btnContinueDeck.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const deckId = (continueCard && (continueCard.getAttribute('data-deck-id') || (continueCard.dataset && continueCard.dataset.deckId))) || 'b1-all';
+      document.dispatchEvent(new CustomEvent('wortschatz:startDeck', { detail: { deckId } }));
+    });
   }
 
   if (continueCard) {
     continueCard.addEventListener('click', () => {
-      const deckId = continueCard.dataset.deckId || 'b1-all';
+      const deckId = (continueCard.getAttribute('data-deck-id') || (continueCard.dataset && continueCard.dataset.deckId)) || 'b1-all';
       document.dispatchEvent(new CustomEvent('wortschatz:startDeck', { detail: { deckId } }));
     });
     continueCard.addEventListener('keydown', e => {
