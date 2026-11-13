@@ -1,0 +1,5259 @@
+[
+  {
+    "raw_id": "RAW-001",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "schälen",
+    "a": "to peel"
+  },
+  {
+    "raw_id": "RAW-002",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Stück",
+    "a": "piece, bit, item"
+  },
+  {
+    "raw_id": "RAW-003",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "das riecht",
+    "a": "that smells"
+  },
+  {
+    "raw_id": "RAW-004",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "echt",
+    "a": "real, genuine, really (informal intensifier)"
+  },
+  {
+    "raw_id": "RAW-005",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "es gibt",
+    "a": "there is, there are"
+  },
+  {
+    "raw_id": "RAW-006",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "stell / stellen",
+    "a": "to place, to put, to set"
+  },
+  {
+    "raw_id": "RAW-007",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "egal",
+    "a": "doesn't matter, whatever, equal"
+  },
+  {
+    "raw_id": "RAW-008",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "meistens",
+    "a": "mostly, usually"
+  },
+  {
+    "raw_id": "RAW-009",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "schneiden",
+    "a": "to cut"
+  },
+  {
+    "raw_id": "RAW-010",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Teilnehmer",
+    "a": "participant"
+  },
+  {
+    "raw_id": "RAW-011",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "begrüßen",
+    "a": "to greet, to welcome"
+  },
+  {
+    "raw_id": "RAW-012",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Gerichte",
+    "a": "dishes, meals, courts (of law)"
+  },
+  {
+    "raw_id": "RAW-013",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "das Messer",
+    "a": "knife"
+  },
+  {
+    "raw_id": "RAW-014",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Verneinung",
+    "a": "negation, denial"
+  },
+  {
+    "raw_id": "RAW-015",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Aussprache",
+    "a": "pronunciation"
+  },
+  {
+    "raw_id": "RAW-016",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "beeilt",
+    "a": "hurries, has hurried"
+  },
+  {
+    "raw_id": "RAW-017",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "fertig",
+    "a": "ready, finished, done"
+  },
+  {
+    "raw_id": "RAW-018",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "stören",
+    "a": "to disturb, to bother"
+  },
+  {
+    "raw_id": "RAW-019",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "aufregen",
+    "a": "to upset, to excite, to annoy"
+  },
+  {
+    "raw_id": "RAW-020",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "umzieht",
+    "a": "moves (to a new place), changes clothes"
+  },
+  {
+    "raw_id": "RAW-021",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "vermuten",
+    "a": "to suppose, to assume, to suspect"
+  },
+  {
+    "raw_id": "RAW-022",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Vermutung",
+    "a": "assumption, supposition"
+  },
+  {
+    "raw_id": "RAW-023",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Verabredung",
+    "a": "appointment, date, arrangement"
+  },
+  {
+    "raw_id": "RAW-024",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Besondere",
+    "a": "special (thing or person)"
+  },
+  {
+    "raw_id": "RAW-025",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "rauchen",
+    "a": "to smoke"
+  },
+  {
+    "raw_id": "RAW-026",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Licht",
+    "a": "light"
+  },
+  {
+    "raw_id": "RAW-027",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "völlig",
+    "a": "completely, entirely"
+  },
+  {
+    "raw_id": "RAW-028",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Erfahrung",
+    "a": "experience (knowledge gained)"
+  },
+  {
+    "raw_id": "RAW-029",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Erlebnis",
+    "a": "experience (event, adventure)"
+  },
+  {
+    "raw_id": "RAW-030",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Geruch",
+    "a": "smell, odor, scent"
+  },
+  {
+    "raw_id": "RAW-031",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Geräusch",
+    "a": "noise, sound"
+  },
+  {
+    "raw_id": "RAW-032",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Vorraum",
+    "a": "anteroom, hallway, vestibule"
+  },
+  {
+    "raw_id": "RAW-033",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "verschiedenen",
+    "a": "various, different"
+  },
+  {
+    "raw_id": "RAW-034",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "erkennen",
+    "a": "to recognize, to realize, to identify"
+  },
+  {
+    "raw_id": "RAW-035",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Sehbehindert",
+    "a": "visually impaired"
+  },
+  {
+    "raw_id": "RAW-036",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Löffel",
+    "a": "spoon"
+  },
+  {
+    "raw_id": "RAW-037",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Messer",
+    "a": "knife"
+  },
+  {
+    "raw_id": "RAW-038",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Gabel",
+    "a": "fork"
+  },
+  {
+    "raw_id": "RAW-039",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Serviette",
+    "a": "napkin"
+  },
+  {
+    "raw_id": "RAW-040",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "überhaupt",
+    "a": "at all, generally"
+  },
+  {
+    "raw_id": "RAW-041",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Teller",
+    "a": "plate"
+  },
+  {
+    "raw_id": "RAW-042",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "q": "Sorge",
+    "a": "worry, concern, care"
+  },
+  {
+    "raw_id": "RAW-043",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "verkäufer",
+    "a": "salesperson; seller; shop assistant"
+  },
+  {
+    "raw_id": "RAW-044",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Steckbrief",
+    "a": "profile; personal data sheet; fact sheet"
+  },
+  {
+    "raw_id": "RAW-045",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Pläne",
+    "a": "plans; designs; schedules"
+  },
+  {
+    "raw_id": "RAW-046",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Zukunft",
+    "a": "future"
+  },
+  {
+    "raw_id": "RAW-047",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "erinnerungen",
+    "a": "memories; recollections"
+  },
+  {
+    "raw_id": "RAW-048",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Einträge",
+    "a": "entries; records; posts"
+  },
+  {
+    "raw_id": "RAW-049",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "erwachsen",
+    "a": "grown-up; adult; mature"
+  },
+  {
+    "raw_id": "RAW-050",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Sommerferien",
+    "a": "summer holidays; summer vacation"
+  },
+  {
+    "raw_id": "RAW-051",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "riesenspaß",
+    "a": "great fun; huge fun"
+  },
+  {
+    "raw_id": "RAW-052",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "riesen",
+    "a": "giant; huge; enormous"
+  },
+  {
+    "raw_id": "RAW-053",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Fehler",
+    "a": "mistake; error; fault"
+  },
+  {
+    "raw_id": "RAW-054",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Schrecklich",
+    "a": "terrible; awful; horrible"
+  },
+  {
+    "raw_id": "RAW-055",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "zugeklebt",
+    "a": "sealed; stuck shut; glued up"
+  },
+  {
+    "raw_id": "RAW-056",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Die Feste",
+    "a": "festivals; celebrations"
+  },
+  {
+    "raw_id": "RAW-057",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "par Wochen",
+    "a": "a few weeks"
+  },
+  {
+    "raw_id": "RAW-058",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "ausschlafen",
+    "a": "to sleep in; to sleep late"
+  },
+  {
+    "raw_id": "RAW-059",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "erinneren",
+    "a": "to remember; to recall"
+  },
+  {
+    "raw_id": "RAW-060",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "tragen",
+    "a": "to carry; to wear; to bear"
+  },
+  {
+    "raw_id": "RAW-061",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Beitrag",
+    "a": "contribution; article; fee"
+  },
+  {
+    "raw_id": "RAW-062",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "wundert / wunderen / überrascht",
+    "a": "surprises; amazes; astonishes"
+  },
+  {
+    "raw_id": "RAW-063",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Einweihungsparty",
+    "a": "housewarming party"
+  },
+  {
+    "raw_id": "RAW-064",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Wohngemeinschaft",
+    "a": "shared apartment; flatshare"
+  },
+  {
+    "raw_id": "RAW-065",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "zürückkommen",
+    "a": "to come back; to return"
+  },
+  {
+    "raw_id": "RAW-066",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "gestellt / gestellen",
+    "a": "placed; put; set"
+  },
+  {
+    "raw_id": "RAW-067",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "gelegt",
+    "a": "laid; placed; put down"
+  },
+  {
+    "raw_id": "RAW-068",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "gehängt",
+    "a": "hung (something up)"
+  },
+  {
+    "raw_id": "RAW-069",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "verändern",
+    "a": "to change; to alter; to modify"
+  },
+  {
+    "raw_id": "RAW-070",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "seit",
+    "a": "since; for (time)"
+  },
+  {
+    "raw_id": "RAW-071",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "irgendwas",
+    "a": "something; anything"
+  },
+  {
+    "raw_id": "RAW-072",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "irgendwo",
+    "a": "somewhere; anywhere"
+  },
+  {
+    "raw_id": "RAW-073",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "empfehlen",
+    "a": "to recommend; to suggest"
+  },
+  {
+    "raw_id": "RAW-074",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "günstig",
+    "a": "cheap; affordable; favorable"
+  },
+  {
+    "raw_id": "RAW-075",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "unbedingt",
+    "a": "absolutely; definitely; without fail"
+  },
+  {
+    "raw_id": "RAW-076",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "ausgeben",
+    "a": "to spend (money); to issue; to hand out"
+  },
+  {
+    "raw_id": "RAW-077",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "außerdem",
+    "a": "besides; moreover; in addition"
+  },
+  {
+    "raw_id": "RAW-078",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "ausßen",
+    "a": "outside; exterior"
+  },
+  {
+    "raw_id": "RAW-079",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Ausstellungen",
+    "a": "exhibitions; displays; shows"
+  },
+  {
+    "raw_id": "RAW-080",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "enttauscht",
+    "a": "disappointed"
+  },
+  {
+    "raw_id": "RAW-081",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "danach",
+    "a": "after that; afterwards; then"
+  },
+  {
+    "raw_id": "RAW-082",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Abschlss",
+    "a": "degree; graduation; completion"
+  },
+  {
+    "raw_id": "RAW-083",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Anglistik",
+    "a": "English studies; linguistics and literature of English"
+  },
+  {
+    "raw_id": "RAW-084",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Internat",
+    "a": "boarding school"
+  },
+  {
+    "raw_id": "RAW-085",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Fächer",
+    "a": "subjects; compartments; disciplines"
+  },
+  {
+    "raw_id": "RAW-086",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Arzthel ferin",
+    "a": "medical assistant (female); nurse"
+  },
+  {
+    "raw_id": "RAW-087",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Regelschule",
+    "a": "mainstream school; regular school"
+  },
+  {
+    "raw_id": "RAW-088",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "Gesamtschule",
+    "a": "comprehensive school"
+  },
+  {
+    "raw_id": "RAW-089",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "q": "entscheiden",
+    "a": "to decide; to determine"
+  },
+  {
+    "raw_id": "RAW-090",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Medien im Alltag",
+    "a": "media in everyday life"
+  },
+  {
+    "raw_id": "RAW-091",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "beschreiben",
+    "a": "to describe"
+  },
+  {
+    "raw_id": "RAW-092",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "beiden",
+    "a": "both; the two"
+  },
+  {
+    "raw_id": "RAW-093",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Medientag",
+    "a": "media day"
+  },
+  {
+    "raw_id": "RAW-094",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "ansehen",
+    "a": "to watch; to look at; to view"
+  },
+  {
+    "raw_id": "RAW-095",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "herunterladen",
+    "a": "to download"
+  },
+  {
+    "raw_id": "RAW-096",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "häufigsten",
+    "a": "most frequent; most common"
+  },
+  {
+    "raw_id": "RAW-097",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "häufig",
+    "a": "frequent; often"
+  },
+  {
+    "raw_id": "RAW-098",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Reihenfolge",
+    "a": "order; sequence"
+  },
+  {
+    "raw_id": "RAW-099",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Seiten",
+    "a": "pages; sides; websites"
+  },
+  {
+    "raw_id": "RAW-100",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Bildschirm",
+    "a": "screen; monitor"
+  },
+  {
+    "raw_id": "RAW-101",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "billiger",
+    "a": "cheaper; more inexpensive"
+  },
+  {
+    "raw_id": "RAW-102",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "praktisch",
+    "a": "practical; handy; convenient"
+  },
+  {
+    "raw_id": "RAW-103",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "teuer",
+    "a": "expensive; costly"
+  },
+  {
+    "raw_id": "RAW-104",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "langsam",
+    "a": "slow; slowly"
+  },
+  {
+    "raw_id": "RAW-105",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "leicht",
+    "a": "light; easy"
+  },
+  {
+    "raw_id": "RAW-106",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Umfrage",
+    "a": "survey; poll"
+  },
+  {
+    "raw_id": "RAW-107",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Geräte",
+    "a": "devices; appliances; equipment"
+  },
+  {
+    "raw_id": "RAW-108",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "zurzeit",
+    "a": "currently; at the moment"
+  },
+  {
+    "raw_id": "RAW-109",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "genauso",
+    "a": "exactly the same; just as"
+  },
+  {
+    "raw_id": "RAW-110",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "flüstert",
+    "a": "whispers"
+  },
+  {
+    "raw_id": "RAW-111",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Runde",
+    "a": "round; circle; group"
+  },
+  {
+    "raw_id": "RAW-112",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "entspannen",
+    "a": "to relax; to unwind"
+  },
+  {
+    "raw_id": "RAW-113",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Vorteile",
+    "a": "advantages; benefits"
+  },
+  {
+    "raw_id": "RAW-114",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Nachteile",
+    "a": "disadvantages; drawbacks"
+  },
+  {
+    "raw_id": "RAW-115",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "persönlich",
+    "a": "personal; personally"
+  },
+  {
+    "raw_id": "RAW-116",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "anmachen",
+    "a": "to turn on; to hit on (someone)"
+  },
+  {
+    "raw_id": "RAW-117",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "vorsichtiger",
+    "a": "more careful; cautious"
+  },
+  {
+    "raw_id": "RAW-118",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "schade",
+    "a": "pity; shame; what a pity"
+  },
+  {
+    "raw_id": "RAW-119",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "verbringen",
+    "a": "to spend (time)"
+  },
+  {
+    "raw_id": "RAW-120",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Gefahren",
+    "a": "dangers; risks"
+  },
+  {
+    "raw_id": "RAW-121",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "überall",
+    "a": "everywhere"
+  },
+  {
+    "raw_id": "RAW-122",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Kriminelle",
+    "a": "criminals"
+  },
+  {
+    "raw_id": "RAW-123",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "aufpassen",
+    "a": "to pay attention; to watch out; to take care"
+  },
+  {
+    "raw_id": "RAW-124",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "gefährlich",
+    "a": "dangerous; risky"
+  },
+  {
+    "raw_id": "RAW-125",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Zeitschriften",
+    "a": "magazines; periodicals"
+  },
+  {
+    "raw_id": "RAW-126",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Werbung",
+    "a": "advertising; advertisement; commercial"
+  },
+  {
+    "raw_id": "RAW-127",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Buchverlage",
+    "a": "book publishers"
+  },
+  {
+    "raw_id": "RAW-128",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "gedauert",
+    "a": "lasted; took (time)"
+  },
+  {
+    "raw_id": "RAW-129",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "stimmt",
+    "a": "is right; correct; true"
+  },
+  {
+    "raw_id": "RAW-130",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Lieblingsverein",
+    "a": "favorite club; favorite team"
+  },
+  {
+    "raw_id": "RAW-131",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Lösungen",
+    "a": "solutions; answers"
+  },
+  {
+    "raw_id": "RAW-132",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "berühmte",
+    "a": "famous; well-known"
+  },
+  {
+    "raw_id": "RAW-133",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Muster",
+    "a": "pattern; sample; model"
+  },
+  {
+    "raw_id": "RAW-134",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Blatt",
+    "a": "sheet; leaf; paper"
+  },
+  {
+    "raw_id": "RAW-135",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Regisseur",
+    "a": "director (film or theater)"
+  },
+  {
+    "raw_id": "RAW-136",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "gelacht und geweint",
+    "a": "laughed and cried"
+  },
+  {
+    "raw_id": "RAW-137",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Ausländer",
+    "a": "foreigner; alien"
+  },
+  {
+    "raw_id": "RAW-138",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Enkel",
+    "a": "grandchild; grandson"
+  },
+  {
+    "raw_id": "RAW-139",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Nachricht",
+    "a": "message; news item"
+  },
+  {
+    "raw_id": "RAW-140",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Versöhnungen",
+    "a": "reconciliations; making peace"
+  },
+  {
+    "raw_id": "RAW-141",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Zuschauer",
+    "a": "viewer; audience; spectator"
+  },
+  {
+    "raw_id": "RAW-142",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Weinen",
+    "a": "crying; weeping"
+  },
+  {
+    "raw_id": "RAW-143",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "traurig",
+    "a": "sad; sorrowful"
+  },
+  {
+    "raw_id": "RAW-144",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Sterne",
+    "a": "stars"
+  },
+  {
+    "raw_id": "RAW-145",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "aktuelle",
+    "a": "current; latest; up-to-date"
+  },
+  {
+    "raw_id": "RAW-146",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "empfehlenswert",
+    "a": "recommended; worth recommending"
+  },
+  {
+    "raw_id": "RAW-147",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Durchschnitt",
+    "a": "average; mean"
+  },
+  {
+    "raw_id": "RAW-148",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Handlung",
+    "a": "plot; action; storyline"
+  },
+  {
+    "raw_id": "RAW-149",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "Schauspieler",
+    "a": "actor; performer"
+  },
+  {
+    "raw_id": "RAW-150",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "spannend",
+    "a": "exciting; thrilling; suspenseful"
+  },
+  {
+    "raw_id": "RAW-151",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "q": "zuletzt",
+    "a": "last; recently; finally"
+  },
+  {
+    "raw_id": "RAW-152",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Große und kleine gefühle",
+    "a": "Big and small feelings"
+  },
+  {
+    "raw_id": "RAW-153",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Hochzeit",
+    "a": "Wedding"
+  },
+  {
+    "raw_id": "RAW-154",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Kasten",
+    "a": "Box / Chest"
+  },
+  {
+    "raw_id": "RAW-155",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "die Führerscheinprüfung",
+    "a": "Driving test"
+  },
+  {
+    "raw_id": "RAW-156",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Jubiläum in der Firma",
+    "a": "Company anniversary"
+  },
+  {
+    "raw_id": "RAW-157",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "der Blumenstrauß",
+    "a": "Bouquet of flowers"
+  },
+  {
+    "raw_id": "RAW-158",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "der Storch",
+    "a": "Stork"
+  },
+  {
+    "raw_id": "RAW-159",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "die Storch",
+    "a": "The stork"
+  },
+  {
+    "raw_id": "RAW-160",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "die Medaille",
+    "a": "Medal"
+  },
+  {
+    "raw_id": "RAW-161",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Zeigen",
+    "a": "To show"
+  },
+  {
+    "raw_id": "RAW-162",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "einander",
+    "a": "Each other"
+  },
+  {
+    "raw_id": "RAW-163",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Glückwunch",
+    "a": "Congratulations"
+  },
+  {
+    "raw_id": "RAW-164",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "fehlt / fehlen",
+    "a": "To be missing / absent"
+  },
+  {
+    "raw_id": "RAW-165",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "absage",
+    "a": "Rejection / Cancellation"
+  },
+  {
+    "raw_id": "RAW-166",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "gratulieren",
+    "a": "To congratulate"
+  },
+  {
+    "raw_id": "RAW-167",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Brautpaar",
+    "a": "Bridal couple"
+  },
+  {
+    "raw_id": "RAW-168",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "aussprechen",
+    "a": "To pronounce / express"
+  },
+  {
+    "raw_id": "RAW-169",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "bald",
+    "a": "Soon"
+  },
+  {
+    "raw_id": "RAW-170",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Achterbahn",
+    "a": "Roller coaster"
+  },
+  {
+    "raw_id": "RAW-171",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Wenn und dann",
+    "a": "If and then"
+  },
+  {
+    "raw_id": "RAW-172",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "böse",
+    "a": "Angry / Evil"
+  },
+  {
+    "raw_id": "RAW-173",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "sauer",
+    "a": "Angry / Sour"
+  },
+  {
+    "raw_id": "RAW-174",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "aufregend",
+    "a": "Exciting"
+  },
+  {
+    "raw_id": "RAW-175",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Unfall",
+    "a": "Accident"
+  },
+  {
+    "raw_id": "RAW-176",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "die Verkehrsregeln",
+    "a": "Traffic rules"
+  },
+  {
+    "raw_id": "RAW-177",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Nord und süd",
+    "a": "North and south"
+  },
+  {
+    "raw_id": "RAW-178",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Stattfindet",
+    "a": "Takes place"
+  },
+  {
+    "raw_id": "RAW-179",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Segelregatte",
+    "a": "Sailing regatta"
+  },
+  {
+    "raw_id": "RAW-180",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "bunten",
+    "a": "Colorful"
+  },
+  {
+    "raw_id": "RAW-181",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "segelschiffe",
+    "a": "Sailing ships"
+  },
+  {
+    "raw_id": "RAW-182",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "gestellt",
+    "a": "Placed / Positioned"
+  },
+  {
+    "raw_id": "RAW-183",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Musikstile",
+    "a": "Music styles"
+  },
+  {
+    "raw_id": "RAW-184",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Substantive",
+    "a": "Nouns"
+  },
+  {
+    "raw_id": "RAW-185",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Veranstaltungen",
+    "a": "Events"
+  },
+  {
+    "raw_id": "RAW-186",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Achten",
+    "a": "To pay attention"
+  },
+  {
+    "raw_id": "RAW-187",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Klingt",
+    "a": "Sounds"
+  },
+  {
+    "raw_id": "RAW-188",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "So ein Pech",
+    "a": "Such bad luck"
+  },
+  {
+    "raw_id": "RAW-189",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "gehabt",
+    "a": "Had"
+  },
+  {
+    "raw_id": "RAW-190",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Teppich",
+    "a": "Carpet"
+  },
+  {
+    "raw_id": "RAW-191",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Sauber",
+    "a": "Clean"
+  },
+  {
+    "raw_id": "RAW-192",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "peinlich sein",
+    "a": "To be embarrassing"
+  },
+  {
+    "raw_id": "RAW-193",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "ein les ziehen",
+    "a": "To draw a conclusion (possibly typo)"
+  },
+  {
+    "raw_id": "RAW-194",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "fröhlich",
+    "a": "Happy / Cheerful"
+  },
+  {
+    "raw_id": "RAW-195",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Das lied",
+    "a": "The song"
+  },
+  {
+    "raw_id": "RAW-196",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Klassisch",
+    "a": "Classical"
+  },
+  {
+    "raw_id": "RAW-197",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "fehlenden",
+    "a": "Missing"
+  },
+  {
+    "raw_id": "RAW-198",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "dabei",
+    "a": "Present / In the process"
+  },
+  {
+    "raw_id": "RAW-199",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "ausprobiert",
+    "a": "Tried out"
+  },
+  {
+    "raw_id": "RAW-200",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "längst",
+    "a": "Long ago / Already"
+  },
+  {
+    "raw_id": "RAW-201",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Sehnsucht",
+    "a": "Longing / Desire"
+  },
+  {
+    "raw_id": "RAW-202",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Freundschaft",
+    "a": "Friendship"
+  },
+  {
+    "raw_id": "RAW-203",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "varianten",
+    "a": "Variants / Versions"
+  },
+  {
+    "raw_id": "RAW-204",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "unterrichte",
+    "a": "Lessons / I teach"
+  },
+  {
+    "raw_id": "RAW-205",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "außer",
+    "a": "Except / Besides"
+  },
+  {
+    "raw_id": "RAW-206",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "überhaupt",
+    "a": "At all / Generally"
+  },
+  {
+    "raw_id": "RAW-207",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "ziemlich",
+    "a": "Quite / Rather"
+  },
+  {
+    "raw_id": "RAW-208",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "sogar",
+    "a": "Even"
+  },
+  {
+    "raw_id": "RAW-209",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "mitmachen",
+    "a": "To participate"
+  },
+  {
+    "raw_id": "RAW-210",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "anmeldung",
+    "a": "Registration"
+  },
+  {
+    "raw_id": "RAW-211",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Wohnheim",
+    "a": "Dormitory / Hostel"
+  },
+  {
+    "raw_id": "RAW-212",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "akkurat",
+    "a": "Accurate / Neat"
+  },
+  {
+    "raw_id": "RAW-213",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "ordentlich",
+    "a": "Tidy / Proper"
+  },
+  {
+    "raw_id": "RAW-214",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "abfahren",
+    "a": "To depart"
+  },
+  {
+    "raw_id": "RAW-215",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "dafür",
+    "a": "For that / In favor of"
+  },
+  {
+    "raw_id": "RAW-216",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Grund",
+    "a": "Reason / Ground"
+  },
+  {
+    "raw_id": "RAW-217",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "gezeigt",
+    "a": "Shown"
+  },
+  {
+    "raw_id": "RAW-218",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Schlimm",
+    "a": "Bad / Terrible"
+  },
+  {
+    "raw_id": "RAW-219",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "eingeladen / einlade",
+    "a": "Invited / Invite"
+  },
+  {
+    "raw_id": "RAW-220",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "anbieten",
+    "a": "To offer"
+  },
+  {
+    "raw_id": "RAW-221",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "überschriften",
+    "a": "Headings / Titles"
+  },
+  {
+    "raw_id": "RAW-222",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "tauschen",
+    "a": "To exchange"
+  },
+  {
+    "raw_id": "RAW-223",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "q": "Aufenthalt",
+    "a": "Stay / Residence"
+  },
+  {
+    "raw_id": "RAW-224",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "Nächsten Mal",
+    "a": "next time"
+  },
+  {
+    "raw_id": "RAW-225",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Vermieter",
+    "a": "landlord"
+  },
+  {
+    "raw_id": "RAW-226",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "denn und dann",
+    "a": "then and then / because and then"
+  },
+  {
+    "raw_id": "RAW-227",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "föhnen",
+    "a": "to blow-dry"
+  },
+  {
+    "raw_id": "RAW-228",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Tönung",
+    "a": "tint, toning"
+  },
+  {
+    "raw_id": "RAW-229",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Tätigkeiten",
+    "a": "activities, tasks"
+  },
+  {
+    "raw_id": "RAW-230",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Friseur",
+    "a": "hairdresser, barber"
+  },
+  {
+    "raw_id": "RAW-231",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "das Handtuch",
+    "a": "towel"
+  },
+  {
+    "raw_id": "RAW-232",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Bürste",
+    "a": "brush"
+  },
+  {
+    "raw_id": "RAW-233",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "verteilen",
+    "a": "to distribute, spread"
+  },
+  {
+    "raw_id": "RAW-234",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Handbewegung",
+    "a": "hand movement, gesture"
+  },
+  {
+    "raw_id": "RAW-235",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "melden",
+    "a": "to report, announce"
+  },
+  {
+    "raw_id": "RAW-236",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Schalter",
+    "a": "counter, switch"
+  },
+  {
+    "raw_id": "RAW-237",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Hin-und-Rückfahrt",
+    "a": "round trip"
+  },
+  {
+    "raw_id": "RAW-238",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "ankommen",
+    "a": "to arrive"
+  },
+  {
+    "raw_id": "RAW-239",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Zugverbindung",
+    "a": "train connection"
+  },
+  {
+    "raw_id": "RAW-240",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Fahrgast",
+    "a": "passenger"
+  },
+  {
+    "raw_id": "RAW-241",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Auskunft",
+    "a": "information"
+  },
+  {
+    "raw_id": "RAW-242",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "das Abteil",
+    "a": "compartment"
+  },
+  {
+    "raw_id": "RAW-243",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Bahn-Mitarbeiter",
+    "a": "railway employee"
+  },
+  {
+    "raw_id": "RAW-244",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "das Gleis",
+    "a": "platform, track"
+  },
+  {
+    "raw_id": "RAW-245",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "Gang oder Fenstersitz",
+    "a": "aisle or window seat"
+  },
+  {
+    "raw_id": "RAW-246",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Anzeigen / Werbung",
+    "a": "advertisements"
+  },
+  {
+    "raw_id": "RAW-247",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "genießen",
+    "a": "to enjoy"
+  },
+  {
+    "raw_id": "RAW-248",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "großartiges",
+    "a": "great, magnificent (thing)"
+  },
+  {
+    "raw_id": "RAW-249",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "vielseitige",
+    "a": "versatile, diverse"
+  },
+  {
+    "raw_id": "RAW-250",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "sehenswerte",
+    "a": "worth seeing"
+  },
+  {
+    "raw_id": "RAW-251",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Preise",
+    "a": "prices"
+  },
+  {
+    "raw_id": "RAW-252",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "erwarten",
+    "a": "to expect, await"
+  },
+  {
+    "raw_id": "RAW-253",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die alte Dame",
+    "a": "old lady"
+  },
+  {
+    "raw_id": "RAW-254",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Ermäßigung",
+    "a": "discount, reduction"
+  },
+  {
+    "raw_id": "RAW-255",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "besichtigen",
+    "a": "to visit, view"
+  },
+  {
+    "raw_id": "RAW-256",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "hübsch",
+    "a": "pretty, nice"
+  },
+  {
+    "raw_id": "RAW-257",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "verrückt",
+    "a": "crazy, mad"
+  },
+  {
+    "raw_id": "RAW-258",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Kneipe",
+    "a": "pub, bar"
+  },
+  {
+    "raw_id": "RAW-259",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Sehenswürdigkeit",
+    "a": "sight, attraction"
+  },
+  {
+    "raw_id": "RAW-260",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Berufswechsel",
+    "a": "career change"
+  },
+  {
+    "raw_id": "RAW-261",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Möbelwerkstatt",
+    "a": "furniture workshop"
+  },
+  {
+    "raw_id": "RAW-262",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Industriekauffrau",
+    "a": "industrial clerk (female)"
+  },
+  {
+    "raw_id": "RAW-263",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "tun",
+    "a": "to do"
+  },
+  {
+    "raw_id": "RAW-264",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Möbel",
+    "a": "furniture"
+  },
+  {
+    "raw_id": "RAW-265",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Tischlerei",
+    "a": "carpentry, joinery"
+  },
+  {
+    "raw_id": "RAW-266",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "gegründet",
+    "a": "founded"
+  },
+  {
+    "raw_id": "RAW-267",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "liebevolle",
+    "a": "loving, affectionate"
+  },
+  {
+    "raw_id": "RAW-268",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Schmuckstücke",
+    "a": "jewelry pieces"
+  },
+  {
+    "raw_id": "RAW-269",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "genug",
+    "a": "enough"
+  },
+  {
+    "raw_id": "RAW-270",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Chirurg",
+    "a": "surgeon"
+  },
+  {
+    "raw_id": "RAW-271",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Herzchirurg",
+    "a": "heart surgeon"
+  },
+  {
+    "raw_id": "RAW-272",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Oberarzt",
+    "a": "senior physician"
+  },
+  {
+    "raw_id": "RAW-273",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Leiter",
+    "a": "director, manager"
+  },
+  {
+    "raw_id": "RAW-274",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Arztkittel",
+    "a": "doctor's coat"
+  },
+  {
+    "raw_id": "RAW-275",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "geworden / werden",
+    "a": "become"
+  },
+  {
+    "raw_id": "RAW-276",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "erfüllt",
+    "a": "fulfilled"
+  },
+  {
+    "raw_id": "RAW-277",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "bereut",
+    "a": "regretted"
+  },
+  {
+    "raw_id": "RAW-278",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Lastwagen",
+    "a": "truck"
+  },
+  {
+    "raw_id": "RAW-279",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Höhepunkt",
+    "a": "highlight, climax"
+  },
+  {
+    "raw_id": "RAW-280",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "aufhören",
+    "a": "to stop, quit"
+  },
+  {
+    "raw_id": "RAW-281",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "hintereinander",
+    "a": "one after another, in a row"
+  },
+  {
+    "raw_id": "RAW-282",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Schritt",
+    "a": "step"
+  },
+  {
+    "raw_id": "RAW-283",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "führen",
+    "a": "to lead, guide"
+  },
+  {
+    "raw_id": "RAW-284",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "verläuft",
+    "a": "runs, proceeds"
+  },
+  {
+    "raw_id": "RAW-285",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Ruhe",
+    "a": "calm, peace"
+  },
+  {
+    "raw_id": "RAW-286",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "schalten",
+    "a": "to switch, shift"
+  },
+  {
+    "raw_id": "RAW-287",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "sich konzentrieren",
+    "a": "to concentrate"
+  },
+  {
+    "raw_id": "RAW-288",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "vorher",
+    "a": "before, previously"
+  },
+  {
+    "raw_id": "RAW-289",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "bereitlegen",
+    "a": "to lay out, prepare"
+  },
+  {
+    "raw_id": "RAW-290",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "hektisch",
+    "a": "hectic, frantic"
+  },
+  {
+    "raw_id": "RAW-291",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "deutlich",
+    "a": "clear, distinct"
+  },
+  {
+    "raw_id": "RAW-292",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Durchwahl",
+    "a": "direct extension"
+  },
+  {
+    "raw_id": "RAW-293",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "zurückrufen",
+    "a": "to call back"
+  },
+  {
+    "raw_id": "RAW-294",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Schreibtisch",
+    "a": "desk"
+  },
+  {
+    "raw_id": "RAW-295",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "ausrichten",
+    "a": "to pass on (a message)"
+  },
+  {
+    "raw_id": "RAW-296",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "hinterlassen",
+    "a": "to leave (behind)"
+  },
+  {
+    "raw_id": "RAW-297",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "verschwinden",
+    "a": "to disappear"
+  },
+  {
+    "raw_id": "RAW-298",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "wissen",
+    "a": "to know"
+  },
+  {
+    "raw_id": "RAW-299",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Fähigkeiten",
+    "a": "skills, abilities"
+  },
+  {
+    "raw_id": "RAW-300",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "erreichbar",
+    "a": "reachable, available"
+  },
+  {
+    "raw_id": "RAW-301",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "seltener",
+    "a": "rarer, less often"
+  },
+  {
+    "raw_id": "RAW-302",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der Austausch",
+    "a": "exchange"
+  },
+  {
+    "raw_id": "RAW-303",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Vernetzung",
+    "a": "networking"
+  },
+  {
+    "raw_id": "RAW-304",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "betreuen",
+    "a": "to take care of, supervise"
+  },
+  {
+    "raw_id": "RAW-305",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Verträge",
+    "a": "contracts"
+  },
+  {
+    "raw_id": "RAW-306",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "lebenslang",
+    "a": "lifelong"
+  },
+  {
+    "raw_id": "RAW-307",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Arbeitsverhältnisse",
+    "a": "employment relationships"
+  },
+  {
+    "raw_id": "RAW-308",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "existieren",
+    "a": "to exist"
+  },
+  {
+    "raw_id": "RAW-309",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "der feste Job",
+    "a": "permanent job"
+  },
+  {
+    "raw_id": "RAW-310",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "gestalten",
+    "a": "to design, shape"
+  },
+  {
+    "raw_id": "RAW-311",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "freiwillig",
+    "a": "voluntary"
+  },
+  {
+    "raw_id": "RAW-312",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "selbstständig",
+    "a": "self-employed, independent"
+  },
+  {
+    "raw_id": "RAW-313",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Männer",
+    "a": "men"
+  },
+  {
+    "raw_id": "RAW-314",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Arbeitsteilung",
+    "a": "division of labor"
+  },
+  {
+    "raw_id": "RAW-315",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "q": "die Betreuungsplätze",
+    "a": "childcare places"
+  },
+  {
+    "raw_id": "RAW-316",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "ganz schön mobil",
+    "a": "Useful mobile"
+  },
+  {
+    "raw_id": "RAW-317",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "vorhaben",
+    "a": "to plan, to intend"
+  },
+  {
+    "raw_id": "RAW-318",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "Schaffe es locker!",
+    "a": "I can do it easily! / No problem!"
+  },
+  {
+    "raw_id": "RAW-319",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Treffpunkt",
+    "a": "meeting point"
+  },
+  {
+    "raw_id": "RAW-320",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "geklappt",
+    "a": "worked out, succeeded"
+  },
+  {
+    "raw_id": "RAW-321",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Verspätung",
+    "a": "delay"
+  },
+  {
+    "raw_id": "RAW-322",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Verkehr und Stau",
+    "a": "traffic and traffic jam"
+  },
+  {
+    "raw_id": "RAW-323",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "das Verkehrsmittel",
+    "a": "means of transport"
+  },
+  {
+    "raw_id": "RAW-324",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Ampel",
+    "a": "traffic light"
+  },
+  {
+    "raw_id": "RAW-325",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Anschluss",
+    "a": "connection"
+  },
+  {
+    "raw_id": "RAW-326",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "verpassen",
+    "a": "to miss"
+  },
+  {
+    "raw_id": "RAW-327",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Fahrplan",
+    "a": "timetable, schedule"
+  },
+  {
+    "raw_id": "RAW-328",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Tankstelle",
+    "a": "gas station"
+  },
+  {
+    "raw_id": "RAW-329",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "voll sein",
+    "a": "to be full"
+  },
+  {
+    "raw_id": "RAW-330",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "besetzt",
+    "a": "occupied, busy"
+  },
+  {
+    "raw_id": "RAW-331",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Führerschein",
+    "a": "driver's license"
+  },
+  {
+    "raw_id": "RAW-332",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "nützlich",
+    "a": "useful"
+  },
+  {
+    "raw_id": "RAW-333",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "bequem",
+    "a": "comfortable"
+  },
+  {
+    "raw_id": "RAW-334",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "unterwegs",
+    "a": "on the way, en route"
+  },
+  {
+    "raw_id": "RAW-335",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "so ein Chaos!",
+    "a": "what a chaos!"
+  },
+  {
+    "raw_id": "RAW-336",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "genervt",
+    "a": "annoyed, irritated"
+  },
+  {
+    "raw_id": "RAW-337",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Dame",
+    "a": "lady"
+  },
+  {
+    "raw_id": "RAW-338",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "mischen",
+    "a": "to mix"
+  },
+  {
+    "raw_id": "RAW-339",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "abnehmen",
+    "a": "to lose weight, to take off"
+  },
+  {
+    "raw_id": "RAW-340",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Strecke",
+    "a": "route, distance"
+  },
+  {
+    "raw_id": "RAW-341",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "topaktuell",
+    "a": "up-to-date, very current"
+  },
+  {
+    "raw_id": "RAW-342",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Bedienung",
+    "a": "service, operation"
+  },
+  {
+    "raw_id": "RAW-343",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "übermorgen",
+    "a": "day after tomorrow"
+  },
+  {
+    "raw_id": "RAW-344",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "einschalten",
+    "a": "to switch on, turn on"
+  },
+  {
+    "raw_id": "RAW-345",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Überlegungen",
+    "a": "considerations, thoughts"
+  },
+  {
+    "raw_id": "RAW-346",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "gespannt / spannen",
+    "a": "excited, curious / to tighten"
+  },
+  {
+    "raw_id": "RAW-347",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "rechtzeitig",
+    "a": "on time, in time"
+  },
+  {
+    "raw_id": "RAW-348",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Baustellen und Bauen",
+    "a": "construction sites and building"
+  },
+  {
+    "raw_id": "RAW-349",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "den Bus erreichen",
+    "a": "to catch the bus"
+  },
+  {
+    "raw_id": "RAW-350",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "das Benzin",
+    "a": "gasoline, petrol"
+  },
+  {
+    "raw_id": "RAW-351",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "das Schloss",
+    "a": "castle, lock"
+  },
+  {
+    "raw_id": "RAW-352",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Ecke",
+    "a": "corner"
+  },
+  {
+    "raw_id": "RAW-353",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "um herum",
+    "a": "around"
+  },
+  {
+    "raw_id": "RAW-354",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "am ... vorbei",
+    "a": "past"
+  },
+  {
+    "raw_id": "RAW-355",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "gegenüber",
+    "a": "opposite, across from"
+  },
+  {
+    "raw_id": "RAW-356",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "entlang",
+    "a": "along"
+  },
+  {
+    "raw_id": "RAW-357",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "zur Kreuzung",
+    "a": "to the intersection"
+  },
+  {
+    "raw_id": "RAW-358",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "einverstanden",
+    "a": "agreed, okay"
+  },
+  {
+    "raw_id": "RAW-359",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "ich freue mich",
+    "a": "I am happy, I look forward"
+  },
+  {
+    "raw_id": "RAW-360",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Wortbestandteile",
+    "a": "word components"
+  },
+  {
+    "raw_id": "RAW-361",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "leihen",
+    "a": "to lend, borrow"
+  },
+  {
+    "raw_id": "RAW-362",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Anbieter",
+    "a": "providers, suppliers"
+  },
+  {
+    "raw_id": "RAW-363",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "ähnlich",
+    "a": "similar"
+  },
+  {
+    "raw_id": "RAW-364",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Autovermietung",
+    "a": "car rental"
+  },
+  {
+    "raw_id": "RAW-365",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Durchschnitt",
+    "a": "average"
+  },
+  {
+    "raw_id": "RAW-366",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "es lohnt sich",
+    "a": "it's worth it"
+  },
+  {
+    "raw_id": "RAW-367",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "das Mitglied",
+    "a": "member"
+  },
+  {
+    "raw_id": "RAW-368",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Vertrag",
+    "a": "contract"
+  },
+  {
+    "raw_id": "RAW-369",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "unterschreiben",
+    "a": "to sign"
+  },
+  {
+    "raw_id": "RAW-370",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Gebühr",
+    "a": "fee, charge"
+  },
+  {
+    "raw_id": "RAW-371",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "ansonsten",
+    "a": "otherwise"
+  },
+  {
+    "raw_id": "RAW-372",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Reparaturen",
+    "a": "repairs"
+  },
+  {
+    "raw_id": "RAW-373",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Versicherung",
+    "a": "insurance"
+  },
+  {
+    "raw_id": "RAW-374",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "mieten",
+    "a": "to rent"
+  },
+  {
+    "raw_id": "RAW-375",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "entweder",
+    "a": "either"
+  },
+  {
+    "raw_id": "RAW-376",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Redemittel",
+    "a": "phrases, expressions"
+  },
+  {
+    "raw_id": "RAW-377",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "pendeln",
+    "a": "to commute"
+  },
+  {
+    "raw_id": "RAW-378",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Praxis",
+    "a": "practice, doctor's office"
+  },
+  {
+    "raw_id": "RAW-379",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Schlange",
+    "a": "queue, line; snake"
+  },
+  {
+    "raw_id": "RAW-380",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "vorn und hinten",
+    "a": "front and back"
+  },
+  {
+    "raw_id": "RAW-381",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Schriftsteller",
+    "a": "writer, author"
+  },
+  {
+    "raw_id": "RAW-382",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Eindrücke",
+    "a": "impressions"
+  },
+  {
+    "raw_id": "RAW-383",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Begegnungen",
+    "a": "encounters, meetings"
+  },
+  {
+    "raw_id": "RAW-384",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "wahrscheinlich",
+    "a": "probably, likely"
+  },
+  {
+    "raw_id": "RAW-385",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Abschnitte",
+    "a": "sections, segments"
+  },
+  {
+    "raw_id": "RAW-386",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "abgeschlossen",
+    "a": "completed, locked"
+  },
+  {
+    "raw_id": "RAW-387",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Wolga",
+    "a": "the Volga (river)"
+  },
+  {
+    "raw_id": "RAW-388",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "befürchtet",
+    "a": "feared"
+  },
+  {
+    "raw_id": "RAW-389",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Ersatzteile",
+    "a": "spare parts"
+  },
+  {
+    "raw_id": "RAW-390",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "das Zelt",
+    "a": "tent"
+  },
+  {
+    "raw_id": "RAW-391",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Isomatte",
+    "a": "sleeping pad, mat"
+  },
+  {
+    "raw_id": "RAW-392",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "durchsichtigen",
+    "a": "transparent, see-through"
+  },
+  {
+    "raw_id": "RAW-393",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Tüten",
+    "a": "bags"
+  },
+  {
+    "raw_id": "RAW-394",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "verstaut",
+    "a": "stowed away, packed"
+  },
+  {
+    "raw_id": "RAW-395",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Wollmütze",
+    "a": "wool hat"
+  },
+  {
+    "raw_id": "RAW-396",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Lenkertasche",
+    "a": "handlebar bag"
+  },
+  {
+    "raw_id": "RAW-397",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "höchste Not",
+    "a": "utmost necessity, emergency"
+  },
+  {
+    "raw_id": "RAW-398",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "der Reisepass",
+    "a": "passport"
+  },
+  {
+    "raw_id": "RAW-399",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Landkarten",
+    "a": "maps"
+  },
+  {
+    "raw_id": "RAW-400",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "griffbereit",
+    "a": "within reach, handy"
+  },
+  {
+    "raw_id": "RAW-401",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "die Flecken",
+    "a": "spots, stains"
+  },
+  {
+    "raw_id": "RAW-402",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "q": "bieten",
+    "a": "to offer"
+  },
+  {
+    "raw_id": "RAW-403",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "unbedingt",
+    "a": "absolutely, definitely"
+  },
+  {
+    "raw_id": "RAW-404",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Lieder",
+    "a": "songs"
+  },
+  {
+    "raw_id": "RAW-405",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "geliehen",
+    "a": "borrowed, lent"
+  },
+  {
+    "raw_id": "RAW-406",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "gar nicht so einfach",
+    "a": "not so easy at all"
+  },
+  {
+    "raw_id": "RAW-407",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "üben",
+    "a": "to practice, exercise"
+  },
+  {
+    "raw_id": "RAW-408",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "sowieso",
+    "a": "anyway, anyhow"
+  },
+  {
+    "raw_id": "RAW-409",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "deshalb",
+    "a": "therefore, that's why"
+  },
+  {
+    "raw_id": "RAW-410",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "einhalten",
+    "a": "to keep, adhere to"
+  },
+  {
+    "raw_id": "RAW-411",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "klären",
+    "a": "to clarify, clear up"
+  },
+  {
+    "raw_id": "RAW-412",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "mündliche Prüfungen",
+    "a": "oral exams"
+  },
+  {
+    "raw_id": "RAW-413",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "durcheinander",
+    "a": "confused, mixed up"
+  },
+  {
+    "raw_id": "RAW-414",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "der Prüfer",
+    "a": "examiner"
+  },
+  {
+    "raw_id": "RAW-415",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "still",
+    "a": "quiet, silent"
+  },
+  {
+    "raw_id": "RAW-416",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "mindestens",
+    "a": "at least"
+  },
+  {
+    "raw_id": "RAW-417",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "der Stoff",
+    "a": "material, subject matter, fabric"
+  },
+  {
+    "raw_id": "RAW-418",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "kapieren",
+    "a": "to understand, get it"
+  },
+  {
+    "raw_id": "RAW-419",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "trotzdem",
+    "a": "nevertheless, still"
+  },
+  {
+    "raw_id": "RAW-420",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "knapp",
+    "a": "tight, scarce, barely"
+  },
+  {
+    "raw_id": "RAW-421",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "konsequent sein",
+    "a": "to be consistent"
+  },
+  {
+    "raw_id": "RAW-422",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "verschieben",
+    "a": "to postpone, shift"
+  },
+  {
+    "raw_id": "RAW-423",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "gelöst",
+    "a": "solved, relaxed"
+  },
+  {
+    "raw_id": "RAW-424",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "vorstellen",
+    "a": "to imagine, introduce"
+  },
+  {
+    "raw_id": "RAW-425",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Grippe",
+    "a": "flu, influenza"
+  },
+  {
+    "raw_id": "RAW-426",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "atme tief",
+    "a": "breathe deeply"
+  },
+  {
+    "raw_id": "RAW-427",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "übrigens",
+    "a": "by the way, incidentally"
+  },
+  {
+    "raw_id": "RAW-428",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "gerecht",
+    "a": "fair, just"
+  },
+  {
+    "raw_id": "RAW-429",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "gewinnen",
+    "a": "to win"
+  },
+  {
+    "raw_id": "RAW-430",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "dringend",
+    "a": "urgent, urgently"
+  },
+  {
+    "raw_id": "RAW-431",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Erholung",
+    "a": "recovery, rest"
+  },
+  {
+    "raw_id": "RAW-432",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "nachfragen",
+    "a": "to inquire, ask"
+  },
+  {
+    "raw_id": "RAW-433",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "streng",
+    "a": "strict, severe"
+  },
+  {
+    "raw_id": "RAW-434",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "einplanen",
+    "a": "to plan in, schedule"
+  },
+  {
+    "raw_id": "RAW-435",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "begründen",
+    "a": "to justify, give reasons"
+  },
+  {
+    "raw_id": "RAW-436",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "belohnen",
+    "a": "to reward"
+  },
+  {
+    "raw_id": "RAW-437",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "der Gebärdendolmetscher",
+    "a": "sign language interpreter"
+  },
+  {
+    "raw_id": "RAW-438",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Sorge",
+    "a": "worry, concern"
+  },
+  {
+    "raw_id": "RAW-439",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "begleitete",
+    "a": "accompanied"
+  },
+  {
+    "raw_id": "RAW-440",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "gehörlos",
+    "a": "deaf"
+  },
+  {
+    "raw_id": "RAW-441",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Untersuchung",
+    "a": "examination, investigation"
+  },
+  {
+    "raw_id": "RAW-442",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "dolmetschen",
+    "a": "to interpret"
+  },
+  {
+    "raw_id": "RAW-443",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "das Standesamt",
+    "a": "registry office"
+  },
+  {
+    "raw_id": "RAW-444",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "abwechslungsreich",
+    "a": "varied, diverse"
+  },
+  {
+    "raw_id": "RAW-445",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Aufträge",
+    "a": "orders, assignments"
+  },
+  {
+    "raw_id": "RAW-446",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "Logopädin werden",
+    "a": "to become a speech therapist"
+  },
+  {
+    "raw_id": "RAW-447",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "festen",
+    "a": "firm, solid, fixed"
+  },
+  {
+    "raw_id": "RAW-448",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Drehbücher",
+    "a": "screenplays, scripts"
+  },
+  {
+    "raw_id": "RAW-449",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Zeitangaben",
+    "a": "time specifications"
+  },
+  {
+    "raw_id": "RAW-450",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Leiterinnen",
+    "a": "directors, managers (female)"
+  },
+  {
+    "raw_id": "RAW-451",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "das Viertel",
+    "a": "quarter, district"
+  },
+  {
+    "raw_id": "RAW-452",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "geleitet",
+    "a": "led, directed"
+  },
+  {
+    "raw_id": "RAW-453",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "fassen",
+    "a": "to grasp, hold, contain"
+  },
+  {
+    "raw_id": "RAW-454",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Gliederung",
+    "a": "structure, outline"
+  },
+  {
+    "raw_id": "RAW-455",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "die Zuhörer",
+    "a": "listeners, audience"
+  },
+  {
+    "raw_id": "RAW-456",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "q": "Inhalt wählen",
+    "a": "to choose content"
+  },
+  {
+    "raw_id": "RAW-457",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "das Schneeschuhwandern",
+    "a": "snowshoe hiking"
+  },
+  {
+    "raw_id": "RAW-458",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "reiten",
+    "a": "to ride (horse)"
+  },
+  {
+    "raw_id": "RAW-459",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "tauchen",
+    "a": "to dive"
+  },
+  {
+    "raw_id": "RAW-460",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "selbst",
+    "a": "self, oneself, even"
+  },
+  {
+    "raw_id": "RAW-461",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Fallschirm",
+    "a": "parachute"
+  },
+  {
+    "raw_id": "RAW-462",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "gesprungen / springen",
+    "a": "jumped / to jump"
+  },
+  {
+    "raw_id": "RAW-463",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Gegenstand",
+    "a": "object, item"
+  },
+  {
+    "raw_id": "RAW-464",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Mütze",
+    "a": "cap, hat"
+  },
+  {
+    "raw_id": "RAW-465",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Begeisterung",
+    "a": "enthusiasm, excitement"
+  },
+  {
+    "raw_id": "RAW-466",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Wahnsinn",
+    "a": "madness, insanity, amazing"
+  },
+  {
+    "raw_id": "RAW-467",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "so was Tolles",
+    "a": "something so great"
+  },
+  {
+    "raw_id": "RAW-468",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "unbedingt und bestimmt",
+    "a": "absolutely and definitely"
+  },
+  {
+    "raw_id": "RAW-469",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Enttäuschung",
+    "a": "disappointment"
+  },
+  {
+    "raw_id": "RAW-470",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "wohl",
+    "a": "well, probably"
+  },
+  {
+    "raw_id": "RAW-471",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "verliert und gewinnt",
+    "a": "loses and wins"
+  },
+  {
+    "raw_id": "RAW-472",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "verloren",
+    "a": "lost"
+  },
+  {
+    "raw_id": "RAW-473",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "das Tor",
+    "a": "goal, gate"
+  },
+  {
+    "raw_id": "RAW-474",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "benimmst",
+    "a": "behave (you behave)"
+  },
+  {
+    "raw_id": "RAW-475",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "mach weiter so!",
+    "a": "keep it up! / keep going like that!"
+  },
+  {
+    "raw_id": "RAW-476",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "das Vorbild",
+    "a": "role model"
+  },
+  {
+    "raw_id": "RAW-477",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "trennen",
+    "a": "to separate, divide"
+  },
+  {
+    "raw_id": "RAW-478",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "Tor geschossen",
+    "a": "scored a goal"
+  },
+  {
+    "raw_id": "RAW-479",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "trotzdem",
+    "a": "nevertheless, still"
+  },
+  {
+    "raw_id": "RAW-480",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "deshalb",
+    "a": "therefore, that's why"
+  },
+  {
+    "raw_id": "RAW-481",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Unterscheidung",
+    "a": "distinction, differentiation"
+  },
+  {
+    "raw_id": "RAW-482",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "vorschlägt",
+    "a": "suggests"
+  },
+  {
+    "raw_id": "RAW-483",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "bewegen",
+    "a": "to move"
+  },
+  {
+    "raw_id": "RAW-484",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "wandern",
+    "a": "to hike"
+  },
+  {
+    "raw_id": "RAW-485",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Hochseilgarten",
+    "a": "high ropes course"
+  },
+  {
+    "raw_id": "RAW-486",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "ausgeliehen",
+    "a": "borrowed, rented out"
+  },
+  {
+    "raw_id": "RAW-487",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "klettert / klettern",
+    "a": "climbs / to climb"
+  },
+  {
+    "raw_id": "RAW-488",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "balanciert",
+    "a": "balanced"
+  },
+  {
+    "raw_id": "RAW-489",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Übersicht",
+    "a": "overview, survey"
+  },
+  {
+    "raw_id": "RAW-490",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "schicken",
+    "a": "to send"
+  },
+  {
+    "raw_id": "RAW-491",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Schatz",
+    "a": "treasure"
+  },
+  {
+    "raw_id": "RAW-492",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Absatz",
+    "a": "paragraph, heel, sales"
+  },
+  {
+    "raw_id": "RAW-493",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Schatzsuche",
+    "a": "treasure hunt"
+  },
+  {
+    "raw_id": "RAW-494",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "versteckt / verstecken",
+    "a": "hidden / to hide"
+  },
+  {
+    "raw_id": "RAW-495",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "sogenannten",
+    "a": "so-called"
+  },
+  {
+    "raw_id": "RAW-496",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "stellt",
+    "a": "places, puts"
+  },
+  {
+    "raw_id": "RAW-497",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "das Versteck",
+    "a": "hiding place"
+  },
+  {
+    "raw_id": "RAW-498",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "fassen / fasst",
+    "a": "to grasp, hold / grasps"
+  },
+  {
+    "raw_id": "RAW-499",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Behälter",
+    "a": "container"
+  },
+  {
+    "raw_id": "RAW-500",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "wasserdichte Dose",
+    "a": "waterproof box"
+  },
+  {
+    "raw_id": "RAW-501",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Tresor",
+    "a": "safe, vault"
+  },
+  {
+    "raw_id": "RAW-502",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "der Inhalt",
+    "a": "content"
+  },
+  {
+    "raw_id": "RAW-503",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "schützen",
+    "a": "to protect"
+  },
+  {
+    "raw_id": "RAW-504",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "kaputtgehen",
+    "a": "to break"
+  },
+  {
+    "raw_id": "RAW-505",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "stabile",
+    "a": "stable, sturdy"
+  },
+  {
+    "raw_id": "RAW-506",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "Dose aus Plastik",
+    "a": "plastic box"
+  },
+  {
+    "raw_id": "RAW-507",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "herausnehmen",
+    "a": "to take out"
+  },
+  {
+    "raw_id": "RAW-508",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "hineinlegen",
+    "a": "to put in"
+  },
+  {
+    "raw_id": "RAW-509",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "graben",
+    "a": "to dig"
+  },
+  {
+    "raw_id": "RAW-510",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Löcher",
+    "a": "holes"
+  },
+  {
+    "raw_id": "RAW-511",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Erde",
+    "a": "earth, soil"
+  },
+  {
+    "raw_id": "RAW-512",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "den Bäumen",
+    "a": "the trees"
+  },
+  {
+    "raw_id": "RAW-513",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "und so weiter",
+    "a": "and so on"
+  },
+  {
+    "raw_id": "RAW-514",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "das Gelände",
+    "a": "terrain, grounds"
+  },
+  {
+    "raw_id": "RAW-515",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Naturwanderung",
+    "a": "nature hike"
+  },
+  {
+    "raw_id": "RAW-516",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "gebaut / bauen",
+    "a": "built / to build"
+  },
+  {
+    "raw_id": "RAW-517",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "q": "die Besonderheiten",
+    "a": "special features, peculiarities"
+  },
+  {
+    "raw_id": "RAW-518",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Insel",
+    "a": "island"
+  },
+  {
+    "raw_id": "RAW-519",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "das Meer",
+    "a": "sea, ocean"
+  },
+  {
+    "raw_id": "RAW-520",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Fläche",
+    "a": "area, surface"
+  },
+  {
+    "raw_id": "RAW-521",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Einwohner",
+    "a": "inhabitant, resident"
+  },
+  {
+    "raw_id": "RAW-522",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "das Hauseboot",
+    "a": "houseboat"
+  },
+  {
+    "raw_id": "RAW-523",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "schaukelt",
+    "a": "rocks, sways"
+  },
+  {
+    "raw_id": "RAW-524",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Luft",
+    "a": "air"
+  },
+  {
+    "raw_id": "RAW-525",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "das Ufer",
+    "a": "shore, bank"
+  },
+  {
+    "raw_id": "RAW-526",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "genial",
+    "a": "brilliant, genius"
+  },
+  {
+    "raw_id": "RAW-527",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "spiegeln",
+    "a": "to reflect, mirror"
+  },
+  {
+    "raw_id": "RAW-528",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "überlegt",
+    "a": "considered, thought about"
+  },
+  {
+    "raw_id": "RAW-529",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Keller",
+    "a": "basement, cellar"
+  },
+  {
+    "raw_id": "RAW-530",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "das Dach",
+    "a": "roof"
+  },
+  {
+    "raw_id": "RAW-531",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Wohnformen",
+    "a": "forms of living, housing types"
+  },
+  {
+    "raw_id": "RAW-532",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Bauernhof",
+    "a": "farm"
+  },
+  {
+    "raw_id": "RAW-533",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "bewohnt",
+    "a": "inhabited, occupied"
+  },
+  {
+    "raw_id": "RAW-534",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Seehöhe",
+    "a": "altitude, elevation"
+  },
+  {
+    "raw_id": "RAW-535",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "entfernt",
+    "a": "distant, removed"
+  },
+  {
+    "raw_id": "RAW-536",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "renoviert",
+    "a": "renovated"
+  },
+  {
+    "raw_id": "RAW-537",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "das Gebäude",
+    "a": "building"
+  },
+  {
+    "raw_id": "RAW-538",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "beschwert",
+    "a": "complained"
+  },
+  {
+    "raw_id": "RAW-539",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "leiser",
+    "a": "quieter"
+  },
+  {
+    "raw_id": "RAW-540",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "bisher",
+    "a": "so far, until now"
+  },
+  {
+    "raw_id": "RAW-541",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "Hund bellt",
+    "a": "dog barks"
+  },
+  {
+    "raw_id": "RAW-542",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "abstellen",
+    "a": "to turn off, park"
+  },
+  {
+    "raw_id": "RAW-543",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Eingang",
+    "a": "entrance"
+  },
+  {
+    "raw_id": "RAW-544",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "einlecken",
+    "a": "to lick in (possibly: einchecken = to check in)"
+  },
+  {
+    "raw_id": "RAW-545",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "annehmen",
+    "a": "to accept, assume"
+  },
+  {
+    "raw_id": "RAW-546",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "ausräumen",
+    "a": "to clear out, empty"
+  },
+  {
+    "raw_id": "RAW-547",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "Briefkasten leeren",
+    "a": "to empty the mailbox"
+  },
+  {
+    "raw_id": "RAW-548",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "füttern",
+    "a": "to feed"
+  },
+  {
+    "raw_id": "RAW-549",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Schraubendreher",
+    "a": "screwdriver"
+  },
+  {
+    "raw_id": "RAW-550",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "sich anmelden und sich abmelden",
+    "a": "to register and to deregister"
+  },
+  {
+    "raw_id": "RAW-551",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "sehr wohl",
+    "a": "very well, certainly"
+  },
+  {
+    "raw_id": "RAW-552",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "verabschieden",
+    "a": "to say goodbye"
+  },
+  {
+    "raw_id": "RAW-553",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "kündigen",
+    "a": "to quit, terminate, give notice"
+  },
+  {
+    "raw_id": "RAW-554",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "Zeugnis gefehlt",
+    "a": "certificate missing (possibly: Zeugnis fehlt)"
+  },
+  {
+    "raw_id": "RAW-555",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "kaum",
+    "a": "hardly, barely"
+  },
+  {
+    "raw_id": "RAW-556",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "unterhalten",
+    "a": "to converse, entertain"
+  },
+  {
+    "raw_id": "RAW-557",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "verirrt",
+    "a": "lost, gone astray"
+  },
+  {
+    "raw_id": "RAW-558",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Mitstudenten",
+    "a": "fellow students"
+  },
+  {
+    "raw_id": "RAW-559",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Betonung",
+    "a": "emphasis, stress, pronunciation"
+  },
+  {
+    "raw_id": "RAW-560",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "die Abreise",
+    "a": "departure"
+  },
+  {
+    "raw_id": "RAW-561",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "abfahren",
+    "a": "to depart, leave"
+  },
+  {
+    "raw_id": "RAW-562",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "erlaubt",
+    "a": "allowed, permitted"
+  },
+  {
+    "raw_id": "RAW-563",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Haushalt",
+    "a": "household"
+  },
+  {
+    "raw_id": "RAW-564",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "das Futter",
+    "a": "feed, food (for animals)"
+  },
+  {
+    "raw_id": "RAW-565",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "treu",
+    "a": "loyal, faithful"
+  },
+  {
+    "raw_id": "RAW-566",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Stein",
+    "a": "stone"
+  },
+  {
+    "raw_id": "RAW-567",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "drückt",
+    "a": "presses, pushes"
+  },
+  {
+    "raw_id": "RAW-568",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "der Selbstauslöser",
+    "a": "self-timer (camera)"
+  },
+  {
+    "raw_id": "RAW-569",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "das Erdhörnchen",
+    "a": "ground squirrel"
+  },
+  {
+    "raw_id": "RAW-570",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "schaut",
+    "a": "looks"
+  },
+  {
+    "raw_id": "RAW-571",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "hinein",
+    "a": "in, into"
+  },
+  {
+    "raw_id": "RAW-572",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "hineingeschaut",
+    "a": "looked in"
+  },
+  {
+    "raw_id": "RAW-573",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "unterschiedlich",
+    "a": "different, varying"
+  },
+  {
+    "raw_id": "RAW-574",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "q": "überqueren",
+    "a": "to cross"
+  },
+  {
+    "raw_id": "RAW-575",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "erschienen",
+    "a": "appeared, published"
+  },
+  {
+    "raw_id": "RAW-576",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Unterhaltung",
+    "a": "entertainment, conversation"
+  },
+  {
+    "raw_id": "RAW-577",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Verfilmung",
+    "a": "film adaptation"
+  },
+  {
+    "raw_id": "RAW-578",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "Neuschwanstein",
+    "a": "Neuschwanstein (castle in Bavaria)"
+  },
+  {
+    "raw_id": "RAW-579",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "das Märchenschloss",
+    "a": "fairy-tale castle"
+  },
+  {
+    "raw_id": "RAW-580",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "der Hauptdarsteller",
+    "a": "lead actor, main star"
+  },
+  {
+    "raw_id": "RAW-581",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Oper",
+    "a": "opera"
+  },
+  {
+    "raw_id": "RAW-582",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "der Frauenchor",
+    "a": "women's choir"
+  },
+  {
+    "raw_id": "RAW-583",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Gesprächsausschnitte",
+    "a": "conversation excerpts"
+  },
+  {
+    "raw_id": "RAW-584",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "per Überweisung",
+    "a": "by bank transfer"
+  },
+  {
+    "raw_id": "RAW-585",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Flasche",
+    "a": "bottle"
+  },
+  {
+    "raw_id": "RAW-586",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "abgeben",
+    "a": "to hand in, drop off"
+  },
+  {
+    "raw_id": "RAW-587",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "der Kontrolleur",
+    "a": "inspector, ticket collector"
+  },
+  {
+    "raw_id": "RAW-588",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "jemand ; niemand ; alles",
+    "a": "someone ; nobody ; everything"
+  },
+  {
+    "raw_id": "RAW-589",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Sprechblasen",
+    "a": "speech bubbles"
+  },
+  {
+    "raw_id": "RAW-590",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "der Promi",
+    "a": "celebrity"
+  },
+  {
+    "raw_id": "RAW-591",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "verschläft / verschlafen",
+    "a": "oversleeps / to oversleep"
+  },
+  {
+    "raw_id": "RAW-592",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "einschlafen / eingeschlafen",
+    "a": "to fall asleep / fallen asleep"
+  },
+  {
+    "raw_id": "RAW-593",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Moderatorin",
+    "a": "host, presenter (female)"
+  },
+  {
+    "raw_id": "RAW-594",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Panne",
+    "a": "breakdown, mishap"
+  },
+  {
+    "raw_id": "RAW-595",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "glatt",
+    "a": "smooth, slippery"
+  },
+  {
+    "raw_id": "RAW-596",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "feststellen",
+    "a": "to determine, notice"
+  },
+  {
+    "raw_id": "RAW-597",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "ablesen",
+    "a": "to read off, read from"
+  },
+  {
+    "raw_id": "RAW-598",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Witze",
+    "a": "jokes"
+  },
+  {
+    "raw_id": "RAW-599",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "hingefahren / hinfahren",
+    "a": "driven there / to drive there"
+  },
+  {
+    "raw_id": "RAW-600",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "vorgehen / geht vor",
+    "a": "to proceed, take action / goes ahead"
+  },
+  {
+    "raw_id": "RAW-601",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "das Endspiel",
+    "a": "final, finals"
+  },
+  {
+    "raw_id": "RAW-602",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "der Hochzeitstag",
+    "a": "wedding day, anniversary"
+  },
+  {
+    "raw_id": "RAW-603",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "das Dorf",
+    "a": "village"
+  },
+  {
+    "raw_id": "RAW-604",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Prominente",
+    "a": "celebrity (female)"
+  },
+  {
+    "raw_id": "RAW-605",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Sendung",
+    "a": "show, broadcast, shipment"
+  },
+  {
+    "raw_id": "RAW-606",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "drehen / gedreht",
+    "a": "to film, turn / filmed"
+  },
+  {
+    "raw_id": "RAW-607",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "ausverkauft",
+    "a": "sold out"
+  },
+  {
+    "raw_id": "RAW-608",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Rückfragen",
+    "a": "queries, follow-up questions"
+  },
+  {
+    "raw_id": "RAW-609",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "drüben",
+    "a": "over there"
+  },
+  {
+    "raw_id": "RAW-610",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "aufgeregt / aufregen",
+    "a": "excited, nervous / to excite, upset"
+  },
+  {
+    "raw_id": "RAW-611",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Hauptrolle",
+    "a": "leading role, main part"
+  },
+  {
+    "raw_id": "RAW-612",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Einführung",
+    "a": "introduction"
+  },
+  {
+    "raw_id": "RAW-613",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "abgemalt / abmalen / malen",
+    "a": "copied, painted / to copy a painting / to paint"
+  },
+  {
+    "raw_id": "RAW-614",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "sondern",
+    "a": "but rather"
+  },
+  {
+    "raw_id": "RAW-615",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "exakt",
+    "a": "exact, precise"
+  },
+  {
+    "raw_id": "RAW-616",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "deuten",
+    "a": "to interpret, point"
+  },
+  {
+    "raw_id": "RAW-617",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "vielleicht",
+    "a": "maybe, perhaps"
+  },
+  {
+    "raw_id": "RAW-618",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "oben",
+    "a": "above, upstairs, on top"
+  },
+  {
+    "raw_id": "RAW-619",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "unten",
+    "a": "below, downstairs, at the bottom"
+  },
+  {
+    "raw_id": "RAW-620",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Ohren",
+    "a": "ears"
+  },
+  {
+    "raw_id": "RAW-621",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "der Vordergrund",
+    "a": "foreground"
+  },
+  {
+    "raw_id": "RAW-622",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "die Abbildung",
+    "a": "illustration, image"
+  },
+  {
+    "raw_id": "RAW-623",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "q": "der Hintergrund",
+    "a": "background"
+  },
+  {
+    "raw_id": "RAW-624",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "vergeht / vergehen",
+    "a": "passes (time) / to pass"
+  },
+  {
+    "raw_id": "RAW-625",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "der Rentner",
+    "a": "retiree, pensioner"
+  },
+  {
+    "raw_id": "RAW-626",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Ausflüge / der Ausflug",
+    "a": "excursions / excursion"
+  },
+  {
+    "raw_id": "RAW-627",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "verbringen",
+    "a": "to spend (time)"
+  },
+  {
+    "raw_id": "RAW-628",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "verbrochen",
+    "a": "committed (a crime)"
+  },
+  {
+    "raw_id": "RAW-629",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "würde / wäre / hätte",
+    "a": "would / would be / would have"
+  },
+  {
+    "raw_id": "RAW-630",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "allein",
+    "a": "alone"
+  },
+  {
+    "raw_id": "RAW-631",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "gegenseitig",
+    "a": "mutual, reciprocal"
+  },
+  {
+    "raw_id": "RAW-632",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "teilen / teilt",
+    "a": "to share / shares"
+  },
+  {
+    "raw_id": "RAW-633",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "geht es weiter",
+    "a": "it continues"
+  },
+  {
+    "raw_id": "RAW-634",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "losgeht",
+    "a": "starts, gets going"
+  },
+  {
+    "raw_id": "RAW-635",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "weit",
+    "a": "far, wide"
+  },
+  {
+    "raw_id": "RAW-636",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "erledigen",
+    "a": "to take care of, complete"
+  },
+  {
+    "raw_id": "RAW-637",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "streiten",
+    "a": "to argue, quarrel"
+  },
+  {
+    "raw_id": "RAW-638",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "klingelt",
+    "a": "rings (doorbell, phone)"
+  },
+  {
+    "raw_id": "RAW-639",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "ausruhen",
+    "a": "to rest"
+  },
+  {
+    "raw_id": "RAW-640",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Satzhälften",
+    "a": "sentence halves"
+  },
+  {
+    "raw_id": "RAW-641",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "der Vorschlag",
+    "a": "suggestion, proposal"
+  },
+  {
+    "raw_id": "RAW-642",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "zustimmen",
+    "a": "to agree, consent"
+  },
+  {
+    "raw_id": "RAW-643",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "der Gegenvorschlag",
+    "a": "counter-proposal"
+  },
+  {
+    "raw_id": "RAW-644",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Nachfrage",
+    "a": "inquiry, demand"
+  },
+  {
+    "raw_id": "RAW-645",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "ablehnen",
+    "a": "to decline, reject"
+  },
+  {
+    "raw_id": "RAW-646",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "los mit",
+    "a": "let's go with, start with"
+  },
+  {
+    "raw_id": "RAW-647",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Stimmung",
+    "a": "mood, atmosphere"
+  },
+  {
+    "raw_id": "RAW-648",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "verschoben / verschieben",
+    "a": "postponed / to postpone"
+  },
+  {
+    "raw_id": "RAW-649",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Betonungen",
+    "a": "stresses, emphases"
+  },
+  {
+    "raw_id": "RAW-650",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Lücken",
+    "a": "gaps, blanks"
+  },
+  {
+    "raw_id": "RAW-651",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "sinnvoll",
+    "a": "sensible, meaningful"
+  },
+  {
+    "raw_id": "RAW-652",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Vergangenheit",
+    "a": "past"
+  },
+  {
+    "raw_id": "RAW-653",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "der Schwarzwald",
+    "a": "Black Forest"
+  },
+  {
+    "raw_id": "RAW-654",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "bewerben / beworben",
+    "a": "to apply / applied"
+  },
+  {
+    "raw_id": "RAW-655",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "das Abenteuer",
+    "a": "adventure"
+  },
+  {
+    "raw_id": "RAW-656",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "der Bauernhof",
+    "a": "farm"
+  },
+  {
+    "raw_id": "RAW-657",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "der Strom",
+    "a": "electricity, current"
+  },
+  {
+    "raw_id": "RAW-658",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "elektrisches",
+    "a": "electric"
+  },
+  {
+    "raw_id": "RAW-659",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "das Kerzenlicht",
+    "a": "candlelight"
+  },
+  {
+    "raw_id": "RAW-660",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "fließendes",
+    "a": "running (water), flowing"
+  },
+  {
+    "raw_id": "RAW-661",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Pflanzen",
+    "a": "plants"
+  },
+  {
+    "raw_id": "RAW-662",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Uhren",
+    "a": "clocks, watches"
+  },
+  {
+    "raw_id": "RAW-663",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "anstrengend",
+    "a": "exhausting, strenuous"
+  },
+  {
+    "raw_id": "RAW-664",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "sondern",
+    "a": "but rather, but"
+  },
+  {
+    "raw_id": "RAW-665",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "ausgesucht / aussuchen",
+    "a": "selected / to select, choose"
+  },
+  {
+    "raw_id": "RAW-666",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "ewig",
+    "a": "eternal, forever"
+  },
+  {
+    "raw_id": "RAW-667",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "sonst",
+    "a": "otherwise, else"
+  },
+  {
+    "raw_id": "RAW-668",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "hart",
+    "a": "hard, tough"
+  },
+  {
+    "raw_id": "RAW-669",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Heizung",
+    "a": "heating"
+  },
+  {
+    "raw_id": "RAW-670",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Vergangenheit / vergangen",
+    "a": "past / past, gone"
+  },
+  {
+    "raw_id": "RAW-671",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "einigen",
+    "a": "to agree, settle"
+  },
+  {
+    "raw_id": "RAW-672",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "entwerfen",
+    "a": "to design, draft"
+  },
+  {
+    "raw_id": "RAW-673",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Sprichwörter",
+    "a": "proverbs, sayings"
+  },
+  {
+    "raw_id": "RAW-674",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "heilt / heilen",
+    "a": "heals / to heal"
+  },
+  {
+    "raw_id": "RAW-675",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Wunden",
+    "a": "wounds"
+  },
+  {
+    "raw_id": "RAW-676",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "scheinen",
+    "a": "to shine, seem"
+  },
+  {
+    "raw_id": "RAW-677",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "wächst / wachsen",
+    "a": "grows / to grow"
+  },
+  {
+    "raw_id": "RAW-678",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "zieht / ziehen",
+    "a": "pulls, moves / to pull, move"
+  },
+  {
+    "raw_id": "RAW-679",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "die Geduld",
+    "a": "patience"
+  },
+  {
+    "raw_id": "RAW-680",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "abhängen",
+    "a": "to depend, hang"
+  },
+  {
+    "raw_id": "RAW-681",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "q": "komisches / Gefühl",
+    "a": "strange / feeling"
+  },
+  {
+    "raw_id": "RAW-682",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "beeindruckt",
+    "a": "impressed"
+  },
+  {
+    "raw_id": "RAW-683",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "ein paar Mal",
+    "a": "a few times"
+  },
+  {
+    "raw_id": "RAW-684",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "lädt ein / einladen",
+    "a": "invites / to invite"
+  },
+  {
+    "raw_id": "RAW-685",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Gastgeberin",
+    "a": "hostess (female host)"
+  },
+  {
+    "raw_id": "RAW-686",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Zeremonie",
+    "a": "ceremony"
+  },
+  {
+    "raw_id": "RAW-687",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Ofen",
+    "a": "oven, stove"
+  },
+  {
+    "raw_id": "RAW-688",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "dekorieren",
+    "a": "to decorate"
+  },
+  {
+    "raw_id": "RAW-689",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Wanderschaft",
+    "a": "travels, journeyman years (traditional craft apprenticeship)"
+  },
+  {
+    "raw_id": "RAW-690",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Heimatort",
+    "a": "hometown, place of origin"
+  },
+  {
+    "raw_id": "RAW-691",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "abgeschlossen",
+    "a": "completed, finished, locked"
+  },
+  {
+    "raw_id": "RAW-692",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Lehre",
+    "a": "apprenticeship, lesson"
+  },
+  {
+    "raw_id": "RAW-693",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "Geselle sein",
+    "a": "to be a journeyman (craftsperson)"
+  },
+  {
+    "raw_id": "RAW-694",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "streng",
+    "a": "strict, severe"
+  },
+  {
+    "raw_id": "RAW-695",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "das Erntedankfest",
+    "a": "Thanksgiving, harvest festival"
+  },
+  {
+    "raw_id": "RAW-696",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "Weihnachten",
+    "a": "Christmas"
+  },
+  {
+    "raw_id": "RAW-697",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Umzug",
+    "a": "move, relocation; parade"
+  },
+  {
+    "raw_id": "RAW-698",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Früchte",
+    "a": "fruits"
+  },
+  {
+    "raw_id": "RAW-699",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "komisch",
+    "a": "strange, funny, odd"
+  },
+  {
+    "raw_id": "RAW-700",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "neulich",
+    "a": "recently, the other day"
+  },
+  {
+    "raw_id": "RAW-701",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "gemütlicher",
+    "a": "cozier, more comfortable"
+  },
+  {
+    "raw_id": "RAW-702",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "ausgezogen",
+    "a": "moved out, undressed"
+  },
+  {
+    "raw_id": "RAW-703",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "blödes",
+    "a": "stupid, silly (thing)"
+  },
+  {
+    "raw_id": "RAW-704",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "unzufrieden",
+    "a": "dissatisfied, unhappy"
+  },
+  {
+    "raw_id": "RAW-705",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "unhöflich",
+    "a": "impolite, rude"
+  },
+  {
+    "raw_id": "RAW-706",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "zuhört",
+    "a": "listens"
+  },
+  {
+    "raw_id": "RAW-707",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Kulturknigge",
+    "a": "cultural etiquette guide"
+  },
+  {
+    "raw_id": "RAW-708",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "putzen",
+    "a": "to clean"
+  },
+  {
+    "raw_id": "RAW-709",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "das Taschentuch",
+    "a": "handkerchief, tissue"
+  },
+  {
+    "raw_id": "RAW-710",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "auf keinen Fall tun",
+    "a": "not to do under any circumstances"
+  },
+  {
+    "raw_id": "RAW-711",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "umrühren",
+    "a": "to stir"
+  },
+  {
+    "raw_id": "RAW-712",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "vorsichtig",
+    "a": "careful, cautious"
+  },
+  {
+    "raw_id": "RAW-713",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "schlürfen",
+    "a": "to slurp"
+  },
+  {
+    "raw_id": "RAW-714",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Gastgeber",
+    "a": "host"
+  },
+  {
+    "raw_id": "RAW-715",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "wirken / wirkt",
+    "a": "to have an effect, seem / seems"
+  },
+  {
+    "raw_id": "RAW-716",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "gierig",
+    "a": "greedy"
+  },
+  {
+    "raw_id": "RAW-717",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Reiseleiter",
+    "a": "tour guide"
+  },
+  {
+    "raw_id": "RAW-718",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Absichten",
+    "a": "intentions"
+  },
+  {
+    "raw_id": "RAW-719",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "das Benehmen",
+    "a": "behavior, manners"
+  },
+  {
+    "raw_id": "RAW-720",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Höflichkeit",
+    "a": "politeness, courtesy"
+  },
+  {
+    "raw_id": "RAW-721",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "leise",
+    "a": "quiet, soft"
+  },
+  {
+    "raw_id": "RAW-722",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Anrede",
+    "a": "form of address, salutation"
+  },
+  {
+    "raw_id": "RAW-723",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "einige",
+    "a": "some, several"
+  },
+  {
+    "raw_id": "RAW-724",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Distanz",
+    "a": "distance"
+  },
+  {
+    "raw_id": "RAW-725",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "heißen",
+    "a": "to be called, to mean"
+  },
+  {
+    "raw_id": "RAW-726",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "befreundet",
+    "a": "befriended, friends with"
+  },
+  {
+    "raw_id": "RAW-727",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "ungefähr",
+    "a": "approximately, about"
+  },
+  {
+    "raw_id": "RAW-728",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "gilt",
+    "a": "applies, is valid (from \"gelten\")"
+  },
+  {
+    "raw_id": "RAW-729",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "fremde",
+    "a": "strange, foreign; stranger"
+  },
+  {
+    "raw_id": "RAW-730",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Beamte",
+    "a": "civil servant, official"
+  },
+  {
+    "raw_id": "RAW-731",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Ausnahme",
+    "a": "exception"
+  },
+  {
+    "raw_id": "RAW-732",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Unterschiede",
+    "a": "differences"
+  },
+  {
+    "raw_id": "RAW-733",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Bekannten",
+    "a": "acquaintance"
+  },
+  {
+    "raw_id": "RAW-734",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Satzzeichen",
+    "a": "punctuation marks"
+  },
+  {
+    "raw_id": "RAW-735",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "pflegen",
+    "a": "to care for, maintain; to be accustomed to"
+  },
+  {
+    "raw_id": "RAW-736",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Almhütte",
+    "a": "alpine hut, mountain cabin"
+  },
+  {
+    "raw_id": "RAW-737",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "aufgefallen",
+    "a": "noticed, stood out (from \"auffallen\")"
+  },
+  {
+    "raw_id": "RAW-738",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "abschließend",
+    "a": "finally, in conclusion"
+  },
+  {
+    "raw_id": "RAW-739",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Kaiserzeit",
+    "a": "imperial era"
+  },
+  {
+    "raw_id": "RAW-740",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Ballkleider",
+    "a": "ball gowns"
+  },
+  {
+    "raw_id": "RAW-741",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Prinzessinnen",
+    "a": "princesses"
+  },
+  {
+    "raw_id": "RAW-742",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "der Handkuss",
+    "a": "hand kiss"
+  },
+  {
+    "raw_id": "RAW-743",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "Quatsch!",
+    "a": "Nonsense! Rubbish!"
+  },
+  {
+    "raw_id": "RAW-744",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "beleidigt / beleidigen",
+    "a": "offended, insulted / to offend, insult"
+  },
+  {
+    "raw_id": "RAW-745",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "das Schnitzel",
+    "a": "schnitzel (breaded cutlet)"
+  },
+  {
+    "raw_id": "RAW-746",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "kriegen",
+    "a": "to get, receive (colloquial)"
+  },
+  {
+    "raw_id": "RAW-747",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "nennt / nennen",
+    "a": "calls, names / to call, name"
+  },
+  {
+    "raw_id": "RAW-748",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "äußern",
+    "a": "to express, state"
+  },
+  {
+    "raw_id": "RAW-749",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "häufige",
+    "a": "frequent, common"
+  },
+  {
+    "raw_id": "RAW-750",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "zusammenfassen",
+    "a": "to summarize"
+  },
+  {
+    "raw_id": "RAW-751",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "q": "die Eigenschaften",
+    "a": "characteristics, qualities, properties"
+  }
+]

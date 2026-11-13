@@ -15,7 +15,7 @@
   // ================= State =================
   let allWords = [];
   let currentDeck = [];
-  let currentDeckId = 'b1-all';
+  let currentDeckId = 'universal-all';
   let currentIndex = 0;
   let isFlipped = false;
   let isSpeaking = false;
@@ -38,8 +38,601 @@
   let sessionReviewedCount = 0;
   let sessionCorrectCount = 0;
 
+  // ================= Universal Archetype Engine (v3 Bento System) =================
+  const TYPES = {
+    noun: "Nomen",
+    verb: "Verb",
+    adj: "Adjektiv",
+    conn: "Konnektor",
+    prep: "Präposition",
+    phrase: "Wendung"
+  };
+
+  const gc = a => ({ der: "m", die: "f", das: "n" }[a] || "m");
+  const PRO = ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"];
+  const AUX = {
+    sein: ["bin", "bist", "ist", "sind", "seid", "sind"],
+    haben: ["habe", "hast", "hat", "haben", "habt", "haben"]
+  };
+
+  const prx = e => e.pre ? `<span class="pre">${e.pre}</span>` : "";
+  const hl = s => (s || "").replace(/\[\[(.+?)\]\]/g, "<mark>$1</mark>");
+  const flow = a => `<div class="flow">${(a || []).map(b => {
+    const i = b.lastIndexOf(":");
+    const t = i > 0 ? b.slice(0, i) : b;
+    return `<span class="fb ${i > 0 ? b.slice(i + 1) : ""}">${t}</span>`;
+  }).join("")}</div>`;
+
+  const exB = x => (x && x[0]) ? `<div class="ex"><p class="de">${hl(x[0])}</p><p class="en">${x[1] || ""}</p></div>` : "";
+
+  // Segmented Slider System
+  const PANE = {};
+  let ST = {};
+  const seg = (k, o, fn) => {
+    PANE[k] = fn;
+    const cur = ST[k] || o[0][0];
+    return `<div class="seg" data-k="${k}"><i class="ind"></i>${o.map(([v, t]) => `<button type="button" data-v="${v}" class="${v === cur ? "on" : ""}">${t}</button>`).join("")}</div><div id="p-${k}">${fn(cur)}</div>`;
+  };
+
+  // Verb Conjugation Panes
+  const vf = (e, t) => {
+    const auxName = e.aux || "haben";
+    const auxForms = AUX[auxName] || AUX.haben;
+    if (t === "perf") return auxForms.map(x => `<span class="pre">${x}</span> ${e.p2 || ""}`);
+    if (t === "imp") return null;
+    const list = e[t === "praes" ? "praes" : "prat"] || [];
+    return list.map(x => {
+      if (!x) return '';
+      if (!e.sep || !e.pre) return x;
+      const trimmed = x.trim();
+      const preRegex = new RegExp(`\\s+${e.pre}$`);
+      if (preRegex.test(trimmed)) {
+        return trimmed.replace(preRegex, ` ${prx(e)}`);
+      }
+      return `${trimmed} ${prx(e)}`;
+    });
+  };
+
+  const vpane = (e, t) => {
+    if (t === "imp") {
+      const du = e.imp && e.imp[0] ? e.imp[0].replace(/\{(.+?)\}/g, '<span class="pre">$1</span>') : `${e.lemma}!`;
+      const ihr = e.imp && e.imp[1] ? e.imp[1].replace(/\{(.+?)\}/g, '<span class="pre">$1</span>') : `${e.lemma}!`;
+      const sie = e.imp && e.imp[2] ? e.imp[2].replace(/\{(.+?)\}/g, '<span class="pre">$1</span>') : `${e.lemma} Sie!`;
+      return `<div class="chart" style="grid-template-columns:repeat(3,1fr)">
+        <div><small>du</small><b>${du}</b></div>
+        <div><small>ihr</small><b>${ihr}</b></div>
+        <div><small>Sie</small><b>${sie}</b></div>
+      </div>` + (e.exT && e.exT.praes ? exB(e.exT.praes) : "");
+    }
+    if (t === "perf") {
+      const f = vf(e, "perf");
+      return `<div class="chart" style="grid-template-columns:repeat(3,1fr)">
+        ${f.slice(0, 3).map((h, i) => `<div><small>${PRO[i]}</small><b>${h}</b></div>`).join("")}
+      </div>
+      <div class="chart" style="grid-template-columns:repeat(3,1fr)">
+        ${f.slice(3).map((h, i) => `<div><small>${PRO[i+3]}</small><b>${h}</b></div>`).join("")}
+      </div>` + (e.exT && e.exT.perf ? exB(e.exT.perf) : "");
+    }
+    const forms = vf(e, t);
+    const ex = (e.exT && (e.exT[t] || e.exT.praes)) || (e.ex ? e.ex : null);
+    return `<div class="chart" style="grid-template-columns:repeat(3,1fr)">
+      ${forms.slice(0, 3).map((h, i) => `<div><small>${PRO[i]}</small><b>${h}</b></div>`).join("")}
+    </div>
+    <div class="chart" style="grid-template-columns:repeat(3,1fr)">
+      ${forms.slice(3).map((h, i) => `<div><small>${PRO[i+3]}</small><b>${h}</b></div>`).join("")}
+    </div>` + (ex ? exB(ex) : "");
+  };
+
+  // Adjective Declension Panes
+  const DA = {
+    w: [["der","die","das","die"],["den","die","das","die"],["dem","der","dem","den"],["des","der","des","der"]],
+    g: [["ein","eine","ein","keine"],["einen","eine","ein","keine"],["einem","einer","einem","keinen"],["eines","einer","eines","keiner"]],
+    s: null
+  };
+  const DE = {
+    w: [["e","e","e","en"],["en","e","e","en"],["en","en","en","en"],["en","en","en","en"]],
+    g: [["er","e","es","en"],["en","e","es","en"],["en","en","en","en"],["en","en","en","en"]],
+    s: [["er","e","es","e"],["en","e","es","e"],["em","er","em","en"],["en","er","en","er"]]
+  };
+  const apane = (e, t) => {
+    const labs = ["maskulin","feminin","neutral","Plural"];
+    const cases = ["Nominativ","Akkusativ","Dativ","Genitiv"];
+    let h = `<div class="chart" style="grid-template-columns:5.5rem repeat(4,1fr)"><div class="lab"></div>${labs.map(l => `<div class="lab">${l}</div>`).join("")}`;
+    cases.forEach((c, r) => {
+      h += `<div class="lab">${c}</div>`;
+      [0, 1, 2, 3].forEach(g => {
+        const art = DA[t] ? DA[t][r][g] + " " : "";
+        h += `<div>${art}${e.lemma}<span class="pre">${DE[t][r][g]}</span></div>`;
+      });
+    });
+    return h + "</div>";
+  };
+
+  const S = (t, h, v, half) => ({ t, h, v, half });
+  const sec = s => `<section class="sec">${s.t ? `<h3>${s.t}</h3>` : ""}${s.h}</section>`;
+
+  // 6 Template Renderers
+  const R = {
+    noun(e) {
+      const g = gc(e.art || "die");
+      const A = { m: ["der", "den", "dem", "des"], f: ["die", "die", "der", "der"], n: ["das", "das", "dem", "des"] }[g] || ["die", "die", "der", "der"];
+      const P = ["die", "die", "den", "der"];
+      const s = e.lemma;
+      const plStr = (e.pl || (s + "en")).replace(/^die\s+/i, '').trim();
+      const dp = plStr.endsWith("n") || plStr.endsWith("s") ? plStr : plStr + "n";
+      const gs = (e.genS || (g === "f" ? s : s + "s")).replace(/^(des|der)\s+/i, '').trim();
+      const pl = [plStr, plStr, dp, plStr];
+      const sg = [s, s, s, gs];
+      const sufDisplay = e.suf || (s.endsWith("ung") ? "-ung" : (s.endsWith("heit") ? "-heit" : (s.endsWith("keit") ? "-keit" : "")));
+      const ruleDisplay = e.rule || (e.art === "die" ? "Nomen auf -ung, -heit, -keit, -schaft, -tion → immer feminin." : (e.art === "der" ? "Maskuline Nomen mit der-Artikel." : "Neutrale Nomen mit das-Artikel."));
+
+      return [
+        S("", "<div class='pair'>" +
+          `<section class="sec"><h3>Plural</h3><div class="big">die <span class="pre">${plStr}</span></div></section>` +
+          `<section class="sec"><h3>Genus-Regel</h3><div class="big"><span class="pre">${sufDisplay}</span> → <span class="${g}">${e.art || "die"}</span></div><p class="en">${ruleDisplay}</p></section>` +
+        "</div>"),
+        S("Deklination", `<div class="chart" style="grid-template-columns:6rem 1fr 1fr"><div class="lab"></div><div class="lab">Singular</div><div class="lab">Plural</div>${["Nominativ","Akkusativ","Dativ","Genitiv"].map((c, i) => `<div class="lab">${c}</div><div><span class="${g}">${A[i]}</span> ${sg[i]}</div><div>${P[i]} ${pl[i]}</div>`).join("")}</div>`),
+        ...(e.nvv && e.nvv.length ? [S("Nomen-Verb-Verbindung", `<div class="tiles">${e.nvv.map(([a, b]) => `<div><b>${a}</b><p class="en">${b}</p></div>`).join("")}</div>`)] : []),
+        ...(e.compounds && e.compounds.length ? [S("Zusammensetzung", `<div class="chips">${e.compounds.map(x => `<span class="chip">${x}</span>`).join("")}</div>`)] : []),
+        ...(e.ex ? [S("Beispiel", exB(e.ex), "b")] : []),
+        ...(e.family && e.family.length ? [S("Wortfamilie", `<div class="chips">${e.family.map(x => `<span class="chip">${x}</span>`).join("")}</div>`, "d")] : [])
+      ];
+    },
+
+    verb(e) {
+      const auxName = e.aux || e.hilfsverb || "haben";
+      const auxForms = AUX[auxName] || AUX.haben;
+      const stammPerf = `<span class="pre">${auxForms[2]}</span> ${e.p2 || ""}`;
+      let rawPrat3 = (e.prat && e.prat[2]) ? e.prat[2] : (e.praeteritum || e.lemma);
+      let prat3Html = rawPrat3;
+      if (e.sep && e.pre) {
+        const trimmed = rawPrat3.trim();
+        const preRegex = new RegExp(`\\s+${e.pre}$`);
+        if (preRegex.test(trimmed)) {
+          prat3Html = trimmed.replace(preRegex, ` ${prx(e)}`);
+        } else {
+          prat3Html = `${trimmed} ${prx(e)}`;
+        }
+      }
+      return [
+        S("Stammformen", `<div class="stamm-hero">
+          <div><small>Infinitiv</small><b>${e.lemma}</b></div>
+          <div><small>Präteritum</small><b>${prat3Html}</b></div>
+          <div class="perfekt-cell"><small>Perfekt</small><b>${stammPerf}</b></div>
+        </div>`),
+        S("Konjugation", seg("tense", [["praes","Präsens"], ["prat","Präteritum"], ["perf","Perfekt"], ["imp","Imperativ"]], t => vpane(e, t)), "b"),
+        ...(e.val && e.val.length ? [S("Valenz", `<div class="tiles">${e.val.map(v => `<div><span class="cl">${v[0]}</span><b></b><small>${v[1]}</small><p>${v[2]}</p></div>`).join("")}</div>`)] : []),
+        ...(e.family && e.family.length ? [S("Wortfamilie", `<div class="chips">${e.family.map(x => `<span class="chip">${x}</span>`).join("")}</div>`, "d")] : [])
+      ];
+    },
+
+    adj(e) {
+      let komp = e.compStr || (typeof e.comp === 'string' ? e.comp : null);
+      let sup = e.supStr || (typeof e.sup === 'string' ? e.sup : null);
+      if (Array.isArray(e.comp)) {
+        const k = e.comp.find(p => p[0] === 'Komparativ');
+        const s = e.comp.find(p => p[0] === 'Superlativ');
+        if (k && !komp) komp = k[1];
+        if (s && !sup) sup = s[1];
+      }
+      if (!komp) komp = e.lemma + "er";
+      if (!sup) sup = "am " + e.lemma + "sten";
+      const ant = e.ant || e.opp || "";
+      return [
+        S("Steigerung", `<div class="ladder">${[["Positiv", e.lemma, 33], ["Komparativ", komp, 66], ["Superlativ", sup, 100]].map(([a, b, w]) => `<div><small>${a}</small><b>${b}</b><i class="bar2" style="width:${w}%"></i></div>`).join("")}</div>`),
+        S("", "<div class='pair'>" +
+          (ant ? `<section class="sec"><h3>Gegenteil</h3><div class="big">↔ ${ant}</div></section>` : "") +
+          (e.syn && e.syn.length ? `<section class="sec"><h3>Synonym</h3><div class="chips">${e.syn.map(x => `<span class="chip">${x}</span>`).join("")}</div></section>` : "") +
+        "</div>"),
+        ...(e.anchors ? [S("Endungen (Anker-Muster: ein-)", `<div class="anchor-row">${e.anchors.map(([form, noun]) => {
+          const parts = form.split("·");
+          return `<div><b>${parts[0]}<span class="ending">${parts[1] || ""}</span></b><small>${noun}</small></div>`;
+        }).join("")}</div>`)] : []),
+        ...(e.ex ? [S("Beispiel", exB(e.ex), "b")] : []),
+        S("Endungen vor dem Nomen", seg("decl", [["w", "nach der/die/das"], ["g", "nach ein-/kein-"], ["s", "ohne Artikel"]], t => apane(e, t)), "d"),
+        ...(e.family && e.family.length ? [S("Wortfamilie", `<div class="chips">${e.family.map(x => `<span class="chip">${x}</span>`).join("")}</div>`, "d")] : [])
+      ];
+    },
+
+    conn(e) {
+      return [
+        S("Klasse", `<div class="chips"><span class="chip">${e.cls || "Konnektor"}</span></div>`),
+        ...(e.orders ? [S("Satzbau", seg("ord", e.orders.map((o, i) => [i, o[0]]), i => flow(e.orders[i][1]) + exB([e.orders[i][2], ""])))] : []),
+        ...(e.cmp ? [S("Vergleich", `<div class="tiles">${e.cmp.map(t => `<div><span class="cl">${t.cls}</span><b>${t.w}</b>${t.b ? flow(t.b) : ""}<p>${hl(t.ex)}</p></div>`).join("")}</div>`)] : [])
+      ];
+    },
+
+    prep(e) {
+      if (e.wechsel) {
+        return [
+          S("Wechselpräposition", seg("wowohin", [["wo", "Wo? → Dativ"], ["wohin", "Wohin? → Akkusativ"]], t => {
+            const c = e.cases[t];
+            return `<div class="chart" style="grid-template-columns:1fr 1fr">
+              <div><small>Frage</small><b class="hero">${c.q}</b></div>
+              <div><small>Kasus</small><b class="hero"><span class="pre">+ ${c.cs}</span></b></div>
+            </div>` + exB([c.ex, c.en]);
+          })),
+          ...(e.cmp ? [S("Vergleich", `<div class="tiles">${e.cmp.map(t => `<div><span class="cl">${t.cls}</span><b>${t.w}</b><small>${t.q}</small><p>${t.ex}</p></div>`).join("")}</div>`)] : []),
+          ...(e.ex ? [S("Beispiel", exB(e.ex), "b")] : []),
+          ...(e.family && e.family.length ? [S("Typische Verbindungen", `<div class="chips">${e.family.map(x => `<span class="chip">${x}</span>`).join("")}</div>`, "d")] : [])
+        ];
+      }
+      const cs = (e.cases && e.cases.wo && e.cases.wo.cs) || "Akkusativ";
+      const q = (e.cases && e.cases.wo && e.cases.wo.q) || "Kasus";
+      const en = (e.cases && e.cases.wo && e.cases.wo.en) || "";
+      return [
+        S("", "<div class='pair'>" +
+          `<section class="sec"><h3>Kasus</h3><div class="big"><span class="pre">+ ${cs}</span></div></section>` +
+          `<section class="sec"><h3>${q}</h3><p>${en}</p></section>` +
+        "</div>"),
+        ...(e.ex ? [S("Beispiel", exB(e.ex), "b")] : [])
+      ];
+    },
+
+    phrase(e) {
+      return [
+        S("Muster", (e.frame ? flow(e.frame) : "") + `<p class="en">${e.type || "Redewendung"} · ${e.cap || ""}</p>` + (e.examTag ? `<span class="tag hilfs" style="margin-top:6px;display:inline-block">${e.examTag}</span>` : "")),
+        ...(e.reg ? [S("Register", Array.isArray(e.reg) && typeof e.reg[0] === 'object' ? seg("reg", e.reg.map((r, i) => [i, r[0]]), i => `<div class="ex"><p class="de">${hl(e.reg[i][1])}</p><p class="en">${e.reg[i][2]}</p></div>`) : `<p class="en">${e.reg}</p>`)] : []),
+        ...(e.tenses ? [S("Zeitformen", `<div class="chart" style="grid-template-columns:repeat(3,1fr)">${e.tenses.map(t => `<div><small>${t[0]}</small><b style="font-size:13px;font-weight:500">${t[1]}</b></div>`).join("")}</div>`)] : []),
+        ...(e.dlg && e.dlg.length ? [S("Mini-Dialog", `<div class="dlg">${e.dlg.map((d, i) => {
+          const isRight = d[0] === "B" || i % 2 === 1;
+          const label = (d[0] && d[0] !== 'A' && d[0] !== 'B') ? `<b>${d[0]}:</b> ` : '';
+          return `<p class="bub ${isRight ? "r" : ""}">${label}${d[1] || d[0]}</p>`;
+        }).join("")}</div>`)] : []),
+        ...(e.ex ? [S("Beispiel", exB(e.ex), "b")] : [])
+      ];
+    }
+  };
+
+  const lemmaH = e => {
+    if (e.pos === "noun") {
+      const art = e.art || "die";
+      return `<span class="${gc(art)}">${art}</span> ${e.lemma}`;
+    }
+    if (e.sep && e.pre) {
+      if (e.lemma.startsWith(e.pre)) {
+        return `<span class="pre">${e.pre}</span>${e.lemma.slice(e.pre.length)}`;
+      }
+      return e.lemma.replace(e.pre, `<span class="pre">${e.pre}</span>`);
+    }
+    return e.lemma || e.word || "";
+  };
+
+  function normalizeWordItem(item) {
+    if (!item) return item;
+    const pos = item.pos || (item.art ? 'noun' : (item.cases ? 'prep' : (item.orders ? 'conn' : (item.comp ? 'adj' : (item.reg ? 'phrase' : 'verb')))));
+    const lemma = item.lemma || item.word || '';
+    const gloss = item.gloss || item.meaning || '';
+    const tip = item.tip || item.note || '';
+    const level = item.level || 'B1';
+    const ipa = item.ipa || '';
+    const family = item.family || (item.wordFamily ? item.wordFamily : [lemma]);
+
+    const norm = {
+      ...item,
+      id: item.id || (pos + '-' + lemma.replace(/\s+/g, '-')),
+      pos,
+      lemma,
+      word: lemma,
+      gloss,
+      meaning: gloss,
+      tip,
+      note: tip,
+      level,
+      ipa,
+      family
+    };
+
+    if (pos === 'verb') {
+      norm.sep = item.sep !== undefined ? item.sep : (item.type ? item.type.toLowerCase().includes('trennbar') : false);
+      norm.aux = item.aux || item.hilfsverb || (item.perfekt && item.perfekt.startsWith('ist') ? 'sein' : 'haben');
+      norm.p2 = item.p2 || item.partizip2 || (item.perfekt ? item.perfekt.replace(/^(ist|hat)\s+/, '') : '');
+      norm.reflexiv = item.reflexiv !== undefined ? item.reflexiv : (lemma.startsWith('sich ') ? 'sich (Akk)' : false);
+      norm.pre = item.pre !== undefined ? item.pre : (norm.sep ? (item.prefix || (lemma.match(/^(auf|an|aus|ab|bei|ein|mit|nach|vor|zu|weg|zurück)/) || [''])[0]) : '');
+
+      if (!norm.praes && item.praesensAll) {
+        norm.praes = [
+          item.praesensAll.ich || '',
+          item.praesensAll.du || '',
+          item.praesensAll.er_sie_es || item.praesens || '',
+          item.praesensAll.wir_Sie || '',
+          item.praesensAll.ihr || '',
+          item.praesensAll.wir_Sie || ''
+        ];
+      } else if (!norm.praes) {
+        norm.praes = [lemma, lemma, item.praesens || lemma, lemma, lemma, lemma];
+      }
+
+      if (!norm.prat) {
+        const pr = item.praeteritum || '';
+        norm.prat = [pr, pr, pr, pr, pr, pr];
+      }
+
+      if (!norm.imp) {
+        const base = lemma.replace(/en$/, '');
+        norm.imp = [
+          `${base} {${norm.pre}}!`,
+          `${base}t {${norm.pre}}!`,
+          `${lemma} Sie {${norm.pre}}!`
+        ];
+      }
+
+      if (!norm.exT) {
+        norm.exT = {
+          praes: [item.examples?.praesens?.de || item.exampleDe || '', item.examples?.praesens?.en || item.exampleEn || ''],
+          prat: [item.examples?.praeteritum?.de || item.exampleDe || '', item.examples?.praeteritum?.en || item.exampleEn || ''],
+          perf: [item.examples?.perfekt?.de || item.exampleDe || '', item.examples?.perfekt?.en || item.exampleEn || '']
+        };
+      }
+
+      if (!norm.val) {
+        norm.val = [
+          [norm.aux === 'sein' ? 'Ortswechsel' : 'Transitiv', 'Kasus/Funktion', norm.exT.praes[0] || '']
+        ];
+      }
+    }
+
+    return norm;
+  }
+
+  function renderUniversalCardBack(item, isDict = false) {
+    const e = normalizeWordItem(item);
+    const renderer = R[e.pos] || R.verb;
+    const list = renderer(e).filter(s => isDict ? true : (!s.v || s.v === "b"));
+    let o = "";
+    for (const s of list) {
+      if (s.t === "" && s.h.startsWith("<div class='pair'>")) {
+        o += s.h;
+        continue;
+      }
+      o += sec(s);
+    }
+
+    let tags = `<span class="tag">${e.level || 'B1'}</span><span class="tag">${TYPES[e.pos] || 'Wort'}${e.sep ? ' · trennbar' : ''}</span>`;
+    if (e.reflexiv) tags += `<span class="tag reflex">reflexiv · ${e.reflexiv}</span>`;
+    if (e.aux) tags += `<span class="tag hilfs">Hilfsverb: ${e.aux}</span>`;
+    if (e.wechsel) tags += `<span class="tag hilfs">Wechselpräposition</span>`;
+    if (e.examTag) tags += `<span class="tag hilfs">${e.examTag}</span>`;
+
+    const audioSpkBtn = `
+      <button class="audio-button audio-button-sm btn-speak-current" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
+        <svg class="icon-speaker" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+        <span class="audio-btn-text">Audio</span>
+      </button>
+    `;
+
+    return `
+      <div class="card-head-row" style="display:flex; justify-content:space-between; align-items:center; padding:18px 24px 0;">
+        <div class="tag-group" style="display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
+          ${tags}
+        </div>
+        ${audioSpkBtn}
+      </div>
+
+      <div class="card-lemma-hero" style="padding:14px 24px 2px;">
+        <div class="card-lemma-title">${lemmaH(e)}</div>
+        ${e.ipa ? `<p class="card-ipa">${e.ipa}</p>` : ''}
+        <p class="card-gloss">${e.gloss || e.meaning || ''}</p>
+      </div>
+
+      <div class="card-body-sections">
+        ${o}
+      </div>
+
+      ${e.tip ? `<div class="tip">💡 ${e.tip}</div>` : ''}
+
+      ${isDict ? '' : `
+        <div class="dict-trigger-row" style="padding: 10px 24px 16px; text-align: right;">
+          <a class="btn-dict-trigger" style="cursor:pointer; color:var(--text-muted); font-size:13px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+            <span>Anatomie &amp; Wörterbuch öffnen</span>
+            <kbd style="font-size:11px; padding:1px 5px; border:1px solid var(--border-subtle); border-radius:4px; background:var(--bg-surface-subtle);">D</kbd>
+          </a>
+        </div>
+      `}
+    `;
+  }
+
+  function placeIndicator(s) {
+    if (!s) return;
+    const b = s.querySelector('.on');
+    const ind = s.querySelector('.ind');
+    if (!b || !ind) return;
+    ind.style.width = b.offsetWidth + 'px';
+    ind.style.transform = `translateX(${b.offsetLeft}px)`;
+  }
+
+  function initSegmentedSliders(container) {
+    if (!container) return;
+    requestAnimationFrame(() => {
+      container.querySelectorAll('.seg').forEach(placeIndicator);
+    });
+  }
+
+  function speakCurrentWord(targetButton = null) {
+    const item = window.currentWordData || (currentDeck && currentDeck[currentIndex]);
+    if (!item) return;
+    const norm = normalizeWordItem(item);
+    let textToSpeak = norm.lemma;
+    if (norm.pos === 'noun') {
+      textToSpeak = `${norm.art || 'die'} ${norm.lemma}`;
+    }
+    speakText(textToSpeak, null, targetButton);
+  }
+
+  // Expose globally for IIFE 2 and other modules
+  window.normalizeWordItem = normalizeWordItem;
+  window.renderUniversalCardBack = renderUniversalCardBack;
+  window.initSegmentedSliders = initSegmentedSliders;
+  window.speakCurrentWord = speakCurrentWord;
+
   // Hierarchical Folder & Deck Architecture
   const FOLDERS_CONFIG = [
+    {
+      id: 'folder-netzwerk-a2',
+      title: 'Netzwerk A2 · Thematischer Wortschatz',
+      badge: 'Netzwerk A2 · 10 Decks',
+      icon: 'goethe',
+      desc: 'Der vollständige Wortschatz des Lehrwerks Netzwerk A2 (Lektionen 1–12, 751 Originalkarten) strukturiert in 10 thematische Bento-Decks: Mobilität, Wohnen, Essen, Beruf, Bildung, Gesundheit, Feste, Medien, Freizeit & Redemittel.',
+      decks: [
+        {
+          id: 'a2-deck-all',
+          title: 'Netzwerk A2 (Alle 10 Themen)',
+          desc: 'Der gesamte Netzwerk A2 Wortschatz (727 Karten, 751 Lektionsvokabeln) im direkten thematischen Wechsel trainieren.',
+          tag: 'A2 Gesamt',
+          level: 'A2',
+          filter: (w) => w.deckId && w.deckId.startsWith('a2-deck-')
+        },
+        {
+          id: 'a2-deck-01',
+          title: '1. Mobilität, Verkehr & Reisen',
+          desc: 'Fahrzeuge, Bahn, Flughafen, Orientierung, Richtungsangaben und Wegbeschreibungen.',
+          tag: 'Mobilität',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-01'
+        },
+        {
+          id: 'a2-deck-02',
+          title: '2. Wohnen, Haushalt & Stadtleben',
+          desc: 'Wohnungssuche, Zimmer, Möbel, Elektrogeräte, Miete, Nachbarschaft und Reparaturen.',
+          tag: 'Wohnen',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-02'
+        },
+        {
+          id: 'a2-deck-03',
+          title: '3. Essen, Trinken & Kochen',
+          desc: 'Lebensmittel, Küche, Zubereitung, Mahlzeiten, Restaurant und Mengenangaben.',
+          tag: 'Essen',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-03'
+        },
+        {
+          id: 'a2-deck-04',
+          title: '4. Arbeit, Beruf & Büroalltag',
+          desc: 'Berufe, Vorstellungsgespräch, Arbeitsvertrag, Arbeitszeiten, Kollegen und Büroalltag.',
+          tag: 'Beruf',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-04'
+        },
+        {
+          id: 'a2-deck-05',
+          title: '5. Bildung, Schule & Lernen',
+          desc: 'Schule, Ausbildung, Universität, Sprachenlernen, Prüfungen und Noten.',
+          tag: 'Bildung',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-05'
+        },
+        {
+          id: 'a2-deck-06',
+          title: '6. Körper, Gesundheit & Gefühle',
+          desc: 'Körperteile, Symptome, Arztbesuch, Medikamente, Wohlbefinden und Emotionen.',
+          tag: 'Gesundheit',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-06'
+        },
+        {
+          id: 'a2-deck-07',
+          title: '7. Feste, Bräuche & Beziehungen',
+          desc: 'Feiertage, Geburtstag, Einladungen, Traditionen, Familie und Freundschaft.',
+          tag: 'Feste',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-07'
+        },
+        {
+          id: 'a2-deck-08',
+          title: '8. Medien, Kultur & Digitale Welt',
+          desc: 'Computer, Internet, Fernsehen, Presse, Film, Musik und soziale Netzwerke.',
+          tag: 'Medien',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-08'
+        },
+        {
+          id: 'a2-deck-09',
+          title: '9. Freizeit, Sport & Natur',
+          desc: 'Sportarten, Hobbys, Wandern, Geocaching, Tiere, Landschaft und Naturphänomene.',
+          tag: 'Freizeit',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-09'
+        },
+        {
+          id: 'a2-deck-10',
+          title: '10. Redemittel & Kommunikation',
+          desc: 'Meinungsäußerung, Zustimmung/Widerspruch, Vorschläge machen und Alltagsdialoge.',
+          tag: 'Redemittel',
+          level: 'A2',
+          filter: (w) => w.deckId === 'a2-deck-10'
+        }
+      ]
+    },
+    {
+      id: 'folder-universal-b1',
+      title: 'B1 Universal Wortschatz (6 Wortarten)',
+      badge: 'Universal · Bento',
+      icon: 'goethe',
+      desc: 'Das neue B1 Universal-System nach CEFR B1: Nomen mit Genus-Regeln, Verben mit Stammformen & Reflexiv, Adjektive mit Steigerung & Deklination, Konnektoren mit Satzbau-Syntax, Wechselpräpositionen und Wendungen.',
+      decks: [
+        {
+          id: 'universal-all',
+          title: 'Universal B1 (Alle 6 Wortarten)',
+          desc: 'Alle 6 B1-Archetypen im direkten Wechsel trainieren: Nomen, Verben, Adjektive, Konnektoren, Präpositionen und Wendungen.',
+          tag: 'Gesamtsammlung',
+          level: 'B1',
+          filter: (w) => true
+        },
+        {
+          id: 'deck-nomen',
+          title: 'B1 Nomen & Genus-Regeln',
+          desc: 'Substantive mit Pluralbildung, Deklinationsraster, festen Nomen-Verb-Verbindungen und Genus-Endungsregeln (-ung, -heit, etc.).',
+          tag: 'Nomen',
+          level: 'B1',
+          filter: (w) => w.pos === 'noun' || (w.type && w.type.toLowerCase().includes('nomen'))
+        },
+        {
+          id: 'deck-verben',
+          title: 'B1 Verben & Stammformen',
+          desc: 'Verben mit Stammformen (Infinitiv, Präteritum, Perfekt), trennbaren Präfixen, Reflexivpronomen (sich Akk/Dat) und Valenz.',
+          tag: 'Verben',
+          level: 'A2 / B1',
+          filter: (w) => w.pos === 'verb' || (!w.pos && (w.praeteritum || w.perfekt))
+        },
+        {
+          id: 'deck-adjektive',
+          title: 'B1 Adjektive & Deklinations-Anker',
+          desc: 'Adjektive mit Steigerungsleiter (Positiv, Komparativ, Superlativ), Gegenteilen und Deklinationsendungen (der/ein/ohne Artikel).',
+          tag: 'Adjektive',
+          level: 'B1',
+          filter: (w) => w.pos === 'adj' || (w.type && w.type.toLowerCase().includes('adjektiv'))
+        },
+        {
+          id: 'deck-konnektoren',
+          title: 'B1 Konnektoren & Satzbau',
+          desc: 'Subjunktionen, Konjunktionen und Adverbien mit visueller Satzbau-Syntax (Hauptsatz vs. Nebensatz, Verb-Endstellung).',
+          tag: 'Satzbau',
+          level: 'B1',
+          filter: (w) => w.pos === 'conn' || (w.type && w.type.toLowerCase().includes('konnektor'))
+        },
+        {
+          id: 'deck-praepositionen',
+          title: 'B1 Wechselpräpositionen',
+          desc: 'Präpositionen mit dynamischem Wo? (Dativ / Lage) vs. Wohin? (Akkusativ / Richtung) Umschalter und typischen Wendungen.',
+          tag: 'Kasus',
+          level: 'A2 / B1',
+          filter: (w) => w.pos === 'prep' || (w.type && w.type.toLowerCase().includes('präposition'))
+        },
+        {
+          id: 'deck-wendungen',
+          title: 'B1 Wendungen & Redemittel',
+          desc: 'Feste Redewendungen, Nomen-Verb-Verbindungen und dialogorientierte Redemittel für Goethe B1 Schreiben & Sprechen.',
+          tag: 'Prüfung',
+          level: 'B1',
+          filter: (w) => w.pos === 'phrase' || (w.type && (w.type.toLowerCase().includes('wendung') || w.type.toLowerCase().includes('redemittel')))
+        }
+      ]
+    },
     {
       id: 'folder-nicos-weg',
       title: 'Nicos Weg (Deutsche Welle)',
@@ -151,10 +744,10 @@
 
   // Backward compatibility alias for homepage default selection
   const DECKS_CONFIG = [
-    ALL_DECKS_MAP['b1-all'],
-    ALL_DECKS_MAP['nw-lek-1-10'],
-    ALL_DECKS_MAP['sein-verbs'],
-    ALL_DECKS_MAP['trennbar']
+    ALL_DECKS_MAP['universal-all'],
+    ALL_DECKS_MAP['deck-nomen'],
+    ALL_DECKS_MAP['deck-verben'],
+    ALL_DECKS_MAP['deck-konnektoren']
   ].filter(Boolean);
 
   // ================= DOM Elements =================
@@ -232,6 +825,7 @@
   const flashcard = document.getElementById('flashcard');
 
   // Front Elements
+  const frontTags = document.getElementById('front-tags');
   const frontWord = document.getElementById('front-word');
   const frontLevel = document.getElementById('front-level');
   const frontType = document.getElementById('front-type');
@@ -812,10 +1406,10 @@
 
     // Homepage featured decks (4 primary decks)
     const featuredDecks = [
-      ALL_DECKS_MAP['b1-all'] || DECKS_CONFIG[0],
-      ALL_DECKS_MAP['nw-lek-1-10'] || DECKS_CONFIG[1],
-      ALL_DECKS_MAP['sein-verbs'] || DECKS_CONFIG[2],
-      ALL_DECKS_MAP['trennbar'] || DECKS_CONFIG[3]
+      ALL_DECKS_MAP['a2-deck-all'] || ALL_DECKS_MAP['universal-all'] || DECKS_CONFIG[0],
+      ALL_DECKS_MAP['a2-deck-01'] || ALL_DECKS_MAP['deck-nomen'] || DECKS_CONFIG[1],
+      ALL_DECKS_MAP['a2-deck-02'] || ALL_DECKS_MAP['deck-verben'] || DECKS_CONFIG[2],
+      ALL_DECKS_MAP['universal-all'] || ALL_DECKS_MAP['deck-konnektoren'] || DECKS_CONFIG[3]
     ].filter(Boolean);
 
     featuredDecks.forEach(cfg => {
@@ -1177,7 +1771,8 @@
 
   function renderCurrentCard() {
     if (!currentDeck || currentDeck.length === 0) return;
-    const item = currentDeck[currentIndex];
+    const rawItem = currentDeck[currentIndex];
+    const item = normalizeWordItem(rawItem);
 
     // Expose for vocab detail view
     window.currentWordData = item;
@@ -1191,69 +1786,37 @@
       cardBackScroll.scrollTop = 0;
     }
 
-    // Front Side (German word & tags only)
-    frontWord.textContent = item.word;
-    frontLevel.textContent = item.level || 'B1';
-    frontType.textContent = item.type || 'Verb';
-
-    // Back Side (Revealed lemma and meaning)
-    backWord.textContent = item.word;
-    backMeaning.textContent = item.meaning;
-    backLevel.textContent = item.level || 'B1';
-    backType.textContent = item.type || 'Verb';
-
-    // Separable prefixes formatted strictly for trennbare Verben
-    const isTrennbar = item.type && item.type.toLowerCase().includes('trennbar');
-
-    // Full Present Tense (All unique forms: ich, du, er/sie/es, wir/Sie, ihr)
-    if (item.praesensAll) {
-      if (conjPraesensIch) conjPraesensIch.innerHTML = formatSeparableVerb(item.praesensAll.ich, isTrennbar);
-      if (conjPraesensDu) conjPraesensDu.innerHTML = formatSeparableVerb(item.praesensAll.du, isTrennbar);
-      if (conjPraesensEr) conjPraesensEr.innerHTML = formatSeparableVerb(item.praesensAll.er_sie_es, isTrennbar);
-      if (conjPraesensWir) conjPraesensWir.innerHTML = formatSeparableVerb(item.praesensAll.wir_Sie, isTrennbar);
-      if (conjPraesensIhr) conjPraesensIhr.innerHTML = formatSeparableVerb(item.praesensAll.ihr, isTrennbar);
-    } else {
-      if (conjPraesensEr) conjPraesensEr.innerHTML = formatSeparableVerb(item.praesens, isTrennbar);
+    // Front Side (German word & tags)
+    if (frontTags) {
+      let tagsHtml = `<span class="chip chip-secondary">${item.level || 'B1'}</span>`;
+      tagsHtml += `<span class="chip chip-neutral">${TYPES[item.pos] || item.type || 'Wort'}${item.sep ? ' · trennbar' : ''}</span>`;
+      if (item.reflexiv) tagsHtml += `<span class="tag reflex" style="margin-left:4px">reflexiv · ${item.reflexiv}</span>`;
+      if (item.aux) tagsHtml += `<span class="tag hilfs" style="margin-left:4px">Hilfsverb: ${item.aux}</span>`;
+      if (item.wechsel) tagsHtml += `<span class="tag hilfs" style="margin-left:4px">Wechselpräposition</span>`;
+      if (item.examTag) tagsHtml += `<span class="tag hilfs" style="margin-left:4px">${item.examTag}</span>`;
+      frontTags.innerHTML = tagsHtml;
     }
-
-    // Präteritum
-    if (conjPraeteritum) {
-      conjPraeteritum.innerHTML = formatSeparableVerb(item.praeteritum, isTrennbar);
+    if (frontWord) {
+      frontWord.innerHTML = lemmaH(item);
     }
+    if (frontLevel) frontLevel.textContent = item.level || 'B1';
+    if (frontType) frontType.textContent = TYPES[item.pos] || item.type || 'Wort';
 
-    // Perfekt (Textbook Standard: Clean, calm styling with auxiliary pill)
-    const aux = item.hilfsverb || (item.perfekt && item.perfekt.startsWith('ist') ? 'sein' : 'haben');
-    const isSein = aux === 'sein' || aux === 'ist';
-    const auxVerbWord = isSein ? 'ist' : 'hat';
-    const verbFormOnly = item.partizip2 || (item.perfekt ? item.perfekt.replace(/^(ist|hat)\s+/, '') : '');
-
-    if (perfektAuxPill) {
-      perfektAuxPill.textContent = `Hilfsverb: ${isSein ? 'sein' : 'haben'}`;
-      perfektAuxPill.style.color = isSein ? 'var(--accent-terracotta)' : 'var(--accent-sage)';
-    }
-    if (conjAuxText) {
-      conjAuxText.textContent = auxVerbWord;
-    }
-    if (conjPartizip2) {
-      conjPartizip2.textContent = verbFormOnly;
-    }
-
-    // Interactive Context Sentence for the active tense
-    renderExampleSentence();
-
-    // Grammar Note
-    if (item.note) {
-      noteText.textContent = item.note;
-      noteText.parentElement.style.display = 'flex';
-    } else {
-      noteText.parentElement.style.display = 'none';
+    // Back Side (Universal Archetype Bento Renderer)
+    if (cardBackScroll) {
+      cardBackScroll.innerHTML = renderUniversalCardBack(item, false);
+      initSegmentedSliders(cardBackScroll);
     }
 
     // Update Counter & Progress
-    cardCounter.textContent = `Karte ${currentIndex + 1} von ${currentDeck.length}`;
-    const pct = Math.round(((currentIndex + 1) / currentDeck.length) * 100);
-    progressBar.style.width = `${pct}%`;
-    progressBar.parentElement.setAttribute('aria-valuenow', pct);
+    if (cardCounter) {
+      cardCounter.textContent = `Karte ${currentIndex + 1} von ${currentDeck.length}`;
+    }
+    if (progressBar) {
+      const pct = Math.round(((currentIndex + 1) / currentDeck.length) * 100);
+      progressBar.style.width = `${pct}%`;
+      progressBar.parentElement.setAttribute('aria-valuenow', pct);
+    }
   }
 
   function renderExampleSentence() {
@@ -1682,15 +2245,88 @@
     });
   }
 
-  // Keyboard Shortcuts (Space, 1-4, A, Arrow Keys, Escape)
+  // Delegated Clicks for Universal Bento Cards & Anatomy View
+  document.addEventListener('click', (ev) => {
+    // 1. Segmented Slider toggle button
+    const btn = ev.target.closest('.seg button');
+    if (btn) {
+      const segEl = btn.closest('.seg');
+      if (!segEl) return;
+      const k = segEl.dataset.k;
+      const val = btn.dataset.v;
+      ST[k] = val;
+      segEl.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
+      placeIndicator(segEl);
+      const paneTarget = document.getElementById('p-' + k);
+      if (paneTarget && PANE[k]) {
+        paneTarget.innerHTML = PANE[k](isNaN(val) ? val : +val);
+        paneTarget.querySelectorAll('.seg').forEach(placeIndicator);
+      }
+      return;
+    }
+
+    // 2. Open Dictionary Anatomy Trigger
+    const dictTrigger = ev.target.closest('.btn-dict-trigger, [data-action="open-dict"]');
+    if (dictTrigger) {
+      ev.preventDefault();
+      if (typeof window.openVocabDetail === 'function' && window.currentWordData) {
+        window.openVocabDetail(window.currentWordData, 'study');
+      }
+      return;
+    }
+
+    // 3. Audio speaker button in cards
+    const speakBtn = ev.target.closest('.btn-speak-current');
+    if (speakBtn) {
+      ev.preventDefault();
+      ev.stopPropagation();
+      speakCurrentWord(speakBtn);
+      return;
+    }
+  });
+
+  // Keyboard Shortcuts (Space, 1-4, A, D, T, Arrow Keys, Escape)
   document.addEventListener('keydown', (e) => {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
     if (e.key === 'Escape') {
+      const detailView = document.getElementById('view-vocab-detail');
+      if (detailView && !detailView.classList.contains('hidden')) {
+        const btnBack = document.getElementById('btn-vocab-detail-back');
+        if (btnBack) {
+          btnBack.click();
+          return;
+        }
+      }
       closeSidebar();
       closeAppearanceModal();
       modalSessionComplete.classList.add('hidden');
       return;
+    }
+
+    // D or Enter: Open Dictionary Anatomy
+    if (e.key === 'd' || e.key === 'D') {
+      const studyView = document.getElementById('view-study');
+      if (studyView && !studyView.classList.contains('hidden') && window.currentWordData && typeof window.openVocabDetail === 'function') {
+        e.preventDefault();
+        window.openVocabDetail(window.currentWordData, 'study');
+        return;
+      }
+    }
+
+    // T: Cycle Segmented Slider Tabs on active card/view
+    if (e.key === 't' || e.key === 'T') {
+      const segEl = document.querySelector('.card-back-scroll .seg, #vocab-detail-content .seg');
+      if (segEl) {
+        e.preventDefault();
+        const btns = [...segEl.querySelectorAll('button')];
+        if (btns.length > 0) {
+          const curIdx = btns.findIndex(b => b.classList.contains('on'));
+          const nextBtn = btns[(curIdx + 1) % btns.length];
+          if (nextBtn) nextBtn.click();
+        }
+        return;
+      }
     }
 
     // Only active in study mode
@@ -1713,8 +2349,7 @@
       recordGrade('easy');
     } else if (e.key === 'a' || e.key === 'A') {
       e.preventDefault();
-      const item = currentDeck[currentIndex];
-      if (item) speakText(item.word);
+      speakCurrentWord();
     } else if (e.key === 'ArrowRight') {
       e.preventDefault();
       nextCard();
@@ -1762,14 +2397,19 @@
     initTheme();
     initFont();
     try {
-      const res = await fetch('data/vocabulary.json');
+      const res = await fetch('data/vocabulary.json?v=20261113-a2-v1');
       if (!res.ok) throw new Error('Network error');
-      allWords = await res.json();
+      const rawData = await res.json();
+      allWords = rawData.map(normalizeWordItem);
     } catch (err) {
       console.warn('Loading fallback deck:', err);
-      allWords = getFallbackDeck();
+      allWords = getFallbackDeck().map(normalizeWordItem);
     }
     updateDashboardStats();
+    renderSidebarDeckShortcuts();
+    if (typeof renderDecksLibraryView === 'function') {
+      renderDecksLibraryView();
+    }
   }
 
   initApp();
@@ -1855,8 +2495,8 @@
     let totalRev = 0, totalCor = 0;
     Object.values(studyLog).forEach(e => { totalRev += e.count||0; totalCor += e.correct||0; });
     const streak = calcStreakLocal(studyLog);
-    const totalWords = 50;
-    const reviewed = (deckProgress['b1-all'] && deckProgress['b1-all'].reviewed) || 0;
+    const totalWords = (typeof allWords !== 'undefined' && allWords.length) ? allWords.length : 66;
+    const reviewed = (deckProgress['universal-all'] && deckProgress['universal-all'].reviewed) || (deckProgress['b1-all'] && deckProgress['b1-all'].reviewed) || 0;
     const pct = Math.round((reviewed / totalWords) * 100);
     const retention = totalRev > 0 ? Math.round((totalCor / totalRev) * 100) : 100;
 
@@ -1876,6 +2516,9 @@
   function updateContinueCard() {
     const { deckProgress } = getStoredData();
     const deckDefs = [
+      { id: 'universal-all', title: 'Universal B1 (Alle 6 Wortarten)', count: (typeof allWords !== 'undefined' && allWords.length) ? allWords.length : 66 },
+      { id: 'deck-nomen', title: 'B1 Nomen & Genus-Regeln', count: 3 },
+      { id: 'deck-verben', title: 'B1 Verben & Stammformen', count: 51 },
       { id: 'b1-all', title: 'B1 Stammformen', count: 50 },
       { id: 'sein-verbs', title: "Perfekt mit 'sein'", count: 14 },
       { id: 'trennbar', title: 'Trennbare Verben', count: 11 },
@@ -1900,14 +2543,14 @@
   if (btnContinueDeck) {
     btnContinueDeck.addEventListener('click', (e) => {
       e.stopPropagation();
-      const deckId = (continueCard && (continueCard.getAttribute('data-deck-id') || (continueCard.dataset && continueCard.dataset.deckId))) || 'b1-all';
+      const deckId = (continueCard && (continueCard.getAttribute('data-deck-id') || (continueCard.dataset && continueCard.dataset.deckId))) || 'universal-all';
       document.dispatchEvent(new CustomEvent('wortschatz:startDeck', { detail: { deckId } }));
     });
   }
 
   if (continueCard) {
     continueCard.addEventListener('click', () => {
-      const deckId = (continueCard.getAttribute('data-deck-id') || (continueCard.dataset && continueCard.dataset.deckId)) || 'b1-all';
+      const deckId = (continueCard.getAttribute('data-deck-id') || (continueCard.dataset && continueCard.dataset.deckId)) || 'universal-all';
       document.dispatchEvent(new CustomEvent('wortschatz:startDeck', { detail: { deckId } }));
     });
     continueCard.addEventListener('keydown', e => {
@@ -1936,32 +2579,27 @@
 
   function openVocabDetail(wordData, fromViewId) {
     if (!viewVocabDetail || !wordData) return;
-    detailCurrentWord  = wordData;
+    const item = typeof normalizeWordItem === 'function' ? normalizeWordItem(wordData) : (window.normalizeWordItem ? window.normalizeWordItem(wordData) : wordData);
+    detailCurrentWord  = item;
     detailCurrentTense = 'praesens';
     previousViewId     = fromViewId || 'study';
 
-    if (detailWord)    detailWord.textContent    = wordData.word    || '';
-    if (detailIpa)     detailIpa.textContent     = wordData.ipa     || '';
-    if (detailMeaning) detailMeaning.textContent = wordData.meaning || '';
-
-    if (detailTags) {
-      detailTags.innerHTML = '';
-      if (wordData.level) {
-        const lc = document.createElement('span'); lc.className = 'chip chip-secondary'; lc.textContent = wordData.level;
-        detailTags.appendChild(lc);
-      }
-      if (wordData.type) {
-        const tc = document.createElement('span'); tc.className = 'chip chip-neutral'; tc.textContent = wordData.type;
-        detailTags.appendChild(tc);
+    const detailContainer = document.getElementById('vocab-detail-content');
+    if (detailContainer) {
+      const renderFn = typeof renderUniversalCardBack === 'function' ? renderUniversalCardBack : window.renderUniversalCardBack;
+      if (renderFn) {
+        detailContainer.innerHTML = renderFn(item, true);
+        const initFn = typeof initSegmentedSliders === 'function' ? initSegmentedSliders : window.initSegmentedSliders;
+        if (initFn) initFn(detailContainer);
       }
     }
 
-    conjTabBtns.forEach(t => t.classList.toggle('is-active', t.dataset.conjTense === 'praesens'));
-    renderConjTable('praesens');
+    if (detailWord)    detailWord.textContent    = item.lemma    || item.word || '';
+    if (detailIpa)     detailIpa.textContent     = item.ipa      || '';
+    if (detailMeaning) detailMeaning.textContent = item.gloss    || item.meaning || '';
 
     document.querySelectorAll('.view-container').forEach(v => v.classList.add('hidden'));
     viewVocabDetail.classList.remove('hidden');
-    setTimeout(updateConjIndicator, 80);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

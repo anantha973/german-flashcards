@@ -1,0 +1,4892 @@
+[
+  {
+    "raw_id": "RAW-019",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "raw_q": "aufregen",
+    "raw_a": "to upset, to excite, to annoy",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-020",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "raw_q": "umzieht",
+    "raw_a": "moves (to a new place), changes clothes",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-023",
+    "source_file": "a2-lektion1.csv",
+    "lesson": 1,
+    "raw_q": "Verabredung",
+    "raw_a": "appointment, date, arrangement",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-049",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "erwachsen",
+    "raw_a": "grown-up; adult; mature",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-055",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "zugeklebt",
+    "raw_a": "sealed; stuck shut; glued up",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-056",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "Die Feste",
+    "raw_a": "festivals; celebrations",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Essen, Trinken & Kochen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-063",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "Einweihungsparty",
+    "raw_a": "housewarming party",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-064",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "Wohngemeinschaft",
+    "raw_a": "shared apartment; flatshare",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-065",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "zürückkommen",
+    "raw_a": "to come back; to return",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Essen, Trinken & Kochen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-069",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "verändern",
+    "raw_a": "to change; to alter; to modify",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-079",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "Ausstellungen",
+    "raw_a": "exhibitions; displays; shows",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-080",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "enttauscht",
+    "raw_a": "disappointed",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-089",
+    "source_file": "a2-lektion2.csv",
+    "lesson": 2,
+    "raw_q": "entscheiden",
+    "raw_a": "to decide; to determine",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-090",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Medien im Alltag",
+    "raw_a": "media in everyday life",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-091",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "beschreiben",
+    "raw_a": "to describe",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-093",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Medientag",
+    "raw_a": "media day",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-094",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "ansehen",
+    "raw_a": "to watch; to look at; to view",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-095",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "herunterladen",
+    "raw_a": "to download",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-096",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "häufigsten",
+    "raw_a": "most frequent; most common",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-097",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "häufig",
+    "raw_a": "frequent; often",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-098",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Reihenfolge",
+    "raw_a": "order; sequence",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-099",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Seiten",
+    "raw_a": "pages; sides; websites",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-100",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Bildschirm",
+    "raw_a": "screen; monitor",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-101",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "billiger",
+    "raw_a": "cheaper; more inexpensive",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-102",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "praktisch",
+    "raw_a": "practical; handy; convenient",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-103",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "teuer",
+    "raw_a": "expensive; costly",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-104",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "langsam",
+    "raw_a": "slow; slowly",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-105",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "leicht",
+    "raw_a": "light; easy",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-106",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Umfrage",
+    "raw_a": "survey; poll",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-107",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Geräte",
+    "raw_a": "devices; appliances; equipment",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-108",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "zurzeit",
+    "raw_a": "currently; at the moment",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-109",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "genauso",
+    "raw_a": "exactly the same; just as",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-110",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "flüstert",
+    "raw_a": "whispers",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-111",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Runde",
+    "raw_a": "round; circle; group",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-112",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "entspannen",
+    "raw_a": "to relax; to unwind",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-115",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "persönlich",
+    "raw_a": "personal; personally",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-116",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "anmachen",
+    "raw_a": "to turn on; to hit on (someone)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-117",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "vorsichtiger",
+    "raw_a": "more careful; cautious",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-118",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "schade",
+    "raw_a": "pity; shame; what a pity",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-119",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "verbringen",
+    "raw_a": "to spend (time)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-120",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Gefahren",
+    "raw_a": "dangers; risks",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-121",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "überall",
+    "raw_a": "everywhere",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-122",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Kriminelle",
+    "raw_a": "criminals",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-123",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "aufpassen",
+    "raw_a": "to pay attention; to watch out; to take care",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-124",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "gefährlich",
+    "raw_a": "dangerous; risky",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-125",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Zeitschriften",
+    "raw_a": "magazines; periodicals",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-126",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Werbung",
+    "raw_a": "advertising; advertisement; commercial",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-127",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Buchverlage",
+    "raw_a": "book publishers",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-128",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "gedauert",
+    "raw_a": "lasted; took (time)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-129",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "stimmt",
+    "raw_a": "is right; correct; true",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-130",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Lieblingsverein",
+    "raw_a": "favorite club; favorite team",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-132",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "berühmte",
+    "raw_a": "famous; well-known",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-133",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Muster",
+    "raw_a": "pattern; sample; model",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-134",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Blatt",
+    "raw_a": "sheet; leaf; paper",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-135",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Regisseur",
+    "raw_a": "director (film or theater)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-136",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "gelacht und geweint",
+    "raw_a": "laughed and cried",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-137",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Ausländer",
+    "raw_a": "foreigner; alien",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-138",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Enkel",
+    "raw_a": "grandchild; grandson",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-139",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Nachricht",
+    "raw_a": "message; news item",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-140",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Versöhnungen",
+    "raw_a": "reconciliations; making peace",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-141",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Zuschauer",
+    "raw_a": "viewer; audience; spectator",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-144",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Sterne",
+    "raw_a": "stars",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-145",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "aktuelle",
+    "raw_a": "current; latest; up-to-date",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-147",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Durchschnitt",
+    "raw_a": "average; mean",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-148",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Handlung",
+    "raw_a": "plot; action; storyline",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-149",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "Schauspieler",
+    "raw_a": "actor; performer",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-150",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "spannend",
+    "raw_a": "exciting; thrilling; suspenseful",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-151",
+    "source_file": "a2-lektion-3.csv",
+    "lesson": 3,
+    "raw_q": "zuletzt",
+    "raw_a": "last; recently; finally",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-153",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Hochzeit",
+    "raw_a": "Wedding",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-158",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "der Storch",
+    "raw_a": "Stork",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-159",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "die Storch",
+    "raw_a": "The stork",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-160",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "die Medaille",
+    "raw_a": "Medal",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-166",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "gratulieren",
+    "raw_a": "To congratulate",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-170",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Achterbahn",
+    "raw_a": "Roller coaster",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-174",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "aufregend",
+    "raw_a": "Exciting",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-179",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Segelregatte",
+    "raw_a": "Sailing regatta",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-181",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "segelschiffe",
+    "raw_a": "Sailing ships",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-182",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "gestellt",
+    "raw_a": "Placed / Positioned",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-183",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Musikstile",
+    "raw_a": "Music styles",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-184",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Substantive",
+    "raw_a": "Nouns",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-185",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Veranstaltungen",
+    "raw_a": "Events",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-189",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "gehabt",
+    "raw_a": "Had",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-190",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Teppich",
+    "raw_a": "Carpet",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-193",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "ein les ziehen",
+    "raw_a": "To draw a conclusion (possibly typo)",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-194",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "fröhlich",
+    "raw_a": "Happy / Cheerful",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-195",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Das lied",
+    "raw_a": "The song",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-196",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Klassisch",
+    "raw_a": "Classical",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-198",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "dabei",
+    "raw_a": "Present / In the process",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-199",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "ausprobiert",
+    "raw_a": "Tried out",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-200",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "längst",
+    "raw_a": "Long ago / Already",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-203",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "varianten",
+    "raw_a": "Variants / Versions",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-205",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "außer",
+    "raw_a": "Except / Besides",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-208",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "sogar",
+    "raw_a": "Even",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-210",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "anmeldung",
+    "raw_a": "Registration",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-211",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Wohnheim",
+    "raw_a": "Dormitory / Hostel",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-212",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "akkurat",
+    "raw_a": "Accurate / Neat",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-213",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "ordentlich",
+    "raw_a": "Tidy / Proper",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-215",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "dafür",
+    "raw_a": "For that / In favor of",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-218",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Schlimm",
+    "raw_a": "Bad / Terrible",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-219",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "eingeladen / einlade",
+    "raw_a": "Invited / Invite",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-223",
+    "source_file": "a2-lektion4.csv",
+    "lesson": 4,
+    "raw_q": "Aufenthalt",
+    "raw_a": "Stay / Residence",
+    "deck_id": "a2-deck-06",
+    "deck_title": "Gefühle, Charakter & Reaktionen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-225",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Vermieter",
+    "raw_a": "landlord",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-227",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "föhnen",
+    "raw_a": "to blow-dry",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-228",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Tönung",
+    "raw_a": "tint, toning",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-229",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Tätigkeiten",
+    "raw_a": "activities, tasks",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-230",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Friseur",
+    "raw_a": "hairdresser, barber",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-231",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "das Handtuch",
+    "raw_a": "towel",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-232",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Bürste",
+    "raw_a": "brush",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-233",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "verteilen",
+    "raw_a": "to distribute, spread",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-234",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Handbewegung",
+    "raw_a": "hand movement, gesture",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-235",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "melden",
+    "raw_a": "to report, announce",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-240",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Fahrgast",
+    "raw_a": "passenger",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-241",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Auskunft",
+    "raw_a": "information",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-242",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "das Abteil",
+    "raw_a": "compartment",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-245",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "Gang oder Fenstersitz",
+    "raw_a": "aisle or window seat",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-246",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Anzeigen / Werbung",
+    "raw_a": "advertisements",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-247",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "genießen",
+    "raw_a": "to enjoy",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-248",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "großartiges",
+    "raw_a": "great, magnificent (thing)",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-249",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "vielseitige",
+    "raw_a": "versatile, diverse",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-250",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "sehenswerte",
+    "raw_a": "worth seeing",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-251",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Preise",
+    "raw_a": "prices",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-252",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "erwarten",
+    "raw_a": "to expect, await",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-253",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die alte Dame",
+    "raw_a": "old lady",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-254",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Ermäßigung",
+    "raw_a": "discount, reduction",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-255",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "besichtigen",
+    "raw_a": "to visit, view",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-256",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "hübsch",
+    "raw_a": "pretty, nice",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-257",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "verrückt",
+    "raw_a": "crazy, mad",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-258",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Kneipe",
+    "raw_a": "pub, bar",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-259",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Sehenswürdigkeit",
+    "raw_a": "sight, attraction",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-261",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Möbelwerkstatt",
+    "raw_a": "furniture workshop",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-262",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Industriekauffrau",
+    "raw_a": "industrial clerk (female)",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-263",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "tun",
+    "raw_a": "to do",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-264",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Möbel",
+    "raw_a": "furniture",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-265",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Tischlerei",
+    "raw_a": "carpentry, joinery",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-266",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "gegründet",
+    "raw_a": "founded",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-268",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Schmuckstücke",
+    "raw_a": "jewelry pieces",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-269",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "genug",
+    "raw_a": "enough",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-270",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Chirurg",
+    "raw_a": "surgeon",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-271",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Herzchirurg",
+    "raw_a": "heart surgeon",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-272",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Oberarzt",
+    "raw_a": "senior physician",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-273",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Leiter",
+    "raw_a": "director, manager",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-274",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Arztkittel",
+    "raw_a": "doctor's coat",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-275",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "geworden / werden",
+    "raw_a": "become",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-276",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "erfüllt",
+    "raw_a": "fulfilled",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-277",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "bereut",
+    "raw_a": "regretted",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-278",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Lastwagen",
+    "raw_a": "truck",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-279",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Höhepunkt",
+    "raw_a": "highlight, climax",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-280",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "aufhören",
+    "raw_a": "to stop, quit",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-282",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Schritt",
+    "raw_a": "step",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-283",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "führen",
+    "raw_a": "to lead, guide",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-284",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "verläuft",
+    "raw_a": "runs, proceeds",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-285",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Ruhe",
+    "raw_a": "calm, peace",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-286",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "schalten",
+    "raw_a": "to switch, shift",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-287",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "sich konzentrieren",
+    "raw_a": "to concentrate",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-288",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "vorher",
+    "raw_a": "before, previously",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-290",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "hektisch",
+    "raw_a": "hectic, frantic",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-291",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "deutlich",
+    "raw_a": "clear, distinct",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-292",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Durchwahl",
+    "raw_a": "direct extension",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-293",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "zurückrufen",
+    "raw_a": "to call back",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Essen, Trinken & Kochen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-294",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Schreibtisch",
+    "raw_a": "desk",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-295",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "ausrichten",
+    "raw_a": "to pass on (a message)",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-296",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "hinterlassen",
+    "raw_a": "to leave (behind)",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-297",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "verschwinden",
+    "raw_a": "to disappear",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-298",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "wissen",
+    "raw_a": "to know",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-299",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Fähigkeiten",
+    "raw_a": "skills, abilities",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-300",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "erreichbar",
+    "raw_a": "reachable, available",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-301",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "seltener",
+    "raw_a": "rarer, less often",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-302",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der Austausch",
+    "raw_a": "exchange",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-303",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Vernetzung",
+    "raw_a": "networking",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-304",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "betreuen",
+    "raw_a": "to take care of, supervise",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-305",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Verträge",
+    "raw_a": "contracts",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-306",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "lebenslang",
+    "raw_a": "lifelong",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-308",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "existieren",
+    "raw_a": "to exist",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-309",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "der feste Job",
+    "raw_a": "permanent job",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-310",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "gestalten",
+    "raw_a": "to design, shape",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-311",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "freiwillig",
+    "raw_a": "voluntary",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-313",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Männer",
+    "raw_a": "men",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-315",
+    "source_file": "a2-lektion5.csv",
+    "lesson": 5,
+    "raw_q": "die Betreuungsplätze",
+    "raw_a": "childcare places",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-316",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "ganz schön mobil",
+    "raw_a": "Useful mobile",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-320",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "geklappt",
+    "raw_a": "worked out, succeeded",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-336",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "genervt",
+    "raw_a": "annoyed, irritated",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-337",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Dame",
+    "raw_a": "lady",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-338",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "mischen",
+    "raw_a": "to mix",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-339",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "abnehmen",
+    "raw_a": "to lose weight, to take off",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-341",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "topaktuell",
+    "raw_a": "up-to-date, very current",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-342",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Bedienung",
+    "raw_a": "service, operation",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-343",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "übermorgen",
+    "raw_a": "day after tomorrow",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-344",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "einschalten",
+    "raw_a": "to switch on, turn on",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-345",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Überlegungen",
+    "raw_a": "considerations, thoughts",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-346",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "gespannt / spannen",
+    "raw_a": "excited, curious / to tighten",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-351",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "das Schloss",
+    "raw_a": "castle, lock",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-352",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Ecke",
+    "raw_a": "corner",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-353",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "um herum",
+    "raw_a": "around",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-358",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "einverstanden",
+    "raw_a": "agreed, okay",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-360",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Wortbestandteile",
+    "raw_a": "word components",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-361",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "leihen",
+    "raw_a": "to lend, borrow",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-362",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Anbieter",
+    "raw_a": "providers, suppliers",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-363",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "ähnlich",
+    "raw_a": "similar",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-364",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Autovermietung",
+    "raw_a": "car rental",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-365",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "der Durchschnitt",
+    "raw_a": "average",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-367",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "das Mitglied",
+    "raw_a": "member",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-369",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "unterschreiben",
+    "raw_a": "to sign",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-370",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Gebühr",
+    "raw_a": "fee, charge",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-371",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "ansonsten",
+    "raw_a": "otherwise",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-372",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Reparaturen",
+    "raw_a": "repairs",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-373",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Versicherung",
+    "raw_a": "insurance",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-374",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "mieten",
+    "raw_a": "to rent",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-376",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Redemittel",
+    "raw_a": "phrases, expressions",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-378",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Praxis",
+    "raw_a": "practice, doctor's office",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-382",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Eindrücke",
+    "raw_a": "impressions",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-383",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Begegnungen",
+    "raw_a": "encounters, meetings",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-384",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "wahrscheinlich",
+    "raw_a": "probably, likely",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-385",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Abschnitte",
+    "raw_a": "sections, segments",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-386",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "abgeschlossen",
+    "raw_a": "completed, locked",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-387",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Wolga",
+    "raw_a": "the Volga (river)",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-388",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "befürchtet",
+    "raw_a": "feared",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-389",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Ersatzteile",
+    "raw_a": "spare parts",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-390",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "das Zelt",
+    "raw_a": "tent",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-391",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Isomatte",
+    "raw_a": "sleeping pad, mat",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-392",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "durchsichtigen",
+    "raw_a": "transparent, see-through",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-393",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Tüten",
+    "raw_a": "bags",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-394",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "verstaut",
+    "raw_a": "stowed away, packed",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-395",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Wollmütze",
+    "raw_a": "wool hat",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-396",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Lenkertasche",
+    "raw_a": "handlebar bag",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-397",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "höchste Not",
+    "raw_a": "utmost necessity, emergency",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-399",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Landkarten",
+    "raw_a": "maps",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-400",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "griffbereit",
+    "raw_a": "within reach, handy",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-401",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "die Flecken",
+    "raw_a": "spots, stains",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-402",
+    "source_file": "a2-lektion6.csv",
+    "lesson": 6,
+    "raw_q": "bieten",
+    "raw_a": "to offer",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-404",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "raw_q": "die Lieder",
+    "raw_a": "songs",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-420",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "raw_q": "knapp",
+    "raw_a": "tight, scarce, barely",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-429",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "raw_q": "gewinnen",
+    "raw_a": "to win",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-447",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "raw_q": "festen",
+    "raw_a": "firm, solid, fixed",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-454",
+    "source_file": "a2-lektion7.csv",
+    "lesson": 7,
+    "raw_q": "die Gliederung",
+    "raw_a": "structure, outline",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-457",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "das Schneeschuhwandern",
+    "raw_a": "snowshoe hiking",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-458",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "reiten",
+    "raw_a": "to ride (horse)",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-459",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "tauchen",
+    "raw_a": "to dive",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-461",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Fallschirm",
+    "raw_a": "parachute",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-462",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "gesprungen / springen",
+    "raw_a": "jumped / to jump",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-463",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Gegenstand",
+    "raw_a": "object, item",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-464",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Mütze",
+    "raw_a": "cap, hat",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-467",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "so was Tolles",
+    "raw_a": "something so great",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-471",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "verliert und gewinnt",
+    "raw_a": "loses and wins",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-472",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "verloren",
+    "raw_a": "lost",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-473",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "das Tor",
+    "raw_a": "goal, gate",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-474",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "benimmst",
+    "raw_a": "behave (you behave)",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-476",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "das Vorbild",
+    "raw_a": "role model",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-477",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "trennen",
+    "raw_a": "to separate, divide",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-478",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "Tor geschossen",
+    "raw_a": "scored a goal",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-481",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Unterscheidung",
+    "raw_a": "distinction, differentiation",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-482",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "vorschlägt",
+    "raw_a": "suggests",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-483",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "bewegen",
+    "raw_a": "to move",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-484",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "wandern",
+    "raw_a": "to hike",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-485",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Hochseilgarten",
+    "raw_a": "high ropes course",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-486",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "ausgeliehen",
+    "raw_a": "borrowed, rented out",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-487",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "klettert / klettern",
+    "raw_a": "climbs / to climb",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-488",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "balanciert",
+    "raw_a": "balanced",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-489",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Übersicht",
+    "raw_a": "overview, survey",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-490",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "schicken",
+    "raw_a": "to send",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-491",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Schatz",
+    "raw_a": "treasure",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-492",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Absatz",
+    "raw_a": "paragraph, heel, sales",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-493",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Schatzsuche",
+    "raw_a": "treasure hunt",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-494",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "versteckt / verstecken",
+    "raw_a": "hidden / to hide",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-495",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "sogenannten",
+    "raw_a": "so-called",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-496",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "stellt",
+    "raw_a": "places, puts",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-497",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "das Versteck",
+    "raw_a": "hiding place",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-498",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "fassen / fasst",
+    "raw_a": "to grasp, hold / grasps",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-499",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Behälter",
+    "raw_a": "container",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-500",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "wasserdichte Dose",
+    "raw_a": "waterproof box",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-501",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Tresor",
+    "raw_a": "safe, vault",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-502",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "der Inhalt",
+    "raw_a": "content",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-503",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "schützen",
+    "raw_a": "to protect",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-504",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "kaputtgehen",
+    "raw_a": "to break",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-505",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "stabile",
+    "raw_a": "stable, sturdy",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-506",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "Dose aus Plastik",
+    "raw_a": "plastic box",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-507",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "herausnehmen",
+    "raw_a": "to take out",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-508",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "hineinlegen",
+    "raw_a": "to put in",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-509",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "graben",
+    "raw_a": "to dig",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-510",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Löcher",
+    "raw_a": "holes",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-511",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Erde",
+    "raw_a": "earth, soil",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-512",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "den Bäumen",
+    "raw_a": "the trees",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-513",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "und so weiter",
+    "raw_a": "and so on",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-514",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "das Gelände",
+    "raw_a": "terrain, grounds",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-515",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Naturwanderung",
+    "raw_a": "nature hike",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-516",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "gebaut / bauen",
+    "raw_a": "built / to build",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-517",
+    "source_file": "a2-lektion8.csv",
+    "lesson": 8,
+    "raw_q": "die Besonderheiten",
+    "raw_a": "special features, peculiarities",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-518",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "die Insel",
+    "raw_a": "island",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-519",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "das Meer",
+    "raw_a": "sea, ocean",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-520",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "die Fläche",
+    "raw_a": "area, surface",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-521",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Einwohner",
+    "raw_a": "inhabitant, resident",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-522",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "das Hauseboot",
+    "raw_a": "houseboat",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-523",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "schaukelt",
+    "raw_a": "rocks, sways",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-524",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "die Luft",
+    "raw_a": "air",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-525",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "das Ufer",
+    "raw_a": "shore, bank",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-526",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "genial",
+    "raw_a": "brilliant, genius",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-527",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "spiegeln",
+    "raw_a": "to reflect, mirror",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-528",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "überlegt",
+    "raw_a": "considered, thought about",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-529",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Keller",
+    "raw_a": "basement, cellar",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-530",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "das Dach",
+    "raw_a": "roof",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-531",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "die Wohnformen",
+    "raw_a": "forms of living, housing types",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-532",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Bauernhof",
+    "raw_a": "farm",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-533",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "bewohnt",
+    "raw_a": "inhabited, occupied",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-534",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "die Seehöhe",
+    "raw_a": "altitude, elevation",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-535",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "entfernt",
+    "raw_a": "distant, removed",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-536",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "renoviert",
+    "raw_a": "renovated",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-537",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "das Gebäude",
+    "raw_a": "building",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-538",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "beschwert",
+    "raw_a": "complained",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-539",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "leiser",
+    "raw_a": "quieter",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-540",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "bisher",
+    "raw_a": "so far, until now",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-541",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "Hund bellt",
+    "raw_a": "dog barks",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-542",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "abstellen",
+    "raw_a": "to turn off, park",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-543",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Eingang",
+    "raw_a": "entrance",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-544",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "einlecken",
+    "raw_a": "to lick in (possibly: einchecken = to check in)",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-545",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "annehmen",
+    "raw_a": "to accept, assume",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-546",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "ausräumen",
+    "raw_a": "to clear out, empty",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-547",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "Briefkasten leeren",
+    "raw_a": "to empty the mailbox",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-548",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "füttern",
+    "raw_a": "to feed",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-549",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Schraubendreher",
+    "raw_a": "screwdriver",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-550",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "sich anmelden und sich abmelden",
+    "raw_a": "to register and to deregister",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-552",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "verabschieden",
+    "raw_a": "to say goodbye",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-553",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "kündigen",
+    "raw_a": "to quit, terminate, give notice",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Beruf, Arbeitswelt & Karriere",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-554",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "Zeugnis gefehlt",
+    "raw_a": "certificate missing (possibly: Zeugnis fehlt)",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-556",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "unterhalten",
+    "raw_a": "to converse, entertain",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-557",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "verirrt",
+    "raw_a": "lost, gone astray",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-558",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "die Mitstudenten",
+    "raw_a": "fellow students",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-560",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "die Abreise",
+    "raw_a": "departure",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-562",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "erlaubt",
+    "raw_a": "allowed, permitted",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-563",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Haushalt",
+    "raw_a": "household",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-564",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "das Futter",
+    "raw_a": "feed, food (for animals)",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-565",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "treu",
+    "raw_a": "loyal, faithful",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-566",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Stein",
+    "raw_a": "stone",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-567",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "drückt",
+    "raw_a": "presses, pushes",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-568",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "der Selbstauslöser",
+    "raw_a": "self-timer (camera)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Redemittel, Konnektoren & Satzbau",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-569",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "das Erdhörnchen",
+    "raw_a": "ground squirrel",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-570",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "schaut",
+    "raw_a": "looks",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-571",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "hinein",
+    "raw_a": "in, into",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-572",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "hineingeschaut",
+    "raw_a": "looked in",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-573",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "unterschiedlich",
+    "raw_a": "different, varying",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-574",
+    "source_file": "a2-lektion9.csv",
+    "lesson": 9,
+    "raw_q": "überqueren",
+    "raw_a": "to cross",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-575",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "erschienen",
+    "raw_a": "appeared, published",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-576",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Unterhaltung",
+    "raw_a": "entertainment, conversation",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-577",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Verfilmung",
+    "raw_a": "film adaptation",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-578",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "Neuschwanstein",
+    "raw_a": "Neuschwanstein (castle in Bavaria)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-579",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "das Märchenschloss",
+    "raw_a": "fairy-tale castle",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-580",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "der Hauptdarsteller",
+    "raw_a": "lead actor, main star",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Essen, Trinken & Kochen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-581",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Oper",
+    "raw_a": "opera",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-582",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "der Frauenchor",
+    "raw_a": "women's choir",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-583",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Gesprächsausschnitte",
+    "raw_a": "conversation excerpts",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-584",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "per Überweisung",
+    "raw_a": "by bank transfer",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-586",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "abgeben",
+    "raw_a": "to hand in, drop off",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-589",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Sprechblasen",
+    "raw_a": "speech bubbles",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-590",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "der Promi",
+    "raw_a": "celebrity",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-591",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "verschläft / verschlafen",
+    "raw_a": "oversleeps / to oversleep",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-592",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "einschlafen / eingeschlafen",
+    "raw_a": "to fall asleep / fallen asleep",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-593",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Moderatorin",
+    "raw_a": "host, presenter (female)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-595",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "glatt",
+    "raw_a": "smooth, slippery",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-596",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "feststellen",
+    "raw_a": "to determine, notice",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-597",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "ablesen",
+    "raw_a": "to read off, read from",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-598",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Witze",
+    "raw_a": "jokes",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-599",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "hingefahren / hinfahren",
+    "raw_a": "driven there / to drive there",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-600",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "vorgehen / geht vor",
+    "raw_a": "to proceed, take action / goes ahead",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-601",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "das Endspiel",
+    "raw_a": "final, finals",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-602",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "der Hochzeitstag",
+    "raw_a": "wedding day, anniversary",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-603",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "das Dorf",
+    "raw_a": "village",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-604",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Prominente",
+    "raw_a": "celebrity (female)",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-605",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Sendung",
+    "raw_a": "show, broadcast, shipment",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-606",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "drehen / gedreht",
+    "raw_a": "to film, turn / filmed",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-607",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "ausverkauft",
+    "raw_a": "sold out",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-608",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Rückfragen",
+    "raw_a": "queries, follow-up questions",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-610",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "aufgeregt / aufregen",
+    "raw_a": "excited, nervous / to excite, upset",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-611",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Hauptrolle",
+    "raw_a": "leading role, main part",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-612",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Einführung",
+    "raw_a": "introduction",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-613",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "abgemalt / abmalen / malen",
+    "raw_a": "copied, painted / to copy a painting / to paint",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-615",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "exakt",
+    "raw_a": "exact, precise",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-616",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "deuten",
+    "raw_a": "to interpret, point",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-617",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "vielleicht",
+    "raw_a": "maybe, perhaps",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-618",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "oben",
+    "raw_a": "above, upstairs, on top",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-619",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "unten",
+    "raw_a": "below, downstairs, at the bottom",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-620",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Ohren",
+    "raw_a": "ears",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-621",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "der Vordergrund",
+    "raw_a": "foreground",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-622",
+    "source_file": "a2-lektion10.csv",
+    "lesson": 10,
+    "raw_q": "die Abbildung",
+    "raw_a": "illustration, image",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-624",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "vergeht / vergehen",
+    "raw_a": "passes (time) / to pass",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-625",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "der Rentner",
+    "raw_a": "retiree, pensioner",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-627",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "verbringen",
+    "raw_a": "to spend (time)",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-628",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "verbrochen",
+    "raw_a": "committed (a crime)",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-629",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "würde / wäre / hätte",
+    "raw_a": "would / would be / would have",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-632",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "teilen / teilt",
+    "raw_a": "to share / shares",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-633",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "geht es weiter",
+    "raw_a": "it continues",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-634",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "losgeht",
+    "raw_a": "starts, gets going",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-635",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "weit",
+    "raw_a": "far, wide",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-636",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "erledigen",
+    "raw_a": "to take care of, complete",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-638",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "klingelt",
+    "raw_a": "rings (doorbell, phone)",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-639",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "ausruhen",
+    "raw_a": "to rest",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-640",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Satzhälften",
+    "raw_a": "sentence halves",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-641",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "der Vorschlag",
+    "raw_a": "suggestion, proposal",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-642",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "zustimmen",
+    "raw_a": "to agree, consent",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-643",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "der Gegenvorschlag",
+    "raw_a": "counter-proposal",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-644",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Nachfrage",
+    "raw_a": "inquiry, demand",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-645",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "ablehnen",
+    "raw_a": "to decline, reject",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-646",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "los mit",
+    "raw_a": "let's go with, start with",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-648",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "verschoben / verschieben",
+    "raw_a": "postponed / to postpone",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-650",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Lücken",
+    "raw_a": "gaps, blanks",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-651",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "sinnvoll",
+    "raw_a": "sensible, meaningful",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-652",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Vergangenheit",
+    "raw_a": "past",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-653",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "der Schwarzwald",
+    "raw_a": "Black Forest",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-655",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "das Abenteuer",
+    "raw_a": "adventure",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-656",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "der Bauernhof",
+    "raw_a": "farm",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-657",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "der Strom",
+    "raw_a": "electricity, current",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-658",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "elektrisches",
+    "raw_a": "electric",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-659",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "das Kerzenlicht",
+    "raw_a": "candlelight",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-660",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "fließendes",
+    "raw_a": "running (water), flowing",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-661",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Pflanzen",
+    "raw_a": "plants",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-662",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Uhren",
+    "raw_a": "clocks, watches",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-663",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "anstrengend",
+    "raw_a": "exhausting, strenuous",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-665",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "ausgesucht / aussuchen",
+    "raw_a": "selected / to select, choose",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-666",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "ewig",
+    "raw_a": "eternal, forever",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-667",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "sonst",
+    "raw_a": "otherwise, else",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-668",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "hart",
+    "raw_a": "hard, tough",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-669",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Heizung",
+    "raw_a": "heating",
+    "deck_id": "a2-deck-02",
+    "deck_title": "Wohnen, Haus & Nachbarschaft",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-670",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Vergangenheit / vergangen",
+    "raw_a": "past / past, gone",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-671",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "einigen",
+    "raw_a": "to agree, settle",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-672",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "entwerfen",
+    "raw_a": "to design, draft",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-673",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Sprichwörter",
+    "raw_a": "proverbs, sayings",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-674",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "heilt / heilen",
+    "raw_a": "heals / to heal",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-675",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Wunden",
+    "raw_a": "wounds",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-676",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "scheinen",
+    "raw_a": "to shine, seem",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-677",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "wächst / wachsen",
+    "raw_a": "grows / to grow",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-678",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "zieht / ziehen",
+    "raw_a": "pulls, moves / to pull, move",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-679",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "die Geduld",
+    "raw_a": "patience",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-680",
+    "source_file": "a2-lektion11.csv",
+    "lesson": 11,
+    "raw_q": "abhängen",
+    "raw_a": "to depend, hang",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-682",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "beeindruckt",
+    "raw_a": "impressed",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-684",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "lädt ein / einladen",
+    "raw_a": "invites / to invite",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-685",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Gastgeberin",
+    "raw_a": "hostess (female host)",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-686",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Zeremonie",
+    "raw_a": "ceremony",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-688",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "dekorieren",
+    "raw_a": "to decorate",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-691",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "abgeschlossen",
+    "raw_a": "completed, finished, locked",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-695",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "das Erntedankfest",
+    "raw_a": "Thanksgiving, harvest festival",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Essen, Trinken & Kochen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-696",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "Weihnachten",
+    "raw_a": "Christmas",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-697",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "der Umzug",
+    "raw_a": "move, relocation; parade",
+    "deck_id": "a2-deck-01",
+    "deck_title": "Mobilität, Verkehr & Reisen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-698",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Früchte",
+    "raw_a": "fruits",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-699",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "komisch",
+    "raw_a": "strange, funny, odd",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-700",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "neulich",
+    "raw_a": "recently, the other day",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-701",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "gemütlicher",
+    "raw_a": "cozier, more comfortable",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-702",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "ausgezogen",
+    "raw_a": "moved out, undressed",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-703",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "blödes",
+    "raw_a": "stupid, silly (thing)",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-705",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "unhöflich",
+    "raw_a": "impolite, rude",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-706",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "zuhört",
+    "raw_a": "listens",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-707",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "der Kulturknigge",
+    "raw_a": "cultural etiquette guide",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-708",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "putzen",
+    "raw_a": "to clean",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-709",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "das Taschentuch",
+    "raw_a": "handkerchief, tissue",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-711",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "umrühren",
+    "raw_a": "to stir",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-712",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "vorsichtig",
+    "raw_a": "careful, cautious",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-713",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "schlürfen",
+    "raw_a": "to slurp",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-714",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "der Gastgeber",
+    "raw_a": "host",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-715",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "wirken / wirkt",
+    "raw_a": "to have an effect, seem / seems",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-716",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "gierig",
+    "raw_a": "greedy",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-718",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Absichten",
+    "raw_a": "intentions",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-719",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "das Benehmen",
+    "raw_a": "behavior, manners",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-720",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Höflichkeit",
+    "raw_a": "politeness, courtesy",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-721",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "leise",
+    "raw_a": "quiet, soft",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-722",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Anrede",
+    "raw_a": "form of address, salutation",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-723",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "einige",
+    "raw_a": "some, several",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-724",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Distanz",
+    "raw_a": "distance",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-725",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "heißen",
+    "raw_a": "to be called, to mean",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-727",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "ungefähr",
+    "raw_a": "approximately, about",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-728",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "gilt",
+    "raw_a": "applies, is valid (from \"gelten\")",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-729",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "fremde",
+    "raw_a": "strange, foreign; stranger",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-730",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "der Beamte",
+    "raw_a": "civil servant, official",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-731",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Ausnahme",
+    "raw_a": "exception",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-732",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Unterschiede",
+    "raw_a": "differences",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-733",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "der Bekannten",
+    "raw_a": "acquaintance",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-734",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Satzzeichen",
+    "raw_a": "punctuation marks",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-735",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "pflegen",
+    "raw_a": "to care for, maintain; to be accustomed to",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-736",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Almhütte",
+    "raw_a": "alpine hut, mountain cabin",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-737",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "aufgefallen",
+    "raw_a": "noticed, stood out (from \"auffallen\")",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-738",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "abschließend",
+    "raw_a": "finally, in conclusion",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-739",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Kaiserzeit",
+    "raw_a": "imperial era",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-740",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Ballkleider",
+    "raw_a": "ball gowns",
+    "deck_id": "a2-deck-09",
+    "deck_title": "Freizeit, Sport, Natur & Geografie",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-741",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Prinzessinnen",
+    "raw_a": "princesses",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-742",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "der Handkuss",
+    "raw_a": "hand kiss",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-743",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "Quatsch!",
+    "raw_a": "Nonsense! Rubbish!",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-744",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "beleidigt / beleidigen",
+    "raw_a": "offended, insulted / to offend, insult",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-745",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "das Schnitzel",
+    "raw_a": "schnitzel (breaded cutlet)",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-746",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "kriegen",
+    "raw_a": "to get, receive (colloquial)",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-747",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "nennt / nennen",
+    "raw_a": "calls, names / to call, name",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-748",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "äußern",
+    "raw_a": "to express, state",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-749",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "häufige",
+    "raw_a": "frequent, common",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-750",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "zusammenfassen",
+    "raw_a": "to summarize",
+    "deck_id": "a2-deck-07",
+    "deck_title": "Feste, Traditionen & Lebensphasen",
+    "status": "ledger_assigned"
+  },
+  {
+    "raw_id": "RAW-751",
+    "source_file": "a2-lektion12.csv",
+    "lesson": 12,
+    "raw_q": "die Eigenschaften",
+    "raw_a": "characteristics, qualities, properties",
+    "deck_id": "a2-deck-08",
+    "deck_title": "Medien, Kultur & Digitale Welt",
+    "status": "ledger_assigned"
+  }
+]

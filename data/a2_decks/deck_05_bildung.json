@@ -1,0 +1,2834 @@
+[
+  {
+    "id": "a2-d05-001",
+    "pos": "noun",
+    "word": "Verneinung",
+    "lemma": "Verneinung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin / Grammatik",
+    "ipa": "[fɛɐ̯ˈnaɪ̯nʊŋ]",
+    "meaning": "negation, denial (nicht, kein)",
+    "gloss": "negation",
+    "pl": "die Verneinungen",
+    "genS": "der Verneinung",
+    "suf": "-ung",
+    "rule": "Nomen auf -ung sind ausnahmslos feminin: die Verneinung, die Bestätigung.",
+    "nvv": [
+      [
+        "eine Verneinung bilden",
+        "to form a negation"
+      ]
+    ],
+    "compounds": [
+      "das Verneinungswort",
+      "die Satzverneinung"
+    ],
+    "family": [
+      "verneinen",
+      "verneint",
+      "nein"
+    ],
+    "ex": [
+      "Im Deutschen erfolgt die Verneinung von Nomen mit Nullartikel durch 'kein', sonst meist durch 'nicht'.",
+      "In German, negation of nouns without article occurs via 'kein', otherwise mostly via 'nicht'."
+    ],
+    "tip": "Wichtige Grammatikregel: 'kein' verneint unbestimmte Nomen ('kein Buch'); 'nicht' verneint Verben, Adjektive oder bestimmte Nomen.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      1
+    ],
+    "sourceRawIds": [
+      "RAW-014"
+    ]
+  },
+  {
+    "id": "a2-d05-002",
+    "pos": "noun",
+    "word": "Aussprache",
+    "lemma": "Aussprache",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin / Phonetik",
+    "ipa": "[ˈaʊ̯sˌʃpʁaːxə]",
+    "meaning": "pronunciation, accent",
+    "gloss": "pronunciation",
+    "pl": "die Aussprachen",
+    "genS": "der Aussprache",
+    "suf": "-e",
+    "rule": "Zweisilbige Nomen auf -e: die Aussprache, die Sprache.",
+    "nvv": [
+      [
+        "auf eine deutliche Aussprache achten",
+        "to pay attention to clear pronunciation"
+      ]
+    ],
+    "compounds": [
+      "die Ausspracheregel",
+      "die Standardaussprache"
+    ],
+    "family": [
+      "aussprechen",
+      "sprechen",
+      "die Sprache"
+    ],
+    "ex": [
+      "Mit regelmäßigem Nachsprechen von Audioaufnahmen verbessert man seine Aussprache enorm.",
+      "With regular repeating of audio recordings, one improves one's pronunciation enormously."
+    ],
+    "tip": "Feminin: die Aussprache. Gehört zum trennbaren Verb 'aussprechen' (hat ausgesprochen).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      1
+    ],
+    "sourceRawIds": [
+      "RAW-015"
+    ]
+  },
+  {
+    "id": "a2-d05-003",
+    "pos": "noun",
+    "word": "Fehler",
+    "lemma": "Fehler",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈfeːlɐ]",
+    "meaning": "mistake, error, fault",
+    "gloss": "mistake, error",
+    "pl": "die Fehler",
+    "genS": "des Fehlers",
+    "suf": "-er",
+    "rule": "Geräte und Abstraktbegriffe auf -er sind meist maskulin: der Fehler, der Rechner.",
+    "nvv": [
+      [
+        "einen Fehler machen / korrigieren",
+        "to make / correct a mistake"
+      ],
+      [
+        "aus Fehlern lernen",
+        "to learn from mistakes"
+      ]
+    ],
+    "compounds": [
+      "der Grammatikfehler",
+      "der Rechtschreibfehler",
+      "der Leichtsinnsfehler"
+    ],
+    "family": [
+      "fehlen",
+      "fehlerhaft",
+      "fehlerfrei"
+    ],
+    "ex": [
+      "Fehler zu machen gehört beim Erlernen einer Fremdsprache ganz natürlich dazu.",
+      "Making mistakes is a completely natural part of learning a foreign language."
+    ],
+    "tip": "Maskulin: der Fehler. Pluralform bleibt unverändert: die Fehler. Nomen-Verb-Verbindung: 'einen Fehler machen' (NOT tun!).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      2
+    ],
+    "sourceRawIds": [
+      "RAW-053"
+    ]
+  },
+  {
+    "id": "a2-d05-004",
+    "pos": "noun",
+    "word": "Regelschule",
+    "lemma": "Regelschule",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈʁeːɡl̩ˌʃuːlə]",
+    "meaning": "mainstream school, regular state school (non-specialized)",
+    "gloss": "mainstream school",
+    "pl": "die Regelschulen",
+    "genS": "der Regelschule",
+    "suf": "-e",
+    "rule": "Kompositum mit 'die Schule': immer feminin (die Regelschule, die Grundschule).",
+    "nvv": [
+      [
+        "eine Regelschule besuchen",
+        "to attend a mainstream school"
+      ]
+    ],
+    "compounds": [
+      "die Förderschule",
+      "das Schulsystem"
+    ],
+    "family": [
+      "die Regel",
+      "die Schule",
+      "schulisch"
+    ],
+    "ex": [
+      "Gehörlose Kinder werden heute vermehrt auch an einer normalen Regelschule unterrichtet.",
+      "Deaf children are increasingly being taught at normal mainstream schools today."
+    ],
+    "tip": "Gegenteil von Spezialschule/Förderschule: die 'Regelschule' ist die reguläre allgemeine Schule.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      2
+    ],
+    "sourceRawIds": [
+      "RAW-087"
+    ]
+  },
+  {
+    "id": "a2-d05-005",
+    "pos": "noun",
+    "word": "Lösung",
+    "lemma": "Lösung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈløːzʊŋ]",
+    "meaning": "solution, answer, resolution",
+    "gloss": "solution, answer",
+    "pl": "die Lösungen",
+    "genS": "der Lösung",
+    "suf": "-ung",
+    "rule": "Endung -ung ist immer feminin: die Lösung.",
+    "nvv": [
+      [
+        "eine Lösung finden für (Akk)",
+        "to find a solution for"
+      ],
+      [
+        "nach Lösungen suchen",
+        "to search for solutions"
+      ]
+    ],
+    "compounds": [
+      "der Lösungsschlüssel",
+      "der Lösungsweg",
+      "die Musterlösung"
+    ],
+    "family": [
+      "lösen",
+      "lösbar",
+      "erlösen"
+    ],
+    "ex": [
+      "Vergleichen Sie Ihre Antworten bitte mit den Lösungen auf Seite 150.",
+      "Please compare your answers with the solutions on page 150."
+    ],
+    "tip": "Wichtige Prüfungskollokation: 'eine Lösung finden für + Akkusativ'. Plural: die Lösungen.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      3
+    ],
+    "sourceRawIds": [
+      "RAW-131"
+    ]
+  },
+  {
+    "id": "a2-d05-006",
+    "pos": "noun",
+    "word": "Führerscheinprüfung",
+    "lemma": "Führerscheinprüfung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈfyːʁɐʃaɪ̯nˌpʁyːfʊŋ]",
+    "meaning": "driving test, driver's license exam",
+    "gloss": "driving test",
+    "pl": "die Führerscheinprüfungen",
+    "genS": "der Führerscheinprüfung",
+    "suf": "-ung",
+    "rule": "Kompositum mit 'die Prüfung': feminin (die Führerscheinprüfung).",
+    "nvv": [
+      [
+        "die Führerscheinprüfung bestehen",
+        "to pass the driving test"
+      ],
+      [
+        "durch die Prüfung fallen",
+        "to fail the exam"
+      ]
+    ],
+    "compounds": [
+      "der Führerschein",
+      "die Fahrprüfung",
+      "der Prüfer",
+      "die Fahrschule"
+    ],
+    "family": [
+      "prüfen",
+      "die Prüfung",
+      "der Schein"
+    ],
+    "ex": [
+      "Sie war vor der praktischen Führerscheinprüfung sehr aufgeregt, hat aber bestanden.",
+      "She was very nervous before the practical driving test, but passed."
+    ],
+    "tip": "Prüfungsverben: 'die Prüfung bestehen' (pass) ↔ 'durch die Prüfung fallen' (fail).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      4
+    ],
+    "sourceRawIds": [
+      "RAW-155"
+    ]
+  },
+  {
+    "id": "a2-d05-007",
+    "pos": "verb",
+    "word": "aussprechen",
+    "lemma": "aussprechen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈaʊ̯sˌʃpʁɛçn̩]",
+    "meaning": "to pronounce (words); to express (opinions)",
+    "gloss": "to pronounce, express",
+    "sep": true,
+    "pre": "aus",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "ausgesprochen",
+    "partizip2": "ausgesprochen",
+    "perfekt": "hat ausgesprochen",
+    "praeteritum": "sprach aus",
+    "praesens": "spricht aus",
+    "reflexiv": false,
+    "praes": [
+      "spreche aus",
+      "sprichst aus",
+      "spricht aus",
+      "sprechen aus",
+      "sprecht aus",
+      "sprechen aus"
+    ],
+    "prat": [
+      "sprach aus",
+      "sprachst aus",
+      "sprach aus",
+      "sprachen aus",
+      "spracht aus",
+      "sprachen aus"
+    ],
+    "imp": [
+      "Sprich aus!",
+      "Sprecht aus!",
+      "Sprechen Sie aus!"
+    ],
+    "exT": {
+      "praes": [
+        "Wie spricht man dieses lange deutsche Wort richtig aus?",
+        "How does one pronounce this long German word correctly?"
+      ],
+      "prat": [
+        "Der Lehrer sprach das Wort dreimal langsam vor.",
+        "The teacher pronounced the word slowly three times."
+      ],
+      "perf": [
+        "Hast du das 'ch' im Wort 'ich' richtig ausgesprochen?",
+        "Did you pronounce the 'ch' in the word 'ich' correctly?"
+      ]
+    },
+    "ex": [
+      "Man spricht das 'W' im Deutschen wie das englische 'V' aus.",
+      "One pronounces the 'W' in German like the English 'V'."
+    ],
+    "val": [
+      [
+        "etwas (Akk) aussprechen",
+        "Was aussprechen?",
+        "Er spricht den Laut sauber aus."
+      ]
+    ],
+    "family": [
+      "die Aussprache",
+      "sprechen",
+      "das Gespräch"
+    ],
+    "tip": "Vokalwechsel im Präsens: du sprichst aus, er spricht aus. Stammformen: aussprechen – sprach aus – ausgesprochen.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      4
+    ],
+    "sourceRawIds": [
+      "RAW-168"
+    ]
+  },
+  {
+    "id": "a2-d05-008",
+    "pos": "noun",
+    "word": "Verkehrsregeln",
+    "lemma": "Verkehrsregel",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[fɛɐ̯ˈkeːɐ̯sˌʁeːɡl̩]",
+    "meaning": "traffic rules, rules of the road",
+    "gloss": "traffic rules",
+    "pl": "die Verkehrsregeln",
+    "genS": "der Verkehrsregel",
+    "suf": "-el",
+    "rule": "Kompositum mit 'die Regel': feminin (die Verkehrsregel, die Grammatikregel).",
+    "nvv": [
+      [
+        "die Verkehrsregeln einhalten / befolgen",
+        "to adhere to / obey the traffic rules"
+      ],
+      [
+        "gegen die Regeln verstoßen",
+        "to violate the rules"
+      ]
+    ],
+    "compounds": [
+      "die Straßenverkehrsordnung (StVO)",
+      "das Schild"
+    ],
+    "family": [
+      "der Verkehr",
+      "die Regel",
+      "regeln"
+    ],
+    "ex": [
+      "In der Fahrschule lernt man alle wichtigen deutschen Verkehrsregeln.",
+      "In driving school, one learns all important German traffic rules."
+    ],
+    "tip": "Fast immer im Plural: 'die Verkehrsregeln'. Kollokation: 'Regeln einhalten' (adhere to rules).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      4
+    ],
+    "sourceRawIds": [
+      "RAW-176"
+    ]
+  },
+  {
+    "id": "a2-d05-009",
+    "pos": "verb",
+    "word": "unterrichten",
+    "lemma": "unterrichten",
+    "level": "A2",
+    "type": "Verb · untrennbar",
+    "ipa": "[ˌʊntɐˈʁɪçtn̩]",
+    "meaning": "to teach, to instruct",
+    "gloss": "to teach",
+    "sep": false,
+    "pre": "unter-",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "unterrichtet",
+    "partizip2": "unterrichtet",
+    "perfekt": "hat unterrichtet",
+    "praeteritum": "unterrichtete",
+    "praesens": "unterrichtet",
+    "reflexiv": false,
+    "praes": [
+      "unterrichte",
+      "unterrichtest",
+      "unterrichtet",
+      "unterrichten",
+      "unterrichtet",
+      "unterrichten"
+    ],
+    "prat": [
+      "unterrichtete",
+      "unterrichtetest",
+      "unterrichtete",
+      "unterrichteten",
+      "unterrichtetet",
+      "unterrichteten"
+    ],
+    "imp": [
+      "Unterrichte!",
+      "Unterrichtet!",
+      "Unterrichten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Die Dozentin unterrichtet an der Universität Magdeburg Medizintechnik.",
+        "The lecturer teaches medical engineering at the University of Magdeburg."
+      ],
+      "prat": [
+        "Er unterrichtete fünf Jahre lang an einer Sprachschule.",
+        "He taught for five years at a language school."
+      ],
+      "perf": [
+        "Wer hat Sie bisher in Deutsch unterrichtet?",
+        "Who has taught you in German so far?"
+      ]
+    },
+    "ex": [
+      "Frau Müller unterrichtet Deutsch als Fremdsprache mit großer Begeisterung.",
+      "Ms. Müller teaches German as a foreign language with great enthusiasm."
+    ],
+    "val": [
+      [
+        "jemanden in + Dat unterrichten",
+        "Worin?",
+        "Sie unterrichtet Kinder in Musik."
+      ],
+      [
+        "ein Fach unterrichten",
+        "Was?",
+        "Er unterrichtet Mathematik."
+      ]
+    ],
+    "family": [
+      "der Unterricht",
+      "der Lehrer",
+      "die Lehrkraft"
+    ],
+    "tip": "Untrennbar betont: unterRICHTEN (hat unterrichtet, NICHT untergerichtet). Nomen dazu: 'der Unterricht' (Maskulin).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      4
+    ],
+    "sourceRawIds": [
+      "RAW-204"
+    ]
+  },
+  {
+    "id": "a2-d05-010",
+    "pos": "verb",
+    "word": "leihen",
+    "lemma": "leihen (Partizip II: geliehen)",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[ˈlaɪ̯ən]",
+    "meaning": "to borrow, to lend",
+    "gloss": "to borrow, lend",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geliehen",
+    "partizip2": "geliehen",
+    "perfekt": "hat geliehen",
+    "praeteritum": "lieh",
+    "praesens": "leiht",
+    "reflexiv": "sich (Dat) etwas leihen",
+    "praes": [
+      "leihe",
+      "leihst",
+      "leiht",
+      "leihen",
+      "leiht",
+      "leihen"
+    ],
+    "prat": [
+      "lieh",
+      "liehst",
+      "lieh",
+      "liehen",
+      "lieht",
+      "liehen"
+    ],
+    "imp": [
+      "Leih!",
+      "Leiht!",
+      "Leihen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Ich leihe mir das Grammatikbuch für zwei Wochen aus der Bibliothek.",
+        "I borrow the grammar book from the library for two weeks."
+      ],
+      "prat": [
+        "Er lieh seinem Freund sein Fahrrad für das Wochenende.",
+        "He lent his bicycle to his friend for the weekend."
+      ],
+      "perf": [
+        "Hast du dir schon die Prüfungsunterlagen geliehen?",
+        "Have you already borrowed the exam materials?"
+      ]
+    },
+    "ex": [
+      "Kannst du mir bitte bis morgen deinen Duden leihen?",
+      "Can you please lend me your dictionary until tomorrow?"
+    ],
+    "val": [
+      [
+        "jemandem (Dat) etwas leihen",
+        "Wem leihen? (to lend)",
+        "Ich leihe DIR das Buch."
+      ],
+      [
+        "sich (Dat) etwas leihen von (Dat)",
+        "Von wem? (to borrow)",
+        "Ich leihe mir Geld von der Bank."
+      ]
+    ],
+    "family": [
+      "ausleihen",
+      "die Leihgabe",
+      "verleihen"
+    ],
+    "tip": "Deckt im Deutschen beides ab: to lend ('jemandem etwas leihen') und to borrow ('sich etwas leihen'). Stammformen: leihen – lieh – geliehen.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-405"
+    ]
+  },
+  {
+    "id": "a2-d05-011",
+    "pos": "verb",
+    "word": "üben",
+    "lemma": "üben",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈyːbn̩]",
+    "meaning": "to practice, to exercise, to drill",
+    "gloss": "to practice",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geübt",
+    "partizip2": "geübt",
+    "perfekt": "hat geübt",
+    "praeteritum": "übte",
+    "praesens": "übt",
+    "reflexiv": false,
+    "praes": [
+      "übe",
+      "übst",
+      "übt",
+      "üben",
+      "übt",
+      "üben"
+    ],
+    "prat": [
+      "übte",
+      "übtest",
+      "übte",
+      "übten",
+      "übtet",
+      "übten"
+    ],
+    "imp": [
+      "Übe!",
+      "Übt!",
+      "Üben Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Wir üben jeden Tag dreißig Minuten das Hörverstehen.",
+        "We practice listening comprehension for thirty minutes every day."
+      ],
+      "prat": [
+        "Vor der Prüfung übte er fleißig die Konjugationen.",
+        "Before the exam, he practiced the conjugations diligently."
+      ],
+      "perf": [
+        "Ich habe heute schon alle Grammatikübungen geübt.",
+        "I have already practiced all grammar exercises today."
+      ]
+    },
+    "ex": [
+      "Übung macht den Meister – regelmäßiges Üben ist der Schlüssel zum Erfolg.",
+      "Practice makes perfect – regular practice is the key to success."
+    ],
+    "val": [
+      [
+        "etwas (Akk) üben",
+        "Was üben?",
+        "Er übt die Aussprache."
+      ]
+    ],
+    "family": [
+      "die Übung",
+      "geübt",
+      "die Übungsaufgabe"
+    ],
+    "tip": "Deutsches Sprichwort: 'Übung macht den Meister' (= Practice makes perfect). Nomen: die Übung (Feminin).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-407"
+    ]
+  },
+  {
+    "id": "a2-d05-012",
+    "pos": "verb",
+    "word": "einhalten",
+    "lemma": "einhalten",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈaɪ̯nˌhaltn̩]",
+    "meaning": "to observe, to adhere to, to comply with (rules, deadlines)",
+    "gloss": "to adhere to, observe",
+    "sep": true,
+    "pre": "ein",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "eingehalten",
+    "partizip2": "eingehalten",
+    "perfekt": "hat eingehalten",
+    "praeteritum": "hielt ein",
+    "praesens": "hält ein",
+    "reflexiv": false,
+    "praes": [
+      "halte ein",
+      "hältst ein",
+      "hält ein",
+      "halten ein",
+      "haltet ein",
+      "halten ein"
+    ],
+    "prat": [
+      "hielt ein",
+      "hieltst ein",
+      "hielt ein",
+      "hielten ein",
+      "hieltet ein",
+      "hielten ein"
+    ],
+    "imp": [
+      "Halte ein!",
+      "Haltet ein!",
+      "Halten Sie ein!"
+    ],
+    "exT": {
+      "praes": [
+        "In der Prüfung muss man das strikte Zeitlimit einhalten.",
+        "In the exam, one must adhere to the strict time limit."
+      ],
+      "prat": [
+        "Alle Studierenden hielten die Abgabefrist pünktlich ein.",
+        "All students met the submission deadline on time."
+      ],
+      "perf": [
+        "Haben Sie alle Vorgaben der Prüfungsordnung eingehalten?",
+        "Did you adhere to all requirements of the examination regulations?"
+      ]
+    },
+    "ex": [
+      "Es ist extrem wichtig, vereinbarte Termine pünktlich einzuhalten.",
+      "It is extremely important to adhere to agreed appointments punctually."
+    ],
+    "val": [
+      [
+        "Regeln / Termine (Akk) einhalten",
+        "Was einhalten?",
+        "Er hält die Frist ein."
+      ]
+    ],
+    "family": [
+      "die Einhaltung",
+      "halten",
+      "behalten"
+    ],
+    "tip": "Wichtige Prüfungskollokationen: 'Regeln einhalten', 'Termine einhalten', 'Fristen einhalten'. Vokalwechsel: er hält ein. Stammformen: einhalten – hielt ein – eingehalten.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-410"
+    ]
+  },
+  {
+    "id": "a2-d05-013",
+    "pos": "verb",
+    "word": "klären",
+    "lemma": "klären",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈklɛːʁən]",
+    "meaning": "to clarify, to clear up, to resolve (questions, misunderstandings)",
+    "gloss": "to clarify, resolve",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geklärt",
+    "partizip2": "geklärt",
+    "perfekt": "hat geklärt",
+    "praeteritum": "klärte",
+    "praesens": "klärt",
+    "reflexiv": "sich klären (resolve itself)",
+    "praes": [
+      "kläre",
+      "klärst",
+      "klärt",
+      "klären",
+      "klärt",
+      "klären"
+    ],
+    "prat": [
+      "klärte",
+      "klärtest",
+      "klärte",
+      "klärten",
+      "klärtet",
+      "klärten"
+    ],
+    "imp": [
+      "Kläre!",
+      "Klärt!",
+      "Klären Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Wir klären die offenen Fragen direkt zu Beginn der Stunde.",
+        "We clarify the open questions directly at the beginning of the lesson."
+      ],
+      "prat": [
+        "Der Prüfer klärte die Missverständnisse vor dem Test.",
+        "The examiner cleared up the misunderstandings before the test."
+      ],
+      "perf": [
+        "Haben sich alle deine Fragen zum Prüfungsablauf geklärt?",
+        "Have all your questions regarding the exam procedure been cleared up?"
+      ]
+    },
+    "ex": [
+      "Lassen Sie uns dieses Problem in Ruhe gemeinsam klären.",
+      "Let us calmly resolve this problem together."
+    ],
+    "val": [
+      [
+        "eine Frage / Situation (Akk) klären",
+        "Was klären?",
+        "Er klärt das Problem."
+      ]
+    ],
+    "family": [
+      "die Klärung",
+      "klar",
+      "erklären",
+      "aufklären"
+    ],
+    "tip": "Kollokation: 'eine Frage klären', 'ein Missverständnis klären'. Adjektivstamm: klar (clear).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-411"
+    ]
+  },
+  {
+    "id": "a2-d05-014",
+    "pos": "noun",
+    "word": "mündliche Prüfung",
+    "lemma": "mündliche Prüfung",
+    "art": "die",
+    "level": "A2",
+    "type": "Kollokation · Nomen + Adjektiv",
+    "ipa": "[ˈmʏntlɪçə ˈpʁyːfʊŋ]",
+    "meaning": "oral exam, speaking test",
+    "gloss": "oral exam",
+    "pl": "die mündlichen Prüfungen",
+    "genS": "der mündlichen Prüfung",
+    "suf": "",
+    "rule": "Adjektivdeklination: die mündliche (Typ 1, schwach mit -e) Prüfung.",
+    "nvv": [
+      [
+        "eine mündliche Prüfung ablegen / haben",
+        "to take / have an oral exam"
+      ]
+    ],
+    "compounds": [
+      "die schriftliche Prüfung",
+      "der Prüfungsteil Sprechen"
+    ],
+    "family": [
+      "mündlich",
+      "die Prüfung",
+      "der Mund"
+    ],
+    "ex": [
+      "Die mündliche Prüfung für das Goethe-Zertifikat dauert etwa 15 Minuten zu zweit.",
+      "The oral exam for the Goethe certificate takes about 15 minutes in pairs."
+    ],
+    "tip": "Gegenteil: 'die schriftliche Prüfung' (written exam). 'mündlich' kommt von 'der Mund' (mouth).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-412"
+    ]
+  },
+  {
+    "id": "a2-d05-015",
+    "pos": "noun",
+    "word": "Prüfer",
+    "lemma": "Prüfer",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈpʁyːfɐ]",
+    "meaning": "examiner, tester",
+    "gloss": "examiner",
+    "pl": "die Prüfer",
+    "genS": "des Prüfers",
+    "suf": "-er",
+    "rule": "Personenbezeichnungen auf -er sind immer maskulin: der Prüfer.",
+    "nvv": [
+      [
+        "Fragen des Prüfers beantworten",
+        "to answer the examiner's questions"
+      ]
+    ],
+    "compounds": [
+      "der Prüferstab",
+      "die Prüferin"
+    ],
+    "family": [
+      "prüfen",
+      "die Prüfung",
+      "geprüft"
+    ],
+    "ex": [
+      "Die beiden Prüfer waren sehr freundlich und gaben klare Anweisungen.",
+      "Both examiners were very friendly and gave clear instructions."
+    ],
+    "tip": "Feminin: die Prüferin (Plural: die Prüferinnen). Maskulin-Plural bleibt ohne Endung: die Prüfer.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-414"
+    ]
+  },
+  {
+    "id": "a2-d05-016",
+    "pos": "adj",
+    "word": "still",
+    "lemma": "still",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ʃtɪl]",
+    "meaning": "quiet, silent, calm, motionless",
+    "gloss": "quiet, silent",
+    "comp": [
+      [
+        "Positiv",
+        "still"
+      ],
+      [
+        "Komparativ",
+        "stiller"
+      ],
+      [
+        "Superlativ",
+        "am stillsten"
+      ]
+    ],
+    "opp": "laut, unruhig",
+    "family": [
+      "die Stille",
+      "stillstehen",
+      "stillschweigend"
+    ],
+    "ex": [
+      "Während der Klausur muss es im gesamten Raum vollkommen still sein.",
+      "During the exam, it must be completely silent throughout the room."
+    ],
+    "tip": "Synonym zu 'ruhig' / 'leise'. Bei Wasser: 'stilles Wasser' = water without gas / still water.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-415"
+    ]
+  },
+  {
+    "id": "a2-d05-017",
+    "pos": "noun",
+    "word": "Stoff",
+    "lemma": "Stoff",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ʃtɔf]",
+    "meaning": "material, subject matter (to study); fabric, cloth",
+    "gloss": "subject matter, fabric",
+    "pl": "die Stoffe",
+    "genS": "des Stoffs / Stoffes",
+    "suf": "",
+    "rule": "Einsilbiges Maskulinum mit kurzem Stammvokal und Doppel-f: der Stoff → die Stoffe.",
+    "nvv": [
+      [
+        "den Stoff wiederholen / beherrschen",
+        "to review / master the subject matter"
+      ]
+    ],
+    "compounds": [
+      "der Prüfungsstoff",
+      "der Lernstoff",
+      "der Werkstoff",
+      "der Baumwollstoff"
+    ],
+    "family": [
+      "stofflich",
+      "der Rohstoff"
+    ],
+    "ex": [
+      "Vor der Prüfung müssen wir noch den gesamten Stoff aus Kapitel 1 bis 12 wiederholen.",
+      "Before the exam, we still have to review all the material from chapters 1 to 12."
+    ],
+    "tip": "In der Bildung: 'der Prüfungsstoff' / 'der Lernstoff' = the exam syllabus / study material. In der Technik: 'der Werkstoff' = engineering material.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-417"
+    ]
+  },
+  {
+    "id": "a2-d05-018",
+    "pos": "verb",
+    "word": "kapieren",
+    "lemma": "kapieren",
+    "level": "A2",
+    "type": "Verb · regelmäßig / Umgangssprache",
+    "ipa": "[kaˈpiːʁən]",
+    "meaning": "to understand, to grasp, to get it (informal)",
+    "gloss": "to get it, grasp",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "kapiert",
+    "partizip2": "kapiert",
+    "perfekt": "hat kapiert",
+    "praeteritum": "kapierte",
+    "praesens": "kapiert",
+    "reflexiv": false,
+    "praes": [
+      "kapiere",
+      "kapierst",
+      "kapiert",
+      "kapieren",
+      "kapiert",
+      "kapieren"
+    ],
+    "prat": [
+      "kapierte",
+      "kapiertest",
+      "kapierte",
+      "kapierten",
+      "kapiertet",
+      "kapierten"
+    ],
+    "imp": [
+      "Kapier!",
+      "Kapiert!",
+      "Kapieren Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Ich kapiere diese Grammatikregel einfach nicht.",
+        "I simply do not grasp this grammar rule."
+      ],
+      "prat": [
+        "Nach der Erklärung kapierte er den Zusammenhang sofort.",
+        "After the explanation, he got the connection immediately."
+      ],
+      "perf": [
+        "Hast du jetzt endlich kapiert, wie die App funktioniert?",
+        "Did you finally understand how the app works?"
+      ]
+    },
+    "ex": [
+      "Hast du kapiert, was der Lehrer gemeint hat?",
+      "Did you get what the teacher meant?"
+    ],
+    "val": [
+      [
+        "etwas (Akk) kapieren",
+        "Was kapieren?",
+        "Ich habe die Aufgabe kapiert."
+      ]
+    ],
+    "family": [
+      "verstehen",
+      "begreifen"
+    ],
+    "tip": "Umgangssprachliches Synonym zu 'verstehen' / 'begreifen'. Endung auf -ieren bildet das Partizip II ohne 'ge-': hat kapiert.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-418"
+    ]
+  },
+  {
+    "id": "a2-d05-019",
+    "pos": "phrase",
+    "word": "konsequent sein",
+    "lemma": "konsequent sein",
+    "level": "A2",
+    "type": "Prädikative Verbindung",
+    "ipa": "[kɔnzeˈkvɛnt zaɪ̯n]",
+    "meaning": "to be consistent, determined, resolute",
+    "gloss": "to be consistent",
+    "frame": "beim Lernen konsequent sein",
+    "reg": [
+      [
+        "Lernen",
+        "Man muss beim Vokabellernen konsequent sein.",
+        "One must be consistent when learning vocabulary."
+      ],
+      [
+        "Alltag",
+        "Er zieht seine Pläne immer sehr konsequent durch.",
+        "He always pursues his plans very consistently."
+      ]
+    ],
+    "tenses": [
+      [
+        "Präsens",
+        "Ich bin konsequent."
+      ],
+      [
+        "Perfekt",
+        "Ich bin konsequent gewesen."
+      ]
+    ],
+    "dlg": [
+      [
+        "A",
+        "Wie hast du in so kurzer Zeit B1 erreicht?"
+      ],
+      [
+        "B",
+        "Ich war einfach jeden Tag konsequent und habe täglich eine Stunde gelernt."
+      ]
+    ],
+    "family": [
+      "die Konsequenz",
+      "inkonsequent",
+      "folglich"
+    ],
+    "tip": "Adjektiv 'konsequent': zielstrebig und ohne Ausnahmen. Wichtig für Lerndisziplin.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-421"
+    ]
+  },
+  {
+    "id": "a2-d05-020",
+    "pos": "verb",
+    "word": "verschieben",
+    "lemma": "verschieben",
+    "level": "A2",
+    "type": "Verb · untrennbar / unregelmäßig",
+    "ipa": "[fɛɐ̯ˈʃiːbn̩]",
+    "meaning": "to postpone, to reschedule (appointment, exam); to move/shift",
+    "gloss": "to postpone, reschedule",
+    "sep": false,
+    "pre": "ver-",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "verschoben",
+    "partizip2": "verschoben",
+    "perfekt": "hat verschoben",
+    "praeteritum": "verschob",
+    "praesens": "verschiebt",
+    "reflexiv": false,
+    "praes": [
+      "verschiebe",
+      "verschiebst",
+      "verschiebt",
+      "verschieben",
+      "verschiebt",
+      "verschieben"
+    ],
+    "prat": [
+      "verschob",
+      "verschobst",
+      "verschob",
+      "verschoben",
+      "verschobt",
+      "verschoben"
+    ],
+    "imp": [
+      "Verschiebe!",
+      "Verschiebt!",
+      "Verschieben Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Können wir unseren Prüfungstermin auf nächsten Montag verschieben?",
+        "Could we reschedule our exam appointment to next Monday?"
+      ],
+      "prat": [
+        "Die Universität verschob den Beginn des Semesters.",
+        "The university postponed the start of the semester."
+      ],
+      "perf": [
+        "Wegen Krankheit habe ich den Test um eine Woche verschoben.",
+        "Due to illness, I postponed the test by one week."
+      ]
+    },
+    "ex": [
+      "Auf wann wurde die mündliche Prüfung verschoben?",
+      "To when was the oral examination postponed?"
+    ],
+    "val": [
+      [
+        "auf + Akk verschieben",
+        "Auf welchen Tag?",
+        "Wir verschieben den Termin auf Freitag."
+      ]
+    ],
+    "family": [
+      "die Verschiebung",
+      "schieben",
+      "aufschieben"
+    ],
+    "tip": "Wichtige Präposition: 'verschieben AUF + Akkusativ' (auf morgen / auf nächste Woche). Stammformen: verschieben – verschob – verschoben.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-422"
+    ]
+  },
+  {
+    "id": "a2-d05-021",
+    "pos": "adj",
+    "word": "gelöst",
+    "lemma": "gelöst",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ɡəˈløːst]",
+    "meaning": "solved (problem); relaxed, relieved (mood)",
+    "gloss": "relaxed, solved",
+    "comp": [
+      [
+        "Positiv",
+        "gelöst"
+      ],
+      [
+        "Komparativ",
+        "gelöster"
+      ],
+      [
+        "Superlativ",
+        "am gelöstesten"
+      ]
+    ],
+    "opp": "angespannt, verkrampft, ungelöst",
+    "family": [
+      "lösen",
+      "die Lösung",
+      "die Gelöstheit"
+    ],
+    "ex": [
+      "Nach der bestandenen Prüfung war die Stimmung unter den Prüflingen herrlich gelöst.",
+      "After the passed exam, the mood among the candidates was wonderfully relaxed."
+    ],
+    "tip": "Zwei Bedeutungen: 1) Eine Aufgabe ist 'gelöst' (solved); 2) Eine Person oder Atmosphäre ist 'gelöst' (relaxed / free of tension).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-423"
+    ]
+  },
+  {
+    "id": "a2-d05-022",
+    "pos": "verb",
+    "word": "vorstellen",
+    "lemma": "sich vorstellen",
+    "level": "A2",
+    "type": "Verb · trennbar / reflexiv",
+    "ipa": "[ˈfoːɐ̯ˌʃtɛlən]",
+    "meaning": "to introduce oneself (Akk); to imagine (Dat)",
+    "gloss": "to introduce oneself / imagine",
+    "sep": true,
+    "pre": "vor",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "vorgestellt",
+    "partizip2": "vorgestellt",
+    "perfekt": "hat vorgestellt",
+    "praeteritum": "stellte vor",
+    "praesens": "stellt vor",
+    "reflexiv": "sich (Akk oder Dat)",
+    "praes": [
+      "stelle vor",
+      "stellst vor",
+      "stellt vor",
+      "stellen vor",
+      "stellt vor",
+      "stellen vor"
+    ],
+    "prat": [
+      "stellte vor",
+      "stelltest vor",
+      "stellte vor",
+      "stellten vor",
+      "stelltet vor",
+      "stellten vor"
+    ],
+    "imp": [
+      "Stell dich vor!",
+      "Stellt euch vor!",
+      "Stellen Sie sich vor!"
+    ],
+    "exT": {
+      "praes": [
+        "Darf ich mich kurz den Prüfern vorstellen?",
+        "May I briefly introduce myself to the examiners?"
+      ],
+      "prat": [
+        "Er stellte sich den neuen Kollegen höflich vor.",
+        "He introduced himself politely to the new colleagues."
+      ],
+      "perf": [
+        "Ich kann mir das Leben in Deutschland sehr gut vorstellen.",
+        "I can imagine life in Germany very well."
+      ]
+    },
+    "ex": [
+      "In Teil 1 der mündlichen B1-Prüfung stellen Sie sich Ihrem Partner vor.",
+      "In Part 1 of the oral B1 exam, you introduce yourself to your partner."
+    ],
+    "val": [
+      [
+        "sich (Akk) vorstellen",
+        "Wen? (introduce self)",
+        "Ich stelle mich vor."
+      ],
+      [
+        "sich (Dat) etwas vorstellen",
+        "Was? (imagine)",
+        "Ich stelle mir das schwer vor."
+      ]
+    ],
+    "family": [
+      "die Vorstellung",
+      "das Vorstellungsgespräch"
+    ],
+    "tip": "WICHTIGER KASUS-UNTERSCHIED: 1) 'Ich stelle MICH (Akk) vor' = I introduce myself; 2) 'Ich stelle MIR (Dat) vor' = I imagine.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-424"
+    ]
+  },
+  {
+    "id": "a2-d05-023",
+    "pos": "noun",
+    "word": "Grippe",
+    "lemma": "Grippe",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin / Gesundheit",
+    "ipa": "[ˈɡʁɪpə]",
+    "meaning": "flu, influenza",
+    "gloss": "flu, influenza",
+    "pl": "die Grippen (selten)",
+    "genS": "der Grippe",
+    "suf": "-e",
+    "rule": "Krankheiten auf -e sind überwiegend feminin: die Grippe, die Masern (Plural), die Allergie.",
+    "nvv": [
+      [
+        "die Grippe haben / bekommen",
+        "to have / catch the flu"
+      ],
+      [
+        "eine Grippe auskurieren",
+        "to cure a flu with bed rest"
+      ]
+    ],
+    "compounds": [
+      "die Sommergrippe",
+      "die Grippewelle",
+      "die Grippeimpfung"
+    ],
+    "family": [
+      "grippal",
+      "der Infekt"
+    ],
+    "ex": [
+      "Wegen einer schweren Grippe musste sie das ärztliche Attest für die Prüfung einreichen.",
+      "Because of severe flu, she had to submit a medical certificate for the exam."
+    ],
+    "tip": "Feminin: die Grippe. Kollokation: 'Ich habe die Grippe' (I have the flu). Ärztliche Entschuldigung = 'das Attest' / 'die Krankschreibung'.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-425"
+    ]
+  },
+  {
+    "id": "a2-d05-024",
+    "pos": "phrase",
+    "word": "tief atmen",
+    "lemma": "tief atmen",
+    "level": "A2",
+    "type": "Redemittel · Beruhigung",
+    "ipa": "[tiːf ˈaːtmən]",
+    "meaning": "to breathe deeply (calming down before tests)",
+    "gloss": "to breathe deeply",
+    "frame": "Atme / Atmen Sie tief ein und aus!",
+    "reg": [
+      [
+        "Rat vor Prüfung",
+        "Wenn du nervös bist: Einmal tief durchatmen!",
+        "If you are nervous: take a deep breath once!"
+      ],
+      [
+        "Beim Arzt",
+        "Bitte atmen Sie tief ein und wieder aus.",
+        "Please breathe in deeply and out again."
+      ]
+    ],
+    "tenses": [
+      [
+        "Imperativ",
+        "Atme tief durch!"
+      ]
+    ],
+    "dlg": [
+      [
+        "A",
+        "Mein Herz klopft so schnell vor der mündlichen Prüfung!"
+      ],
+      [
+        "B",
+        "Keine Sorge, atme ganz tief durch die Nase ein und entspanne dich."
+      ]
+    ],
+    "family": [
+      "der Atem",
+      "einatmen",
+      "ausatmen",
+      "durchatmen"
+    ],
+    "tip": "Trennbares Verb: 'durchatmen' (hat durchgeatmet). Bester Tipp gegen Prüfungsangst.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-426"
+    ]
+  },
+  {
+    "id": "a2-d05-025",
+    "pos": "adj",
+    "word": "übrigens",
+    "lemma": "übrigens",
+    "level": "A2",
+    "type": "Diskurspartikel / Adverb",
+    "ipa": "[ˈyːbʁɪɡŋ̍s]",
+    "meaning": "by the way, incidentally",
+    "gloss": "by the way",
+    "comp": [
+      [
+        "Positiv",
+        "übrigens"
+      ],
+      [
+        "Komparativ",
+        "—"
+      ],
+      [
+        "Superlativ",
+        "—"
+      ]
+    ],
+    "opp": "hauptsächlich",
+    "family": [
+      "übrig",
+      "das Übrige"
+    ],
+    "ex": [
+      "Wir treffen uns übrigens morgen schon um 9 Uhr statt um 10 Uhr.",
+      "By the way, we are meeting tomorrow at 9 AM already instead of 10 AM."
+    ],
+    "tip": "Perfekter Übergang im Gespräch, um eine neue Information einzuführen (synonym zu 'nebenbei bemerkt').",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-427"
+    ]
+  },
+  {
+    "id": "a2-d05-026",
+    "pos": "adj",
+    "word": "dringend",
+    "lemma": "dringend",
+    "level": "A2",
+    "type": "Adjektiv / Adverb",
+    "ipa": "[ˈdʁɪŋənt]",
+    "meaning": "urgent, pressing, urgently",
+    "gloss": "urgent, urgently",
+    "comp": [
+      [
+        "Positiv",
+        "dringend"
+      ],
+      [
+        "Komparativ",
+        "dringender"
+      ],
+      [
+        "Superlativ",
+        "am dringendsten"
+      ]
+    ],
+    "opp": "unwichtig, aufschiebbar",
+    "family": [
+      "drängen",
+      "die Dringlichkeit"
+    ],
+    "ex": [
+      "Ich muss vor dem Prüfungstag dringend noch meinen Personalausweis verlängern.",
+      "Before exam day, I urgently need to renew my identity card."
+    ],
+    "tip": "Signalisiert höchste Priorität: 'eine dringende E-Mail', 'ein dringender Anruf', 'Ich brauche dringend Hilfe'.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-430"
+    ]
+  },
+  {
+    "id": "a2-d05-027",
+    "pos": "noun",
+    "word": "Erholung",
+    "lemma": "Erholung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ɛɐ̯ˈhoːlʊŋ]",
+    "meaning": "recovery, relaxation, rest",
+    "gloss": "recovery, rest",
+    "pl": "—",
+    "genS": "der Erholung",
+    "suf": "-ung",
+    "rule": "Endung -ung = IMMER feminin: die Erholung.",
+    "nvv": [
+      [
+        "Erholung brauchen / finden",
+        "to need / find rest"
+      ]
+    ],
+    "compounds": [
+      "der Erholungsurlaub",
+      "das Erholungsgebiet"
+    ],
+    "family": [
+      "sich erholen",
+      "erholsam"
+    ],
+    "ex": [
+      "Nach der anstrengenden Prüfungswoche brauchen alle Studierenden dringend Erholung.",
+      "After the exhausting exam week, all students urgently need rest."
+    ],
+    "tip": "Gehört zum reflexiven Verb: 'sich erholen von + Dativ' (Ich habe mich vom Stress erholt).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-431"
+    ]
+  },
+  {
+    "id": "a2-d05-028",
+    "pos": "verb",
+    "word": "nachfragen",
+    "lemma": "nachfragen",
+    "level": "A2",
+    "type": "Verb · trennbar",
+    "ipa": "[ˈnaːxˌfʁaːɡn̩]",
+    "meaning": "to inquire, to ask again / verify",
+    "gloss": "to inquire, ask again",
+    "sep": true,
+    "pre": "nach",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "nachgefragt",
+    "partizip2": "nachgefragt",
+    "perfekt": "hat nachgefragt",
+    "praeteritum": "fragte nach",
+    "praesens": "fragt nach",
+    "reflexiv": false,
+    "praes": [
+      "frage nach",
+      "fragst nach",
+      "fragt nach",
+      "fragen nach",
+      "fragt nach",
+      "fragen nach"
+    ],
+    "prat": [
+      "fragte nach",
+      "fragtest nach",
+      "fragte nach",
+      "fragten nach",
+      "fragtet nach",
+      "fragten nach"
+    ],
+    "imp": [
+      "Frag nach!",
+      "Fragt nach!",
+      "Fragen Sie nach!"
+    ],
+    "exT": {
+      "praes": [
+        "Wenn du eine Prüfungsaufgabe nicht verstehst, frage bitte sofort nach.",
+        "If you do not understand an exam task, please inquire immediately."
+      ],
+      "prat": [
+        "Der Student fragte beim Prüfungsamt nach den Fristen nach.",
+        "The student inquired at the examination office about deadlines."
+      ],
+      "perf": [
+        "Ich habe beim Dozenten noch einmal genau nachgefragt.",
+        "I inquired once again specifically with the lecturer."
+      ]
+    },
+    "ex": [
+      "In der mündlichen Prüfung darf man bei Unklarheiten höflich nachfragen.",
+      "In the oral exam, one is allowed to inquire politely in case of ambiguities."
+    ],
+    "val": [
+      [
+        "bei + Dat nachfragen",
+        "Bei wem?",
+        "Ich frage beim Prüfer nach."
+      ]
+    ],
+    "family": [
+      "die Nachfrage",
+      "fragen",
+      "die Frage"
+    ],
+    "tip": "Goldene Regel für mündliche Prüfungen: Höflich nachfragen zeigt Sprachkompetenz: 'Dürfte ich da noch einmal kurz nachfragen?'",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-432"
+    ]
+  },
+  {
+    "id": "a2-d05-029",
+    "pos": "adj",
+    "word": "streng",
+    "lemma": "streng",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ʃtʁɛŋ]",
+    "meaning": "strict, severe, rigorous",
+    "gloss": "strict, rigorous",
+    "comp": [
+      [
+        "Positiv",
+        "streng"
+      ],
+      [
+        "Komparativ",
+        "strenger"
+      ],
+      [
+        "Superlativ",
+        "am strengsten"
+      ]
+    ],
+    "opp": "locker, nachsichtig, mild",
+    "family": [
+      "die Strenge",
+      "strenggenommen"
+    ],
+    "ex": [
+      "Die Prüferin bewertete die Grammatikfehler sehr streng.",
+      "The examiner assessed the grammar mistakes very strictly."
+    ],
+    "tip": "Kollokationen: 'ein strenger Lehrer', 'eine strenge Prüfung', 'streng verboten' (= strictly prohibited).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7,
+      12
+    ],
+    "sourceRawIds": [
+      "RAW-433",
+      "RAW-694"
+    ]
+  },
+  {
+    "id": "a2-d05-030",
+    "pos": "verb",
+    "word": "einplanen",
+    "lemma": "einplanen",
+    "level": "A2",
+    "type": "Verb · trennbar",
+    "ipa": "[ˈaɪ̯nˌplaːnən]",
+    "meaning": "to schedule, to factor in, to allow time for",
+    "gloss": "to schedule, plan in",
+    "sep": true,
+    "pre": "ein",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "eingeplant",
+    "partizip2": "eingeplant",
+    "perfekt": "hat eingeplant",
+    "praeteritum": "plante ein",
+    "praesens": "plant ein",
+    "reflexiv": false,
+    "praes": [
+      "plane ein",
+      "planst ein",
+      "plant ein",
+      "planen ein",
+      "plant ein",
+      "planen ein"
+    ],
+    "prat": [
+      "plante ein",
+      "plantest ein",
+      "plante ein",
+      "planten ein",
+      "plantet ein",
+      "planten ein"
+    ],
+    "imp": [
+      "Plane ein!",
+      "Plant ein!",
+      "Planen Sie ein!"
+    ],
+    "exT": {
+      "praes": [
+        "Für die Vorbereitung plane ich täglich zwei Stunden ein.",
+        "For preparation, I factor in two hours daily."
+      ],
+      "prat": [
+        "Er plante genug Pufferzeit für eventuelle Staus ein.",
+        "He factored in enough buffer time for possible traffic jams."
+      ],
+      "perf": [
+        "Haben Sie genügend Zeit für den Prüfungsweg eingeplant?",
+        "Did you schedule enough time for the route to the exam?"
+      ]
+    },
+    "ex": [
+      "Man sollte für das Lernen mindestens vier Wochen feste Vorbereitungszeit einplanen.",
+      "One should schedule at least four weeks of fixed preparation time for studying."
+    ],
+    "val": [
+      [
+        "Zeit für + Akk einplanen",
+        "Wofür?",
+        "Ich plane Zeit für Wiederholungen ein."
+      ]
+    ],
+    "family": [
+      "planen",
+      "der Plan",
+      "die Planung"
+    ],
+    "tip": "Trennbar: 'Ich plane Zeit ein.' Wichtig im Zeitmanagement: 'Pufferzeit einplanen' (allow buffer time).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-434"
+    ]
+  },
+  {
+    "id": "a2-d05-031",
+    "pos": "verb",
+    "word": "begründen",
+    "lemma": "begründen",
+    "level": "A2",
+    "type": "Verb · untrennbar",
+    "ipa": "[bəˈɡʁʏndn̩]",
+    "meaning": "to justify, to give reasons for, to substantiate",
+    "gloss": "to justify, explain reason",
+    "sep": false,
+    "pre": "be-",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "begründet",
+    "partizip2": "begründet",
+    "perfekt": "hat begründet",
+    "praeteritum": "begründete",
+    "praesens": "begründet",
+    "reflexiv": false,
+    "praes": [
+      "begründe",
+      "begründest",
+      "begründet",
+      "begründen",
+      "begründet",
+      "begründen"
+    ],
+    "prat": [
+      "begründete",
+      "begründetest",
+      "begründete",
+      "begründeten",
+      "begründetet",
+      "begründeten"
+    ],
+    "imp": [
+      "Begründe!",
+      "Begründet!",
+      "Begründen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "In der B1-Prüfung muss man seine persönliche Meinung immer logisch begründen.",
+        "In the B1 exam, one must always substantiate one's personal opinion logically."
+      ],
+      "prat": [
+        "Sie begründete ihren Vorschlag mit stichhaltigen Argumenten.",
+        "She justified her proposal with sound arguments."
+      ],
+      "perf": [
+        "Haben Sie Ihren Prüfungsantrag schriftlich begründet?",
+        "Did you justify your exam application in writing?"
+      ]
+    },
+    "ex": [
+      "Bitte begründen Sie kurz, warum Sie sich für diesen Beruf entschieden haben.",
+      "Please give reasons briefly why you decided on this profession."
+    ],
+    "val": [
+      [
+        "seine Meinung mit + Dat begründen",
+        "Womit?",
+        "Er begründet seine Ansicht mit Beispielen."
+      ]
+    ],
+    "family": [
+      "der Grund",
+      "die Begründung",
+      "gründen"
+    ],
+    "tip": "SCHLÜSSELKOMPETENZ FÜR B1 SPRECHEN & SCHREIBEN: Immer eine Meinung mit 'weil / da / denn' begründen!",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-435"
+    ]
+  },
+  {
+    "id": "a2-d05-032",
+    "pos": "noun",
+    "word": "Gebärdendolmetscher",
+    "lemma": "Gebärdendolmetscher",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin / Inklusion",
+    "ipa": "[ɡəˈbɛːʁdn̩ˌdɔlmɛtʃɐ]",
+    "meaning": "sign language interpreter",
+    "gloss": "sign language interpreter",
+    "pl": "die Gebärdendolmetscher",
+    "genS": "des Gebärdendolmetschers",
+    "suf": "-er",
+    "rule": "Personenbezeichnungen auf -er sind immer maskulin: der Dolmetscher.",
+    "nvv": [
+      [
+        "einen Gebärdendolmetscher engagieren",
+        "to hire a sign language interpreter"
+      ]
+    ],
+    "compounds": [
+      "die Gebärdensprache (DGS)",
+      "die Gebärdendolmetscherin"
+    ],
+    "family": [
+      "die Gebärde",
+      "dolmetschen",
+      "die Sprache"
+    ],
+    "ex": [
+      "Der Gebärdendolmetscher übersetzte die Vorlesung simultan für die gehörlosen Studierenden.",
+      "The sign language interpreter translated the lecture simultaneously for the deaf students."
+    ],
+    "tip": "Feminin: die Gebärdendolmetscherin. Deutsche Gebärdensprache wird offiziell mit DGS abgekürzt.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-437"
+    ]
+  },
+  {
+    "id": "a2-d05-033",
+    "pos": "verb",
+    "word": "begleiten",
+    "lemma": "begleiten",
+    "level": "A2",
+    "type": "Verb · untrennbar",
+    "ipa": "[bəˈɡlaɪ̯tn̩]",
+    "meaning": "to accompany, to escort, to guide",
+    "gloss": "to accompany",
+    "sep": false,
+    "pre": "be-",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "begleitet",
+    "partizip2": "begleitet",
+    "perfekt": "hat begleitet",
+    "praeteritum": "begleitete",
+    "praesens": "begleitet",
+    "reflexiv": false,
+    "praes": [
+      "begleite",
+      "begleitest",
+      "begleitet",
+      "begleiten",
+      "begleitet",
+      "begleiten"
+    ],
+    "prat": [
+      "begleitete",
+      "begleitetest",
+      "begleitete",
+      "begleiteten",
+      "begleitetet",
+      "begleiteten"
+    ],
+    "imp": [
+      "Begleite!",
+      "Begleitet!",
+      "Begleiten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Dolmetscher begleitet den gehörlosen Klienten zum Standesamt.",
+        "The interpreter accompanies the deaf client to the registry office."
+      ],
+      "prat": [
+        "Sie begleitete ihre Freundin zur mündlichen Prüfung.",
+        "She accompanied her friend to the oral exam."
+      ],
+      "perf": [
+        "Darf ich Sie ein Stück auf Ihrem Heimweg begleiten?",
+        "May I accompany you a little way on your walk home?"
+      ]
+    },
+    "ex": [
+      "Ich begleite dich gerne zum Amt, wenn du Hilfe bei den deutschen Formularen brauchst.",
+      "I will gladly accompany you to the office if you need help with the German forms."
+    ],
+    "val": [
+      [
+        "jemanden (Akk) begleiten",
+        "Wen begleiten?",
+        "Er begleitet seinen Freund."
+      ]
+    ],
+    "family": [
+      "die Begleitung",
+      "der Begleiter",
+      "das Geleit"
+    ],
+    "tip": "Akkusativobjekt: 'jemanden begleiten'. Untrennbar: kein 'ge-' im Partizip II (hat begleitet).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-439"
+    ]
+  },
+  {
+    "id": "a2-d05-034",
+    "pos": "adj",
+    "word": "gehörlos",
+    "lemma": "gehörlos",
+    "level": "A2",
+    "type": "Adjektiv / Barrierefreiheit",
+    "ipa": "[ɡəˈhøːɐ̯ˌloːs]",
+    "meaning": "deaf, profoundly deaf",
+    "gloss": "deaf",
+    "comp": [
+      [
+        "Positiv",
+        "gehörlos"
+      ],
+      [
+        "Komparativ",
+        "—"
+      ],
+      [
+        "Superlativ",
+        "—"
+      ]
+    ],
+    "opp": "hörend",
+    "family": [
+      "das Gehör",
+      "hören",
+      "Gehörlose"
+    ],
+    "ex": [
+      "Gehörlose Menschen kommunizieren über die visuelle Gebärdensprache.",
+      "Deaf people communicate via visual sign language."
+    ],
+    "tip": "Höflichere und präzisere Bezeichnung im Deutschen als das veraltete 'taub'. Substantiviert: 'der/die Gehörlose'.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-440"
+    ]
+  },
+  {
+    "id": "a2-d05-035",
+    "pos": "noun",
+    "word": "Untersuchung",
+    "lemma": "Untersuchung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈʊntɐˌzuːxʊŋ]",
+    "meaning": "examination, check-up, medical investigation, inquiry",
+    "gloss": "examination, investigation",
+    "pl": "die Untersuchungen",
+    "genS": "der Untersuchung",
+    "suf": "-ung",
+    "rule": "Endung -ung = IMMER feminin: die Untersuchung.",
+    "nvv": [
+      [
+        "eine Untersuchung durchführen / machen",
+        "to carry out an examination"
+      ]
+    ],
+    "compounds": [
+      "die Voruntersuchung",
+      "die Reihenuntersuchung",
+      "das Untersuchungszimmer"
+    ],
+    "family": [
+      "untersuchen",
+      "der Prüfer"
+    ],
+    "ex": [
+      "Vor der Immatrikulation verlangt die Universität eine kurze ärztliche Untersuchung.",
+      "Before enrollment, the university requires a short medical examination."
+    ],
+    "tip": "Feminin: die Untersuchung. Verb: 'untersuchen' (untrennbar: hat untersucht).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-441"
+    ]
+  },
+  {
+    "id": "a2-d05-036",
+    "pos": "verb",
+    "word": "dolmetschen",
+    "lemma": "dolmetschen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈdɔlmɛtʃn̩]",
+    "meaning": "to interpret (spoken or signed language)",
+    "gloss": "to interpret (spoken)",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gedolmetscht",
+    "partizip2": "gedolmetscht",
+    "perfekt": "hat gedolmetscht",
+    "praeteritum": "dolmetschte",
+    "praesens": "dolmetscht",
+    "reflexiv": false,
+    "praes": [
+      "dolmetsche",
+      "dolmetschst",
+      "dolmetscht",
+      "dolmetschen",
+      "dolmetscht",
+      "dolmetschen"
+    ],
+    "prat": [
+      "dolmetschte",
+      "dolmetschtest",
+      "dolmetschte",
+      "dolmetschten",
+      "dolmetschtet",
+      "dolmetschten"
+    ],
+    "imp": [
+      "Dolmetsche!",
+      "Dolmetscht!",
+      "Dolmetschen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Sie dolmetscht simultan aus dem Englischen ins Deutsche.",
+        "She interprets simultaneously from English into German."
+      ],
+      "prat": [
+        "Der Übersetzer dolmetschte bei der Verhandlung vor Gericht.",
+        "The interpreter interpreted at the trial in court."
+      ],
+      "perf": [
+        "Wer hat während der Konferenz für Sie gedolmetscht?",
+        "Who interpreted for you during the conference?"
+      ]
+    },
+    "ex": [
+      "Er dolmetscht ehrenamtlich für Geflüchtete bei Behördenterminen.",
+      "He interprets voluntarily for refugees during administrative appointments."
+    ],
+    "val": [
+      [
+        "aus + Dat in + Akk dolmetschen",
+        "Sprachen?",
+        "Sie dolmetscht aus dem Arabischen ins Deutsche."
+      ]
+    ],
+    "family": [
+      "der Dolmetscher",
+      "die Dolmetscherin",
+      "das Dolmetschen"
+    ],
+    "tip": "Wichtiger Fachunterschied: 'dolmetschen' = mündlich / gesprochen; 'übersetzen' = schriftlich (Texte).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-442"
+    ]
+  },
+  {
+    "id": "a2-d05-037",
+    "pos": "noun",
+    "word": "Standesamt",
+    "lemma": "Standesamt",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum / Behörde",
+    "ipa": "[ˈʃtandəsˌʔamt]",
+    "meaning": "civil registry office (births, marriages, deaths)",
+    "gloss": "civil registry office",
+    "pl": "die Standesämter",
+    "genS": "des Standesamtes",
+    "suf": "",
+    "rule": "Kompositum mit 'das Amt': Behörden sind fast immer Neutrum (das Standesamt, das Bürgeramt, das Prüfungsamt).",
+    "nvv": [
+      [
+        "auf dem Standesamt heiraten",
+        "to get married at the registry office"
+      ]
+    ],
+    "compounds": [
+      "der Standesbeamte",
+      "die Heiratsurkunde",
+      "die Geburtsurkunde"
+    ],
+    "family": [
+      "der Stand",
+      "das Amt",
+      "amtlich"
+    ],
+    "ex": [
+      "In Deutschland ist eine Eheschließung nur rechtsgültig, wenn sie auf dem Standesamt erfolgt.",
+      "In Germany, a marriage is only legally valid if it takes place at the civil registry office."
+    ],
+    "tip": "Neutrum: das Standesamt. Wichtige Behörde für Urkunden und standesamtliche Trauungen.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-443"
+    ]
+  },
+  {
+    "id": "a2-d05-038",
+    "pos": "adj",
+    "word": "abwechslungsreich",
+    "lemma": "abwechslungsreich",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈapvɛkslʊŋsˌʁaɪ̯ç]",
+    "meaning": "varied, diverse, full of variety",
+    "gloss": "varied, diverse",
+    "comp": [
+      [
+        "Positiv",
+        "abwechslungsreich"
+      ],
+      [
+        "Komparativ",
+        "abwechslungsreicher"
+      ],
+      [
+        "Superlativ",
+        "am abwechslungsreichsten"
+      ]
+    ],
+    "opp": "monoton, eintönig, langweilig",
+    "family": [
+      "die Abwechslung",
+      "wechseln",
+      "reich"
+    ],
+    "ex": [
+      "Mein neuer Job in der Forschung ist unheimlich spannend und abwechslungsreich.",
+      "My new job in research is incredibly exciting and full of variety."
+    ],
+    "tip": "Perfektes Wort für Bewerbungsschreiben: 'eine abwechslungsreiche Tätigkeit' (= a varied role). Gegenteil: 'eintönig' (monotonous).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-444"
+    ]
+  },
+  {
+    "id": "a2-d05-039",
+    "pos": "noun",
+    "word": "Auftrag",
+    "lemma": "Auftrag",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈaʊ̯fˌtʁaːk]",
+    "meaning": "order, assignment, mandate, commission",
+    "gloss": "assignment, order",
+    "pl": "die Aufträge",
+    "genS": "des Auftrags / Auftrages",
+    "suf": "",
+    "rule": "Stamm vom Verb 'auftragen': Maskulin mit Umlaut-Plural: der Auftrag → die Aufträge.",
+    "nvv": [
+      [
+        "einen Auftrag erhalten / erteilen",
+        "to receive / issue an order"
+      ],
+      [
+        "im Auftrag von (Dat)",
+        "on behalf of"
+      ]
+    ],
+    "compounds": [
+      "der Großauftrag",
+      "der Arbeitsauftrag",
+      "die Auftragslage"
+    ],
+    "family": [
+      "beauftragen",
+      "der Träger"
+    ],
+    "ex": [
+      "Der selbstständige Dolmetscher hat viele neue Aufträge von Behörden erhalten.",
+      "The freelance interpreter received many new assignments from public authorities."
+    ],
+    "tip": "Maskulin: der Auftrag, Plural: die Aufträge. Feste Abkürzung in E-Mails: 'i. A.' = im Auftrag (on behalf of).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-445"
+    ]
+  },
+  {
+    "id": "a2-d05-040",
+    "pos": "noun",
+    "word": "Logopädin",
+    "lemma": "Logopädin",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin / Beruf",
+    "ipa": "[loɡoˈpɛːdɪn]",
+    "meaning": "speech therapist (female), speech-language pathologist",
+    "gloss": "speech therapist",
+    "pl": "die Logopädinnen",
+    "genS": "der Logopädin",
+    "suf": "-in",
+    "rule": "Weibliche Berufsbezeichnungen auf -in sind immer feminin (die Logopädin, die Ärztin).",
+    "nvv": [
+      [
+        "eine Ausbildung zur Logopädin machen",
+        "to train as a speech therapist"
+      ]
+    ],
+    "compounds": [
+      "die Logopädiepraxis",
+      "die Sprachtherapie"
+    ],
+    "family": [
+      "die Logopädie",
+      "der Logopäde",
+      "sprachtherapeutisch"
+    ],
+    "ex": [
+      "Als Logopädin hilft sie Kindern und Erwachsenen bei Sprach- und Sprechstörungen.",
+      "As a speech therapist, she helps children and adults with language and speech disorders."
+    ],
+    "tip": "Maskulin: der Logopäde (schwaches Nomen: des Logopäden). Medizintechnischer Heilberuf.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-446"
+    ]
+  },
+  {
+    "id": "a2-d05-041",
+    "pos": "noun",
+    "word": "Drehbuch",
+    "lemma": "Drehbuch",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈdʁeːˌbuːx]",
+    "meaning": "screenplay, script",
+    "gloss": "screenplay, script",
+    "pl": "die Drehbücher",
+    "genS": "des Drehbuchs",
+    "suf": "",
+    "rule": "Kompositum mit 'das Buch': Neutrum mit Umlaut-Plural: das Drehbuch → die Drehbücher.",
+    "nvv": [
+      [
+        "ein Drehbuch schreiben / verfassen",
+        "to write a screenplay"
+      ]
+    ],
+    "compounds": [
+      "der Drehbuchautor",
+      "die Dreharbeiten",
+      "die Regie"
+    ],
+    "family": [
+      "drehen",
+      "das Buch"
+    ],
+    "ex": [
+      "Für ihren neuen Kurzfilm hat die Studentin das Drehbuch selbst verfasst.",
+      "For her new short film, the student wrote the screenplay herself."
+    ],
+    "tip": "Kompositum aus 'drehen' (einen Film drehen = shoot a movie) + 'Buch'. Neutrum: das Drehbuch.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-448"
+    ]
+  },
+  {
+    "id": "a2-d05-042",
+    "pos": "noun",
+    "word": "Zeitangabe",
+    "lemma": "Zeitangabe",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin / Grammatik",
+    "ipa": "[ˈtsaɪ̯tˌʔanˌɡaːbə]",
+    "meaning": "time specification, time indication",
+    "gloss": "time indication",
+    "pl": "die Zeitangaben",
+    "genS": "der Zeitangabe",
+    "suf": "-e",
+    "rule": "Zusammensetzung mit 'die Angabe': immer feminin (die Zeitangabe, die Ortsangabe).",
+    "nvv": [
+      [
+        "eine genaue Zeitangabe machen",
+        "to state an exact time"
+      ]
+    ],
+    "compounds": [
+      "die Temporalbestimmung",
+      "die Uhrzeit"
+    ],
+    "family": [
+      "die Zeit",
+      "angeben",
+      "die Angabe"
+    ],
+    "ex": [
+      "Im deutschen Hauptsatz steht die Zeitangabe (Temporal) meist vor der Ortsangabe (Lokal: TeKaMoLo).",
+      "In the German main clause, the time indication (Temporal) usually precedes the place indication (Local: TeKaMoLo)."
+    ],
+    "tip": "Wichtige Satzbauregel im Deutschen: Te-Ka-Mo-Lo (Temporal vor Kausal vor Modal vor Lokal).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-449"
+    ]
+  },
+  {
+    "id": "a2-d05-043",
+    "pos": "noun",
+    "word": "Leiterin",
+    "lemma": "Leiterin",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈlaɪ̯təʁɪn]",
+    "meaning": "director, manager, head (female)",
+    "gloss": "director, manager (fem)",
+    "pl": "die Leiterinnen",
+    "genS": "der Leiterin",
+    "suf": "-in",
+    "rule": "Weibliche Berufs- und Funktionsbezeichnungen auf -in sind immer feminin (die Leiterin, die Chefin).",
+    "nvv": [
+      [
+        "die Leitung übernehmen",
+        "to take charge / lead"
+      ]
+    ],
+    "compounds": [
+      "die Kursleiterin",
+      "die Schulleiterin",
+      "die Abteilungsleiterin"
+    ],
+    "family": [
+      "leiten",
+      "die Leitung",
+      "der Leiter"
+    ],
+    "ex": [
+      "Die Leiterin des Sprachinstituts begrüßte die neuen Prüflinge persönlich.",
+      "The director of the language institute welcomed the new examinees personally."
+    ],
+    "tip": "Achtung Homonym: 1) 'die Leiterin' = female manager; 2) 'die Leiter' (ohne -in) = ladder (Haushaltsgerät zum Klettern).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-450"
+    ]
+  },
+  {
+    "id": "a2-d05-044",
+    "pos": "noun",
+    "word": "Viertel",
+    "lemma": "Viertel",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈfɪʁtl̩]",
+    "meaning": "quarter (one fourth); neighborhood, district",
+    "gloss": "quarter, district",
+    "pl": "die Viertel",
+    "genS": "des Viertels",
+    "suf": "-el",
+    "rule": "Bruchzahlen & Verkleinerungsformen auf -el sind Neutrum: das Viertel, das Drittel.",
+    "nvv": [
+      [
+        "in einem lebendigen Viertel wohnen",
+        "to live in a lively quarter"
+      ]
+    ],
+    "compounds": [
+      "das Stadtviertel",
+      "die Viertelstunde",
+      "das Univiertel"
+    ],
+    "family": [
+      "vier",
+      "vierteln"
+    ],
+    "ex": [
+      "Das Sprachzentrum liegt direkt im studentischen Viertel der Stadt.",
+      "The language center is located directly in the student quarter of the city."
+    ],
+    "tip": "Zwei Verwendungen: 1) Uhrzeit: 'Viertel vor acht' (quarter to eight); 2) Stadtteil: 'das Viertel' (neighborhood). Neutrum: das Viertel.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-451"
+    ]
+  },
+  {
+    "id": "a2-d05-045",
+    "pos": "verb",
+    "word": "leiten",
+    "lemma": "leiten (Partizip II: geleitet)",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈlaɪ̯tn̩]",
+    "meaning": "to lead, to head, to conduct, to manage",
+    "gloss": "to lead, manage",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geleitet",
+    "partizip2": "geleitet",
+    "perfekt": "hat geleitet",
+    "praeteritum": "leitete",
+    "praesens": "leitet",
+    "reflexiv": false,
+    "praes": [
+      "leite",
+      "leitest",
+      "leitet",
+      "leiten",
+      "leitet",
+      "leiten"
+    ],
+    "prat": [
+      "leitete",
+      "leitetest",
+      "leitete",
+      "leiteten",
+      "leitetet",
+      "leiteten"
+    ],
+    "imp": [
+      "Leite!",
+      "Leitet!",
+      "Leiten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Professor Schmidt leitet das Forschungslabor an der Universität.",
+        "Professor Schmidt leads the research laboratory at the university."
+      ],
+      "prat": [
+        "Sie leitete die Diskussion während des Seminars sehr souverän.",
+        "She led the discussion during the seminar very confidently."
+      ],
+      "perf": [
+        "Wer hat das internationale Forschungsprojekt bisher geleitet?",
+        "Who has managed the international research project so far?"
+      ]
+    },
+    "ex": [
+      "Er leitet einen Prüfungsvorbereitungskurs für das Goethe B1-Zertifikat.",
+      "He leads an exam preparation course for the Goethe B1 certificate."
+    ],
+    "val": [
+      [
+        "ein Team / eine Abteilung leiten",
+        "Was leiten?",
+        "Sie leitet das Institut."
+      ]
+    ],
+    "family": [
+      "die Leitung",
+      "der Leiter",
+      "anleiten",
+      "weiterleiten"
+    ],
+    "tip": "Regelmäßiges Verb. Wegen des Stammes auf -t wird ein 'e' eingeschoben: du leitest, er leitet, leitete, hat geleitet.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-452"
+    ]
+  },
+  {
+    "id": "a2-d05-046",
+    "pos": "verb",
+    "word": "fassen",
+    "lemma": "zusammenfassen (fassen)",
+    "level": "A2",
+    "type": "Verb · trennbar",
+    "ipa": "[tsuˈzamənˌfasn̩]",
+    "meaning": "to summarize, to wrap up (also fassen: to grasp, hold)",
+    "gloss": "to summarize, grasp",
+    "sep": true,
+    "pre": "zusammen",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "zusammengefasst",
+    "partizip2": "zusammengefasst",
+    "perfekt": "hat zusammengefasst",
+    "praeteritum": "fasste zusammen",
+    "praesens": "fasst zusammen",
+    "reflexiv": "sich kurz fassen",
+    "praes": [
+      "fasse zusammen",
+      "fasst zusammen",
+      "fasst zusammen",
+      "fassen zusammen",
+      "fasst zusammen",
+      "fassen zusammen"
+    ],
+    "prat": [
+      "fasste zusammen",
+      "fasstest zusammen",
+      "fasste zusammen",
+      "fassten zusammen",
+      "fasstet zusammen",
+      "fassten zusammen"
+    ],
+    "imp": [
+      "Fass zusammen!",
+      "Fasst zusammen!",
+      "Fassen Sie zusammen!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Dozent fasst die wichtigsten Punkte des Vortrags kurz zusammen.",
+        "The lecturer briefly summarizes the most important points of the presentation."
+      ],
+      "prat": [
+        "Sie fasste die Ergebnisse des Experiments übersichtlich zusammen.",
+        "She summarized the results of the experiment clearly."
+      ],
+      "perf": [
+        "Haben Sie den Text in eigenen Worten zusammengefasst?",
+        "Did you summarize the text in your own words?"
+      ]
+    },
+    "ex": [
+      "Bitte fassen Sie Ihre Präsentation in drei Kernaussagen zusammen.",
+      "Please summarize your presentation in three core statements."
+    ],
+    "val": [
+      [
+        "einen Text (Akk) zusammenfassen",
+        "Was zusammenfassen?",
+        "Er fasst die Kernaussage zusammen."
+      ]
+    ],
+    "family": [
+      "die Zusammenfassung",
+      "fassen",
+      "der Beschluss"
+    ],
+    "tip": "Prüfungsauftrag B1: 'Fassen Sie die Hauptaussagen des Textes zusammen.' Nomen: die Zusammenfassung.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-453"
+    ]
+  },
+  {
+    "id": "a2-d05-047",
+    "pos": "noun",
+    "word": "Zuhörer",
+    "lemma": "Zuhörer",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈtsuːˌhøːʁɐ]",
+    "meaning": "listener, audience member",
+    "gloss": "listener, audience",
+    "pl": "die Zuhörer",
+    "genS": "des Zuhörers",
+    "suf": "-er",
+    "rule": "Personenbezeichnungen auf -er sind immer maskulin: der Zuhörer, der Hörer.",
+    "nvv": [
+      [
+        "die Zuhörer fesseln / begeistern",
+        "to captivate / inspire the listeners"
+      ]
+    ],
+    "compounds": [
+      "das Zuhörerschaft",
+      "die Zuhörerin",
+      "der Hörersaal"
+    ],
+    "family": [
+      "zuhören",
+      "hören",
+      "das Gehör"
+    ],
+    "ex": [
+      "Bei einer Präsentation sollte man immer Blickkontakt zu den Zuhörern halten.",
+      "During a presentation, one should always maintain eye contact with the listeners."
+    ],
+    "tip": "Feminin: die Zuhörerin. Gehört zum trennbaren Verb 'zuhören + Dativ': 'Hör mir bitte genau zu!'",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-455"
+    ]
+  },
+  {
+    "id": "a2-d05-048",
+    "pos": "phrase",
+    "word": "Inhalt wählen",
+    "lemma": "Inhalt wählen",
+    "level": "A2",
+    "type": "Kollokation · Präsentationskompetenz",
+    "ipa": "[ˈɪnhalt ˈvɛːlən]",
+    "meaning": "to choose the content (for presentation / exam topic)",
+    "gloss": "to choose content",
+    "frame": "den passenden Inhalt wählen für ...",
+    "reg": [
+      [
+        "Präsentation",
+        "Wählen Sie einen Inhalt, der Sie persönlich interessiert.",
+        "Choose content that interests you personally."
+      ],
+      [
+        "Prüfung",
+        "Man sollte den Inhalt dem Sprachniveau anpassen.",
+        "One should adapt the content to one's language level."
+      ]
+    ],
+    "tenses": [
+      [
+        "Präsens",
+        "Er wählt den Inhalt."
+      ],
+      [
+        "Perfekt",
+        "Er hat den Inhalt gewählt."
+      ]
+    ],
+    "dlg": [
+      [
+        "A",
+        "Über welches Thema hältst du deine B1-Präsentation?"
+      ],
+      [
+        "B",
+        "Ich habe als Inhalt 'Erneuerbare Energien in Deutschland' gewählt."
+      ]
+    ],
+    "family": [
+      "der Inhalt",
+      "wählen",
+      "das Inhaltsverzeichnis"
+    ],
+    "tip": "Nomen: 'der Inhalt' (Maskulin, Plural: die Inhalte). Kollokation in Prüfungsvorgaben: 'Wählen Sie ein Thema'.",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      7
+    ],
+    "sourceRawIds": [
+      "RAW-456"
+    ]
+  },
+  {
+    "id": "a2-d05-049",
+    "pos": "adj",
+    "word": "drüben",
+    "lemma": "drüben",
+    "level": "A2",
+    "type": "Lokaladverb",
+    "ipa": "[ˈdʁyːbn̩]",
+    "meaning": "over there, on the other side",
+    "gloss": "over there",
+    "comp": [
+      [
+        "Positiv",
+        "drüben"
+      ],
+      [
+        "Komparativ",
+        "—"
+      ],
+      [
+        "Superlativ",
+        "—"
+      ]
+    ],
+    "opp": "hier, da",
+    "family": [
+      "da drüben",
+      "nach drüben",
+      "von drüben"
+    ],
+    "ex": [
+      "Das Prüfungsbüro befindet sich drüben im Nachbargebäude auf der linken Seite.",
+      "The examination office is located over there in the neighboring building on the left."
+    ],
+    "tip": "Häufigste Alltagsverbindung: 'da drüben' (= right over there).",
+    "deckId": "a2-deck-05",
+    "deckTitle": "Bildung, Sprache & Prüfungen",
+    "sourceLessons": [
+      10
+    ],
+    "sourceRawIds": [
+      "RAW-609"
+    ]
+  }
+]

@@ -1,0 +1,3455 @@
+# -*- coding: utf-8 -*-
+"""
+Builder for Deck 09: Freizeit, Sport, Natur & Geografie
+Covers exactly all 98 items assigned to a2-deck-09 in a2_master_ledger.json
+"""
+import json
+import os
+
+cards = []
+
+def add_c(card):
+    idx = len(cards) + 1
+    card["id"] = f"a2-d09-{idx:03d}"
+    card["deckId"] = "a2-deck-09"
+    card["deckTitle"] = "Freizeit, Sport, Natur & Geografie"
+    cards.append(card)
+
+# 1. RAW-019, RAW-610: sich aufregen
+add_c({
+    "pos": "verb",
+    "word": "sich aufregen",
+    "lemma": "aufregen",
+    "level": "A2",
+    "type": "Verb · trennbar / reflexiv",
+    "ipa": "[ˈaʊ̯fˌʁeːɡŋ̩]",
+    "meaning": "to get upset, agitated, worked up (about)",
+    "gloss": "to get upset / worked up",
+    "sep": True,
+    "pre": "auf",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "aufgeregt",
+    "partizip2": "aufgeregt",
+    "perfekt": "hat sich aufgeregt",
+    "praeteritum": "regte sich auf",
+    "praesens": "regt sich auf",
+    "reflexiv": True,
+    "praes": ["rege mich auf", "regst dich auf", "regt sich auf", "regen uns auf", "regt euch auf", "regen sich auf"],
+    "prat": ["regte mich auf", "regtest dich auf", "regte sich auf", "regten uns auf", "regtet euch auf", "regten sich auf"],
+    "imp": ["Reg dich nicht auf!", "Regt euch nicht auf!", "Regen Sie sich nicht auf!"],
+    "exT": {
+        "praes": [
+            "Mein Vater regt sich oft über schlechtes Wetter im Urlaub auf.",
+            "My father often gets upset about bad weather on vacation."
+        ],
+        "prat": [
+            "Sie regte sich damals furchtbar über den verlorenen Schlüssel auf.",
+            "Back then she got terribly worked up about the lost key."
+        ],
+        "perf": [
+            "Warum hast du dich gestern so über das Spiel aufgeregt?",
+            "Why did you get so upset about the match yesterday?"
+        ]
+    },
+    "ex": [
+        "Reg dich bitte nicht auf, wir finden den Weg schon wieder!",
+        "Please don't get upset, we will definitely find our way back!"
+    ],
+    "val": [
+        ["sich (Akk) aufregen über + Akk", "Worüber?", "Er regt sich über Kleinigkeiten auf."]
+    ],
+    "family": ["aufregend", "die Aufregung", "regen"],
+    "tip": "Feste Präposition: 'sich aufregen ÜBER + Akkusativ'. Beruhigungsphrase im Alltag: 'Reg dich nicht auf!' (Don't get upset!).",
+    "sourceLessons": [1, 10],
+    "sourceRawIds": ["RAW-019", "RAW-610"]
+})
+
+# 2. RAW-174: aufregend
+add_c({
+    "pos": "adj",
+    "word": "aufregend",
+    "lemma": "aufregend",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈaʊ̯fˌʁeːɡn̩t]",
+    "meaning": "exciting, thrilling",
+    "gloss": "exciting, thrilling",
+    "comp": [["Positiv", "aufregend"], ["Komparativ", "aufregender"], ["Superlativ", "am aufregendsten"]],
+    "opp": "langweilig, beruhigend",
+    "ex": [
+        "Der Fallschirmsprung am Wochenende war wirklich wahnsinnig aufregend!",
+        "The parachute jump at the weekend was really insanely exciting!"
+    ],
+    "family": ["sich aufregen", "die Aufregung"],
+    "tip": "Unterschied: 'aufregend' = exciting/thrilling (die Aktivität ist aufregend). 'aufgeregt' = nervous/excited (die Person ist aufgeregt).",
+    "sourceLessons": [4],
+    "sourceRawIds": ["RAW-174"]
+})
+
+# 3. RAW-160: die Medaille
+add_c({
+    "pos": "noun",
+    "word": "Medaille",
+    "lemma": "Medaille",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[meˈdaljə]",
+    "meaning": "medal",
+    "gloss": "medal",
+    "pl": "die Medaillen",
+    "genS": "der Medaille",
+    "rule": "Lehnwort aus dem Französischen auf -ille: Femininum (die Medaille).",
+    "nvv": [
+        ["eine Medaille gewinnen / holen", "to win / take home a medal"]
+    ],
+    "compounds": ["die Goldmedaille", "die Silbermedaille", "die Bronzemedaille"],
+    "family": ["der Medaillenspiegel"],
+    "ex": [
+        "Die junge Schwimmerin gewann bei den Meisterschaften eine goldene Medaille.",
+        "The young swimmer won a gold medal at the championships."
+    ],
+    "tip": "Aussprache französisch: [me-DAL-je]. Bei Sportwettbewerben: Goldmedaille (1. Platz), Silbermedaille (2. Platz), Bronzemedaille (3. Platz).",
+    "sourceLessons": [4],
+    "sourceRawIds": ["RAW-160"]
+})
+
+# 4. RAW-250: sehenswert
+add_c({
+    "pos": "adj",
+    "word": "sehenswert",
+    "lemma": "sehenswert",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈzeːənsˌveːɐ̯t]",
+    "meaning": "worth seeing, remarkable",
+    "gloss": "worth seeing",
+    "comp": [["Positiv", "sehenswert"], ["Komparativ", "sehenswerter"], ["Superlativ", "am sehenswertesten"]],
+    "opp": "uninteressant, belanglos",
+    "ex": [
+        "Die historische Altstadt und das Schloss sind besonders sehenswert.",
+        "The historic old town and the castle are especially worth seeing."
+    ],
+    "family": ["die Sehenswürdigkeit", "sehen", "der Wert"],
+    "tip": "Typisches Reiseführer-Wort. Davon abgeleitet: 'die Sehenswürdigkeit' (tourist sight, landmark).",
+    "sourceLessons": [5],
+    "sourceRawIds": ["RAW-250"]
+})
+
+# 5. RAW-308: existieren
+add_c({
+    "pos": "verb",
+    "word": "existieren",
+    "lemma": "existieren",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ɛksɪsˈtiːʁən]",
+    "meaning": "to exist",
+    "gloss": "to exist",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "existiert",
+    "partizip2": "existiert",
+    "perfekt": "hat existiert",
+    "praeteritum": "existierte",
+    "praesens": "existiert",
+    "reflexiv": False,
+    "praes": ["existiere", "existierst", "existiert", "existieren", "existiert", "existieren"],
+    "prat": ["existierte", "existiertest", "existierte", "existierten", "existiertet", "existierten"],
+    "imp": ["Existiere!", "Existiert!", "Existieren Sie!"],
+    "exT": {
+        "praes": [
+            "In vielen Großstädten existieren wunderbare Sportvereine für Kinder.",
+            "In many big cities wonderful sports clubs exist for children."
+        ],
+        "prat": [
+            "Früher existierte an dieser Stelle ein dichter Kiefernwald.",
+            "In earlier times a dense pine forest existed at this spot."
+        ],
+        "perf": [
+            "Dieses Tier hat schon vor Millionen Jahren auf der Erde existiert.",
+            "This animal existed on Earth millions of years ago."
+        ]
+    },
+    "ex": [
+        "Glaubst du, dass Leben auf anderen Planeten existiert?",
+        "Do you believe that life exists on other planets?"
+    ],
+    "val": [
+        ["existieren", "Wer / Was?", "Das Problem existiert nicht mehr."]
+    ],
+    "family": ["die Existenz", "existenzgefährdend"],
+    "tip": "Verben auf -ieren bilden das Partizip II ohne 'ge-': existieren -> existiert (nicht *geexistiert). Hilfsverb: haben.",
+    "sourceLessons": [5],
+    "sourceRawIds": ["RAW-308"]
+})
+
+# 6. RAW-392: durchsichtig
+add_c({
+    "pos": "adj",
+    "word": "durchsichtig",
+    "lemma": "durchsichtig",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈdʊʁçˌzɪçtɪç]",
+    "meaning": "transparent, see-through, clear",
+    "gloss": "transparent, see-through",
+    "comp": [["Positiv", "durchsichtig"], ["Komparativ", "durchsichtiger"], ["Superlativ", "am durchsichtigsten"]],
+    "opp": "undurchsichtig, blickdicht",
+    "ex": [
+        "Für Geocaching verwendet man am besten eine durchsichtige Dose aus Plastik.",
+        "For geocaching it is best to use a transparent plastic box."
+    ],
+    "family": ["die Durchsicht", "durchsehen", "die Sicht"],
+    "tip": "Wörtlich: 'durch-sichtig' (man kann durchblicken). Endung -ig wird im Standarddeutschen wie [-ɪç] ausgesprochen.",
+    "sourceLessons": [6],
+    "sourceRawIds": ["RAW-392"]
+})
+
+# 7. RAW-395: die Wollmütze
+add_c({
+    "pos": "noun",
+    "word": "Wollmütze",
+    "lemma": "Wollmütze",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈvɔlˌmʏtsə]",
+    "meaning": "wool beanie, knitted wool hat",
+    "gloss": "wool hat / beanie",
+    "pl": "die Wollmützen",
+    "genS": "der Wollmütze",
+    "rule": "Endung auf -e (die Mütze): typisch feminin.",
+    "nvv": [
+        ["eine Wollmütze aufsetzen / abnehmen", "to put on / take off a wool hat"]
+    ],
+    "compounds": ["die Wintermütze", "die Strickmütze"],
+    "family": ["die Wolle", "die Mütze", "wollen"],
+    "ex": [
+        "Beim Wandern im kalten Herbstwind setze ich immer eine warme Wollmütze auf.",
+        "When hiking in the cold autumn wind I always put on a warm wool hat."
+    ],
+    "tip": "Kompositum: die Wolle (wool) + die Mütze (beanie/cap) = die Wollmütze.",
+    "sourceLessons": [6],
+    "sourceRawIds": ["RAW-395"]
+})
+
+# 8. RAW-429: gewinnen
+add_c({
+    "pos": "verb",
+    "word": "gewinnen",
+    "lemma": "gewinnen",
+    "level": "A2",
+    "type": "Verb · untrennbar / unregelmäßig",
+    "ipa": "[ɡəˈvɪnən]",
+    "meaning": "to win, gain",
+    "gloss": "to win",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gewonnen",
+    "partizip2": "gewonnen",
+    "perfekt": "hat gewonnen",
+    "praeteritum": "gewann",
+    "praesens": "gewinnt",
+    "reflexiv": False,
+    "praes": ["gewinne", "gewinnst", "gewinnt", "gewinnen", "gewinnt", "gewinnen"],
+    "prat": ["gewann", "gewannst", "gewann", "gewannen", "gewannt", "gewannen"],
+    "imp": ["Gewinn!", "Gewinnt!", "Gewinnen Sie!"],
+    "exT": {
+        "praes": [
+            "Unsere Mannschaft gewinnt fast jedes Heimspiel im Stadion.",
+            "Our team wins almost every home match in the stadium."
+        ],
+        "prat": [
+            "Er gewann im letzten Jahr den ersten Preis beim Fotowettbewerb.",
+            "Last year he won first prize in the photography competition."
+        ],
+        "perf": [
+            "Wer hat das Finale der Weltmeisterschaft gewonnen?",
+            "Who won the World Cup final?"
+        ]
+    },
+    "ex": [
+        "Beim Sport geht es nicht nur darum zu gewinnen, sondern auch Spaß zu haben.",
+        "In sports it is not just about winning, but also having fun."
+    ],
+    "val": [
+        ["etwas (Akk) gewinnen", "Was?", "Sie gewinnt ein Spiel / Geld / eine Medaille."]
+    ],
+    "family": ["der Gewinner", "der Gewinn", "verlieren"],
+    "tip": "Stammformen: gewinnen – gewann – gewonnen (mit haben). Gegenteil: verlieren.",
+    "sourceLessons": [7],
+    "sourceRawIds": ["RAW-429"]
+})
+
+# 9. RAW-458: reiten
+add_c({
+    "pos": "verb",
+    "word": "reiten",
+    "lemma": "reiten",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[ˈʁaɪ̯tn̩]",
+    "meaning": "to ride (a horse)",
+    "gloss": "to ride (horse)",
+    "sep": False,
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "geritten",
+    "partizip2": "geritten",
+    "perfekt": "ist geritten",
+    "praeteritum": "ritt",
+    "praesens": "reitet",
+    "reflexiv": False,
+    "praes": ["reite", "reitest", "reitet", "reiten", "reitet", "reiten"],
+    "prat": ["ritt", "rittest", "ritt", "ritten", "rittet", "ritten"],
+    "imp": ["Reite!", "Reitet!", "Reiten Sie!"],
+    "exT": {
+        "praes": [
+            "Meine Schwester reitet jeden Samstagnachmittag auf dem Pferdehof.",
+            "My sister rides at the equestrian farm every Saturday afternoon."
+        ],
+        "prat": [
+            "Die Reiter ritten im Galopp über die grüne Wiese.",
+            "The riders rode at a gallop across the green meadow."
+        ],
+        "perf": [
+            "Bist du schon einmal auf einem Pferd oder Kamel geritten?",
+            "Have you ever ridden on a horse or a camel?"
+        ]
+    },
+    "ex": [
+        "Reiten ist ein anstrengender, aber wunderschöner Freizeitsport.",
+        "Horseback riding is strenuous, but a wonderful recreational sport."
+    ],
+    "val": [
+        ["reiten (auf + Dat / über + Akk)", "Wo?", "Sie ist auf einem Schimmel geritten."]
+    ],
+    "family": ["der Reiter", "der Reitsport", "das Reitpferd"],
+    "tip": "Ortsveränderung -> Hilfsverb SEIN: 'Ich bin geritten'. Für Fahrrad oder Auto sagt man 'fahren' (Rad fahren, Auto fahren), nicht 'reiten'!",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-458"]
+})
+
+# 10. RAW-459: tauchen
+add_c({
+    "pos": "verb",
+    "word": "tauchen",
+    "lemma": "tauchen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈtaʊ̯xn̩]",
+    "meaning": "to dive, scuba dive, submerge",
+    "gloss": "to dive, submerge",
+    "sep": False,
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "getaucht",
+    "partizip2": "getaucht",
+    "perfekt": "ist getaucht",
+    "praeteritum": "tauchte",
+    "praesens": "taucht",
+    "reflexiv": False,
+    "praes": ["tauche", "tauchst", "taucht", "tauchen", "taucht", "tauchen"],
+    "prat": ["tauchte", "tauchtest", "tauchte", "tauchten", "tauchtet", "tauchten"],
+    "imp": ["Tauche!", "Taucht!", "Tauchen Sie!"],
+    "exT": {
+        "praes": [
+            "Im Urlaub am Roten Meer taucht er jeden Morgen nach bunten Fischen.",
+            "On vacation at the Red Sea he dives every morning for colorful fish."
+        ],
+        "prat": [
+            "Die Taucherin tauchte ohne Sauerstoffflasche zehn Meter tief.",
+            "The diver dove ten meters deep without an oxygen bottle."
+        ],
+        "perf": [
+            "Wir sind im Sommerurlaub zum ersten Mal im Meer getaucht.",
+            "On our summer vacation we went diving in the sea for the first time."
+        ]
+    },
+    "ex": [
+        "Möchtest du einen Tauchkurs machen und die Unterwasserwelt erkunden?",
+        "Would you like to take a diving course and explore the underwater world?"
+    ],
+    "val": [
+        ["tauchen (nach + Dat / in + Akk)", "Wohin / Wonach?", "Er taucht nach Muscheln."]
+    ],
+    "family": ["der Taucher", "der Tauchkurs", "abtauchen", "auftauchen"],
+    "tip": "Bei Bewegung im Wasser meist mit Hilfsverb SEIN: 'Er ist tief getaucht'. Auch übertragen: 'auftauchen' (to appear/surface) und 'untertauchen' (to go into hiding).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-459"]
+})
+
+# 11. RAW-461: der Fallschirm
+add_c({
+    "pos": "noun",
+    "word": "Fallschirm",
+    "lemma": "Fallschirm",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈfalˌʃɪʁm]",
+    "meaning": "parachute",
+    "gloss": "parachute",
+    "pl": "die Fallschirme",
+    "genS": "des Fallschirms",
+    "rule": "Kompositum mit 'der Schirm': Maskulinum (der Fallschirm, der Regenschirm, der Sonnenschirm).",
+    "nvv": [
+        ["mit dem Fallschirm abspringen", "to parachute / jump with a parachute"],
+        ["den Fallschirm öffnen", "to deploy / open the parachute"]
+    ],
+    "compounds": ["der Fallschirmsprung", "der Fallschirmspringer", "der Regenschirm"],
+    "family": ["fallen", "der Schirm", "schirmen"],
+    "ex": [
+        "Zum 30. Geburtstag hat sie einen Fallschirmsprung aus 4000 Metern Höhe gemacht.",
+        "For her 30th birthday she did a parachute jump from an altitude of 4,000 meters."
+    ],
+    "tip": "Wörtlich: der Schutz ('Schirm') gegen das Fallen. Verwandt mit Regenschirm (Schutz gegen Regen).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-461"]
+})
+
+# 12. RAW-462: springen
+add_c({
+    "pos": "verb",
+    "word": "springen",
+    "lemma": "springen",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[ˈʃpʁɪŋən]",
+    "meaning": "to jump, leap, bounce",
+    "gloss": "to jump, leap",
+    "sep": False,
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "gesprungen",
+    "partizip2": "gesprungen",
+    "perfekt": "ist gesprungen",
+    "praeteritum": "sprang",
+    "praesens": "springt",
+    "reflexiv": False,
+    "praes": ["springe", "springst", "springt", "springen", "springt", "springen"],
+    "prat": ["sprang", "sprangst", "sprang", "sprangen", "sprangt", "sprangen"],
+    "imp": ["Spring!", "Springt!", "Springen Sie!"],
+    "exT": {
+        "praes": [
+            "Die Kinder springen vor Freude im Garten auf und ab.",
+            "The children jump up and down with joy in the garden."
+        ],
+        "prat": [
+            "Die Katze sprang geschickt über den Gartenzaun.",
+            "The cat leaped skillfully over the garden fence."
+        ],
+        "perf": [
+            "Er ist mutig vom Fünf-Meter-Brett ins Wasser gesprungen.",
+            "He jumped bravely from the five-meter diving board into the water."
+        ]
+    },
+    "ex": [
+        "Bist du schon einmal mit einem Fallschirm aus dem Flugzeug gesprungen?",
+        "Have you ever jumped out of an airplane with a parachute?"
+    ],
+    "val": [
+        ["springen (über + Akk / von + Dat / in + Akk)", "Wohin / Woher?", "Er springt ins Schwimmbecken."]
+    ],
+    "family": ["der Sprung", "der Weitsprung", "abspringen"],
+    "tip": "Bewegungsverb -> Hilfsverb SEIN! Stammformen: springen – sprang – ist gesprungen.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-462"]
+})
+
+# 13. RAW-463: der Gegenstand
+add_c({
+    "pos": "noun",
+    "word": "Gegenstand",
+    "lemma": "Gegenstand",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈɡeːɡn̩ˌʃtant]",
+    "meaning": "object, item, physical article",
+    "gloss": "object, item",
+    "pl": "die Gegenstände",
+    "genS": "des Gegenstands",
+    "rule": "Substantiv auf -stand: Maskulinum (der Gegenstand, der Zustand, der Abstand).",
+    "nvv": [
+        ["einen Gegenstand verstecken / finden", "to hide / find an object"]
+    ],
+    "compounds": ["der Wertgegenstand", "der Gebrauchsgegenstand", "der Alltagsgegenstand"],
+    "family": ["stehen", "dagegenstehen"],
+    "ex": [
+        "Beim Geocaching tauscht man oft kleine Gegenstände im Behälter aus.",
+        "In geocaching one often swaps small items in the container."
+    ],
+    "tip": "Synonyme: 'das Ding', 'das Objekt'. Sehr häufig bei Spielen oder Suchaufgaben: 'ein Gegenstand aus Plastik oder Holz'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-463"]
+})
+
+# 14. RAW-464: die Mütze
+add_c({
+    "pos": "noun",
+    "word": "Mütze",
+    "lemma": "Mütze",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈmʏtsə]",
+    "meaning": "cap, beanie, hat",
+    "gloss": "cap, beanie",
+    "pl": "die Mützen",
+    "genS": "der Mütze",
+    "rule": "Endung auf -e bei Kleidungsstücken meist feminin: die Mütze, die Hose, die Jacke.",
+    "nvv": [
+        ["eine Mütze tragen / aufsetzen", "to wear / put on a cap"]
+    ],
+    "compounds": ["die Wollmütze", "die Schirmmütze", "die Pudelmütze"],
+    "family": ["bemoost"],
+    "ex": [
+        "Zieh dir eine warme Jacke und eine Mütze an, draußen ist es eiskalt!",
+        "Put on a warm jacket and a hat, it is freezing outside!"
+    ],
+    "tip": "Unterschied: 'die Mütze' ist weich (Strick, Wolle, Baseballcap); 'der Hut' ist fest mit Krempe (fedora, sunhat).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-464"]
+})
+
+# 15. RAW-467: so was Tolles
+add_c({
+    "pos": "phrase",
+    "word": "so was Tolles",
+    "lemma": "so was Tolles",
+    "level": "A2",
+    "type": "Redewendung · Umgangssprache",
+    "ipa": "[zoː vas ˈtɔləs]",
+    "meaning": "something so great, such an amazing thing",
+    "gloss": "something so great",
+    "frame": "so was + nominalisiertes Adjektiv (Tolles, Schönes, Verrücktes)",
+    "reg": "Umgangssprachlich (Schriftsprache: 'so etwas Tolles')",
+    "dlg": [
+        ["Hast du von ihrem Sieg beim Marathon gehört?", "Did you hear about her marathon victory?"],
+        ["Ja, Wahnsinn! So was Tolles habe ich lange nicht erlebt.", "Yes, incredible! I haven't experienced something so great in a long time."]
+    ],
+    "ex": [
+        "Ich habe beim Geocaching so was Tolles im Wald entdeckt!",
+        "I discovered something so great in the woods while geocaching!"
+    ],
+    "tip": "Grammatikregel: Nach 'etwas', 'nichts', 'viel', 'wenig' oder 'so was' schreibt man das Adjektiv groß mit Endung -es: 'etwas Schönes', 'nichts Neues', 'so was Tolles'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-467"]
+})
+
+# 16. RAW-471, RAW-472: verlieren
+add_c({
+    "pos": "verb",
+    "word": "verlieren",
+    "lemma": "verlieren",
+    "level": "A2",
+    "type": "Verb · untrennbar / unregelmäßig",
+    "ipa": "[fɛɐ̯ˈliːʁən]",
+    "meaning": "to lose (game, object, orientation)",
+    "gloss": "to lose",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "verloren",
+    "partizip2": "verloren",
+    "perfekt": "hat verloren",
+    "praeteritum": "verlor",
+    "praesens": "verliert",
+    "reflexiv": False,
+    "praes": ["verliere", "verlierst", "verliert", "verlieren", "verliert", "verlieren"],
+    "prat": ["verlor", "verlorst", "verlor", "verloren", "verlort", "verloren"],
+    "imp": ["Verlier!", "Verliert!", "Verlieren Sie!"],
+    "exT": {
+        "praes": [
+            "Wer beim Kartenspielen verliert, muss den Abwasch machen.",
+            "Whoever loses at card playing has to do the dishes."
+        ],
+        "prat": [
+            "Die Gastmannschaft verlor das entscheidende Spiel mit 1:2.",
+            "The visiting team lost the decisive match 1-2."
+        ],
+        "perf": [
+            "Ich habe gestern beim Joggen im Park meine Schlüssel verloren.",
+            "I lost my keys yesterday while jogging in the park."
+        ]
+    },
+    "ex": [
+        "Beim Sport muss man lernen, fair zu gewinnen und mit Würde zu verlieren.",
+        "In sports one must learn to win fairly and lose with dignity."
+    ],
+    "val": [
+        ["etwas / gegen jemanden verlieren", "Was / Gegen wen?", "Sie verliert das Match gegen Bayern."]
+    ],
+    "family": ["der Verlierer", "der Verlust", "verloren"],
+    "tip": "Stammformen: verlieren – verlor – verloren (mit haben). Wichtig: 'verliert und gewinnt' = loses and wins. Redewendung: 'den Kopf / die Geduld verlieren'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-471", "RAW-472"]
+})
+
+# 17. RAW-473, RAW-478: das Tor
+add_c({
+    "pos": "noun",
+    "word": "Tor",
+    "lemma": "Tor",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[toːɐ̯]",
+    "meaning": "goal (sports); gate, portal",
+    "gloss": "goal, gate",
+    "pl": "die Tore",
+    "genS": "des Tors / des Tores",
+    "rule": "Einsilbiges Neutrum (das Tor, das Boot, das Feld).",
+    "nvv": [
+        ["ein Tor schießen / erzielen", "to score a goal"],
+        ["im Tor stehen", "to be in goal (goalkeeper)"]
+    ],
+    "compounds": ["der Torwart", "die Torchance", "das Gartentor", "das Brandenburger Tor"],
+    "family": ["der Torhüter", "der Torschütze"],
+    "ex": [
+        "In der 90. Minute hat der Stürmer das entscheidende Tor geschossen!",
+        "In the 90th minute the striker scored the decisive goal!"
+    ],
+    "tip": "Doppelbedeutung: 1) Sport: 'ein Tor schießen' (to score a goal). 2) Architektur/Garten: das große Eingangstor ('das Brandenburger Tor').",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-473", "RAW-478"]
+})
+
+# 18. RAW-474: sich benehmen
+add_c({
+    "pos": "verb",
+    "word": "sich benehmen",
+    "lemma": "benehmen",
+    "level": "A2",
+    "type": "Verb · untrennbar / reflexiv / unregelmäßig",
+    "ipa": "[bəˈneːmən]",
+    "meaning": "to behave, conduct oneself",
+    "gloss": "to behave",
+    "sep": False,
+    "pre": "be",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "benommen",
+    "partizip2": "benommen",
+    "perfekt": "hat sich benommen",
+    "praeteritum": "benahm sich",
+    "praesens": "benimmt sich",
+    "reflexiv": True,
+    "praes": ["benehme mich", "benimmst dich", "benimmt sich", "benehmen uns", "benehmt euch", "benehmen sich"],
+    "prat": ["benahm mich", "benahmst dich", "benahm sich", "benahmen uns", "benahmt euch", "benahmen sich"],
+    "imp": ["Benimm dich!", "Benehmt euch!", "Benehmen Sie sich!"],
+    "exT": {
+        "praes": [
+            "Du benimmst dich heute wirklich wie ein vorbildlicher Sportsmann.",
+            "You are behaving like an exemplary sportsman today."
+        ],
+        "prat": [
+            "Die Fans benahmen sich während des gesamten Turniers sehr friedlich.",
+            "The fans behaved very peacefully throughout the tournament."
+        ],
+        "perf": [
+            "Die Kinder haben sich im Museum ganz toll benommen.",
+            "The children behaved really wonderfully in the museum."
+        ]
+    },
+    "ex": [
+        "Benimm dich bitte anständig, wenn wir die Großeltern besuchen!",
+        "Please behave decently when we visit the grandparents!"
+    ],
+    "val": [
+        ["sich gut / schlecht benehmen", "Wie?", "Er benimmt sich unmöglich."]
+    ],
+    "family": ["das Benehmen", "nehmen"],
+    "tip": "Vokalwechsel im Präsens: du benimmst dich, er benimmt sich! Stammformen: benehmen – benahm – benommen. 'Benimm dich!' = Behave yourself!",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-474"]
+})
+
+# 19. RAW-481: die Unterscheidung
+add_c({
+    "pos": "noun",
+    "word": "Unterscheidung",
+    "lemma": "Unterscheidung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˌʊntɐˈʃaɪ̯dʊŋ]",
+    "meaning": "distinction, differentiation",
+    "gloss": "distinction, differentiation",
+    "pl": "die Unterscheidungen",
+    "genS": "der Unterscheidung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Unterscheidung).",
+    "nvv": [
+        ["eine Unterscheidung treffen / machen", "to make a distinction"]
+    ],
+    "compounds": ["das Unterscheidungsmerkmal"],
+    "family": ["unterscheiden", "der Unterschied", "unterschiedlich"],
+    "ex": [
+        "Beim Pilzesammeln im Wald ist die genaue Unterscheidung zwischen giftigen und essbaren Arten lebenswichtig.",
+        "When picking mushrooms in the woods, the exact distinction between poisonous and edible species is vital."
+    ],
+    "tip": "Abgeleitet vom Verb 'unterscheiden'. Im Alltag sagt man auch oft 'der Unterschied' (difference).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-481"]
+})
+
+# 20. RAW-482: vorschlagen
+add_c({
+    "pos": "verb",
+    "word": "vorschlagen",
+    "lemma": "vorschlagen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈfoːɐ̯ˌʃlaːɡn̩]",
+    "meaning": "to suggest, propose",
+    "gloss": "to suggest, propose",
+    "sep": True,
+    "pre": "vor",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "vorgeschlagen",
+    "partizip2": "vorgeschlagen",
+    "perfekt": "hat vorgeschlagen",
+    "praeteritum": "schlug vor",
+    "praesens": "schlägt vor",
+    "reflexiv": False,
+    "praes": ["schlage vor", "schlägst vor", "schlägt vor", "schlagen vor", "schlagt vor", "schlagen vor"],
+    "prat": ["schlug vor", "schlugst vor", "schlug vor", "schlugen vor", "schlugt vor", "schlugen vor"],
+    "imp": ["Schlag vor!", "Schlagt vor!", "Schlagen Sie vor!"],
+    "exT": {
+        "praes": [
+            "Was schlägt dein Freund für den Samstagsausflug vor?",
+            "What does your friend suggest for the Saturday outing?"
+        ],
+        "prat": [
+            "Sie schlug vor, den Nachmittag am Badesee zu verbringen.",
+            "She suggested spending the afternoon at the swimming lake."
+        ],
+        "perf": [
+            "Wir haben eine gemeinsame Wanderung im Schwarzwald vorgeschlagen.",
+            "We suggested a shared hike in the Black Forest."
+        ]
+    },
+    "ex": [
+        "Ich schlage vor, dass wir uns um 10 Uhr am Eingang treffen.",
+        "I suggest that we meet at 10 o'clock at the entrance."
+    ],
+    "val": [
+        ["jemandem (Dat) etwas (Akk) vorschlagen", "Wem? Was?", "Er schlägt einen Kompromiss vor."]
+    ],
+    "family": ["der Vorschlag", "schlagen"],
+    "tip": "Vokalwechsel im Präsens: du schlägst vor, er schlägt vor! Stammformen: vorschlagen – schlug vor – vorgeschlagen.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-482"]
+})
+
+# 21. RAW-483: sich bewegen
+add_c({
+    "pos": "verb",
+    "word": "sich bewegen",
+    "lemma": "bewegen",
+    "level": "A2",
+    "type": "Verb · reflexiv / regelmäßig",
+    "ipa": "[bəˈveːɡŋ̩]",
+    "meaning": "to move, get exercise",
+    "gloss": "to move, exercise",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "bewegt",
+    "partizip2": "bewegt",
+    "perfekt": "hat sich bewegt",
+    "praeteritum": "bewegte sich",
+    "praesens": "bewegt sich",
+    "reflexiv": True,
+    "praes": ["bewege mich", "bewegst dich", "bewegt sich", "bewegen uns", "bewegt euch", "bewegen sich"],
+    "prat": ["bewegte mich", "bewegtest dich", "bewegte sich", "bewegten uns", "bewegtet euch", "bewegten sich"],
+    "imp": ["Bewege dich!", "Bewegt euch!", "Bewegen Sie sich!"],
+    "exT": {
+        "praes": [
+            "Wer den ganzen Tag im Büro sitzt, sollte sich abends mehr bewegen.",
+            "Whoever sits in the office all day should get more exercise in the evening."
+        ],
+        "prat": [
+            "Die Schlange bewegte sich lautlos durch das hohe Gras.",
+            "The snake moved silently through the tall grass."
+        ],
+        "perf": [
+            "Wir haben uns am Wochenende bei der Bergtour sehr viel an der frischen Luft bewegt.",
+            "We moved around a lot in the fresh air on the mountain tour at the weekend."
+        ]
+    },
+    "ex": [
+        "Regelmäßige Bewegung an der frischen Luft stärkt das Immunsystem.",
+        "Regular exercise in the fresh air strengthens the immune system."
+    ],
+    "val": [
+        ["sich (Akk) bewegen", "Wie / Wo?", "Sie bewegt sich rhythmisch zur Musik."]
+    ],
+    "family": ["die Bewegung", "beweglich", "der Bewegungsmangel"],
+    "tip": "Im Deutschen bedeutet 'sich bewegen' oft schlicht 'körperlich aktiv sein / Sport treiben' ('Ich muss mich mehr bewegen').",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-483"]
+})
+
+# 22. RAW-487: klettern
+add_c({
+    "pos": "verb",
+    "word": "klettern",
+    "lemma": "klettern",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈklɛtɐn]",
+    "meaning": "to climb, scramble",
+    "gloss": "to climb",
+    "sep": False,
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "geklettert",
+    "partizip2": "geklettert",
+    "perfekt": "ist geklettert",
+    "praeteritum": "kletterte",
+    "praesens": "klettert",
+    "reflexiv": False,
+    "praes": ["klettere", "kletterst", "klettert", "klettern", "klettert", "klettern"],
+    "prat": ["kletterte", "klettertest", "kletterte", "kletterten", "klettertet", "kletterten"],
+    "imp": ["Klettere!", "Klettert!", "Klettern Sie!"],
+    "exT": {
+        "praes": [
+            "Die Jugendlichen klettern jeden Mittwoch in der neuen Boulderhalle.",
+            "The youths climb every Wednesday in the new bouldering gym."
+        ],
+        "prat": [
+            "Der Junge kletterte mutig auf den höchsten Apfelbaum.",
+            "The boy climbed bravely onto the highest apple tree."
+        ],
+        "perf": [
+            "Sie sind ohne Seil auf den steilen Felsen geklettert.",
+            "They climbed onto the steep rock without a rope."
+        ]
+    },
+    "ex": [
+        "Klettern erfordert viel Kraft, Konzentration und Gleichgewichtssinn.",
+        "Climbing requires a lot of strength, concentration, and sense of balance."
+    ],
+    "val": [
+        ["klettern auf + Akk / über + Akk", "Wohin?", "Er klettert auf die Mauer."]
+    ],
+    "family": ["der Kletterer", "die Kletterwand", "der Klettersport"],
+    "tip": "Bewegungsverb -> Hilfsverb SEIN: 'Er ist geklettert'. Unterschied zu 'steigen': klettern braucht Hände und Füße!",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-487"]
+})
+
+# 23. RAW-488: balancieren
+add_c({
+    "pos": "verb",
+    "word": "balancieren",
+    "lemma": "balancieren",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": [ "balɑ̃ˈsiːʁən", "balanˈsiːʁən" ],
+    "meaning": "to balance, balance oneself",
+    "gloss": "to balance",
+    "sep": False,
+    "aux": "sein",
+    "hilfsverb": "sein/haben",
+    "p2": "balanciert",
+    "partizip2": "balanciert",
+    "perfekt": "ist balanciert",
+    "praeteritum": "balancierte",
+    "praesens": "balanciert",
+    "reflexiv": False,
+    "praes": ["balanciere", "balancierst", "balanciert", "balancieren", "balanciert", "balancieren"],
+    "prat": ["balancierte", "balanciertest", "balancierte", "balancierten", "balanciertet", "balancierten"],
+    "imp": ["Balanciere!", "Balanciert!", "Balancieren Sie!"],
+    "exT": {
+        "praes": [
+            "Die Turnerin balanciert sicher auf dem schmalen Schwebebalken.",
+            "The gymnast balances securely on the narrow balance beam."
+        ],
+        "prat": [
+            "Das Kind balancierte vorsichtig über den umgestürzten Baumstamm.",
+            "The child balanced carefully across the fallen tree trunk."
+        ],
+        "perf": [
+            "Er ist im Klettergarten über ein dünnes Seil balanciert.",
+            "He balanced across a thin rope in the high ropes course."
+        ]
+    },
+    "ex": [
+        "Beim Klettern muss man oft über schmale Kanten balancieren.",
+        "When climbing one often has to balance across narrow ledges."
+    ],
+    "val": [
+        ["balancieren über + Akk / auf + Dat", "Wo / Worüber?", "Sie balanciert auf einer Slackline."]
+    ],
+    "family": ["die Balance", "der Balanceakt", "ausbalancieren"],
+    "tip": "Verben auf -ieren: Partizip II ohne 'ge-': balanciert. Bei Fortbewegung Hilfsverb SEIN ('ist balanciert').",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-488"]
+})
+
+# 24. RAW-489: die Übersicht
+add_c({
+    "pos": "noun",
+    "word": "Übersicht",
+    "lemma": "Übersicht",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈyːbɐˌzɪçt]",
+    "meaning": "overview, survey, vantage view",
+    "gloss": "overview, survey",
+    "pl": "die Übersichten",
+    "genS": "der Übersicht",
+    "rule": "Substantivierung mit -sicht: Femininum (die Sicht, die Übersicht, die Ansicht, die Aussicht).",
+    "nvv": [
+        ["die Übersicht behalten / verlieren", "to keep / lose the overview"],
+        ["eine Übersicht geben", "to provide an overview"]
+    ],
+    "compounds": ["die Tabellenübersicht", "die Kurzübersicht", "übersichtlich"],
+    "family": ["übersehen", "die Sicht", "sichtig"],
+    "ex": [
+        "Von dem Berggipfel hat man eine fantastische Übersicht über das ganze Tal.",
+        "From the mountain summit one has a fantastic view / overview over the entire valley."
+    ],
+    "tip": "Häufige Redewendung: 'die Übersicht behalten' (to stay in control / keep an overview). Adjektiv: 'übersichtlich' (clear, well-arranged).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-489"]
+})
+
+# 25. RAW-490: schicken
+add_c({
+    "pos": "verb",
+    "word": "schicken",
+    "lemma": "schicken",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈʃɪkn̩]",
+    "meaning": "to send, dispatch",
+    "gloss": "to send",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geschickt",
+    "partizip2": "geschickt",
+    "perfekt": "hat geschickt",
+    "praeteritum": "schickte",
+    "praesens": "schickt",
+    "reflexiv": False,
+    "praes": ["schicke", "schickst", "schickt", "schicken", "schickt", "schicken"],
+    "prat": ["schickte", "schicktest", "schickte", "schickten", "schicktet", "schickten"],
+    "imp": ["Schick!", "Schickt!", "Schicken Sie!"],
+    "exT": {
+        "praes": [
+            "Ich schicke dir gleich meinen GPS-Standort auf dein Smartphone.",
+            "I'll send you my GPS location on your smartphone right away."
+        ],
+        "prat": [
+            "Sie schickte aus dem Wanderurlaub eine hübsche Postkarte.",
+            "She sent a lovely postcard from her hiking vacation."
+        ],
+        "perf": [
+            "Hast du ihm die Einladung zum Sportfest schon geschickt?",
+            "Have you already sent him the invitation to the sports festival?"
+        ]
+    },
+    "ex": [
+        "Kannst du mir die Route für die Fahrradtour per E-Mail schicken?",
+        "Can you send me the route for the bike tour by email?"
+    ],
+    "val": [
+        ["jemandem (Dat) etwas (Akk) schicken", "Wem? Was?", "Er schickt ihr ein Foto."]
+    ],
+    "family": ["abschicken", "verschicken", "senden"],
+    "tip": "Synonym zu 'senden', aber im alltäglichen Sprachgebrauch viel häufiger: 'Ich schicke dir eine Nachricht'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-490"]
+})
+
+# 26. RAW-491: der Schatz
+add_c({
+    "pos": "noun",
+    "word": "Schatz",
+    "lemma": "Schatz",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ʃats]",
+    "meaning": "treasure; darling, sweetheart",
+    "gloss": "treasure / sweetheart",
+    "pl": "die Schätze",
+    "genS": "des Schatzes",
+    "rule": "Einsilbiges Maskulinum mit Plural-Umlaut: der Schatz -> die Schätze.",
+    "nvv": [
+        ["einen Schatz heben / finden / vergraben", "to unearth / find / bury a treasure"]
+    ],
+    "compounds": ["die Schatzsuche", "die Schatzinsel", "die Schatzkiste", "der Wortschatz"],
+    "family": ["schätzen", "die Schätzung"],
+    "ex": [
+        "Beim modernen Geocaching ist der 'Schatz' meist eine kleine, wasserdichte Dose.",
+        "In modern geocaching the 'treasure' is usually a small, waterproof container."
+    ],
+    "tip": "Zwei sehr wichtige Bedeutungen: 1) Reichtum/Gold: 'der verborgene Schatz'. 2) Häufigster deutscher Kosename für den Partner: 'Hallo Schatz!'",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-491"]
+})
+
+# 27. RAW-492: der Absatz
+add_c({
+    "pos": "noun",
+    "word": "Absatz",
+    "lemma": "Absatz",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈapˌzats]",
+    "meaning": "paragraph (text); heel (shoe); sales volume",
+    "gloss": "paragraph / heel",
+    "pl": "die Absätze",
+    "genS": "des Absatzes",
+    "rule": "Ableitung zum Verbstamm von setzen (der Satz): Maskulinum (der Absatz, der Satz, der Ansatz).",
+    "nvv": [
+        ["einen Absatz einfügen", "to insert a paragraph"],
+        ["hohe Absätze tragen", "to wear high heels"]
+    ],
+    "compounds": ["der Schuhabsatz", "der Textabsatz", "die Absatzkrise"],
+    "family": ["absetzen", "der Satz", "sitzen"],
+    "ex": [
+        "Lies bitte den zweiten Absatz in der Spielanleitung laut vor.",
+        "Please read the second paragraph in the game instructions out loud."
+    ],
+    "tip": "Drei Bedeutungen im Deutschen: 1) Text: Paragraph/Abschnitt. 2) Schuhe: 'Schuhe mit hohem Absatz'. 3) Wirtschaft: Verkauf von Waren ('guter Absatz').",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-492"]
+})
+
+# 28. RAW-493: die Schatzsuche
+add_c({
+    "pos": "noun",
+    "word": "Schatzsuche",
+    "lemma": "Schatzsuche",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈʃatsˌzuːxə]",
+    "meaning": "treasure hunt, scavenger hunt",
+    "gloss": "treasure hunt",
+    "pl": "die Schatzsuchen",
+    "genS": "der Schatzsuche",
+    "rule": "Grundwort 'die Suche': immer feminin (die Suche, die Schatzsuche, die Wohnunssuche).",
+    "nvv": [
+        ["auf Schatzsuche gehen", "to go on a treasure hunt"],
+        ["eine Schatzsuche veranstalten", "to organize a scavenger hunt"]
+    ],
+    "compounds": ["der Schatzsucher", "die Schnitzeljagd"],
+    "family": ["der Schatz", "suchen", "die Suche"],
+    "ex": [
+        "Geocaching nennt man auch die moderne elektronische Schatzsuche mit GPS.",
+        "Geocaching is also called the modern electronic treasure hunt with GPS."
+    ],
+    "tip": "Sehr beliebt bei Kindergeburtstagen und Familienausflügen: 'Wir gehen heute im Wald auf Schatzsuche!'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-493"]
+})
+
+# 29. RAW-494: verstecken
+add_c({
+    "pos": "verb",
+    "word": "verstecken",
+    "lemma": "verstecken",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[fɛɐ̯ˈʃtɛkn̩]",
+    "meaning": "to hide, conceal",
+    "gloss": "to hide, conceal",
+    "sep": False,
+    "pre": "ver",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "versteckt",
+    "partizip2": "versteckt",
+    "perfekt": "hat versteckt",
+    "praeteritum": "versteckte",
+    "praesens": "versteckt",
+    "reflexiv": True,
+    "praes": ["verstecke", "versteckst", "versteckt", "verstecken", "versteckt", "verstecken"],
+    "prat": ["versteckte", "verstecktest", "versteckte", "versteckten", "verstecktet", "versteckten"],
+    "imp": ["Versteck!", "Versteckt!", "Verstecken Sie!"],
+    "exT": {
+        "praes": [
+            "Er versteckt die kleine Dose unter dicken Steinen im Wald.",
+            "He hides the small tin under thick stones in the forest."
+        ],
+        "prat": [
+            "Die Kinder versteckten sich hinter den großen Eichenbäumen.",
+            "The children hid behind the big oak trees."
+        ],
+        "perf": [
+            "Wo hast du die Geschenke für die Überraschungsparty versteckt?",
+            "Where did you hide the presents for the surprise party?"
+        ]
+    },
+    "ex": [
+        "Versteckspiel (hide and seek) ist eines der beliebtesten Kinderspiele.",
+        "Hide-and-seek is one of the most popular children's games."
+    ],
+    "val": [
+        ["etwas (Akk) vor jemandem verstecken / sich verstecken", "Vor wem? Wo?", "Er versteckt die Schokolade."]
+    ],
+    "family": ["das Versteck", "das Versteckspiel", "stecken"],
+    "tip": "Sowohl transitiv ('etwas verstecken') als auch reflexiv ('sich verstecken'). Partizip als Adjektiv: 'die versteckte Nachricht'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-494"]
+})
+
+# 30. RAW-495: sogenannt
+add_c({
+    "pos": "adj",
+    "word": "sogenannt",
+    "lemma": "sogenannt",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈzoːɡəˌnant]",
+    "meaning": "so-called",
+    "gloss": "so-called",
+    "comp": [["Positiv", "sogenannt"]],
+    "opp": "echt, tatsächlich",
+    "ex": [
+        "Beim Geocaching sucht man sogenannte Caches, also kleine Behälter mit Logbuch.",
+        "In geocaching one searches for so-called caches, meaning small containers with a logbook."
+    ],
+    "family": ["nennen", "der Name"],
+    "tip": "Wird im Deutschen sehr oft mit 'sog.' abgekürzt: 'die sog. Geocaches'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-495"]
+})
+
+# 31. RAW-496: stellen
+add_c({
+    "pos": "verb",
+    "word": "stellen",
+    "lemma": "stellen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈʃtɛln̩]",
+    "meaning": "to place, put vertically, set",
+    "gloss": "to place (upright), put",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gestellt",
+    "partizip2": "gestellt",
+    "perfekt": "hat gestellt",
+    "praeteritum": "stellte",
+    "praesens": "stellt",
+    "reflexiv": False,
+    "praes": ["stelle", "stellst", "stellt", "stellen", "stellt", "stellen"],
+    "prat": ["stellte", "stelltest", "stellte", "stellten", "stelltet", "stellten"],
+    "imp": ["Stell!", "Stellt!", "Stellen Sie!"],
+    "exT": {
+        "praes": [
+            "Er stellt seinen Rucksack neben den Wanderweg ins Gras.",
+            "He puts his backpack next to the hiking trail into the grass."
+        ],
+        "prat": [
+            "Sie stellte die Tasse Kaffee vorsichtig auf den Tisch.",
+            "She placed the cup of coffee carefully onto the table."
+        ],
+        "perf": [
+            "Wohin hast du mein Fahrrad in der Garage gestellt?",
+            "Where did you put my bicycle in the garage?"
+        ]
+    },
+    "ex": [
+        "Stellen Sie sich bitte in einer Reihe auf!",
+        "Please line up in a single file!"
+    ],
+    "val": [
+        ["etwas (Akk) auf/an/in + Akk stellen", "Wohin?", "Akkusativ (Richtung/Positionierung)!"]
+    ],
+    "family": ["stehen", "abstellen", "einstellen", "vorstellen"],
+    "tip": "Wichtiges Positionsverb: 'stellen' verlangt AKKUSATIV (Wohin?). Der Zustand heißt 'stehen' + DATIV (Wo?).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-496"]
+})
+
+# 32. RAW-497: das Versteck
+add_c({
+    "pos": "noun",
+    "word": "Versteck",
+    "lemma": "Versteck",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[fɛɐ̯ˈʃtɛk]",
+    "meaning": "hiding place, cache, hideout",
+    "gloss": "hiding place, cache",
+    "pl": "die Verstecke",
+    "genS": "des Verstecks",
+    "rule": "Präfix ver- mit Verbstamm meist Neutrum (das Versteck, das Verhör, das Verbot).",
+    "nvv": [
+        ["ein Versteck finden / entdecken", "to find / discover a hiding place"],
+        ["aus dem Versteck kommen", "to come out of hiding"]
+    ],
+    "compounds": ["das Geheimversteck", "der Versteckort"],
+    "family": ["verstecken", "stecken"],
+    "ex": [
+        "Das Versteck der Geocache-Dose war in einer Felsspalte am Berg.",
+        "The hiding place of the geocache container was in a crevice on the mountain."
+    ],
+    "tip": "Schlüsselbegriff beim Geocaching: das Versteck (the cache/hideout).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-497"]
+})
+
+# 33. RAW-498: fassen
+add_c({
+    "pos": "verb",
+    "word": "fassen",
+    "lemma": "fassen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈfasn̩]",
+    "meaning": "to grasp, seize; to hold/contain capacity",
+    "gloss": "to grasp / hold capacity",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gefasst",
+    "partizip2": "gefasst",
+    "perfekt": "hat gefasst",
+    "praeteritum": "fasste",
+    "praesens": "fasst",
+    "reflexiv": False,
+    "praes": ["fasse", "fasst", "fasst", "fassen", "fasst", "fassen"],
+    "prat": ["fasste", "fasstest", "fasste", "fassten", "fasstet", "fassten"],
+    "imp": ["Fass!", "Fasst!", "Fassen Sie!"],
+    "exT": {
+        "praes": [
+            "Diese kleine Dose fasst etwa einen halben Liter Inhalt.",
+            "This small tin holds about half a liter in volume."
+        ],
+        "prat": [
+            "Er fasste das Kind fest an der Hand, als sie die Straße überquerten.",
+            "He took the child firmly by the hand as they crossed the street."
+        ],
+        "perf": [
+            "Ich kann es noch gar nicht fassen, dass wir das Spiel gewonnen haben!",
+            "I still can't grasp/believe at all that we won the game!"
+        ]
+    },
+    "ex": [
+        "Das neue Fußballstadion fasst mehr als 50.000 Zuschauer.",
+        "The new soccer stadium holds more than 50,000 spectators."
+    ],
+    "val": [
+        ["etwas (Akk) fassen", "Was?", "Der Behälter fasst 2 Liter."]
+    ],
+    "family": ["anfassen", "zusammenfassen", "die Fassung", "unfassbar"],
+    "tip": "Redewendung: 'Ich kann es nicht fassen!' = I can't believe it! Auch Maß/Kapazität: 'Der Krug fasst einen Liter'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-498"]
+})
+
+# 34. RAW-499: der Behälter
+add_c({
+    "pos": "noun",
+    "word": "Behälter",
+    "lemma": "Behälter",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[bəˈhɛltɐ]",
+    "meaning": "container, receptacle, bin",
+    "gloss": "container, bin",
+    "pl": "die Behälter",
+    "genS": "des Behälters",
+    "rule": "Geräte und Behälter auf -er: fast immer Maskulinum (der Behälter, der Wecker, der Schalter).",
+    "nvv": [
+        ["einen Behälter öffnen / verschließen", "to open / seal a container"]
+    ],
+    "compounds": ["der Plastikbehälter", "der Abfallbehälter", "der Wasserbehälter"],
+    "family": ["behalten", "halten"],
+    "ex": [
+        "Der Behälter für den Geocache muss absolut wasserdicht sein.",
+        "The container for the geocache must be absolutely watertight."
+    ],
+    "tip": "Plural ohne Endungsveränderung: der Behälter -> die Behälter. Typischer Begriff für Dosen, Gefäße und Boxen.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-499"]
+})
+
+# 35. RAW-501: der Tresor
+add_c({
+    "pos": "noun",
+    "word": "Tresor",
+    "lemma": "Tresor",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[tʁeˈzoːɐ̯]",
+    "meaning": "safe, vault, strongbox",
+    "gloss": "safe, vault",
+    "pl": "die Tresore",
+    "genS": "des Tresors",
+    "rule": "Fremdwort aus dem Griechischen/Französischen: Maskulinum (der Tresor).",
+    "nvv": [
+        ["Wertsachen im Tresor einschließen", "to lock valuables in the safe"]
+    ],
+    "compounds": ["der Hotelzimmertresor", "die Tresortür"],
+    "family": ["der Schatz"],
+    "ex": [
+        "Im Hotelzimmer sollte man seinen Reisepass und teuren Schmuck immer im Tresor aufbewahren.",
+        "In the hotel room one should always keep one's passport and expensive jewelry in the safe."
+    ],
+    "tip": "Verwandt mit altgriechisch thesauros (Schatzkammer). Plural: die Tresore.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-501"]
+})
+
+# 36. RAW-502: der Inhalt
+add_c({
+    "pos": "noun",
+    "word": "Inhalt",
+    "lemma": "Inhalt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈɪnˌhalt]",
+    "meaning": "content, contents (of a box, book, movie)",
+    "gloss": "content, contents",
+    "pl": "die Inhalte",
+    "genS": "des Inhalts",
+    "rule": "Substantiv auf -halt (halten): Maskulinum (der Inhalt, der Unterhalt, der Gehalt bei Eigenschaften).",
+    "nvv": [
+        ["den Inhalt überprüfen", "to check the contents"]
+    ],
+    "compounds": ["das Inhaltsverzeichnis", "der Doseninhalt", "der Gesprächsinhalt"],
+    "family": ["enthalten", "halten", "inhaltlich"],
+    "ex": [
+        "Der Finder nimmt einen Gegenstand heraus und ersetzt ihn durch neuen Inhalt.",
+        "The finder takes an item out and replaces it with new contents."
+    ],
+    "tip": "Buch/Text: 'das Inhaltsverzeichnis' (table of contents). Behälter: 'der Inhalt der Kiste' (contents of the box).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-502"]
+})
+
+# 37. RAW-503: schützen
+add_c({
+    "pos": "verb",
+    "word": "schützen",
+    "lemma": "schützen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈʃʏtsn̩]",
+    "meaning": "to protect, shield, guard",
+    "gloss": "to protect, guard",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geschützt",
+    "partizip2": "geschützt",
+    "perfekt": "hat geschützt",
+    "praeteritum": "schützte",
+    "praesens": "schützt",
+    "reflexiv": False,
+    "praes": ["schütze", "schützt", "schützt", "schützen", "schützt", "schützen"],
+    "prat": ["schützte", "schütztest", "schützte", "schützten", "schütztet", "schützten"],
+    "imp": ["Schütze!", "Schützt!", "Schützen Sie!"],
+    "exT": {
+        "praes": [
+            "Eine gute Regenjacke schützt beim Wandern vor Wind und Nässe.",
+            "A good rain jacket protects against wind and wetness while hiking."
+        ],
+        "prat": [
+            "Der dichte Wald schützte die Bergsteiger vor der brennenden Sonne.",
+            "The dense forest protected the mountaineers from the scorching sun."
+        ],
+        "perf": [
+            "Die wasserdichte Plastiktüte hat das Logbuch optimal vor Regen geschützt.",
+            "The waterproof plastic bag protected the logbook optimally from rain."
+        ]
+    },
+    "ex": [
+        "Wir müssen die Natur und bedrohte Tierarten in den Bergen schützen.",
+        "We must protect nature and endangered animal species in the mountains."
+    ],
+    "val": [
+        ["jemanden / etwas schützen vor + Dat", "Wovor?", "Er schützt sich vor der Kälte."]
+    ],
+    "family": ["der Schutz", "der Naturschutz", "geschützt"],
+    "tip": "Feste Präposition: 'schützen VOR + Dativ' (z. B. vor der Kälte, vor Regen, vor Gefahren).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-503"]
+})
+
+# 38. RAW-504: kaputtgehen
+add_c({
+    "pos": "verb",
+    "word": "kaputtgehen",
+    "lemma": "kaputtgehen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[kaˈpʊtˌɡeːən]",
+    "meaning": "to break, get broken, malfunction",
+    "gloss": "to break, malfunction",
+    "sep": True,
+    "pre": "kaputt",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "kaputtgegangen",
+    "partizip2": "kaputtgegangen",
+    "perfekt": "ist kaputtgegangen",
+    "praeteritum": "ging kaputt",
+    "praesens": "geht kaputt",
+    "reflexiv": False,
+    "praes": ["gehe kaputt", "gehst kaputt", "geht kaputt", "gehen kaputt", "geht kaputt", "gehen kaputt"],
+    "prat": ["ging kaputt", "gingst kaputt", "ging kaputt", "gingen kaputt", "gingt kaputt", "gingen kaputt"],
+    "imp": ["Geh nicht kaputt!"],
+    "exT": {
+        "praes": [
+            "Wenn du die Glasflasche fallen lässt, geht sie sofort kaputt.",
+            "If you drop the glass bottle, it breaks immediately."
+        ],
+        "prat": [
+            "Mein Fahrrad ging mitten auf der Bergtour kaputt.",
+            "My bicycle broke in the middle of the mountain tour."
+        ],
+        "perf": [
+            "Das Display von meinem Smartphone ist leider gestern kaputtgegangen.",
+            "Unfortunately, the display of my smartphone broke yesterday."
+        ]
+    },
+    "ex": [
+        "Verwende keine dünnen Dosen, die bei Kälte leicht kaputtgehen.",
+        "Do not use flimsy boxes that easily break in the cold."
+    ],
+    "val": [
+        ["kaputtgehen", "Was?", "Das Spielzeug ist kaputtgegangen."]
+    ],
+    "family": ["kaputt", "gehen", "kaputtmachen"],
+    "tip": "Zustandsveränderung -> Hilfsverb SEIN: 'Es ist kaputtgegangen'. Transitiv mit 'machen': 'etwas kaputtmachen' (mit haben).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-504"]
+})
+
+# 39. RAW-505: stabil
+add_c({
+    "pos": "adj",
+    "word": "stabil",
+    "lemma": "stabil",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ʃtaˈbiːl]",
+    "meaning": "stable, sturdy, robust",
+    "gloss": "stable, sturdy",
+    "comp": [["Positiv", "stabil"], ["Komparativ", "stabiler"], ["Superlativ", "am stabilsten"]],
+    "opp": "instabil, wackelig, zerbrechlich",
+    "ex": [
+        "Für Bergtouren braucht man feste, stabile Wanderschuhe.",
+        "For mountain tours one needs firm, sturdy hiking boots."
+    ],
+    "family": ["die Stabilität", "stabilisieren"],
+    "tip": "Sowohl für Gegenstände (stabile Kiste) als auch für Gesundheit oder Wetter ('die Wetterlage bleibt stabil').",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-505"]
+})
+
+# 40. RAW-506: die Plastikdose / Dose aus Plastik
+add_c({
+    "pos": "noun",
+    "word": "Plastikdose",
+    "lemma": "Plastikdose",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈplastɪkˌdoːzə]",
+    "meaning": "plastic box, plastic tin",
+    "gloss": "plastic container / box",
+    "pl": "die Plastikdosen",
+    "genS": "der Plastikdose",
+    "rule": "Grundwort 'die Dose': Femininum (die Dose, die Plastikdose, die Keksdose).",
+    "nvv": [
+        ["in eine Dose aus Plastik packen", "to pack into a plastic box"]
+    ],
+    "compounds": ["das Plastik", "die Tupperdose", "die Blechdose"],
+    "family": ["die Dose"],
+    "ex": [
+        "Für den Geocache eignet sich eine wasserdichte Dose aus Plastik am besten.",
+        "A waterproof plastic container is best suited for the geocache."
+    ],
+    "tip": "Konstruktion mit Materialangabe: 'eine Dose aus Plastik' (a box made of plastic) oder zusammengesetzt 'die Plastikdose'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-506"]
+})
+
+# 41. RAW-507: herausnehmen
+add_c({
+    "pos": "verb",
+    "word": "herausnehmen",
+    "lemma": "herausnehmen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[hɛˈʁaʊ̯sˌneːmən]",
+    "meaning": "to take out, remove (from inside towards the speaker)",
+    "gloss": "to take out, remove",
+    "sep": True,
+    "pre": "heraus",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "herausgenommen",
+    "partizip2": "herausgenommen",
+    "perfekt": "hat herausgenommen",
+    "praeteritum": "nahm heraus",
+    "praesens": "nimmt heraus",
+    "reflexiv": False,
+    "praes": ["nehme heraus", "nimmst heraus", "nimmt heraus", "nehmen heraus", "nehmt heraus", "nehmen heraus"],
+    "prat": ["nahm heraus", "nahmst heraus", "nahm heraus", "nahmen heraus", "nahmt heraus", "nahmen heraus"],
+    "imp": ["Nimm heraus!", "Nehmt heraus!", "Nehmen Sie heraus!"],
+    "exT": {
+        "praes": [
+            "Er nimmt das Notizbuch vorsichtig aus dem Versteck heraus.",
+            "He carefully takes the notebook out of the hiding place."
+        ],
+        "prat": [
+            "Sie nahm eine Münze aus ihrer Hosentasche heraus.",
+            "She took a coin out of her trouser pocket."
+        ],
+        "perf": [
+            "Wer hat den Schlüssel aus der Schachtel herausgenommen?",
+            "Who took the key out of the small box?"
+        ]
+    },
+    "ex": [
+        "Du darfst einen Gegenstand herausnehmen, musst aber einen gleichwertigen hineinlegen.",
+        "You may take one item out, but you must put an equivalent one inside."
+    ],
+    "val": [
+        ["etwas (Akk) aus + Dat herausnehmen", "Woher? Was?", "Sie nimmt die Dose aus der Tasche."]
+    ],
+    "family": ["nehmen", "hineinlegen", "rausnehmen"],
+    "tip": "Umgangssprachlich oft 'rausnehmen'. 'heraus' = von drinnen nach draußen zum Sprecher hin.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-507"]
+})
+
+# 42. RAW-508: hineinlegen
+add_c({
+    "pos": "verb",
+    "word": "hineinlegen",
+    "lemma": "hineinlegen",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[hɪˈnaɪ̯nˌleːɡŋ̩]",
+    "meaning": "to put in, lay inside",
+    "gloss": "to put / lay inside",
+    "sep": True,
+    "pre": "hinein",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "hineingelegt",
+    "partizip2": "hineingelegt",
+    "perfekt": "hat hineingelegt",
+    "praeteritum": "legte hinein",
+    "praesens": "legt hinein",
+    "reflexiv": False,
+    "praes": ["lege hinein", "legst hinein", "legt hinein", "legen hinein", "legt hinein", "legen hinein"],
+    "prat": ["legte hinein", "legtest hinein", "legte hinein", "legten hinein", "legtet hinein", "legten hinein"],
+    "imp": ["Leg hinein!", "Legt hinein!", "Legen Sie hinein!"],
+    "exT": {
+        "praes": [
+            "Der Finder legt ein kleines Spielzeug in die Dose hinein.",
+            "The finder puts a small toy into the tin."
+        ],
+        "prat": [
+            "Sie legte die Nachricht vorsichtig in den Umschlag hinein.",
+            "She carefully placed the note inside the envelope."
+        ],
+        "perf": [
+            "Hast du das Logbuch wieder ordentlich in die Plastiktüte hineingelegt?",
+            "Did you put the logbook properly back into the plastic bag?"
+        ]
+    },
+    "ex": [
+        "Bitte den Behälter nach dem Fund wieder an denselben Ort hineinlegen.",
+        "Please lay the container back into the very same place after finding it."
+    ],
+    "val": [
+        ["etwas (Akk) in + Akk hineinlegen", "Wohin?", "Richtung mit Akkusativ!"]
+    ],
+    "family": ["legen", "herausnehmen", "reinlegen"],
+    "tip": "'hinein-' (rein): Bewegung vom Sprecher weg nach drinnen. Gegenteil: herausnehmen (rausnehmen).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-508"]
+})
+
+# 43. RAW-509: graben
+add_c({
+    "pos": "verb",
+    "word": "graben",
+    "lemma": "graben",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[ˈɡʁaːbn̩]",
+    "meaning": "to dig",
+    "gloss": "to dig",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gegraben",
+    "partizip2": "gegraben",
+    "perfekt": "hat gegraben",
+    "praeteritum": "grub",
+    "praesens": "gräbt",
+    "reflexiv": False,
+    "praes": ["grabe", "gräbst", "gräbt", "graben", "grabt", "graben"],
+    "prat": ["grub", "grubst", "grub", "gruben", "grubt", "gruben"],
+    "imp": ["Grab!", "Grabt!", "Graben Sie!"],
+    "exT": {
+        "praes": [
+            "Der Hund gräbt im Garten begeistert ein tiefes Loch in die Erde.",
+            "The dog enthusiastically digs a deep hole into the dirt in the garden."
+        ],
+        "prat": [
+            "Die Schatzsucher gruben stundenlang nach alten Münzen.",
+            "The treasure hunters dug for hours for old coins."
+        ],
+        "perf": [
+            "Beim Geocaching darf man die Caches nicht vergraben: Niemand hat hier gegraben.",
+            "In geocaching caches must not be buried: nobody dug here."
+        ]
+    },
+    "ex": [
+        "Regel beim Geocaching: Niemals Löcher in den Waldboden graben!",
+        "Rule in geocaching: Never dig holes into the forest soil!"
+    ],
+    "val": [
+        ["graben (nach + Dat)", "Wonach?", "Er gräbt nach Schätzen."]
+    ],
+    "family": ["der Graben", "vergraben", "die Ausgrabung"],
+    "tip": "Vokalwechsel im Präsens: du gräbst, er gräbt! Stammformen: graben – grub – gegraben. Wichtig für Geocacher: Geocaches werden nie vergraben!",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-509"]
+})
+
+# 44. RAW-510: das Loch
+add_c({
+    "pos": "noun",
+    "word": "Loch",
+    "lemma": "Loch",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[lɔx]",
+    "meaning": "hole (in the ground, wall, clothes)",
+    "gloss": "hole",
+    "pl": "die Löcher",
+    "genS": "des Lochs / des Loches",
+    "rule": "Einsilbiges Neutrum mit Plural auf -er und Umlaut (das Loch -> die Löcher, das Buch -> die Bücher).",
+    "nvv": [
+        ["ein Loch graben / bohren", "to dig / drill a hole"]
+    ],
+    "compounds": ["das Astloch", "das Ozonloch", "das Schlupfloch"],
+    "family": ["löchrig", "lochen"],
+    "ex": [
+        "Das Eichhörnchen versteckt Nüsse in einem Loch im alten Baumstamm.",
+        "The squirrel hides nuts in a hole in the old tree trunk."
+    ],
+    "tip": "Pluralform beachten: die Löcher (mit Umlaut Ö). Typisch in der Natur: Baumloch, Erdloch.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-510"]
+})
+
+# 45. RAW-511: die Erde
+add_c({
+    "pos": "noun",
+    "word": "Erde",
+    "lemma": "Erde",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈeːɐ̯də]",
+    "meaning": "earth, soil, dirt; the planet Earth",
+    "gloss": "earth, soil / planet Earth",
+    "pl": "die Erden (selten)",
+    "genS": "der Erde",
+    "rule": "Endung auf -e bei Naturphänomenen oft feminin: die Erde, die Sonne, die Wolke.",
+    "nvv": [
+        ["auf die Erde fallen", "to fall to the ground / earth"]
+    ],
+    "compounds": ["die Blumenerde", "das Erdgeschoss", "die Erdbeere", "das Erdbeben"],
+    "family": ["irdisch", "erdrücken"],
+    "ex": [
+        "Nach dem Regen riecht die feuchte Erde im Nadelwald herrlich frisch.",
+        "After the rain the moist soil in the pine forest smells wonderfully fresh."
+    ],
+    "tip": "Zwei Bedeutungen: 1) Boden/Humus: 'die schwarze Erde'. 2) Unser Planet: 'die Erde' (the Earth).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-511"]
+})
+
+# 46. RAW-512: der Baum
+add_c({
+    "pos": "noun",
+    "word": "Baum",
+    "lemma": "Baum",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[baʊ̯m]",
+    "meaning": "tree",
+    "gloss": "tree",
+    "pl": "die Bäume",
+    "genS": "des Baums / des Baumes",
+    "rule": "Einsilbiges Maskulinum mit Plural-Umlaut: der Baum -> die Bäume (Dativ Plural: den Bäumen).",
+    "nvv": [
+        ["auf einen Baum klettern", "to climb up a tree"],
+        ["einen Baum fällen / pflanzen", "to chop down / plant a tree"]
+    ],
+    "compounds": ["der Apfelbaum", "der Nadelbaum", "der Laubbaum", "die Baumkrone"],
+    "family": ["bäumen", "das Bäumchen"],
+    "ex": [
+        "In den alten Bäumen am Waldrand nisten viele seltene Vogelarten.",
+        "In the old trees at the edge of the forest many rare bird species nest."
+    ],
+    "tip": "Dativ Plural hat immer ein 'n': 'unter den Bäumen' (under the trees).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-512"]
+})
+
+# 47. RAW-513: und so weiter
+add_c({
+    "pos": "phrase",
+    "word": "und so weiter",
+    "lemma": "und so weiter",
+    "level": "A2",
+    "type": "Redewendung · Abkürzung",
+    "ipa": "[ʊnt zoː ˈvaɪ̯tɐ]",
+    "meaning": "and so on, and so forth, etc.",
+    "gloss": "and so on, etc.",
+    "frame": "Liste + und so weiter (usw.)",
+    "reg": "Allgemeinsprachlich / Schriftlich als 'usw.'",
+    "dlg": [
+        ["Was packst du für die Wanderung ein?", "What are you packing for the hike?"],
+        ["Wasserflasche, Regenschutz, Taschenlampe und so weiter.", "Water bottle, rain protection, flashlight, and so on."]
+    ],
+    "ex": [
+        "Im Wald sahen wir Rehe, Füchse, Eichhörnchen und so weiter.",
+        "In the woods we saw deer, foxes, squirrels, and so forth."
+    ],
+    "tip": "Deutsche Standard-Abkürzung: 'usw.' (entspricht englisch 'etc.').",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-513"]
+})
+
+# 48. RAW-514: das Gelände
+add_c({
+    "pos": "noun",
+    "word": "Gelände",
+    "lemma": "Gelände",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ɡəˈlɛndə]",
+    "meaning": "terrain, grounds, premises, countryside",
+    "gloss": "terrain, grounds",
+    "pl": "die Gelände",
+    "genS": "des Geländes",
+    "rule": "Präfix Ge- mit Kollektivbedeutung: meist Neutrum (das Gelände, das Gebirge, das Gebäude).",
+    "nvv": [
+        ["im unwegsamen Gelände wandern", "to hike in rough terrain"]
+    ],
+    "compounds": ["der Geländewagen", "das Klettergelände", "das Fabrikgelände"],
+    "family": ["das Land", "ländlich"],
+    "ex": [
+        "In den Bergen ist das steinige Gelände oft rutschig und gefährlich.",
+        "In the mountains the rocky terrain is often slippery and dangerous."
+    ],
+    "tip": "Typisch bei Outdoor-Sportarten: 'steiles Gelände' (steep terrain), 'der Geländewagen' (off-road vehicle/SUV).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-514"]
+})
+
+# 49. RAW-516: bauen
+add_c({
+    "pos": "verb",
+    "word": "bauen",
+    "lemma": "bauen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈbaʊ̯ən]",
+    "meaning": "to build, construct",
+    "gloss": "to build, construct",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gebaut",
+    "partizip2": "gebaut",
+    "perfekt": "hat gebaut",
+    "praeteritum": "baute",
+    "praesens": "baut",
+    "reflexiv": False,
+    "praes": ["baue", "baust", "baut", "bauen", "baut", "bauen"],
+    "prat": ["baute", "bautest", "baute", "bauten", "bautet", "bauten"],
+    "imp": ["Bau!", "Baut!", "Bauen Sie!"],
+    "exT": {
+        "praes": [
+            "Die Kinder bauen am Sandstrand des Meeres eine riesige Burg.",
+            "The children build a huge castle on the sandy beach of the sea."
+        ],
+        "prat": [
+            "Man baute die kleine Berghütte bereits im 19. Jahrhundert.",
+            "They built the small mountain hut back in the 19th century."
+        ],
+        "perf": [
+            "Die Gemeinde hat einen neuen Sportplatz für die Jugend gebaut.",
+            "The municipality built a new sports field for the youth."
+        ]
+    },
+    "ex": [
+        "Aus Stöcken und Moos haben wir ein sicheres Versteck gebaut.",
+        "We built a safe hiding spot from sticks and moss."
+    ],
+    "val": [
+        ["etwas (Akk) bauen", "Was?", "Er baut eine Hütte."]
+    ],
+    "family": ["das Gebäude", "der Bau", "aufbauen", "umbauen"],
+    "tip": "Stammformen: bauen – baute – gebaut (mit haben). Auch Redewendung: 'Mist bauen' (Umgangssprache: to mess up).",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-516"]
+})
+
+# 50. RAW-517: die Besonderheit
+add_c({
+    "pos": "noun",
+    "word": "Besonderheit",
+    "lemma": "Besonderheit",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[bəˈzɔndɐhaɪ̯t]",
+    "meaning": "special feature, peculiarity, characteristic",
+    "gloss": "special feature",
+    "pl": "die Besonderheiten",
+    "genS": "der Besonderheit",
+    "rule": "Endung -heit: immer zu 100 % feminin (die Besonderheit, die Freiheit, die Schönheit).",
+    "nvv": [
+        ["eine Besonderheit aufweisen", "to exhibit a special feature"]
+    ],
+    "compounds": ["die regionale Besonderheit", "die Sprachbesonderheit"],
+    "family": ["besonders", "sonderbar"],
+    "ex": [
+        "Eine Besonderheit dieses Naturparks sind die warmen Quellen und seltenen Orchideen.",
+        "A special feature of this natural park are the warm springs and rare orchids."
+    ],
+    "tip": "Abgeleitet von 'besonders' (special). Häufig im Plural: 'die Besonderheiten der Landschaft'.",
+    "sourceLessons": [8],
+    "sourceRawIds": ["RAW-517"]
+})
+
+# 51. RAW-518: die Insel
+add_c({
+    "pos": "noun",
+    "word": "Insel",
+    "lemma": "Insel",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈɪnzl̩]",
+    "meaning": "island, isle",
+    "gloss": "island",
+    "pl": "die Inseln",
+    "genS": "der Insel",
+    "rule": "Naturraum auf -el: feminin (die Insel, die Koppel).",
+    "nvv": [
+        ["auf einer Insel Urlaub machen", "to vacation on an island"],
+        ["auf eine Insel fahren / fliegen", "to go / fly to an island"]
+    ],
+    "compounds": ["die Ferieninsel", "die Nordseeinsel", "die Inselgruppe"],
+    "family": ["der Insulaner"],
+    "ex": [
+        "Rügen ist die größte und wohl bekannteste Insel Deutschlands.",
+        "Rügen is the largest and arguably most famous island of Germany."
+    ],
+    "tip": "Wichtige Präposition: 'AUF einer Insel' (Dativ: Wo?) bzw. 'AUF eine Insel' (Akkusativ: Wohin?). Niemals 'in'!",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-518"]
+})
+
+# 52. RAW-519: das Meer
+add_c({
+    "pos": "noun",
+    "word": "Meer",
+    "lemma": "Meer",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[meːɐ̯]",
+    "meaning": "sea, ocean",
+    "gloss": "sea, ocean",
+    "pl": "die Meere",
+    "genS": "des Meeres",
+    "rule": "Einsilbiges Neutrum (das Meer, das Land, das Eis).",
+    "nvv": [
+        ["ans Meer fahren", "to go to the seaside / ocean"],
+        ["am Meer liegen / spazieren", "to lie / walk by the sea"]
+    ],
+    "compounds": ["das Mittelmeer", "die Nordsee", "der Meeresstrand", "der Meeresspiegel"],
+    "family": ["die Meeresfrüchte", "maritim"],
+    "ex": [
+        "Viele Familien in Deutschland verbringen ihre Sommerferien gerne am Meer.",
+        "Many families in Germany like to spend their summer vacation by the sea."
+    ],
+    "tip": "Achtung: 'das Meer' (sea/ocean) vs. 'der See' (lake) vs. 'die See' (Nordsee/Ostsee = sea). 'ans Meer' (Akk: Wohin), 'am Meer' (Dat: Wo).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-519"]
+})
+
+# 53. RAW-520: die Fläche
+add_c({
+    "pos": "noun",
+    "word": "Fläche",
+    "lemma": "Fläche",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈflɛçə]",
+    "meaning": "surface, area, surface area",
+    "gloss": "area, surface",
+    "pl": "die Flächen",
+    "genS": "der Fläche",
+    "rule": "Endung auf -e bei geografischen und geometrischen Begriffen: meist feminin (die Fläche, die Ebene).",
+    "nvv": [
+        ["eine Fläche berechnen / bedecken", "to calculate / cover an area"]
+    ],
+    "compounds": ["die Gesamtfläche", "die Grünfläche", "die Wasseroberfläche", "die Wohnfläche"],
+    "family": ["flach", "der Flachland"],
+    "ex": [
+        "Der Bodensee hat eine riesige Fläche von über 530 Quadratkilometern.",
+        "Lake Constance has a huge surface area of over 530 square kilometers."
+    ],
+    "tip": "Geometrie & Geografie: die Fläche (area in sq km). Wohnung: die Wohnfläche (living space in sq m).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-520"]
+})
+
+# 54. RAW-523: schaukeln
+add_c({
+    "pos": "verb",
+    "word": "schaukeln",
+    "lemma": "schaukeln",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈʃaʊ̯kln̩]",
+    "meaning": "to swing, rock, sway",
+    "gloss": "to swing, rock",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben/sein",
+    "p2": "geschaukelt",
+    "partizip2": "geschaukelt",
+    "perfekt": "hat/ist geschaukelt",
+    "praeteritum": "schaukelte",
+    "praesens": "schaukelt",
+    "reflexiv": False,
+    "praes": ["schaukle", "schaukelst", "schaukelt", "schaukeln", "schaukelt", "schaukeln"],
+    "prat": ["schaukelte", "schaukeltest", "schaukelte", "schaukelten", "schaukeltet", "schaukelten"],
+    "imp": ["Schaukle!", "Schaukelt!", "Schaukeln Sie!"],
+    "exT": {
+        "praes": [
+            "Das kleine Holzboot schaukelt ruhig auf den sanften Wellen des Sees.",
+            "The small wooden boat sways gently on the soft waves of the lake."
+        ],
+        "prat": [
+            "Die Kinder schaukelten stundenlang auf dem Spielplatz.",
+            "The children swung on the swings for hours at the playground."
+        ],
+        "perf": [
+            "Wegen des starken Windes hat das Segelschiff heftig geschaukelt.",
+            "Because of the strong wind, the sailboat rocked violently."
+        ]
+    },
+    "ex": [
+        "Auf dem Spielplatz schaukelt sie am liebsten ganz hoch in den Himmel.",
+        "At the playground she loves swinging high up into the sky."
+    ],
+    "val": [
+        ["schaukeln (auf + Dat)", "Wo?", "Das Boot schaukelt auf dem Wasser."]
+    ],
+    "family": ["die Schaukel", "der Schaukelstuhl"],
+    "tip": "Substantiv: 'die Schaukel' (playground swing). Möbelstück: 'der Schaukelstuhl' (rocking chair).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-523"]
+})
+
+# 55. RAW-524: die Luft
+add_c({
+    "pos": "noun",
+    "word": "Luft",
+    "lemma": "Luft",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[lʊft]",
+    "meaning": "air, breeze",
+    "gloss": "air, breeze",
+    "pl": "die Lüfte (selten)",
+    "genS": "der Luft",
+    "rule": "Einsilbiges Femininum (die Luft, die Kraft, die Nacht).",
+    "nvv": [
+        ["frische Luft schnappen / holen", "to get / take some fresh air"],
+        ["an die frische Luft gehen", "to go out into the fresh air"]
+    ],
+    "compounds": ["die Bergluft", "die Meeresluft", "die Luftverschmutzung", "die Luftmatratze"],
+    "family": ["lüften", "luftig", "luftleer"],
+    "ex": [
+        "In den Bergen ist die Luft wunderbar sauber, kühl und erfrischend.",
+        "In the mountains the air is wonderfully clean, cool, and refreshing."
+    ],
+    "tip": "Sehr gebräuchliche Wendung: 'Ich brauche frische Luft!' (I need some fresh air!). Verb: 'lüften' (to air out the room).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-524"]
+})
+
+# 56. RAW-525: das Ufer
+add_c({
+    "pos": "noun",
+    "word": "Ufer",
+    "lemma": "Ufer",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈuːfɐ]",
+    "meaning": "bank, shore (of a river or lake)",
+    "gloss": "bank, shore",
+    "pl": "die Ufer",
+    "genS": "des Ufers",
+    "rule": "Naturbezeichnung auf -er: Neutrum (das Ufer, das Gewässer).",
+    "nvv": [
+        ["am Ufer spazieren gehen", "to take a walk along the shore / bank"],
+        ["ans Ufer schwimmen", "to swim to the shore"]
+    ],
+    "compounds": ["das Flussufer", "das Seeufer", "die Uferpromenade"],
+    "family": ["uferlos"],
+    "ex": [
+        "Wir saßen abends gemütlich am Ufer des Rheins und sahen den Schiffen zu.",
+        "In the evening we sat comfortably on the banks of the Rhine and watched the ships."
+    ],
+    "tip": "Unterschied: 'das Ufer' ist der Rand von Flüssen und Seen (bank/shore). Am Meer sagt man 'die Küste' (coast) oder 'der Strand' (beach).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-525"]
+})
+
+# 57. RAW-526: genial
+add_c({
+    "pos": "adj",
+    "word": "genial",
+    "lemma": "genial",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ɡeˈni̯aːl]",
+    "meaning": "brilliant, ingenious, awesome",
+    "gloss": "brilliant, ingenious",
+    "comp": [["Positiv", "genial"], ["Komparativ", "genialer"], ["Superlativ", "am genialsten"]],
+    "opp": "dumm, einfallslos",
+    "ex": [
+        "Das ist ja eine absolut geniale Idee für unser Wochenendprogramm!",
+        "That is an absolutely brilliant idea for our weekend program!"
+    ],
+    "family": ["das Genie", "genialerweise"],
+    "tip": "Sehr häufiges deutsches Umgangssprachwort für Begeisterung: 'Das war einfach genial!' (That was simply awesome/brilliant!).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-526"]
+})
+
+# 58. RAW-527: spiegeln
+add_c({
+    "pos": "verb",
+    "word": "spiegeln",
+    "lemma": "spiegeln",
+    "level": "A2",
+    "type": "Verb · reflexiv / regelmäßig",
+    "ipa": "[ˈʃpiːɡl̩n]",
+    "meaning": "to reflect, mirror",
+    "gloss": "to reflect, mirror",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gespiegelt",
+    "partizip2": "gespiegelt",
+    "perfekt": "hat gespiegelt",
+    "praeteritum": "spiegelte",
+    "praesens": "spiegelt",
+    "reflexiv": True,
+    "praes": ["spiegle", "spiegelst", "spiegelt", "spiegeln", "spiegelt", "spiegeln"],
+    "prat": ["spiegelte", "spiegeltest", "spiegelte", "spiegelten", "spiegeltet", "spiegelten"],
+    "imp": ["Spiegle!", "Spiegelt!", "Spiegeln Sie!"],
+    "exT": {
+        "praes": [
+            "Die schneebedeckten Berggipfel spiegeln sich wunderschön im ruhigen Bergsee.",
+            "The snow-capped mountain peaks reflect beautifully in the calm mountain lake."
+        ],
+        "prat": [
+            "Das Sonnenlicht spiegelte sich golden auf der Wasseroberfläche.",
+            "The sunlight reflected golden on the water's surface."
+        ],
+        "perf": [
+            "Sein Gesicht hat sich deutlich im Fenster gespiegelt.",
+            "His face clearly reflected in the window."
+        ]
+    },
+    "ex": [
+        "Im klaren Wasser spiegelt sich der blaue Sommerhimmel.",
+        "In the clear water the blue summer sky is reflected."
+    ],
+    "val": [
+        ["sich in + Dat spiegeln", "Wo?", "Die Bäume spiegeln sich im Wasser."]
+    ],
+    "family": ["der Spiegel", "die Widerspiegelung"],
+    "tip": "Meist reflexiv verwendet: 'etwas spiegelt sich im See / im Spiegel'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-527"]
+})
+
+# 59. RAW-528: überlegen
+add_c({
+    "pos": "verb",
+    "word": "überlegen",
+    "lemma": "überlegen",
+    "level": "A2",
+    "type": "Verb · reflexiv / untrennbar / regelmäßig",
+    "ipa": "[yːbɐˈleːɡŋ̩]",
+    "meaning": "to consider, ponder, think over",
+    "gloss": "to consider, think over",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "überlegt",
+    "partizip2": "überlegt",
+    "perfekt": "hat überlegt",
+    "praeteritum": "überlegte",
+    "praesens": "überlegt",
+    "reflexiv": True,
+    "praes": ["überlege mir", "überlegst dir", "überlegt sich", "überlegen uns", "überlegt euch", "überlegen sich"],
+    "prat": ["überlegte mir", "überlegtest dir", "überlegte sich", "überlegten uns", "überlegtet euch", "überlegten sich"],
+    "imp": ["Überleg mal!", "Überlegt euch das!", "Überlegen Sie es sich!"],
+    "exT": {
+        "praes": [
+            "Ich überlege mir gerade, welchen Sport ich im Frühling anfangen soll.",
+            "I am currently pondering which sport I should take up in spring."
+        ],
+        "prat": [
+            "Wir überlegten lange, wohin wir in den Urlaub fahren wollten.",
+            "We considered for a long time where we wanted to go on vacation."
+        ],
+        "perf": [
+            "Hast du dir schon überlegt, was du am Wochenende machen möchtest?",
+            "Have you already thought about what you want to do on the weekend?"
+        ]
+    },
+    "ex": [
+        "Lass mich kurz überlegen, dann gebe ich dir Bescheid.",
+        "Let me think for a moment, then I will let you know."
+    ],
+    "val": [
+        ["sich (Dat) etwas (Akk) überlegen", "Was?", "Ich überlege mir einen Plan."]
+    ],
+    "family": ["die Überlegung", "überlegt"],
+    "tip": "Das Reflexivpronomen steht im DATIV: 'Ich überlege MIR (nicht mich)'. 'Überleg mal!' = Just think / imagine!",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-528"]
+})
+
+# 60. RAW-534: die Seehöhe
+add_c({
+    "pos": "noun",
+    "word": "Seehöhe",
+    "lemma": "Seehöhe",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈzeːˌhøːə]",
+    "meaning": "altitude above sea level, elevation",
+    "gloss": "altitude above sea level",
+    "pl": "die Seehöhen",
+    "genS": "der Seehöhe",
+    "rule": "Grundwort 'die Höhe': immer feminin (die Höhe, die Seehöhe, die Berghöhe).",
+    "nvv": [
+        ["auf 1500 Metern Seehöhe liegen", "to be located at 1500 meters above sea level"]
+    ],
+    "compounds": ["der Meeresspiegel", "die Höhenlage", "die Meter über Adria"],
+    "family": ["der See / die See", "hoch", "die Höhe"],
+    "ex": [
+        "Das idyllische Bergdorf liegt auf einer Seehöhe von 1.200 Metern.",
+        "The idyllic mountain village is situated at an altitude of 1,200 meters above sea level."
+    ],
+    "tip": "Besonders in Österreich und Süddeutschland sehr gebräuchlich für die Höhenangabe ('m ü. A.' bzw. 'Meter über Seehöhe').",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-534"]
+})
+
+# 61. RAW-535: entfernt
+add_c({
+    "pos": "adj",
+    "word": "entfernt",
+    "lemma": "entfernt",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ɛntˈfɛʁnt]",
+    "meaning": "distant, away, remote",
+    "gloss": "distant, away",
+    "comp": [["Positiv", "entfernt"], ["Komparativ", "entfernter"], ["Superlativ", "am entferntesten"]],
+    "opp": "nah, in der Nähe",
+    "ex": [
+        "Der nächste Badesee ist nur fünfzehn Kilometer von unserem Ferienhaus entfernt.",
+        "The nearest swimming lake is only fifteen kilometers away from our holiday home."
+    ],
+    "family": ["die Entfernung", "entfernen"],
+    "tip": "Konstruktion: '... Kilometer entfernt von + Dativ'. Beispiel: 'Wie weit ist der Bahnhof entfernt?'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-535"]
+})
+
+# 62. RAW-538: sich beschweren
+add_c({
+    "pos": "verb",
+    "word": "sich beschweren",
+    "lemma": "beschweren",
+    "level": "A2",
+    "type": "Verb · untrennbar / reflexiv / regelmäßig",
+    "ipa": "[bəˈʃveːʁən]",
+    "meaning": "to complain (about sth to sb)",
+    "gloss": "to complain",
+    "sep": False,
+    "pre": "be",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "beschwert",
+    "partizip2": "beschwert",
+    "perfekt": "hat sich beschwert",
+    "praeteritum": "beschwerte sich",
+    "praesens": "beschwert sich",
+    "reflexiv": True,
+    "praes": ["beschwere mich", "beschwerst dich", "beschwert sich", "beschweren uns", "beschwert euch", "beschweren sich"],
+    "prat": ["beschwerte mich", "beschwertest dich", "beschwerte sich", "beschwerten uns", "beschwertet euch", "beschwerten sich"],
+    "imp": ["Beschwere dich!", "Beschwert euch!", "Beschweren Sie sich!"],
+    "exT": {
+        "praes": [
+            "Der Nachbar beschwert sich ständig über laute Musik am späten Abend.",
+            "The neighbor constantly complains about loud music late in the evening."
+        ],
+        "prat": [
+            "Die Hotelgäste beschwerten sich an der Rezeption über die fehlende Klimaanlage.",
+            "The hotel guests complained at the reception desk about the missing air conditioning."
+        ],
+        "perf": [
+            "Haben Sie sich beim Vermieter über den Lärm beschwert?",
+            "Did you complain to the landlord about the noise?"
+        ]
+    },
+    "ex": [
+        "Ich möchte mich über den unhöflichen Service im Café beschweren.",
+        "I would like to complain about the rude service in the café."
+    ],
+    "val": [
+        ["sich bei + Dat über + Akk beschweren", "Bei wem? Worüber?", "Er beschwert sich beim Chef über die Überstunden."]
+    ],
+    "family": ["die Beschwerde", "schwer"],
+    "tip": "Präpositionen: 'sich BEI jemandem (Dat) ÜBER etwas (Akk) beschweren'. Nomen: 'die Beschwerde'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-538"]
+})
+
+# 63. RAW-539: leise
+add_c({
+    "pos": "adj",
+    "word": "leise",
+    "lemma": "leise",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈlaɪ̯zə]",
+    "meaning": "quiet, soft, silent",
+    "gloss": "quiet, silent",
+    "comp": [["Positiv", "leise"], ["Komparativ", "leiser"], ["Superlativ", "am leisesten"]],
+    "opp": "laut, geräuschvoll",
+    "ex": [
+        "Seid bitte leise, die Kinder schlafen schon im Nebenzimmer!",
+        "Please be quiet, the children are already asleep in the next room!"
+    ],
+    "family": ["die Leisetreterei"],
+    "tip": "Gegenteil: 'laut'. Aufforderung im Alltag: 'Macht bitte die Musik leiser!' (Turn down the music, please!).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-539"]
+})
+
+# 64. RAW-540: bisher
+add_c({
+    "pos": "conn",
+    "word": "bisher",
+    "lemma": "bisher",
+    "level": "A2",
+    "type": "Adverb · Zeit",
+    "ipa": "[bɪsˈheːɐ̯]",
+    "meaning": "so far, until now, up to now",
+    "gloss": "so far, until now",
+    "cls": "Temporaladverb",
+    "orders": "Im Vorfeld (bisher habe ich...) oder Mittelfeld (ich habe bisher...)",
+    "cmp": "Synonym zu 'bis jetzt', 'bislang'.",
+    "ex": [
+        "Bisher haben wir beim Geocaching jeden einzelnen Cache im Wald gefunden.",
+        "So far we have found every single cache in the forest while geocaching."
+    ],
+    "tip": "Sehr nützliches Zeitadverb: 'bisher' = bis zum gegenwärtigen Moment. Häufig mit Perfekt ('Bisher habe ich noch nie gegolft').",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-540"]
+})
+
+# 65. RAW-541: bellen
+add_c({
+    "pos": "verb",
+    "word": "bellen",
+    "lemma": "bellen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈbɛln̩]",
+    "meaning": "to bark (of a dog)",
+    "gloss": "to bark",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gebellt",
+    "partizip2": "gebellt",
+    "perfekt": "hat gebellt",
+    "praeteritum": "bellte",
+    "praesens": "bellt",
+    "reflexiv": False,
+    "praes": ["belle", "bellst", "bellt", "bellen", "bellt", "bellen"],
+    "prat": ["bellte", "belltest", "bellte", "bellten", "belltet", "bellten"],
+    "imp": ["Bell nicht!"],
+    "exT": {
+        "praes": [
+            "Der Nachbarshund bellt jedes Mal laut, wenn der Postbote am Gartentor vorbeigeht.",
+            "The neighbor's dog barks loudly every time the mail carrier passes the garden gate."
+        ],
+        "prat": [
+            "In der Nacht bellten die Hunde im ganzen Dorf.",
+            "During the night the dogs barked throughout the whole village."
+        ],
+        "perf": [
+            "Warum hat dein Hund eben so aufgeregt an der Tür gebellt?",
+            "Why did your dog bark so excitedly at the door just now?"
+        ]
+    },
+    "ex": [
+        "Hunde, die bellen, beißen nicht.",
+        "Barking dogs seldom bite (German proverb)."
+    ],
+    "val": [
+        ["bellen (jemanden anbellen)", "Wer?", "Der Hund bellt."]
+    ],
+    "family": ["das Bellen", "anbellen"],
+    "tip": "Bekanntes deutsches Sprichwort: 'Hunde, die bellen, beißen nicht' (Barking dogs don't bite).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-541"]
+})
+
+# 66. RAW-542: abstellen
+add_c({
+    "pos": "verb",
+    "word": "abstellen",
+    "lemma": "abstellen",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[ˈapˌʃtɛln̩]",
+    "meaning": "to park, put down (bicycle, luggage); to turn off (water, motor)",
+    "gloss": "to park / turn off",
+    "sep": True,
+    "pre": "ab",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "abgestellt",
+    "partizip2": "abgestellt",
+    "perfekt": "hat abgestellt",
+    "praeteritum": "stellte ab",
+    "praesens": "stellt ab",
+    "reflexiv": False,
+    "praes": ["stelle ab", "stellst ab", "stellt ab", "stellen ab", "stellt ab", "stellen ab"],
+    "prat": ["stellte ab", "stelltest ab", "stellte ab", "stellten ab", "stelltet ab", "stellten ab"],
+    "imp": ["Stell ab!", "Stellt ab!", "Stellen Sie ab!"],
+    "exT": {
+        "praes": [
+            "Er stellt sein Mountainbike im Hof vor dem Fahrradkeller ab.",
+            "He parks his mountain bike in the courtyard in front of the bike cellar."
+        ],
+        "prat": [
+            "Vor dem Urlaub stellte sie den Hauptwasserhahn vorsichtshalber ab.",
+            "Before the vacation she turned off the main water valve as a precaution."
+        ],
+        "perf": [
+            "Wo hast du deinen schweren Wanderrucksack abgestellt?",
+            "Where did you put down your heavy hiking backpack?"
+        ]
+    },
+    "ex": [
+        "Fahrräder bitte nur an den dafür vorgesehenen Ständern abstellen!",
+        "Please park bicycles only at the racks provided!"
+    ],
+    "val": [
+        ["etwas (Akk) abstellen", "Was? Wo?", "Er stellt das Rad im Hof ab."]
+    ],
+    "family": ["stellen", "der Abstellraum", "das Abstellen"],
+    "tip": "Zwei wichtige Anwendungen: 1) Gefährt/Rucksack abstellen = parken/absetzen. 2) Wasser/Gas/Motor abstellen = ausschalten/abdrehen.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-542"]
+})
+
+# 67. RAW-543: der Eingang
+add_c({
+    "pos": "noun",
+    "word": "Eingang",
+    "lemma": "Eingang",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈaɪ̯nˌɡaŋ]",
+    "meaning": "entrance, entry, front door",
+    "gloss": "entrance, doorway",
+    "pl": "die Eingänge",
+    "genS": "des Eingangs",
+    "rule": "Substantivierung zum Verbstamm von gehen (der Gang): Maskulinum (der Eingang, der Ausgang, der Übergang).",
+    "nvv": [
+        ["am Eingang warten / sich treffen", "to wait / meet at the entrance"]
+    ],
+    "compounds": ["der Haupteingang", "der Nebeneingang", "der Notausgang"],
+    "family": ["eingehen", "der Ausgang", "gehen"],
+    "ex": [
+        "Wir treffen uns um 9 Uhr direkt am Haupteingang des Stadions.",
+        "We'll meet at 9 o'clock directly at the main entrance of the stadium."
+    ],
+    "tip": "Gegenteil: 'der Ausgang' (exit). Präposition: 'am Eingang' (at the entrance).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-543"]
+})
+
+# 68. RAW-544: einchecken / auschecken (reconciled from typo 'einlecken')
+add_c({
+    "pos": "verb",
+    "word": "einchecken",
+    "lemma": "einchecken",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[ˈaɪ̯nˌtʃɛkn̩]",
+    "meaning": "to check in (at a hotel, flight)",
+    "gloss": "to check in",
+    "sep": True,
+    "pre": "ein",
+    "aux": "haben",
+    "hilfsverb": "haben/sein",
+    "p2": "eingecheckt",
+    "partizip2": "eingecheckt",
+    "perfekt": "hat/ist eingecheckt",
+    "praeteritum": "checkte ein",
+    "praesens": "checkt ein",
+    "reflexiv": False,
+    "praes": ["checke ein", "checkst ein", "checkt ein", "checken ein", "checkt ein", "checken ein"],
+    "prat": ["checkte ein", "checktest ein", "checkte ein", "checkten ein", "checktet ein", "checkten ein"],
+    "imp": ["Check ein!", "Checkt ein!", "Checken Sie ein!"],
+    "exT": {
+        "praes": [
+            "Wir checken um 14 Uhr im Hotel an der Rezeption ein.",
+            "We check in at 2 p.m. at the hotel reception."
+        ],
+        "prat": [
+            "Die Touristen checkten schnell ein und gingen sofort an den Pool.",
+            "The tourists checked in quickly and went straight to the pool."
+        ],
+        "perf": [
+            "Haben Sie schon online für Ihren morgigen Flug eingecheckt?",
+            "Have you already checked in online for your flight tomorrow?"
+        ]
+    },
+    "ex": [
+        "Die Check-in-Zeit im Ferienresort beginnt täglich ab 15 Uhr.",
+        "The check-in time at the holiday resort begins daily from 3 p.m."
+    ],
+    "val": [
+        ["(im Hotel / am Flughafen) einchecken", "Wo?", "Er checkt im Hotel ein."]
+    ],
+    "family": ["auschecken", "der Check-in"],
+    "tip": "Korrektur des Tippfehlers 'einlecken' aus der Wortliste: gemeint ist 'einchecken' (Hotel/Flughafen). Gegenteil: 'auschecken'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-544"]
+})
+
+# 69. RAW-545: annehmen
+add_c({
+    "pos": "verb",
+    "word": "annehmen",
+    "lemma": "annehmen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈanˌneːmən]",
+    "meaning": "to accept, take delivery of (a parcel); to assume",
+    "gloss": "to accept, assume",
+    "sep": True,
+    "pre": "an",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "angenommen",
+    "partizip2": "angenommen",
+    "perfekt": "hat angenommen",
+    "praeteritum": "nahm an",
+    "praesens": "nimmt an",
+    "reflexiv": False,
+    "praes": ["nehme an", "nimmst an", "nimmt an", "nehmen an", "nehmt an", "nehmen an"],
+    "prat": ["nahm an", "nahmst an", "nahm an", "nahmen an", "nahmt an", "nahmen an"],
+    "imp": ["Nimm an!", "Nehmt an!", "Nehmen Sie an!"],
+    "exT": {
+        "praes": [
+            "Können Sie während meines Urlaubs freundlicherweise Pakete für mich annehmen?",
+            "Could you kindly take delivery of parcels for me during my vacation?"
+        ],
+        "prat": [
+            "Die freundliche Nachbarin nahm das Päckchen ohne zu zögern an.",
+            "The friendly neighbor accepted the small package without hesitating."
+        ],
+        "perf": [
+            "Er hat die Einladung zur Bergtour mit großer Freude angenommen.",
+            "He accepted the invitation to the mountain tour with great pleasure."
+        ]
+    },
+    "ex": [
+        "Könntest du bitte mein Paket vom Postboten annehmen?",
+        "Could you please accept my parcel from the delivery person?"
+    ],
+    "val": [
+        ["etwas (Akk) annehmen", "Was?", "Sie nimmt die Post an."]
+    ],
+    "family": ["die Annahme", "nehmen", "abnehmen"],
+    "tip": "Typische Nachbarschaftshilfe in Deutschland: 'Pakete für Nachbarn annehmen'. Vokalwechsel: er nimmt an; Stammformen: annehmen – nahm an – angenommen.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-545"]
+})
+
+# 70. RAW-546: ausräumen
+add_c({
+    "pos": "verb",
+    "word": "ausräumen",
+    "lemma": "ausräumen",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[ˈaʊ̯sˌʁɔɪ̯mən]",
+    "meaning": "to empty, clear out (dishwasher, car, wardrobe)",
+    "gloss": "to empty, clear out",
+    "sep": True,
+    "pre": "aus",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "ausgeräumt",
+    "partizip2": "ausgeräumt",
+    "perfekt": "hat ausgeräumt",
+    "praeteritum": "räumte aus",
+    "praesens": "räumt aus",
+    "reflexiv": False,
+    "praes": ["räume aus", "räumst aus", "räumt aus", "räumen aus", "räumt aus", "räumen aus"],
+    "prat": ["räumte aus", "räumtest aus", "räumte aus", "räumten aus", "räumtet aus", "räumten aus"],
+    "imp": ["Räum aus!", "Räumt aus!", "Räumen Sie aus!"],
+    "exT": {
+        "praes": [
+            "Wer räumt heute die saubere Spülmaschine in der Küche aus?",
+            "Who is emptying the clean dishwasher in the kitchen today?"
+        ],
+        "prat": [
+            "Nach der Rückkehr aus dem Urlaub räumten wir sofort das Auto aus.",
+            "After returning from vacation we immediately unloaded/emptied the car."
+        ],
+        "perf": [
+            "Hast du deinen Kleiderschrank vor dem Umzug schon komplett ausgeräumt?",
+            "Have you already completely emptied your wardrobe before the move?"
+        ]
+    },
+    "ex": [
+        "Vor der Abreise muss die Ferienwohnung ordentlich aufgeräumt und der Kühlschrank ausgeräumt werden.",
+        "Before departure the holiday apartment must be tidied up properly and the fridge emptied."
+    ],
+    "val": [
+        ["etwas (Akk) ausräumen", "Was?", "Er räumt den Geschirrspüler aus."]
+    ],
+    "family": ["aufräumen", "einräumen", "der Raum"],
+    "tip": "Gegenteil: 'einräumen' (to load/put into). Zusammengehöriges Trio: aufräumen (clean up), einräumen (put into), ausräumen (empty out).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-546"]
+})
+
+# 71. RAW-547: den Briefkasten leeren
+add_c({
+    "pos": "phrase",
+    "word": "den Briefkasten leeren",
+    "lemma": "den Briefkasten leeren",
+    "level": "A2",
+    "type": "Redewendung · Nomen-Verb-Verbindung",
+    "ipa": "[deːn ˈbʁiːfˌkastn̩ ˈleːʁən]",
+    "meaning": "to empty the mailbox",
+    "gloss": "to empty the mailbox",
+    "frame": "den Briefkasten leeren (hat geleert)",
+    "reg": "Alltagssprache / Urlaubsvertretung",
+    "dlg": [
+        ["Ich fahre ab morgen für zwei Wochen nach Italien.", "I'm heading to Italy for two weeks starting tomorrow."],
+        ["Schönen Urlaub! Soll ich in der Zeit deinen Briefkasten leeren?", "Have a great vacation! Should I empty your mailbox while you're away?"]
+    ],
+    "ex": [
+        "Könnten Sie bitte alle zwei Tage den Briefkasten leeren, damit er nicht überquillt?",
+        "Could you please empty the mailbox every two days so that it doesn't overflow?"
+    ],
+    "tip": "Klassische Urlaubsbitte an Nachbarn: 'Briefkasten leeren und Blumen gießen' (empty the mailbox and water the flowers).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-547"]
+})
+
+# 72. RAW-548: füttern
+add_c({
+    "pos": "verb",
+    "word": "füttern",
+    "lemma": "füttern",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈfʏtɐn]",
+    "meaning": "to feed (animals, pets, baby)",
+    "gloss": "to feed (animals)",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gefüttert",
+    "partizip2": "gefüttert",
+    "perfekt": "hat gefüttert",
+    "praeteritum": "fütterte",
+    "praesens": "füttert",
+    "reflexiv": False,
+    "praes": ["füttere", "fütterst", "füttert", "füttern", "füttert", "füttern"],
+    "prat": ["fütterte", "füttertest", "fütterte", "fütterten", "füttertet", "fütterten"],
+    "imp": ["Füttere!", "Füttert!", "Füttern Sie!"],
+    "exT": {
+        "praes": [
+            "Die Nachbarin füttert während unserer Abwesenheit zweimal am Tag die Katze.",
+            "The neighbor feeds the cat twice a day during our absence."
+        ],
+        "prat": [
+            "Auf dem Bauernhof fütterten die Kinder begeistert die Ziegen mit Gras.",
+            "On the farm the children enthusiastically fed the goats with grass."
+        ],
+        "perf": [
+            "Hast du den Hund heute Morgen schon mit Trockenfutter gefüttert?",
+            "Did you already feed the dog with dry food this morning?"
+        ]
+    },
+    "ex": [
+        "Bitte die Enten im Park nicht mit trockenem Brot füttern!",
+        "Please do not feed the ducks in the park with dry bread!"
+    ],
+    "val": [
+        ["ein Tier (Akk) füttern (mit + Dat)", "Wen? Womit?", "Sie füttert die Vögel."]
+    ],
+    "family": ["das Futter", "die Fütterung"],
+    "tip": "Unterschied: Menschen 'essen' (oder werden gefüttert, wenn Baby/krank). Tiere bekommen 'das Futter' und werden 'gefüttert'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-548"]
+})
+
+# 73. RAW-549: der Schraubendreher
+add_c({
+    "pos": "noun",
+    "word": "Schraubendreher",
+    "lemma": "Schraubendreher",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈʃʁaʊ̯bn̩ˌdʁeːɐ]",
+    "meaning": "screwdriver (technical term)",
+    "gloss": "screwdriver",
+    "pl": "die Schraubendreher",
+    "genS": "des Schraubendrehers",
+    "rule": "Gerätebezeichnung auf -er: Maskulinum (der Schraubendreher, der Bohrer, der Hammer).",
+    "nvv": [
+        ["eine Schraube mit dem Schraubendreher festziehen", "to tighten a screw with the screwdriver"]
+    ],
+    "compounds": ["der Schraubenzieher", "der Kreuzschraubendreher"],
+    "family": ["die Schraube", "drehen", "der Dreher"],
+    "ex": [
+        "Um den Batteriedeckel der Taschenlampe zu öffnen, brauche ich einen kleinen Schraubendreher.",
+        "To open the battery lid of the flashlight, I need a small screwdriver."
+    ],
+    "tip": "Fachbegriff (DIN-Norm): 'der Schraubendreher'. In der Umgangssprache sagen Deutsche jedoch meist 'der Schraubenzieher'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-549"]
+})
+
+# 74. RAW-550: sich anmelden / sich abmelden
+add_c({
+    "pos": "verb",
+    "word": "sich anmelden",
+    "lemma": "sich anmelden",
+    "level": "A2",
+    "type": "Verb · trennbar / reflexiv",
+    "ipa": "[zɪç ˈanˌmɛldn̩]",
+    "meaning": "to register, sign in / sign up (opp: sich abmelden)",
+    "gloss": "to register, sign in",
+    "sep": True,
+    "pre": "an",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "angemeldet",
+    "partizip2": "angemeldet",
+    "perfekt": "hat sich angemeldet",
+    "praeteritum": "meldete sich an",
+    "praesens": "meldet sich an",
+    "reflexiv": True,
+    "praes": ["melde mich an", "meldest dich an", "meldet sich an", "melden uns an", "meldet euch an", "melden sich an"],
+    "prat": ["meldete mich an", "meldetest dich an", "meldete sich an", "meldeten uns an", "meldetet euch an", "meldeten sich an"],
+    "imp": ["Melde dich an!", "Meldet euch an!", "Melden Sie sich an!"],
+    "exT": {
+        "praes": [
+            "Er meldet sich heute für den neuen Tenniskurs im Sportverein an.",
+            "He is registering today for the new tennis course at the sports club."
+        ],
+        "prat": [
+            "Sie meldete sich rechtzeitig vor dem Wettkampf ab.",
+            "She deregistered in good time before the competition."
+        ],
+        "perf": [
+            "Wir haben uns online für den Stadtmarathon angemeldet.",
+            "We registered online for the city marathon."
+        ]
+    },
+    "ex": [
+        "Vergiss nicht, dich nach dem Training auf der Webseite wieder abzumelden.",
+        "Don't forget to log out of the website again after training."
+    ],
+    "val": [
+        ["sich anmelden für + Akk / bei + Dat", "Wofür? Wo?", "Er meldet sich zum Kurs an."]
+    ],
+    "family": ["die Anmeldung", "die Abmeldung", "sich abmelden", "melden"],
+    "tip": "Perfektes Begriffspaar: 'sich anmelden' (sign up, log in, register) vs. 'sich abmelden' (log out, cancel registration).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-550"]
+})
+
+# 75. RAW-552: sich verabschieden
+add_c({
+    "pos": "verb",
+    "word": "sich verabschieden",
+    "lemma": "verabschieden",
+    "level": "A2",
+    "type": "Verb · untrennbar / reflexiv / regelmäßig",
+    "ipa": "[fɛɐ̯ˈʔapˌʃiːdn̩]",
+    "meaning": "to say goodbye, take leave (of sb)",
+    "gloss": "to say goodbye",
+    "sep": False,
+    "pre": "ver",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "verabschiedet",
+    "partizip2": "verabschiedet",
+    "perfekt": "hat sich verabschiedet",
+    "praeteritum": "verabschiedete sich",
+    "praesens": "verabschiedet sich",
+    "reflexiv": True,
+    "praes": ["verabschiede mich", "verabschiedest dich", "verabschiedet sich", "verabschieden uns", "verabschiedet euch", "verabschieden sich"],
+    "prat": ["verabschiedete mich", "verabschiedetest dich", "verabschiedete sich", "verabschiedeten uns", "verabschiedetet euch", "verabschiedeten sich"],
+    "imp": ["Verabschiede dich!", "Verabschiedet euch!", "Verabschieden Sie sich!"],
+    "exT": {
+        "praes": [
+            "Ich verabschiede mich herzlich von meinen Teamkollegen nach dem Training.",
+            "I say a warm goodbye to my teammates after practice."
+        ],
+        "prat": [
+            "Die Wanderer verabschiedeten sich von der Hüttenwirtin und stiegen ins Tal ab.",
+            "The hikers said goodbye to the hut landlady and descended into the valley."
+        ],
+        "perf": [
+            "Hast du dich schon von allen Gästen auf der Feier verabschiedet?",
+            "Did you already say goodbye to all the guests at the party?"
+        ]
+    },
+    "ex": [
+        "Wir müssen uns leider schon verabschieden, denn unser Zug fährt gleich.",
+        "Unfortunately we already have to say goodbye, because our train is leaving shortly."
+    ],
+    "val": [
+        ["sich verabschieden von + Dat", "Von wem?", "Er verabschiedet sich von seinen Eltern."]
+    ],
+    "family": ["der Abschied", "abschiedlich"],
+    "tip": "Feste Präposition: 'sich verabschieden VON + Dativ'. Substantiv: 'der Abschied' ('Auf Wiedersehen' sagen).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-552"]
+})
+
+# 76. RAW-554: fehlen (Zeugnis hat gefehlt)
+add_c({
+    "pos": "verb",
+    "word": "fehlen",
+    "lemma": "fehlen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈfeːlən]",
+    "meaning": "to be missing, lack; to miss (emotionally)",
+    "gloss": "to be missing, lack",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gefehlt",
+    "partizip2": "gefehlt",
+    "perfekt": "hat gefehlt",
+    "praeteritum": "fehlte",
+    "praesens": "fehlt",
+    "reflexiv": False,
+    "praes": ["fehle", "fehlst", "fehlt", "fehlen", "fehlt", "fehlen"],
+    "prat": ["fehlte", "fehltest", "fehlte", "fehlten", "fehltet", "fehlten"],
+    "imp": ["Fehle nicht!"],
+    "exT": {
+        "praes": [
+            "In meinen Bewerbungsunterlagen fehlt noch das aktuelle Sprachzeugnis.",
+            "In my application documents the current language certificate is still missing."
+        ],
+        "prat": [
+            "Beim ersten Versuch fehlte uns leider das nötige Werkzeug.",
+            "On the first attempt we unfortunately lacked the necessary tools."
+        ],
+        "perf": [
+            "Bei der Anmeldung hat sein Zeugnis gefehlt, deshalb konnte er nicht mitmachen.",
+            "During registration his certificate was missing, which is why he couldn't participate."
+        ]
+    },
+    "ex": [
+        "Du fehlst mir sehr!",
+        "I miss you very much! (You are missing to me)."
+    ],
+    "val": [
+        ["jemandem (Dat) fehlen", "Wem? Was?", "Mir fehlt die Zeit / das Zeugnis hat gefehlt."]
+    ],
+    "family": ["der Fehler", "das Fehlen", "fehlerhaft"],
+    "tip": "Subjekt ist die Sache, die fehlt; die Person steht im Dativ: 'Das Zeugnis hat gefehlt' / 'Mir fehlt Zeit'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-554"]
+})
+
+# 77. RAW-556: sich unterhalten
+add_c({
+    "pos": "verb",
+    "word": "sich unterhalten",
+    "lemma": "unterhalten",
+    "level": "A2",
+    "type": "Verb · untrennbar / reflexiv / unregelmäßig",
+    "ipa": "[ˌʊntɐˈhaltn̩]",
+    "meaning": "to converse, chat, talk; to entertain oneself",
+    "gloss": "to converse, chat",
+    "sep": False,
+    "pre": "unter",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "unterhalten",
+    "partizip2": "unterhalten",
+    "perfekt": "hat sich unterhalten",
+    "praeteritum": "unterhielt sich",
+    "praesens": "unterhält sich",
+    "reflexiv": True,
+    "praes": ["unterhalte mich", "unterhältst dich", "unterhält sich", "unterhalten uns", "unterhaltet euch", "unterhalten sich"],
+    "prat": ["unterhielt mich", "unterhieltst dich", "unterhielt sich", "unterhielten uns", "unterhieltet euch", "unterhielten sich"],
+    "imp": ["Unterhalte dich!", "Unterhaltet euch!", "Unterhalten Sie sich!"],
+    "exT": {
+        "praes": [
+            "Nach dem Fußballspiel unterhält er sich noch lange mit dem Trainer.",
+            "After the soccer match he chats for a long time with the coach."
+        ],
+        "prat": [
+            "Wir unterhielten uns auf der Zugfahrt angeregt über unsere Hobbys.",
+            "On the train journey we conversed animatedly about our hobbies."
+        ],
+        "perf": [
+            "Hast du dich auf der Party nett mit den anderen Gästen unterhalten?",
+            "Did you have a nice conversation with the other guests at the party?"
+        ]
+    },
+    "ex": [
+        "Sie unterhalten sich gerne auf Deutsch über Freizeit und Reisen.",
+        "They like to converse in German about leisure time and travel."
+    ],
+    "val": [
+        ["sich mit + Dat über + Akk unterhalten", "Mit wem? Worüber?", "Er unterhält sich mit ihr über Sport."]
+    ],
+    "family": ["die Unterhaltung", "unterhaltsam", "halten"],
+    "tip": "Präpositionen: 'sich MIT jemandem (Dat) ÜBER ein Thema (Akk) unterhalten'. Stammformen: unterhalten – unterhielt – unterhalten.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-556"]
+})
+
+# 78. RAW-557: sich verirren
+add_c({
+    "pos": "verb",
+    "word": "sich verirren",
+    "lemma": "verirren",
+    "level": "A2",
+    "type": "Verb · untrennbar / reflexiv / regelmäßig",
+    "ipa": "[fɛɐ̯ˈʔɪʁən]",
+    "meaning": "to get lost, lose one's way, go astray",
+    "gloss": "to get lost",
+    "sep": False,
+    "pre": "ver",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "verirrt",
+    "partizip2": "verirrt",
+    "perfekt": "hat sich verirrt",
+    "praeteritum": "verirrte sich",
+    "praesens": "verirrt sich",
+    "reflexiv": True,
+    "praes": ["verirre mich", "verirrst dich", "verirrt sich", "verirren uns", "verirrt euch", "verirren sich"],
+    "prat": ["verirrte mich", "verirrtest dich", "verirrte sich", "verirrten uns", "verirrtet euch", "verirrten sich"],
+    "imp": ["Verirre dich nicht!", "Verirrt euch nicht!", "Verirren Sie sich nicht!"],
+    "exT": {
+        "praes": [
+            "Ohne Wanderkarte verirrt man sich in dem riesigen Waldgebiet sehr schnell.",
+            "Without a hiking map one gets lost very quickly in the vast forest area."
+        ],
+        "prat": [
+            "Die Touristen irrten stundenlang umher, weil sie sich im dichten Nebel verirrten.",
+            "The tourists wandered around for hours because they got lost in the dense fog."
+        ],
+        "perf": [
+            "Wir haben uns gestern auf dem Rückweg von der Berghütte total verirrt.",
+            "Yesterday we got completely lost on the way back from the mountain hut."
+        ]
+    },
+    "ex": [
+        "Keine Panik, dank des GPS-Geräts können wir uns nicht verirren.",
+        "No panic, thanks to the GPS device we cannot get lost."
+    ],
+    "val": [
+        ["sich im Wald / in der Stadt verirren", "Wo?", "Er hat sich im Gebirge verirrt."]
+    ],
+    "family": ["der Irrtum", "irren", "verwirren"],
+    "tip": "Präfix 'ver-' signalisiert hier Fehlschlag/Irrweg (wie in verfahren, verlaufen). Partizip als Zustand: 'Ich bin verirrt'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-557"]
+})
+
+# 79. RAW-558: der Mitstudent
+add_c({
+    "pos": "noun",
+    "word": "Mitstudent",
+    "lemma": "Mitstudent",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum (n-Deklination)",
+    "ipa": "[ˈmɪtʃtuˌdɛnt]",
+    "meaning": "fellow student (male)",
+    "gloss": "fellow student",
+    "pl": "die Mitstudenten",
+    "genS": "des Mitstudenten",
+    "rule": "N-Deklination (Maskulina auf -ent): der Mitstudent, des/dem/den Mitstudenten, die Mitstudenten.",
+    "nvv": [
+        ["mit den Mitstudenten lernen / Sport treiben", "to study / do sports with fellow students"]
+    ],
+    "compounds": ["die Mitstudentin", "die Kommilitonen", "der Mitbewohner"],
+    "family": ["studieren", "der Student", "das Studium"],
+    "ex": [
+        "Am Wochenende treffe ich mich mit meinen Mitstudenten zum Volleyballspielen im Park.",
+        "At the weekend I meet up with my fellow students to play volleyball in the park."
+    ],
+    "tip": "N-Deklination beachten: Akkusativ, Dativ und Genitiv Singular enden auf -en ('mit einem Mitstudenten'). Weibliche Form: 'die Mitstudentin'. Synonym: der Kommilitone.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-558"]
+})
+
+# 80. RAW-562: erlaubt
+add_c({
+    "pos": "adj",
+    "word": "erlaubt",
+    "lemma": "erlaubt",
+    "level": "A2",
+    "type": "Adjektiv / Partizip",
+    "ipa": "[ɛɐ̯ˈlaʊ̯pt]",
+    "meaning": "allowed, permitted",
+    "gloss": "allowed, permitted",
+    "comp": [["Positiv", "erlaubt"]],
+    "opp": "verboten, unzulässig",
+    "ex": [
+        "In diesem Naturschutzgebiet ist das Campen und Feuermachen streng verboten, aber das Wandern auf den Wegen ist erlaubt.",
+        "In this nature reserve camping and making fires is strictly forbidden, but hiking on the trails is permitted."
+    ],
+    "family": ["erlauben", "die Erlaubnis"],
+    "tip": "Wichtiges Gegensatzpaar in Regeln und Schildern: 'erlaubt' (allowed) vs. 'verboten' (forbidden).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-562"]
+})
+
+# 81. RAW-564: das Futter
+add_c({
+    "pos": "noun",
+    "word": "Futter",
+    "lemma": "Futter",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈfʏtɐ]",
+    "meaning": "feed, food (for animals); lining (clothing)",
+    "gloss": "animal feed / food",
+    "pl": "die Futter (selten)",
+    "genS": "des Futters",
+    "rule": "Masse- und Stoffbezeichnung auf -er: Neutrum (das Futter, das Wasser, das Kupfer).",
+    "nvv": [
+        ["den Tieren Futter geben", "to give feed to the animals"]
+    ],
+    "compounds": ["das Hundefutter", "das Katzenfutter", "das Vogelfutter", "das Trockenfutter"],
+    "family": ["füttern", "die Fütterung"],
+    "ex": [
+        "Vergiss bitte nicht, frisches Wasser und Futter in den Napf der Katze zu füllen.",
+        "Please don't forget to put fresh water and food into the cat's bowl."
+    ],
+    "tip": "Nahrung für Tiere heißt 'das Futter'. Für Menschen heißt es 'das Essen' oder 'die Nahrung'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-564"]
+})
+
+# 82. RAW-565: treu
+add_c({
+    "pos": "adj",
+    "word": "treu",
+    "lemma": "treu",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[tʁɔɪ̯]",
+    "meaning": "loyal, faithful, devoted",
+    "gloss": "loyal, faithful",
+    "comp": [["Positiv", "treu"], ["Komparativ", "treuer"], ["Superlativ", "am treuesten"]],
+    "opp": "untreu, unloyal",
+    "ex": [
+        "Der Hund gilt seit Jahrtausenden als der treueste Begleiter und Freund des Menschen.",
+        "The dog has been considered man's most loyal companion and friend for thousands of years."
+    ],
+    "family": ["die Treue", "getreu"],
+    "tip": "Häufige Redewendung: 'ein treuer Freund' (a loyal friend). Rekation mit Dativ: 'Er blieb seinen Prinzipien treu'.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-565"]
+})
+
+# 83. RAW-566: der Stein
+add_c({
+    "pos": "noun",
+    "word": "Stein",
+    "lemma": "Stein",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ʃtaɪ̯n]",
+    "meaning": "stone, rock, pebble",
+    "gloss": "stone, rock",
+    "pl": "die Steine",
+    "genS": "des Steins / des Steines",
+    "rule": "Einsilbiges Maskulinum (der Stein, der Fels, der Berg).",
+    "nvv": [
+        ["einen Stein werfen / umdrehen", "to throw / turn over a stone"]
+    ],
+    "compounds": ["der Kieselstein", "der Edelstein", "der Baustein", "der Meilenstein"],
+    "family": ["steinig", "versteinert"],
+    "ex": [
+        "Unter einem dicken Stein am Fuße der Eiche war die Geocache-Dose versteckt.",
+        "Under a heavy stone at the foot of the oak tree the geocache box was hidden."
+    ],
+    "tip": "Adjektiv: 'steinig' (rocky/stony). Redewendung: 'Da fällt mir ein Stein vom Herzen' (That's a huge weight off my chest).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-566"]
+})
+
+# 84. RAW-567: drücken
+add_c({
+    "pos": "verb",
+    "word": "drücken",
+    "lemma": "drücken",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈdʁʏkn̩]",
+    "meaning": "to press, push (a button); to squeeze, hug",
+    "gloss": "to press, push",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gedrückt",
+    "partizip2": "gedrückt",
+    "perfekt": "hat gedrückt",
+    "praeteritum": "drückte",
+    "praesens": "drückt",
+    "reflexiv": False,
+    "praes": ["drücke", "drückst", "drückt", "drücken", "drückt", "drücken"],
+    "prat": ["drückte", "drücktest", "drückte", "drückten", "drücktet", "drückten"],
+    "imp": ["Drück!", "Drückt!", "Drücken Sie!"],
+    "exT": {
+        "praes": [
+            "Er drückt auf den roten Knopf am GPS-Gerät, um die Koordinaten zu speichern.",
+            "He presses the red button on the GPS device to save the coordinates."
+        ],
+        "prat": [
+            "Sie drückte ihre beste Freundin zur Begrüßung ganz fest an sich.",
+            "She hugged her best friend very tightly in greeting."
+        ],
+        "perf": [
+            "Ich habe dir während der Prüfung ganz fest die Daumen gedrückt!",
+            "I kept my fingers crossed tightly for you during the exam!"
+        ]
+    },
+    "ex": [
+        "Drücken Sie bitte die Klingel neben dem Hauseingang.",
+        "Please press the bell next to the house entrance."
+    ],
+    "val": [
+        ["auf + Akk drücken / jemanden drücken", "Worauf? Wen?", "Er drückt auf die Taste."]
+    ],
+    "family": ["der Druck", "ausdrücken", "bedrücken"],
+    "tip": "Sehr beliebte deutsche Redewendung: 'Ich drücke dir die Daumen!' (I'll keep my fingers crossed for you!).",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-567"]
+})
+
+# 85. RAW-569: das Erdhörnchen
+add_c({
+    "pos": "noun",
+    "word": "Erdhörnchen",
+    "lemma": "Erdhörnchen",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum (Diminutiv)",
+    "ipa": "[ˈeːɐ̯tˌhœʁnçən]",
+    "meaning": "ground squirrel, chipmunk",
+    "gloss": "ground squirrel",
+    "pl": "die Erdhörnchen",
+    "genS": "des Erdhörnchens",
+    "rule": "Alle Diminutive auf -chen sind immer zu 100 % Neutrum (das Erdhörnchen, das Eichhörnchen, das Kaninchen).",
+    "nvv": [
+        ["ein Erdhörnchen füttern / beobachten", "to feed / observe a ground squirrel"]
+    ],
+    "compounds": ["das Eichhörnchen", "das Streifenhörnchen"],
+    "family": ["die Erde", "das Horn"],
+    "ex": [
+        "Beim Wandern im Gebirge sahen wir ein neugieriges Erdhörnchen zwischen den Felsen.",
+        "While hiking in the mountains we saw a curious ground squirrel between the rocks."
+    ],
+    "tip": "Endung -chen ist immer Neutrum und hat im Plural keine Endung: das Erdhörnchen -> die Erdhörnchen.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-569"]
+})
+
+# 86. RAW-570, RAW-571, RAW-572: hineinschauen
+add_c({
+    "pos": "verb",
+    "word": "hineinschauen",
+    "lemma": "hineinschauen",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[hɪˈnaɪ̯nˌʃaʊ̯ən]",
+    "meaning": "to look inside, peer into",
+    "gloss": "to look inside",
+    "sep": True,
+    "pre": "hinein",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "hineingeschaut",
+    "partizip2": "hineingeschaut",
+    "perfekt": "hat hineingeschaut",
+    "praeteritum": "schaute hinein",
+    "praesens": "schaut hinein",
+    "reflexiv": False,
+    "praes": ["schaue hinein", "schaust hinein", "schaut hinein", "schauen hinein", "schaut hinein", "schauen hinein"],
+    "prat": ["schaute hinein", "schautest hinein", "schaute hinein", "schauten hinein", "schautet hinein", "schauten hinein"],
+    "imp": ["Schau hinein!", "Schaut hinein!", "Schauen Sie hinein!"],
+    "exT": {
+        "praes": [
+            "Das Kind öffnet die gefundene Geocache-Dose und schaut neugierig hinein.",
+            "The child opens the found geocache box and looks inside curiously."
+        ],
+        "prat": [
+            "Sie schaute vorsichtig in die dunkle Höhle im Felsen hinein.",
+            "She looked cautiously into the dark cave in the rock."
+        ],
+        "perf": [
+            "Wer hat in den Karton hineingeschaut, bevor wir ihn verschlossen haben?",
+            "Who looked into the cardboard box before we sealed it?"
+        ]
+    },
+    "ex": [
+        "Schau doch mal kurz in den Briefkasten hinein, ob Post für mich da ist.",
+        "Just take a quick look into the mailbox to see if there is mail for me."
+    ],
+    "val": [
+        ["in + Akk hineinschauen", "Wohin?", "Er schaut in die Dose hinein."]
+    ],
+    "family": ["schauen", "reinschauen", "hineinsehen"],
+    "tip": "Umgangssprachlich meist 'reinschauen'. 'hinein-' betont die Richtung vom Sprecher weg ins Innere eines Objekts.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-570", "RAW-571", "RAW-572"]
+})
+
+# 87. RAW-573: unterschiedlich
+add_c({
+    "pos": "adj",
+    "word": "unterschiedlich",
+    "lemma": "unterschiedlich",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈʊntɐˌʃiːtlɪç]",
+    "meaning": "different, varying, diverse",
+    "gloss": "different, varying",
+    "comp": [["Positiv", "unterschiedlich"], ["Komparativ", "unterschiedlicher"], ["Superlativ", "am unterschiedlichsten"]],
+    "opp": "gleich, identisch, ähnlich",
+    "ex": [
+        "In unserer Wandergruppe haben alle Teilnehmer ganz unterschiedliche Hobbys und Interessen.",
+        "In our hiking group all participants have completely different hobbies and interests."
+    ],
+    "family": ["der Unterschied", "unterscheiden", "die Unterscheidung"],
+    "tip": "Synonym: 'verschieden'. 'unterschiedlich' betont die Vielfalt und Unterschiede zwischen Dingen oder Personen.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-573"]
+})
+
+# 88. RAW-574: überqueren
+add_c({
+    "pos": "verb",
+    "word": "überqueren",
+    "lemma": "überqueren",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[yːbɐˈkveːʁən]",
+    "meaning": "to cross (a street, river, border)",
+    "gloss": "to cross",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "überquert",
+    "partizip2": "überquert",
+    "perfekt": "hat überquert",
+    "praeteritum": "überquerte",
+    "praesens": "überquert",
+    "reflexiv": False,
+    "praes": ["überquere", "überquerst", "überquert", "überqueren", "überquert", "überqueren"],
+    "prat": ["überquerte", "überquertest", "überquerte", "überquerten", "überquertet", "überquerten"],
+    "imp": ["Überquere!", "Überquert!", "Überqueren Sie!"],
+    "exT": {
+        "praes": [
+            "Die Wanderer überqueren den Gebirgsfluss über eine schmale Holzbrücke.",
+            "The hikers cross the mountain river over a narrow wooden bridge."
+        ],
+        "prat": [
+            "Das Schiff überquerte den Atlantik in weniger als einer Woche.",
+            "The ship crossed the Atlantic in less than a week."
+        ],
+        "perf": [
+            "Wir haben gestern an der Ampel vorsichtig die breite Hauptstraße überquert.",
+            "Yesterday we carefully crossed the wide main road at the traffic lights."
+        ]
+    },
+    "ex": [
+        "Überqueren Sie die Straße bitte nur am Zebrastreifen!",
+        "Please only cross the street at the pedestrian zebra crossing!"
+    ],
+    "val": [
+        ["etwas (Akk) überqueren", "Was?", "Sie überquert die Grenze / den Fluss."]
+    ],
+    "family": ["die Überquerung", "quer", "die Quere"],
+    "tip": "Untrennbar! Stammformen: überqueren – überquerte – überquert (mit haben). Kein 'ge-' im Partizip II.",
+    "sourceLessons": [9],
+    "sourceRawIds": ["RAW-574"]
+})
+
+# 89. RAW-601: das Endspiel
+add_c({
+    "pos": "noun",
+    "word": "Endspiel",
+    "lemma": "Endspiel",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈɛntˌʃpiːl]",
+    "meaning": "final, final match / game (sports)",
+    "gloss": "final match, finals",
+    "pl": "die Endspiele",
+    "genS": "des Endspiels",
+    "rule": "Kompositum mit 'das Spiel': Neutrum (das Endspiel, das Fußballspiel, das Halbfinale).",
+    "nvv": [
+        ["das Endspiel erreichen / gewinnen", "to reach / win the final"]
+    ],
+    "compounds": ["das Finale", "das Endspielstadion", "das Halbfinale"],
+    "family": ["das Ende", "spielen", "das Spiel"],
+    "ex": [
+        "Millionen begeisterte Fußballfans verfolgten das dramatische Endspiel live im Fernsehen.",
+        "Millions of enthusiastic soccer fans followed the dramatic final live on television."
+    ],
+    "tip": "Deutsches Synonym für 'das Finale': das Endspiel (the final match).",
+    "sourceLessons": [10],
+    "sourceRawIds": ["RAW-601"]
+})
+
+# 90. RAW-653: der Schwarzwald
+add_c({
+    "pos": "noun",
+    "word": "Schwarzwald",
+    "lemma": "Schwarzwald",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum (Eigenname)",
+    "ipa": "[ˈʃvaʁtsvalt]",
+    "meaning": "Black Forest (mountain range in southwest Germany)",
+    "gloss": "Black Forest",
+    "pl": "– (Singularetantum)",
+    "genS": "des Schwarzwalds / des Schwarzwaldes",
+    "rule": "Zusammensetzung mit 'der Wald': Maskulinum mit bestimmtem Artikel (der Schwarzwald, der Thüringer Wald, der Bayerische Wald).",
+    "nvv": [
+        ["im Schwarzwald wandern / Urlaub machen", "to hike / vacation in the Black Forest"]
+    ],
+    "compounds": ["die Schwarzwälder Kirschtorte", "der Schwarzwaldverein", "die Kuckucksuhr"],
+    "family": ["schwarz", "der Wald"],
+    "ex": [
+        "Der Schwarzwald in Baden-Württemberg ist berühmt für dichte Tannenwälder, Kuckucksuhren und die leckere Kirschtorte.",
+        "The Black Forest in Baden-Württemberg is famous for dense fir forests, cuckoo clocks, and delicious cherry torte."
+    ],
+    "tip": "Wichtig mit Artikel: 'IM Schwarzwald' (Dativ: Wo?) bzw. 'IN DEN Schwarzwald' (Akkusativ: Wohin?).",
+    "sourceLessons": [11],
+    "sourceRawIds": ["RAW-653"]
+})
+
+# 91. RAW-676: scheinen
+add_c({
+    "pos": "verb",
+    "word": "scheinen",
+    "lemma": "scheinen",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[ˈʃaɪ̯nən]",
+    "meaning": "to shine (sun, light); to seem, appear",
+    "gloss": "to shine / seem",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geschienen",
+    "partizip2": "geschienen",
+    "perfekt": "hat geschienen",
+    "praeteritum": "schien",
+    "praesens": "scheint",
+    "reflexiv": False,
+    "praes": ["scheine", "scheinst", "scheint", "scheinen", "scheint", "scheinen"],
+    "prat": ["schien", "schienst", "schien", "schienen", "schient", "schienen"],
+    "imp": ["Scheine!", "Scheint!"],
+    "exT": {
+        "praes": [
+            "Heute scheint die Sonne den ganzen Tag vom wolkenlosen Himmel.",
+            "Today the sun is shining all day from the cloudless sky."
+        ],
+        "prat": [
+            "Der Mond schien hell durch das Schlafzimmerfenster der Berghütte.",
+            "The moon shone brightly through the bedroom window of the mountain hut."
+        ],
+        "perf": [
+            "Im letzten Sommerurlaub in Italien hat die Sonne jeden Tag geschienen.",
+            "On our last summer vacation in Italy the sun shone every single day."
+        ]
+    },
+    "ex": [
+        "Er scheint heute sehr müde von der langen Wanderung zu sein.",
+        "He seems to be very tired today from the long hike."
+    ],
+    "val": [
+        ["die Sonne scheint / scheinen zu + Infinitiv", "Wie?", "Es scheint zu klappen."]
+    ],
+    "family": ["der Schein", "der Sonnenschein", "erscheinen"],
+    "tip": "Zwei Hauptbedeutungen: 1) Wetter: 'Die Sonne scheint'. 2) Eindruck/Vermutung: 'Es scheint so zu sein' (It seems to be so).",
+    "sourceLessons": [11],
+    "sourceRawIds": ["RAW-676"]
+})
+
+# 92. RAW-715: wirken
+add_c({
+    "pos": "verb",
+    "word": "wirken",
+    "lemma": "wirken",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈvɪʁkn̩]",
+    "meaning": "to seem, appear; to have an effect (medicine, nature)",
+    "gloss": "to seem, appear / have an effect",
+    "sep": False,
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gewirkt",
+    "partizip2": "gewirkt",
+    "perfekt": "hat gewirkt",
+    "praeteritum": "wirkte",
+    "praesens": "wirkt",
+    "reflexiv": False,
+    "praes": ["wirke", "wirkst", "wirkt", "wirken", "wirkt", "wirken"],
+    "prat": ["wirkte", "wirktest", "wirkte", "wirkten", "wirktet", "wirkten"],
+    "imp": ["Wirke!", "Wirkt!"],
+    "exT": {
+        "praes": [
+            "Ein Spaziergang im tiefen Nadelwald wirkt wunderbar beruhigend auf die Nerven.",
+            "A walk in the deep pine forest has a wonderfully calming effect on the nerves."
+        ],
+        "prat": [
+            "Die Landschaft wirkte im warmen Abendlicht fast wie ein gemaltes Bild.",
+            "The landscape appeared in the warm evening light almost like a painted picture."
+        ],
+        "perf": [
+            "Das pflanzliche Schmerzmittel hat schnell und zuverlässig gewirkt.",
+            "The herbal painkiller took effect quickly and reliably."
+        ]
+    },
+    "ex": [
+        "Du wirkst heute so entspannt und glücklich nach dem Sport!",
+        "You seem so relaxed and happy today after sports!"
+    ],
+    "val": [
+        ["wirken auf + Akk / wie + Nom", "Worauf? Wie?", "Er wirkt müde / Die Musik wirkt beruhigend."]
+    ],
+    "family": ["die Wirkung", "wirksam", "die Auswirkung"],
+    "tip": "Zwei Verwendungsweisen: 1) 'wirken wie / als ob' = scheinen (to seem). 2) 'wirken auf + Akk' = Einfluss haben (to have an effect).",
+    "sourceLessons": [12],
+    "sourceRawIds": ["RAW-715"]
+})
+
+# 93. RAW-740: das Ballkleid
+add_c({
+    "pos": "noun",
+    "word": "Ballkleid",
+    "lemma": "Ballkleid",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈbalˌklaɪ̯t]",
+    "meaning": "ball gown, evening dress",
+    "gloss": "ball gown, evening gown",
+    "pl": "die Ballkleider",
+    "genS": "des Ballkleids / des Ballkleides",
+    "rule": "Grundwort 'das Kleid': Neutrum (das Kleid, das Ballkleid, das Sommerkleid).",
+    "nvv": [
+        ["ein elegantes Ballkleid tragen / anziehen", "to wear / put on an elegant ball gown"]
+    ],
+    "compounds": ["das Abendkleid", "der Opernball", "das Tanzkleid"],
+    "family": ["der Ball", "das Kleid", "kleiden"],
+    "ex": [
+        "Für den festlichen Wiener Opernball kauften sich viele Damen wunderschöne Ballkleider.",
+        "For the festive Vienna Opera Ball many ladies bought gorgeous ball gowns."
+    ],
+    "tip": "Kompositum: der Ball (dance gala / ball event) + das Kleid (dress) = das Ballkleid. Plural: die Ballkleider.",
+    "sourceLessons": [12],
+    "sourceRawIds": ["RAW-740"]
+})
+
+out_path = '/Users/ananth/study/German/german-flashcards/data/a2_decks/deck_09_freizeit.json'
+with open(out_path, 'w', encoding='utf-8') as f:
+    json.dump(cards, f, indent=2, ensure_ascii=False)
+
+print(f"Generated {len(cards)} rich cards for Deck 09 in {out_path}")

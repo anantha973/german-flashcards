@@ -1,0 +1,4463 @@
+[
+  {
+    "id": "a2-d01-001",
+    "pos": "verb",
+    "word": "abfahren",
+    "lemma": "abfahren",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈapˌfaːʁən]",
+    "meaning": "to depart, to leave, to pull out (train, bus)",
+    "gloss": "to depart, leave",
+    "sep": true,
+    "pre": "ab",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "abgefahren",
+    "partizip2": "abgefahren",
+    "perfekt": "ist abgefahren",
+    "praeteritum": "fuhr ab",
+    "praesens": "fährt ab",
+    "reflexiv": false,
+    "praes": [
+      "fahre ab",
+      "fährst ab",
+      "fährt ab",
+      "fahren ab",
+      "fahrt ab",
+      "fahren ab"
+    ],
+    "prat": [
+      "fuhr ab",
+      "fuhrst ab",
+      "fuhr ab",
+      "fuhren ab",
+      "fuhrt ab",
+      "fuhren ab"
+    ],
+    "imp": [
+      "Fahr ab!",
+      "Fahrt ab!",
+      "Fahren Sie ab!"
+    ],
+    "exT": {
+      "praes": [
+        "Der ICE nach Berlin fährt um 14:15 Uhr von Gleis 3 ab.",
+        "The ICE to Berlin departs at 14:15 from platform 3."
+      ],
+      "prat": [
+        "Der Bus fuhr wegen des Staus mit zehn Minuten Verspätung ab.",
+        "The bus departed with a ten-minute delay due to traffic."
+      ],
+      "perf": [
+        "Wir müssen uns beeilen, der Zug ist schon fast abgefahren!",
+        "We have to hurry, the train has almost departed!"
+      ]
+    },
+    "ex": [
+      "Auf welchem Gleis fährt unser Regionalexpress ab?",
+      "From which platform does our regional train depart?"
+    ],
+    "val": [
+      [
+        "von + Dat abfahren",
+        "Woher?",
+        "Der Zug fährt von Gleis 5 ab."
+      ],
+      [
+        "nach + Dat abfahren",
+        "Wohin?",
+        "Der Bus fährt nach München ab."
+      ]
+    ],
+    "family": [
+      "die Abfahrt",
+      "weiterfahren",
+      "der Fahrplan"
+    ],
+    "tip": "Ortsveränderung → Hilfsverb 'sein' im Perfekt: 'ist abgefahren'. Vokalwechsel im Präsens: du fährst ab, er fährt ab.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      4,
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-214",
+      "RAW-561"
+    ]
+  },
+  {
+    "id": "a2-d01-002",
+    "pos": "verb",
+    "word": "ankommen",
+    "lemma": "ankommen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈanˌkɔmən]",
+    "meaning": "to arrive (at a destination); to depend on (auf + Akk)",
+    "gloss": "to arrive",
+    "sep": true,
+    "pre": "an",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "angekommen",
+    "partizip2": "angekommen",
+    "perfekt": "ist angekommen",
+    "praeteritum": "kam an",
+    "praesens": "kommt an",
+    "reflexiv": false,
+    "praes": [
+      "komme an",
+      "kommst an",
+      "kommt an",
+      "kommen an",
+      "kommt an",
+      "kommen an"
+    ],
+    "prat": [
+      "kam an",
+      "kamst an",
+      "kam an",
+      "kamen an",
+      "kamt an",
+      "kamen an"
+    ],
+    "imp": [
+      "Komm an!",
+      "Kommt an!",
+      "Kommen Sie an!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Zug kommt laut Fahrplan pünktlich um 18:30 Uhr an.",
+        "According to the schedule, the train arrives punctually at 18:30."
+      ],
+      "prat": [
+        "Sie kamen nach einer langen Fahrt müde im Hotel an.",
+        "They arrived tired at the hotel after a long journey."
+      ],
+      "perf": [
+        "Bist du gut und sicher in Magdeburg angekommen?",
+        "Did you arrive well and safely in Magdeburg?"
+      ]
+    },
+    "ex": [
+      "Wann kommt dein Flug aus Frankfurt an?",
+      "When does your flight from Frankfurt arrive?"
+    ],
+    "val": [
+      [
+        "in / an + Dat ankommen",
+        "Wo?",
+        "Wir kommen am Hauptbahnhof an."
+      ],
+      [
+        "auf + Akk ankommen",
+        "Wovon abhängig?",
+        "Es kommt auf das Wetter an."
+      ]
+    ],
+    "family": [
+      "die Ankunft",
+      "abkommen",
+      "der Ankömmling"
+    ],
+    "tip": "Ortswechsel → Perfekt mit 'sein': 'Ich bin angekommen'. Im Alltag: 'Gut angekommen?' (Arrived safely?).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-238"
+    ]
+  },
+  {
+    "id": "a2-d01-003",
+    "pos": "noun",
+    "word": "Schalter",
+    "lemma": "Schalter",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈʃaltɐ]",
+    "meaning": "service counter, ticket counter; light switch",
+    "gloss": "counter, ticket window",
+    "pl": "die Schalter",
+    "genS": "des Schalters",
+    "suf": "-er",
+    "rule": "Geräte und Service-Orte auf -er sind meist maskulin: der Schalter, der Rechner.",
+    "nvv": [
+      [
+        "am Schalter Fahrkarten kaufen",
+        "to buy tickets at the counter"
+      ]
+    ],
+    "compounds": [
+      "der Fahrkartenschalter",
+      "der Ticketschalter",
+      "der Lichtschalter"
+    ],
+    "family": [
+      "schalten",
+      "der Schaffner"
+    ],
+    "ex": [
+      "Sie können das Ticket online buchen oder direkt am Schalter im Bahnhof kaufen.",
+      "You can book the ticket online or buy it directly at the counter in the train station."
+    ],
+    "tip": "Maskulin: der Schalter, Plural bleibt unverändert: die Schalter. Präposition: 'am Schalter' (Dativ).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-236"
+    ]
+  },
+  {
+    "id": "a2-d01-004",
+    "pos": "noun",
+    "word": "Hin- und Rückfahrt",
+    "lemma": "Hin- und Rückfahrt",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈhɪn ʊnt ˈʁʏkfaːɐ̯t]",
+    "meaning": "round trip, return journey",
+    "gloss": "round trip, return trip",
+    "pl": "die Hin- und Rückfahrten",
+    "genS": "der Hin- und Rückfahrt",
+    "suf": "-fahrt",
+    "rule": "Komposita mit 'die Fahrt': immer feminin (die Hinfahrt, die Rückfahrt, die Abfahrt).",
+    "nvv": [
+      [
+        "eine Hin- und Rückfahrt buchen",
+        "to book a round trip"
+      ]
+    ],
+    "compounds": [
+      "die Hinfahrt",
+      "die Rückfahrt",
+      "das Ticket"
+    ],
+    "family": [
+      "fahren",
+      "die Fahrt",
+      "hin und zurück"
+    ],
+    "ex": [
+      "Ein Ticket für die Hin- und Rückfahrt ist oft günstiger als zwei Einzelfahrten.",
+      "A ticket for a round trip is often cheaper than two single rides."
+    ],
+    "tip": "Gegenteil: 'einfache Fahrt' (single / one-way ticket). Am Schalter: 'Einmal Berlin hin und zurück, bitte!'",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-237"
+    ]
+  },
+  {
+    "id": "a2-d01-005",
+    "pos": "noun",
+    "word": "Zugverbindung",
+    "lemma": "Zugverbindung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈtsuːkfɛɐ̯ˌbɪndʊŋ]",
+    "meaning": "train connection, rail connection",
+    "gloss": "train connection",
+    "pl": "die Zugverbindungen",
+    "genS": "der Zugverbindung",
+    "suf": "-ung",
+    "rule": "Endung -ung = IMMER feminin: die Verbindung.",
+    "nvv": [
+      [
+        "eine gute Zugverbindung finden",
+        "to find a good train connection"
+      ]
+    ],
+    "compounds": [
+      "der Direktzug",
+      "die Umsteigeverbindung",
+      "die Bahnverbindung"
+    ],
+    "family": [
+      "der Zug",
+      "verbinden",
+      "die Verbindung"
+    ],
+    "ex": [
+      "Zwischen Magdeburg und Berlin gibt es stündlich eine direkte Zugverbindung.",
+      "Between Magdeburg and Berlin there is a direct train connection every hour."
+    ],
+    "tip": "Feminin: die Zugverbindung. Plural: die Zugverbindungen. Wichtig in der DB Navigator App.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-239"
+    ]
+  },
+  {
+    "id": "a2-d01-006",
+    "pos": "noun",
+    "word": "Gleis",
+    "lemma": "Gleis",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ɡlaɪ̯s]",
+    "meaning": "platform, track, rail (railway)",
+    "gloss": "track, platform",
+    "pl": "die Gleise",
+    "genS": "des Gleises",
+    "suf": "",
+    "rule": "Einsilbiges Neutrum: das Gleis, das Rad, das Boot.",
+    "nvv": [
+      [
+        "am Gleis warten",
+        "to wait at the platform / track"
+      ],
+      [
+        "Einfahrt auf Gleis 4",
+        "arrival on track 4"
+      ]
+    ],
+    "compounds": [
+      "die Gleisänderung",
+      "das Abstellgleis",
+      "das Überholgleis"
+    ],
+    "family": [
+      "entgleisen",
+      "die Schiene"
+    ],
+    "ex": [
+      "Vorsicht an Gleis 2: Der Intercity nach Leipzig fährt jetzt ein.",
+      "Caution on track 2: The Intercity to Leipzig is now arriving."
+    ],
+    "tip": "Achtung Präposition: In Deutschland sagt man 'auf Gleis 3' (oder 'an Gleis 3'), NICHT 'in Gleis'. Neutrum: das Gleis.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-244"
+    ]
+  },
+  {
+    "id": "a2-d01-007",
+    "pos": "verb",
+    "word": "vorhaben",
+    "lemma": "vorhaben",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈfoːɐ̯ˌhaːbn̩]",
+    "meaning": "to plan, to intend to do, to have plans",
+    "gloss": "to plan, intend",
+    "sep": true,
+    "pre": "vor",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "vorgehabt",
+    "partizip2": "vorgehabt",
+    "perfekt": "hat vorgehabt",
+    "praeteritum": "hatte vor",
+    "praesens": "hat vor",
+    "reflexiv": false,
+    "praes": [
+      "habe vor",
+      "hast vor",
+      "hat vor",
+      "haben vor",
+      "habt vor",
+      "haben vor"
+    ],
+    "prat": [
+      "hatte vor",
+      "hattest vor",
+      "hatte vor",
+      "hatten vor",
+      "hattet vor",
+      "hatten vor"
+    ],
+    "imp": [
+      "Hab vor!",
+      "Habt vor!",
+      "Haben Sie vor!"
+    ],
+    "exT": {
+      "praes": [
+        "Was hast du am Wochenende Schönes vor?",
+        "What do you have planned for the weekend?"
+      ],
+      "prat": [
+        "Sie hatte eigentlich vor, mit dem Fahrrad zur Arbeit zu fahren.",
+        "She actually intended to ride her bicycle to work."
+      ],
+      "perf": [
+        "Wir haben schon lange vorgehabt, diesen Ausflug zu machen.",
+        "We have intended for a long time to go on this excursion."
+      ]
+    },
+    "ex": [
+      "Hast du heute Abend schon etwas vor oder wollen wir zusammen kochen?",
+      "Do you already have plans tonight or shall we cook together?"
+    ],
+    "val": [
+      [
+        "etwas vorhaben",
+        "Was vorhaben?",
+        "Ich habe viel vor."
+      ],
+      [
+        "vorhaben, zu + Infinitiv",
+        "Was tun?",
+        "Ich habe vor zu reisen."
+      ]
+    ],
+    "family": [
+      "der Plan",
+      "das Vorhaben",
+      "haben"
+    ],
+    "tip": "Extrem häufige Alltagsfrage für Verabredungen: 'Hast du heute schon was vor?' (= Do you have any plans today?).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-317"
+    ]
+  },
+  {
+    "id": "a2-d01-008",
+    "pos": "noun",
+    "word": "Treffpunkt",
+    "lemma": "Treffpunkt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈtʁɛfˌpʊŋkt]",
+    "meaning": "meeting place, meeting point",
+    "gloss": "meeting point",
+    "pl": "die Treffpunkte",
+    "genS": "des Treffpunkts / Treffpunktes",
+    "suf": "",
+    "rule": "Kompositum mit 'der Punkt': Maskulinum (der Treffpunkt, der Zeitpunkt, der Standpunkt).",
+    "nvv": [
+      [
+        "einen Treffpunkt vereinbaren / ausmachen",
+        "to agree on a meeting point"
+      ]
+    ],
+    "compounds": [
+      "der Treffpunkt Hauptbahnhof",
+      "die Treffzeit"
+    ],
+    "family": [
+      "treffen",
+      "sich treffen",
+      "der Punkt"
+    ],
+    "ex": [
+      "Unser Treffpunkt ist morgen um 10 Uhr vor dem Haupteingang des Bahnhofs.",
+      "Our meeting point is tomorrow at 10 AM in front of the main entrance of the station."
+    ],
+    "tip": "Kollokation für Verabredungen: 'Als Treffpunkt schlage ich den Marktplatz vor.' Maskulin: der Treffpunkt.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-319"
+    ]
+  },
+  {
+    "id": "a2-d01-009",
+    "pos": "noun",
+    "word": "Verspätung",
+    "lemma": "Verspätung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[fɛɐ̯ˈʃpɛːtʊŋ]",
+    "meaning": "delay, lateness",
+    "gloss": "delay",
+    "pl": "die Verspätungen",
+    "genS": "der Verspätung",
+    "suf": "-ung",
+    "rule": "Endung -ung = IMMER feminin: die Verspätung.",
+    "nvv": [
+      [
+        "Verspätung haben",
+        "to have a delay / be delayed"
+      ],
+      [
+        "wegen Verspätung ausfallen",
+        "to be cancelled due to delay"
+      ]
+    ],
+    "compounds": [
+      "die Zugverspätung",
+      "der Verspätungsalarm"
+    ],
+    "family": [
+      "sich verspäten",
+      "spät",
+      "verspätet"
+    ],
+    "ex": [
+      "Der Zug hat heute leider zwanzig Minuten Verspätung wegen einer Weichenstörung.",
+      "The train unfortunately has a twenty-minute delay today due to a switch malfunction."
+    ],
+    "tip": "Standarddurchsage bei der Deutschen Bahn: 'Der ICE nach Berlin hat heute circa 15 Minuten Verspätung.'",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-321"
+    ]
+  },
+  {
+    "id": "a2-d01-010",
+    "pos": "noun",
+    "word": "Verkehr und Stau",
+    "lemma": "der Verkehr / der Stau",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen-Paar · Maskulin",
+    "ipa": "[fɛɐ̯ˈkeːɐ̯ ʊnt ʃtaʊ̯]",
+    "meaning": "traffic and traffic jam",
+    "gloss": "traffic and traffic jam",
+    "pl": "die Staus / Verkehr (kein Plural)",
+    "genS": "des Verkehrs / des Staus",
+    "suf": "",
+    "rule": "Beide Nomen sind maskulin: der Verkehr, der Stau. Plural von Stau: die Staus.",
+    "nvv": [
+      [
+        "im Stau stehen / stecken",
+        "to be stuck in traffic"
+      ],
+      [
+        "dichter Verkehr herrscht",
+        "heavy traffic prevails"
+      ]
+    ],
+    "compounds": [
+      "der Berufsverkehr",
+      "der Stauwarner",
+      "die Stauwarnung",
+      "der Verkehrsfluss"
+    ],
+    "family": [
+      "stauen",
+      "verkehren",
+      "das Stauende"
+    ],
+    "ex": [
+      "Wegen des dichten Berufsverkehrs standen wir über eine Stunde im Stau.",
+      "Because of heavy commuter traffic, we were stuck in a traffic jam for over an hour."
+    ],
+    "tip": "Wichtige Redewendung im Radio: '10 Kilometer Stau auf der A2'. Kollokation: 'im Stau stehen' (to be stuck in traffic).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-322"
+    ]
+  },
+  {
+    "id": "a2-d01-011",
+    "pos": "noun",
+    "word": "Verkehrsmittel",
+    "lemma": "Verkehrsmittel",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[fɛɐ̯ˈkeːɐ̯sˌmɪtl̩]",
+    "meaning": "means of transport, public transport vehicle",
+    "gloss": "means of transport",
+    "pl": "die Verkehrsmittel",
+    "genS": "des Verkehrsmittels",
+    "suf": "-mittel",
+    "rule": "Kompositum mit 'das Mittel': alle Nomen auf Mittel sind Neutrum (das Verkehrsmittel, das Hilfsmittel, das Lebensmittel).",
+    "nvv": [
+      [
+        "öffentliche Verkehrsmittel nutzen / benutzen",
+        "to use public transportation"
+      ]
+    ],
+    "compounds": [
+      "die öffentlichen Verkehrsmittel (ÖPNV)",
+      "das Nahverkehrsmittel"
+    ],
+    "family": [
+      "der Verkehr",
+      "das Mittel",
+      "vermitteln"
+    ],
+    "ex": [
+      "Das Fahrrad ist in deutschen Universitätsstädten das beliebteste Verkehrsmittel.",
+      "The bicycle is the most popular means of transport in German university cities."
+    ],
+    "tip": "Zentraler B1-Begriff: 'öffentliche Verkehrsmittel' (oft abgekürzt als ÖPNV). Plural bleibt gleich: die Verkehrsmittel.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-323"
+    ]
+  },
+  {
+    "id": "a2-d01-012",
+    "pos": "noun",
+    "word": "Ampel",
+    "lemma": "Ampel",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈampl̩]",
+    "meaning": "traffic light",
+    "gloss": "traffic light",
+    "pl": "die Ampeln",
+    "genS": "der Ampel",
+    "suf": "-el",
+    "rule": "Geräte zur Signalisierung auf -el: feminin: die Ampel, die Glocke.",
+    "nvv": [
+      [
+        "an der roten Ampel anhalten",
+        "to stop at the red light"
+      ],
+      [
+        "bei Grün über die Ampel gehen",
+        "to cross the traffic light on green"
+      ]
+    ],
+    "compounds": [
+      "die Fußgängerampel",
+      "die Ampelkreuzung",
+      "das Ampelmännchen"
+    ],
+    "family": [
+      "das Signal",
+      "der Verkehr"
+    ],
+    "ex": [
+      "Biegen Sie an der zweiten Ampel nach links in die Hauptstraße ab.",
+      "Turn left at the second traffic light into the main street."
+    ],
+    "tip": "Feminin: die Ampel. In Wegbeschreibungen: 'an der Ampel' (Dativ = Wo?).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-324"
+    ]
+  },
+  {
+    "id": "a2-d01-013",
+    "pos": "noun",
+    "word": "Anschluss",
+    "lemma": "Anschluss",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈanˌʃlʊs]",
+    "meaning": "connection (train, bus, flight); internet/phone connection",
+    "gloss": "connection (transport)",
+    "pl": "die Anschlüsse",
+    "genS": "des Anschlusses",
+    "suf": "",
+    "rule": "Stamm vom Verb 'anschließen': Maskulin mit Umlaut-Plural: der Anschluss → die Anschlüsse.",
+    "nvv": [
+      [
+        "den Anschluss erreichen / bekommen",
+        "to catch / get the connection"
+      ],
+      [
+        "den Anschluss verpassen",
+        "to miss the connection"
+      ]
+    ],
+    "compounds": [
+      "der Anschlusszug",
+      "der Anschlussbus",
+      "der Internetanschluss"
+    ],
+    "family": [
+      "anschließen",
+      "schließen",
+      "anschließend"
+    ],
+    "ex": [
+      "Wegen der Verspätung habe ich meinen Anschlusszug in Hannover verpasst.",
+      "Because of the delay, I missed my connecting train in Hanover."
+    ],
+    "tip": "Typische Reise-Kollokationen: 'den Anschluss erreichen' (catch connection) ↔ 'den Anschluss verpassen' (miss connection).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-325"
+    ]
+  },
+  {
+    "id": "a2-d01-014",
+    "pos": "verb",
+    "word": "verpassen",
+    "lemma": "verpassen",
+    "level": "A2",
+    "type": "Verb · untrennbar",
+    "ipa": "[fɛɐ̯ˈpasn̩]",
+    "meaning": "to miss (train, bus, chance, flight)",
+    "gloss": "to miss (vehicle, event)",
+    "sep": false,
+    "pre": "ver-",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "verpasst",
+    "partizip2": "verpasst",
+    "perfekt": "hat verpasst",
+    "praeteritum": "verpasste",
+    "praesens": "verpasst",
+    "reflexiv": false,
+    "praes": [
+      "verpasse",
+      "verpasst",
+      "verpasst",
+      "verpassen",
+      "verpasst",
+      "verpassen"
+    ],
+    "prat": [
+      "verpasste",
+      "verpasstest",
+      "verpasste",
+      "verpassten",
+      "verpasstet",
+      "verpassten"
+    ],
+    "imp": [
+      "Verpasse nicht!",
+      "Verpasst nicht!",
+      "Verpassen Sie nicht!"
+    ],
+    "exT": {
+      "praes": [
+        "Wenn wir nicht sofort losgehen, verpassen wir die letzte Straßenbahn.",
+        "If we do not leave right now, we will miss the last tram."
+      ],
+      "prat": [
+        "Sie rannte zum Bahnsteig, aber verpasste den Zug um eine Minute.",
+        "She ran to the platform, but missed the train by one minute."
+      ],
+      "perf": [
+        "Ich habe heute Morgen meinen Wecker überhört und den Bus verpasst.",
+        "I slept through my alarm this morning and missed the bus."
+      ]
+    },
+    "ex": [
+      "Keine Sorge, wenn du den Zug verpasst, nimmst du einfach den nächsten.",
+      "No worries, if you miss the train, you simply take the next one."
+    ],
+    "val": [
+      [
+        "den Zug / Bus / Flug (Akk) verpassen",
+        "Was verpassen?",
+        "Er hat den Bus verpasst."
+      ]
+    ],
+    "family": [
+      "passen",
+      "die Panne",
+      "das Verpassen"
+    ],
+    "tip": "WICHTIGER UNTERSCHIED ZU 'FEHLEN': 1) 'den Zug verpassen' = miss a train / event; 2) 'Du fehlst mir' = I miss you (emotionally).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-326"
+    ]
+  },
+  {
+    "id": "a2-d01-015",
+    "pos": "noun",
+    "word": "Fahrplan",
+    "lemma": "Fahrplan",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈfaːɐ̯ˌplaːn]",
+    "meaning": "timetable, transit schedule",
+    "gloss": "timetable, schedule",
+    "pl": "die Fahrpläne",
+    "genS": "des Fahrplans",
+    "suf": "",
+    "rule": "Kompositum mit 'der Plan': Maskulin mit Umlaut-Plural: der Fahrplan → die Fahrpläne.",
+    "nvv": [
+      [
+        "in den Fahrplan schauen",
+        "to check the timetable"
+      ],
+      [
+        "nach Fahrplan fahren",
+        "to run on schedule"
+      ]
+    ],
+    "compounds": [
+      "die Fahrplanauskunft",
+      "der Fahrplanwechsel",
+      "der Sommerfahrplan"
+    ],
+    "family": [
+      "fahren",
+      "der Plan",
+      "planmäßig"
+    ],
+    "ex": [
+      "Laut offiziellem Fahrplan fährt die Straßenbahn alle zehn Minuten.",
+      "According to the official timetable, the tram runs every ten minutes."
+    ],
+    "tip": "Maskulin: der Fahrplan, Plural: die Fahrpläne. 'Die Fahrplanauskunft' = timetable enquiry service.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-327"
+    ]
+  },
+  {
+    "id": "a2-d01-016",
+    "pos": "noun",
+    "word": "Tankstelle",
+    "lemma": "Tankstelle",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈtaŋkˌʃtɛlə]",
+    "meaning": "gas station, petrol station",
+    "gloss": "gas station",
+    "pl": "die Tankstellen",
+    "genS": "der Tankstelle",
+    "suf": "-stelle",
+    "rule": "Kompositum mit 'die Stelle': immer feminin (die Tankstelle, die Haltestelle, die Baustelle).",
+    "nvv": [
+      [
+        "an der Tankstelle tanken",
+        "to fuel up at the gas station"
+      ]
+    ],
+    "compounds": [
+      "der Tankstellenwart",
+      "die Autobahntankstelle",
+      "die Zapfsäule"
+    ],
+    "family": [
+      "tanken",
+      "der Tank",
+      "der Kraftstoff"
+    ],
+    "ex": [
+      "Wir müssen an der nächsten Tankstelle anhalten, um Benzin nachzufüllen.",
+      "We have to stop at the next gas station to top up fuel."
+    ],
+    "tip": "Feminin: die Tankstelle. Präposition: 'an der Tankstelle' (Dativ). Verb: 'tanken' (hat getankt).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-328"
+    ]
+  },
+  {
+    "id": "a2-d01-017",
+    "pos": "noun",
+    "word": "Führerschein",
+    "lemma": "Führerschein",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈfyːʁɐˌʃaɪ̯n]",
+    "meaning": "driver's license, driving permit",
+    "gloss": "driver's license",
+    "pl": "die Führerscheine",
+    "genS": "des Führerscheins",
+    "suf": "-schein",
+    "rule": "Nomen auf -schein sind immer maskulin: der Führerschein, der Geldschein, der Gutschein.",
+    "nvv": [
+      [
+        "den Führerschein machen / haben",
+        "to get / have a driver's license"
+      ],
+      [
+        "den Führerschein verlieren",
+        "to lose one's license"
+      ]
+    ],
+    "compounds": [
+      "die Führerscheinklasse",
+      "der EU-Führerschein",
+      "die Fahrschule"
+    ],
+    "family": [
+      "führen",
+      "der Schein",
+      "das Fahrzeug"
+    ],
+    "ex": [
+      "In Deutschland darf man ab 17 Jahren mit Begleitung Auto fahren (begleitetes Fahren).",
+      "In Germany, one is allowed to drive from age 17 with an escort (accompanied driving)."
+    ],
+    "tip": "Maskulin: der Führerschein. Feste Wendung: 'den Führerschein machen' = to take driving lessons and pass the test.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-331"
+    ]
+  },
+  {
+    "id": "a2-d01-018",
+    "pos": "adj",
+    "word": "nützlich",
+    "lemma": "nützlich",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈnʏtslɪç]",
+    "meaning": "useful, helpful, handy",
+    "gloss": "useful, handy",
+    "comp": [
+      [
+        "Positiv",
+        "nützlich"
+      ],
+      [
+        "Komparativ",
+        "nützlicher"
+      ],
+      [
+        "Superlativ",
+        "am nützlichsten"
+      ]
+    ],
+    "opp": "nutzlos, unbrauchbar",
+    "family": [
+      "der Nutzen",
+      "nutzen",
+      "die Nützlichkeit"
+    ],
+    "ex": [
+      "Die DB Navigator App ist für Bahnreisende in Deutschland extrem nützlich.",
+      "The DB Navigator app is extremely useful for train travellers in Germany."
+    ],
+    "tip": "Synonym zu 'hilfreich' / 'praktisch'. Gegenteil: 'nutzlos'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-332"
+    ]
+  },
+  {
+    "id": "a2-d01-019",
+    "pos": "adj",
+    "word": "bequem",
+    "lemma": "bequem",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[bəˈkveːm]",
+    "meaning": "comfortable, cozy, convenient",
+    "gloss": "comfortable",
+    "comp": [
+      [
+        "Positiv",
+        "bequem"
+      ],
+      [
+        "Komparativ",
+        "bequemer"
+      ],
+      [
+        "Superlativ",
+        "am bequemsten"
+      ]
+    ],
+    "opp": "unbequem, anstrengend",
+    "family": [
+      "die Bequemlichkeit",
+      "unbequem"
+    ],
+    "ex": [
+      "Die Sitze in der ersten Klasse des ICE sind besonders breit und bequem.",
+      "The seats in the first class of the ICE are especially wide and comfortable."
+    ],
+    "tip": "Gegenteil: 'unbequem'. Kann Sitze/Kleidung beschreiben ('bequeme Schuhe') oder eine bequeme Art zu reisen.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-333"
+    ]
+  },
+  {
+    "id": "a2-d01-020",
+    "pos": "adj",
+    "word": "unterwegs",
+    "lemma": "unterwegs",
+    "level": "A2",
+    "type": "Lokal- / Situationsadverb",
+    "ipa": "[ʊntɐˈveːks]",
+    "meaning": "on the way, en route, travelling",
+    "gloss": "on the way, en route",
+    "comp": [
+      [
+        "Positiv",
+        "unterwegs"
+      ],
+      [
+        "Komparativ",
+        "—"
+      ],
+      [
+        "Superlativ",
+        "—"
+      ]
+    ],
+    "opp": "zu Hause, angekommen",
+    "family": [
+      "der Weg",
+      "unter",
+      "auf dem Weg"
+    ],
+    "ex": [
+      "Ich bin gerade noch unterwegs im Bus, aber in zehn Minuten bei dir.",
+      "I am still on the way on the bus, but with you in ten minutes."
+    ],
+    "tip": "Sehr häufig: 'Ich bin unterwegs' = I am on my way / currently out and about.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-334"
+    ]
+  },
+  {
+    "id": "a2-d01-021",
+    "pos": "noun",
+    "word": "Strecke",
+    "lemma": "Strecke",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈʃtʁɛkə]",
+    "meaning": "route, distance, stretch of road/track",
+    "gloss": "route, distance",
+    "pl": "die Strecken",
+    "genS": "der Strecke",
+    "suf": "-e",
+    "rule": "Zweisilbige Nomen auf -e: feminin: die Strecke.",
+    "nvv": [
+      [
+        "eine lange Strecke zurücklegen",
+        "to cover a long distance"
+      ]
+    ],
+    "compounds": [
+      "die Bahnstrecke",
+      "die Kurzstrecke",
+      "die Langstrecke",
+      "die Autobahnstrecke"
+    ],
+    "family": [
+      "strecken",
+      "die Streckung"
+    ],
+    "ex": [
+      "Die Strecke von Magdeburg nach Leipzig dauert mit dem IC weniger als eine Stunde.",
+      "The route from Magdeburg to Leipzig takes less than one hour by IC."
+    ],
+    "tip": "Feminin: die Strecke. Beim Ticketkauf: 'Kurzstrecke' = short-distance ticket (meist bis zu 3-4 Haltestellen).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-340"
+    ]
+  },
+  {
+    "id": "a2-d01-022",
+    "pos": "noun",
+    "word": "Baustelle",
+    "lemma": "Baustelle",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈbaʊ̯ˌʃtɛlə]",
+    "meaning": "construction site, roadworks",
+    "gloss": "construction site, roadworks",
+    "pl": "die Baustellen",
+    "genS": "der Baustelle",
+    "suf": "-stelle",
+    "rule": "Nomen auf -stelle sind immer feminin: die Baustelle, die Haltestelle.",
+    "nvv": [
+      [
+        "an einer Baustelle langsam fahren",
+        "to drive slowly at a roadworks site"
+      ]
+    ],
+    "compounds": [
+      "die Autobahnbaustelle",
+      "das Baustellenschild",
+      "der Bauarbeiter"
+    ],
+    "family": [
+      "bauen",
+      "der Bau",
+      "das Gebäude"
+    ],
+    "ex": [
+      "Wegen einer Baustelle auf den Gleisen müssen die Züge heute umgeleitet werden.",
+      "Because of construction work on the tracks, the trains must be diverted today."
+    ],
+    "tip": "Verkehrsdurchsage: 'Achtung Autofahrer: Baustelle auf der A2 zwischen Magdeburg und Helmstedt.'",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-348"
+    ]
+  },
+  {
+    "id": "a2-d01-023",
+    "pos": "phrase",
+    "word": "den Bus erreichen",
+    "lemma": "den Bus erreichen",
+    "level": "A2",
+    "type": "Kollokation · Unterwegs",
+    "ipa": "[deːn bʊs ɛɐ̯ˈʁaɪ̯çn̩]",
+    "meaning": "to catch the bus, to make it in time for the bus",
+    "gloss": "to catch the bus",
+    "frame": "den Bus / Zug / Anschluss erreichen",
+    "reg": [
+      [
+        "Alltag",
+        "Wenn wir schnell gehen, erreichen wir den Bus noch locker!",
+        "If we walk fast, we will easily catch the bus!"
+      ],
+      [
+        "Gegenteil",
+        "den Bus verpassen (to miss the bus)"
+      ]
+    ],
+    "tenses": [
+      [
+        "Präsens",
+        "Ich erreiche den Bus."
+      ],
+      [
+        "Perfekt",
+        "Ich habe den Bus erreicht."
+      ]
+    ],
+    "dlg": [
+      [
+        "A",
+        "Beeil dich, die Tram fährt in zwei Minuten ab!"
+      ],
+      [
+        "B",
+        "Keine Sorge, wir erreichen sie rechtzeitig."
+      ]
+    ],
+    "family": [
+      "erreichen",
+      "die Erreichbarkeit",
+      "der Bus"
+    ],
+    "tip": "Gegenteil: 'den Bus verpassen'. 'Erreichen' bedeutet hier pünktlich vor der Abfahrt ankommen.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-349"
+    ]
+  },
+  {
+    "id": "a2-d01-024",
+    "pos": "noun",
+    "word": "Benzin",
+    "lemma": "Benzin",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum / Kraftstoff",
+    "ipa": "[bɛnˈtsiːn]",
+    "meaning": "gasoline, petrol, fuel",
+    "gloss": "gasoline, petrol",
+    "pl": "—",
+    "genS": "des Benzins",
+    "suf": "-in",
+    "rule": "Chemische Stoffe und Treibstoffe sind meistens Neutrum: das Benzin, das Gas, das Öl.",
+    "nvv": [
+      [
+        "Benzin tanken",
+        "to fill up with petrol"
+      ],
+      [
+        "Benzin sparen",
+        "to save fuel"
+      ]
+    ],
+    "compounds": [
+      "der Benzinpreis",
+      "der Benzintank",
+      "das Superbenzin"
+    ],
+    "family": [
+      "der Diesel",
+      "der Kraftstoff",
+      "tanken"
+    ],
+    "ex": [
+      "Die Benzinpreise an den Tankstellen ändern sich im Laufe des Tages mehrmals.",
+      "Fuel prices at petrol stations change several times during the day."
+    ],
+    "tip": "Neutrum: das Benzin. An der deutschen Zapfsäule wählt man meistens 'Super E10' oder 'Super 95'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-350"
+    ]
+  },
+  {
+    "id": "a2-d01-025",
+    "pos": "prep",
+    "word": "gegenüber",
+    "lemma": "gegenüber (+ Dativ)",
+    "level": "A2",
+    "type": "Präposition · Ortsangabe",
+    "ipa": "[ɡeːɡn̩ˈʔyːbɐ]",
+    "meaning": "opposite, across from (+ Dativ)",
+    "gloss": "opposite, across from",
+    "cls": "Dativ-Präposition",
+    "cases": {
+      "wo": {
+        "cs": "Dativ",
+        "q": "Wo?",
+        "en": "Opposite the station",
+        "ex": "Das Hotel liegt direkt gegenüber dem Bahnhof."
+      }
+    },
+    "ex": [
+      "Die Apotheke befindet sich direkt gegenüber der großen Universitätsklinik.",
+      "The pharmacy is located directly opposite the large university clinic."
+    ],
+    "family": [
+      "das Gegenüber",
+      "gegenüberstehen"
+    ],
+    "tip": "VERLANGT IMMER DATIV! Kann vor oder nach dem Nomen stehen: 'dem Bahnhof gegenüber' oder 'gegenüber dem Bahnhof'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-355"
+    ]
+  },
+  {
+    "id": "a2-d01-026",
+    "pos": "prep",
+    "word": "entlang",
+    "lemma": "entlang (+ Akkusativ / Dativ)",
+    "level": "A2",
+    "type": "Präposition · Wegbeschreibung",
+    "ipa": "[ɛntˈlaŋ]",
+    "meaning": "along (following a street, river, wall)",
+    "gloss": "along",
+    "cls": "Postposition mit Akkusativ",
+    "cases": {
+      "wohin": {
+        "cs": "Akkusativ (nachgestellt)",
+        "q": "Wohin?",
+        "en": "Walk along the street",
+        "ex": "Gehen Sie die Straße entlang."
+      }
+    },
+    "ex": [
+      "Gehen Sie den Fluss etwa fünfhundert Meter entlang bis zur Holzbrücke.",
+      "Walk along the river for about five hundred meters up to the wooden bridge."
+    ],
+    "family": [
+      "der Weg",
+      "folgen"
+    ],
+    "tip": "WICHTIGE WORTSTELLUNG: Steht meistens NACH dem Nomen mit Akkusativ: 'die Straße entlang' (along the street), 'den Fluss entlang'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-356"
+    ]
+  },
+  {
+    "id": "a2-d01-027",
+    "pos": "noun",
+    "word": "Kreuzung",
+    "lemma": "Kreuzung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin / Orientierung",
+    "ipa": "[ˈkʁɔɪ̯tsʊŋ]",
+    "meaning": "intersection, junction, crossroads",
+    "gloss": "intersection, crossroads",
+    "pl": "die Kreuzungen",
+    "genS": "der Kreuzung",
+    "suf": "-ung",
+    "rule": "Endung -ung = IMMER feminin: die Kreuzung.",
+    "nvv": [
+      [
+        "an der Kreuzung abbiegen",
+        "to turn at the intersection"
+      ],
+      [
+        "die Kreuzung überqueren",
+        "to cross the intersection"
+      ]
+    ],
+    "compounds": [
+      "die Ampelkreuzung",
+      "der Kreuzungsbereich",
+      "die Straßenkreuzung"
+    ],
+    "family": [
+      "kreuzen",
+      "das Kreuz",
+      "überkreuzen"
+    ],
+    "ex": [
+      "Fahren Sie an der nächsten großen Kreuzung bitte geradeaus weiter.",
+      "At the next large intersection, please continue driving straight ahead."
+    ],
+    "tip": "Wegbeschreibung: 'zur Kreuzung' (Wohin? Akkusativ/Dativ mit zu), 'an der Kreuzung' (Wo? Dativ). Feminin: die Kreuzung.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-357"
+    ]
+  },
+  {
+    "id": "a2-d01-028",
+    "pos": "verb",
+    "word": "pendeln",
+    "lemma": "pendeln",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈpɛndl̩n]",
+    "meaning": "to commute (travel regularly between home and work/study)",
+    "gloss": "to commute",
+    "sep": false,
+    "pre": "",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "gependelt",
+    "partizip2": "gependelt",
+    "perfekt": "ist gependelt",
+    "praeteritum": "pendelte",
+    "praesens": "pendelt",
+    "reflexiv": false,
+    "praes": [
+      "pendele",
+      "pendelst",
+      "pendelt",
+      "pendeln",
+      "pendelt",
+      "pendeln"
+    ],
+    "prat": [
+      "pendelte",
+      "pendeltest",
+      "pendelte",
+      "pendelten",
+      "pendeltet",
+      "pendelten"
+    ],
+    "imp": [
+      "Pendle!",
+      "Pendelt!",
+      "Pendeln Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Viele Studierende pendeln täglich mit dem Zug zwischen Berlin und Magdeburg.",
+        "Many students commute daily by train between Berlin and Magdeburg."
+      ],
+      "prat": [
+        "Er pendelte fünf Jahre lang jeden Tag sechzig Kilometer zur Arbeit.",
+        "He commuted sixty kilometers to work every day for five years."
+      ],
+      "perf": [
+        "Bist du früher auch zur Universität gependelt?",
+        "Did you also commute to university in the past?"
+      ]
+    },
+    "ex": [
+      "Das Pendeln mit der Bahn ist oft stressfreier als die tägliche Fahrt mit dem Auto.",
+      "Commuting by train is often less stressful than the daily drive by car."
+    ],
+    "val": [
+      [
+        "zwischen + Dat und + Dat pendeln",
+        "Zwischen welchen Städten?",
+        "Ich pendle zwischen Halle und Leipzig."
+      ]
+    ],
+    "family": [
+      "der Pendler",
+      "die Pendlerin",
+      "der Pendlerpauschale",
+      "das Pendel"
+    ],
+    "tip": "Ortsveränderung → Perfekt mit 'sein': 'ist gependelt'. Personenbezeichnung: 'der Pendler' (commuter).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-377"
+    ]
+  },
+  {
+    "id": "a2-d01-029",
+    "pos": "noun",
+    "word": "Schlange",
+    "lemma": "Schlange",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈʃlaŋə]",
+    "meaning": "queue, line of waiting people; snake",
+    "gloss": "queue, line",
+    "pl": "die Schlangen",
+    "genS": "der Schlange",
+    "suf": "-e",
+    "rule": "Zweisilbiges Nomen auf -e: feminin: die Schlange.",
+    "nvv": [
+      [
+        "in der Schlange stehen / anstehen",
+        "to stand in line / queue up"
+      ],
+      [
+        "Schlange stehen",
+        "to queue up"
+      ]
+    ],
+    "compounds": [
+      "die Warteschlange",
+      "die Autoschlange"
+    ],
+    "family": [
+      "schlängeln",
+      "anstehen"
+    ],
+    "ex": [
+      "Vor dem Fahrkartenschalter am Hauptbahnhof gab es heute eine sehr lange Schlange.",
+      "In front of the ticket counter at the main station, there was a very long queue today."
+    ],
+    "tip": "Feste Wendung: 'Schlange stehen' (= to stand in line / queue up). 'Stell dich bitte hinten in der Schlange an.'",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-379"
+    ]
+  },
+  {
+    "id": "a2-d01-030",
+    "pos": "noun",
+    "word": "Reisepass",
+    "lemma": "Reisepass",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin / Reisedokument",
+    "ipa": "[ˈʁaɪ̯zəˌpas]",
+    "meaning": "passport",
+    "gloss": "passport",
+    "pl": "die Reisepässe",
+    "genS": "des Reisepasses",
+    "suf": "",
+    "rule": "Kompositum mit 'der Pass': Maskulin mit Umlaut-Plural: der Reisepass → die Reisepässe.",
+    "nvv": [
+      [
+        "den Reisepass vorzeigen / beantragen",
+        "to show / apply for a passport"
+      ]
+    ],
+    "compounds": [
+      "die Passkontrolle",
+      "der Passinhaber"
+    ],
+    "family": [
+      "die Reise",
+      "der Pass",
+      "reisen"
+    ],
+    "ex": [
+      "Für Reisen außerhalb der Europäischen Union muss der Reisepass noch mindestens sechs Monate gültig sein.",
+      "For travel outside the European Union, the passport must still be valid for at least six months."
+    ],
+    "tip": "Maskulin: der Reisepass, Plural: die Reisepässe. Unterschied: 'der Personalausweis' (ID card innerhalb der EU) vs. 'der Reisepass' (passport weltweit).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-398"
+    ]
+  },
+  {
+    "id": "a2-d01-031",
+    "pos": "noun",
+    "word": "Kontrolleur",
+    "lemma": "Kontrolleur",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[kɔntʁɔˈløːɐ̯]",
+    "meaning": "ticket inspector, controller (train, tram)",
+    "gloss": "ticket inspector",
+    "pl": "die Kontrolleure",
+    "genS": "des Kontrolleurs",
+    "suf": "-eur",
+    "rule": "Personenbezeichnungen französischer Herkunft auf -eur sind maskulin: der Kontrolleur, der Ingenieur, der Friseur.",
+    "nvv": [
+      [
+        "dem Kontrolleur die Fahrkarte zeigen",
+        "to show the ticket to the inspector"
+      ]
+    ],
+    "compounds": [
+      "die Fahrkartenkontrolle",
+      "die Kontrolleurin"
+    ],
+    "family": [
+      "die Kontrolle",
+      "kontrollieren"
+    ],
+    "ex": [
+      "Als der Kontrolleur in die Straßenbahn einstieg, suchten alle Fahrgäste nach ihren Fahrscheinen.",
+      "When the ticket inspector boarded the tram, all passengers searched for their tickets."
+    ],
+    "tip": "Standard-Satz in deutschen Bahnen: 'Die Fahrscheine bitte!' Wer ohne Ticket fährt ('schwarzfahren'), zahlt 60 Euro Strafe.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      10
+    ],
+    "sourceRawIds": [
+      "RAW-587"
+    ]
+  },
+  {
+    "id": "a2-d01-032",
+    "pos": "noun",
+    "word": "Panne",
+    "lemma": "Panne",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Feminin",
+    "ipa": "[ˈpanə]",
+    "meaning": "breakdown (car, train), puncture, glitch, mishap",
+    "gloss": "breakdown, mishap",
+    "pl": "die Pannen",
+    "genS": "der Panne",
+    "suf": "-e",
+    "rule": "Zweisilbiges Nomen auf -e: feminin: die Panne.",
+    "nvv": [
+      [
+        "eine Panne haben",
+        "to have a breakdown / puncture"
+      ],
+      [
+        "den Pannendienst rufen",
+        "to call breakdown service"
+      ]
+    ],
+    "compounds": [
+      "die Autopanne",
+      "der Pannendienst (ADAC)",
+      "das Pannendreieck"
+    ],
+    "family": [
+      "pannensicher"
+    ],
+    "ex": [
+      "Mitten auf der Autobahn hatten wir eine Reifenpanne und mussten den ADAC rufen.",
+      "In the middle of the highway, we had a tire puncture and had to call the ADAC."
+    ],
+    "tip": "Feminin: die Panne. ADAC ist der bekannteste deutsche Pannendienst (Automobilclub).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      10
+    ],
+    "sourceRawIds": [
+      "RAW-594"
+    ]
+  },
+  {
+    "id": "a2-d01-033",
+    "pos": "noun",
+    "word": "Ausflug",
+    "lemma": "Ausflug",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin",
+    "ipa": "[ˈaʊ̯sˌfluːk]",
+    "meaning": "excursion, day trip, outing",
+    "gloss": "excursion, day trip",
+    "pl": "die Ausflüge",
+    "genS": "des Ausflugs / Ausfluges",
+    "suf": "",
+    "rule": "Stamm vom Verb 'fliegen': Maskulin mit Umlaut-Plural: der Ausflug → die Ausflüge.",
+    "nvv": [
+      [
+        "einen Ausflug machen / planen",
+        "to go on / plan an excursion"
+      ]
+    ],
+    "compounds": [
+      "das Ausflugsziel",
+      "der Tagesausflug",
+      "der Familienausflug",
+      "das Ausflugsschiff"
+    ],
+    "family": [
+      "fliegen",
+      "der Flug",
+      "ausfliegen"
+    ],
+    "ex": [
+      "Am kommenden Sonntag machen wir bei schönem Wetter einen Ausflug in den Harz.",
+      "Next Sunday, in nice weather, we are going on an excursion to the Harz mountains."
+    ],
+    "tip": "Kollokation: 'einen Ausflug machen' (to go on an excursion). Maskulin: der Ausflug, Plural mit Umlaut: die Ausflüge.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      11
+    ],
+    "sourceRawIds": [
+      "RAW-626"
+    ]
+  },
+  {
+    "id": "a2-d01-034",
+    "pos": "noun",
+    "word": "Reiseleiter",
+    "lemma": "Reiseleiter",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulin / Tourismus",
+    "ipa": "[ˈʁaɪ̯zəˌlaɪ̯tɐ]",
+    "meaning": "tour guide, tour leader",
+    "gloss": "tour guide",
+    "pl": "die Reiseleiter",
+    "genS": "des Reiseleiters",
+    "suf": "-er",
+    "rule": "Personenbezeichnungen auf -er sind immer maskulin: der Reiseleiter.",
+    "nvv": [
+      [
+        "den Reiseleiter nach Empfehlungen fragen",
+        "to ask the tour guide for recommendations"
+      ]
+    ],
+    "compounds": [
+      "die Reiseleiterin",
+      "die Reisegruppe",
+      "die Stadtführung"
+    ],
+    "family": [
+      "reisen",
+      "die Reise",
+      "leiten",
+      "die Leitung"
+    ],
+    "ex": [
+      "Unser Reiseleiter sprach fließend Deutsch und zeigte uns alle historischen Sehenswürdigkeiten.",
+      "Our tour guide spoke fluent German and showed us all historical sights."
+    ],
+    "tip": "Feminin: die Reiseleiterin (Plural: die Reiseleiterinnen). Synonym bei Stadtrundgängen: 'der Stadtführer'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      12
+    ],
+    "sourceRawIds": [
+      "RAW-717"
+    ]
+  },
+  {
+    "id": "a2-d01-035",
+    "pos": "adj",
+    "word": "zugeklebt",
+    "lemma": "zugeklebt",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ˈtsuːɡəˌkleːpt]",
+    "meaning": "taped shut, sealed with glue, stuck shut",
+    "gloss": "sealed, taped shut",
+    "comp": [
+      [
+        "Positiv",
+        "zugeklebt"
+      ],
+      [
+        "Komparativ",
+        "fester zugeklebt"
+      ],
+      [
+        "Superlativ",
+        "am festesten zugeklebt"
+      ]
+    ],
+    "opp": "offen, aufgerissen",
+    "family": [
+      "kleben",
+      "der Klebstoff",
+      "zukleben"
+    ],
+    "ex": [
+      "Das Paket war mit viel Klebeband fest zugeklebt.",
+      "The package was firmly taped shut with plenty of tape."
+    ],
+    "tip": "Vorsilbe 'zu-' bedeutet hier 'geschlossen' (zugeklebt = durch Kleben verschlossen).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      2
+    ],
+    "sourceRawIds": [
+      "RAW-055"
+    ]
+  },
+  {
+    "id": "a2-d01-036",
+    "pos": "verb",
+    "word": "zurückkommen",
+    "lemma": "zurückkommen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[tsuˈʁʏkˌkɔmən]",
+    "meaning": "to come back, to return",
+    "gloss": "to return, come back",
+    "sep": true,
+    "pre": "zurück",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "zurückgekommen",
+    "partizip2": "zurückgekommen",
+    "perfekt": "ist zurückgekommen",
+    "praeteritum": "kam zurück",
+    "praesens": "kommt zurück",
+    "reflexiv": false,
+    "praes": [
+      "komme zurück",
+      "kommst zurück",
+      "kommt zurück",
+      "kommen zurück",
+      "kommt zurück",
+      "kommen zurück"
+    ],
+    "prat": [
+      "kam zurück",
+      "kamst zurück",
+      "kam zurück",
+      "kamen zurück",
+      "kamt zurück",
+      "kamen zurück"
+    ],
+    "imp": [
+      "Komm zurück!",
+      "Kommt zurück!",
+      "Kommen Sie zurück!"
+    ],
+    "exT": {
+      "praes": [
+        "Wann kommst du heute Abend von der Arbeit zurück?",
+        "When are you coming back from work this evening?"
+      ],
+      "prat": [
+        "Er kam erst spät in der Nacht von seiner Geschäftsreise zurück.",
+        "He only came back late at night from his business trip."
+      ],
+      "perf": [
+        "Sie sind gestern wohlbehalten aus dem Urlaub zurückgekommen.",
+        "They returned safely from vacation yesterday."
+      ]
+    },
+    "ex": [
+      "Ich bin gleich wieder da, ich komme in zehn Minuten zurück.",
+      "I will be right back, I am returning in ten minutes."
+    ],
+    "val": [
+      [
+        "von / aus + Dat zurückkommen",
+        "Woher?",
+        "Wann kommst du aus Berlin zurück?"
+      ]
+    ],
+    "family": [
+      "die Rückkehr",
+      "zurückfahren",
+      "wiederkommen"
+    ],
+    "tip": "Ortsveränderung → Hilfsverb 'sein': 'ist zurückgekommen'. Achte auf die Schreibung: zurück (nicht zürück).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      2
+    ],
+    "sourceRawIds": [
+      "RAW-065"
+    ]
+  },
+  {
+    "id": "a2-d01-037",
+    "pos": "adj",
+    "word": "häufig",
+    "lemma": "häufig",
+    "level": "A2",
+    "type": "Adjektiv / Häufigkeitsadverb",
+    "ipa": "[ˈhɔɪ̯fɪç]",
+    "meaning": "frequent, often, common",
+    "gloss": "frequent, often",
+    "comp": [
+      [
+        "Positiv",
+        "häufig"
+      ],
+      [
+        "Komparativ",
+        "häufiger"
+      ],
+      [
+        "Superlativ",
+        "am häufigsten"
+      ]
+    ],
+    "opp": "selten, kaum",
+    "family": [
+      "der Haufen",
+      "die Häufigkeit"
+    ],
+    "ex": [
+      "Auf dieser Bahnstrecke kommt es häufig zu Verspätungen.",
+      "On this railway line, delays occur frequently."
+    ],
+    "tip": "Synonym für 'oft', klingt aber etwas gehobener. Steigerung: häufig, häufiger, am häufigsten.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      3
+    ],
+    "sourceRawIds": [
+      "RAW-097"
+    ]
+  },
+  {
+    "id": "a2-d01-038",
+    "pos": "verb",
+    "word": "entspannen",
+    "lemma": "sich entspannen",
+    "level": "A2",
+    "type": "Verb · reflexiv / regelmäßig",
+    "ipa": "[ɛntˈʃpanən]",
+    "meaning": "to relax, unwind, ease tension",
+    "gloss": "to relax, unwind",
+    "sep": false,
+    "pre": "ent",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "entspannt",
+    "partizip2": "entspannt",
+    "perfekt": "hat sich entspannt",
+    "praeteritum": "entspannte sich",
+    "praesens": "entspannt sich",
+    "reflexiv": "sich (Akk)",
+    "praes": [
+      "entspanne mich",
+      "entspannst dich",
+      "entspannt sich",
+      "entspannen uns",
+      "entspannt euch",
+      "entspannen sich"
+    ],
+    "prat": [
+      "entspannte mich",
+      "entspanntest dich",
+      "entspannte sich",
+      "entspannten uns",
+      "entspanntet euch",
+      "entspannten sich"
+    ],
+    "imp": [
+      "Entspann dich!",
+      "Entspannt euch!",
+      "Entspannen Sie sich!"
+    ],
+    "exT": {
+      "praes": [
+        "Auf langen Bahnfahrten entspanne ich mich beim Lesen.",
+        "On long train rides I relax while reading."
+      ],
+      "prat": [
+        "Nach der anstrengenden Prüfung entspannte er sich im Park.",
+        "After the exhausting exam he relaxed in the park."
+      ],
+      "perf": [
+        "Wir haben uns am Wochenende auf dem Land wunderbar entspannt.",
+        "We relaxed wonderfully in the countryside at the weekend."
+      ]
+    },
+    "ex": [
+      "Wie entspannst du dich am liebsten nach einem stressigen Tag?",
+      "How do you prefer to relax after a stressful day?"
+    ],
+    "val": [
+      [
+        "sich entspannen bei + Dat",
+        "Wobei?",
+        "Ich entspanne mich bei ruhiger Musik."
+      ]
+    ],
+    "family": [
+      "die Entspannung",
+      "entspannt",
+      "die Anspannung"
+    ],
+    "tip": "Meist reflexiv gebraucht: 'sich entspannen'. Gegenteil: sich anstrengen.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      3
+    ],
+    "sourceRawIds": [
+      "RAW-112"
+    ]
+  },
+  {
+    "id": "a2-d01-039",
+    "pos": "adj",
+    "word": "spannend",
+    "lemma": "spannend",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈʃpanənt]",
+    "meaning": "exciting, thrilling, suspenseful",
+    "gloss": "exciting, thrilling",
+    "comp": [
+      [
+        "Positiv",
+        "spannend"
+      ],
+      [
+        "Komparativ",
+        "spannender"
+      ],
+      [
+        "Superlativ",
+        "am spannendsten"
+      ]
+    ],
+    "opp": "langweilig, eintönig",
+    "family": [
+      "die Spannung",
+      "spannen",
+      "angespannt"
+    ],
+    "ex": [
+      "Die Zugfahrt durch die Schweizer Alpen war ein spannendes Erlebnis.",
+      "The train journey through the Swiss Alps was an exciting experience."
+    ],
+    "tip": "Nicht verwechseln mit 'entspannt' (relaxed)! 'Spannend' = exciting/thrilling (wie ein Krimi).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      3
+    ],
+    "sourceRawIds": [
+      "RAW-150"
+    ]
+  },
+  {
+    "id": "a2-d01-040",
+    "pos": "noun",
+    "word": "Achterbahn",
+    "lemma": "Achterbahn",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈaxtɐˌbaːn]",
+    "meaning": "roller coaster (literal and figurative emotional ride)",
+    "gloss": "roller coaster",
+    "pl": "die Achterbahnen",
+    "genS": "der Achterbahn",
+    "rule": "Zusammensetzung mit Bahn (die Bahn): feminin.",
+    "nvv": [
+      [
+        "mit der Achterbahn fahren",
+        "to ride the roller coaster"
+      ],
+      [
+        "eine Achterbahn der Gefühle",
+        "a roller coaster of emotions"
+      ]
+    ],
+    "compounds": [
+      "der Freizeitpark",
+      "die Geisterbahn"
+    ],
+    "family": [
+      "die Bahn",
+      "die Acht"
+    ],
+    "ex": [
+      "Im Vergnügungspark sind wir dreimal mit der großen Achterbahn gefahren.",
+      "In the amusement park we rode the big roller coaster three times."
+    ],
+    "tip": "Name kommt von der Figur der Ziffer '8' (Achter). Immer 'die Achterbahn' (wie die Eisenbahn).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      4
+    ],
+    "sourceRawIds": [
+      "RAW-170"
+    ]
+  },
+  {
+    "id": "a2-d01-041",
+    "pos": "noun",
+    "word": "Preis",
+    "lemma": "Preis",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[pʁaɪ̯s]",
+    "meaning": "price, cost, fare; award, prize",
+    "gloss": "price, prize",
+    "pl": "die Preise",
+    "genS": "des Preises",
+    "rule": "Einsilbige Maskulina: der Preis, der Tag, der Tisch.",
+    "nvv": [
+      [
+        "einen Preis zahlen / gewinnen",
+        "to pay a price / win a prize"
+      ],
+      [
+        "die Preise vergleichen",
+        "to compare prices"
+      ]
+    ],
+    "compounds": [
+      "der Fahrpreis",
+      "der Sparpreis",
+      "das Preis-Leistungs-Verhältnis"
+    ],
+    "family": [
+      "preiswert",
+      "preisen"
+    ],
+    "ex": [
+      "Die Preise für Bahntickets sind am Wochenende oft höher als unter der Woche.",
+      "Prices for train tickets are often higher on weekends than during the week."
+    ],
+    "tip": "Deutsche Bahn Spartipp: 'der Sparpreis' oder 'der Super Sparpreis'. Plural mit Umlaut? Nein: die Preise!",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-251"
+    ]
+  },
+  {
+    "id": "a2-d01-042",
+    "pos": "noun",
+    "word": "Austausch",
+    "lemma": "Austausch",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈaʊ̯sˌtaʊ̯ʃ]",
+    "meaning": "exchange, interchange (cultural, student, or parts)",
+    "gloss": "exchange",
+    "pl": "die Austausche",
+    "genS": "des Austauschs / Austausches",
+    "rule": "Stammform von Verben (austauschen): meist maskulin (der Austausch, der Umtausch).",
+    "nvv": [
+      [
+        "an einem Austausch teilnehmen",
+        "to participate in an exchange"
+      ],
+      [
+        "im Austausch gegen (+ Akk)",
+        "in exchange for"
+      ]
+    ],
+    "compounds": [
+      "der Schüleraustausch",
+      "das Austauschprogramm",
+      "der Meinungsaustausch"
+    ],
+    "family": [
+      "austauschen",
+      "tauschen"
+    ],
+    "ex": [
+      "Durch den deutsch-französischen Schüleraustausch hat sie viele neue Freunde gefunden.",
+      "Through the German-French student exchange she made many new friends."
+    ],
+    "tip": "Sehr häufig bei Reisen und Bildung: 'der Studentenaustausch', 'der Erfahrungsaustausch'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-302"
+    ]
+  },
+  {
+    "id": "a2-d01-043",
+    "pos": "phrase",
+    "word": "ganz schön mobil",
+    "lemma": "ganz schön mobil sein",
+    "level": "A2",
+    "type": "Redewendung / Umg.",
+    "ipa": "[ɡants ʃøːn moˈbiːl]",
+    "meaning": "pretty mobile, very flexible in getting around",
+    "gloss": "pretty mobile",
+    "frame": "ganz schön mobil sein mit [Dativ]",
+    "reg": [
+      [
+        "umgangssprachlich",
+        "Mit E-Bike und Deutschlandticket ist man in der Stadt ganz schön mobil.",
+        "With an e-bike and Deutschlandticket, one is pretty mobile in the city."
+      ],
+      [
+        "standard",
+        "Sie ist beruflich viel unterwegs und daher ganz schön mobil.",
+        "She travels a lot for work and is therefore remarkably mobile."
+      ]
+    ],
+    "tenses": {
+      "praes": "ist ganz schön mobil",
+      "prat": "war ganz schön mobil",
+      "perf": "ist ganz schön mobil gewesen"
+    },
+    "dlg": [
+      [
+        "A",
+        "Brauchst du in München eigentlich ein eigenes Auto?"
+      ],
+      [
+        "B",
+        "Nein, mit Tram, U-Bahn und Carsharing ist man hier ganz schön mobil!"
+      ]
+    ],
+    "tip": "Kapiteltitel von Netzwerk A2 Lektion 6! 'Ganz schön' verstärkt hier als Steigerungspartikel ('ziemlich / erstaunlich').",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-316"
+    ]
+  },
+  {
+    "id": "a2-d01-044",
+    "pos": "adj",
+    "word": "genervt",
+    "lemma": "genervt sein (von + Dat)",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ɡəˈnɛʁft]",
+    "meaning": "annoyed, irritated, exasperated",
+    "gloss": "annoyed, irritated",
+    "comp": [
+      [
+        "Positiv",
+        "genervt"
+      ],
+      [
+        "Komparativ",
+        "genervter"
+      ],
+      [
+        "Superlativ",
+        "am genervtesten"
+      ]
+    ],
+    "opp": "gelassen, entspannt, geduldig",
+    "family": [
+      "der Nerv",
+      "nerven",
+      "die Nervosität"
+    ],
+    "ex": [
+      "Die Fahrgäste waren wegen der vielen Zugausfälle extrem genervt.",
+      "The passengers were extremely annoyed because of the many train cancellations."
+    ],
+    "tip": "Feste Rektion: 'genervt sein VON + Dativ' (Ich bin genervt von dem Lärm / von den Verspätungen).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-336"
+    ]
+  },
+  {
+    "id": "a2-d01-045",
+    "pos": "noun",
+    "word": "Dame",
+    "lemma": "Dame",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈdaːmə]",
+    "meaning": "lady; queen (chess, cards)",
+    "gloss": "lady",
+    "pl": "die Damen",
+    "genS": "der Dame",
+    "rule": "Wörter auf -e mit natürlichem weiblichen Geschlecht: immer feminin.",
+    "nvv": [
+      [
+        "Sehr geehrte Damen und Herren",
+        "Dear Ladies and Gentlemen (formal salutation)"
+      ]
+    ],
+    "compounds": [
+      "die Damenkleidung",
+      "die Dame des Hauses"
+    ],
+    "family": [
+      "damenhaft"
+    ],
+    "ex": [
+      "Eine ältere Dame bat mich am Bahnhof um Hilfe mit ihrem schweren Koffer.",
+      "An elderly lady asked me at the station for help with her heavy suitcase."
+    ],
+    "tip": "Standardanrede in Briefen/E-Mails: 'Sehr geehrte Damen und Herren'. Auf Toilettenschildern: 'Damen' vs. 'Herren'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-337"
+    ]
+  },
+  {
+    "id": "a2-d01-046",
+    "pos": "verb",
+    "word": "mischen",
+    "lemma": "mischen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈmɪʃn̩]",
+    "meaning": "to mix, blend, shuffle (cards)",
+    "gloss": "to mix, blend",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gemischt",
+    "partizip2": "gemischt",
+    "perfekt": "hat gemischt",
+    "praeteritum": "mischte",
+    "praesens": "mischt",
+    "reflexiv": false,
+    "praes": [
+      "mische",
+      "mischst",
+      "mischt",
+      "mischen",
+      "mischt",
+      "mischen"
+    ],
+    "prat": [
+      "mischte",
+      "mischtest",
+      "mischte",
+      "mischten",
+      "mischtet",
+      "mischten"
+    ],
+    "imp": [
+      "Misch!",
+      "Mischt!",
+      "Mischen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Beim Carsharing mischen die Nutzer verschiedene Verkehrsmittel.",
+        "With carsharing, users mix various modes of transport."
+      ],
+      "prat": [
+        "Sie mischte die Karten vor der nächsten Runde.",
+        "She shuffled the cards before the next round."
+      ],
+      "perf": [
+        "Wir haben Benzin und Öl im richtigen Verhältnis gemischt.",
+        "We mixed gasoline and oil in the correct ratio."
+      ]
+    },
+    "ex": [
+      "Auf einer Radreise mischt man sportliche Aktivität mit Kultur.",
+      "On a bicycle tour one mixes athletic activity with culture."
+    ],
+    "val": [
+      [
+        "etwas (Akk) mit + Dat mischen",
+        "Womit?",
+        "Er mischt Apfelsaft mit Mineralwasser."
+      ]
+    ],
+    "family": [
+      "die Mischung",
+      "sich einmischen",
+      "das Gemisch"
+    ],
+    "tip": "Auch reflexiv mit 'unter': 'sich unter die Leute mischen' (to mingle with people).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-338"
+    ]
+  },
+  {
+    "id": "a2-d01-047",
+    "pos": "verb",
+    "word": "abnehmen",
+    "lemma": "abnehmen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈapˌneːmən]",
+    "meaning": "to take off (hat/luggage), to lose weight, to decline/decrease",
+    "gloss": "to take off, lose weight",
+    "sep": true,
+    "pre": "ab",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "abgenommen",
+    "partizip2": "abgenommen",
+    "perfekt": "hat abgenommen",
+    "praeteritum": "nahm ab",
+    "praesens": "nimmt ab",
+    "reflexiv": false,
+    "praes": [
+      "nehme ab",
+      "nimmst ab",
+      "nimmt ab",
+      "nehmen ab",
+      "nehmt ab",
+      "nehmen ab"
+    ],
+    "prat": [
+      "nahm ab",
+      "nahmst ab",
+      "nahm ab",
+      "nahmen ab",
+      "nahmt ab",
+      "nahmen ab"
+    ],
+    "imp": [
+      "Nimm ab!",
+      "Nehmt ab!",
+      "Nehmen Sie ab!"
+    ],
+    "exT": {
+      "praes": [
+        "Am Fahrradständer nimmt er die schwere Lenkertasche ab.",
+        "At the bike rack he takes off the heavy handlebar bag."
+      ],
+      "prat": [
+        "Während der anstrengenden Alpenüberquerung nahm er drei Kilo ab.",
+        "During the strenuous crossing of the Alps he lost three kilos."
+      ],
+      "perf": [
+        "Darf ich Ihnen den schweren Rucksack abnehmen?",
+        "May I take the heavy backpack off your hands?"
+      ]
+    },
+    "ex": [
+      "Am Ziel angekommen, haben wir die Packtaschen vom Fahrrad abgenommen.",
+      "Arriving at the destination, we took the panniers off the bicycle."
+    ],
+    "val": [
+      [
+        "jemandem (Dat) etwas (Akk) abnehmen",
+        "Wem? Was?",
+        "Ich nehme dir den Koffer ab."
+      ]
+    ],
+    "family": [
+      "die Abnahme",
+      "zunehmen",
+      "die Zunahme"
+    ],
+    "tip": "Zwei Hauptbedeutungen: 1) physisch entfernen (die Tasche abnehmen); 2) Gewicht verlieren (drei Kilo abnehmen). Gegenteil: zunehmen.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-339"
+    ]
+  },
+  {
+    "id": "a2-d01-048",
+    "pos": "adj",
+    "word": "topaktuell",
+    "lemma": "topaktuell",
+    "level": "A2",
+    "type": "Zusammengesetztes Adjektiv",
+    "ipa": "[ˈtɔpʔakˌtu̯ɛl]",
+    "meaning": "brand-new, up to the minute, cutting-edge, breaking",
+    "gloss": "up-to-date, current",
+    "comp": [
+      [
+        "Positiv",
+        "topaktuell"
+      ],
+      [
+        "Komparativ",
+        "topaktueller"
+      ],
+      [
+        "Superlativ",
+        "am topaktuellsten"
+      ]
+    ],
+    "opp": "veraltet, überholt",
+    "family": [
+      "aktuell",
+      "die Aktualität"
+    ],
+    "ex": [
+      "Die DB-App liefert topaktuelle Verkehrsmeldungen in Echtzeit.",
+      "The DB app delivers up-to-the-minute traffic reports in real time."
+    ],
+    "tip": "Präfix 'top-' dient im modernen Deutsch als Superlativ-Verstärker (topfit, topaktuell).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-341"
+    ]
+  },
+  {
+    "id": "a2-d01-049",
+    "pos": "conn",
+    "word": "übermorgen",
+    "lemma": "übermorgen",
+    "level": "A2",
+    "type": "Temporales Adverb",
+    "ipa": "[ˌyːbɐˈmɔʁɡn̩]",
+    "meaning": "the day after tomorrow",
+    "gloss": "day after tomorrow",
+    "cls": "Adverb der Zeit",
+    "orders": [
+      [
+        "Zeitposition",
+        "übermorgen + Verb + Subjekt",
+        "Übermorgen fahren wir mit dem Zug nach Hamburg."
+      ],
+      [
+        "Satzmitte",
+        "Subjekt + Verb + übermorgen",
+        "Die Reisegruppe reist übermorgen ab."
+      ]
+    ],
+    "cmp": [
+      {
+        "cls": "übermorgen",
+        "w": "übermorgen",
+        "b": "in two days",
+        "ex": "Übermorgen beginnt die Radtour."
+      },
+      {
+        "cls": "vorgestern",
+        "w": "vorgestern",
+        "b": "two days ago (opposite)",
+        "ex": "Vorgestern sind wir angekommen."
+      }
+    ],
+    "tip": "Zeitkette lernen: vorgestern (-2) → gestern (-1) → heute (0) → morgen (+1) → übermorgen (+2).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-343"
+    ]
+  },
+  {
+    "id": "a2-d01-050",
+    "pos": "verb",
+    "word": "einschalten",
+    "lemma": "einschalten",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[ˈaɪ̯nˌʃaltn̩]",
+    "meaning": "to switch on, turn on (lights, engine, navigation)",
+    "gloss": "to switch on, turn on",
+    "sep": true,
+    "pre": "ein",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "eingeschaltet",
+    "partizip2": "eingeschaltet",
+    "perfekt": "hat eingeschaltet",
+    "praeteritum": "schaltete ein",
+    "praesens": "schaltet ein",
+    "reflexiv": false,
+    "praes": [
+      "schalte ein",
+      "schaltest ein",
+      "schaltet ein",
+      "schalten ein",
+      "schaltet ein",
+      "schalten ein"
+    ],
+    "prat": [
+      "schaltete ein",
+      "schaltetest ein",
+      "schaltete ein",
+      "schalteten ein",
+      "schaltetet ein",
+      "schalteten ein"
+    ],
+    "imp": [
+      "Schalte ein!",
+      "Schaltet ein!",
+      "Schalten Sie ein!"
+    ],
+    "exT": {
+      "praes": [
+        "Bei Dunkelheit schaltet der Radfahrer das Scheinwerferlicht ein.",
+        "In the dark, the cyclist turns on the headlight."
+      ],
+      "prat": [
+        "Er schaltete das Navigationsgerät im Auto ein.",
+        "He switched on the GPS navigation device in the car."
+      ],
+      "perf": [
+        "Hast du das Licht am Fahrrad schon eingeschaltet?",
+        "Have you already turned on the bicycle light?"
+      ]
+    },
+    "ex": [
+      "Bitte schalten Sie vor der Abfahrt den Motor ein.",
+      "Please turn on the engine before departure."
+    ],
+    "val": [
+      [
+        "etwas (Akk) einschalten",
+        "Wen oder was?",
+        "Sie schaltet das Radio ein."
+      ]
+    ],
+    "family": [
+      "ausschalten",
+      "der Schalter",
+      "umschalten"
+    ],
+    "tip": "Gegenteil: ausschalten (to switch off). Synonym: anmachen.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-344"
+    ]
+  },
+  {
+    "id": "a2-d01-051",
+    "pos": "noun",
+    "word": "Überlegung",
+    "lemma": "Überlegung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˌyːbɐˈleːɡʊŋ]",
+    "meaning": "consideration, thought, deliberation",
+    "gloss": "consideration, thought",
+    "pl": "die Überlegungen",
+    "genS": "der Überlegung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Überlegung).",
+    "nvv": [
+      [
+        "Überlegungen anstellen",
+        "to make considerations / think things through"
+      ],
+      [
+        "nach reiflicher Überlegung",
+        "after careful consideration"
+      ]
+    ],
+    "compounds": [
+      "die Vorüberlegung",
+      "die Reiseüberlegung"
+    ],
+    "family": [
+      "überlegen",
+      "durchdacht"
+    ],
+    "ex": [
+      "Nach langen Überlegungen haben wir uns gegen ein eigenes Auto und für Carsharing entschieden.",
+      "After much consideration we decided against an own car and in favor of carsharing."
+    ],
+    "tip": "Typische Nomen-Verb-Verbindung: 'Überlegungen anstellen' = intensiv nachdenken.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-345"
+    ]
+  },
+  {
+    "id": "a2-d01-052",
+    "pos": "adj",
+    "word": "gespannt",
+    "lemma": "gespannt sein (auf + Akk)",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ɡəˈʃpant]",
+    "meaning": "curious, eager, excited to see / find out",
+    "gloss": "excited, curious",
+    "comp": [
+      [
+        "Positiv",
+        "gespannt"
+      ],
+      [
+        "Komparativ",
+        "gespannter"
+      ],
+      [
+        "Superlativ",
+        "am gespanntesten"
+      ]
+    ],
+    "opp": "gleichgültig, desinteressiert",
+    "family": [
+      "spannen",
+      "die Spannung",
+      "abspannen"
+    ],
+    "ex": [
+      "Ich bin schon sehr gespannt auf unsere fünftägige Radtour an der Donau.",
+      "I am already very excited and curious about our five-day bike tour along the Danube."
+    ],
+    "tip": "Feste Präposition: 'gespannt sein AUF + Akkusativ' (Ich bin gespannt auf die Reise!). Bedeutet positive Neugier / Vorfreude.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-346"
+    ]
+  },
+  {
+    "id": "a2-d01-053",
+    "pos": "noun",
+    "word": "Ecke",
+    "lemma": "Ecke",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈɛkə]",
+    "meaning": "corner, street corner; region, local area",
+    "gloss": "corner",
+    "pl": "die Ecken",
+    "genS": "der Ecke",
+    "rule": "Zweisilbige Substantive auf -e sind meist feminin (die Ecke, die Straße, die Reise).",
+    "nvv": [
+      [
+        "an der Ecke warten / stehen",
+        "to wait / stand at the corner (Dativ)"
+      ],
+      [
+        "um die Ecke biegen / gehen",
+        "to turn / go around the corner (Akkusativ)"
+      ]
+    ],
+    "compounds": [
+      "die Straßenecke",
+      "die Sitzecke",
+      "der Eckladen"
+    ],
+    "family": [
+      "eckig",
+      "dreieckig"
+    ],
+    "ex": [
+      "Biegen Sie an der nächsten Ecke nach links ab, dort ist die Mietstation.",
+      "Turn left at the next corner, the rental station is right there."
+    ],
+    "tip": "Wegbeschreibung: 'an der Ecke' (Wo? Dativ) vs. 'um die Ecke' (Wohin? Akkusativ). 'Gleich um die Ecke' = just around the corner.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-352"
+    ]
+  },
+  {
+    "id": "a2-d01-054",
+    "pos": "conn",
+    "word": "um ... herum",
+    "lemma": "um ... herum (+ Akk)",
+    "level": "A2",
+    "type": "Zirkumposition mit Akkusativ",
+    "ipa": "[ʊm ... hɛˈʁʊm]",
+    "meaning": "around (encircling, bypassing, or approximately)",
+    "gloss": "around, surrounding",
+    "cls": "Präpositionalgefüge (Akkusativ)",
+    "orders": [
+      [
+        "Räumliche Bewegung",
+        "um + Akkusativ + herum",
+        "Wir sind mit dem Fahrrad um den See herum gefahren."
+      ],
+      [
+        "Vermeidung / Ausweichen",
+        "um das Hindernis herum",
+        "Wegen der Baustelle mussten wir um die Stadt herum fahren."
+      ]
+    ],
+    "cmp": [
+      {
+        "cls": "um...herum",
+        "w": "um (+ Akk) herum",
+        "b": "motion encircling an object",
+        "ex": "Die Straße führt um den Berg herum."
+      },
+      {
+        "cls": "durch",
+        "w": "durch (+ Akk)",
+        "b": "motion passing through (opposite)",
+        "ex": "Wir fahren durch den Tunnel."
+      }
+    ],
+    "tip": "Zirkumposition: 'um' steht vor dem Nomen, 'herum' steht hinter dem Nomen. Verlangt immer den AKKUSATIV!",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-353"
+    ]
+  },
+  {
+    "id": "a2-d01-055",
+    "pos": "phrase",
+    "word": "einverstanden",
+    "lemma": "einverstanden sein (mit + Dat)",
+    "level": "A2",
+    "type": "Feste Wendung",
+    "ipa": "[ˈaɪ̯nfɛɐ̯ˌʃtandn̩]",
+    "meaning": "agreed, in agreement, okay with something",
+    "gloss": "agreed, okay",
+    "frame": "einverstanden sein mit [Dativ]",
+    "reg": [
+      [
+        "standard",
+        "Sind Sie mit den Mietbedingungen des Fahrzeugs einverstanden?",
+        "Do you agree with the rental terms of the vehicle?"
+      ],
+      [
+        "kurz / umgangssprachlich",
+        "Treffen wir uns um zehn am Bahnhof? – Einverstanden!",
+        "Shall we meet at ten at the station? – Agreed!"
+      ]
+    ],
+    "tenses": {
+      "praes": "ist einverstanden",
+      "prat": "war einverstanden",
+      "perf": "ist einverstanden gewesen"
+    },
+    "dlg": [
+      [
+        "A",
+        "Wollen wir uns die Kosten für das Benzin teilen?"
+      ],
+      [
+        "B",
+        "Ja, absolut einverstanden!"
+      ]
+    ],
+    "tip": "Wichtiges A2-Redemittel für Verhandlungen und Terminabsprachen: 'Ich bin damit einverstanden.'",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-358"
+    ]
+  },
+  {
+    "id": "a2-d01-056",
+    "pos": "noun",
+    "word": "Wortbestandteil",
+    "lemma": "Wortbestandteil",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈvɔʁtbəˌʃtantˌtaɪ̯l]",
+    "meaning": "word component, constituent element of a compound word",
+    "gloss": "word component",
+    "pl": "die Wortbestandteile",
+    "genS": "des Wortbestandteils",
+    "rule": "Zusammensetzung mit Teil (der Teil): maskulin.",
+    "nvv": [
+      [
+        "ein langes Wort in Wortbestandteile zerlegen",
+        "to break down a long word into components"
+      ]
+    ],
+    "compounds": [
+      "das Kompositum",
+      "der Bestandteil"
+    ],
+    "family": [
+      "bestehen",
+      "der Teil",
+      "teilweise"
+    ],
+    "ex": [
+      "Deutsche Komposita wie 'Fahrradverleihstation' lassen sich leicht verstehen, wenn man die einzelnen Wortbestandteile kennt.",
+      "German compounds like 'Fahrradverleihstation' are easy to understand if you know the individual components."
+    ],
+    "tip": "Lernstrategie im Netzwerk-Lehrbuch: Lange Wörter in kleine Einheiten teilen (z. B. Miet + Wagen = Mietwagen).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-360"
+    ]
+  },
+  {
+    "id": "a2-d01-057",
+    "pos": "verb",
+    "word": "leihen",
+    "lemma": "leihen",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[ˈlaɪ̯ən]",
+    "meaning": "to lend (to someone) OR to borrow / hire (from someone)",
+    "gloss": "to lend, borrow",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geliehen",
+    "partizip2": "geliehen",
+    "perfekt": "hat geliehen",
+    "praeteritum": "lieh",
+    "praesens": "leiht",
+    "reflexiv": false,
+    "praes": [
+      "leihe",
+      "leihst",
+      "leiht",
+      "leihen",
+      "leiht",
+      "leihen"
+    ],
+    "prat": [
+      "lieh",
+      "liehst",
+      "lieh",
+      "liehen",
+      "lieht",
+      "liehen"
+    ],
+    "imp": [
+      "Leih!",
+      "Leiht!",
+      "Leihen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Für das Wochenende leiht er sich ein E-Bike an der Verleihstation.",
+        "For the weekend he borrows an e-bike at the rental station."
+      ],
+      "prat": [
+        "Sie lieh ihrem Freund ihr Auto für den Umzug.",
+        "She lent her friend her car for the move."
+      ],
+      "perf": [
+        "Wir haben uns am Bahnhof zwei Fahrräder geliehen.",
+        "We rented two bicycles at the train station."
+      ]
+    },
+    "ex": [
+      "Kannst du mir bis morgen dein Fahrradschloss leihen?",
+      "Can you lend me your bike lock until tomorrow?"
+    ],
+    "val": [
+      [
+        "jemandem (Dat) etwas (Akk) leihen",
+        "Wem? Was?",
+        "Ich leihe dir mein Ticket."
+      ],
+      [
+        "sich (Dat) etwas (Akk) von + Dat leihen",
+        "Von wem?",
+        "Er leiht sich Geld von der Bank."
+      ]
+    ],
+    "family": [
+      "der Leihwagen",
+      "die Ausleihe",
+      "verleihen"
+    ],
+    "tip": "Bedeutet beides: borgen (to borrow) und herleihen (to lend). Bei 'sich leihen' = ausleihen/mieten.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-361"
+    ]
+  },
+  {
+    "id": "a2-d01-058",
+    "pos": "noun",
+    "word": "Anbieter",
+    "lemma": "Anbieter",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈanˌbiːtɐ]",
+    "meaning": "provider, supplier (carsharing, telecom, mobility)",
+    "gloss": "provider, supplier",
+    "pl": "die Anbieter",
+    "genS": "des Anbieters",
+    "rule": "Agens-Nomen auf -er: immer maskulin (der Anbieter, der Fahrer, der Mieter).",
+    "nvv": [
+      [
+        "den besten Anbieter wählen",
+        "to choose the best provider"
+      ],
+      [
+        "die Tarife verschiedener Anbieter vergleichen",
+        "to compare rates of various providers"
+      ]
+    ],
+    "compounds": [
+      "der Carsharing-Anbieter",
+      "der Mobilfunkanbieter",
+      "der Reiseanbieter"
+    ],
+    "family": [
+      "anbieten",
+      "das Angebot"
+    ],
+    "ex": [
+      "In deutschen Großstädten gibt es mehrere verschiedene Carsharing-Anbieter wie ShareNow oder Miles.",
+      "In large German cities there are several different carsharing providers like ShareNow or Miles."
+    ],
+    "tip": "Sehr häufiges A2-Wort für Dienstleister: 'der Carsharing-Anbieter', 'der Stromanbieter'. Plural bleibt gleich: die Anbieter.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-362"
+    ]
+  },
+  {
+    "id": "a2-d01-059",
+    "pos": "adj",
+    "word": "ähnlich",
+    "lemma": "ähnlich (+ Dat)",
+    "level": "A2",
+    "type": "Adjektiv mit Dativ",
+    "ipa": "[ˈeːnmlɪç]",
+    "meaning": "similar, resembling, alike",
+    "gloss": "similar",
+    "comp": [
+      [
+        "Positiv",
+        "ähnlich"
+      ],
+      [
+        "Komparativ",
+        "ähnlicher"
+      ],
+      [
+        "Superlativ",
+        "am ähnlichsten"
+      ]
+    ],
+    "opp": "verschieden, unterschiedlich, gegensätzlich",
+    "family": [
+      "die Ähnlichkeit",
+      "ähneln"
+    ],
+    "ex": [
+      "Das System von Carsharing ist dem Fahrradverleih sehr ähnlich.",
+      "The system of carsharing is very similar to bike rental."
+    ],
+    "tip": "Feste Dativ-Rektion: 'jemandem/etwas ähnlich sein' (Er ist seinem Vater sehr ähnlich).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-363"
+    ]
+  },
+  {
+    "id": "a2-d01-060",
+    "pos": "noun",
+    "word": "Durchschnitt",
+    "lemma": "Durchschnitt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈdʊʁçˌʃnɪt]",
+    "meaning": "average, mean",
+    "gloss": "average",
+    "pl": "die Durchschnitte",
+    "genS": "des Durchschnitts",
+    "rule": "Stammform von Verben (durchschneiden): maskulin (der Schnitt, der Durchschnitt).",
+    "nvv": [
+      [
+        "im Durchschnitt",
+        "on average"
+      ],
+      [
+        "über / unter dem Durchschnitt liegen",
+        "to be above / below average"
+      ]
+    ],
+    "compounds": [
+      "die Durchschnittsgeschwindigkeit",
+      "das Durchschnittsalter"
+    ],
+    "family": [
+      "durchschnittlich",
+      "schneiden"
+    ],
+    "ex": [
+      "Im Durchschnitt steht ein privates Auto in Deutschland 23 Stunden am Tag ungenutzt herum.",
+      "On average, a private car in Germany sits unused for 23 hours a day."
+    ],
+    "tip": "Wichtigste Redewendung für Statistiken: 'im Durchschnitt' (on average).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-365"
+    ]
+  },
+  {
+    "id": "a2-d01-061",
+    "pos": "verb",
+    "word": "unterschreiben",
+    "lemma": "unterschreiben",
+    "level": "A2",
+    "type": "Verb · untrennbar / unregelmäßig",
+    "ipa": "[ˌʊntɐˈʃʁaɪ̯bn̩]",
+    "meaning": "to sign (a contract, document, lease)",
+    "gloss": "to sign",
+    "sep": false,
+    "pre": "unter",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "unterschrieben",
+    "partizip2": "unterschrieben",
+    "perfekt": "hat unterschrieben",
+    "praeteritum": "unterschrieb",
+    "praesens": "unterschreibt",
+    "reflexiv": false,
+    "praes": [
+      "unterschreibe",
+      "unterschreibst",
+      "unterschreibt",
+      "unterschreiben",
+      "unterschreibt",
+      "unterschreiben"
+    ],
+    "prat": [
+      "unterschrieb",
+      "unterschriebst",
+      "unterschrieb",
+      "unterschrieben",
+      "unterschriebt",
+      "unterschrieben"
+    ],
+    "imp": [
+      "Unterschreib!",
+      "Unterschreibt!",
+      "Unterschreiben Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Vor der Probefahrt unterschreibt der Kunde den Mietvertrag.",
+        "Before the test drive, the customer signs the rental agreement."
+      ],
+      "prat": [
+        "Sie unterschrieb das Dokument direkt am Schalter.",
+        "She signed the document directly at the counter."
+      ],
+      "perf": [
+        "Haben Sie das Übergabeprotokoll für das Auto schon unterschrieben?",
+        "Have you already signed the handover protocol for the car?"
+      ]
+    },
+    "ex": [
+      "Bitte unterschreiben Sie hier unten rechts auf der gepunkteten Linie.",
+      "Please sign down here on the right on the dotted line."
+    ],
+    "val": [
+      [
+        "einen Vertrag (Akk) unterschreiben",
+        "Wen oder was?",
+        "Ich muss den Vertrag noch unterschreiben."
+      ]
+    ],
+    "family": [
+      "die Unterschrift",
+      "schreiben",
+      "das Schreiben"
+    ],
+    "tip": "Untrennbar! 'unter' bleibt fest am Verb: er unterschreibt (nicht er schreibt unter). Partizip II ohne 'ge-': unterschrieben.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-369"
+    ]
+  },
+  {
+    "id": "a2-d01-062",
+    "pos": "noun",
+    "word": "Gebühr",
+    "lemma": "Gebühr",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ɡəˈbyːɐ̯]",
+    "meaning": "fee, charge, toll, fare",
+    "gloss": "fee, charge",
+    "pl": "die Gebühren",
+    "genS": "der Gebühr",
+    "rule": "Nomen auf -ühr / -ur sind meist feminin: die Gebühr, die Natur, die Kultur.",
+    "nvv": [
+      [
+        "eine Gebühr bezahlen / erheben",
+        "to pay / levy a fee"
+      ],
+      [
+        "von den Gebühren befreien",
+        "to exempt from fees"
+      ]
+    ],
+    "compounds": [
+      "die Parkgebühr",
+      "die Anmeldegebühr",
+      "die Monatsgebühr",
+      "die Mautgebühr"
+    ],
+    "family": [
+      "gebührenpflichtig",
+      "gebührenfrei"
+    ],
+    "ex": [
+      "Beim Carsharing zahlt man oft keine monatliche Grundgebühr, sondern nur pro Minute.",
+      "With carsharing, you often pay no monthly base fee, but only per minute."
+    ],
+    "tip": "Wichtige Zusammensetzungen: 'gebührenfrei' (free of charge) vs. 'gebührenpflichtig' (subject to a fee).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-370"
+    ]
+  },
+  {
+    "id": "a2-d01-063",
+    "pos": "conn",
+    "word": "ansonsten",
+    "lemma": "ansonsten",
+    "level": "A2",
+    "type": "Konnektoradverb",
+    "ipa": "[anˈzɔnstn̩]",
+    "meaning": "otherwise, apart from that, besides",
+    "gloss": "otherwise, besides",
+    "cls": "Adverb",
+    "orders": [
+      [
+        "Bedingungsfolge / Inversion",
+        "Ansonsten + Verb + Subjekt",
+        "Wir müssen uns beeilen, ansonsten verpassen wir den Anschlusszug."
+      ],
+      [
+        "Einschränkung",
+        "Subjekt + Verb ..., ansonsten...",
+        "Das Hotelzimmer war klein, ansonsten war alles perfekt."
+      ]
+    ],
+    "cmp": [
+      {
+        "cls": "ansonsten",
+        "w": "ansonsten / sonst",
+        "b": "otherwise (in other circumstances)",
+        "ex": "Nimm eine Regenjacke mit, ansonsten wirst du nass."
+      },
+      {
+        "cls": "trotzdem",
+        "w": "trotzdem",
+        "b": "nevertheless / still",
+        "ex": "Es regnete, trotzdem fuhren wir Fahrrad."
+      }
+    ],
+    "tip": "Synonym zu 'sonst'. Wenn es auf Position 1 steht, folgt Inversion (Verb auf Position 2: 'Ansonsten fahren wir mit dem Bus').",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-371"
+    ]
+  },
+  {
+    "id": "a2-d01-064",
+    "pos": "noun",
+    "word": "Reparatur",
+    "lemma": "Reparatur",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ʁepataˈtuːɐ̯]",
+    "meaning": "repair, servicing, mending",
+    "gloss": "repair",
+    "pl": "die Reparaturen",
+    "genS": "der Reparatur",
+    "rule": "Endung -ur: immer feminin (die Reparatur, die Kultur, die Natur).",
+    "nvv": [
+      [
+        "eine Reparatur durchführen / bezahlen",
+        "to carry out / pay for a repair"
+      ],
+      [
+        "das Auto in die Reparatur geben",
+        "to send the car for repair"
+      ]
+    ],
+    "compounds": [
+      "die Autoreparatur",
+      "die Fahrradreparatur",
+      "die Reparaturkosten"
+    ],
+    "family": [
+      "reparieren",
+      "die Reparaturwerkstatt"
+    ],
+    "ex": [
+      "Beim Carsharing übernimmt der Anbieter alle Kosten für Wartung und Reparaturen.",
+      "With carsharing, the provider covers all costs for maintenance and repairs."
+    ],
+    "tip": "Plural mit -en: die Reparaturen. Merke: Wörter auf '-ur' sind immer weiblich: die Reparatur.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-372"
+    ]
+  },
+  {
+    "id": "a2-d01-065",
+    "pos": "noun",
+    "word": "Versicherung",
+    "lemma": "Versicherung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[fɛɐ̯ˈzɪçəʁʊŋ]",
+    "meaning": "insurance, assurance",
+    "gloss": "insurance",
+    "pl": "die Versicherungen",
+    "genS": "der Versicherung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Versicherung).",
+    "nvv": [
+      [
+        "eine Versicherung abschließen",
+        "to take out an insurance policy"
+      ],
+      [
+        "durch die Versicherung gedeckt sein",
+        "to be covered by insurance"
+      ]
+    ],
+    "compounds": [
+      "die Krankenversicherung",
+      "die Haftpflichtversicherung",
+      "die Kfz-Versicherung",
+      "die Reiseversicherung"
+    ],
+    "family": [
+      "versichern",
+      "sicher",
+      "die Sicherheit"
+    ],
+    "ex": [
+      "Im Mietpreis für den Leihwagen ist die Vollkasko-Versicherung bereits enthalten.",
+      "Comprehensive insurance is already included in the rental price for the hire car."
+    ],
+    "tip": "Wichtiges deutsches Kulturthema: Deutsche haben im Schnitt 6 Versicherungen! Wichtigste Kollokation: 'eine Versicherung abschließen'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-373"
+    ]
+  },
+  {
+    "id": "a2-d01-066",
+    "pos": "noun",
+    "word": "Redemittel",
+    "lemma": "Redemittel",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈʁeːdəˌmɪtl̩]",
+    "meaning": "idiomatic phrases, conversational formulas, communication tools",
+    "gloss": "phrases, speech tools",
+    "pl": "die Redemittel",
+    "genS": "des Redemittels",
+    "rule": "Zusammensetzung mit Mittel (das Mittel): immer Neutrum.",
+    "nvv": [
+      [
+        "nützliche Redemittel für den Alltag lernen",
+        "to learn useful everyday expressions"
+      ]
+    ],
+    "compounds": [
+      "das Sprachmittel",
+      "der Redemittelkatalog"
+    ],
+    "family": [
+      "reden",
+      "die Rede",
+      "mitteln"
+    ],
+    "ex": [
+      "In Lektion 6 üben wir Redemittel zum Thema 'Ein Auto mieten und den Weg beschreiben'.",
+      "In lesson 6 we practice speech formulas on the topic 'Renting a car and describing the way'."
+    ],
+    "tip": "Fester Begriff in allen Sprachkursen: Redemittel sind vorgefertigte Satzbausteine, die beim freien Sprechen helfen.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-376"
+    ]
+  },
+  {
+    "id": "a2-d01-067",
+    "pos": "noun",
+    "word": "Praxis",
+    "lemma": "Praxis",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈpʁaksɪs]",
+    "meaning": "doctor's surgery / clinic; practice (vs. theory)",
+    "gloss": "practice, doctor's office",
+    "pl": "die Praxen",
+    "genS": "der Praxis",
+    "rule": "Fremdwörter auf -is sind meist feminin: die Praxis, die Dosis, die Basis.",
+    "nvv": [
+      [
+        "in die Praxis gehen",
+        "to go to the doctor's office"
+      ],
+      [
+        "in der Praxis",
+        "in practice (vs. in theory)"
+      ]
+    ],
+    "compounds": [
+      "die Arztpraxis",
+      "die Zahnarztpraxis",
+      "die Gemeinschaftspraxis"
+    ],
+    "family": [
+      "praktisch",
+      "praktizieren",
+      "der Praktikant"
+    ],
+    "ex": [
+      "Die Arztpraxis von Dr. Weber befindet sich direkt gegenüber vom Hauptbahnhof.",
+      "The doctor's practice of Dr. Weber is located directly opposite the central station."
+    ],
+    "tip": "Unregelmäßiger Plural aus dem Griechischen: die Praxis → die Praxen (nicht Praxisse!).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-378"
+    ]
+  },
+  {
+    "id": "a2-d01-068",
+    "pos": "noun",
+    "word": "Eindruck",
+    "lemma": "Eindruck",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈaɪ̯nˌdʁʊk]",
+    "meaning": "impression, sensation, impact",
+    "gloss": "impression",
+    "pl": "die Eindrücke",
+    "genS": "des Eindrucks / Eindruckes",
+    "rule": "Stamm von Verben (eindrücken): maskulin (der Eindruck, der Ausdruck).",
+    "nvv": [
+      [
+        "einen guten Eindruck machen",
+        "to make a good impression"
+      ],
+      [
+        "den Eindruck haben, dass...",
+        "to have the impression that..."
+      ],
+      [
+        "viele neue Eindrücke sammeln",
+        "to collect many new impressions (on a trip)"
+      ]
+    ],
+    "compounds": [
+      "der Gesamteindruck",
+      "der Reiseeindruck",
+      "der Ersteindruck"
+    ],
+    "family": [
+      "beeindrucken",
+      "eindrucksvoll",
+      "drücken"
+    ],
+    "ex": [
+      "Von unserer Reise durch Russland haben wir unvergessliche Eindrücke mitgebracht.",
+      "We brought back unforgettable impressions from our journey through Russia."
+    ],
+    "tip": "Typische Reise-Kollokation: 'Eindrücke sammeln' (to gather impressions). Plural mit Umlaut: die Eindrücke.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-382"
+    ]
+  },
+  {
+    "id": "a2-d01-069",
+    "pos": "noun",
+    "word": "Begegnung",
+    "lemma": "Begegnung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[bəˈɡeːɡnʊŋ]",
+    "meaning": "encounter, meeting (often chance or memorable)",
+    "gloss": "encounter, meeting",
+    "pl": "die Begegnungen",
+    "genS": "der Begegnung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Begegnung).",
+    "nvv": [
+      [
+        "eine spannende Begegnung haben",
+        "to have an exciting encounter"
+      ]
+    ],
+    "compounds": [
+      "die Zufallsbegegnung",
+      "die Jugendbegegnung",
+      "die Kulturbegegnung"
+    ],
+    "family": [
+      "begegnen",
+      "der Gegenverkehr"
+    ],
+    "ex": [
+      "Auf der Radreise waren die herzlichen Begegnungen mit Einheimischen der schönste Teil.",
+      "On the bicycle journey, the warm encounters with locals were the most beautiful part."
+    ],
+    "tip": "Das zugehörige Verb 'begegnen' verlangt immer den DATIV: 'Ich bin gestern zufällig meinem alten Schulfreund begegnet.'",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-383"
+    ]
+  },
+  {
+    "id": "a2-d01-070",
+    "pos": "adj",
+    "word": "wahrscheinlich",
+    "lemma": "wahrscheinlich",
+    "level": "A2",
+    "type": "Adjektiv / Modaladverb",
+    "ipa": "[vaːɐ̯ˈʃaɪ̯nlɪç]",
+    "meaning": "probably, likely, probable",
+    "gloss": "probably, likely",
+    "comp": [
+      [
+        "Positiv",
+        "wahrscheinlich"
+      ],
+      [
+        "Komparativ",
+        "wahrscheinlicher"
+      ],
+      [
+        "Superlativ",
+        "am wahrscheinlichsten"
+      ]
+    ],
+    "opp": "unwahrscheinlich, unmöglich",
+    "family": [
+      "die Wahrscheinlichkeit",
+      "wahr",
+      "der Schein"
+    ],
+    "ex": [
+      "Wegen des Unwetters hat unser Zug wahrscheinlich eine halbe Stunde Verspätung.",
+      "Due to the storm, our train probably has a half-hour delay."
+    ],
+    "tip": "Sehr häufig zur Ausdruck von Vermutungen (ca. 70-80% sicher). Steht meist in der Satzmitte nach dem finiten Verb.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-384"
+    ]
+  },
+  {
+    "id": "a2-d01-071",
+    "pos": "noun",
+    "word": "Abschnitt",
+    "lemma": "Abschnitt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈapˌʃnɪt]",
+    "meaning": "section, stretch, segment (of a route or text)",
+    "gloss": "section, stretch",
+    "pl": "die Abschnitte",
+    "genS": "des Abschnitts",
+    "rule": "Stammform von abschneiden: maskulin (der Schnitt, der Abschnitt).",
+    "nvv": [
+      [
+        "einen Abschnitt zurücklegen / fahren",
+        "to cover / travel a section of route"
+      ]
+    ],
+    "compounds": [
+      "der Streckenabschnitt",
+      "der Bauabschnitt",
+      "der Textabschnitt",
+      "der Lebensabschnitt"
+    ],
+    "family": [
+      "abschneiden",
+      "der Schnitt"
+    ],
+    "ex": [
+      "Der steilste Abschnitt der Radtour führte über einen schmalen Bergpass.",
+      "The steepest section of the bike tour led over a narrow mountain pass."
+    ],
+    "tip": "Auf Straßen und Bahnstrecken: 'der Streckenabschnitt' (section of line/track). Plural mit -e: die Abschnitte.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-385"
+    ]
+  },
+  {
+    "id": "a2-d01-072",
+    "pos": "noun",
+    "word": "Wolga",
+    "lemma": "Wolga",
+    "art": "die",
+    "level": "A2",
+    "type": "Eigenname · Geografie",
+    "ipa": "[ˈvɔlɡa]",
+    "meaning": "the Volga (longest river in Europe)",
+    "gloss": "the Volga (river)",
+    "pl": "-",
+    "genS": "der Wolga",
+    "rule": "Flüsse in Europa auf -a / -e sind fast immer feminin: die Wolga, die Donau, die Elbe, die Spree (Ausnahmen: der Rhein, der Main).",
+    "nvv": [
+      [
+        "eine Flusskreuzfahrt auf der Wolga machen",
+        "to do a river cruise on the Volga"
+      ]
+    ],
+    "compounds": [
+      "das Wolgadelta",
+      "die Wolgaregion"
+    ],
+    "family": [
+      "der Fluss",
+      "der Strom"
+    ],
+    "ex": [
+      "Im Lesetext von Lektion 6 unternimmt eine Gruppe eine abenteuerliche Radtour entlang der Wolga.",
+      "In the reading text of lesson 6, a group undertakes an adventurous bike tour along the Volga."
+    ],
+    "tip": "Fast alle deutschen und europäischen Flüsse sind feminin (die Donau, die Mosel, die Wolga). Nur wenige sind maskulin (der Rhein, der Main, der Neckar).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-387"
+    ]
+  },
+  {
+    "id": "a2-d01-073",
+    "pos": "verb",
+    "word": "befürchten",
+    "lemma": "befürchten",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[bəˈfʏʁçtn̩]",
+    "meaning": "to fear, dread, anticipate with worry",
+    "gloss": "to fear, dread",
+    "sep": false,
+    "pre": "be",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "befürchtet",
+    "partizip2": "befürchtet",
+    "perfekt": "hat befürchtet",
+    "praeteritum": "befürchtete",
+    "praesens": "befürchtet",
+    "reflexiv": false,
+    "praes": [
+      "befürchte",
+      "befürchtest",
+      "befürchtet",
+      "befürchten",
+      "befürchtet",
+      "befürchten"
+    ],
+    "prat": [
+      "befürchtete",
+      "befürchtetest",
+      "befürchtete",
+      "befürchteten",
+      "befürchtetet",
+      "befürchteten"
+    ],
+    "imp": [
+      "Befürchte!",
+      "Befürchtet!",
+      "Befürchten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Schaffner befürchtet, dass der Anschlusszug nicht warten wird.",
+        "The conductor fears that the connecting train will not wait."
+      ],
+      "prat": [
+        "Sie befürchtete eine Panne mitten in der Nacht auf der Autobahn.",
+        "She feared a breakdown in the middle of the night on the highway."
+      ],
+      "perf": [
+        "Wir haben das Schlimmste befürchtet, aber die Reise verlief reibungslos.",
+        "We feared the worst, but the trip went smoothly."
+      ]
+    },
+    "ex": [
+      "Ich befürchte, dass wir ohne Reservierung keinen Sitzplatz mehr bekommen.",
+      "I fear that we won't get a seat without a reservation."
+    ],
+    "val": [
+      [
+        "etwas (Akk) befürchten",
+        "Wen oder was?",
+        "Sie befürchten schlechtes Wetter."
+      ]
+    ],
+    "family": [
+      "die Furcht",
+      "fürchten",
+      "die Befürchtung"
+    ],
+    "tip": "Untrennbares Präfix 'be-'. Partizip II ohne 'ge-': befürchtet. Häufig mit Nebensatz: 'Ich befürchte, dass...'",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-388"
+    ]
+  },
+  {
+    "id": "a2-d01-074",
+    "pos": "noun",
+    "word": "Ersatzteil",
+    "lemma": "Ersatzteil",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ɛɐ̯ˈzatstaɪ̯l]",
+    "meaning": "spare part, replacement part",
+    "gloss": "spare part",
+    "pl": "die Ersatzteile",
+    "genS": "des Ersatzteils",
+    "rule": "Zusammensetzung mit Teil (das Teil als Stück/Objekt): Neutrum (das Ersatzteil, das Einzelteil).",
+    "nvv": [
+      [
+        "ein Ersatzteil bestellen / einbauen",
+        "to order / install a spare part"
+      ],
+      [
+        "Ersatzteile auf Vorrat haben",
+        "to keep spare parts in stock"
+      ]
+    ],
+    "compounds": [
+      "das Autoersatzteil",
+      "das Fahrradersatzteil",
+      "das Ersatzteillager"
+    ],
+    "family": [
+      "der Ersatz",
+      "ersetzen",
+      "das Teil"
+    ],
+    "ex": [
+      "Auf einer langen Radtour sollte man immer wichtige Ersatzteile wie Schläuche und Schrauben mitnehmen.",
+      "On a long bike tour, one should always take along important spare parts such as tubes and screws."
+    ],
+    "tip": "Wichtig beim Reisen & Radfahren: 'das Ersatzteil' (einzelnes Bauteil ist Neutrum). Plural: die Ersatzteile.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-389"
+    ]
+  },
+  {
+    "id": "a2-d01-075",
+    "pos": "noun",
+    "word": "Zelt",
+    "lemma": "Zelt",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[tsɛlt]",
+    "meaning": "tent (camping)",
+    "gloss": "tent",
+    "pl": "die Zelte",
+    "genS": "des Zelts / Zeltes",
+    "rule": "Einsilbige Neutra: das Zelt, das Boot, das Bett.",
+    "nvv": [
+      [
+        "das Zelt aufbauen / aufschlagen",
+        "to pitch / set up the tent"
+      ],
+      [
+        "das Zelt abbauen",
+        "to take down the tent"
+      ],
+      [
+        "im Zelt übernachten",
+        "to stay overnight in a tent"
+      ]
+    ],
+    "compounds": [
+      "der Zeltplatz",
+      "der Campingplatz",
+      "das Großzelt",
+      "das Festzelt"
+    ],
+    "family": [
+      "zelten",
+      "der Zelter"
+    ],
+    "ex": [
+      "Nach der langen Etappe bauten wir unser Zelt direkt am Seeufer auf.",
+      "After the long stage, we pitched our tent directly on the lake shore."
+    ],
+    "tip": "Wichtige Verben: 'ein Zelt aufbauen' (to pitch a tent) vs. 'ein Zelt abbauen' (to take down a tent). 'Zelten gehen' = to go camping.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-390"
+    ]
+  },
+  {
+    "id": "a2-d01-076",
+    "pos": "noun",
+    "word": "Isomatte",
+    "lemma": "Isomatte",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈiːzoˌmatə]",
+    "meaning": "sleeping pad, camping mat, insulated roll mat",
+    "gloss": "sleeping pad, mat",
+    "pl": "die Isomatten",
+    "genS": "der Isomatte",
+    "rule": "Zusammensetzung mit Matte (die Matte): feminin.",
+    "nvv": [
+      [
+        "die Isomatte ausrollen",
+        "to unroll the sleeping mat"
+      ],
+      [
+        "auf der Isomatte schlafen",
+        "to sleep on the camping mat"
+      ]
+    ],
+    "compounds": [
+      "die Schaumstoffmatte",
+      "die Luftmatratze"
+    ],
+    "family": [
+      "isolieren",
+      "die Matte",
+      "die Isolation"
+    ],
+    "ex": [
+      "Eine gute Isomatte schützt beim Schlafen im Zelt vor der Kälte des Bodens.",
+      "A good sleeping pad protects against the cold of the ground when sleeping in a tent."
+    ],
+    "tip": "Kurzform für 'Isoliermatte' (insulating mat). Plural mit -n: die Isomatten.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-391"
+    ]
+  },
+  {
+    "id": "a2-d01-077",
+    "pos": "noun",
+    "word": "Tüte",
+    "lemma": "Tüte",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈtyːtə]",
+    "meaning": "bag (plastic, paper, shopping)",
+    "gloss": "bag",
+    "pl": "die Tüten",
+    "genS": "der Tüte",
+    "rule": "Zweisilbige Substantive auf -e sind meist feminin (die Tüte, die Tasche).",
+    "nvv": [
+      [
+        "eine Tüte packen",
+        "to pack a bag"
+      ],
+      [
+        "wasserdichte Tüten verwenden",
+        "to use waterproof bags"
+      ]
+    ],
+    "compounds": [
+      "die Plastiktüte",
+      "die Papiertüte",
+      "die Einkaufstüte"
+    ],
+    "family": [
+      "eintüten"
+    ],
+    "ex": [
+      "Auf der Radtour haben wir unsere Kleidung in wasserdichte Plastiktüten gepackt, damit nichts nass wird.",
+      "On the bike tour we packed our clothes in waterproof plastic bags so that nothing gets wet."
+    ],
+    "tip": "Im Supermarkt: 'Brauchen Sie eine Tüte?' In Süddeutschland/Österreich sagt man auch oft 'das Sackerl'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-393"
+    ]
+  },
+  {
+    "id": "a2-d01-078",
+    "pos": "verb",
+    "word": "verstauen",
+    "lemma": "verstauen",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[fɛɐ̯ˈʃtaʊ̯ən]",
+    "meaning": "to stow away, pack neatly, store securely",
+    "gloss": "to stow away, pack",
+    "sep": false,
+    "pre": "ver",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "verstaut",
+    "partizip2": "verstaut",
+    "perfekt": "hat verstaut",
+    "praeteritum": "verstaute",
+    "praesens": "verstaut",
+    "reflexiv": false,
+    "praes": [
+      "verstaue",
+      "verstaust",
+      "verstaut",
+      "verstauen",
+      "verstaut",
+      "verstauen"
+    ],
+    "prat": [
+      "verstaute",
+      "verstautest",
+      "verstaute",
+      "verstauten",
+      "verstautet",
+      "verstauten"
+    ],
+    "imp": [
+      "Verstaue!",
+      "Verstaut!",
+      "Verstauen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Reisende verstaut seinen Koffer in der Gepäckablage über den Sitzen.",
+        "The traveler stows his suitcase in the overhead luggage rack above the seats."
+      ],
+      "prat": [
+        "Wir verstauten das gesamte Zeltgepäck sicher im Kofferraum des Autos.",
+        "We stowed all the camping luggage securely in the trunk of the car."
+      ],
+      "perf": [
+        "Hast du alle Wasserflaschen in den Seitentaschen verstaut?",
+        "Have you stowed all water bottles in the side pockets?"
+      ]
+    },
+    "ex": [
+      "Bitte verstauen Sie Ihr Handgepäck unter dem Vordersitz.",
+      "Please stow your hand luggage under the seat in front of you."
+    ],
+    "val": [
+      [
+        "Gepäck (Akk) in + Dat verstauen",
+        "Wo?",
+        "Er verstaut die Taschen im Schrank."
+      ]
+    ],
+    "family": [
+      "der Stauraum",
+      "stauen"
+    ],
+    "tip": "Perfektes Verb für Kofferpacken, Zugreisen und Camping. Untrennbar mit 'ver-'!",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-394"
+    ]
+  },
+  {
+    "id": "a2-d01-079",
+    "pos": "noun",
+    "word": "Lenkertasche",
+    "lemma": "Lenkertasche",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈlɛŋkɐˌtaʃə]",
+    "meaning": "handlebar bag (on a bicycle)",
+    "gloss": "handlebar bag",
+    "pl": "die Lenkertaschen",
+    "genS": "der Lenkertasche",
+    "rule": "Zusammensetzung mit Tasche (die Tasche): feminin.",
+    "nvv": [
+      [
+        "die Lenkertasche am Lenker befestigen",
+        "to attach the handlebar bag to the handlebars"
+      ]
+    ],
+    "compounds": [
+      "die Satteltasche",
+      "die Packtasche",
+      "der Fahrradlenker"
+    ],
+    "family": [
+      "lenken",
+      "der Lenker",
+      "die Tasche"
+    ],
+    "ex": [
+      "In der Lenkertasche bewahrte er Wertsachen, Handy und Landkarten griffbereit auf.",
+      "In the handlebar bag he kept valuables, cellphone, and maps readily accessible."
+    ],
+    "tip": "Zusammensetzung: der Lenker (handlebars) + die Tasche (bag). Perfekt für Radtouren.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-396"
+    ]
+  },
+  {
+    "id": "a2-d01-080",
+    "pos": "phrase",
+    "word": "höchste Not",
+    "lemma": "in höchster Not sein",
+    "level": "A2",
+    "type": "Feste Wendung / Idiom",
+    "ipa": "[ˈhøːçstə noːt]",
+    "meaning": "utmost emergency, dire distress, critical need",
+    "gloss": "utmost emergency",
+    "frame": "in höchster Not [handeln / sein]",
+    "reg": [
+      [
+        "idiomatisch",
+        "Nur in allerhöchster Not sollte man den Notruf oder die Notbremse ziehen.",
+        "Only in the absolute direst emergency should one call emergency services or pull the emergency brake."
+      ],
+      [
+        "schriftlich",
+        "Als der Reifen platzte, half uns ein freundlicher Autofahrer in höchster Not.",
+        "When the tire burst, a friendly driver helped us in dire need."
+      ]
+    ],
+    "tenses": {
+      "praes": "ist in höchster Not",
+      "prat": "war in höchster Not",
+      "perf": "ist in höchster Not gewesen"
+    },
+    "dlg": [
+      [
+        "A",
+        "Wann darf man die Notbremse im Zug ziehen?"
+      ],
+      [
+        "B",
+        "Nur bei akuter Gefahr und in allerhöchster Not!"
+      ]
+    ],
+    "tip": "Zusammensetzung aus 'hoch' (Superlativ: höchste) + 'die Not' (distress/emergency). Oft als feste Formel: 'in höchster Not'.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-397"
+    ]
+  },
+  {
+    "id": "a2-d01-081",
+    "pos": "noun",
+    "word": "Landkarte",
+    "lemma": "Landkarte",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈlantˌkaʁtə]",
+    "meaning": "map, geographic chart, road map",
+    "gloss": "map, road map",
+    "pl": "die Landkarten",
+    "genS": "der Landkarte",
+    "rule": "Zusammensetzung mit Karte (die Karte): immer feminin.",
+    "nvv": [
+      [
+        "auf die Landkarte schauen",
+        "to look at the map"
+      ],
+      [
+        "die Route auf der Landkarte markieren",
+        "to mark the route on the map"
+      ]
+    ],
+    "compounds": [
+      "die Straßenkarte",
+      "die Wanderkarte",
+      "die Fahrradkarte",
+      "die Weltkarte"
+    ],
+    "family": [
+      "das Land",
+      "die Karte",
+      "kartografieren"
+    ],
+    "ex": [
+      "Auf einer Radtour in abgelegenen Gebieten sollte man neben dem Smartphone immer eine klassische Landkarte dabeihaben.",
+      "On a bike tour in remote areas, one should always have a classic map with them in addition to the smartphone."
+    ],
+    "tip": "Wichtige Differenzierung: 'die Fahrkarte' = ticket; 'die Landkarte' = geographic map; 'die Speisekarte' = menu.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-399"
+    ]
+  },
+  {
+    "id": "a2-d01-082",
+    "pos": "noun",
+    "word": "Fleck",
+    "lemma": "Fleck",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[flɛk]",
+    "meaning": "spot, stain, patch; place/location (ein schöner Fleck Erde)",
+    "gloss": "spot, stain, patch",
+    "pl": "die Flecken",
+    "genS": "des Flecks / Fleckes",
+    "rule": "Einsilbige Maskulina: der Fleck, der Platz, der Punkt.",
+    "nvv": [
+      [
+        "einen Fleck entfernen / auswaschen",
+        "to remove / wash out a stain"
+      ],
+      [
+        "ein schöner Fleck Erde",
+        "a beautiful spot on earth (idiom)"
+      ]
+    ],
+    "compounds": [
+      "der Ölfleck",
+      "der Grasfleck",
+      "der Kaffeefleck"
+    ],
+    "family": [
+      "fleckig",
+      "beflecken"
+    ],
+    "ex": [
+      "Nach der Fahrradreparatur hatte er schwarze Ölflecken auf seiner Hose.",
+      "After the bicycle repair he had black oil stains on his trousers."
+    ],
+    "tip": "Zwei Bedeutungen: 1. Schmutzfleck (stain); 2. Ort: 'ein ruhiger Fleck' (a quiet spot). Plural: die Flecke oder die Flecken.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-401"
+    ]
+  },
+  {
+    "id": "a2-d01-083",
+    "pos": "verb",
+    "word": "bieten",
+    "lemma": "bieten",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[ˈbiːtn̩]",
+    "meaning": "to offer, provide, present (opportunities, views)",
+    "gloss": "to offer, provide",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geboten",
+    "partizip2": "geboten",
+    "perfekt": "hat geboten",
+    "praeteritum": "bot",
+    "praesens": "bietet",
+    "reflexiv": false,
+    "praes": [
+      "biete",
+      "bietest",
+      "bietet",
+      "bieten",
+      "bietet",
+      "bieten"
+    ],
+    "prat": [
+      "bot",
+      "botest",
+      "bot",
+      "boten",
+      "botet",
+      "boten"
+    ],
+    "imp": [
+      "Biete!",
+      "Bietet!",
+      "Bieten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Die neue Bahncard bietet 25 Prozent Rabatt auf alle Tickets.",
+        "The new Bahncard offers a 25 percent discount on all tickets."
+      ],
+      "prat": [
+        "Vom Aussichtspunkt bot sich ein atemberaubender Blick ins Tal.",
+        "From the lookout point there was a breathtaking view into the valley."
+      ],
+      "perf": [
+        "Das Hotel hat seinen Gästen einen kostenlosen Shuttleservice geboten.",
+        "The hotel offered its guests a complimentary shuttle service."
+      ]
+    },
+    "ex": [
+      "Diese Reiseroute bietet spektakuläre Landschaften und historische Städte.",
+      "This travel itinerary offers spectacular landscapes and historic cities."
+    ],
+    "val": [
+      [
+        "jemandem (Dat) etwas (Akk) bieten",
+        "Wem? Was?",
+        "Die Stadt bietet Touristen viele Attraktionen."
+      ]
+    ],
+    "family": [
+      "das Angebot",
+      "anbieten",
+      "der Anbieter"
+    ],
+    "tip": "Stammformen: bieten – bot – hat geboten. Häufige Wendung: 'eine Gelegenheit bieten' (to offer an opportunity).",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-402"
+    ]
+  },
+  {
+    "id": "a2-d01-084",
+    "pos": "noun",
+    "word": "Abreise",
+    "lemma": "Abreise",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈapˌʁaɪ̯zə]",
+    "meaning": "departure (trip, hotel checkout)",
+    "gloss": "departure",
+    "pl": "die Abreisen",
+    "genS": "der Abreise",
+    "rule": "Zusammensetzung mit Reise (die Reise): feminin.",
+    "nvv": [
+      [
+        "die Abreise vorbereiten / planen",
+        "to prepare / plan departure"
+      ],
+      [
+        "vor der Abreise bezahlen",
+        "to pay before departure"
+      ]
+    ],
+    "compounds": [
+      "der Abreisetag",
+      "die Abreisezeit"
+    ],
+    "family": [
+      "abreisen",
+      "die Reise",
+      "verreisen"
+    ],
+    "ex": [
+      "Bitte geben Sie den Zimmerschlüssel am Tag der Abreise bis 11 Uhr an der Rezeption ab.",
+      "Please return the room key at the reception desk by 11 a.m. on the day of departure."
+    ],
+    "tip": "Gegenteil: 'die Anreise' (arrival). Beide sind feminin: die Anreise – die Abreise.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-560"
+    ]
+  },
+  {
+    "id": "a2-d01-085",
+    "pos": "noun",
+    "word": "Umzug",
+    "lemma": "Umzug",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈʊmˌtsuːk]",
+    "meaning": "relocation, move (to a new home); street parade / pageant",
+    "gloss": "move, relocation, parade",
+    "pl": "die Umzüge",
+    "genS": "des Umzugs",
+    "rule": "Stammform von umziehen: maskulin (der Zug, der Umzug).",
+    "nvv": [
+      [
+        "einen Umzug planen / machen",
+        "to plan / make a move"
+      ],
+      [
+        "beim Umzug helfen",
+        "to help with moving"
+      ],
+      [
+        "an einem Karnevalsumzug teilnehmen",
+        "to participate in a carnival parade"
+      ]
+    ],
+    "compounds": [
+      "der Umzugskarton",
+      "der Umzugswagen",
+      "das Umzugsunternehmen",
+      "der Festumzug"
+    ],
+    "family": [
+      "umziehen",
+      "einziehen",
+      "ausziehen"
+    ],
+    "ex": [
+      "Für unseren Umzug in eine andere Stadt haben wir einen großen Transporter gemietet.",
+      "For our move to another city we rented a large van."
+    ],
+    "tip": "Zwei Bedeutungen: 1. Wohnortwechsel (relocation); 2. festliche Parade (Karnevalsumzug). Plural mit Umlaut: die Umzüge.",
+    "deckId": "a2-deck-01",
+    "deckTitle": "Mobilität, Verkehr & Reisen",
+    "sourceLessons": [
+      12
+    ],
+    "sourceRawIds": [
+      "RAW-697"
+    ]
+  }
+]

@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&family=Plus+Jakarta+Sans:wght@700;800&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=20261111-v6">
+  <link rel="stylesheet" href="style.css?v=20261113-v8">
 
   <style>
     /* Critical Shell Architecture — Prevents any unstyled stacking or layout jumping */
@@ -572,120 +572,10 @@
             </div>
           </div>
 
-          <!-- BACK SIDE (CONJUGATIONS & MEANING) -->
+          <!-- BACK SIDE (UNIVERSAL ARCHETYPE RENDERER) -->
           <div class="card-face card-back">
             <div class="card-back-scroll" id="card-back-scroll">
-              <div class="card-top-row">
-                <div class="tag-group">
-                  <span class="chip chip-secondary" id="back-level">B1</span>
-                  <span class="chip chip-neutral" id="back-type">Verb · trennbar</span>
-                </div>
-                <button class="audio-button" id="btn-audio-back" title="Aussprache anhören (Taste A)" aria-label="Aussprache anhören">
-                  <svg class="icon-speaker" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-                  </svg>
-                  <span class="audio-btn-text">Audio</span>
-                </button>
-              </div>
-
-              <!-- Lemma & Revealed Translation -->
-              <div class="back-word-block">
-                <div class="back-word-row">
-                  <h2 class="back-lemma" id="back-word">aufstehen</h2>
-                  <button class="audio-button audio-button-sm" id="btn-audio-back-inline" title="Aussprache anhören" aria-label="Aussprache anhören">
-                    <svg class="icon-speaker" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-                    </svg>
-                  </button>
-                </div>
-                <p class="back-translation" id="back-meaning">to get up, arise (from bed or chair)</p>
-              </div>
-
-              <!-- Full Present Tense Conjugation (All unique forms) -->
-              <div class="conjugation-section">
-                <div class="section-title-row">
-                  <span class="section-badge">Präsens (Gegenwart)</span>
-                  <span class="section-hint">Alle Formen</span>
-                </div>
-                <div class="praesens-grid" id="praesens-grid">
-                  <div class="praesens-item">
-                    <span class="praesens-pronoun">ich</span>
-                    <span class="praesens-val" id="conj-praesens-ich">stehe <span class="highlight-prefix">auf</span></span>
-                  </div>
-                  <div class="praesens-item">
-                    <span class="praesens-pronoun">du</span>
-                    <span class="praesens-val" id="conj-praesens-du">stehst <span class="highlight-prefix">auf</span></span>
-                  </div>
-                  <div class="praesens-item praesens-item-key">
-                    <span class="praesens-pronoun">er/sie/es</span>
-                    <span class="praesens-val" id="conj-praesens-er">steht <span class="highlight-prefix">auf</span></span>
-                  </div>
-                  <div class="praesens-item">
-                    <span class="praesens-pronoun">wir / Sie</span>
-                    <span class="praesens-val" id="conj-praesens-wir">stehen <span class="highlight-prefix">auf</span></span>
-                  </div>
-                  <div class="praesens-item">
-                    <span class="praesens-pronoun">ihr</span>
-                    <span class="praesens-val" id="conj-praesens-ihr">steht <span class="highlight-prefix">auf</span></span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Stammformen: Präteritum & Perfekt -->
-              <div class="stammformen-row">
-                <!-- Präteritum -->
-                <div class="stammform-cell" id="cell-praeteritum">
-                  <div class="stammform-header">
-                    <span class="stammform-label">Präteritum</span>
-                    <span class="stammform-sub">Vergangenheit</span>
-                  </div>
-                  <div class="stammform-val" id="conj-praeteritum">stand <span class="highlight-prefix">auf</span></div>
-                </div>
-
-                <!-- Perfekt with Textbook Auxiliary Badge -->
-                <div class="stammform-cell" id="cell-perfekt">
-                  <div class="stammform-header">
-                    <span class="stammform-label">Perfekt</span>
-                    <span class="aux-pill" id="perfekt-aux-pill">Hilfsverb: sein</span>
-                  </div>
-                  <div class="stammform-val" id="conj-perfekt">
-                    <span class="perfekt-aux-text" id="conj-aux-text">ist</span> <span id="conj-partizip2">aufgestanden</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Context Example Sentences with 3-Tense Switcher -->
-              <div class="example-container">
-                <div class="example-header">
-                  <div class="example-tense-tabs" role="tablist" aria-label="Zeitform für Beispielsatz wählen">
-                    <div class="tense-tab-indicator" id="tense-indicator" aria-hidden="true"></div>
-                    <button type="button" class="tense-tab is-active" data-tense="praesens" id="tab-tense-praesens">Präsens</button>
-                    <button type="button" class="tense-tab" data-tense="praeteritum" id="tab-tense-praeteritum">Präteritum</button>
-                    <button type="button" class="tense-tab" data-tense="perfekt" id="tab-tense-perfekt">Perfekt</button>
-                  </div>
-                  <button class="audio-button audio-button-sm" id="btn-audio-sentence" title="Beispielsatz anhören" aria-label="Beispielsatz anhören">
-                    <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-                    </svg>
-                  </button>
-                </div>
-                <div class="example-body">
-                  <p class="example-de" id="example-de">Er steht jeden Morgen pünktlich um 7 Uhr auf.</p>
-                  <p class="example-en" id="example-en">He gets up punctually at 7 o'clock every morning.</p>
-                </div>
-              </div>
-
-              <!-- Grammar Note Insight -->
-              <div class="grammar-note" id="grammar-note">
-                <span class="note-icon">💡</span>
-                <span class="note-text" id="note-text">Orts- und Zustandswechsel → Perfekt immer mit 'sein'.</span>
-              </div>
+              <!-- Dynamically populated by renderUniversalCardBack(item, false) -->
             </div>
           </div>
 
@@ -764,59 +654,9 @@
         </button>
       </div>
 
-      <!-- Word + IPA + meaning -->
-      <div class="vocab-detail-word-block">
-        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px;">
-          <div>
-            <span class="vocab-detail-word" id="detail-word">aufstehen</span>
-            <span class="vocab-detail-ipa" id="detail-ipa">[ˈaʊ̯fˌʃteːən]</span>
-            <span class="vocab-detail-meaning" id="detail-meaning">to get up, arise (from bed or chair)</span>
-          </div>
-          <button class="audio-button" id="btn-detail-audio" title="Aussprache anhören" style="flex-shrink:0; margin-top:4px;">
-            <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="vocab-detail-tags" id="detail-tags">
-          <!-- chips rendered by JS -->
-        </div>
-      </div>
-
-      <!-- Conjugation tab switcher -->
-      <div class="conj-tabs" role="tablist">
-        <div class="conj-tab-indicator" id="conj-indicator" aria-hidden="true"></div>
-        <button class="conj-tab is-active" data-conj-tense="praesens" role="tab">Präsens</button>
-        <button class="conj-tab" data-conj-tense="praeteritum" role="tab">Präteritum</button>
-        <button class="conj-tab" data-conj-tense="perfekt" role="tab">Perfekt</button>
-      </div>
-
-      <!-- Conjugation table (rendered by JS) -->
-      <div class="vocab-detail-section" id="detail-conj-section">
-        <table class="conj-table" id="detail-conj-table">
-          <!-- Populated by JS -->
-        </table>
-      </div>
-
-      <!-- Example sentence -->
-      <div class="vocab-detail-section" id="detail-example-section">
-        <div class="vocab-detail-section-title">Beispielsatz</div>
-        <div class="audio-button audio-button-sm" id="btn-detail-example-audio" style="float:right; cursor:pointer;">
-          <svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
-            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-          </svg>
-        </div>
-        <p class="example-de" id="detail-example-de" style="clear:both; padding-top: 4px;"></p>
-        <p class="example-en" id="detail-example-en" style="margin-top:4px;"></p>
-      </div>
-
-      <!-- Grammar note -->
-      <div class="grammar-note" id="detail-grammar-note" style="display:none;">
-        <span class="note-icon">💡</span>
-        <span class="note-text" id="detail-note-text"></span>
+      <!-- Universal Anatomy Container -->
+      <div id="vocab-detail-content" class="anatomy-card">
+        <!-- Populated dynamically by openVocabDetail(item) via renderUniversalCardBack(item, true) -->
       </div>
 
     </div>
@@ -1075,7 +915,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261111-v6"></script>
+  <script src="app.js?v=20261113-v8"></script>
 
   </div><!-- /.main-content -->
   </div><!-- /.app-layout -->

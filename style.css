@@ -1617,3 +1617,514 @@ html[data-theme="dark"] .goal-badge.is-complete { color: #4ADE80; }
   background: var(--bg-surface-subtle);
   color: var(--text-primary);
 }
+/* ==========================================================================
+   Wortschatz Studio · Universal 6-Archetype Bento & Anatomy Design System
+   ========================================================================== */
+
+/* ── Gender & Accent Colors ── */
+:root {
+  --color-der: #1D4ED8;
+  --color-die: #E11D48;
+  --color-das: #059669;
+  --color-der-tint: rgba(29, 78, 216, 0.08);
+  --color-die-tint: rgba(225, 29, 72, 0.08);
+  --color-das-tint: rgba(5, 150, 105, 0.08);
+  --tip-bg: #FFFBEB;
+  --tip-bd: #F3E3A3;
+  --tip-tx: #8A5A12;
+}
+
+html[data-theme="dark"] {
+  --color-der: #6E9BFF;
+  --color-die: #FF6B8B;
+  --color-das: #34D399;
+  --color-der-tint: rgba(110, 155, 255, 0.14);
+  --color-die-tint: rgba(255, 107, 139, 0.14);
+  --color-das-tint: rgba(52, 211, 153, 0.14);
+  --tip-bg: #241F12;
+  --tip-bd: #4A3E1A;
+  --tip-tx: #E8C26A;
+}
+
+.m { color: var(--color-der) !important; font-weight: 700; }
+.f { color: var(--color-die) !important; font-weight: 700; }
+.n { color: var(--color-das) !important; font-weight: 700; }
+.pre { color: var(--accent-terracotta) !important; font-weight: 700; }
+
+/* ── Tags & Badges ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: 99px;
+  padding: 2px 10px;
+  letter-spacing: .02em;
+}
+.tag.hilfs {
+  background: var(--accent-terracotta-tint);
+  color: var(--accent-terracotta);
+  border-color: rgba(255, 90, 95, .25);
+  font-weight: 700;
+}
+.tag.reflex {
+  background: rgba(124, 58, 237, .08);
+  color: #7C3AED;
+  border-color: rgba(124, 58, 237, .25);
+  font-weight: 700;
+}
+
+/* ── Card Back Dynamic Chrome ── */
+.card-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card-head-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.card-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-dict-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-dict-trigger:hover {
+  background: var(--accent-terracotta-tint);
+  color: var(--accent-terracotta);
+  border-color: rgba(255, 90, 95, 0.3);
+  transform: translateY(-1px);
+}
+.btn-dict-trigger kbd {
+  font-size: 10px;
+  padding: 1px 5px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+}
+
+.card-lemma-hero {
+  padding: 12px 24px 2px;
+}
+.card-lemma-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 6vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  line-height: 1.05;
+}
+.card-ipa {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.card-gloss {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--accent-terracotta);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+/* ── Section Dividers & Pairs ── */
+.sec {
+  border-top: 1px solid var(--border-subtle);
+  padding: 14px 24px 12px;
+}
+.sec > h3 {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.pair > .sec + .sec {
+  border-left: 1px solid var(--border-subtle);
+}
+@media (max-width: 640px) {
+  .pair { display: block; }
+  .pair > .sec + .sec { border-left: 0; border-top: 1px solid var(--border-subtle); }
+  .card-head-row, .card-lemma-hero, .sec { padding-left: 16px; padding-right: 16px; }
+}
+
+/* ── Bento Chart Grid ── */
+.chart {
+  display: grid;
+  gap: 1px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.chart > div {
+  background: var(--bg-surface);
+  padding: 10px 14px;
+}
+.chart .lab {
+  color: var(--text-muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.chart small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+}
+.chart b {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.chart .hero {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* ── Stammformen Hero Row ── */
+.stamm-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.stamm-hero > div {
+  background: var(--bg-surface);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.stamm-hero small {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.stamm-hero b {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+}
+.stamm-hero .perfekt-cell {
+  background: var(--accent-terracotta-tint);
+}
+
+/* ── Steigerung Ladder ── */
+.ladder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.ladder > div {
+  background: var(--bg-surface);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ladder small {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.ladder .bar2 {
+  height: 3px;
+  border-radius: 3px;
+  background: var(--accent-terracotta);
+  margin-top: 6px;
+}
+.ladder > div:nth-child(1) b { font-family: var(--font-display); font-size: 15px; font-weight: 700; }
+.ladder > div:nth-child(2) b { font-family: var(--font-display); font-size: 18px; font-weight: 700; }
+.ladder > div:nth-child(3) b { font-family: var(--font-display); font-size: 21px; font-weight: 800; }
+
+/* ── Anchor Endings Row ── */
+.anchor-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.anchor-row > div {
+  background: var(--bg-surface);
+  padding: 10px 14px;
+}
+.anchor-row .ending {
+  color: var(--accent-terracotta);
+  font-weight: 800;
+}
+.anchor-row small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+/* ── Chips ── */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.chip {
+  border: 1px solid var(--border-subtle);
+  border-radius: 99px;
+  padding: 3px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--bg-surface);
+}
+
+/* ── Flow Blocks (Sentence Syntax - ZERO monospace) ── */
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin: 4px 0 10px;
+}
+.fb {
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 600;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 5px 12px;
+  line-height: 1.4;
+}
+.fb.k {
+  background: var(--accent-terracotta);
+  border-color: var(--accent-terracotta);
+  color: #fff;
+}
+.fb.v {
+  border-color: var(--accent-terracotta);
+  color: var(--accent-terracotta);
+  background: var(--bg-surface);
+}
+.fb.d {
+  background: var(--bg-surface-subtle);
+  border-color: transparent;
+  color: var(--text-muted);
+}
+.fb.c {
+  border: 0;
+  padding: 5px 2px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* ── Comparison Tiles ── */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.tiles > div {
+  background: var(--bg-surface);
+  padding: 12px 14px;
+}
+.tiles .cl {
+  color: var(--accent-terracotta);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+  display: block;
+}
+.tiles b {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin: 2px 0 4px;
+}
+.tiles p {
+  font-size: 13.5px;
+  margin-top: 6px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+/* ── Segmented Slider Control ── */
+.seg {
+  position: relative;
+  display: inline-flex;
+  max-width: 100%;
+  overflow-x: auto;
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 99px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.seg button {
+  position: relative;
+  z-index: 1;
+  border: 0;
+  background: none;
+  padding: 5px 14px;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 99px;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+.seg button.on {
+  color: var(--text-primary);
+}
+.ind {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  background: var(--bg-surface);
+  border-radius: 99px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1), width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* ── Dialog Chat Bubbles ── */
+.dlg {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.bub {
+  background: var(--bg-surface-subtle);
+  border-radius: 14px;
+  padding: 8px 14px;
+  max-width: 82%;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.bub.r {
+  align-self: flex-end;
+  background: var(--accent-terracotta-tint);
+}
+
+/* ── Tip Alert Box ── */
+.tip {
+  margin: 12px 24px 16px;
+  background: var(--tip-bg);
+  border: 1px solid var(--tip-bd);
+  color: var(--tip-tx);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+/* ── Anatomy View Layout in view-vocab-detail ── */
+.vocab-detail-stage {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px 20px 80px;
+}
+.anatomy-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+/* ── Visual Polish for Decks & Home ── */
+.folder-card {
+  transition: transform 0.18s var(--ease-spring), box-shadow 0.18s ease;
+}
+.folder-card:hover {
+  box-shadow: var(--shadow-raised);
+}
+.deck-card {
+  transition: transform 0.18s var(--ease-spring), box-shadow 0.18s ease, border-color 0.15s ease;
+}
+.deck-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  margin-top: 4px;
+}
+.deck-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-top: 4px;
+}
+.deck-count-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+}

@@ -1,0 +1,5020 @@
+[
+  {
+    "id": "a2-d02-001",
+    "pos": "verb",
+    "word": "umziehen",
+    "lemma": "umziehen",
+    "level": "A2",
+    "type": "Verb · trennbar / unregelmäßig",
+    "ipa": "[ˈʊmˌtsiːən]",
+    "meaning": "to move (to a new house/city); to change clothes (reflexiv)",
+    "gloss": "to move (house); to change clothes",
+    "sep": true,
+    "pre": "um",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "umgezogen",
+    "partizip2": "umgezogen",
+    "perfekt": "ist umgezogen",
+    "praeteritum": "zog um",
+    "praesens": "zieht um",
+    "reflexiv": false,
+    "praes": [
+      "ziehe um",
+      "ziehst um",
+      "zieht um",
+      "ziehen um",
+      "zieht um",
+      "ziehen um"
+    ],
+    "prat": [
+      "zog um",
+      "zogst um",
+      "zog um",
+      "zogen um",
+      "zogt um",
+      "zogen um"
+    ],
+    "imp": [
+      "Zieh um!",
+      "Zieht um!",
+      "Ziehen Sie um!"
+    ],
+    "exT": {
+      "praes": [
+        "Nächsten Monat zieht unsere Familie in eine Vierzimmerwohnung um.",
+        "Next month our family is moving into a four-room apartment."
+      ],
+      "prat": [
+        "Er zog aus beruflichen Gründen von Köln nach Berlin um.",
+        "He moved from Cologne to Berlin for professional reasons."
+      ],
+      "perf": [
+        "Wir sind am vergangenen Wochenende endlich in unser neues Haus umgezogen.",
+        "Last weekend we finally moved into our new house."
+      ]
+    },
+    "ex": [
+      "Wann zieht ihr in die neue Wohnung um?",
+      "When are you moving into the new apartment?"
+    ],
+    "val": [
+      [
+        "in + Akk umziehen",
+        "Wohin? (Akk)",
+        "Wir ziehen in eine ruhige Straße um."
+      ],
+      [
+        "von + Dat nach + Dat umziehen",
+        "Von wo nach wo?",
+        "Er ist von München nach Hamburg umgezogen."
+      ]
+    ],
+    "family": [
+      "der Umzug",
+      "einziehen",
+      "ausziehen",
+      "der Umzugskarton"
+    ],
+    "tip": "Achtung bei der Bedeutung: 1) Wohnungswechsel: 'ist umgezogen' (Hilfsverb sein). 2) Kleidung wechseln: reflexiv 'hat sich umgezogen' (Hilfsverb haben)!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      1
+    ],
+    "sourceRawIds": [
+      "RAW-020"
+    ]
+  },
+  {
+    "id": "a2-d02-002",
+    "pos": "noun",
+    "word": "Wohngemeinschaft",
+    "lemma": "Wohngemeinschaft",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈvoːnɡəˌmaɪ̯nʃaft]",
+    "meaning": "flatshare, shared apartment (short: WG)",
+    "gloss": "shared flat (WG)",
+    "pl": "die Wohngemeinschaften",
+    "genS": "der Wohngemeinschaft",
+    "rule": "Endung -schaft: immer zu 100 % feminin (die Gemeinschaft, die Freundschaft, die Mannschaft).",
+    "nvv": [
+      [
+        "in einer WG wohnen / leben",
+        "to live in a flatshare"
+      ],
+      [
+        "ein Zimmer in einer WG suchen",
+        "to look for a room in a flatshare"
+      ]
+    ],
+    "compounds": [
+      "die Studenten-WG",
+      "das WG-Zimmer",
+      "der WG-Mitbewohner"
+    ],
+    "family": [
+      "wohnen",
+      "gemeinsam",
+      "die Gemeinschaft"
+    ],
+    "ex": [
+      "In deutschen Universitätsstädten wohnen die meisten Studenten in einer Wohngemeinschaft.",
+      "In German university towns, most students live in a flatshare."
+    ],
+    "tip": "Wird im Alltag fast immer 'WG' [veːˈɡeː] genannt. Plural: die WGs. Typisch: der Putzplan in der WG!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      2
+    ],
+    "sourceRawIds": [
+      "RAW-064"
+    ]
+  },
+  {
+    "id": "a2-d02-003",
+    "pos": "adj",
+    "word": "praktisch",
+    "lemma": "praktisch",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈpʁaktɪʃ]",
+    "meaning": "practical, convenient, handy; virtually, practically",
+    "gloss": "practical, convenient",
+    "comp": [
+      [
+        "Positiv",
+        "praktisch"
+      ],
+      [
+        "Komparativ",
+        "praktischer"
+      ],
+      [
+        "Superlativ",
+        "am praktischsten"
+      ]
+    ],
+    "opp": "unpraktisch, theoretisch",
+    "family": [
+      "die Praxis",
+      "praktizieren"
+    ],
+    "ex": [
+      "Ein Einbauschrank im Flur ist extrem praktisch und spart viel Platz.",
+      "A built-in cupboard in the hallway is extremely practical and saves a lot of space."
+    ],
+    "tip": "Endung '-isch' signalisiert Eigenschaft. Gegenteil: unpraktisch.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      3
+    ],
+    "sourceRawIds": [
+      "RAW-102"
+    ]
+  },
+  {
+    "id": "a2-d02-004",
+    "pos": "noun",
+    "word": "Schauspieler",
+    "lemma": "Schauspieler",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈʃaʊ̯ˌʃpiːlɐ]",
+    "meaning": "actor, performer",
+    "gloss": "actor",
+    "pl": "die Schauspieler",
+    "genS": "des Schauspielers",
+    "rule": "Agens-Nomen auf -er: immer maskulin (der Schauspieler, der Maler, der Bäcker). Weiblich: die Schauspielerin.",
+    "nvv": [
+      [
+        "als Schauspieler arbeiten",
+        "to work as an actor"
+      ],
+      [
+        "die Rolle eines Schauspielers",
+        "the role of an actor"
+      ]
+    ],
+    "compounds": [
+      "die Schauspielerin",
+      "die Schauspielschule",
+      "der Filmschauspieler",
+      "der Theaterschauspieler"
+    ],
+    "family": [
+      "das Schauspiel",
+      "spielen",
+      "das Spiel"
+    ],
+    "ex": [
+      "Der berühmte Schauspieler wohnt in einem wunderschön renovierten Altbau in Berlin-Mitte.",
+      "The famous actor lives in a beautifully renovated old building in Berlin-Mitte."
+    ],
+    "tip": "Zusammensetzung: Schau (show) + Spieler (player/actor). Plural bleibt unverändert: die Schauspieler.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      3
+    ],
+    "sourceRawIds": [
+      "RAW-149"
+    ]
+  },
+  {
+    "id": "a2-d02-005",
+    "pos": "noun",
+    "word": "Wohnheim",
+    "lemma": "Wohnheim",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈvoːnˌhaɪ̯m]",
+    "meaning": "dormitory, hostel, student hall of residence",
+    "gloss": "dormitory, residence hall",
+    "pl": "die Wohnheime",
+    "genS": "des Wohnheims",
+    "rule": "Zusammensetzung mit Heim (das Heim): immer Neutrum (das Wohnheim, das Studentenheim, das Altersheim).",
+    "nvv": [
+      [
+        "ein Zimmer im Wohnheim bekommen",
+        "to get a room in the dormitory"
+      ],
+      [
+        "im Wohnheim wohnen",
+        "to live in the residence hall"
+      ]
+    ],
+    "compounds": [
+      "das Studentenwohnheim",
+      "das Schwesternwohnheim",
+      "das Jugendwohnheim"
+    ],
+    "family": [
+      "die Heimat",
+      "wohnen",
+      "heimisch"
+    ],
+    "ex": [
+      "Das Zimmer im Studentenwohnheim kostet inklusive Strom und Internet nur 320 Euro im Monat.",
+      "The room in the student dormitory costs only 320 euros per month including electricity and internet."
+    ],
+    "tip": "Heim = home/dorm. Plural mit -e: die Wohnheime.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      4
+    ],
+    "sourceRawIds": [
+      "RAW-211"
+    ]
+  },
+  {
+    "id": "a2-d02-006",
+    "pos": "adj",
+    "word": "schlimm",
+    "lemma": "schlimm",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ʃlɪm]",
+    "meaning": "bad, severe, terrible, serious",
+    "gloss": "bad, terrible",
+    "comp": [
+      [
+        "Positiv",
+        "schlimm"
+      ],
+      [
+        "Komparativ",
+        "schlimmer"
+      ],
+      [
+        "Superlativ",
+        "am schlimmsten"
+      ]
+    ],
+    "opp": "gut, harmlos, erfreulich",
+    "family": [
+      "versclimmern",
+      "die Verschlimmerung"
+    ],
+    "ex": [
+      "Der Wasserschaden in der Küche war zum Glück nicht so schlimm wie befürchtet.",
+      "Fortunately, the water damage in the kitchen was not as bad as feared."
+    ],
+    "tip": "Sehr häufige Wendung: 'Nicht so schlimm!' = No worries / Never mind! 'Es ist halb so schlimm' = It's not as bad as it seems.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      4
+    ],
+    "sourceRawIds": [
+      "RAW-218"
+    ]
+  },
+  {
+    "id": "a2-d02-007",
+    "pos": "noun",
+    "word": "Vermieter",
+    "lemma": "Vermieter",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[fɛɐ̯ˈmiːtɐ]",
+    "meaning": "landlord, lessor",
+    "gloss": "landlord",
+    "pl": "die Vermieter",
+    "genS": "des Vermieters",
+    "rule": "Agens-Nomen auf -er: immer maskulin (der Vermieter). Weibliche Form: die Vermieterin.",
+    "nvv": [
+      [
+        "den Vermieter über Mängel informieren",
+        "to notify the landlord about defects"
+      ],
+      [
+        "die Miete an den Vermieter überweisen",
+        "to transfer the rent to the landlord"
+      ]
+    ],
+    "compounds": [
+      "die Vermieterin",
+      "der Hauptvermieter",
+      "der Zwischenvermieter"
+    ],
+    "family": [
+      "vermieten",
+      "die Miete",
+      "der Mieter"
+    ],
+    "ex": [
+      "Der Vermieter hat versprochen, die defekte Heizung bis morgen reparieren zu lassen.",
+      "The landlord promised to have the defective heating repaired by tomorrow."
+    ],
+    "tip": "Wichtiges Paar im Mietrecht: der Vermieter (landlord) vermietet an den Mieter (tenant).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-225"
+    ]
+  },
+  {
+    "id": "a2-d02-008",
+    "pos": "verb",
+    "word": "föhnen",
+    "lemma": "föhnen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈføːnən]",
+    "meaning": "to blow-dry (hair)",
+    "gloss": "to blow-dry",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geföhnt",
+    "partizip2": "geföhnt",
+    "perfekt": "hat geföhnt",
+    "praeteritum": "föhnte",
+    "praesens": "föhnt",
+    "reflexiv": false,
+    "praes": [
+      "föhne",
+      "föhnst",
+      "föhnt",
+      "föhnen",
+      "föhnt",
+      "föhnen"
+    ],
+    "prat": [
+      "föhnte",
+      "föhntest",
+      "föhnte",
+      "föhnten",
+      "föhntet",
+      "föhnten"
+    ],
+    "imp": [
+      "Föhn!",
+      "Föhnt!",
+      "Föhnen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Nach dem Duschen föhnt er sich die Haare im Badezimmer.",
+        "After showering he blow-dries his hair in the bathroom."
+      ],
+      "prat": [
+        "Sie föhnte ihre Haare schnell vor dem Spiegel.",
+        "She quickly blow-dried her hair in front of the mirror."
+      ],
+      "perf": [
+        "Hast du deine Haare schon trocken geföhnt?",
+        "Have you already blow-dried your hair dry?"
+      ]
+    },
+    "ex": [
+      "Ich muss mir noch schnell die Haare föhnen, dann können wir losgehen.",
+      "I just need to blow-dry my hair quickly, then we can head out."
+    ],
+    "val": [
+      [
+        "sich (Dat) die Haare (Akk) föhnen",
+        "Wem? Was?",
+        "Ich föhne mir die Haare."
+      ]
+    ],
+    "family": [
+      "der Föhn",
+      "die Föhnfrisur"
+    ],
+    "tip": "Namensherkunft: 'der Föhn' ist eigentlich ein warmer Alpenwind. Als Gerät: der Föhn (Haartrockner).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-227"
+    ]
+  },
+  {
+    "id": "a2-d02-009",
+    "pos": "noun",
+    "word": "Tönung",
+    "lemma": "Tönung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈtøːnʊŋ]",
+    "meaning": "hair tint, semi-permanent coloring, shade/tint",
+    "gloss": "tint, shade",
+    "pl": "die Tönungen",
+    "genS": "der Tönung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Tönung).",
+    "nvv": [
+      [
+        "eine Tönung für die Haare ausprobieren",
+        "to try a semi-permanent hair tint"
+      ]
+    ],
+    "compounds": [
+      "die Haartönung",
+      "die Scheibentönung"
+    ],
+    "family": [
+      "tönen",
+      "der Ton",
+      "farbtönig"
+    ],
+    "ex": [
+      "Beim Friseur wählte sie eine warme braune Tönung für ihre Haare.",
+      "At the hairdresser she chose a warm brown tint for her hair."
+    ],
+    "tip": "Unterschied: Eine Tönung wäscht sich nach einigen Wochen aus, eine Färbung (Färben) ist dauerhaft.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-228"
+    ]
+  },
+  {
+    "id": "a2-d02-010",
+    "pos": "noun",
+    "word": "Tätigkeit",
+    "lemma": "Tätigkeit",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈtɛːtɪçkaɪ̯t]",
+    "meaning": "activity, task, occupation, function",
+    "gloss": "activity, task",
+    "pl": "die Tätigkeiten",
+    "genS": "der Tätigkeit",
+    "rule": "Endung -keit: immer zu 100 % feminin (die Tätigkeit, die Möglichkeit, die Pünktlichkeit).",
+    "nvv": [
+      [
+        "eine Tätigkeit ausüben",
+        "to carry out an activity / hold a job"
+      ],
+      [
+        "in leitender Tätigkeit",
+        "in a managerial capacity"
+      ]
+    ],
+    "compounds": [
+      "die Hausarbeitstätigkeit",
+      "die Berufstätigkeit",
+      "die Freizeitaktivität"
+    ],
+    "family": [
+      "tätig",
+      "die Tat",
+      "der Täter"
+    ],
+    "ex": [
+      "Zu den alltäglichen Tätigkeiten im Haushalt gehören Kochen, Putzen und Einkaufen.",
+      "Everyday household activities include cooking, cleaning, and grocery shopping."
+    ],
+    "tip": "Sehr gebräuchlich im Lebenslauf: 'Beschreibung der beruflichen Tätigkeiten'. Endung '-keit' = immer die!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-229"
+    ]
+  },
+  {
+    "id": "a2-d02-011",
+    "pos": "noun",
+    "word": "Friseur",
+    "lemma": "Friseur",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[fʁiˈzøːɐ̯]",
+    "meaning": "hairdresser, barber, hair stylist",
+    "gloss": "hairdresser",
+    "pl": "die Friseure",
+    "genS": "des Friseurs",
+    "rule": "Berufsbezeichnungen auf -eur aus dem Französischen sind maskulin: der Friseur, der Ingenieur.",
+    "nvv": [
+      [
+        "zum Friseur gehen",
+        "to go to the hairdresser"
+      ],
+      [
+        "einen Termin beim Friseur vereinbaren",
+        "to make an appointment at the salon"
+      ]
+    ],
+    "compounds": [
+      "die Friseurin",
+      "der Friseursalon",
+      "der Herrenfriseur",
+      "der Damenfriseur"
+    ],
+    "family": [
+      "frisieren",
+      "die Frisur"
+    ],
+    "ex": [
+      "Ich muss dringend zum Friseur gehen, meine Haare sind schon viel zu lang.",
+      "I urgently need to go to the hairdresser, my hair is already much too long."
+    ],
+    "tip": "Schreibweise: Friseur oder Frisör (beide zulässig, 'Friseur' ist gebräuchlicher). Weiblich: die Friseurin.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-230"
+    ]
+  },
+  {
+    "id": "a2-d02-012",
+    "pos": "noun",
+    "word": "Handtuch",
+    "lemma": "Handtuch",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈhantˌtuːx]",
+    "meaning": "towel, hand towel",
+    "gloss": "towel",
+    "pl": "die Handtücher",
+    "genS": "des Handtuchs / Handtuches",
+    "rule": "Zusammensetzung mit Tuch (das Tuch): immer Neutrum (das Handtuch, das Taschentuch, das Badetuch).",
+    "nvv": [
+      [
+        "sich mit dem Handtuch abtrocknen",
+        "to dry oneself with a towel"
+      ],
+      [
+        "ein frisches Handtuch aufhängen",
+        "to hang up a clean towel"
+      ],
+      [
+        "das Handtuch werfen",
+        "to throw in the towel (give up)"
+      ]
+    ],
+    "compounds": [
+      "das Badetuch",
+      "der Handtuchhalter",
+      "das Geschirrtuch"
+    ],
+    "family": [
+      "die Hand",
+      "das Tuch",
+      "trocknen"
+    ],
+    "ex": [
+      "Im Badezimmer hängen saubere Handtücher für die Gäste bereit.",
+      "Clean towels are hanging ready for guests in the bathroom."
+    ],
+    "tip": "Plural mit Umlaut: die Handtücher. Wichtiges Haushaltswort!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-231"
+    ]
+  },
+  {
+    "id": "a2-d02-013",
+    "pos": "noun",
+    "word": "Bürste",
+    "lemma": "Bürste",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈbʏʁstə]",
+    "meaning": "brush (hairbrush, scrubbing brush, toothbrush)",
+    "gloss": "brush",
+    "pl": "die Bürsten",
+    "genS": "der Bürste",
+    "rule": "Zweisilbige Substantive auf -e sind meist feminin (die Bürste, die Tasse, die Flasche).",
+    "nvv": [
+      [
+        "die Haare mit der Bürste kämmen",
+        "to comb hair with the brush"
+      ],
+      [
+        "mit der Bürste schrubben",
+        "to scrub with the brush"
+      ]
+    ],
+    "compounds": [
+      "die Haarbürste",
+      "die Zahnbürste",
+      "die Klobürste",
+      "die Schuhbürste"
+    ],
+    "family": [
+      "bürsten",
+      "abbürsten"
+    ],
+    "ex": [
+      "Sie kämmt ihre langen Locken jeden Morgen sorgfältig mit einer weichen Bürste.",
+      "She combs her long curls carefully every morning with a soft brush."
+    ],
+    "tip": "Plural mit -n: die Bürsten. Verb dazu: sich die Haare bürsten.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-232"
+    ]
+  },
+  {
+    "id": "a2-d02-014",
+    "pos": "verb",
+    "word": "verteilen",
+    "lemma": "verteilen",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[fɛɐ̯ˈtaɪ̯lən]",
+    "meaning": "to distribute, spread out, share out, allocate",
+    "gloss": "to distribute, spread",
+    "sep": false,
+    "pre": "ver",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "verteilt",
+    "partizip2": "verteilt",
+    "perfekt": "hat verteilt",
+    "praeteritum": "verteilte",
+    "praesens": "verteilt",
+    "reflexiv": false,
+    "praes": [
+      "verteile",
+      "verteilst",
+      "verteilt",
+      "verteilen",
+      "verteilt",
+      "verteilen"
+    ],
+    "prat": [
+      "verteilte",
+      "verteiltest",
+      "verteilte",
+      "verteilten",
+      "verteiltet",
+      "verteilten"
+    ],
+    "imp": [
+      "Verteile!",
+      "Verteilt!",
+      "Verteilen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Friseur verteilt das Shampoo gleichmäßig im nassen Haar.",
+        "The hairdresser distributes the shampoo evenly in the wet hair."
+      ],
+      "prat": [
+        "In der WG verteilten die Mitbewohner die Putzaufgaben gerecht.",
+        "In the flatshare, the roommates distributed cleaning tasks fairly."
+      ],
+      "perf": [
+        "Wir haben die Möbel gleichmäßig auf alle Zimmer verteilt.",
+        "We distributed the furniture evenly across all rooms."
+      ]
+    },
+    "ex": [
+      "Verteilen Sie die Creme sanft auf der Haut.",
+      "Spread the cream gently on the skin."
+    ],
+    "val": [
+      [
+        "etwas (Akk) auf / unter + Akk verteilen",
+        "Worauf / worunter?",
+        "Er verteilt die Aufgaben unter den Kollegen."
+      ]
+    ],
+    "family": [
+      "die Verteilung",
+      "teilen",
+      "der Teil"
+    ],
+    "tip": "Präfix 'ver-': untrennbar! Partizip II ohne 'ge-': verteilt.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-233"
+    ]
+  },
+  {
+    "id": "a2-d02-015",
+    "pos": "noun",
+    "word": "Handbewegung",
+    "lemma": "Handbewegung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈhantbəˌveːɡʊŋ]",
+    "meaning": "hand movement, gesture",
+    "gloss": "hand movement, gesture",
+    "pl": "die Handbewegungen",
+    "genS": "der Handbewegung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Bewegung, die Handbewegung).",
+    "nvv": [
+      [
+        "mit einer kurzen Handbewegung zeigen",
+        "to point with a quick gesture of the hand"
+      ]
+    ],
+    "compounds": [
+      "die Fingerbewegung",
+      "die Körperbewegung"
+    ],
+    "family": [
+      "die Hand",
+      "bewegen",
+      "die Bewegung"
+    ],
+    "ex": [
+      "Mit einer geschickten Handbewegung schnitt der Friseur die Spitzen ab.",
+      "With a skillful hand movement, the hairdresser trimmed the tips."
+    ],
+    "tip": "Zusammengesetzt aus: die Hand + die Bewegung. Plural: die Handbewegungen.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-234"
+    ]
+  },
+  {
+    "id": "a2-d02-016",
+    "pos": "verb",
+    "word": "melden",
+    "lemma": "melden",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈmɛldn̩]",
+    "meaning": "to report, notify, register; (reflexiv) to get in touch, get back to someone",
+    "gloss": "to report, get in touch",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gemeldet",
+    "partizip2": "gemeldet",
+    "perfekt": "hat gemeldet",
+    "praeteritum": "meldete",
+    "praesens": "meldet",
+    "reflexiv": "sich (Akk)",
+    "praes": [
+      "melde",
+      "meldest",
+      "meldet",
+      "melden",
+      "meldet",
+      "melden"
+    ],
+    "prat": [
+      "meldete",
+      "meldetest",
+      "meldete",
+      "meldeten",
+      "meldetet",
+      "meldeten"
+    ],
+    "imp": [
+      "Melde!",
+      "Meldet!",
+      "Melden Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Mieter meldet dem Hausmeister den tropfenden Wasserhahn.",
+        "The tenant reports the dripping faucet to the caretaker."
+      ],
+      "prat": [
+        "Sie meldete sich sofort, als sie von der Reise zurückkam.",
+        "She got in touch immediately when she returned from the trip."
+      ],
+      "perf": [
+        "Hast du den Schaden schon bei deiner Versicherung gemeldet?",
+        "Have you already reported the damage to your insurance?"
+      ]
+    },
+    "ex": [
+      "Ich melde mich morgen bei dir!",
+      "I will get in touch with you tomorrow!"
+    ],
+    "val": [
+      [
+        "etwas (Akk) bei + Dat melden",
+        "Wo?",
+        "Er meldet den Schaden bei der Polizei."
+      ],
+      [
+        "sich bei + Dat melden",
+        "Bei wem?",
+        "Melde dich bitte bald bei mir!"
+      ]
+    ],
+    "family": [
+      "die Meldung",
+      "die Anmeldung",
+      "der Meldezettel"
+    ],
+    "tip": "Wichtigste Alltagsphrase: 'Ich melde mich bei dir!' = I'll get in touch / let you know.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-235"
+    ]
+  },
+  {
+    "id": "a2-d02-017",
+    "pos": "noun",
+    "word": "Auskunft",
+    "lemma": "Auskunft",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈaʊ̯sˌkʊnft]",
+    "meaning": "information desk, inquiry, information provided",
+    "gloss": "information, inquiry",
+    "pl": "die Auskünfte",
+    "genS": "der Auskunft",
+    "rule": "Nomen auf -kunft sind immer feminin: die Auskunft, die Ankunft, die Zukunft, die Herkunft.",
+    "nvv": [
+      [
+        "eine Auskunft erteilen / geben",
+        "to provide information"
+      ],
+      [
+        "die Auskunft am Schalter fragen",
+        "to ask at the information desk"
+      ]
+    ],
+    "compounds": [
+      "die Fahrplanauskunft",
+      "das Auskunftsbüro",
+      "die Telefonauskunft"
+    ],
+    "family": [
+      "auskommen",
+      "die Ankunft"
+    ],
+    "ex": [
+      "Am Bahnhofsschalter der DB erhalten Reisende kostenlose Auskunft über alle Zugverbindungen.",
+      "At the DB station counter, travelers receive free information about all train connections."
+    ],
+    "tip": "Merke die Vierer-Gruppe: alle Wörter auf '-kunft' sind feminin (die Ankunft, die Zukunft, die Auskunft, die Herkunft). Plural mit Umlaut: die Auskünfte.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-241"
+    ]
+  },
+  {
+    "id": "a2-d02-018",
+    "pos": "noun",
+    "word": "Abteil",
+    "lemma": "Abteil",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈapˌtaɪ̯l]",
+    "meaning": "compartment (in a train or wagon)",
+    "gloss": "train compartment",
+    "pl": "die Abteile",
+    "genS": "des Abteils",
+    "rule": "Zusammensetzung mit Teil (das Teil als abgetrennter Raum): Neutrum.",
+    "nvv": [
+      [
+        "im Abteil Platz nehmen",
+        "to take a seat in the compartment"
+      ],
+      [
+        "ein Abteil für sechs Personen",
+        "a six-person compartment"
+      ]
+    ],
+    "compounds": [
+      "das Zugabteil",
+      "das Ruheabteil",
+      "das Kleinkindabteil"
+    ],
+    "family": [
+      "abteilen",
+      "der Teil"
+    ],
+    "ex": [
+      "Im ICE gibt es offene Großraumwagen und ruhige Abteile mit Schiebetüren.",
+      "In the ICE there are open-plan carriages and quiet compartments with sliding doors."
+    ],
+    "tip": "Wichtige Bahn-Zusammensetzung: 'das Ruheabteil' (quiet compartment - Handys bitte auf lautlos!).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-242"
+    ]
+  },
+  {
+    "id": "a2-d02-019",
+    "pos": "phrase",
+    "word": "Gang oder Fenstersitz",
+    "lemma": "Gang- oder Fenstersitz",
+    "art": "der",
+    "level": "A2",
+    "type": "Kollokation / Redemittel",
+    "ipa": "[ˈɡaŋ oːdɐ ˈfɛnstɐˌzɪts]",
+    "meaning": "aisle seat or window seat (when booking travel)",
+    "gloss": "aisle or window seat",
+    "frame": "Möchten Sie einen Gang- oder einen Fenstersitz?",
+    "reg": [
+      [
+        "formal / Reisebuchung",
+        "Möchten Sie einen Gang- oder einen Fenstersitz reservieren?",
+        "Would you like to reserve an aisle or a window seat?"
+      ],
+      [
+        "Antwort",
+        "Ich hätte gerne einen Fensterplatz im Ruhebereich.",
+        "I would like a window seat in the quiet area."
+      ]
+    ],
+    "tenses": {
+      "praes": "wählt Gang- oder Fenstersitz",
+      "prat": "wählte Gang- oder Fenstersitz",
+      "perf": "hat Gang- oder Fenstersitz gewählt"
+    },
+    "dlg": [
+      [
+        "Schaffner/Schalter",
+        "Gang oder Fenstersitz?"
+      ],
+      [
+        "Reisender",
+        "Fenstersitz bitte, ich schaue gerne aus dem Fenster!"
+      ]
+    ],
+    "tip": "Standardfrage bei jeder Sitzplatzreservierung im Zug oder Flugzeug: der Gangplatz (aisle) vs. der Fensterplatz (window).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-245"
+    ]
+  },
+  {
+    "id": "a2-d02-020",
+    "pos": "noun",
+    "word": "Anzeige",
+    "lemma": "Anzeige",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈanˌtsaɪ̯ɡə]",
+    "meaning": "advertisement, classified ad, notice; display (screen); police report",
+    "gloss": "ad, notice, display",
+    "pl": "die Anzeigen",
+    "genS": "der Anzeige",
+    "rule": "Zweisilbige Substantive auf -e sind meist feminin (die Anzeige, die Werbung).",
+    "nvv": [
+      [
+        "eine Wohnungsanzeige aufgeben / lesen",
+        "to place / read an apartment listing"
+      ],
+      [
+        "Anzeige bei der Polizei erstatten",
+        "to file a police report"
+      ]
+    ],
+    "compounds": [
+      "die Wohnungsanzeige",
+      "die Stellenanzeige",
+      "die Werbeanzeige",
+      "die Digitalanzeige"
+    ],
+    "family": [
+      "anzeigen",
+      "der Zeiger"
+    ],
+    "ex": [
+      "In der Zeitung und auf Immobilienportalen gibt es täglich neue Anzeigen für Mietwohnungen.",
+      "In the newspaper and on real estate portals there are daily new listings for rental apartments."
+    ],
+    "tip": "Zwei wichtige Kontexte: 1. Wohnung/Job ('eine Anzeige aufgeben'); 2. Recht ('Anzeige erstatten' = report a crime to the police).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-246"
+    ]
+  },
+  {
+    "id": "a2-d02-021",
+    "pos": "adj",
+    "word": "großartig",
+    "lemma": "großartig",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈɡʁoːsˌʔaːɐ̯tɪç]",
+    "meaning": "great, magnificent, fantastic, superb",
+    "gloss": "great, magnificent",
+    "comp": [
+      [
+        "Positiv",
+        "großartig"
+      ],
+      [
+        "Komparativ",
+        "großartiger"
+      ],
+      [
+        "Superlativ",
+        "am großartigsten"
+      ]
+    ],
+    "opp": "mittelmäßig, schlecht, enttäuschend",
+    "family": [
+      "die Großartigkeit",
+      "groß",
+      "die Art"
+    ],
+    "ex": [
+      "Vom Balkon der Dachgeschosswohnung hat man einen großartigen Blick über die ganze Stadt.",
+      "From the balcony of the top-floor apartment one has a magnificent view over the entire city."
+    ],
+    "tip": "Häufiges Lobwort im Deutschen: 'Das ist eine großartige Idee!'",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-248"
+    ]
+  },
+  {
+    "id": "a2-d02-022",
+    "pos": "adj",
+    "word": "vielseitig",
+    "lemma": "vielseitig",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈfiːlˌzaɪ̯tɪç]",
+    "meaning": "versatile, diverse, multifaceted, all-round",
+    "gloss": "versatile, diverse",
+    "comp": [
+      [
+        "Positiv",
+        "vielseitig"
+      ],
+      [
+        "Komparativ",
+        "vielseitiger"
+      ],
+      [
+        "Superlativ",
+        "am vielseitigsten"
+      ]
+    ],
+    "opp": "einseitig, monoton, beschränkt",
+    "family": [
+      "die Vielseitigkeit",
+      "die Seite"
+    ],
+    "ex": [
+      "Dieser Stadtteil ist sehr vielseitig: Es gibt ruhige Parks, moderne Cafés und historische Altbauten.",
+      "This neighborhood is very diverse: there are quiet parks, modern cafes, and historic old buildings."
+    ],
+    "tip": "Wörtlich: 'viele Seiten habend' (having many sides). Gegenteil: einseitig.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-249"
+    ]
+  },
+  {
+    "id": "a2-d02-023",
+    "pos": "verb",
+    "word": "erwarten",
+    "lemma": "erwarten",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[ɛɐ̯ˈvaʁtn̩]",
+    "meaning": "to expect, await, anticipate",
+    "gloss": "to expect, await",
+    "sep": false,
+    "pre": "er",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "erwartet",
+    "partizip2": "erwartet",
+    "perfekt": "hat erwartet",
+    "praeteritum": "erwartete",
+    "praesens": "erwartet",
+    "reflexiv": false,
+    "praes": [
+      "erwarte",
+      "erwartest",
+      "erwartet",
+      "erwarten",
+      "erwartet",
+      "erwarten"
+    ],
+    "prat": [
+      "erwartete",
+      "erwartetest",
+      "erwartete",
+      "erwarteten",
+      "erwartetet",
+      "erwarteten"
+    ],
+    "imp": [
+      "Erwarte!",
+      "Erwartet!",
+      "Erwarten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Wir erwarten heute Nachmittag die Handwerker für die Küchenmontage.",
+        "We expect the tradesmen for kitchen installation this afternoon."
+      ],
+      "prat": [
+        "Niemand erwartete eine so drastische Mieterhöhung.",
+        "Nobody expected such a drastic rent increase."
+      ],
+      "perf": [
+        "Was habt ihr von der Wohnungsbesichtigung erwartet?",
+        "What did you expect from the apartment viewing?"
+      ]
+    },
+    "ex": [
+      "Der Vermieter erwartet pünktliche Mietzahlungen zu Monatsbeginn.",
+      "The landlord expects punctual rent payments at the beginning of the month."
+    ],
+    "val": [
+      [
+        "etwas (Akk) von + Dat erwarten",
+        "Von wem? Was?",
+        "Ich erwarte eine schnelle Antwort vom Vermieter."
+      ]
+    ],
+    "family": [
+      "die Erwartung",
+      "warten",
+      "unerwartet"
+    ],
+    "tip": "Untrennbar: Präfix 'er-'. Partizip II ohne 'ge-': erwartet.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-252"
+    ]
+  },
+  {
+    "id": "a2-d02-024",
+    "pos": "phrase",
+    "word": "die alte Dame",
+    "lemma": "die alte Dame",
+    "art": "die",
+    "level": "A2",
+    "type": "Adjektiv-Nomen-Verbindung",
+    "ipa": "[diː ˈaltə ˈdaːmə]",
+    "meaning": "the elderly lady, the old woman (polite)",
+    "gloss": "elderly lady",
+    "frame": "die alte Dame im [Erdgeschoss / Nachbarhaus]",
+    "reg": [
+      [
+        "höflich / respektvoll",
+        "Die alte Dame aus dem zweiten Stock gießt im Urlaub meine Blumen.",
+        "The elderly lady from the second floor waters my flowers while I'm on vacation."
+      ],
+      [
+        "Nachbarschaft",
+        "Wir helfen der alten Dame regelmäßig beim Tragen der schweren Einkaufstaschen.",
+        "We regularly help the elderly lady carry her heavy shopping bags."
+      ]
+    ],
+    "tenses": {
+      "praes": "hilft der alten Dame",
+      "prat": "half der alten Dame",
+      "perf": "hat der alten Dame geholfen"
+    },
+    "dlg": [
+      [
+        "A",
+        "Wer wohnt eigentlich im Erdgeschoss rechts?"
+      ],
+      [
+        "B",
+        "Eine sehr freundliche alte Dame, Frau Schneider."
+      ]
+    ],
+    "tip": "Höflicher Ausdruck für ältere Frauen. Deklination mit bestimmtem Artikel: die alte Dame (Nom), der alten Dame (Dat/Gen).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-253"
+    ]
+  },
+  {
+    "id": "a2-d02-025",
+    "pos": "noun",
+    "word": "Ermäßigung",
+    "lemma": "Ermäßigung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ɛɐ̯ˈmɛːsɪɡʊŋ]",
+    "meaning": "discount, price reduction, concession",
+    "gloss": "discount, reduction",
+    "pl": "die Ermäßigungen",
+    "genS": "der Ermäßigung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Ermäßigung).",
+    "nvv": [
+      [
+        "eine Ermäßigung bekommen / erhalten",
+        "to get / receive a discount"
+      ],
+      [
+        "gegen Vorlage des Ausweises gibt es eine Ermäßigung",
+        "discount available upon presentation of ID"
+      ]
+    ],
+    "compounds": [
+      "die Studentenermäßigung",
+      "die Kinderermäßigung",
+      "die Seniorenermäßigung"
+    ],
+    "family": [
+      "mäßig",
+      "das Maß",
+      "ermäßigt"
+    ],
+    "ex": [
+      "Studenten und Rentner erhalten beim Eintritt ins Museum eine Ermäßigung von 50 Prozent.",
+      "Students and retirees receive a 50 percent discount on museum admission."
+    ],
+    "tip": "Wichtiges Schild in Deutschland: 'Ermäßigter Eintritt für Schüler und Studierende'. Plural: die Ermäßigungen.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-254"
+    ]
+  },
+  {
+    "id": "a2-d02-026",
+    "pos": "verb",
+    "word": "besichtigen",
+    "lemma": "besichtigen",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[bəˈzɪçtɪɡn̩]",
+    "meaning": "to view, inspect, visit (apartment, museum, sights)",
+    "gloss": "to view, visit (sights/flat)",
+    "sep": false,
+    "pre": "be",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "besichtigt",
+    "partizip2": "besichtigt",
+    "perfekt": "hat besichtigt",
+    "praeteritum": "besichtigte",
+    "praesens": "besichtigt",
+    "reflexiv": false,
+    "praes": [
+      "besichtige",
+      "besichtigst",
+      "besichtigt",
+      "besichtigen",
+      "besichtigt",
+      "besichtigen"
+    ],
+    "prat": [
+      "besichtigte",
+      "besichtigtest",
+      "besichtigte",
+      "besichtigten",
+      "besichtigtet",
+      "besichtigten"
+    ],
+    "imp": [
+      "Besichtige!",
+      "Besichtigt!",
+      "Besichtigen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Morgen um 18 Uhr besichtigen wir eine schöne Dreizimmerwohnung.",
+        "Tomorrow at 6 p.m. we are viewing a beautiful three-room apartment."
+      ],
+      "prat": [
+        "Im Urlaub besichtigten sie die historische Altstadt und das Schloss.",
+        "On vacation they visited the historic old town and the castle."
+      ],
+      "perf": [
+        "Wir haben vor unserer Entscheidung über zehn verschiedene Wohnungen besichtigt.",
+        "We viewed over ten different apartments before making our decision."
+      ]
+    },
+    "ex": [
+      "Wann können wir die Mietwohnung besichtigen?",
+      "When can we view the rental apartment?"
+    ],
+    "val": [
+      [
+        "eine Wohnung / Sehenswürdigkeit (Akk) besichtigen",
+        "Wen oder was?",
+        "Sie besichtigen den Dom."
+      ]
+    ],
+    "family": [
+      "die Besichtigung",
+      "die Wohnungsbesichtigung",
+      "die Sicht"
+    ],
+    "tip": "Wichtiges A2-Wort für Wohnungssuche: 'die Wohnungsbesichtigung' (apartment viewing). Untrennbar mit 'be-'!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-255"
+    ]
+  },
+  {
+    "id": "a2-d02-027",
+    "pos": "adj",
+    "word": "hübsch",
+    "lemma": "hübsch",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[hʏpʃ]",
+    "meaning": "pretty, handsome, nice, lovely",
+    "gloss": "pretty, lovely",
+    "comp": [
+      [
+        "Positiv",
+        "hübsch"
+      ],
+      [
+        "Komparativ",
+        "hübscher"
+      ],
+      [
+        "Superlativ",
+        "am hübschesten"
+      ]
+    ],
+    "opp": "hässlich, unattraktiv",
+    "family": [
+      "die Hübschheit"
+    ],
+    "ex": [
+      "Sie haben ihren Balkon mit bunten Blumen und einer hübschen Lichterkette geschmückt.",
+      "They decorated their balcony with colorful flowers and a pretty string of lights."
+    ],
+    "tip": "Wird oft für Wohnungen, Zimmer und Kleidung verwendet: 'eine hübsche kleine Wohnung'.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-256"
+    ]
+  },
+  {
+    "id": "a2-d02-028",
+    "pos": "adj",
+    "word": "verrückt",
+    "lemma": "verrückt",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[fɛɐ̯ˈʁʏkt]",
+    "meaning": "crazy, mad, eccentric, wild",
+    "gloss": "crazy, mad",
+    "comp": [
+      [
+        "Positiv",
+        "verrückt"
+      ],
+      [
+        "Komparativ",
+        "verrückter"
+      ],
+      [
+        "Superlativ",
+        "am verrücktesten"
+      ]
+    ],
+    "opp": "vernünftig, normal, besonnen",
+    "family": [
+      "die Verrücktheit",
+      "verrücken"
+    ],
+    "ex": [
+      "Die Mietpreise in München sind mittlerweile völlig verrückt.",
+      "Rental prices in Munich have become completely crazy by now."
+    ],
+    "tip": "Wörtlich: von seinem Platz gerückt (dislocated). Häufige Redewendung: 'verrückt nach etwas sein' (crazy about something).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-257"
+    ]
+  },
+  {
+    "id": "a2-d02-029",
+    "pos": "noun",
+    "word": "Kneipe",
+    "lemma": "Kneipe",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈknaɪ̯pə]",
+    "meaning": "pub, bar, neighborhood tavern",
+    "gloss": "pub, tavern",
+    "pl": "die Kneipen",
+    "genS": "der Kneipe",
+    "rule": "Zweisilbige Substantive auf -e sind meist feminin (die Kneipe).",
+    "nvv": [
+      [
+        "in die Kneipe gehen",
+        "to go to the pub"
+      ],
+      [
+        "an der Theke der Kneipe sitzen",
+        "to sit at the bar counter"
+      ]
+    ],
+    "compounds": [
+      "die Eckkneipe",
+      "die Stammkneipe",
+      "das Kneipenviertel"
+    ],
+    "family": [
+      "kneipen"
+    ],
+    "ex": [
+      "Gleich um die Ecke von unserer neuen Wohnung gibt es eine gemütliche urige Kneipe.",
+      "Right around the corner from our new flat there is a cozy, rustic neighborhood pub."
+    ],
+    "tip": "Klassiker im Stadtviertel: 'die Eckkneipe' (neighborhood corner pub) – Treffpunkt für Nachbarn.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-258"
+    ]
+  },
+  {
+    "id": "a2-d02-030",
+    "pos": "noun",
+    "word": "Sehenswürdigkeit",
+    "lemma": "Sehenswürdigkeit",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈzeːənsvʏʁdɪçkaɪ̯t]",
+    "meaning": "sight, tourist attraction, landmark",
+    "gloss": "sight, attraction",
+    "pl": "die Sehenswürdigkeiten",
+    "genS": "der Sehenswürdigkeit",
+    "rule": "Endung -keit: immer zu 100 % feminin (die Sehenswürdigkeit).",
+    "nvv": [
+      [
+        "Sehenswürdigkeiten besichtigen / anschauen",
+        "to visit / view sights"
+      ],
+      [
+        "die bekanntesten Sehenswürdigkeiten der Stadt",
+        "the most famous sights of the city"
+      ]
+    ],
+    "compounds": [
+      "die Hauptsehenswürdigkeit",
+      "der Stadtführer"
+    ],
+    "family": [
+      "sehen",
+      "würdig",
+      "sehenswert"
+    ],
+    "ex": [
+      "Das Brandenburger Tor und der Kölner Dom gehören zu den berühmtesten Sehenswürdigkeiten Deutschlands.",
+      "The Brandenburg Gate and Cologne Cathedral are among Germany's most famous landmarks."
+    ],
+    "tip": "Zusammensetzung: sehen + würdig (worthy) + keit. Plural: die Sehenswürdigkeiten.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-259"
+    ]
+  },
+  {
+    "id": "a2-d02-031",
+    "pos": "noun",
+    "word": "Möbelwerkstatt",
+    "lemma": "Möbelwerkstatt",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈmøːbl̩ˌvɛʁkʃtat]",
+    "meaning": "furniture workshop, carpentry workshop",
+    "gloss": "furniture workshop",
+    "pl": "die Möbelwerkstätten",
+    "genS": "der Möbelwerkstatt",
+    "rule": "Zusammensetzung mit Werkstatt (die Werkstatt): immer feminin.",
+    "nvv": [
+      [
+        "Möbel in einer Werkstatt nach Maß anfertigen lassen",
+        "to have furniture custom made in a workshop"
+      ]
+    ],
+    "compounds": [
+      "die Autowerkstatt",
+      "die Reparaturwerkstatt",
+      "die Holzwerkstatt"
+    ],
+    "family": [
+      "das Möbel",
+      "das Werk",
+      "die Stätte"
+    ],
+    "ex": [
+      "In der Möbelwerkstatt im Hinterhof fertigt der Tischler handgebaute Tische aus Eichenholz an.",
+      "In the furniture workshop in the courtyard, the carpenter makes handcrafted oak tables."
+    ],
+    "tip": "Plural beachten: die Möbelwerkstätten (Umlaut ä!).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-261"
+    ]
+  },
+  {
+    "id": "a2-d02-032",
+    "pos": "noun",
+    "word": "Industriekauffrau",
+    "lemma": "Industriekauffrau",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum (Beruf)",
+    "ipa": "[ɪndʊsˈtʁiːkaʊ̯fˌfʁaʊ̯]",
+    "meaning": "industrial management assistant (female clerk)",
+    "gloss": "industrial clerk (female)",
+    "pl": "die Industriekaufleute / Industriekauffrauen",
+    "genS": "der Industriekauffrau",
+    "rule": "Zusammensetzung mit Frau (die Frau): immer feminin. Männlich: der Industriekaufmann.",
+    "nvv": [
+      [
+        "eine Ausbildung zur Industriekauffrau machen",
+        "to complete training as an industrial clerk"
+      ]
+    ],
+    "compounds": [
+      "der Industriekaufmann",
+      "die Industriekaufleute"
+    ],
+    "family": [
+      "die Industrie",
+      "kaufen",
+      "der Kaufmann"
+    ],
+    "ex": [
+      "Sie arbeitet als Industriekauffrau und verwaltet die Materialbestellungen für die Produktion.",
+      "She works as an industrial clerk and manages material orders for production."
+    ],
+    "tip": "Klassischer deutscher Ausbildungsberuf im dualen System. Plural im Berufskontext meist: 'die Industriekaufleute'.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-262"
+    ]
+  },
+  {
+    "id": "a2-d02-033",
+    "pos": "verb",
+    "word": "tun",
+    "lemma": "tun",
+    "level": "A2",
+    "type": "Verb · unregelmäßig",
+    "ipa": "[tuːn]",
+    "meaning": "to do, act, perform; to hurt (weh tun)",
+    "gloss": "to do, hurt",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "getan",
+    "partizip2": "getan",
+    "perfekt": "hat getan",
+    "praeteritum": "tat",
+    "praesens": "tut",
+    "reflexiv": false,
+    "praes": [
+      "tue",
+      "tust",
+      "tut",
+      "tun",
+      "tut",
+      "tun"
+    ],
+    "prat": [
+      "tat",
+      "tatest",
+      "tat",
+      "taten",
+      "tatet",
+      "taten"
+    ],
+    "imp": [
+      "Tu!",
+      "Tut!",
+      "Tun Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Am Wochenende habe ich in der Wohnung viel zu tun.",
+        "At the weekend I have a lot to do in the apartment."
+      ],
+      "prat": [
+        "Er tat alles, um den Umzug rechtzeitig fertigzustellen.",
+        "He did everything to finish the move on time."
+      ],
+      "perf": [
+        "Was hast du gestern den ganzen Tag getan?",
+        "What did you do all day yesterday?"
+      ]
+    },
+    "ex": [
+      "Nach der harten Gartenarbeit tut mir der Rücken weh.",
+      "After the hard gardening work my back hurts."
+    ],
+    "val": [
+      [
+        "etwas (Akk) tun",
+        "Was?",
+        "Ich muss noch etwas tun."
+      ],
+      [
+        "jemandem wehtun",
+        "Wem?",
+        "Der Kopf tut mir weh."
+      ]
+    ],
+    "family": [
+      "die Tat",
+      "tätig",
+      "wehtun",
+      "leidtun"
+    ],
+    "tip": "Unregelmäßige Konjugation! Stammformen: tun – tat – hat getan. Wichtige Verbindungen: 'wehtun' (to hurt) und 'leidtun' (to be sorry).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-263"
+    ]
+  },
+  {
+    "id": "a2-d02-034",
+    "pos": "noun",
+    "word": "Möbel",
+    "lemma": "Möbel",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum / Pluralwort",
+    "ipa": "[ˈmøːbl̩]",
+    "meaning": "furniture, piece of furniture",
+    "gloss": "furniture",
+    "pl": "die Möbel",
+    "genS": "des Möbels",
+    "rule": "Als Einzelwort: das Möbel (das Möbelstück). Meist im Plural verwendet: die Möbel.",
+    "nvv": [
+      [
+        "Möbel kaufen / aufbauen / transportieren",
+        "to buy / assemble / transport furniture"
+      ],
+      [
+        "die Wohnung mit neuen Möbeln einrichten",
+        "to furnish the apartment with new furniture"
+      ]
+    ],
+    "compounds": [
+      "das Möbelhaus",
+      "das Möbelstück",
+      "der Möbelwagen",
+      "die Gartenmöbel"
+    ],
+    "family": [
+      "möblieren",
+      "möbliert"
+    ],
+    "ex": [
+      "Für die neue Wohnung haben wir gebrauchte Möbel gekauft und selbst aufgebaut.",
+      "For the new apartment we bought used furniture and assembled it ourselves."
+    ],
+    "tip": "Wichtiger Unterschied zum Englischen: Im Deutschen ist 'die Möbel' ein zählbarer Plural ('viele Möbel', nicht 'much furniture').",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-264"
+    ]
+  },
+  {
+    "id": "a2-d02-035",
+    "pos": "noun",
+    "word": "Tischlerei",
+    "lemma": "Tischlerei",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[tɪʃləˈʁaɪ̯]",
+    "meaning": "carpentry shop, joinery workshop",
+    "gloss": "carpentry, joinery",
+    "pl": "die Tischlereien",
+    "genS": "der Tischlerei",
+    "rule": "Endung -ei für Werkstätten/Handwerksbetriebe: immer feminin (die Tischlerei, die Bäckerei, die Metzgerei).",
+    "nvv": [
+      [
+        "Möbel in der Tischlerei anfertigen lassen",
+        "to have furniture crafted in the joinery"
+      ]
+    ],
+    "compounds": [
+      "die Bautischlerei",
+      "die Möbeltischlerei"
+    ],
+    "family": [
+      "der Tischler",
+      "der Tisch",
+      "tischlern"
+    ],
+    "ex": [
+      "Die historische Tischlerei stellt seit über 80 Jahren massive Holztüren und Fensterrahmen her.",
+      "The historic carpentry shop has been manufacturing solid wood doors and window frames for over 80 years."
+    ],
+    "tip": "Synonym im Süden Deutschlands: 'die Schreinerei' (der Schreiner = der Tischler). Endung '-ei' = immer die!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-265"
+    ]
+  },
+  {
+    "id": "a2-d02-036",
+    "pos": "adj",
+    "word": "gegründet",
+    "lemma": "gegründet",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ɡəˈɡʁʏndət]",
+    "meaning": "founded, established, set up",
+    "gloss": "founded, established",
+    "comp": [
+      [
+        "Positiv",
+        "gegründet"
+      ],
+      [
+        "Komparativ",
+        "-"
+      ],
+      [
+        "Superlativ",
+        "-"
+      ]
+    ],
+    "opp": "aufgelöst, geschlossen",
+    "family": [
+      "gründen",
+      "die Gründung",
+      "der Gründer"
+    ],
+    "ex": [
+      "Die Wohnungsbaugenossenschaft wurde bereits im Jahr 1924 gegründet.",
+      "The housing cooperative was founded back in 1924."
+    ],
+    "tip": "Passiv-Konstruktion: 'wurde gegründet im Jahr...' (was founded in...).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-266"
+    ]
+  },
+  {
+    "id": "a2-d02-037",
+    "pos": "noun",
+    "word": "Schmuckstück",
+    "lemma": "Schmuckstück",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈʃmʊkˌʃtʏk]",
+    "meaning": "piece of jewelry; gem, jewel (metaphor for a beautiful flat or house)",
+    "gloss": "jewelry piece; gem (apartment)",
+    "pl": "die Schmuckstücke",
+    "genS": "des Schmuckstücks",
+    "rule": "Zusammensetzung mit Stück (das Stück): immer Neutrum.",
+    "nvv": [
+      [
+        "die Wohnung zu einem echten Schmuckstück machen",
+        "to turn the flat into a real gem"
+      ]
+    ],
+    "compounds": [
+      "das Prachtstück",
+      "das Einzelstück"
+    ],
+    "family": [
+      "der Schmuck",
+      "schmücken",
+      "das Stück"
+    ],
+    "ex": [
+      "Nach der Renovierung ist das alte Fachwerkhaus zu einem echten Schmuckstück im Dorf geworden.",
+      "After the renovation, the old half-timbered house has become a real gem in the village."
+    ],
+    "tip": "Wird in Immobilienanzeigen gerne bildlich für liebevoll restaurierte Häuser oder Wohnungen verwendet.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-268"
+    ]
+  },
+  {
+    "id": "a2-d02-038",
+    "pos": "conn",
+    "word": "genug",
+    "lemma": "genug",
+    "level": "A2",
+    "type": "Indefinitpronomen / Gradadverb",
+    "ipa": "[ɡəˈnuːk]",
+    "meaning": "enough, sufficient, sufficiently",
+    "gloss": "enough, sufficiently",
+    "cls": "Indefinitpronomen",
+    "orders": [
+      [
+        "Nach Adjektiven",
+        "Adjektiv + genug",
+        "Die Wohnung ist groß genug für vier Personen."
+      ],
+      [
+        "Vor Nomen",
+        "genug + Nomen",
+        "Haben wir genug Kartons für den Umzug?"
+      ]
+    ],
+    "cmp": [
+      {
+        "cls": "genug",
+        "w": "genug",
+        "b": "sufficient amount",
+        "ex": "Es gibt genug Platz im Keller."
+      },
+      {
+        "cls": "zu viel",
+        "w": "zu viel",
+        "b": "excessive (opposite)",
+        "ex": "Wir haben zu viel Gepäck mitgenommen."
+      }
+    ],
+    "tip": "Stellung: Steht NACH dem Adjektiv ('warm genug', 'groß genug'), aber VOR dem Substantiv ('genug Geld', 'genug Platz').",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-269"
+    ]
+  },
+  {
+    "id": "a2-d02-039",
+    "pos": "noun",
+    "word": "Chirurg",
+    "lemma": "Chirurg",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum (Beruf)",
+    "ipa": "[çiˈʁʊʁk]",
+    "meaning": "surgeon",
+    "gloss": "surgeon",
+    "pl": "die Chirurgen",
+    "genS": "des Chirurgen",
+    "rule": "N-Deklination: Maskuline Berufsbezeichnungen aus dem Griechischen auf -urg (der Chirurg, des Chirurgen, den Chirurgen). Weiblich: die Chirurgin.",
+    "nvv": [
+      [
+        "eine Operation durchführen",
+        "to perform surgery"
+      ]
+    ],
+    "compounds": [
+      "der Herzchirurg",
+      "die Chirurgin",
+      "die Chirurgie",
+      "der Chefarzt"
+    ],
+    "family": [
+      "chirurgisch",
+      "die Operation"
+    ],
+    "ex": [
+      "Der erfahrene Chirurg operiert fast jeden Tag im städtischen Klinikum.",
+      "The experienced surgeon operates almost every day at the municipal clinic."
+    ],
+    "tip": "Achtung: Gehört zur N-Deklination! Im Akkusativ, Dativ und Genitiv: den/dem/des Chirurgen. Plural: die Chirurgen.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-270"
+    ]
+  },
+  {
+    "id": "a2-d02-040",
+    "pos": "noun",
+    "word": "Herzchirurg",
+    "lemma": "Herzchirurg",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum (Beruf)",
+    "ipa": "[ˈhɛʁtsçiˌʁʊʁk]",
+    "meaning": "cardiac surgeon, heart surgeon",
+    "gloss": "heart surgeon",
+    "pl": "die Herzchirurgen",
+    "genS": "des Herzchirurgen",
+    "rule": "Zusammensetzung mit Chirurg (der Chirurg, N-Deklination): maskulin. Weiblich: die Herzchirurgin.",
+    "nvv": [
+      [
+        "eine Herzoperation leiten",
+        "to lead a heart surgery"
+      ]
+    ],
+    "compounds": [
+      "die Herzchirurgie",
+      "die Herzoperation"
+    ],
+    "family": [
+      "das Herz",
+      "der Chirurg",
+      "herzlich"
+    ],
+    "ex": [
+      "Als Herzchirurg trägt man bei komplizierten Operationen eine enorme Verantwortung.",
+      "As a cardiac surgeon, one bears enormous responsibility during complicated surgeries."
+    ],
+    "tip": "N-Deklination wie Chirurg: des Herzchirurgen, den Herzchirurgen. Plural: die Herzchirurgen.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-271"
+    ]
+  },
+  {
+    "id": "a2-d02-041",
+    "pos": "noun",
+    "word": "Oberarzt",
+    "lemma": "Oberarzt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum (Beruf)",
+    "ipa": "[ˈoːbɐˌʔaːɐ̯tst]",
+    "meaning": "senior physician, head doctor, attending doctor",
+    "gloss": "senior physician",
+    "pl": "die Oberärzte",
+    "genS": "des Oberarztes",
+    "rule": "Zusammensetzung mit Arzt (der Arzt): maskulin. Plural mit Umlaut: die Oberärzte. Weiblich: die Oberärztin.",
+    "nvv": [
+      [
+        "die Visite leiten",
+        "to lead ward rounds"
+      ]
+    ],
+    "compounds": [
+      "die Oberärztin",
+      "der Chefarzt",
+      "der Assistenzarzt"
+    ],
+    "family": [
+      "der Arzt",
+      "ärztlich",
+      "die Medizin"
+    ],
+    "ex": [
+      "Der Oberarzt bespricht die Untersuchungsergebnisse täglich mit seinem Team.",
+      "The senior physician discusses test results daily with his team."
+    ],
+    "tip": "Krankenhaushierarchie in Deutschland: Assistenzarzt → Facharzt → Oberarzt → Chefarzt.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-272"
+    ]
+  },
+  {
+    "id": "a2-d02-042",
+    "pos": "noun",
+    "word": "Leiter",
+    "lemma": "Leiter",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈlaɪ̯tɐ]",
+    "meaning": "director, manager, head, leader; (als Femininum: die Leiter = ladder)",
+    "gloss": "director, head; ladder",
+    "pl": "die Leiter",
+    "genS": "des Leiters",
+    "rule": "DER Leiter (Maskulinum) = Chef/Direktor (die Leiterin). DIE Leiter (Femininum, pl. die Leitern) = Gerät zum Hinaufklettern!",
+    "nvv": [
+      [
+        "die Leitung übernehmen",
+        "to take charge / lead"
+      ],
+      [
+        "auf die Leiter steigen",
+        "to climb the ladder (Femininum)"
+      ]
+    ],
+    "compounds": [
+      "der Abteilungsleiter",
+      "der Projektleiter",
+      "die Stehleiter"
+    ],
+    "family": [
+      "leiten",
+      "die Leitung"
+    ],
+    "ex": [
+      "Der Leiter der Wohnungsbaugesellschaft stellte das neue Bauprojekt vor.",
+      "The director of the housing association presented the new construction project."
+    ],
+    "tip": "Achtung Artikel-Unterschied: DER Leiter = boss/manager; DIE Leiter = stepladder/ladder!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-273"
+    ]
+  },
+  {
+    "id": "a2-d02-043",
+    "pos": "noun",
+    "word": "Arztkittel",
+    "lemma": "Arztkittel",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈaːɐ̯tstˌkɪtl̩]",
+    "meaning": "doctor's coat, white medical lab coat",
+    "gloss": "doctor's coat",
+    "pl": "die Arztkittel",
+    "genS": "des Arztkittels",
+    "rule": "Zusammensetzung mit Kittel (der Kittel): immer maskulin.",
+    "nvv": [
+      [
+        "den Arztkittel anziehen / ablegen",
+        "to put on / take off the doctor's coat"
+      ]
+    ],
+    "compounds": [
+      "der Laborkittel",
+      "der Schutzkittel"
+    ],
+    "family": [
+      "der Arzt",
+      "der Kittel"
+    ],
+    "ex": [
+      "In den Krankenhäusern tragen Ärzte und Pfleger traditionell weiße Arztkittel.",
+      "In hospitals, doctors and nurses traditionally wear white medical coats."
+    ],
+    "tip": "Kittel ist maskulin (der Kittel). Plural unverändert: die Arztkittel.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-274"
+    ]
+  },
+  {
+    "id": "a2-d02-044",
+    "pos": "verb",
+    "word": "werden",
+    "lemma": "werden",
+    "level": "A2",
+    "type": "Verb · unregelmäßig / Hilfsverb",
+    "ipa": "[ˈveːɐ̯dn̩]",
+    "meaning": "to become, turn into, get; (auxiliary) will, shall; passive",
+    "gloss": "to become; will; passive",
+    "sep": false,
+    "pre": "",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "geworden",
+    "partizip2": "geworden",
+    "perfekt": "ist geworden",
+    "praeteritum": "wurde",
+    "praesens": "wird",
+    "reflexiv": false,
+    "praes": [
+      "werde",
+      "wirst",
+      "wird",
+      "werden",
+      "werdet",
+      "werden"
+    ],
+    "prat": [
+      "wurde",
+      "wurdest",
+      "wurde",
+      "wurden",
+      "wurdet",
+      "wurden"
+    ],
+    "imp": [
+      "Werde!",
+      "Werdet!",
+      "Werden Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Im Herbst wird es abends schon früh dunkel und kalt.",
+        "In autumn it gets dark and cold early in the evening."
+      ],
+      "prat": [
+        "Sie wurde nach dem Studium eine erfolgreiche Architektin.",
+        "She became a successful architect after her studies."
+      ],
+      "perf": [
+        "Aus dem alten Lagerhaus ist ein modernes Wohngebäude geworden.",
+        "The old warehouse has become a modern residential building."
+      ]
+    },
+    "ex": [
+      "Was möchtest du später einmal werden?",
+      "What would you like to become later in life?"
+    ],
+    "val": [
+      [
+        "etwas (Nom) werden",
+        "Wer oder was?",
+        "Er wird Arzt."
+      ]
+    ],
+    "family": [
+      "das Werden",
+      "das Passiv",
+      "das Futur"
+    ],
+    "tip": "Drei Funktionen: 1) Vollverb (to become: 'ist geworden'); 2) Futur I (wird kommen); 3) Passiv (wird gebaut, Partizip II: 'worden').",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-275"
+    ]
+  },
+  {
+    "id": "a2-d02-045",
+    "pos": "adj",
+    "word": "erfüllt",
+    "lemma": "erfüllt",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ɛɐ̯ˈfʏlt]",
+    "meaning": "fulfilled, satisfied, realized (dream, wish)",
+    "gloss": "fulfilled, satisfied",
+    "comp": [
+      [
+        "Positiv",
+        "erfüllt"
+      ],
+      [
+        "Komparativ",
+        "erfüllter"
+      ],
+      [
+        "Superlativ",
+        "am erfülltesten"
+      ]
+    ],
+    "opp": "unerfüllt, frustriert",
+    "family": [
+      "erfüllen",
+      "die Erfüllung"
+    ],
+    "ex": [
+      "Mit dem Kauf des kleinen Häuschens im Grünen hat sich ihr größter Lebenstraum erfüllt.",
+      "With the purchase of the little house in the countryside, their greatest life dream was fulfilled."
+    ],
+    "tip": "Häufige Wendung: 'ein erfülltes Leben führen' (to lead a fulfilled life); 'in Erfüllung gehen' (to come true).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-276"
+    ]
+  },
+  {
+    "id": "a2-d02-046",
+    "pos": "verb",
+    "word": "bereuen",
+    "lemma": "bereuen",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[bəˈʁɔɪ̯ən]",
+    "meaning": "to regret, rue, repent",
+    "gloss": "to regret, rue",
+    "sep": false,
+    "pre": "be",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "bereut",
+    "partizip2": "bereut",
+    "perfekt": "hat bereut",
+    "praeteritum": "bereute",
+    "praesens": "bereut",
+    "reflexiv": false,
+    "praes": [
+      "bereue",
+      "bereust",
+      "bereut",
+      "bereuen",
+      "bereut",
+      "bereuen"
+    ],
+    "prat": [
+      "bereute",
+      "bereutest",
+      "bereute",
+      "bereuten",
+      "bereutet",
+      "bereuten"
+    ],
+    "imp": [
+      "Bereue!",
+      "Bereut!",
+      "Bereuen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Er bereut seinen Entschluss nicht, in die WG eingezogen zu sein.",
+        "He does not regret his decision to have moved into the flatshare."
+      ],
+      "prat": [
+        "Sie bereute es sehr, die Wohnung damals nicht gemietet zu haben.",
+        "She regretted very much not having rented the apartment back then."
+      ],
+      "perf": [
+        "Wir haben den Umzug auf das Land zu keinem Zeitpunkt bereut.",
+        "We never regretted moving to the countryside at any point."
+      ]
+    },
+    "ex": [
+      "Ich habe meine Entscheidung keine einzige Sekunde lang bereut.",
+      "I have not regretted my decision for a single second."
+    ],
+    "val": [
+      [
+        "etwas (Akk) bereuen",
+        "Was?",
+        "Er bereut seinen Fehler."
+      ]
+    ],
+    "family": [
+      "die Reue",
+      "reuevoll"
+    ],
+    "tip": "Untrennbar mit 'be-'. Partizip II ohne 'ge-': bereut. Häufig mit Infinitiv mit zu: 'Ich bereue es, ... getan zu haben'.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-277"
+    ]
+  },
+  {
+    "id": "a2-d02-047",
+    "pos": "noun",
+    "word": "Lastwagen",
+    "lemma": "Lastwagen",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈlastˌvaːɡn̩]",
+    "meaning": "truck, lorry, heavy goods vehicle (short: Lkw)",
+    "gloss": "truck, lorry",
+    "pl": "die Lastwagen",
+    "genS": "des Lastwagens",
+    "rule": "Zusammensetzung mit Wagen (der Wagen): maskulin.",
+    "nvv": [
+      [
+        "einen Lastwagen beladen / entladen",
+        "to load / unload a truck"
+      ],
+      [
+        "einen Lastwagen für den Umzug mieten",
+        "to hire a truck for the move"
+      ]
+    ],
+    "compounds": [
+      "der Lkw",
+      "der Lastkraftwagen",
+      "der Möbelwagen",
+      "der Lieferwagen"
+    ],
+    "family": [
+      "die Last",
+      "lasten",
+      "der Wagen"
+    ],
+    "ex": [
+      "Am Samstagmorgen fuhr der gemietete Lastwagen vor und die Helfer begannen mit dem Tragen.",
+      "On Saturday morning the rented truck pulled up and the helpers started carrying."
+    ],
+    "tip": "Umgangssprachlich fast immer 'der Lkw' [ɛlkaːˈveː] genannt. Plural: die Lastwagen / die Lkws.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-278"
+    ]
+  },
+  {
+    "id": "a2-d02-048",
+    "pos": "noun",
+    "word": "Höhepunkt",
+    "lemma": "Höhepunkt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈhøːəˌpʊŋkt]",
+    "meaning": "highlight, climax, peak, high point",
+    "gloss": "highlight, peak",
+    "pl": "die Höhepunkte",
+    "genS": "des Höhepunktes / Höhepunkts",
+    "rule": "Zusammensetzung mit Punkt (der Punkt): immer maskulin.",
+    "nvv": [
+      [
+        "den Höhepunkt erreichen",
+        "to reach the climax / peak"
+      ],
+      [
+        "der Höhepunkt des Abends",
+        "the highlight of the evening"
+      ]
+    ],
+    "compounds": [
+      "der Tiefpunkt",
+      "der Wendepunkt"
+    ],
+    "family": [
+      "die Höhe",
+      "hoch",
+      "der Punkt"
+    ],
+    "ex": [
+      "Der Höhepunkt der Einweihungsparty war das gemeinsame Essen auf der neuen Dachterrasse.",
+      "The highlight of the housewarming party was the meal together on the new rooftop terrace."
+    ],
+    "tip": "Zusammengesetzt aus: Höhe (height) + Punkt (point). Gegenteil: der Tiefpunkt (rock bottom).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-279"
+    ]
+  },
+  {
+    "id": "a2-d02-049",
+    "pos": "verb",
+    "word": "aufhören",
+    "lemma": "aufhören",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[ˈaʊ̯fˌhøːʁən]",
+    "meaning": "to stop, quit, cease, end",
+    "gloss": "to stop, quit",
+    "sep": true,
+    "pre": "auf",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "aufgehört",
+    "partizip2": "aufgehört",
+    "perfekt": "hat aufgehört",
+    "praeteritum": "hörte auf",
+    "praesens": "hört auf",
+    "reflexiv": false,
+    "praes": [
+      "höre auf",
+      "hörst auf",
+      "hört auf",
+      "hören auf",
+      "hört auf",
+      "hören auf"
+    ],
+    "prat": [
+      "hörte auf",
+      "hörtest auf",
+      "hörte auf",
+      "hörten auf",
+      "hörtet auf",
+      "hörten auf"
+    ],
+    "imp": [
+      "Hör auf!",
+      "Hört auf!",
+      "Hören Sie auf!"
+    ],
+    "exT": {
+      "praes": [
+        "Wann hört der Baustellenlärm vor unserem Fenster endlich auf?",
+        "When will the construction noise outside our window finally stop?"
+      ],
+      "prat": [
+        "Um 22 Uhr hörte die Musik auf der Nachbarparty auf.",
+        "At 10 p.m. the music at the neighbor's party stopped."
+      ],
+      "perf": [
+        "Er hat letztes Jahr mit dem Rauchen in der Wohnung aufgehört.",
+        "He quit smoking inside the apartment last year."
+      ]
+    },
+    "ex": [
+      "Hör bitte auf, so viel Krach im Flur zu machen!",
+      "Please stop making so much noise in the hallway!"
+    ],
+    "val": [
+      [
+        "mit + Dat aufhören",
+        "Womit?",
+        "Hör mit dem Lärm auf!"
+      ]
+    ],
+    "family": [
+      "hören",
+      "das Aufhören",
+      "anfangen"
+    ],
+    "tip": "Feste Präposition: 'aufhören MIT + Dativ' (Hör auf damit!). Gegenteil: anfangen / beginnen.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-280"
+    ]
+  },
+  {
+    "id": "a2-d02-050",
+    "pos": "noun",
+    "word": "Schritt",
+    "lemma": "Schritt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ʃʁɪt]",
+    "meaning": "step, pace, move (literal walking step and figurative stage)",
+    "gloss": "step, pace",
+    "pl": "die Schritte",
+    "genS": "des Schrittes / Schritts",
+    "rule": "Einsilbige Maskulina: der Schritt, der Schnitt, der Ritt.",
+    "nvv": [
+      [
+        "Schritt für Schritt",
+        "step by step"
+      ],
+      [
+        "einen wichtigen Schritt machen",
+        "to take an important step"
+      ]
+    ],
+    "compounds": [
+      "der Einzelschritt",
+      "der Fortschritt",
+      "das Schritttempo"
+    ],
+    "family": [
+      "schreiten",
+      "schrittweise"
+    ],
+    "ex": [
+      "Der Kauf der ersten eigenen Eigentumswohnung war ein großer Schritt in ihrem Leben.",
+      "Buying their first own condominium was a big step in their lives."
+    ],
+    "tip": "Sehr beliebte Redewendung: 'Schritt für Schritt' (step by step).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-282"
+    ]
+  },
+  {
+    "id": "a2-d02-051",
+    "pos": "verb",
+    "word": "führen",
+    "lemma": "führen",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈfyːʁən]",
+    "meaning": "to lead, guide, conduct, manage",
+    "gloss": "to lead, guide",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geführt",
+    "partizip2": "geführt",
+    "perfekt": "hat geführt",
+    "praeteritum": "führte",
+    "praesens": "führt",
+    "reflexiv": false,
+    "praes": [
+      "führe",
+      "führst",
+      "führt",
+      "führen",
+      "führt",
+      "führen"
+    ],
+    "prat": [
+      "führte",
+      "führtest",
+      "führte",
+      "führten",
+      "führtet",
+      "führten"
+    ],
+    "imp": [
+      "Führe!",
+      "Führt!",
+      "Führen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Eine schmale Holztreppe führt vom Wohnzimmer hinauf zum Dachboden.",
+        "A narrow wooden staircase leads from the living room up to the attic."
+      ],
+      "prat": [
+        "Der Makler führte die Interessenten durch alle Räume des Hauses.",
+        "The estate agent guided the prospective buyers through all the rooms of the house."
+      ],
+      "perf": [
+        "Die Verhandlungen mit dem Vermieter haben zu einem fairen Mietpreis geführt.",
+        "The negotiations with the landlord led to a fair rental price."
+      ]
+    },
+    "ex": [
+      "Diese Straße führt direkt zum Marktplatz und zum Bahnhof.",
+      "This street leads directly to the marketplace and the station."
+    ],
+    "val": [
+      [
+        "zu + Dat führen",
+        "Wozu?",
+        "Das führt zu Problemen."
+      ],
+      [
+        "durch + Akk führen",
+        "Wodurch?",
+        "Er führt uns durch die Wohnung."
+      ]
+    ],
+    "family": [
+      "der Führer",
+      "die Führung",
+      "die Wohnungsführung"
+    ],
+    "tip": "Vielseitig: räumlich ('die Treppe führt nach oben') und kausal ('das führt zu Streit').",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-283"
+    ]
+  },
+  {
+    "id": "a2-d02-052",
+    "pos": "verb",
+    "word": "verlaufen",
+    "lemma": "verlaufen",
+    "level": "A2",
+    "type": "Verb · unregelmäßig / trennbar-untrennbar",
+    "ipa": "[fɛɐ̯ˈlaʊ̯fn̩]",
+    "meaning": "to proceed, go, run (an event/move); (reflexiv) to get lost on foot",
+    "gloss": "to proceed, run; get lost",
+    "sep": false,
+    "pre": "ver",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "verlaufen",
+    "partizip2": "verlaufen",
+    "perfekt": "ist verlaufen / hat sich verlaufen",
+    "praeteritum": "verlief",
+    "praesens": "verläuft",
+    "reflexiv": "sich (Akk)",
+    "praes": [
+      "verlaufe",
+      "verläufst",
+      "verläuft",
+      "verlaufen",
+      "verlauft",
+      "verlaufen"
+    ],
+    "prat": [
+      "verlief",
+      "verliefst",
+      "verlief",
+      "verliefen",
+      "verlieft",
+      "verliefen"
+    ],
+    "imp": [
+      "Verlauf!",
+      "Verlauft!",
+      "Verlaufen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Der Umzug verläuft bisher absolut nach Plan und ohne Probleme.",
+        "The move is proceeding strictly according to plan and without issues so far."
+      ],
+      "prat": [
+        "Die Wohnungsübergabe verlief sehr freundlich und professionell.",
+        "The apartment handover went very friendly and professionally."
+      ],
+      "perf": [
+        "Alles ist gestern reibungslos und ohne Pannen verlaufen.",
+        "Everything proceeded smoothly and without hitches yesterday."
+      ]
+    },
+    "ex": [
+      "Wie ist dein Umzug ins Studentenwohnheim verlaufen?",
+      "How did your move into the student dorm go?"
+    ],
+    "val": [
+      [
+        "gut / schlecht verlaufen",
+        "Wie?",
+        "Die Verhandlung verlief erfolgreich."
+      ]
+    ],
+    "family": [
+      "der Verlauf",
+      "laufen"
+    ],
+    "tip": "Bei Vorgängen Hilfsverb 'sein' ('Der Tag ist gut verlaufen'). Wenn man sich verirrt: 'Ich habe mich verlaufen' (haben + reflexiv).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-284"
+    ]
+  },
+  {
+    "id": "a2-d02-053",
+    "pos": "noun",
+    "word": "Ruhe",
+    "lemma": "Ruhe",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈʁuːə]",
+    "meaning": "quiet, peace, calm, rest",
+    "gloss": "peace, quiet",
+    "pl": "-",
+    "genS": "der Ruhe",
+    "rule": "Abstrakta auf -e sind meist feminin: die Ruhe, die Nähe, die Kälte.",
+    "nvv": [
+      [
+        "die Ruhe genießen",
+        "to enjoy the peace and quiet"
+      ],
+      [
+        "in Ruhe lassen",
+        "to leave in peace / leave alone"
+      ],
+      [
+        "die Nachtruhe einhalten",
+        "to respect night quiet hours"
+      ]
+    ],
+    "compounds": [
+      "die Nachtruhe",
+      "die Mittagsruhe",
+      "das Ruhekissen"
+    ],
+    "family": [
+      "ruhig",
+      "beruhigen",
+      "ausruhen"
+    ],
+    "ex": [
+      "In deutschen Mietshäusern gilt ab 22 Uhr die gesetzliche Nachtruhe.",
+      "In German apartment buildings, legal night quiet hours apply from 10 p.m."
+    ],
+    "tip": "Deutsches Wohnrecht: Die 'Hausordnung' regelt die 'Nachtruhe' (meist 22 bis 6 Uhr) und die 'Mittagsruhe' (13 bis 15 Uhr)!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-285"
+    ]
+  },
+  {
+    "id": "a2-d02-054",
+    "pos": "verb",
+    "word": "schalten",
+    "lemma": "schalten",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈʃaltn̩]",
+    "meaning": "to switch, change gears, shift",
+    "gloss": "to switch, shift gears",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "geschaltet",
+    "partizip2": "geschaltet",
+    "perfekt": "hat geschaltet",
+    "praeteritum": "schaltete",
+    "praesens": "schaltet",
+    "reflexiv": false,
+    "praes": [
+      "schalte",
+      "schaltest",
+      "schaltet",
+      "schalten",
+      "schaltet",
+      "schalten"
+    ],
+    "prat": [
+      "schaltete",
+      "schaltetest",
+      "schaltete",
+      "schalteten",
+      "schaltetet",
+      "schalteten"
+    ],
+    "imp": [
+      "Schalte!",
+      "Schaltet!",
+      "Schalten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Im Winter schaltet man die Heizung auf Stufe 3.",
+        "In winter you switch the heating to level 3."
+      ],
+      "prat": [
+        "Er schaltete das Licht im Treppenhaus ein.",
+        "He switched on the light in the staircase."
+      ],
+      "perf": [
+        "Wir haben eine Zeitungsanzeige für die Wohnung geschaltet.",
+        "We placed a newspaper ad for the apartment."
+      ]
+    },
+    "ex": [
+      "Schalte bitte die Waschmaschine an, bevor du gehst.",
+      "Please turn on the washing machine before you leave."
+    ],
+    "val": [
+      [
+        "eine Anzeige schalten",
+        "Was?",
+        "Der Vermieter hat eine Anzeige geschaltet."
+      ]
+    ],
+    "family": [
+      "der Schalter",
+      "einschalten",
+      "ausschalten",
+      "umschalten"
+    ],
+    "tip": "Wichtige Redewendung bei Wohnungs- und Jobsuche: 'eine Anzeige schalten' (to run / place an advertisement).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-286"
+    ]
+  },
+  {
+    "id": "a2-d02-055",
+    "pos": "verb",
+    "word": "konzentrieren",
+    "lemma": "sich konzentrieren (auf + Akk)",
+    "level": "A2",
+    "type": "Verb · reflexiv / regelmäßig",
+    "ipa": "[kɔntsɛnˈtʁiːʁən]",
+    "meaning": "to concentrate, focus (on something)",
+    "gloss": "to concentrate, focus",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "konzentriert",
+    "partizip2": "konzentriert",
+    "perfekt": "hat sich konzentriert",
+    "praeteritum": "konzentrierte sich",
+    "praesens": "konzentriert sich",
+    "reflexiv": "sich (Akk)",
+    "praes": [
+      "konzentriere mich",
+      "konzentrierst dich",
+      "konzentriert sich",
+      "konzentrieren uns",
+      "konzentriert euch",
+      "konzentrieren sich"
+    ],
+    "prat": [
+      "konzentrierte mich",
+      "konzentriertest dich",
+      "konzentrierte sich",
+      "konzentrierten uns",
+      "konzentriertet euch",
+      "konzentrierten sich"
+    ],
+    "imp": [
+      "Konzentrier dich!",
+      "Konzentriert euch!",
+      "Konzentrieren Sie sich!"
+    ],
+    "exT": {
+      "praes": [
+        "In der ruhigen Dachwohnung kann ich mich hervorragend auf mein Studium konzentrieren.",
+        "In the quiet top-floor apartment I can concentrate brilliantly on my studies."
+      ],
+      "prat": [
+        "Sie konzentrierte sich voll auf die Klausurvorbereitung.",
+        "She concentrated fully on preparing for the written exam."
+      ],
+      "perf": [
+        "Bei dem Lärm von der Straße konnte ich mich gar nicht konzentrieren.",
+        "With that noise from the street I couldn't concentrate at all."
+      ]
+    },
+    "ex": [
+      "Bitte sei leise, ich muss mich jetzt konzentrieren.",
+      "Please be quiet, I need to concentrate now."
+    ],
+    "val": [
+      [
+        "sich auf + Akk konzentrieren",
+        "Worauf?",
+        "Er konzentriert sich auf die Arbeit."
+      ]
+    ],
+    "family": [
+      "die Konzentration",
+      "konzentriert"
+    ],
+    "tip": "Feste Präposition: 'sich konzentrieren AUF + Akkusativ'. Endung '-ieren' bildet Partizip II ohne 'ge-': konzentriert.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-287"
+    ]
+  },
+  {
+    "id": "a2-d02-056",
+    "pos": "conn",
+    "word": "vorher",
+    "lemma": "vorher",
+    "level": "A2",
+    "type": "Temporales Adverb",
+    "ipa": "[ˈfoːɐ̯ˌheːɐ̯]",
+    "meaning": "before, beforehand, previously",
+    "gloss": "beforehand, beforehand",
+    "cls": "Adverb der Zeit",
+    "orders": [
+      [
+        "Satzanfang mit Inversion",
+        "Vorher + Verb + Subjekt",
+        "Vorher müssen wir noch den Mietvertrag unterschreiben."
+      ],
+      [
+        "Satzmitte",
+        "Subjekt + Verb + vorher",
+        "Bitte rufen Sie vorher an, um einen Termin zu vereinbaren."
+      ]
+    ],
+    "cmp": [
+      {
+        "cls": "vorher",
+        "w": "vorher",
+        "b": "beforehand (adverb, stands alone)",
+        "ex": "Ruf mich vorher an!"
+      },
+      {
+        "cls": "bevor",
+        "w": "bevor",
+        "b": "before (subordinating conjunction with clause)",
+        "ex": "Bevor wir einziehen, streichen wir die Wände."
+      }
+    ],
+    "tip": "Wichtiger Unterschied: 'vorher' ist ein ADVERB (steht allein im Satz: 'Ich habe ihn vorher angerufen'). 'Bevor' leitet einen Nebensatz ein!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-288"
+    ]
+  },
+  {
+    "id": "a2-d02-057",
+    "pos": "adj",
+    "word": "hektisch",
+    "lemma": "hektisch",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈhɛktɪʃ]",
+    "meaning": "hectic, frantic, rushed",
+    "gloss": "hectic, frantic",
+    "comp": [
+      [
+        "Positiv",
+        "hektisch"
+      ],
+      [
+        "Komparativ",
+        "hektischer"
+      ],
+      [
+        "Superlativ",
+        "am hektischsten"
+      ]
+    ],
+    "opp": "ruhig, gelassen, entspannt",
+    "family": [
+      "die Hektik"
+    ],
+    "ex": [
+      "Der Umzugstag war extrem hektisch, weil der Möbelwagen im Stau stand.",
+      "Moving day was extremely hectic because the moving truck got stuck in traffic."
+    ],
+    "tip": "Gegenteil: ruhig oder gelassen. Nomen: 'die Hektik' (der Großstadt).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-290"
+    ]
+  },
+  {
+    "id": "a2-d02-058",
+    "pos": "adj",
+    "word": "deutlich",
+    "lemma": "deutlich",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ˈdɔɪ̯tlɪç]",
+    "meaning": "clear, distinct, plain, obvious; clearly",
+    "gloss": "clear, distinct",
+    "comp": [
+      [
+        "Positiv",
+        "deutlich"
+      ],
+      [
+        "Komparativ",
+        "deutlicher"
+      ],
+      [
+        "Superlativ",
+        "am deutlichsten"
+      ]
+    ],
+    "opp": "undeutlich, vage, leise",
+    "family": [
+      "die Deutlichkeit",
+      "deuten",
+      "verdeutlichen"
+    ],
+    "ex": [
+      "Sprechen Sie bitte etwas lauter und deutlicher am Telefon.",
+      "Please speak a bit louder and more clearly on the phone."
+    ],
+    "tip": "Oft als Verstärkungswort: 'deutlich teurer' (significantly more expensive), 'deutlich besser' (significantly better).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-291"
+    ]
+  },
+  {
+    "id": "a2-d02-059",
+    "pos": "noun",
+    "word": "Durchwahl",
+    "lemma": "Durchwahl",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈdʊʁçˌvaːl]",
+    "meaning": "direct extension, direct dial telephone number",
+    "gloss": "direct phone extension",
+    "pl": "die Durchwahlen",
+    "genS": "der Durchwahl",
+    "rule": "Zusammensetzung mit Wahl (die Wahl): feminin.",
+    "nvv": [
+      [
+        "eine Durchwahl angeben",
+        "to give a direct extension"
+      ],
+      [
+        "über die Durchwahl erreichen",
+        "to reach via direct line"
+      ]
+    ],
+    "compounds": [
+      "die Telefonnummer",
+      "die Vorwahl"
+    ],
+    "family": [
+      "wählen",
+      "durchwählen"
+    ],
+    "ex": [
+      "Sie können die Hausverwaltung unter der Telefonnummer 089 12345 mit der Durchwahl -22 direkt erreichen.",
+      "You can reach property management directly at 089 12345 with the direct extension -22."
+    ],
+    "tip": "Telefonieren auf Deutsch: Vorwahl (area code) → Rufnummer (main number) → Durchwahl (extension).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-292"
+    ]
+  },
+  {
+    "id": "a2-d02-060",
+    "pos": "noun",
+    "word": "Schreibtisch",
+    "lemma": "Schreibtisch",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈʃʁaɪ̯pˌtɪʃ]",
+    "meaning": "desk, writing desk",
+    "gloss": "desk",
+    "pl": "die Schreibtische",
+    "genS": "des Schreibtischs / Schreibtisches",
+    "rule": "Zusammensetzung mit Tisch (der Tisch): immer maskulin.",
+    "nvv": [
+      [
+        "am Schreibtisch sitzen und arbeiten",
+        "to sit and work at the desk"
+      ],
+      [
+        "den Schreibtisch aufräumen",
+        "to tidy up the desk"
+      ]
+    ],
+    "compounds": [
+      "die Schreibtischlampe",
+      "der Schreibtischstuhl",
+      "die Schreibtischunterlage"
+    ],
+    "family": [
+      "schreiben",
+      "der Tisch"
+    ],
+    "ex": [
+      "Mein neuer Schreibtisch steht direkt am Fenster, sodass ich viel Tageslicht beim Lernen habe.",
+      "My new desk stands directly at the window so that I have plenty of daylight while studying."
+    ],
+    "tip": "Präposition: 'am Schreibtisch sitzen' (sit at the desk - Dativ).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-294"
+    ]
+  },
+  {
+    "id": "a2-d02-061",
+    "pos": "verb",
+    "word": "ausrichten",
+    "lemma": "ausrichten",
+    "level": "A2",
+    "type": "Verb · trennbar / regelmäßig",
+    "ipa": "[ˈaʊ̯sˌʁɪçtn̩]",
+    "meaning": "to pass on (a message/greetings); to align, organize",
+    "gloss": "to pass on a message",
+    "sep": true,
+    "pre": "aus",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "ausgerichtet",
+    "partizip2": "ausgerichtet",
+    "perfekt": "hat ausgerichtet",
+    "praeteritum": "richtete aus",
+    "praesens": "richtet aus",
+    "reflexiv": false,
+    "praes": [
+      "richte aus",
+      "richtest aus",
+      "richtet aus",
+      "richten aus",
+      "richtet aus",
+      "richten aus"
+    ],
+    "prat": [
+      "richtete aus",
+      "richtetest aus",
+      "richtete aus",
+      "richteten aus",
+      "richtetet aus",
+      "richteten aus"
+    ],
+    "imp": [
+      "Richte aus!",
+      "Richtet aus!",
+      "Richten Sie aus!"
+    ],
+    "exT": {
+      "praes": [
+        "Kann ich Herrn Müller etwas von Ihnen ausrichten?",
+        "Can I pass on a message to Mr. Müller from you?"
+      ],
+      "prat": [
+        "Sie richtete der Vermieterin die Bitte um Reparatur aus.",
+        "She passed on the repair request to the landlady."
+      ],
+      "perf": [
+        "Ich habe ihm deine herzlichen Grüße ausgerichtet.",
+        "I passed on your warm regards to him."
+      ]
+    },
+    "ex": [
+      "Kann ich ihr etwas ausrichten, wenn sie zurückkommt?",
+      "Can I take a message for her when she gets back?"
+    ],
+    "val": [
+      [
+        "jemandem (Dat) etwas (Akk) ausrichten",
+        "Wem? Was?",
+        "Richte ihr schöne Grüße aus!"
+      ]
+    ],
+    "family": [
+      "die Ausrichtung",
+      "richten",
+      "nachrichten"
+    ],
+    "tip": "Standard-Floskel am Telefon: 'Kann ich ihm etwas ausrichten?' (Can I take a message?). 'Schöne Grüße ausrichten' = give someone regards.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-295"
+    ]
+  },
+  {
+    "id": "a2-d02-062",
+    "pos": "verb",
+    "word": "hinterlassen",
+    "lemma": "hinterlassen",
+    "level": "A2",
+    "type": "Verb · untrennbar / unregelmäßig",
+    "ipa": "[ˌhɪntɐˈlasn̩]",
+    "meaning": "to leave behind (a message, an impression, an inheritance)",
+    "gloss": "to leave (a message/trace)",
+    "sep": false,
+    "pre": "hinter",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "hinterlassen",
+    "partizip2": "hinterlassen",
+    "perfekt": "hat hinterlassen",
+    "praeteritum": "hinterließ",
+    "praesens": "hinterlässt",
+    "reflexiv": false,
+    "praes": [
+      "hinterlasse",
+      "hinterlässt",
+      "hinterlässt",
+      "hinterlassen",
+      "hinterlasst",
+      "hinterlassen"
+    ],
+    "prat": [
+      "hinterließ",
+      "hinterließest",
+      "hinterließ",
+      "hinterließen",
+      "hinterließt",
+      "hinterließen"
+    ],
+    "imp": [
+      "Hinterlass!",
+      "Hinterlasst!",
+      "Hinterlassen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Möchten Sie eine Nachricht auf dem Anrufbeantworter hinterlassen?",
+        "Would you like to leave a message on the answering machine?"
+      ],
+      "prat": [
+        "Der Vormieter hinterließ die Wohnung in einem tadellosen Zustand.",
+        "The previous tenant left the apartment behind in immaculate condition."
+      ],
+      "perf": [
+        "Der Handwerker hat seine Telefonnummer auf dem Küchentisch hinterlassen.",
+        "The tradesman left his phone number behind on the kitchen table."
+      ]
+    },
+    "ex": [
+      "Hinterlassen Sie bitte Ihren Namen und Ihre Telefonnummer nach dem Signalton.",
+      "Please leave your name and telephone number after the beep."
+    ],
+    "val": [
+      [
+        "jemandem eine Nachricht hinterlassen",
+        "Wem? Was?",
+        "Ich habe ihr eine Nachricht hinterlassen."
+      ]
+    ],
+    "family": [
+      "lassen",
+      "das Erbe"
+    ],
+    "tip": "Untrennbar! Partizip II ohne 'ge-': hat hinterlassen (nicht hintergelassen). Häufig: 'eine Nachricht hinterlassen'.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-296"
+    ]
+  },
+  {
+    "id": "a2-d02-063",
+    "pos": "verb",
+    "word": "wissen",
+    "lemma": "wissen",
+    "level": "A2",
+    "type": "Präteritopräsens / unregelmäßig",
+    "ipa": "[ˈvɪsn̩]",
+    "meaning": "to know (a fact, information)",
+    "gloss": "to know (facts)",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gewusst",
+    "partizip2": "gewusst",
+    "perfekt": "hat gewusst",
+    "praeteritum": "wusste",
+    "praesens": "weiß",
+    "reflexiv": false,
+    "praes": [
+      "weiß",
+      "weißt",
+      "weiß",
+      "wissen",
+      "wisst",
+      "wissen"
+    ],
+    "prat": [
+      "wusste",
+      "wusstest",
+      "wusste",
+      "wussten",
+      "wusstet",
+      "wussten"
+    ],
+    "imp": [
+      "Wisse!",
+      "Wisst!",
+      "Wissen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Weißt du, wann heute die Müllabfuhr kommt?",
+        "Do you know when the garbage collection is coming today?"
+      ],
+      "prat": [
+        "Ich wusste gar nicht, dass die Nachbarn eine Katze haben.",
+        "I didn't know at all that the neighbors have a cat."
+      ],
+      "perf": [
+        "Das haben wir leider vorher nicht gewusst.",
+        "Unfortunately, we didn't know that beforehand."
+      ]
+    },
+    "ex": [
+      "Ich weiß nicht, wo der Schlüssel für den Fahrradkeller ist.",
+      "I don't know where the key to the bicycle cellar is."
+    ],
+    "val": [
+      [
+        "etwas (Akk) wissen",
+        "Was?",
+        "Ich weiß die Antwort."
+      ],
+      [
+        "von / über + Dat wissen",
+        "Worüber?",
+        "Weißt du etwas über den neuen Nachbarn?"
+      ]
+    ],
+    "family": [
+      "das Wissen",
+      "die Wissenschaft",
+      "gewiss"
+    ],
+    "tip": "Nicht mit 'kennen' verwechseln! 'Wissen' = Fakten/Informationen ('Ich weiß, dass...'). 'Kennen' = Personen, Orte, Dinge kennen ('Ich kenne den Vermieter').",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-298"
+    ]
+  },
+  {
+    "id": "a2-d02-064",
+    "pos": "noun",
+    "word": "Fähigkeit",
+    "lemma": "Fähigkeit",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈfɛːɪçkaɪ̯t]",
+    "meaning": "ability, skill, capability, talent",
+    "gloss": "ability, skill",
+    "pl": "die Fähigkeiten",
+    "genS": "der Fähigkeit",
+    "rule": "Endung -keit: immer zu 100 % feminin (die Fähigkeit).",
+    "nvv": [
+      [
+        "seine Fähigkeiten einsetzen",
+        "to put one's skills to use"
+      ],
+      [
+        "praktische Fähigkeiten besitzen",
+        "to possess practical abilities"
+      ]
+    ],
+    "compounds": [
+      "die Sprachfähigkeit",
+      "die Teamfähigkeit",
+      "die handwerklichen Fähigkeiten"
+    ],
+    "family": [
+      "fähig",
+      "befähigen",
+      "die Befähigung"
+    ],
+    "ex": [
+      "Handwerkliche Fähigkeiten sind bei einer Wohnungsrenovierung Gold wert.",
+      "Handy skills are worth their weight in gold during an apartment renovation."
+    ],
+    "tip": "Wichtiger Begriff für Bewerbungen und Alltag: 'die Sprachfähigkeiten', 'die Computerfähigkeiten'. Endung '-keit' = immer die!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-299"
+    ]
+  },
+  {
+    "id": "a2-d02-065",
+    "pos": "adj",
+    "word": "erreichbar",
+    "lemma": "erreichbar",
+    "level": "A2",
+    "type": "Adjektiv",
+    "ipa": "[ɛɐ̯ˈʁaɪ̯çbaːɐ̯]",
+    "meaning": "reachable, accessible, available by phone",
+    "gloss": "reachable, available",
+    "comp": [
+      [
+        "Positiv",
+        "erreichbar"
+      ],
+      [
+        "Komparativ",
+        "leichter erreichbar"
+      ],
+      [
+        "Superlativ",
+        "am leichtesten erreichbar"
+      ]
+    ],
+    "opp": "unerreichbar, besetzt",
+    "family": [
+      "erreichen",
+      "die Erreichbarkeit"
+    ],
+    "ex": [
+      "Der Hausmeister ist montags bis freitags von 8 bis 12 Uhr telefonisch erreichbar.",
+      "The caretaker is reachable by telephone Monday to Friday from 8 to 12."
+    ],
+    "tip": "Suffix '-bar' = machbar (able to be reached). Häufig am Telefon: 'Er ist gerade nicht erreichbar.'",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-300"
+    ]
+  },
+  {
+    "id": "a2-d02-066",
+    "pos": "adj",
+    "word": "seltener",
+    "lemma": "selten",
+    "level": "A2",
+    "type": "Adjektiv (Komparativ) / Adverb",
+    "ipa": "[ˈzɛltn̩ / ˈzɛltnɐ]",
+    "meaning": "rarer, less often, seldom",
+    "gloss": "rare, seldom",
+    "comp": [
+      [
+        "Positiv",
+        "selten"
+      ],
+      [
+        "Komparativ",
+        "seltener"
+      ],
+      [
+        "Superlativ",
+        "am seltensten"
+      ]
+    ],
+    "opp": "häufig, oft, gewöhnlich",
+    "family": [
+      "die Seltenheit"
+    ],
+    "ex": [
+      "Günstige Vierzimmerwohnungen im Stadtzentrum werden immer seltener.",
+      "Affordable four-room apartments in the city center are becoming increasingly rare."
+    ],
+    "tip": "Komparativ von selten: 'seltener' (less frequent). Gegenteil: häufiger / öfter.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-301"
+    ]
+  },
+  {
+    "id": "a2-d02-067",
+    "pos": "noun",
+    "word": "Vernetzung",
+    "lemma": "Vernetzung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[fɛɐ̯ˈnɛtsʊŋ]",
+    "meaning": "networking, interconnectivity, interconnection",
+    "gloss": "networking",
+    "pl": "die Vernetzungen",
+    "genS": "der Vernetzung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Vernetzung).",
+    "nvv": [
+      [
+        "eine gute Vernetzung in der Nachbarschaft haben",
+        "to have good networking in the neighborhood"
+      ]
+    ],
+    "compounds": [
+      "die Internetvernetzung",
+      "die Nachbarschaftsvernetzung"
+    ],
+    "family": [
+      "vernetzen",
+      "das Netz"
+    ],
+    "ex": [
+      "Durch die digitale Vernetzung im Haus können sich Nachbarn leicht gegenseitig helfen.",
+      "Through digital networking in the building, neighbors can easily help each other."
+    ],
+    "tip": "Kommt von 'das Netz' (network/web). Endung '-ung' = feminin.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-303"
+    ]
+  },
+  {
+    "id": "a2-d02-068",
+    "pos": "verb",
+    "word": "betreuen",
+    "lemma": "betreuen",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[bəˈtʁɔɪ̯ən]",
+    "meaning": "to look after, care for, supervise, manage (clients/children/buildings)",
+    "gloss": "to look after, care for",
+    "sep": false,
+    "pre": "be",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "betreut",
+    "partizip2": "betreut",
+    "perfekt": "hat betreut",
+    "praeteritum": "betreute",
+    "praesens": "betreut",
+    "reflexiv": false,
+    "praes": [
+      "betreue",
+      "betreust",
+      "betreut",
+      "betreuen",
+      "betreut",
+      "betreuen"
+    ],
+    "prat": [
+      "betreute",
+      "betreutest",
+      "betreute",
+      "betreuten",
+      "betreutet",
+      "betreuten"
+    ],
+    "imp": [
+      "Betreue!",
+      "Betreut!",
+      "Betreuen Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Unsere Hausverwaltung betreut mehr als dreißig Wohngebäude in der Stadt.",
+        "Our property management looks after more than thirty residential buildings in the city."
+      ],
+      "prat": [
+        "Während des Urlaubs der Nachbarn betreute sie deren Katzen und Blumen.",
+        "During the neighbors' vacation, she looked after their cats and plants."
+      ],
+      "perf": [
+        "Wer hat während der Konferenz die Kinder betreut?",
+        "Who looked after the children during the conference?"
+      ]
+    },
+    "ex": [
+      "Die Erzieherinnen betreuen die Kleinkinder liebevoll in der Kita.",
+      "The kindergarten teachers lovingly care for the toddlers at daycare."
+    ],
+    "val": [
+      [
+        "jemanden / etwas (Akk) betreuen",
+        "Wen?",
+        "Sie betreut ältere Menschen."
+      ]
+    ],
+    "family": [
+      "die Betreuung",
+      "der Betreuer",
+      "das Betreute Wohnen"
+    ],
+    "tip": "Wichtiger Begriff im Alltag: 'das Betreute Wohnen' (assisted living) und 'die Kinderbetreuung' (childcare).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-304"
+    ]
+  },
+  {
+    "id": "a2-d02-069",
+    "pos": "noun",
+    "word": "Vertrag",
+    "lemma": "Vertrag",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[fɛɐ̯ˈtʁaːk]",
+    "meaning": "contract, agreement, lease",
+    "gloss": "contract, agreement",
+    "pl": "die Verträge",
+    "genS": "des Vertrags / Vertrages",
+    "rule": "Stammform von vertragen: maskulin (der Vertrag, der Betrag, der Antrag).",
+    "nvv": [
+      [
+        "einen Vertrag unterschreiben / kündigen",
+        "to sign / terminate a contract"
+      ],
+      [
+        "einen Vertrag abschließen",
+        "to conclude a contract"
+      ]
+    ],
+    "compounds": [
+      "der Mietvertrag",
+      "der Arbeitsvertrag",
+      "der Kaufvertrag",
+      "der Handyvertrag"
+    ],
+    "family": [
+      "vertraglich",
+      "vertragen"
+    ],
+    "ex": [
+      "Vor dem Einzug müssen beide Parteien den Mietvertrag sorgfältig durchlesen und unterschreiben.",
+      "Before moving in, both parties must carefully read through and sign the lease."
+    ],
+    "tip": "Wichtigstes juristisches A2-Wort: der Mietvertrag (lease). Plural mit Umlaut: die Verträge.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-305"
+    ]
+  },
+  {
+    "id": "a2-d02-070",
+    "pos": "verb",
+    "word": "gestalten",
+    "lemma": "gestalten",
+    "level": "A2",
+    "type": "Verb · untrennbar / regelmäßig",
+    "ipa": "[ɡəˈʃtaltn̩]",
+    "meaning": "to design, shape, decorate, arrange (a room, garden, or life)",
+    "gloss": "to design, shape",
+    "sep": false,
+    "pre": "ge",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gestaltet",
+    "partizip2": "gestaltet",
+    "perfekt": "hat gestaltet",
+    "praeteritum": "gestaltete",
+    "praesens": "gestaltet",
+    "reflexiv": false,
+    "praes": [
+      "gestalte",
+      "gestaltest",
+      "gestaltet",
+      "gestalten",
+      "gestaltet",
+      "gestalten"
+    ],
+    "prat": [
+      "gestaltete",
+      "gestaltetest",
+      "gestaltete",
+      "gestalteten",
+      "gestaltetet",
+      "gestalteten"
+    ],
+    "imp": [
+      "Gestalte!",
+      "Gestaltet!",
+      "Gestalten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Sie gestaltet das Wohnzimmer mit warmen Farben und modernen Bildern sehr gemütlich.",
+        "She designs the living room very cozily with warm colors and modern paintings."
+      ],
+      "prat": [
+        "Die Innenarchitektin gestaltete die Räume nach den Wünschen der Mieter.",
+        "The interior designer arranged the rooms according to the tenants' wishes."
+      ],
+      "perf": [
+        "Wir haben den kleinen Garten mit einer Sitzecke und Rosen neu gestaltet.",
+        "We redesigned the little garden with a seating area and roses."
+      ]
+    },
+    "ex": [
+      "Wie möchten Sie Ihr neues Arbeitszimmer gestalten?",
+      "How would you like to design your new home office?"
+    ],
+    "val": [
+      [
+        "etwas (Akk) gestalten",
+        "Was?",
+        "Sie gestalten ihren Balkon neu."
+      ]
+    ],
+    "family": [
+      "die Gestaltung",
+      "die Gestalt",
+      "die Innengestaltung"
+    ],
+    "tip": "Sehr beliebt beim Einrichten von Wohnungen: 'den Raum gestalten' (to decorate/furnish a space).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-310"
+    ]
+  },
+  {
+    "id": "a2-d02-071",
+    "pos": "adj",
+    "word": "freiwillig",
+    "lemma": "freiwillig",
+    "level": "A2",
+    "type": "Adjektiv / Adverb",
+    "ipa": "[ˈfʁaɪ̯ˌvɪlɪç]",
+    "meaning": "voluntary, optional; voluntarily",
+    "gloss": "voluntary, voluntarily",
+    "comp": [
+      [
+        "Positiv",
+        "freiwillig"
+      ],
+      [
+        "Komparativ",
+        "-"
+      ],
+      [
+        "Superlativ",
+        "-"
+      ]
+    ],
+    "opp": "obligatorisch, verpflichtend, gezwungen",
+    "family": [
+      "der Wille",
+      "die Freiwilligkeit",
+      "der Freiwillige"
+    ],
+    "ex": [
+      "In unserer Hausgemeinschaft helfen viele Nachbarn freiwillig bei der Pflege des Gartens.",
+      "In our apartment community, many neighbors volunteer freely to help care for the garden."
+    ],
+    "tip": "Wichtige Institution in Deutschland: 'die Freiwillige Feuerwehr' (volunteer fire department).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-311"
+    ]
+  },
+  {
+    "id": "a2-d02-072",
+    "pos": "noun",
+    "word": "Männer",
+    "lemma": "Mann",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[man / ˈmɛnɐ]",
+    "meaning": "man, husband (Plural: men)",
+    "gloss": "men (pl. of man)",
+    "pl": "die Männer",
+    "genS": "des Mannes",
+    "rule": "Plural mit Umlaut und -er: der Mann → die Männer (wie das Kind → die Kinder).",
+    "nvv": [
+      [
+        "Männer und Frauen",
+        "men and women"
+      ]
+    ],
+    "compounds": [
+      "der Ehemann",
+      "der Geschäftsmann",
+      "der Nachbarmann"
+    ],
+    "family": [
+      "männlich",
+      "die Männlichkeit"
+    ],
+    "ex": [
+      "Zwei kräftige Männer vom Umzugsunternehmen trugen das schwere Klavier in den dritten Stock.",
+      "Two strong men from the moving company carried the heavy piano to the third floor."
+    ],
+    "tip": "Plural: die Männer. Als Ehepartner: 'mein Mann' = my husband. Nicht verwechseln mit dem Indefinitpronomen 'man' (kleingeschrieben: one/people)!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-313"
+    ]
+  },
+  {
+    "id": "a2-d02-073",
+    "pos": "noun",
+    "word": "Betreuungsplatz",
+    "lemma": "Betreuungsplatz",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[bəˈtʁɔɪ̯ʊŋsˌplats]",
+    "meaning": "childcare spot, daycare slot, nursery place",
+    "gloss": "daycare / childcare spot",
+    "pl": "die Betreuungsplätze",
+    "genS": "des Betreuungsplatzes",
+    "rule": "Zusammensetzung mit Platz (der Platz): maskulin.",
+    "nvv": [
+      [
+        "einen Betreuungsplatz für das Kind beantragen / finden",
+        "to apply for / find a daycare spot for the child"
+      ]
+    ],
+    "compounds": [
+      "der Kita-Platz",
+      "der Kindergartenplatz"
+    ],
+    "family": [
+      "betreuen",
+      "die Betreuung",
+      "der Platz"
+    ],
+    "ex": [
+      "Familien suchen in Großstädten oft monatelang nach einem freien Betreuungsplatz in der Nähe ihrer Wohnung.",
+      "Families in large cities often search for months for an available daycare slot near their apartment."
+    ],
+    "tip": "Wichtiges Alltagsthema bei jungen Familien in Deutschland. Plural mit Umlaut: die Betreuungsplätze.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      5
+    ],
+    "sourceRawIds": [
+      "RAW-315"
+    ]
+  },
+  {
+    "id": "a2-d02-074",
+    "pos": "noun",
+    "word": "Autovermietung",
+    "lemma": "Autovermietung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈaʊ̯to fɛɐ̯ˌmiːtʊŋ]",
+    "meaning": "car rental agency / company",
+    "gloss": "car rental agency",
+    "pl": "die Autovermietungen",
+    "genS": "der Autovermietung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Vermietung).",
+    "nvv": [
+      [
+        "einen Transporter bei der Autovermietung abholen",
+        "to pick up a van at the car rental agency"
+      ]
+    ],
+    "compounds": [
+      "die Autoverleihstation",
+      "der Mietwagen"
+    ],
+    "family": [
+      "das Auto",
+      "vermieten",
+      "die Miete"
+    ],
+    "ex": [
+      "Für das Umzugswochenende haben wir einen geräumigen Transporter bei der Autovermietung gebucht.",
+      "For the moving weekend we booked a spacious van at the car rental agency."
+    ],
+    "tip": "Wichtige Anbieter in Deutschland: Sixt, Europcar, Avis, Hertz. Endung '-ung' ist immer die!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-364"
+    ]
+  },
+  {
+    "id": "a2-d02-075",
+    "pos": "verb",
+    "word": "mieten",
+    "lemma": "mieten",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈmiːtn̩]",
+    "meaning": "to rent, hire, lease (as a tenant)",
+    "gloss": "to rent, hire",
+    "sep": false,
+    "pre": "",
+    "aux": "haben",
+    "hilfsverb": "haben",
+    "p2": "gemietet",
+    "partizip2": "gemietet",
+    "perfekt": "hat gemietet",
+    "praeteritum": "mietete",
+    "praesens": "mietet",
+    "reflexiv": false,
+    "praes": [
+      "miete",
+      "mietest",
+      "mietet",
+      "mieten",
+      "mietet",
+      "mieten"
+    ],
+    "prat": [
+      "mietete",
+      "mietetest",
+      "mietete",
+      "mieteten",
+      "mietetet",
+      "mieteten"
+    ],
+    "imp": [
+      "Miete!",
+      "Mietet!",
+      "Mieten Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Sie mietet eine helle Zweizimmerwohnung mit Südbalkon.",
+        "She rents a bright two-room apartment with a south-facing balcony."
+      ],
+      "prat": [
+        "Für unseren Urlaub mieteten wir ein gemütliches Ferienhaus an der Nordsee.",
+        "For our vacation we rented a cozy holiday home by the North Sea."
+      ],
+      "perf": [
+        "Wir haben für den Umzug einen großen Transporter gemietet.",
+        "We rented a large van for the move."
+      ]
+    },
+    "ex": [
+      "Möchten Sie eine Wohnung mieten oder kaufen?",
+      "Would you like to rent or buy an apartment?"
+    ],
+    "val": [
+      [
+        "eine Wohnung / ein Auto (Akk) mieten",
+        "Was?",
+        "Ich miete eine Wohnung."
+      ]
+    ],
+    "family": [
+      "die Miete",
+      "der Mieter",
+      "vermieten",
+      "der Mietvertrag"
+    ],
+    "tip": "Gegensatzpaar: 'mieten' (der Mieter nimmt die Wohnung und zahlt Geld) vs. 'vermieten' (der Vermieter besitzt die Wohnung und bekommt Geld).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      6
+    ],
+    "sourceRawIds": [
+      "RAW-374"
+    ]
+  },
+  {
+    "id": "a2-d02-076",
+    "pos": "noun",
+    "word": "Schneeschuhwandern",
+    "lemma": "Schneeschuhwandern",
+    "art": "das",
+    "level": "A2",
+    "type": "Substantivierter Infinitiv · Neutrum",
+    "ipa": "[ˈʃneːʃuːˌvandɐn]",
+    "meaning": "snowshoe hiking, snowshoeing",
+    "gloss": "snowshoe hiking",
+    "pl": "-",
+    "genS": "des Schneeschuhwanderns",
+    "rule": "Substantivierte Infinitive sind immer zu 100 % Neutrum: das Wandern, das Schneeschuhwandern, das Schwimmen.",
+    "nvv": [
+      [
+        "zum Schneeschuhwandern in die Berge fahren",
+        "to go snowshoeing in the mountains"
+      ]
+    ],
+    "compounds": [
+      "die Schneeschuhe",
+      "die Winterwanderung"
+    ],
+    "family": [
+      "wandern",
+      "der Schuh",
+      "der Schnee"
+    ],
+    "ex": [
+      "Im Winterurlaub in den Alpen ist Schneeschuhwandern eine wunderschöne Sportart abseits der Piste.",
+      "On winter vacation in the Alps, snowshoe hiking is a wonderful sport away from the ski slopes."
+    ],
+    "tip": "Substantiviertes Verb = das Schneeschuhwandern (Neutrum, kein Plural).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      8
+    ],
+    "sourceRawIds": [
+      "RAW-457"
+    ]
+  },
+  {
+    "id": "a2-d02-077",
+    "pos": "verb",
+    "word": "wandern",
+    "lemma": "wandern",
+    "level": "A2",
+    "type": "Verb · regelmäßig",
+    "ipa": "[ˈvandɐn]",
+    "meaning": "to hike, trek, ramble",
+    "gloss": "to hike",
+    "sep": false,
+    "pre": "",
+    "aux": "sein",
+    "hilfsverb": "sein",
+    "p2": "gewandert",
+    "partizip2": "gewandert",
+    "perfekt": "ist gewandert",
+    "praeteritum": "wanderte",
+    "praesens": "wandert",
+    "reflexiv": false,
+    "praes": [
+      "wandere",
+      "wanderst",
+      "wandert",
+      "wandern",
+      "wandert",
+      "wandern"
+    ],
+    "prat": [
+      "wanderte",
+      "wandertest",
+      "wanderte",
+      "wanderten",
+      "wandertet",
+      "wanderten"
+    ],
+    "imp": [
+      "Wandere!",
+      "Wandert!",
+      "Wandern Sie!"
+    ],
+    "exT": {
+      "praes": [
+        "Am Wochenende wandern viele Familien im Schwarzwald.",
+        "At the weekend many families hike in the Black Forest."
+      ],
+      "prat": [
+        "Sie wanderten fünf Stunden lang bis zur Berghütte.",
+        "They hiked for five hours to the mountain cabin."
+      ],
+      "perf": [
+        "Wir sind gestern rund um den ganzen See gewandert.",
+        "We hiked around the entire lake yesterday."
+      ]
+    },
+    "ex": [
+      "Gehst du am Sonntag mit uns wandern?",
+      "Are you coming hiking with us on Sunday?"
+    ],
+    "val": [
+      [
+        "in den Bergen / durch den Wald wandern",
+        "Wo?",
+        "Wir wandern durch den Wald."
+      ]
+    ],
+    "family": [
+      "die Wanderung",
+      "der Wanderer",
+      "die Wanderschuhe",
+      "der Wanderweg"
+    ],
+    "tip": "Ortsveränderung → Hilfsverb 'sein' im Perfekt: 'ist gewandert'! Deutsche Kultur: Wandern ist Nationalsport.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      8
+    ],
+    "sourceRawIds": [
+      "RAW-484"
+    ]
+  },
+  {
+    "id": "a2-d02-078",
+    "pos": "noun",
+    "word": "Hochseilgarten",
+    "lemma": "Hochseilgarten",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈhoːxzaɪ̯lˌɡaʁtn̩]",
+    "meaning": "high ropes course, aerial adventure park, ropes park",
+    "gloss": "high ropes course",
+    "pl": "die Hochseilgärten",
+    "genS": "des Hochseilgartens",
+    "rule": "Zusammensetzung mit Garten (der Garten): immer maskulin.",
+    "nvv": [
+      [
+        "im Hochseilgarten klettern",
+        "to climb in the high ropes course"
+      ]
+    ],
+    "compounds": [
+      "der Kletterwald",
+      "der Kletterpark"
+    ],
+    "family": [
+      "das Seil",
+      "hoch",
+      "der Garten",
+      "klettern"
+    ],
+    "ex": [
+      "Beim Ausflug in den Hochseilgarten kletterten die Jugendlichen in zehn Metern Höhe zwischen den Bäumen.",
+      "On the outing to the high ropes course, the teenagers climbed ten meters high between the trees."
+    ],
+    "tip": "Plural mit Umlaut: die Hochseilgärten. Wichtig für Outdoor-Aktivitäten.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      8
+    ],
+    "sourceRawIds": [
+      "RAW-485"
+    ]
+  },
+  {
+    "id": "a2-d02-079",
+    "pos": "noun",
+    "word": "wasserdichte Dose",
+    "lemma": "wasserdichte Dose",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈvasɐˌdɪçtə ˈdoːzə]",
+    "meaning": "waterproof container, watertight tin / box (essential in geocaching and outdoor storage)",
+    "gloss": "waterproof container / tin",
+    "pl": "die wasserdichten Dosen",
+    "genS": "der wasserdichten Dose",
+    "rule": "Zusammensetzung mit Dose (die Dose): feminin.",
+    "nvv": [
+      [
+        "einen Geocache in einer wasserdichten Dose verstecken",
+        "to hide a geocache in a waterproof container"
+      ]
+    ],
+    "compounds": [
+      "die Tupperdose",
+      "die Blechdose",
+      "die Vorratsdose"
+    ],
+    "family": [
+      "das Wasser",
+      "dicht",
+      "die Dose"
+    ],
+    "ex": [
+      "Beim Geocaching sucht man mit dem GPS-Gerät nach einer wasserdichten Dose im Wald.",
+      "In geocaching, one searches for a waterproof container in the forest using a GPS device."
+    ],
+    "tip": "Kapitelvokabel aus Lektion 8 (Freizeit & Geocaching). Dose = container/can.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      8
+    ],
+    "sourceRawIds": [
+      "RAW-500"
+    ]
+  },
+  {
+    "id": "a2-d02-080",
+    "pos": "noun",
+    "word": "Naturwanderung",
+    "lemma": "Naturwanderung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[naˈtuːɐ̯ˌvandəʁʊŋ]",
+    "meaning": "nature walk, guided nature hike",
+    "gloss": "nature hike",
+    "pl": "die Naturwanderungen",
+    "genS": "der Naturwanderung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Wanderung).",
+    "nvv": [
+      [
+        "an einer geführten Naturwanderung teilnehmen",
+        "to take part in a guided nature hike"
+      ]
+    ],
+    "compounds": [
+      "der Naturpark",
+      "der Naturlehrpfad"
+    ],
+    "family": [
+      "die Natur",
+      "wandern",
+      "die Wanderung"
+    ],
+    "ex": [
+      "Der Nationalpark bietet sonntags geführte Naturwanderungen für die ganze Familie an.",
+      "The national park offers guided nature hikes for the whole family on Sundays."
+    ],
+    "tip": "Zusammengesetzt: die Natur + die Wanderung. Plural: die Naturwanderungen.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      8
+    ],
+    "sourceRawIds": [
+      "RAW-515"
+    ]
+  },
+  {
+    "id": "a2-d02-081",
+    "pos": "noun",
+    "word": "Einwohner",
+    "lemma": "Einwohner",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈaɪ̯nˌvoːnɐ]",
+    "meaning": "inhabitant, resident, citizen (of a city/country)",
+    "gloss": "inhabitant, resident",
+    "pl": "die Einwohner",
+    "genS": "des Einwohners",
+    "rule": "Agens-Nomen auf -er: immer maskulin (der Einwohner). Weiblich: die Einwohnerin.",
+    "nvv": [
+      [
+        "eine Million Einwohner zählen",
+        "to count one million inhabitants"
+      ],
+      [
+        "die Einwohner der Stadt",
+        "the inhabitants of the city"
+      ]
+    ],
+    "compounds": [
+      "die Einwohnerzahl",
+      "das Einwohnermeldeamt",
+      "die Einwohnerin"
+    ],
+    "family": [
+      "wohnen",
+      "einwohnen"
+    ],
+    "ex": [
+      "Berlin ist mit über 3,7 Millionen Einwohnern die bevölkerungsreichste Stadt Deutschlands.",
+      "With over 3.7 million inhabitants, Berlin is the most populous city in Germany."
+    ],
+    "tip": "Wichtiges Amt in Deutschland: 'das Einwohnermeldeamt' (Bürgeramt), wo sich jeder Einwohner anmelden muss.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-521"
+    ]
+  },
+  {
+    "id": "a2-d02-082",
+    "pos": "noun",
+    "word": "Hausboot",
+    "lemma": "Hausboot",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ˈhaʊ̯sˌboːt]",
+    "meaning": "houseboat, floating home",
+    "gloss": "houseboat",
+    "pl": "die Hausboote",
+    "genS": "des Hausboots / Hausbootes",
+    "rule": "Zusammensetzung mit Boot (das Boot): immer Neutrum.",
+    "nvv": [
+      [
+        "auf einem Hausboot leben / wohnen",
+        "to live on a houseboat"
+      ],
+      [
+        "ein Hausboot für den Sommer mieten",
+        "to rent a houseboat for the summer"
+      ]
+    ],
+    "compounds": [
+      "der Hausbooturlaub",
+      "die Bootsanlegestelle"
+    ],
+    "family": [
+      "das Haus",
+      "das Boot"
+    ],
+    "ex": [
+      "In Amsterdam und Hamburg wohnen viele Menschen dauerhaft auf einem gemütlichen Hausboot auf dem Wasser.",
+      "In Amsterdam and Hamburg, many people live permanently on a cozy houseboat on the water."
+    ],
+    "tip": "Thema 'Besondere Wohnformen' in Lektion 9. Neutrum: das Hausboot. Plural: die Hausboote.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-522"
+    ]
+  },
+  {
+    "id": "a2-d02-083",
+    "pos": "noun",
+    "word": "Keller",
+    "lemma": "Keller",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈkɛlɐ]",
+    "meaning": "basement, cellar, underground storage unit",
+    "gloss": "cellar, basement",
+    "pl": "die Keller",
+    "genS": "des Kellers",
+    "rule": "Nomen auf -er sind meist maskulin: der Keller, der Wecker, der Teller.",
+    "nvv": [
+      [
+        "in den Keller gehen",
+        "to go down to the cellar (Wohin? Akkusativ)"
+      ],
+      [
+        "Fahrräder im Keller abstellen",
+        "to store bicycles in the cellar (Wo? Dativ)"
+      ]
+    ],
+    "compounds": [
+      "der Kellerraum",
+      "das Kellerabteil",
+      "der Fahrradkeller",
+      "der Weinkeller"
+    ],
+    "family": [
+      "unterkellert"
+    ],
+    "ex": [
+      "Zu jeder Mietwohnung im Haus gehört ein abschließbares Kellerabteil für Koffer und Kartons.",
+      "Each rental apartment in the building includes a lockable basement compartment for suitcases and boxes."
+    ],
+    "tip": "Wechselpräpositionen: in den Keller (Akkusativ = Richtung) vs. im Keller (Dativ = Ort).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-529"
+    ]
+  },
+  {
+    "id": "a2-d02-084",
+    "pos": "noun",
+    "word": "Dach",
+    "lemma": "Dach",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[dax]",
+    "meaning": "roof, rooftop",
+    "gloss": "roof",
+    "pl": "die Dächer",
+    "genS": "des Dachs / Daches",
+    "rule": "Einsilbige Neutra: das Dach, das Haus, das Buch.",
+    "nvv": [
+      [
+        "ein Dach über dem Kopf haben",
+        "to have a roof over one's head (idiom)"
+      ],
+      [
+        "unter einem Dach leben",
+        "to live under one roof"
+      ]
+    ],
+    "compounds": [
+      "die Dachwohnung",
+      "das Dachgeschoss",
+      "die Dachterrasse",
+      "der Dachboden"
+    ],
+    "family": [
+      "überdachen",
+      "dachlos"
+    ],
+    "ex": [
+      "Die schöne Dachterrasse bietet einen Rundumblick über die gesamte Stadt.",
+      "The beautiful rooftop terrace offers a panoramic view over the whole city."
+    ],
+    "tip": "Plural mit Umlaut: die Dächer. Sehr beliebte Wohnform in Deutschland: 'die Dachgeschosswohnung' (attic apartment).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-530"
+    ]
+  },
+  {
+    "id": "a2-d02-085",
+    "pos": "noun",
+    "word": "Wohnform",
+    "lemma": "Wohnform",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈvoːnˌfɔʁm]",
+    "meaning": "type of housing, form of living (WG, single flat, multigenerational house)",
+    "gloss": "housing type, form of living",
+    "pl": "die Wohnformen",
+    "genS": "der Wohnform",
+    "rule": "Zusammensetzung mit Form (die Form): immer feminin.",
+    "nvv": [
+      [
+        "alternative Wohnformen ausprobieren",
+        "to try out alternative forms of housing"
+      ]
+    ],
+    "compounds": [
+      "das Mehrgenerationenhaus",
+      "die Wohnanlage",
+      "das Betreute Wohnen"
+    ],
+    "family": [
+      "wohnen",
+      "die Wohnung",
+      "formen"
+    ],
+    "ex": [
+      "In Lektion 9 vergleichen die Lernenden verschiedene Wohnformen wie das Mehrgenerationenhaus, das Hausboot und den Bauernhof.",
+      "In lesson 9, learners compare various housing types such as the multi-generational home, the houseboat, and the farm."
+    ],
+    "tip": "Thematischer Schlüsselbegriff in Netzwerk A2 Lektion 9 ('Wohnwelten').",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9,
+      11
+    ],
+    "sourceRawIds": [
+      "RAW-531"
+    ]
+  },
+  {
+    "id": "a2-d02-086",
+    "pos": "noun",
+    "word": "Bauernhof",
+    "lemma": "Bauernhof",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈbaʊ̯ɐnˌhoːf]",
+    "meaning": "farm, farmhouse, farmstead",
+    "gloss": "farm, farmhouse",
+    "pl": "die Bauernhöfe",
+    "genS": "des Bauernhofs / Bauernhofes",
+    "rule": "Zusammensetzung mit Hof (der Hof): immer maskulin.",
+    "nvv": [
+      [
+        "auf einem Bauernhof aufwachsen / leben",
+        "to grow up / live on a farm"
+      ],
+      [
+        "Urlaub auf dem Bauernhof machen",
+        "to take a farm holiday"
+      ]
+    ],
+    "compounds": [
+      "der Bio-Bauernhof",
+      "das Bauernhaus",
+      "der Reiterhof"
+    ],
+    "family": [
+      "der Bauer",
+      "die Bäuerin",
+      "bäuerlich"
+    ],
+    "ex": [
+      "Urlaub auf dem Bauernhof ist bei Familien mit Kindern in Deutschland extrem beliebt.",
+      "Farm holidays are extremely popular with families with children in Germany."
+    ],
+    "tip": "Präposition: 'AUF dem Bauernhof' (Dativ: Wo? Er lebt auf einem Bauernhof). Reconciles duplicate flashcards RAW-532 and RAW-656.",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9,
+      11
+    ],
+    "sourceRawIds": [
+      "RAW-532",
+      "RAW-656"
+    ]
+  },
+  {
+    "id": "a2-d02-087",
+    "pos": "adj",
+    "word": "bewohnt",
+    "lemma": "bewohnt",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[bəˈvoːnt]",
+    "meaning": "inhabited, occupied, lived-in",
+    "gloss": "inhabited, occupied",
+    "comp": [
+      [
+        "Positiv",
+        "bewohnt"
+      ],
+      [
+        "Komparativ",
+        "dichter bewohnt"
+      ],
+      [
+        "Superlativ",
+        "am dichtesten bewohnt"
+      ]
+    ],
+    "opp": "unbewohnt, verlassen, leerstehend",
+    "family": [
+      "wohnen",
+      "der Bewohner",
+      "bewohnen"
+    ],
+    "ex": [
+      "Das alte Schloss ist heute noch von einer Adelsfamilie bewohnt.",
+      "The old castle is still inhabited today by an aristocratic family."
+    ],
+    "tip": "Gegenteil: 'unbewohnt' (unoccupied/empty, z. B. ein unbewohntes Haus).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-533"
+    ]
+  },
+  {
+    "id": "a2-d02-088",
+    "pos": "adj",
+    "word": "renoviert",
+    "lemma": "renoviert",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ʁenoˈviːɐ̯t]",
+    "meaning": "renovated, refurbished, redecorated",
+    "gloss": "renovated, refurbished",
+    "comp": [
+      [
+        "Positiv",
+        "renoviert"
+      ],
+      [
+        "Komparativ",
+        "frischer renoviert"
+      ],
+      [
+        "Superlativ",
+        "am besten renoviert"
+      ]
+    ],
+    "opp": "renovierungsbedürftig, baufällig",
+    "family": [
+      "renovieren",
+      "die Renovierung"
+    ],
+    "ex": [
+      "Die frisch renovierte Altbauwohnung hat wunderschönen Parkettboden und hohe Decken.",
+      "The newly renovated period apartment has beautiful parquet flooring and high ceilings."
+    ],
+    "tip": "Immobilienanzeigen-Klassiker: 'frisch renoviert' (freshly renovated) vs. 'renovierungsbedürftig' (in need of renovation).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-536"
+    ]
+  },
+  {
+    "id": "a2-d02-089",
+    "pos": "noun",
+    "word": "Gebäude",
+    "lemma": "Gebäude",
+    "art": "das",
+    "level": "A2",
+    "type": "Nomen · Neutrum",
+    "ipa": "[ɡəˈbɔɪ̯də]",
+    "meaning": "building, edifice, structure",
+    "gloss": "building, edifice",
+    "pl": "die Gebäude",
+    "genS": "des Gebäudes",
+    "rule": "Ge-...-e Kollektiva sind immer Neutrum: das Gebäude, das Gemälde, das Gebirge.",
+    "nvv": [
+      [
+        "ein Gebäude errichten / abreißen",
+        "to erect / demolish a building"
+      ],
+      [
+        "das Gebäude betreten",
+        "to enter the building"
+      ]
+    ],
+    "compounds": [
+      "das Wohngebäude",
+      "das Geschäftsgebäude",
+      "das Hauptgebäude",
+      "das Universitätsgebäude"
+    ],
+    "family": [
+      "bauen",
+      "der Bau",
+      "das Bauwerk"
+    ],
+    "ex": [
+      "Das historische Gebäude aus der Gründerzeit steht unter Denkmalschutz.",
+      "The historic building from the Wilhelminian era is a listed protected monument."
+    ],
+    "tip": "Pluralform bleibt unverändert: das Gebäude → die Gebäude (nur der Artikel wechselt!).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-537"
+    ]
+  },
+  {
+    "id": "a2-d02-090",
+    "pos": "noun",
+    "word": "Haushalt",
+    "lemma": "Haushalt",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ˈhaʊ̯sˌhalt]",
+    "meaning": "household, housekeeping; national budget",
+    "gloss": "household, housekeeping",
+    "pl": "die Haushalte",
+    "genS": "des Haushalts / Haushaltes",
+    "rule": "Zusammensetzung mit Halt (der Halt): maskulin.",
+    "nvv": [
+      [
+        "den Haushalt führen / machen",
+        "to run the household / do chores"
+      ],
+      [
+        "im Haushalt helfen",
+        "to help around the house"
+      ]
+    ],
+    "compounds": [
+      "die Haushaltsgeräte",
+      "das Haushaltsgeld",
+      "der Privathaushalt",
+      "der Staatshaushalt"
+    ],
+    "family": [
+      "das Haus",
+      "halten",
+      "haushalten"
+    ],
+    "ex": [
+      "In einer WG teilen sich die Mitbewohner die anfallenden Aufgaben im Haushalt.",
+      "In a flatshare, the roommates share the household chores."
+    ],
+    "tip": "Wichtige Redewendung: 'den Haushalt machen' = putzen, waschen, kochen (to do the chores).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      9
+    ],
+    "sourceRawIds": [
+      "RAW-563"
+    ]
+  },
+  {
+    "id": "a2-d02-091",
+    "pos": "noun",
+    "word": "Strom",
+    "lemma": "Strom",
+    "art": "der",
+    "level": "A2",
+    "type": "Nomen · Maskulinum",
+    "ipa": "[ʃtʁoːm]",
+    "meaning": "electricity, electric current; large river/stream",
+    "gloss": "electricity, current",
+    "pl": "die Ströme",
+    "genS": "des Stroms / Stromes",
+    "rule": "Einsilbige Maskulina: der Strom, der Blitz, der Draht.",
+    "nvv": [
+      [
+        "Strom sparen / verbrauchen",
+        "to save / consume electricity"
+      ],
+      [
+        "den Strom abstellen / einschalten",
+        "to switch off / on the power"
+      ],
+      [
+        "unter Strom stehen",
+        "to be live (electrified); under high stress (idiom)"
+      ]
+    ],
+    "compounds": [
+      "der Ökostrom",
+      "die Stromrechnung",
+      "der Stromanbieter",
+      "der Stromausfall"
+    ],
+    "family": [
+      "strömen",
+      "die Strömung"
+    ],
+    "ex": [
+      "In den Nebenkosten der Warmmiete ist der Strom meistens nicht enthalten und muss extra bezahlt werden.",
+      "Electricity is usually not included in the warm rent ancillary costs and must be paid separately."
+    ],
+    "tip": "Wichtig beim Mieten in Deutschland: 'Warmmiete' enthält meist Heizung und Wasser, aber der Mieter muss einen eigenen Vertrag für Strom abschließen!",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      11
+    ],
+    "sourceRawIds": [
+      "RAW-657"
+    ]
+  },
+  {
+    "id": "a2-d02-092",
+    "pos": "adj",
+    "word": "anstrengend",
+    "lemma": "anstrengend",
+    "level": "A2",
+    "type": "Partizipiales Adjektiv",
+    "ipa": "[ˈanˌʃtʁɛŋənt]",
+    "meaning": "exhausting, strenuous, demanding, tiring",
+    "gloss": "exhausting, strenuous",
+    "comp": [
+      [
+        "Positiv",
+        "anstrengend"
+      ],
+      [
+        "Komparativ",
+        "anstrengender"
+      ],
+      [
+        "Superlativ",
+        "am anstrengendsten"
+      ]
+    ],
+    "opp": "erholsam, entspannend, leicht",
+    "family": [
+      "anstrengen",
+      "die Anstrengung"
+    ],
+    "ex": [
+      "Das Schleppen der vielen schweren Umzugskartons in den vierten Stock war extrem anstrengend.",
+      "Hauling the many heavy moving boxes up to the fourth floor was extremely exhausting."
+    ],
+    "tip": "Gegenteil: entspannend oder leicht. Verb: 'sich anstrengen' (to make an effort).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      11
+    ],
+    "sourceRawIds": [
+      "RAW-663"
+    ]
+  },
+  {
+    "id": "a2-d02-093",
+    "pos": "noun",
+    "word": "Heizung",
+    "lemma": "Heizung",
+    "art": "die",
+    "level": "A2",
+    "type": "Nomen · Femininum",
+    "ipa": "[ˈhaɪ̯tsʊŋ]",
+    "meaning": "heating, radiator, central heating system",
+    "gloss": "heating, radiator",
+    "pl": "die Heizungen",
+    "genS": "der Heizung",
+    "rule": "Endung -ung: immer zu 100 % feminin (die Heizung, die Wohnung).",
+    "nvv": [
+      [
+        "die Heizung aufdrehen / anmachen",
+        "to turn up / switch on the heating"
+      ],
+      [
+        "die Heizung herunterdrehen / ausmachen",
+        "to turn down / turn off the heating"
+      ]
+    ],
+    "compounds": [
+      "die Zentralheizung",
+      "die Fußbodenheizung",
+      "die Heizkosten",
+      "der Heizkörper"
+    ],
+    "family": [
+      "heizen",
+      "die Hitze",
+      "heiß"
+    ],
+    "ex": [
+      "Im Winter sollte man beim Stoßlüften der Wohnung immer zuerst die Heizung abdrehen.",
+      "In winter, you should always turn off the radiator first when opening windows for ventilation (Stoßlüften)."
+    ],
+    "tip": "Kulturtipp: In Deutschland regelt das Thermostatventil die Stufen 1 bis 5 (3 entspricht ca. 20 °C Zimmertemperatur).",
+    "deckId": "a2-deck-02",
+    "deckTitle": "Wohnen, Haus & Nachbarschaft",
+    "sourceLessons": [
+      11
+    ],
+    "sourceRawIds": [
+      "RAW-669"
+    ]
+  }
+]
