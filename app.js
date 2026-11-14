@@ -14,7 +14,9 @@
 
   // ================= State =================
   let allWords = [];
+  window.allWords = allWords;
   let currentDeck = [];
+  window.getCurrentDeck = function() { return currentDeck; };
   let currentDeckId = 'universal-all';
   let currentIndex = 0;
   let isFlipped = false;
@@ -28,15 +30,21 @@
   // Storage Keys
   const STUDY_LOG_KEY = 'wortschatz_study_log_v2';
   const DECK_PROGRESS_KEY = 'wortschatz_deck_progress_v2';
+  const SRS_STORAGE_KEY = 'wortschatz_srs_v2';
   const DAILY_GOAL_TARGET = 20;
 
   // In-memory study log: { "YYYY-MM-DD": { count: number, correct: number } }
   let studyLog = loadStudyLog();
   let deckProgress = loadDeckProgress();
+  let srsData = loadSrsData();
 
   // Session stats for currently active run
   let sessionReviewedCount = 0;
   let sessionCorrectCount = 0;
+  let sessionAgainCount = 0;
+  let sessionHardCount = 0;
+  let sessionGoodCount = 0;
+  let sessionEasyCount = 0;
 
   // ================= Universal Archetype Engine (v3 Bento System) =================
   const TYPES = {
@@ -418,6 +426,8 @@
         ${e.ipa ? `<p class="card-ipa">${e.ipa}</p>` : ''}
         <p class="card-gloss">${e.gloss || e.meaning || ''}</p>
       </div>
+
+      ${formatSrsCardStrip(e)}
 
       <div class="card-body-sections">
         ${o}
@@ -1010,6 +1020,307 @@
     } catch {}
   }
 
+  // ================= Spaced Repetition System (SRS / SM-2 Engine) =================
+  function loadSrsData() {
+    try {
+      const data = localStorage.getItem(SRS_STORAGE_KEY);
+      return data ? JSON.parse(data) : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function saveSrsData() {
+    try {
+      localStorage.setItem(SRS_STORAGE_KEY, JSON.stringify(srsData));
+    } catch {}
+  }
+
+  function getCardKey(item) {
+    if (!item) return '';
+    const id = item.id || '';
+    const word = (item.word || item.lemma || '').trim();
+    return id ? `${id}::${word}` : word;
+  }
+
+  function getCardSrs(item) {
+    if (!item) return null;
+    const key = getCardKey(item);
+    if (!srsData[key]) {
+      srsData[key] = {
+        key: key,
+        id: item.id || '',
+        word: item.word || item.lemma || '',
+        state: 'new', // 'new' | 'learning' | 'review' | 'mastered'
+        reps: 0,
+        interval: 0, // in days
+        easeFactor: 2.5, // SM-2 default ease
+        dueDate: 0, // timestamp in ms
+        lastReviewed: null,
+        lastGrade: null,
+        againCount: 0,
+        hardCount: 0,
+        goodCount: 0,
+        easyCount: 0,
+        totalReviews: 0,
+        lapses: 0
+      };
+    }
+    return srsData[key];
+  }
+
+  function previewNextIntervals(item) {
+    const srs = getCardSrs(item);
+    if (!srs) {
+      return {
+        again: { label: '< 1 Min', days: 0 },
+        hard: { label: '1 Tag', days: 1 },
+        good: { label: '1 Tag', days: 1 },
+        easy: { label: '4 Tage', days: 4 }
+      };
+    }
+
+    // 1. Button 1: Again (re-queue immediately in current session)
+    const againLabel = '< 1 Min';
+
+    // 2. Button 2: Hard
+    let hardDays = 1;
+    if (srs.state === 'new' || srs.state === 'learning') {
+      hardDays = 1;
+    } else {
+      hardDays = Math.max(1, Math.round((srs.interval || 1) * 1.2));
+    }
+    const hardLabel = hardDays === 1 ? '1 Tag' : `${hardDays} Tage`;
+
+    // 3. Button 3: Good
+    let goodDays = 1;
+    if (srs.state === 'new' || srs.state === 'learning') {
+      goodDays = 1;
+    } else if (srs.reps === 1) {
+      goodDays = 6;
+    } else {
+      goodDays = Math.max(2, Math.round((srs.interval || 1) * (srs.easeFactor || 2.5)));
+    }
+    const goodLabel = goodDays === 1 ? '1 Tag' : `${goodDays} Tage`;
+
+    // 4. Button 4: Easy
+    let easyDays = 4;
+    if (srs.state === 'new' || srs.state === 'learning') {
+      easyDays = 4;
+    } else {
+      easyDays = Math.max(4, Math.round((srs.interval || 1) * (srs.easeFactor || 2.5) * 1.3));
+    }
+    const easyLabel = `${easyDays} Tage`;
+
+    return {
+      again: { label: againLabel, days: 0 },
+      hard: { label: hardLabel, days: hardDays },
+      good: { label: goodLabel, days: goodDays },
+      easy: { label: easyLabel, days: easyDays }
+    };
+  }
+
+  function processCardGrade(item, grade) {
+    if (!item) return null;
+    const srs = getCardSrs(item);
+    const now = Date.now();
+    const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+
+    srs.lastReviewed = now;
+    srs.lastGrade = grade;
+    srs.totalReviews = (srs.totalReviews || 0) + 1;
+
+    if (grade === 'again') {
+      srs.againCount = (srs.againCount || 0) + 1;
+      if (srs.state === 'review' || srs.state === 'mastered') {
+        srs.lapses = (srs.lapses || 0) + 1;
+      }
+      srs.reps = 0;
+      srs.interval = 0;
+      srs.easeFactor = Math.max(1.3, Number(((srs.easeFactor || 2.5) - 0.20).toFixed(2)));
+      srs.state = 'learning';
+      srs.dueDate = now + 60 * 1000; // due in 1 min
+    } else if (grade === 'hard') {
+      srs.hardCount = (srs.hardCount || 0) + 1;
+      srs.easeFactor = Math.max(1.3, Number(((srs.easeFactor || 2.5) - 0.15).toFixed(2)));
+      if (srs.state === 'new' || srs.state === 'learning') {
+        srs.reps = 1;
+        srs.interval = 1;
+        srs.state = 'learning';
+      } else {
+        srs.reps = (srs.reps || 0) + 1;
+        srs.interval = Math.max(1, Math.round((srs.interval || 1) * 1.2));
+        srs.state = srs.interval >= 21 ? 'mastered' : 'review';
+      }
+      srs.dueDate = now + srs.interval * ONE_DAY_MS;
+    } else if (grade === 'good') {
+      srs.goodCount = (srs.goodCount || 0) + 1;
+      if (srs.state === 'new' || srs.state === 'learning') {
+        srs.reps = 1;
+        srs.interval = 1;
+        srs.state = 'review';
+      } else {
+        srs.reps = (srs.reps || 0) + 1;
+        if (srs.reps === 2) {
+          srs.interval = 6;
+        } else {
+          srs.interval = Math.max(2, Math.round((srs.interval || 1) * (srs.easeFactor || 2.5)));
+        }
+        srs.state = srs.interval >= 21 ? 'mastered' : 'review';
+      }
+      srs.dueDate = now + srs.interval * ONE_DAY_MS;
+    } else if (grade === 'easy') {
+      srs.easyCount = (srs.easyCount || 0) + 1;
+      srs.easeFactor = Math.min(3.0, Number(((srs.easeFactor || 2.5) + 0.15).toFixed(2)));
+      if (srs.state === 'new' || srs.state === 'learning') {
+        srs.reps = 1;
+        srs.interval = 4;
+        srs.state = 'review';
+      } else {
+        srs.reps = (srs.reps || 0) + 1;
+        srs.interval = Math.max(4, Math.round((srs.interval || 1) * (srs.easeFactor || 2.5) * 1.3));
+        srs.state = srs.interval >= 21 ? 'mastered' : 'review';
+      }
+      srs.dueDate = now + srs.interval * ONE_DAY_MS;
+    }
+
+    srsData[srs.key] = srs;
+    saveSrsData();
+    return srs;
+  }
+
+  function getDeckSrsStats(deckFilter) {
+    const filtered = allWords.filter(deckFilter || (() => true));
+    const total = filtered.length;
+    let learned = 0;
+    let due = 0;
+    const now = Date.now();
+
+    filtered.forEach(w => {
+      const s = srsData[getCardKey(w)];
+      if (s && s.state && s.state !== 'new') {
+        learned++;
+        if (s.dueDate && s.dueDate <= now) {
+          due++;
+        }
+      }
+    });
+
+    const pct = total > 0 ? Math.round((learned / total) * 100) : 0;
+    return { total, learned, due, pct };
+  }
+
+  function prepareDeckQueue(rawCards) {
+    const now = Date.now();
+    const dueCards = [];
+    const learningCards = [];
+    const newCards = [];
+    const futureCards = [];
+
+    rawCards.forEach(c => {
+      const s = getCardSrs(c);
+      if (s.state === 'new') {
+        newCards.push(c);
+      } else if (s.state === 'learning' || (s.dueDate && s.dueDate <= now)) {
+        if (s.state === 'learning') {
+          learningCards.push(c);
+        } else {
+          dueCards.push(c);
+        }
+      } else {
+        futureCards.push(c);
+      }
+    });
+
+    dueCards.sort((a, b) => (getCardSrs(a).dueDate || 0) - (getCardSrs(b).dueDate || 0));
+    futureCards.sort((a, b) => (getCardSrs(a).dueDate || 0) - (getCardSrs(b).dueDate || 0));
+
+    const queue = [...dueCards, ...learningCards, ...newCards, ...futureCards];
+    return {
+      queue: queue.length > 0 ? queue : rawCards,
+      dueCount: dueCards.length,
+      learningCount: learningCards.length,
+      newCount: newCards.length
+    };
+  }
+
+  function formatSrsCardStrip(item) {
+    const srs = getCardSrs(item);
+    if (!srs) return '';
+
+    let stateTitle = 'Neu';
+    let stateColor = '#2563eb';
+    let stateBg = 'rgba(59,130,246,0.10)';
+
+    if (srs.state === 'new') {
+      stateTitle = 'Neu';
+      stateColor = '#2563eb';
+      stateBg = 'rgba(59,130,246,0.10)';
+    } else if (srs.dueDate && srs.dueDate <= Date.now()) {
+      stateTitle = '⚡ Fällig';
+      stateColor = '#dc2626';
+      stateBg = 'rgba(239,68,68,0.12)';
+    } else if (srs.state === 'learning') {
+      stateTitle = 'Im Lernprozess';
+      stateColor = '#d97706';
+      stateBg = 'rgba(245,158,11,0.12)';
+    } else if (srs.state === 'mastered') {
+      stateTitle = '★ Gemeistert';
+      stateColor = '#059669';
+      stateBg = 'rgba(16,185,129,0.16)';
+    } else {
+      stateTitle = 'Gelernt';
+      stateColor = '#059669';
+      stateBg = 'rgba(16,185,129,0.10)';
+    }
+
+    const gradeNames = {
+      again: 'Nochmal',
+      hard: 'Schwer',
+      good: 'Gut',
+      easy: 'Leicht'
+    };
+    const lastRatingText = srs.lastGrade ? (gradeNames[srs.lastGrade] || srs.lastGrade) : '–';
+
+    return `
+      <div class="srs-card-bar" style="margin: 12px 24px 6px; padding: 10px 14px; background: var(--bg-surface-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-secondary); flex-wrap: wrap; gap: 8px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-weight:700; color:var(--text-primary); font-size:11px; text-transform:uppercase; letter-spacing:0.5px;">SRS-Status:</span>
+          <span style="padding:2px 8px; border-radius:999px; font-weight:700; font-size:11px; background:${stateBg}; color:${stateColor};">${stateTitle}</span>
+        </div>
+        <div style="display:flex; gap:12px; font-size:11px; align-items:center; flex-wrap:wrap;">
+          <span>Intervall: <strong style="color:var(--text-primary);">${srs.interval || 0}d</strong></span>
+          <span>Faktor: <strong style="color:var(--text-primary);">${(srs.easeFactor || 2.5).toFixed(2)}</strong></span>
+          <span>Wdh: <strong style="color:var(--text-primary);">${srs.reps || 0}</strong></span>
+          <span>Zuletzt: <strong style="color:var(--text-primary);">${lastRatingText}</strong></span>
+        </div>
+      </div>
+    `;
+  }
+
+  function updateGradeDockButtons(item) {
+    const preview = previewNextIntervals(item);
+    const timeAgain = document.querySelector('#btn-grade-1 .grade-time');
+    const timeHard = document.querySelector('#btn-grade-2 .grade-time');
+    const timeGood = document.querySelector('#btn-grade-3 .grade-time');
+    const timeEasy = document.querySelector('#btn-grade-4 .grade-time');
+
+    if (timeAgain) timeAgain.textContent = preview.again.label;
+    if (timeHard) timeHard.textContent = preview.hard.label;
+    if (timeGood) timeGood.textContent = preview.good.label;
+    if (timeEasy) timeEasy.textContent = preview.easy.label;
+  }
+
+  // Expose Spaced Repetition engine synchronously on window
+  window.getCardKey = getCardKey;
+  window.getCardSrs = getCardSrs;
+  window.previewNextIntervals = previewNextIntervals;
+  window.processCardGrade = processCardGrade;
+  window.getDeckSrsStats = getDeckSrsStats;
+  window.srsData = srsData;
+  window.recordGrade = recordGrade;
+  window.startDeckStudy = startDeckStudy;
+
   function recordStudyParticipation(isCorrect) {
     const today = getTodayKey();
     if (!studyLog[today]) {
@@ -1327,7 +1638,7 @@
     goalBarFill.style.width = `${goalPercentVal}%`;
     goalPercent.textContent = `${goalPercentVal}%`;
 
-    // Global Stats
+    // Global Stats & SRS totals
     let totalRev = 0;
     let totalCor = 0;
     Object.values(studyLog).forEach(entry => {
@@ -1335,7 +1646,17 @@
       totalCor += entry.correct || 0;
     });
 
-    statTotalReviewed.textContent = totalRev;
+    let srsLearned = 0;
+    let srsDue = 0;
+    const now = Date.now();
+    Object.values(srsData).forEach(s => {
+      if (s && s.state && s.state !== 'new') {
+        srsLearned++;
+        if (s.dueDate && s.dueDate <= now) srsDue++;
+      }
+    });
+
+    statTotalReviewed.textContent = srsLearned;
     if (totalRev > 0) {
       const overallRate = Math.round((totalCor / totalRev) * 100);
       statRecallRate.textContent = `${overallRate}%`;
@@ -1353,24 +1674,27 @@
   function updateGrammarMastery() {
     if (!allWords || allWords.length === 0) return;
 
-    const totalTrennbar = allWords.filter(w => w.type && w.type.toLowerCase().includes('trennbar')).length || 11;
-    const totalSein = allWords.filter(w => w.hilfsverb === 'sein').length || 14;
-    const totalStrong = allWords.filter(w => w.praeteritum && !w.praeteritum.endsWith('te')).length || 36;
+    const trennbarWords = allWords.filter(w => w.type && w.type.toLowerCase().includes('trennbar'));
+    const seinWords = allWords.filter(w => w.hilfsverb === 'sein');
+    const strongWords = allWords.filter(w => w.praeteritum && !w.praeteritum.endsWith('te'));
 
-    // Track progression via deckProgress
-    const reviewedTrennbar = (deckProgress['trennbar'] && deckProgress['trennbar'].reviewed) || 0;
-    const reviewedSein = (deckProgress['sein-verbs'] && deckProgress['sein-verbs'].reviewed) || 0;
-    const reviewedAll = (deckProgress['b1-all'] && deckProgress['b1-all'].reviewed) || 0;
-    const reviewedStrong = Math.min(totalStrong, Math.round(reviewedAll * (totalStrong / (allWords.length || 50))));
+    const totalTrennbar = trennbarWords.length || 11;
+    const totalSein = seinWords.length || 14;
+    const totalStrong = strongWords.length || 36;
 
-    if (countTrennbar) countTrennbar.textContent = `${reviewedTrennbar} / ${totalTrennbar}`;
-    if (barTrennbar) barTrennbar.style.width = `${Math.round((reviewedTrennbar / totalTrennbar) * 100)}%`;
+    let learnedTrennbar = 0, learnedSein = 0, learnedStrong = 0;
+    trennbarWords.forEach(w => { const s = srsData[getCardKey(w)]; if (s && s.state && s.state !== 'new') learnedTrennbar++; });
+    seinWords.forEach(w => { const s = srsData[getCardKey(w)]; if (s && s.state && s.state !== 'new') learnedSein++; });
+    strongWords.forEach(w => { const s = srsData[getCardKey(w)]; if (s && s.state && s.state !== 'new') learnedStrong++; });
 
-    if (countSein) countSein.textContent = `${reviewedSein} / ${totalSein}`;
-    if (barSein) barSein.style.width = `${Math.round((reviewedSein / totalSein) * 100)}%`;
+    if (countTrennbar) countTrennbar.textContent = `${learnedTrennbar} / ${totalTrennbar}`;
+    if (barTrennbar) barTrennbar.style.width = `${Math.round((learnedTrennbar / totalTrennbar) * 100)}%`;
 
-    if (countUnregelmaessig) countUnregelmaessig.textContent = `${reviewedStrong} / ${totalStrong}`;
-    if (barStrong) barStrong.style.width = `${Math.round((reviewedStrong / totalStrong) * 100)}%`;
+    if (countSein) countSein.textContent = `${learnedSein} / ${totalSein}`;
+    if (barSein) barSein.style.width = `${Math.round((learnedSein / totalSein) * 100)}%`;
+
+    if (countUnregelmaessig) countUnregelmaessig.textContent = `${learnedStrong} / ${totalStrong}`;
+    if (barStrong) barStrong.style.width = `${Math.round((learnedStrong / totalStrong) * 100)}%`;
   }
 
   // Top Horizontal 7-Day Activity Strip
@@ -1413,10 +1737,9 @@
     ].filter(Boolean);
 
     featuredDecks.forEach(cfg => {
-      const filtered = allWords.filter(cfg.filter);
-      const deckCount = filtered.length;
-      const reviewed = (deckProgress[cfg.id] && deckProgress[cfg.id].reviewed) || 0;
-      const masteryPct = deckCount > 0 ? Math.round((reviewed / deckCount) * 100) : 0;
+      const stats = getDeckSrsStats(cfg.filter);
+      const deckCount = stats.total;
+      const masteryPct = stats.pct;
 
       // Homepage Deck Card (Whole Tile Clickable)
       const card = document.createElement('div');
@@ -1429,13 +1752,14 @@
           <div class="deck-tags-row">
             <span class="chip chip-secondary">${cfg.level}</span>
             <span class="deck-count-pill">${deckCount} Wörter</span>
+            ${stats.due > 0 ? `<span class="chip-due" style="background:#fee2e2; color:#dc2626; font-size:11px; font-weight:700; padding:2px 8px; border-radius:12px;">⚡ ${stats.due} fällig</span>` : ''}
           </div>
           <h3 class="deck-title">${cfg.title}</h3>
           <p class="deck-desc">${cfg.desc}</p>
         </div>
         <div class="deck-card-bottom">
-          <span class="deck-mastery-text">${masteryPct}% gelernt</span>
-          <span class="deck-learn-btn">Lernen</span>
+          <span class="deck-mastery-text">${masteryPct}% gelernt (${stats.learned}/${deckCount})</span>
+          <span class="deck-learn-btn">${stats.due > 0 ? `Wiederholen (${stats.due})` : 'Lernen'}</span>
         </div>
       `;
 
@@ -1613,10 +1937,9 @@
       decksGridEl.className = 'folder-decks-grid';
 
       folder.decks.forEach(deck => {
-        const filtered = allWords.filter(deck.filter || (() => true));
-        const deckCount = filtered.length;
-        const reviewed = (deckProgress[deck.id] && deckProgress[deck.id].reviewed) || 0;
-        const masteryPct = deckCount > 0 ? Math.round((reviewed / deckCount) * 100) : 0;
+        const stats = getDeckSrsStats(deck.filter);
+        const deckCount = stats.total;
+        const masteryPct = stats.pct;
 
         const deckCard = document.createElement('div');
         deckCard.className = 'deck-card';
@@ -1628,13 +1951,14 @@
             <div class="deck-tags-row">
               <span class="chip-secondary">${deck.level || 'B1'}</span>
               <span class="deck-count-pill">${deckCount} Wörter</span>
+              ${stats.due > 0 ? `<span class="chip-due" style="background:#fee2e2; color:#dc2626; font-size:11px; font-weight:700; padding:2px 8px; border-radius:12px;">⚡ ${stats.due} fällig</span>` : ''}
             </div>
             <h3 class="deck-title">${deck.title}</h3>
             <p class="deck-desc">${deck.desc}</p>
           </div>
           <div class="deck-card-bottom">
-            <span class="deck-mastery-text">${masteryPct}% gelernt</span>
-            <span class="deck-learn-btn">Lernen →</span>
+            <span class="deck-mastery-text">${masteryPct}% gelernt (${stats.learned}/${deckCount})</span>
+            <span class="deck-learn-btn">${stats.due > 0 ? `Wiederholen (${stats.due})` : 'Lernen →'}</span>
           </div>
         `;
 
@@ -1756,15 +2080,26 @@
   function startDeckStudy(deckId) {
     currentDeckId = deckId;
     const config = ALL_DECKS_MAP[deckId] || DECKS_CONFIG.find(c => c.id === deckId) || DECKS_CONFIG[0];
-    currentDeck = allWords.filter(config.filter);
-    if (!currentDeck || currentDeck.length === 0) {
-      currentDeck = allWords;
-    }
+    const filtered = allWords.filter(config.filter);
+    const sourceCards = (filtered && filtered.length > 0) ? filtered : allWords;
 
-    deckIndicator.textContent = config.title;
+    // Queue smartly using Spaced Repetition (Due cards first, then learning, then new)
+    const prep = prepareDeckQueue(sourceCards);
+    currentDeck = prep.queue;
+
+    let subTitle = config.title;
+    if (prep.dueCount > 0) {
+      subTitle += ` · ⚡ ${prep.dueCount} fällig`;
+    }
+    deckIndicator.textContent = subTitle;
+
     currentIndex = 0;
     sessionReviewedCount = 0;
     sessionCorrectCount = 0;
+    sessionAgainCount = 0;
+    sessionHardCount = 0;
+    sessionGoodCount = 0;
+    sessionEasyCount = 0;
 
     renderCurrentCard();
   }
@@ -1794,6 +2129,21 @@
       if (item.aux) tagsHtml += `<span class="tag hilfs" style="margin-left:4px">Hilfsverb: ${item.aux}</span>`;
       if (item.wechsel) tagsHtml += `<span class="tag hilfs" style="margin-left:4px">Wechselpräposition</span>`;
       if (item.examTag) tagsHtml += `<span class="tag hilfs" style="margin-left:4px">${item.examTag}</span>`;
+
+      // Spaced Repetition status badge on front
+      const srs = getCardSrs(item);
+      if (srs.state === 'new') {
+        tagsHtml += `<span class="chip" style="margin-left:4px; background:rgba(59,130,246,0.12); color:#2563eb; font-weight:600;">Neu</span>`;
+      } else if (srs.dueDate && srs.dueDate <= Date.now()) {
+        tagsHtml += `<span class="chip" style="margin-left:4px; background:rgba(239,68,68,0.14); color:#dc2626; font-weight:700;">⚡ Fällig</span>`;
+      } else if (srs.state === 'learning') {
+        tagsHtml += `<span class="chip" style="margin-left:4px; background:rgba(245,158,11,0.14); color:#d97706; font-weight:600;">Lernen</span>`;
+      } else if (srs.state === 'mastered') {
+        tagsHtml += `<span class="chip" style="margin-left:4px; background:rgba(16,185,129,0.16); color:#059669; font-weight:700;">★ Gemeistert (${srs.interval}d)</span>`;
+      } else {
+        tagsHtml += `<span class="chip" style="margin-left:4px; background:rgba(16,185,129,0.12); color:#059669; font-weight:600;">Gelernt (${srs.interval}d)</span>`;
+      }
+
       frontTags.innerHTML = tagsHtml;
     }
     if (frontWord) {
@@ -1817,6 +2167,9 @@
       progressBar.style.width = `${pct}%`;
       progressBar.parentElement.setAttribute('aria-valuenow', pct);
     }
+
+    // Dynamic Interval labels on dock grade buttons
+    updateGradeDockButtons(item);
   }
 
   function renderExampleSentence() {
@@ -1947,13 +2300,24 @@
 
   function startQuickDrill() {
     if (!allWords || allWords.length === 0) return;
-    const shuffled = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
+    const now = Date.now();
+    // Prioritize due cards, learning cards, or cards with lower ease factor / lapses
+    const dueOrWeak = allWords.filter(w => {
+      const s = getCardSrs(w);
+      return s && s.state !== 'new' && (s.dueDate <= now || s.easeFactor < 2.3 || s.lapses > 0);
+    });
+    let pool = dueOrWeak.length >= 10 ? dueOrWeak : allWords;
+    const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 10);
     currentDeckId = 'quick-drill';
     currentDeck = shuffled;
     deckIndicator.textContent = '⚡ Schnelltraining (10 Wörter)';
     currentIndex = 0;
     sessionReviewedCount = 0;
     sessionCorrectCount = 0;
+    sessionAgainCount = 0;
+    sessionHardCount = 0;
+    sessionGoodCount = 0;
+    sessionEasyCount = 0;
     switchView('study');
     renderCurrentCard();
   }
@@ -1967,13 +2331,39 @@
   }
 
   function recordGrade(grade) {
+    if (!currentDeck || !currentDeck[currentIndex]) return;
+    const currentCard = currentDeck[currentIndex];
+
+    // 1. Spaced Repetition Algorithm & Storage update
+    processCardGrade(currentCard, grade);
+
+    // Track session rating distribution
+    if (grade === 'again') sessionAgainCount++;
+    else if (grade === 'hard') sessionHardCount++;
+    else if (grade === 'good') sessionGoodCount++;
+    else if (grade === 'easy') sessionEasyCount++;
+
+    // 2. Track daily participation & session counts
     const isCorrect = grade === 'good' || grade === 'easy';
     recordStudyParticipation(isCorrect);
 
-    // Expose current word for vocab detail view
-    if (currentDeck && currentDeck[currentIndex]) {
-      window.currentWordData = currentDeck[currentIndex];
+    // 3. Spaced Repetition In-Session Re-queueing on "Again":
+    // Failed card is placed back in queue (in 3 cards, or at the end if fewer remain)
+    if (grade === 'again') {
+      const remaining = currentDeck.length - 1 - currentIndex;
+      let offset = 3;
+      if (remaining <= 1) {
+        offset = 1;
+      } else if (remaining === 2) {
+        offset = 2;
+      }
+      const insertIdx = currentIndex + offset + 1;
+      currentDeck.splice(insertIdx, 0, currentCard);
     }
+
+    // Expose current word for vocab detail view
+    window.currentWordData = currentCard;
+
     // Notify extension modules
     document.dispatchEvent(new CustomEvent('wortschatz:dashboardUpdated'));
 
@@ -1993,6 +2383,25 @@
       ? Math.round((sessionCorrectCount / sessionReviewedCount) * 100)
       : 100;
     summaryRate.textContent = `${rate}%`;
+
+    let breakdownEl = document.getElementById('summary-grade-breakdown');
+    if (!breakdownEl) {
+      breakdownEl = document.createElement('div');
+      breakdownEl.id = 'summary-grade-breakdown';
+      breakdownEl.style.cssText = 'display:flex; justify-content:center; gap:8px; margin-top:14px; flex-wrap:wrap;';
+      const statsRow = modalSessionComplete.querySelector('.modal-stats-row');
+      if (statsRow && statsRow.parentNode) {
+        statsRow.parentNode.insertBefore(breakdownEl, statsRow.nextSibling);
+      }
+    }
+    if (breakdownEl) {
+      breakdownEl.innerHTML = `
+        <span style="font-size:11px; padding:3px 8px; border-radius:12px; background:#fee2e2; color:#dc2626; font-weight:700;">Nochmal: ${sessionAgainCount}</span>
+        <span style="font-size:11px; padding:3px 8px; border-radius:12px; background:#fef3c7; color:#d97706; font-weight:700;">Schwer: ${sessionHardCount}</span>
+        <span style="font-size:11px; padding:3px 8px; border-radius:12px; background:#e0e7ff; color:#4338ca; font-weight:700;">Gut: ${sessionGoodCount}</span>
+        <span style="font-size:11px; padding:3px 8px; border-radius:12px; background:#d1fae5; color:#059669; font-weight:700;">Leicht: ${sessionEasyCount}</span>
+      `;
+    }
 
     modalSessionComplete.classList.remove('hidden');
   }
@@ -2405,11 +2814,23 @@
       console.warn('Loading fallback deck:', err);
       allWords = getFallbackDeck().map(normalizeWordItem);
     }
+    window.allWords = allWords;
+    window.srsData = srsData;
+    window.getCardKey = getCardKey;
+    window.getCardSrs = getCardSrs;
+    window.processCardGrade = processCardGrade;
+    window.previewNextIntervals = previewNextIntervals;
+    window.recordGrade = recordGrade;
+    window.startDeckStudy = startDeckStudy;
+    window.getAllFolders = getAllFolders;
+    window.getDeckSrsStats = getDeckSrsStats;
+
     updateDashboardStats();
     renderSidebarDeckShortcuts();
     if (typeof renderDecksLibraryView === 'function') {
       renderDecksLibraryView();
     }
+    document.dispatchEvent(new CustomEvent('wortschatz:dashboardUpdated'));
   }
 
   initApp();
@@ -2456,14 +2877,16 @@
   const streakCounterHero = document.getElementById('streak-counter-hero');
 
   function getStoredData() {
-    let studyLog = {}, deckProgress = {};
+    let studyLog = {}, deckProgress = {}, srsData = {};
     try {
       const sl = localStorage.getItem('wortschatz_study_log_v2');
       if (sl) studyLog = JSON.parse(sl);
       const dp = localStorage.getItem('wortschatz_deck_progress_v2');
       if (dp) deckProgress = JSON.parse(dp);
+      const srs = localStorage.getItem('wortschatz_srs_v2');
+      if (srs) srsData = JSON.parse(srs);
     } catch(e) {}
-    return { studyLog, deckProgress };
+    return { studyLog, deckProgress, srsData };
   }
 
   function getTodayKeyLocal() {
@@ -2489,19 +2912,29 @@
   }
 
   function updateRibbonStats() {
-    const { studyLog, deckProgress } = getStoredData();
+    const { studyLog, deckProgress, srsData } = getStoredData();
     const todayKey = getTodayKeyLocal();
     const todayEntry = studyLog[todayKey] || { count: 0, correct: 0 };
     let totalRev = 0, totalCor = 0;
     Object.values(studyLog).forEach(e => { totalRev += e.count||0; totalCor += e.correct||0; });
     const streak = calcStreakLocal(studyLog);
-    const totalWords = (typeof allWords !== 'undefined' && allWords.length) ? allWords.length : 66;
-    const reviewed = (deckProgress['universal-all'] && deckProgress['universal-all'].reviewed) || (deckProgress['b1-all'] && deckProgress['b1-all'].reviewed) || 0;
-    const pct = Math.round((reviewed / totalWords) * 100);
+
+    const totalWords = (window.allWords && window.allWords.length) ? window.allWords.length : 793;
+    let learnedCount = 0;
+    let dueCount = 0;
+    const now = Date.now();
+    Object.values(srsData).forEach(s => {
+      if (s && s.state && s.state !== 'new') {
+        learnedCount++;
+        if (s.dueDate && s.dueDate <= now) dueCount++;
+      }
+    });
+
+    const pct = Math.round((learnedCount / totalWords) * 100);
     const retention = totalRev > 0 ? Math.round((totalCor / totalRev) * 100) : 100;
 
     if (ribbonProgressPct) ribbonProgressPct.textContent = pct + '%';
-    if (ribbonProgressSub) ribbonProgressSub.textContent = reviewed + ' von ' + totalWords;
+    if (ribbonProgressSub) ribbonProgressSub.textContent = `${learnedCount} von ${totalWords} gelernt` + (dueCount > 0 ? ` · ⚡ ${dueCount} fällig` : '');
     if (ribbonTodayCount)  ribbonTodayCount.textContent  = todayEntry.count;
     if (ribbonRetention)   ribbonRetention.textContent   = retention + '%';
     if (ribbonStreak)      ribbonStreak.textContent      = streak;
@@ -2514,25 +2947,62 @@
   const continueDeckSub   = document.getElementById('continue-deck-sub');
 
   function updateContinueCard() {
-    const { deckProgress } = getStoredData();
-    const deckDefs = [
-      { id: 'universal-all', title: 'Universal B1 (Alle 6 Wortarten)', count: (typeof allWords !== 'undefined' && allWords.length) ? allWords.length : 66 },
-      { id: 'deck-nomen', title: 'B1 Nomen & Genus-Regeln', count: 3 },
-      { id: 'deck-verben', title: 'B1 Verben & Stammformen', count: 51 },
-      { id: 'b1-all', title: 'B1 Stammformen', count: 50 },
-      { id: 'sein-verbs', title: "Perfekt mit 'sein'", count: 14 },
-      { id: 'trennbar', title: 'Trennbare Verben', count: 11 },
-    ];
-    let bestDeck = deckDefs[0], bestReviewed = 0;
-    deckDefs.forEach(d => {
-      const rev = (deckProgress[d.id] && deckProgress[d.id].reviewed) || 0;
-      const pct = Math.round((rev / d.count) * 100);
-      if (rev > 0 && pct < 100 && rev >= bestReviewed) { bestDeck = d; bestReviewed = rev; }
+    const { deckProgress, srsData } = getStoredData();
+    const folders = (typeof window.getAllFolders === 'function') ? window.getAllFolders() : [];
+    let allDecks = [];
+    folders.forEach(f => {
+      f.decks.forEach(d => {
+        allDecks.push({ ...d, folderTitle: f.title });
+      });
     });
-    const rev = (deckProgress[bestDeck.id] && deckProgress[bestDeck.id].reviewed) || 0;
-    const pct = Math.round((rev / bestDeck.count) * 100);
+
+    if (allDecks.length === 0) {
+      allDecks = [
+        { id: 'a2-deck-all', title: 'Alle A2 Netzwerk-Themen', count: 751 },
+        { id: 'universal-all', title: 'Universal B1 (Alle 6 Wortarten)', count: 42 }
+      ];
+    }
+
+    const now = Date.now();
+    let bestDeck = allDecks[0];
+    let maxPriority = -1;
+
+    allDecks.forEach(d => {
+      const filtered = window.allWords ? window.allWords.filter(d.filter || (() => true)) : [];
+      const total = filtered.length || d.count || 1;
+      let learned = 0, due = 0;
+      filtered.forEach(w => {
+        const key = (w.id ? `${w.id}::${w.word || w.lemma}` : (w.word || w.lemma || '')).trim();
+        const s = srsData[key];
+        if (s && s.state && s.state !== 'new') {
+          learned++;
+          if (s.dueDate && s.dueDate <= now) due++;
+        }
+      });
+
+      // Priority: Decks with due reviews come first!
+      let priority = 0;
+      if (due > 0) priority = 1000 + due;
+      else if (learned > 0 && learned < total) priority = 500 + learned;
+      else if (learned === 0) priority = 10;
+
+      if (priority > maxPriority) {
+        maxPriority = priority;
+        bestDeck = { ...d, total, learned, due };
+      }
+    });
+
     if (continueDeckTitle) continueDeckTitle.textContent = bestDeck.title;
-    if (continueDeckSub)   continueDeckSub.textContent   = pct + '% abgeschlossen · Tippe zum Starten';
+    if (continueDeckSub) {
+      if (bestDeck.due > 0) {
+        continueDeckSub.textContent = `⚡ ${bestDeck.due} Karten fällig zur Wiederholung · Tippe zum Starten`;
+      } else if (bestDeck.learned > 0) {
+        const pct = Math.round((bestDeck.learned / bestDeck.total) * 100);
+        continueDeckSub.textContent = `${pct}% abgeschlossen (${bestDeck.learned}/${bestDeck.total}) · Tippe zum Starten`;
+      } else {
+        continueDeckSub.textContent = `${bestDeck.total} Wörter bereit · Tippe zum Starten`;
+      }
+    }
     if (continueCard) {
       continueCard.setAttribute('data-deck-id', bestDeck.id);
       if (continueCard.dataset) continueCard.dataset.deckId = bestDeck.id;
@@ -2752,12 +3222,23 @@
   window.renderStatsOverview = renderStatsOverview;
 
   function renderStatsOverview() {
-    const { studyLog, deckProgress } = getStoredData();
+    const { studyLog, deckProgress, srsData } = getStoredData();
     let totalRev = 0, totalCor = 0;
     Object.values(studyLog).forEach(e => { totalRev += e.count||0; totalCor += e.correct||0; });
     const streak = calcStreakLocal(studyLog);
 
-    if (statsTotalLearned) statsTotalLearned.textContent = totalRev;
+    let learnedCount = 0, learningCount = 0, masteredCount = 0, dueCount = 0;
+    const now = Date.now();
+    Object.values(srsData).forEach(s => {
+      if (s && s.state && s.state !== 'new') {
+        learnedCount++;
+        if (s.state === 'learning') learningCount++;
+        if (s.state === 'mastered') masteredCount++;
+        if (s.dueDate && s.dueDate <= now) dueCount++;
+      }
+    });
+
+    if (statsTotalLearned) statsTotalLearned.textContent = learnedCount;
     if (statsStreakBig)    statsStreakBig.textContent    = streak;
     if (statsLernzeit) {
       const mins = Math.round(totalRev * 0.75);
@@ -2769,41 +3250,64 @@
 
     if (grammarDistBars) {
       const dists = [
-        { label: 'Präsens',         color: '#FF5A5F', pct: 42 },
-        { label: 'Präteritum',      color: '#6366F1', pct: 28 },
-        { label: 'Perfekt',         color: '#F59E0B', pct: 16 },
-        { label: 'Trennb. Verben',  color: '#10B981', pct: 7  },
-        { label: 'Sonstiges',       color: '#94A3B8', pct: 5  },
+        { label: 'Gemeistert (★)',  color: '#10B981', count: masteredCount },
+        { label: 'Gelernt (Review)',color: '#6366F1', count: Math.max(0, learnedCount - masteredCount - learningCount) },
+        { label: 'Im Lernprozess',  color: '#F59E0B', count: learningCount },
+        { label: '⚡ Heute fällig',  color: '#FF5A5F', count: dueCount },
       ];
-      grammarDistBars.innerHTML = dists.map(d => `
+      const maxC = Math.max(1, ...dists.map(d => d.count));
+      grammarDistBars.innerHTML = dists.map(d => {
+        const pct = Math.round((d.count / maxC) * 100);
+        return `
         <div class="grammar-dist-row">
           <span class="grammar-dist-label">${d.label}</span>
           <div class="grammar-dist-bar-track">
-            <div class="grammar-dist-bar-fill" style="width:${d.pct}%;background:${d.color};"></div>
+            <div class="grammar-dist-bar-fill" style="width:${pct}%;background:${d.color};"></div>
           </div>
-          <span class="grammar-dist-pct">${d.pct}%</span>
-        </div>`).join('');
+          <span class="grammar-dist-pct" style="font-weight:700;">${d.count}</span>
+        </div>`;
+      }).join('');
     }
 
-    if (statsDecksList) {
-      const deckDefs = [
-        { id: 'b1-all',      title: 'B1 Stammformen',     count: 50 },
-        { id: 'sein-verbs',  title: "Perfekt mit 'sein'",  count: 14 },
-        { id: 'trennbar',    title: 'Trennbare Verben',    count: 11 },
-        { id: 'vokalwechsel',title: 'Starke Verben',       count: 20 },
-      ];
-      statsDecksList.innerHTML = deckDefs.map(d => {
-        const rev = (deckProgress[d.id] && deckProgress[d.id].reviewed) || 0;
-        const pct = Math.round((rev / d.count) * 100);
-        return `<div class="vocab-detail-section" style="margin-bottom:10px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <span style="font-weight:700;font-size:14px;">${d.title}</span>
-            <span style="font-size:12px;color:var(--text-muted);">${rev} / ${d.count}</span>
+    if (statsDecksList && typeof window.getAllFolders === 'function' && window.allWords) {
+      const folders = window.getAllFolders();
+      let allDecksList = [];
+      folders.forEach(f => {
+        f.decks.forEach(d => {
+          allDecksList.push({ ...d, folderTitle: f.title });
+        });
+      });
+      statsDecksList.innerHTML = allDecksList.map(d => {
+        const filtered = window.allWords.filter(d.filter || (() => true));
+        const total = filtered.length;
+        let learned = 0, due = 0;
+        filtered.forEach(w => {
+          const key = (w.id ? `${w.id}::${w.word || w.lemma}` : (w.word || w.lemma || '')).trim();
+          const s = srsData[key];
+          if (s && s.state && s.state !== 'new') {
+            learned++;
+            if (s.dueDate && s.dueDate <= now) due++;
+          }
+        });
+        const pct = total > 0 ? Math.round((learned / total) * 100) : 0;
+        return `<div class="vocab-detail-section" style="margin-bottom:12px; padding:12px 16px; background:var(--bg-surface); border:1px solid var(--border-card); border-radius:var(--radius-md);">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <div>
+              <span style="font-weight:700; font-size:14px; color:var(--text-primary);">${d.title}</span>
+              <span style="font-size:11px; color:var(--text-muted); margin-left:6px;">(${d.folderTitle})</span>
+            </div>
+            <div style="font-size:12px; color:var(--text-secondary); font-weight:600;">
+              ${due > 0 ? `<span style="color:#DC2626; margin-right:8px;">⚡ ${due} fällig</span>` : ''}
+              ${learned} / ${total}
+            </div>
           </div>
-          <div style="height:6px;background:var(--bg-surface-subtle);border-radius:999px;overflow:hidden;">
-            <div style="height:100%;width:${pct}%;background:var(--accent-terracotta);border-radius:999px;transition:width 0.6s cubic-bezier(0.23,1,0.32,1);"></div>
+          <div style="height:6px; background:var(--bg-surface-subtle); border-radius:999px; overflow:hidden;">
+            <div style="height:100%; width:${pct}%; background:var(--accent-terracotta); border-radius:999px; transition:width 0.6s cubic-bezier(0.23,1,0.32,1);"></div>
           </div>
-          <span style="font-size:12px;color:var(--text-secondary);display:block;margin-top:4px;">${pct}% abgeschlossen</span>
+          <div style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-muted);">
+            <span>${pct}% gelernt</span>
+            <span>${total - learned} neu</span>
+          </div>
         </div>`;
       }).join('');
     }
